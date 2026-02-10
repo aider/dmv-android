@@ -22,7 +22,7 @@ interface QuestionStatsDao {
         """
         SELECT qs.questionId FROM question_stats qs
         JOIN questions q ON qs.questionId = q.id
-        WHERE q.stateCode = :stateCode AND qs.timesWrong > 0
+        WHERE q.stateCode = :stateCode AND q.isActive = 1 AND qs.timesWrong > 0
         ORDER BY CAST(qs.timesWrong AS REAL) / CAST(qs.timesSeen AS REAL) DESC
         LIMIT :limit
         """

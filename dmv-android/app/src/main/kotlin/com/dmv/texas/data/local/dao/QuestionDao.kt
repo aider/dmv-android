@@ -11,10 +11,14 @@ interface QuestionDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAll(questions: List<QuestionEntity>)
 
+    @Query("UPDATE questions SET isActive = 0 WHERE stateCode = :stateCode")
+    suspend fun deactivateByStateCode(stateCode: String)
+
     @Query(
         """
         SELECT * FROM questions
         WHERE stateCode = :stateCode
+          AND isActive = 1
           AND topic IN (:topics)
           AND difficulty BETWEEN :minDiff AND :maxDiff
         ORDER BY RANDOM()
@@ -36,17 +40,17 @@ interface QuestionDao {
         """
         SELECT topic, COUNT(*) as count
         FROM questions
-        WHERE stateCode = :stateCode
+        WHERE stateCode = :stateCode AND isActive = 1
         GROUP BY topic
         ORDER BY topic
         """
     )
     suspend fun getTopicCounts(stateCode: String): List<TopicCount>
 
-    @Query("SELECT COUNT(*) FROM questions WHERE stateCode = :stateCode")
+    @Query("SELECT COUNT(*) FROM questions WHERE stateCode = :stateCode AND isActive = 1")
     suspend fun getCount(stateCode: String): Int
 
-    @Query("SELECT COUNT(*) FROM questions WHERE imageAssetId IS NOT NULL AND stateCode = :stateCode")
+    @Query("SELECT COUNT(*) FROM questions WHERE imageAssetId IS NOT NULL AND stateCode = :stateCode AND isActive = 1")
     suspend fun getImageQuestionCount(stateCode: String): Int
 
     @Query("SELECT DISTINCT imageAssetId FROM questions WHERE imageAssetId IS NOT NULL AND stateCode = :stateCode")

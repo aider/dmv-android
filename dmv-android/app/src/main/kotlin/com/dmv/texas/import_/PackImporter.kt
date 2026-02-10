@@ -88,8 +88,9 @@ class PackImporter(
             )
         }
 
-        // Atomic transaction: insert all questions + update pack metadata together
+        // Atomic transaction: deactivate old questions, upsert new ones, update metadata
         database.withTransaction {
+            database.questionDao().deactivateByStateCode(pack.stateCode)
             database.questionDao().insertAll(entities)
             database.statePackDao().upsert(
                 StatePackEntity(

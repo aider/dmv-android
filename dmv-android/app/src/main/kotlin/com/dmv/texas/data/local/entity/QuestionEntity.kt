@@ -1,5 +1,6 @@
 package com.dmv.texas.data.local.entity
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.Index
 import androidx.room.PrimaryKey
@@ -23,5 +24,7 @@ data class QuestionEntity(
     val correctIndex: Int,
     val explanation: String,
     val reference: String,
-    val imageAssetId: String?
+    val imageAssetId: String?,
+    @ColumnInfo(defaultValue = "1")
+    val isActive: Boolean = true
 )

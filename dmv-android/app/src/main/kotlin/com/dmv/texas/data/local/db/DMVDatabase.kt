@@ -14,6 +14,7 @@ import com.dmv.texas.data.local.entity.AttemptAnswerEntity
 import com.dmv.texas.data.local.entity.AttemptEntity
 import com.dmv.texas.data.local.entity.QuestionEntity
 import com.dmv.texas.data.local.entity.QuestionStatsEntity
+import com.dmv.texas.data.local.db.migration.MIGRATION_1_2
 import com.dmv.texas.data.local.entity.StatePackEntity
 
 @Database(
@@ -24,7 +25,7 @@ import com.dmv.texas.data.local.entity.StatePackEntity
         AttemptAnswerEntity::class,
         QuestionStatsEntity::class
     ],
-    version = 1,
+    version = 2,
     exportSchema = true
 )
 @TypeConverters(Converters::class)
@@ -45,7 +46,9 @@ abstract class DMVDatabase : RoomDatabase() {
                     context.applicationContext,
                     DMVDatabase::class.java,
                     "dmv_database"
-                ).build().also { INSTANCE = it }
+                )
+                    .addMigrations(MIGRATION_1_2)
+                    .build().also { INSTANCE = it }
             }
         }
     }
