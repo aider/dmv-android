@@ -1,97 +1,31 @@
 # Texas DMV Practice - Android App
 
-An offline Android application for Texas driver's license practice tests, featuring 660 original questions across 8 topics.
+An offline-first Android application for Texas driver's license practice tests, built with Kotlin and Jetpack Compose. Features 660 original questions across 8 topics, SVG sign illustrations rendered via Coil, Room-backed stats tracking, and four quiz modes (Practice, Exam, Topic Drill, Mistakes). No internet connection required -- all content is bundled in-app.
 
-## Features
+## Prerequisites
 
-- **660 Questions**: Comprehensive question bank covering all Texas DMV topics
-- **8 Topic Categories**:
-  - Signs (120 questions)
-  - Traffic Signals (60 questions)
-  - Pavement Markings (70 questions)
-  - Right of Way (120 questions)
-  - Speed & Distance (80 questions)
-  - Parking (60 questions)
-  - Safe Driving (90 questions)
-  - Special Situations (60 questions)
+- **JDK 17** (OpenJDK recommended)
+- **Android SDK** with platform 35 and build-tools 35.0.0
+  - Install via Android Studio or command-line: `sdkmanager "platforms;android-35" "build-tools;35.0.0"`
+- **Gradle 8.11.1** (bundled via wrapper -- no manual install needed)
 
-- **Practice Modes**:
-  - Practice by topic (30 questions per session)
-  - Mixed practice from all topics
-  - Randomized questions each time
+No Android Studio is required for building; the project builds from the command line.
 
-- **Learning Features**:
-  - Immediate feedback on answers
-  - Detailed explanations for each question
-  - Score tracking during quiz
-  - Pass/fail results (70% passing threshold)
+## Build & Run
 
-- **Offline Mode**: All questions and content stored locally - no internet required
-
-## Technical Details
-
-### Architecture
-- **Language**: Java
-- **Minimum SDK**: API 24 (Android 7.0)
-- **Target SDK**: API 34 (Android 14)
-- **Dependencies**:
-  - AndroidX AppCompat
-  - Material Design Components
-  - Gson (for JSON parsing)
-
-### Data Structure
-- Questions stored as JSON files in `app/src/main/assets/questions/`
-- SVG traffic signs and diagrams in `app/src/main/assets/svg/`
-- Total assets: 109 hand-coded SVG images
-
-### Question Schema
-```json
-{
-  "id": "TX-SIG-0001",
-  "topic": "SIGNS",
-  "difficulty": 1-5,
-  "text": "Question text",
-  "choices": ["A", "B", "C", "D"],
-  "correctIndex": 0-3,
-  "explanation": "Educational explanation",
-  "reference": "DL-7: Section Name",
-  "image": {
-    "type": "svg",
-    "assetId": "ASSET_ID"
-  }
-}
-```
-
-## Building the App
-
-### Prerequisites
-- Android Studio (Arctic Fox or newer)
-- JDK 8 or higher
-- Android SDK with API 34
-
-### Build Steps
-
-1. Clone the repository:
 ```bash
-git clone https://github.com/aider/dmv-android.git
 cd dmv-android
-```
 
-2. Open the project in Android Studio
-
-3. Sync Gradle files (File → Sync Project with Gradle Files)
-
-4. Build the app:
-```bash
+# Build debug APK
 ./gradlew assembleDebug
-```
 
-5. Install on device/emulator:
-```bash
+# Install on connected device or emulator
 ./gradlew installDebug
 ```
 
-Or simply click "Run" in Android Studio.
+The debug APK is written to `app/build/outputs/apk/debug/app-debug.apk` (~11 MB).
+
+To build in Android Studio: open `dmv-android/` as the project root, let Gradle sync, and press Run.
 
 ## Project Structure
 
@@ -99,63 +33,120 @@ Or simply click "Run" in Android Studio.
 dmv-android/
 ├── app/
 │   ├── src/main/
-│   │   ├── java/com/dmv/texas/
-│   │   │   ├── MainActivity.java          # Topic selection
-│   │   │   ├── QuizActivity.java          # Quiz interface
-│   │   │   ├── ResultsActivity.java       # Results screen
-│   │   │   ├── Question.java              # Question model
-│   │   │   └── QuestionBank.java          # Question loader
-│   │   ├── res/
-│   │   │   ├── layout/                    # UI layouts
-│   │   │   └── values/                    # Strings, colors
+│   │   ├── kotlin/com/dmv/texas/
+│   │   │   ├── DMVApp.kt                     # Application class (DB singleton, Coil ImageLoader)
+│   │   │   ├── MainActivity.kt               # Single-Activity entry point
+│   │   │   ├── data/
+│   │   │   │   ├── local/
+│   │   │   │   │   ├── dao/                   # Room DAOs (5 files)
+│   │   │   │   │   ├── db/                    # DMVDatabase, TypeConverters
+│   │   │   │   │   └── entity/                # Room entities (5 files)
+│   │   │   │   ├── model/                     # Data classes (PackJson, QuizConfig, QuizMode, AssetManifestEntry)
+│   │   │   │   └── repository/                # QuestionRepository, StatsRepository
+│   │   │   ├── import_/                       # PackImporter (asset scanning + Room import)
+│   │   │   ├── ui/
+│   │   │   │   ├── component/                 # Reusable composables (AnswerButton, QuestionImage, TimerDisplay, etc.)
+│   │   │   │   ├── navigation/                # NavGraph, Screen sealed class
+│   │   │   │   ├── screen/
+│   │   │   │   │   ├── debug/                 # Debug dashboard
+│   │   │   │   │   ├── home/                  # Quiz configuration screen
+│   │   │   │   │   ├── import_/               # Pack import with progress
+│   │   │   │   │   ├── quiz/                  # Quiz experience
+│   │   │   │   │   ├── results/               # Score + missed questions review
+│   │   │   │   │   └── stats/                 # Accuracy tracking + attempt history
+│   │   │   │   └── theme/                     # Material 3 theming (Color, Type, Theme)
+│   │   │   └── util/                          # AssetResolver, Constants
+│   │   ├── res/values/                        # XML resources (themes, colors, strings)
 │   │   ├── assets/
-│   │   │   ├── questions/                 # 8 topic JSON files
-│   │   │   └── svg/                       # 109 SVG assets
+│   │   │   ├── packs/TX/tx_v1.json            # Question bank (660 questions)
+│   │   │   ├── assets_manifest.json           # SVG asset registry
+│   │   │   └── svg/                           # 109+ SVG sign illustrations
 │   │   └── AndroidManifest.xml
-│   └── build.gradle
-├── build.gradle
-├── settings.gradle
+│   ├── build.gradle.kts                       # App-level Gradle config
+│   └── proguard-rules.pro                     # ProGuard/R8 rules for release builds
+├── build.gradle.kts                           # Root Gradle config (plugin versions)
+├── settings.gradle.kts                        # Project settings
+├── gradle/wrapper/                            # Gradle wrapper (8.11.1)
 └── README.md
 ```
 
-## Usage
+## Tech Stack
 
-1. **Select Topic**: Choose from 8 topics or "All Topics" for mixed practice
-2. **Answer Questions**: Read each question and select your answer
-3. **Submit**: Click submit to see if you're correct
-4. **Learn**: Read the explanation to understand the correct answer
-5. **Continue**: Progress through 30 questions per session
-6. **View Results**: See your score and pass/fail status
+| Component | Version | Purpose |
+|---|---|---|
+| Kotlin | 2.1.0 | Language |
+| Jetpack Compose | BOM 2025.01.01 | UI framework (Material 3) |
+| Room | 2.7.0 | Local SQLite database |
+| Navigation Compose | 2.8.5 | Screen navigation |
+| Coil 3 | 3.1.0 | SVG image loading (`coil-compose` + `coil-svg`) |
+| kotlinx-serialization | 1.8.0 | JSON parsing |
+| KSP | 2.1.0-1.0.29 | Annotation processing (Room compiler) |
+| AGP | 8.7.3 | Android build tooling |
 
-## Content Sources
+**No networking libraries.** The app is fully offline -- no Retrofit, OkHttp, or internet permission.
 
-- **Questions**: All original content based on Texas Transportation Code and MUTCD standards
-- **Images**: Hand-coded SVG assets following MUTCD specifications
-- **No Copyright Issues**: All content is original or public domain
+## Architecture
+
+The app follows a 3-layer architecture with a single Activity:
+
+- **UI layer** (`ui/`): Compose screens + ViewModels exposing `StateFlow`
+- **Data layer** (`data/`): Room entities, DAOs, repositories, and JSON models
+- **Import layer** (`import_/`): Pack scanner that reads bundled JSON and populates Room
+
+Key patterns:
+- **Navigation Compose** with a nested `quiz_flow` graph scoping the shared `QuizViewModel` across Quiz and Results screens
+- **Manual DI** via `Application`-level database singleton (no Hilt/Dagger)
+- **Quiz config** passed through `DMVApp.pendingQuizConfig` (not serialized into routes)
+- **Coil 3** with global `SingletonImageLoader.Factory` for SVG decoding
+
+## Quiz Modes
+
+| Mode | Behavior |
+|---|---|
+| Practice | Untimed, immediate feedback + explanation after each answer |
+| Exam | 30-minute timer, feedback only at end, auto-submits on timeout |
+| Topic Drill | Filter by one or more topics |
+| Mistakes | Re-quiz on previously missed questions, ordered by error rate |
+
+## How to Add a New State Pack
+
+Adding support for a new state (e.g., California) requires **no code changes**. The import pipeline auto-discovers packs.
+
+1. **Create the question JSON** following the pack format:
+   ```
+   app/src/main/assets/packs/CA/ca_v1.json
+   ```
+   The JSON must include `stateCode`, `version`, `totalQuestions`, `topics`, `generatedDate`, and a `questions` array. See `packs/TX/tx_v1.json` for reference.
+
+2. **Add SVG assets** (if any questions reference images):
+   ```
+   app/src/main/assets/svg/<assetId>.svg
+   ```
+
+3. **Update the asset manifest** (`assets/assets_manifest.json`) with entries for any new SVGs:
+   ```json
+   { "assetId": "ca-stop-sign", "description": "Stop sign", "file": "assets/svg/ca-stop-sign.svg", "sourceUrl": "", "license": "" }
+   ```
+
+4. **Build and run.** On first launch, `PackImporter` will scan `assets/packs/CA/`, parse the JSON, and import all questions into Room. The import is idempotent -- re-running with the same version produces no duplicates.
+
+5. **Version upgrades:** To update a pack, increment `version` in the JSON. The importer only re-imports when the bundled version exceeds the installed version.
+
+## Known Limitations / Future Work
+
+- **Single state hardcoded in UI.** While the data layer supports multiple states, the UI currently uses `STATE_CODE = "TX"` throughout. A state selection screen is needed for multi-state support.
+- **No process death recovery for in-progress quizzes.** `pendingQuizConfig` lives on the `Application` object, which does not survive process death. The quiz restarts from Home if the process is killed.
+- **No question bookmarking.** Users cannot save individual questions for later review.
+- **No search or filter within stats.** The stats screen shows all-time data without date filtering.
+- **Release builds** require ProGuard/R8 testing -- only debug builds have been verified.
+- **No unit or instrumented tests.** Test coverage should be added for the import pipeline, quiz scoring, and stats repository.
+
+## Content
+
+- **660 questions** across 8 topics: Signs, Traffic Signals, Pavement Markings, Right of Way, Speed & Distance, Parking, Safe Driving, Special Situations
+- **109 SVG illustrations** of traffic signs, road scenarios, and driving situations
+- All content is original, based on Texas Transportation Code and MUTCD standards
 
 ## Legal
 
 This application is for educational purposes only and is not affiliated with or endorsed by the Texas Department of Public Safety (DPS).
-
-**Content**: Original educational content for Texas driver education
-**License**: See parent repository for licensing details
-
-## Version
-
-- **App Version**: 1.0
-- **Question Bank**: v1.0 (660 questions)
-- **Last Updated**: February 2026
-
----
-
-**Note**: This app currently displays questions and handles quiz logic. SVG rendering for traffic signs/diagrams requires additional implementation (Android SVG library integration).
-
-## Future Enhancements
-
-- [ ] SVG image rendering for questions with visual assets
-- [ ] Bookmarking difficult questions
-- [ ] Study mode with unlimited attempts
-- [ ] Statistics tracking across sessions
-- [ ] Dark mode support
-- [ ] Question search/filter
-- [ ] Export results to PDF
