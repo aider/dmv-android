@@ -47,6 +47,7 @@ jobs:
             2) Identify relevant files/classes in the repo
             3) Suggest a fix approach
           claude_args: "--max-turns 10"
+          show_full_output: true
 
       - name: Update comment with result link
         if: always()
