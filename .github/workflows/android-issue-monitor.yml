@@ -26,7 +26,7 @@ jobs:
           issue-number: ${{ github.event.issue.number }}
           body: |
             **Android Build Monitor** :gear:
-            Building `assembleDebug`... will update with results.
+            Building `assembleDebug` and launching Claude Code to investigate...
 
       - name: Checkout
         uses: actions/checkout@v4
@@ -45,7 +45,47 @@ jobs:
         run: ./gradlew assembleDebug --no-daemon 2>&1 | tee build.log
         continue-on-error: true
 
-      - name: Auto-assign issue
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Run Claude Code on issue
+        id: claude
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          BUILD_STATUS: ${{ steps.build.outcome }}
+        run: |
+          claude -p "You are investigating GitHub issue #${ISSUE_NUMBER} filed against the DMV Texas Android app.
+
+          Issue title: ${ISSUE_TITLE}
+
+          Issue body:
+          ${ISSUE_BODY}
+
+          The assembleDebug build ${BUILD_STATUS}.
+
+          Please:
+          1. Analyze the issue description
+          2. Search the codebase for relevant files and code related to this issue
+          3. If the build failed, check dmv-android/build.log for errors
+          4. Provide a concise analysis: what is likely wrong, which files are involved, and a suggested fix approach
+          5. Keep your response under 2000 characters for a GitHub comment" \
+            --allowedTools "Bash(read-only:true),Read,Glob,Grep" \
+            --max-turns 10 \
+            --output-format text \
+            > claude_response.txt 2>&1 || true
+
+          # Truncate if too long for a GH comment
+          head -c 60000 claude_response.txt > claude_comment.txt
+
+      - name: Update comment with build result
         uses: peter-evans/create-or-update-comment@v4
         if: always()
         with:
@@ -54,14 +94,33 @@ jobs:
           body: |
             **Android Build Monitor** ${{ steps.build.outcome == 'success' && ':white_check_mark:' || ':x:' }}
             Build result: **${{ steps.build.outcome }}**
-            ${{ steps.build.outcome == 'failure' && format('```\n{0}\n```', '(see workflow run for full logs)') || '' }}
             [Workflow run](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
+
+      - name: Post Claude analysis comment
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -s claude_comment.txt ]; then
+            {
+              echo "**Claude Code Investigation** :mag:"
+              echo ""
+              cat claude_comment.txt
+            } > final_comment.txt
+            gh issue comment "${{ github.event.issue.number }}" \
+              --body-file final_comment.txt \
+              -R "${{ github.repository }}"
+          else
+            gh issue comment "${{ github.event.issue.number }}" \
+              --body "**Claude Code Investigation** :mag: _No analysis available — check [workflow logs](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})._" \
+              -R "${{ github.repository }}"
+          fi
 
       - name: Assign issue to repo owner
         if: always()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh issue edit ${{ github.event.issue.number }} \
+          gh issue edit "${{ github.event.issue.number }}" \
             --add-assignee "${{ github.repository_owner }}" \
             -R "${{ github.repository }}"
