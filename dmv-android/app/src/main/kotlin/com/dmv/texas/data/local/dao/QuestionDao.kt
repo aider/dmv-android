@@ -55,6 +55,21 @@ interface QuestionDao {
 
     @Query("SELECT DISTINCT imageAssetId FROM questions WHERE imageAssetId IS NOT NULL AND stateCode = :stateCode")
     suspend fun getAllImageAssetIds(stateCode: String): List<String>
+
+    @Query(
+        """
+        SELECT imageAssetId AS assetId, COUNT(*) AS count
+        FROM questions
+        WHERE imageAssetId IS NOT NULL AND stateCode = :stateCode
+        GROUP BY imageAssetId
+        """
+    )
+    suspend fun getAllImageAssetIdCounts(stateCode: String): List<AssetIdCount>
+
+    @Query("SELECT * FROM questions WHERE stateCode = :stateCode")
+    suspend fun getAllByState(stateCode: String): List<QuestionEntity>
 }
 
 data class TopicCount(val topic: String, val count: Int)
+
+data class AssetIdCount(val assetId: String, val count: Int)

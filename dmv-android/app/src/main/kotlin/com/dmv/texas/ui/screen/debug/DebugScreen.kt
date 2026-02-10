@@ -42,6 +42,8 @@ import java.util.Locale
 @Composable
 fun DebugScreen(
     onBackToHome: () -> Unit,
+    onOpenAssetAudit: () -> Unit = {},
+    onOpenDataQuality: () -> Unit = {},
     modifier: Modifier = Modifier,
     viewModel: DebugViewModel = viewModel()
 ) {
@@ -103,6 +105,20 @@ fun DebugScreen(
             modifier = Modifier.fillMaxWidth()
         ) {
             Text("Refresh")
+        }
+
+        OutlinedButton(
+            onClick = onOpenAssetAudit,
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("Asset Audit")
+        }
+
+        OutlinedButton(
+            onClick = onOpenDataQuality,
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("Data Quality Report")
         }
 
         OutlinedButton(

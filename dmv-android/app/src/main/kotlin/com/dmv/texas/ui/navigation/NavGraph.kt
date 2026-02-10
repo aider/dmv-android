@@ -13,6 +13,8 @@ import androidx.navigation.compose.navigation
 import com.dmv.texas.DMVApp
 import com.dmv.texas.data.model.QuizConfig
 import com.dmv.texas.data.model.QuizMode
+import com.dmv.texas.ui.screen.debug.AssetAuditScreen
+import com.dmv.texas.ui.screen.debug.DataQualityScreen
 import com.dmv.texas.ui.screen.debug.DebugScreen
 import com.dmv.texas.ui.screen.home.HomeScreen
 import com.dmv.texas.ui.screen.import_.ImportScreen
@@ -134,7 +136,23 @@ fun NavGraph(
         // ── Debug ─────────────────────────────────────────────────
         composable(Screen.Debug.route) {
             DebugScreen(
-                onBackToHome = { navController.popBackStack() }
+                onBackToHome = { navController.popBackStack() },
+                onOpenAssetAudit = { navController.navigate(Screen.AssetAudit.route) },
+                onOpenDataQuality = { navController.navigate(Screen.DataQuality.route) }
+            )
+        }
+
+        // ── Asset Audit ──────────────────────────────────────────
+        composable(Screen.AssetAudit.route) {
+            AssetAuditScreen(
+                onBack = { navController.popBackStack() }
+            )
+        }
+
+        // ── Data Quality ────────────────────────────────────────
+        composable(Screen.DataQuality.route) {
+            DataQualityScreen(
+                onBack = { navController.popBackStack() }
             )
         }
     }

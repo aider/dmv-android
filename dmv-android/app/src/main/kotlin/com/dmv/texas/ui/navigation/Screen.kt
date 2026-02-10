@@ -12,6 +12,8 @@ sealed class Screen(val route: String) {
     data object Results : Screen("results")
     data object Stats : Screen("stats")
     data object Debug : Screen("debug")
+    data object AssetAudit : Screen("asset_audit")
+    data object DataQuality : Screen("data_quality")
 }
 
 /** Route for the nested quiz flow graph, scoping the shared QuizViewModel. */
