@@ -1,0 +1,67 @@
+name: Android Issue Monitor
+
+on:
+  issues:
+    types: [opened, reopened, labeled]
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  build-and-triage:
+    # Run when issue has 'android' label.
+    # For 'labeled' events, also verify the label being added is 'android'
+    # to avoid re-triggering when unrelated labels are added.
+    if: >-
+      contains(github.event.issue.labels.*.name, 'android')
+      && (github.event.action != 'labeled' || github.event.label.name == 'android')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Post building comment
+        id: comment
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            **Android Build Monitor** :gear:
+            Building `assembleDebug`... will update with results.
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+          cache: gradle
+          cache-dependency-path: dmv-android/**/*.gradle*
+
+      - name: Build debug APK
+        id: build
+        working-directory: dmv-android
+        run: ./gradlew assembleDebug --no-daemon 2>&1 | tee build.log
+        continue-on-error: true
+
+      - name: Auto-assign issue
+        uses: peter-evans/create-or-update-comment@v4
+        if: always()
+        with:
+          comment-id: ${{ steps.comment.outputs.comment-id }}
+          edit-mode: replace
+          body: |
+            **Android Build Monitor** ${{ steps.build.outcome == 'success' && ':white_check_mark:' || ':x:' }}
+            Build result: **${{ steps.build.outcome }}**
+            ${{ steps.build.outcome == 'failure' && format('```\n{0}\n```', '(see workflow run for full logs)') || '' }}
+            [Workflow run](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
+
+      - name: Assign issue to repo owner
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue edit ${{ github.event.issue.number }} \
+            --add-assignee "${{ github.repository_owner }}" \
+            -R "${{ github.repository }}"
