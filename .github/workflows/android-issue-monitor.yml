@@ -4,24 +4,20 @@ on:
   issues:
     types: [opened, reopened, labeled]
 
-permissions:
-  issues: write
-  contents: read
-
 concurrency:
-  # Prevent duplicate runs for the same issue
   group: android-monitor-${{ github.event.issue.number }}
   cancel-in-progress: true
 
 jobs:
   triage:
-    # Run when issue has 'android' label.
-    # For 'labeled' events, also verify the label being added is 'android'
-    # to avoid re-triggering when unrelated labels are added.
     if: >-
       contains(github.event.issue.labels.*.name, 'android')
       && (github.event.action != 'labeled' || github.event.label.name == 'android')
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+      id-token: write
 
     steps:
       - name: Post triage comment
@@ -33,8 +29,7 @@ jobs:
             **Android Issue Triage** :mag:
             Claude Code is analyzing this issue...
 
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Claude Code investigation
         uses: anthropics/claude-code-action@v1
@@ -43,15 +38,15 @@ jobs:
           prompt: |
             Investigate GitHub issue #${{ github.event.issue.number }} for the DMV Texas Android app.
 
-            Issue title: ${{ github.event.issue.title }}
+            TITLE: ${{ github.event.issue.title }}
+            BODY: ${{ github.event.issue.body }}
+            AUTHOR: ${{ github.event.issue.user.login }}
 
             Please:
-            1) Analyze the issue description and propose a task breakdown
+            1) Analyze the issue and propose a task breakdown
             2) Identify relevant files/classes in the repo
             3) Suggest a fix approach
-          claude_args: |
-            --max-turns 10
-            --allowedTools "Read,Glob,Grep,Bash(read-only:true)"
+          claude_args: "--max-turns 10"
 
       - name: Update comment with result link
         if: always()
