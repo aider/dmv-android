@@ -3,10 +3,13 @@ package com.dmv.texas.ui.screen.import_
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
-import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -53,11 +56,31 @@ fun ImportScreen(
                     )
                 }
                 is ImportViewModel.ImportState.Importing -> {
-                    CircularProgressIndicator()
                     Text(
                         text = s.message,
                         style = MaterialTheme.typography.bodyLarge
                     )
+                    Spacer(Modifier.height(8.dp))
+                    if (s.total > 0) {
+                        LinearProgressIndicator(
+                            progress = { s.current.toFloat() / s.total },
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(horizontal = 48.dp)
+                        )
+                        Spacer(Modifier.height(4.dp))
+                        Text(
+                            text = "${s.current} / ${s.total}",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    } else {
+                        LinearProgressIndicator(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(horizontal = 48.dp)
+                        )
+                    }
                 }
                 is ImportViewModel.ImportState.Done -> {
                     if (s.alreadyUpToDate) {

@@ -28,9 +28,14 @@ class PackImporter(
 
     private val json = Json { ignoreUnknownKeys = true }
 
-    suspend fun importAllPacks(onProgress: (String) -> Unit = {}): List<ImportResult> =
+    suspend fun importAllPacks(
+        onProgress: (message: String, current: Int, total: Int) -> Unit = { _, _, _ -> }
+    ): List<ImportResult> =
         withContext(Dispatchers.IO) {
             val results = mutableListOf<ImportResult>()
+
+            // Collect all pack files first to know total count
+            val packFiles = mutableListOf<Pair<String, String>>() // (stateDir, fileName)
             val packDirs = try {
                 context.assets.list("packs") ?: emptyArray()
             } catch (e: Exception) {
@@ -45,18 +50,20 @@ class PackImporter(
                     Log.e(TAG, "Failed to list packs/$stateDir", e)
                     continue
                 }
-
                 for (file in files) {
-                    if (!file.endsWith(".json")) continue
-                    try {
-                        onProgress("Importing $stateDir...")
-                        val result = importPack("packs/$stateDir/$file")
-                        results.add(result)
-                        Log.i(TAG, "Import result: $result")
-                    } catch (e: Exception) {
-                        Log.e(TAG, "Failed to import packs/$stateDir/$file", e)
-                        // Skip malformed packs, do not crash
-                    }
+                    if (file.endsWith(".json")) packFiles.add(stateDir to file)
+                }
+            }
+
+            val total = packFiles.size
+            packFiles.forEachIndexed { index, (stateDir, file) ->
+                try {
+                    onProgress("Importing $stateDir...", index + 1, total)
+                    val result = importPack("packs/$stateDir/$file")
+                    results.add(result)
+                    Log.i(TAG, "Import result: $result")
+                } catch (e: Exception) {
+                    Log.e(TAG, "Failed to import packs/$stateDir/$file", e)
                 }
             }
             results

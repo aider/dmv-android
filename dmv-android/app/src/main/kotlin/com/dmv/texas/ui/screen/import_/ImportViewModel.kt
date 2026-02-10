@@ -13,7 +13,7 @@ class ImportViewModel(application: Application) : AndroidViewModel(application) 
 
     sealed class ImportState {
         data object Idle : ImportState()
-        data class Importing(val message: String) : ImportState()
+        data class Importing(val message: String, val current: Int = 0, val total: Int = 0) : ImportState()
         data class Done(val totalImported: Int, val alreadyUpToDate: Boolean) : ImportState()
         data class Error(val message: String) : ImportState()
     }
@@ -29,8 +29,8 @@ class ImportViewModel(application: Application) : AndroidViewModel(application) 
                 _state.value = ImportState.Importing("Checking for packs...")
                 val db = DMVDatabase.getInstance(getApplication())
                 val importer = PackImporter(getApplication(), db)
-                val results = importer.importAllPacks { message ->
-                    _state.value = ImportState.Importing(message)
+                val results = importer.importAllPacks { message, current, total ->
+                    _state.value = ImportState.Importing(message, current, total)
                 }
                 val totalImported = results.sumOf { it.questionsImported }
                 val allUpToDate = results.all { it.alreadyUpToDate }
