@@ -1,15 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
-  <rect x="0" y="0" width="300" height="200" fill="#88AA88"/>
-  <!-- Main highway -->
-  <rect x="0" y="60" width="300" height="80" fill="#4A4A4A"/>
-  <rect x="0" y="98" width="300" height="4" fill="#FFCC00"/>
-  <!-- Entrance ramp -->
-  <path d="M 0,160 Q 100,160 180,100" fill="#4A4A4A"/>
-  <!-- Dashed white merge line -->
-  <rect x="50" y="130" width="4" height="15" fill="#FFFFFF"/>
-  <rect x="80" y="120" width="4" height="15" fill="#FFFFFF"/>
-  <rect x="110" y="110" width="4" height="15" fill="#FFFFFF"/>
-  <rect x="140" y="102" width="4" height="15" fill="#FFFFFF"/>
-  <!-- Vehicle on ramp -->
-  <rect x="40" y="148" width="20" height="12" rx="2" fill="#CC0000"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="INTERSECTION_MERGE_HIGHWAY">
+<g transform="translate(12 41.3333) scale(0.5867)">
+    <defs><marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#FFFFFF"/></marker></defs>
+      <rect x="0" y="0" width="300" height="200" fill="#88AA88"/>
+      <!-- Main highway (2 lanes) -->
+      <rect x="0" y="60" width="300" height="80" fill="#4A4A4A"/>
+      <rect x="0" y="98" width="300" height="4" fill="#FFCC00"/>
+      <!-- Entrance ramp -->
+      <path d="M 0,160 Q 100,160 180,100" fill="#4A4A4A"/>
+      <!-- Dashed merge taper -->
+      <rect x="48" y="130" width="4" height="15" fill="#FFFFFF"/>
+      <rect x="78" y="121" width="4" height="15" fill="#FFFFFF"/>
+      <rect x="108" y="111" width="4" height="15" fill="#FFFFFF"/>
+      <rect x="138" y="102" width="4" height="15" fill="#FFFFFF"/>
+      <!-- Vehicle on ramp (red = must yield) -->
+      <rect x="40" y="148" width="20" height="12" rx="3" fill="#CC0000"/>
+      <!-- Vehicle on highway -->
+      <rect x="220" y="68" width="30" height="18" rx="3" fill="#666666"/>
+      <!-- Merge trajectory arrow -->
+      <path d="M 62,142 L 100,110" fill="none" stroke="#FFFFFF" stroke-width="3" marker-end="url(#arr)"/>
+  </g>
 </svg>

@@ -1,29 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 250">
-  <!-- Sloped street (uphill) -->
-  <polygon points="0,200 350,120 350,250 0,250" fill="#555555"/>
-
-  <!-- Curb -->
-  <line x1="0" y1="200" x2="350" y2="120" stroke="#FFFFFF" stroke-width="4"/>
-  <polygon points="0,190 350,110 350,120 0,200" fill="#AAAAAA"/>
-
-  <!-- Parked car -->
-  <rect x="150" y="140" width="50" height="30" fill="#0066CC" stroke="#003366" stroke-width="2" rx="3" transform="rotate(-13 175 155)"/>
-
-  <!-- Wheels turned RIGHT (toward street) -->
-  <ellipse cx="160" cy="168" rx="6" ry="10" fill="#000000" transform="rotate(-13 160 168)"/>
-  <ellipse cx="190" cy="158" rx="6" ry="10" fill="#000000" transform="rotate(-13 190 158)"/>
-
-  <!-- Arrow showing wheel direction -->
-  <path d="M 160,180 L 170,185" stroke="#FF0000" stroke-width="3" marker-end="url(#arrowred)"/>
-  <text x="120" y="210" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">Wheels AWAY from curb</text>
-
-  <!-- Uphill label -->
-  <polygon points="310,180 320,200 330,180" fill="#FFFF00"/>
-  <text x="320" y="170" font-family="Arial Bold, sans-serif" font-size="18" font-weight="bold" fill="#FFFF00" text-anchor="middle">UPHILL</text>
-
-  <defs>
-    <marker id="arrowred" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
-      <polygon points="0,0 10,5 0,10" fill="#FF0000"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="PARKING_HILL_UPHILL_CURB">
+<defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#FF0000"/>
     </marker>
   </defs>
+  <!-- Hill background -->
+  <rect x="0" y="0" width="200" height="200" fill="#88AA88"/>
+  <path d="M 0,150 Q 50,120 100,100 Q 150,80 200,60 L 200,200 L 0,200 Z" fill="#BBBBBB"/>
+  <!-- Curb -->
+  <rect x="0" y="95" width="200" height="8" fill="#888888"/>
+  <!-- Road -->
+  <rect x="0" y="103" width="200" height="97" fill="#4A4A4A"/>
+  <!-- Vehicle -->
+  <rect x="70" y="140" width="40" height="22" rx="3" fill="#3366CC"/>
+  <circle cx="80" cy="162" r="6" fill="#1A1A1A"/>
+  <circle cx="100" cy="162" r="6" fill="#1A1A1A"/>
+  <!-- Wheel direction indicator (turned away from curb) -->
+  <line x1="78" y1="162" x2="72" y2="168" stroke="#FFCC00" stroke-width="3"/>
+  <line x1="98" y1="162" x2="92" y2="168" stroke="#FFCC00" stroke-width="3"/>
+  <!-- Arrow showing slope direction -->
+  <path d="M 150,60 L 150,90" stroke="#FF0000" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="165" y="80" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="900" fill="#FF0000">UP</text>
+  <!-- Label -->
 </svg>

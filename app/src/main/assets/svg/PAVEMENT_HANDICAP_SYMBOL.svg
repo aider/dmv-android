@@ -1,19 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <!-- Parking space surface -->
-  <rect x="0" y="0" width="200" height="200" fill="#777777"/>
-
-  <!-- Blue background (typical for handicap parking) -->
-  <rect x="20" y="20" width="160" height="160" fill="#0066CC"/>
-
-  <!-- White handicap symbol -->
-  <circle cx="100" cy="70" r="12" fill="#FFFFFF"/>
-
-  <!-- Body and wheelchair -->
-  <path d="M 100,82 L 100,110 L 85,125" stroke="#FFFFFF" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M 100,95 L 120,95" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
-  <path d="M 100,110 Q 110,110 110,120 L 110,130" stroke="#FFFFFF" stroke-width="8" fill="none" stroke-linecap="round"/>
-
-  <!-- Wheels -->
-  <circle cx="87" cy="125" r="15" fill="none" stroke="#FFFFFF" stroke-width="5"/>
-  <circle cx="110" cy="130" r="15" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="PAVEMENT_HANDICAP_SYMBOL">
+<g transform="translate(12 41.3333) scale(0.5867)">
+    <!-- Road surface -->
+      <rect x="0" y="0" width="300" height="200" fill="#4A4A4A"/>
+      <!-- Subtle texture -->
+      
+      <!-- Wheelchair symbol -->
+      <g fill="#003DA5">
+        <rect x="0" y="0" width="300" height="200" fill="#FFFFFF"/>
+        <circle cx="150" cy="70" r="18"/>
+        <path d="M 150,88 L 150,125" stroke="#003DA5" stroke-width="14" fill="none"/>
+        <path d="M 135,105 L 165,105" stroke="#003DA5" stroke-width="12" fill="none"/>
+        <circle cx="130" cy="145" r="26" fill="none" stroke="#003DA5" stroke-width="10"/>
+        <circle cx="170" cy="145" r="16" fill="none" stroke="#003DA5" stroke-width="8"/>
+      </g>
+  </g>
 </svg>

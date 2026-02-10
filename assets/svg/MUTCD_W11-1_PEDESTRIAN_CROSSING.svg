@@ -1,19 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <!-- Yellow diamond background -->
-  <rect x="10" y="10" width="180" height="180" rx="8" fill="#FFCC00" transform="rotate(45 100 100)"/>
-  <!-- Black border -->
-  <rect x="10" y="10" width="180" height="180" rx="8" fill="none" stroke="#000000" stroke-width="6" transform="rotate(45 100 100)"/>
-  
-  <g fill="#000000" stroke="#000000">
-    <circle cx="85" cy="65" r="12"/>
-    <line x1="85" y1="77" x2="85" y2="112" stroke-width="8"/>
-    <line x1="68" y1="90" x2="102" y2="95" stroke-width="8"/>
-    <line x1="85" y1="112" x2="72" y2="140" stroke-width="8"/>
-    <line x1="85" y1="112" x2="98" y2="140" stroke-width="8"/>
-    <!-- Crosswalk lines -->
-    <line x1="105" y1="65" x2="135" y2="65" stroke-width="6"/>
-    <line x1="105" y1="140" x2="135" y2="140" stroke-width="6"/>
-    <path d="M 120,65 L 120,75 M 120,85 L 120,95 M 120,105 L 120,115 M 120,125 L 120,135" stroke-width="6"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_W11-1_PEDESTRIAN_CROSSING">
+  <rect x="24" y="24" width="152" height="152" transform="rotate(45 100 100)" fill="#FFCC00" stroke="#000000" stroke-width="6"/>
+  <g fill="#000000" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="84" cy="70" r="8"/>
+    <path d="M84 78 L84 108" fill="none" stroke-width="7"/>
+    <path d="M72 92 L96 96" fill="none" stroke-width="6"/>
+    <path d="M84 108 L72 132" fill="none" stroke-width="7"/>
+    <path d="M84 108 L99 131" fill="none" stroke-width="7"/>
 
+    <circle cx="116" cy="82" r="8"/>
+    <path d="M116 90 L112 120" fill="none" stroke-width="7"/>
+    <path d="M104 102 L126 98" fill="none" stroke-width="6"/>
+    <path d="M112 120 L99 142" fill="none" stroke-width="7"/>
+    <path d="M112 120 L126 140" fill="none" stroke-width="7"/>
+  </g>
 </svg>

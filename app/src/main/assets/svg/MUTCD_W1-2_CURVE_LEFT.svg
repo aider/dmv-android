@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <rect x="10" y="10" width="180" height="180" fill="#FFFF00" stroke="#000000" stroke-width="4" rx="5" transform="rotate(45 100 100)"/>
-  <path d="M 130,130 L 130,80 Q 130,60 110,60 L 70,60" stroke="#000000" stroke-width="8" fill="none" stroke-linecap="round"/>
-  <polygon points="75,55 70,60 75,65" fill="#000000"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_W1-2_CURVE_LEFT">
+<rect x="22" y="22" width="156" height="156" transform="rotate(45 100 100)" fill="#FFCC00" stroke="#000000" stroke-width="6"/>
+  <path d="M128 136 V86 Q128 62 104 62 H68" fill="none" stroke="#000000" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M68 62 L82 54 M68 62 L82 70" fill="none" stroke="#000000" stroke-width="12" stroke-linecap="round"/>
 </svg>

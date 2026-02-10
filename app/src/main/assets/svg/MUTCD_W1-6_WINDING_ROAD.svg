@@ -1,5 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <rect x="10" y="10" width="180" height="180" fill="#FFFF00" stroke="#000000" stroke-width="4" rx="5" transform="rotate(45 100 100)"/>
-  <path d="M 100,140 Q 80,120 100,100 Q 120,80 100,60" stroke="#000000" stroke-width="8" fill="none" stroke-linecap="round"/>
-  <polygon points="95,60 100,55 105,60" fill="#000000"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_W1-6_WINDING_ROAD">
+  <rect x="24" y="24" width="152" height="152" transform="rotate(45 100 100)" fill="#FFCC00" stroke="#000000" stroke-width="6"/>
+  <path d="M96 56 C132 74 66 96 102 118 C130 136 96 158 82 164" fill="none" stroke="#000000" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

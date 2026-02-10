@@ -1,14 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 250">
-  <!-- Traffic signal housing -->
-  <rect x="10" y="10" width="80" height="230" fill="#333333" stroke="#000000" stroke-width="3" rx="8"/>
-
-  <!-- Red light (off) -->
-  <circle cx="50" cy="50" r="30" fill="#444444" stroke="#222222" stroke-width="2"/>
-
-  <!-- Yellow light (off) -->
-  <circle cx="50" cy="125" r="30" fill="#444444" stroke="#222222" stroke-width="2"/>
-
-  <!-- Green arrow left (illuminated) -->
-  <circle cx="50" cy="200" r="30" fill="#00AA00" stroke="#006600" stroke-width="2"/>
-  <polygon points="30,200 45,190 45,195 60,195 60,205 45,205 45,210" fill="#00FF00"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="SIGNAL_GREEN_ARROW_LEFT">
+<g transform="translate(64.8 12) scale(0.704)">
+    <!-- Housing -->
+      <rect x="10" y="10" width="80" height="230" rx="8" fill="#1A1A1A" stroke="#000000" stroke-width="3"/>
+      <!-- Visors -->
+      <rect x="8" y="28" width="84" height="8" rx="4" fill="#000000"/>
+      <rect x="8" y="103" width="84" height="8" rx="4" fill="#000000"/>
+      <rect x="8" y="178" width="84" height="8" rx="4" fill="#000000"/>
+      <!-- Red light (inactive) -->
+      <circle cx="50" cy="50" r="28" fill="#444444" stroke="#000000" stroke-width="2"/>
+      <!-- Yellow light (inactive) -->
+      <circle cx="50" cy="125" r="28" fill="#444444" stroke="#000000" stroke-width="2"/>
+      <!-- Green light (active) -->
+      <circle cx="50" cy="200" r="28" fill="#00B140" stroke="#000000" stroke-width="2"/>
+      <circle cx="50" cy="200" r="25" fill="#44FF44" opacity="0.6"/>
+      <!-- Left arrow on green -->
+      <path d="M 30,200 L 45,188 L 45,195 L 68,195 L 68,205 L 45,205 L 45,212 Z" fill="#FFFFFF"/>
+  </g>
 </svg>

@@ -1,28 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 250">
-  <!-- Road -->
-  <rect x="0" y="75" width="300" height="100" fill="#555555"/>
-
-  <!-- Center line -->
-  <line x1="0" y1="125" x2="300" y2="125" stroke="#FFFF00" stroke-width="3" stroke-dasharray="15,10"/>
-
-  <!-- Edge lines -->
-  <line x1="0" y1="80" x2="300" y2="80" stroke="#FFFFFF" stroke-width="2"/>
-  <line x1="0" y1="170" x2="300" y2="170" stroke="#FFFFFF" stroke-width="2"/>
-
-  <!-- Crosswalk (zebra stripes) -->
-  <rect x="130" y="80" width="15" height="90" fill="#FFFFFF"/>
-  <rect x="155" y="80" width="15" height="90" fill="#FFFFFF"/>
-
-  <!-- Pedestrian crossing -->
-  <circle cx="150" cy="55" r="8" fill="#000000"/>
-  <line x1="150" y1="63" x2="150" y2="85" stroke="#000000" stroke-width="5"/>
-  <line x1="140" y1="70" x2="160" y2="75" stroke="#000000" stroke-width="5"/>
-  <line x1="150" y1="85" x2="145" y2="105" stroke="#000000" stroke-width="5"/>
-  <line x1="150" y1="85" x2="155" y2="105" stroke="#000000" stroke-width="5"/>
-
-  <!-- Vehicle stopped before crosswalk -->
-  <rect x="60" y="85" width="35" height="20" fill="#0066CC" stroke="#003366" stroke-width="1" rx="2"/>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="INTERSECTION_PEDESTRIAN_CROSSWALK">
+<rect x="0" y="0" width="200" height="200" fill="#88AA88"/>
+  <rect x="0" y="70" width="200" height="60" fill="#4A4A4A"/>
   <!-- Stop line -->
-  <line x1="125" y1="85" x2="125" y2="165" stroke="#FFFFFF" stroke-width="3"/>
+  <rect x="0" y="64" width="70" height="6" fill="#FFFFFF"/>
+  <!-- Crosswalk zebra stripes -->
+  <rect x="79.0" y="70" width="12" height="60" fill="#FFFFFF"/>
+  <rect x="95.0" y="70" width="12" height="60" fill="#FFFFFF"/>
+  <rect x="111.0" y="70" width="12" height="60" fill="#FFFFFF"/>
+  <!-- Pedestrian in crosswalk -->
+  <g fill="#FFCC00" stroke="#000000" stroke-width="2" transform="translate(100,88) scale(1)"><circle cx="0" cy="0" r="6"/><line x1="0" y1="6" x2="0" y2="22" stroke-width="4"/><line x1="-8" y1="12" x2="8" y2="12" stroke-width="3"/><line x1="0" y1="22" x2="-6" y2="34" stroke-width="4"/><line x1="0" y1="22" x2="6" y2="34" stroke-width="4"/></g>
+  <!-- Stopped vehicle behind stop line -->
+  <rect x="20" y="45" width="35" height="20" rx="3" fill="#666666"/>
 </svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="INTERSECTION_DOUBLE_TURN_LANES">
+<rect x="0" y="0" width="200" height="200" fill="#88AA88"/>
+  <!-- Roads -->
+  <rect x="0" y="70" width="200" height="60" fill="#4A4A4A"/>
+  <rect x="70" y="0" width="60" height="200" fill="#4A4A4A"/>
+  <!-- Center lines -->
+  <rect x="0" y="97" width="70" height="6" fill="#FFCC00"/>
+  <rect x="130" y="97" width="70" height="6" fill="#FFCC00"/>
+  <rect x="97" y="0" width="6" height="70" fill="#FFCC00"/>
+  <rect x="97" y="130" width="6" height="70" fill="#FFCC00"/>
+  <!-- Double left turn lane markings (south approach) -->
+  <rect x="70" y="130" width="6" height="70" fill="#FFFFFF" stroke-dasharray="8,8"/>
+  <!-- Turn arrows in both lanes -->
+  <path d="M 80,165 L 80,145 L 74,145 L 83,135 L 92,145 L 86,145 L 86,155" fill="#FFFFFF"/>
+  <path d="M 93,165 L 93,145 L 87,145 L 96,135 L 105,145 L 99,145 L 99,155" fill="#FFFFFF"/>
+  <!-- Vehicles in both turn lanes -->
+  <rect x="74" y="150" width="14" height="24" rx="2" fill="#3366CC"/>
+  <rect x="92" y="150" width="14" height="24" rx="2" fill="#666666"/>
+  <!-- Curved turn paths showing lane discipline -->
+  <path d="M 81,148 Q 81,100 60,85" fill="none" stroke="#3366CC" stroke-width="6" stroke-dasharray="6,6"/>
+  <path d="M 99,148 Q 99,100 75,78" fill="none" stroke="#666666" stroke-width="6" stroke-dasharray="6,6"/>
+</svg>

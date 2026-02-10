@@ -1,5 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <circle cx="100" cy="100" r="90" fill="#FF0000" stroke="#FFFFFF" stroke-width="4"/>
-  <rect x="30" y="85" width="140" height="30" fill="#FFFFFF"/>
-  <text x="100" y="108" font-family="Arial Black, sans-serif" font-size="20" font-weight="bold" fill="#FF0000" text-anchor="middle">DO NOT ENTER</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_R5-1_DO_NOT_ENTER">
+<circle cx="100" cy="100" r="92" fill="#C9252D"/>
+  <circle cx="100" cy="100" r="92" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+  <rect x="20" y="78" width="160" height="44" rx="4" fill="#FFFFFF"/>
+  <text x="100" y="107" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="900" fill="#C9252D" text-anchor="middle" letter-spacing="0.3">DO NOT ENTER</text>
 </svg>

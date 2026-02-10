@@ -1,18 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <!-- Road surface -->
-  <rect x="0" y="0" width="200" height="300" fill="#555555"/>
-
-  <!-- Combined left and straight arrow -->
-  <!-- Straight part -->
-  <line x1="115" y1="220" x2="115" y2="100" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
-  <polygon points="115,85 130,115 100,115" fill="#FFFFFF"/>
-
-  <!-- Left turn part -->
-  <line x1="85" y1="220" x2="85" y2="140" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
-  <path d="M 85,140 L 55,180" stroke="#FFFFFF" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <polygon points="48,178 55,180 52,170" fill="#FFFFFF"/>
-
-  <!-- Lane edges -->
-  <line x1="20" y1="0" x2="20" y2="300" stroke="#FFFFFF" stroke-width="2"/>
-  <line x1="180" y1="0" x2="180" y2="300" stroke="#FFFFFF" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="PAVEMENT_ARROW_LEFT_STRAIGHT">
+<g transform="translate(12 41.3333) scale(0.5867)">
+    <!-- Road surface -->
+      <rect x="0" y="0" width="300" height="200" fill="#4A4A4A"/>
+      <!-- Subtle texture -->
+      
+      <g fill="#FFFFFF">
+        <!-- Vertical shaft -->
+        <rect x="165" y="80" width="18" height="90" rx="4"/>
+        <!-- Up arrow -->
+        <path d="M 174,60 L 148,90 L 200,90 Z"/>
+        <!-- Left turn -->
+        <rect x="110" y="126" width="64" height="22" rx="4"/>
+        <path d="M 110,137 L 85,115 L 85,159 Z"/>
+      </g>
+  </g>
 </svg>

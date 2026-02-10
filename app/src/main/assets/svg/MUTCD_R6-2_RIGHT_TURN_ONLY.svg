@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 200">
-  <rect x="5" y="5" width="140" height="190" fill="#FFFFFF" stroke="#000000" stroke-width="3" rx="5"/>
-  <text x="75" y="50" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#000000" text-anchor="middle">RIGHT</text>
-  <text x="75" y="80" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#000000" text-anchor="middle">TURN</text>
-  <text x="75" y="110" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#000000" text-anchor="middle">ONLY</text>
-  <path d="M 75,165 L 75,135 L 105,155" stroke="#000000" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <polygon points="110,150 105,155 110,160" fill="#000000"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_R6-2_RIGHT_TURN_ONLY">
+<rect x="42" y="10" width="116" height="180" rx="8" fill="#FFFFFF" stroke="#000000" stroke-width="4"/>
+  <rect x="48" y="16" width="104" height="168" rx="5" fill="none" stroke="#000000" stroke-width="2"/>
+  <text x="100" y="48" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="900" text-anchor="middle" fill="#000000">RIGHT</text>
+  <text x="100" y="71" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="900" text-anchor="middle" fill="#000000">TURN</text>
+  <text x="100" y="94" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="900" text-anchor="middle" fill="#000000">ONLY</text>
+  <path d="M92 146 V112 H104 V146 H128 V128 L144 139 L128 150 V146 Z" fill="#000000"/>
 </svg>

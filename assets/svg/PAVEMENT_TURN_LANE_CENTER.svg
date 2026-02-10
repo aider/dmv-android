@@ -1,18 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
-  <!-- Road surface -->
-  <rect x="0" y="0" width="300" height="200" fill="#4A4A4A"/>
-  <!-- Subtle texture -->
-  <rect x="0" y="0" width="300" height="200" fill="#000000" opacity="0.05"/>
-  
-  <!-- Double yellow on sides -->
-  <rect x="80" y="0" width="6" height="200" fill="#FFCC00"/>
-  <rect x="214" y="0" width="6" height="200" fill="#FFCC00"/>
-  <!-- Center lane arrows pointing both ways -->
-  <g fill="#FFFFFF">
-    <rect x="140" y="60" width="20" height="30" rx="3"/>
-    <path d="M 150,50 L 130,65 L 170,65 Z"/>
-    <rect x="140" y="110" width="20" height="30" rx="3"/>
-    <path d="M 150,150 L 170,135 L 130,135 Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="PAVEMENT_TURN_LANE_CENTER">
+<g transform="translate(12 41.3333) scale(0.5867)">
+    <!-- Road surface -->
+      <rect x="0" y="0" width="300" height="200" fill="#4A4A4A"/>
+      <!-- Subtle texture -->
+      
+      <!-- Double yellow on sides -->
+      <rect x="80" y="0" width="6" height="200" fill="#FFCC00"/>
+      <rect x="214" y="0" width="6" height="200" fill="#FFCC00"/>
+      <!-- Center lane arrows pointing both ways -->
+      <g fill="#FFFFFF">
+        <rect x="140" y="60" width="20" height="30" rx="3"/>
+        <path d="M 150,50 L 130,65 L 170,65 Z"/>
+        <rect x="140" y="110" width="20" height="30" rx="3"/>
+        <path d="M 150,150 L 170,135 L 130,135 Z"/>
+      </g>
   </g>
-
 </svg>

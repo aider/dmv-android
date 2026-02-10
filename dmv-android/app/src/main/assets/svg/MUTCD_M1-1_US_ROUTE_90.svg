@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 150">
-  <path d="M 20,10 L 100,10 L 110,30 L 110,130 L 100,150 L 20,150 L 10,130 L 10,30 Z" fill="#FFFFFF" stroke="#000000" stroke-width="4"/>
-  <text x="60" y="50" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="900" fill="#000000" text-anchor="middle">U.S.</text>
-  <text x="60" y="115" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="900" fill="#000000" text-anchor="middle">90</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_M1-1_US_ROUTE_90">
+<path d="M100 14 L132 14 L152 44 L146 186 L54 186 L48 44 L68 14 Z" fill="#FFFFFF" stroke="#000000" stroke-width="5"/>
+  <text x="100" y="62" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="900" text-anchor="middle" fill="#000000">U.S.</text>
+  <text x="100" y="150" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="900" text-anchor="middle" fill="#000000">90</text>
 </svg>

@@ -1,8 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 200">
-  <rect x="5" y="5" width="140" height="190" fill="#FFFFFF" stroke="#FF0000" stroke-width="4" rx="5"/>
-  <text x="75" y="45" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#000000" text-anchor="middle">NO</text>
-  <text x="75" y="75" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#000000" text-anchor="middle">PARKING</text>
-  <text x="75" y="115" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#000000" text-anchor="middle">ANYTIME</text>
-  <line x1="30" y1="130" x2="120" y2="130" stroke="#000000" stroke-width="2"/>
-  <polygon points="65,145 85,145 85,155 95,155 75,180 55,155 65,155" fill="#000000"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_R8-3a_NO_PARKING_ANYTIME">
+  <rect x="30" y="8" width="140" height="184" rx="8" fill="#FFFFFF" stroke="#C1272D" stroke-width="6"/>
+  <rect x="38" y="16" width="124" height="168" rx="4" fill="none" stroke="#C1272D" stroke-width="2"/>
+
+  <text x="100" y="50" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="900" fill="#000000" text-anchor="middle">NO</text>
+  <text x="100" y="84" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="900" fill="#000000" text-anchor="middle">PARKING</text>
+  <text x="100" y="116" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="900" fill="#000000" text-anchor="middle">ANYTIME</text>
+
+  <g fill="#000000">
+    <rect x="93" y="128" width="14" height="44" rx="2"/>
+    <path d="M100 126 L88 138 H112 Z"/>
+    <path d="M100 174 L112 162 H88 Z"/>
+  </g>
 </svg>

@@ -1,95 +1,462 @@
-# SVG Asset Issues - Offline Mirror
+# SVG Asset Issues - Complete Backlog
 
-**Generated:** 2026-02-09
-**Total Issues:** 19 (P0: 2, P1: 12, P2: 5)
-
-This document mirrors all GitHub issues created during the SVG asset audit for offline reference and tracking.
+**Generated:** 2026-02-09 (UPDATED with MUTCD Geometry Compliance)
+**Review Rules:** `assets/review/svg_review_rules.md` v1.0
+**Total Issues:** 23 (P0: 6, P1: 12, P2: 5)
 
 ---
 
-## Issue #1: Missing training cues in intersection scenarios
+## P0 ISSUES (CRITICAL - BLOCKING)
 
-**Priority:** P1
-**Labels:** svg, priority/P1, svg-correctness
-**GitHub:** https://github.com/aider/dmv-android/issues/1
+These issues violate hard-fail criteria from svg_review_rules.md and MUST be fixed immediately.
 
-### Assets Affected
-- INTERSECTION_4WAY_STOP (used by TX-ROW-0001)
-- INTERSECTION_UNCONTROLLED (used by TX-ROW-0003)
-- INTERSECTION_T_STOP (used by TX-ROW-0005)
-- INTERSECTION_ROUNDABOUT (used by TX-ROW-0006)
-- INTERSECTION_EMERGENCY_VEHICLE (used by TX-ROW-0061, TX-SPC-0034)
-- INTERSECTION_SCHOOL_BUS_STOPPED (used by TX-ROW-0064, TX-SPC-0001)
+---
+
+## ISSUE #NEW-01: STOP Sign is NOT a True Regular Octagon
+
+**Priority:** P0
+**Category:** regulatory
+**Assets:** MUTCD_R1-1_STOP.svg
+**Used by:** 2 questions (TX-ROW-0007, TX-SIG-0001)
 
 ### Problem
-Intersection scenario SVGs lack sufficient visual training cues to teach right-of-way concepts effectively. Current analysis:
+The STOP sign polygon is NOT a true regular octagon. Measured geometry:
+- Internal angles alternate: 125.3°, 143.9°, 126.9°, 143.9° (repeating pattern)
+- Expected: all angles = 135.0° for regular octagon
+- Radii from center: vary from 83.45px to 90.00px (6.55px variation)
+- Expected: all radii equal
+- Side lengths: vary from 65.30px to 67.08px (1.78px variation)
+- Expected: all sides equal
 
-**INTERSECTION_4WAY_STOP:**
-- Has stop lines (good)
-- Has stop signs at all corners (good)
-- NO vehicles shown - learners cannot visualize the "two vehicles arrive at same time" scenario
-- NO directional arrows showing intended paths
+Current polygon points: `100,10 158,40 188,100 158,160 100,190 42,160 12,100 42,40`
 
-**INTERSECTION_ROUNDABOUT:**
-- Has basic circular structure
-- Has one directional arrow (incomplete)
-- NO yield lines/triangles at entries
-- NO vehicles to show right-of-way priority
-- Missing marker-end definition for arrowhead (broken SVG reference)
+### Why it matters
+Per svg_review_rules.md Section 2: "STOP Sign - Shape: True regular octagon — 8 equal sides, internal angles = 135 degrees each." The STOP sign is the most recognizable regulatory sign in driver education. Incorrect geometry fails MUTCD R1-1 compliance and undermines training accuracy.
 
-### Why It Matters
-These are high-value training assets teaching complex right-of-way rules. Without clear vehicles, directional arrows, and proper road markings, learners cannot visualize the scenarios being tested.
+### Acceptance criteria
+- [ ] Shape is true regular octagon with 8 equal sides
+- [ ] All internal angles = 135° ± 0.5°
+- [ ] All vertices equidistant from center ± 0.5px
+- [ ] All side lengths equal ± 0.5px
+- [ ] Border present, uniform width on all 8 sides
+- [ ] "STOP" text centered horizontally and vertically
+- [ ] Minimum inner padding = 10% of sign diameter (20px for 200px viewBox)
+- [ ] Readable at 96dp, recognizable at 48dp
+- [ ] Valid XML
+- [ ] File size < 3KB
+- [ ] Colors match MUTCD: fill="#C1272D", stroke="#FFFFFF"
 
-### Acceptance Criteria
-- [ ] At least 2 vehicles present when scenario involves vehicle interaction
-- [ ] Vehicles should be simple colored rectangles (avoid detail that becomes noise at 96dp)
-- [ ] Directional arrows showing intended vehicle paths
-- [ ] Stop/yield lines present and visible at appropriate approaches
-- [ ] Yield triangles at roundabout entries
-- [ ] All SVG marker references properly defined in <defs>
-- [ ] Consistent vehicle colors (blue for ego, gray for others)
+### Suggested fix approach
+Replace hand-drawn polygon with mathematically correct regular octagon:
+
+```python
+# Regular octagon centered at (100, 100), radius 90
+import math
+vertices = []
+for i in range(8):
+    angle = i * (2 * math.pi / 8) - math.pi / 2  # Start at top, go clockwise
+    x = 100 + 90 * math.cos(angle)
+    y = 100 + 90 * math.sin(angle)
+    vertices.append(f"{x:.1f},{y:.1f}")
+
+points = " ".join(vertices)
+# Result: "100.0,10.0 163.6,36.4 190.0,100.0 163.6,163.6 100.0,190.0 36.4,163.6 10.0,100.0 36.4,36.4"
+```
+
+Or use existing component library primitive if available.
+
+### Reference
+- MUTCD sign ID: R1-1
+- svg_review_rules.md Section 2: STOP Sign geometry requirements
+
+---
+
+## ISSUE #NEW-02: Invalid XML - Duplicate font-weight Attributes
+
+**Priority:** P0
+**Category:** speed
+**Assets:**
+- SPEED_FOLLOWING_DISTANCE_3SEC.svg (used by 2 questions)
+- SPEED_HIGHWAY_70MPH.svg (unused)
+- SPEED_SCHOOL_ZONE_20MPH.svg (used by 1 question)
+- SPEED_STOPPING_DISTANCE.svg (used by 1 question)
+
+### Problem
+Four SVG files contain duplicate `font-weight` attributes on `<text>` elements, resulting in invalid XML. Example from SPEED_FOLLOWING_DISTANCE_3SEC.svg:
+
+```xml
+<!-- Line 15 -->
+<text ... font-size="28" font-weight="bold" font-weight="900" fill="#00FF00" ...>3 SEC</text>
+
+<!-- Line 16 -->
+<text ... font-size="24" font-weight="bold" font-weight="700" fill="#000000" ...>MINIMUM SAFE FOLLOWING DISTANCE</text>
+```
+
+XML validation error:
+```
+parser error : Attribute font-weight redefined
+```
+
+### Why it matters
+These files fail XML validation and are not spec-compliant SVG. While some parsers (like browsers) may tolerate this by using the last value, it's non-standard and may cause rendering failures in strict parsers like Android's SVG decoder.
+
+### Acceptance criteria
+- [ ] No duplicate attributes on any element
+- [ ] Valid XML (passes xmllint validation)
+- [ ] Use only one font-weight per text element
+- [ ] Prefer numeric values (700, 900) over keyword values (bold)
+- [ ] Visual appearance unchanged after fix
+- [ ] All 4 files fixed
+
+### Suggested fix approach
+For each `<text>` element with duplicate `font-weight`:
+1. Remove `font-weight="bold"`
+2. Keep the numeric value (`font-weight="900"` or `font-weight="700"`)
+
+Example:
+```xml
+<!-- Before -->
+<text font-weight="bold" font-weight="900" ...>
+
+<!-- After -->
+<text font-weight="900" ...>
+```
+
+Batch fix with sed:
+```bash
+for file in SPEED_FOLLOWING_DISTANCE_3SEC.svg SPEED_HIGHWAY_70MPH.svg \
+            SPEED_SCHOOL_ZONE_20MPH.svg SPEED_STOPPING_DISTANCE.svg; do
+  sed -i '' 's/font-weight="bold" font-weight="/font-weight="/g' "$file"
+done
+```
+
+Verify with: `xmllint --noout assets/svg/SPEED_*.svg`
+
+### Reference
+- W3C SVG spec: attributes must be unique within an element
+- svg_review_rules.md Section 8: Valid XML required
+
+---
+
+## ISSUE #NEW-03: DO NOT ENTER Uses Circle Instead of Square
+
+**Priority:** P0
+**Category:** regulatory
+**Assets:** MUTCD_R5-1_DO_NOT_ENTER.svg
+**Used by:** 1 question (TX-SIG-0005)
+
+### Problem
+The DO NOT ENTER sign uses a circle shape:
+```xml
+<circle cx="100" cy="100" r="90" fill="#C1272D"/>
+```
+
+Per MUTCD R5-1, the DO NOT ENTER sign should be a **square with rounded corners**, not a circle.
+
+### Why it matters
+Shape is a critical recognition element in sign identification training. The difference between a circle and a square affects how drivers categorize and respond to signs. MUTCD R5-1 explicitly specifies "square" shape.
+
+### Acceptance criteria
+- [ ] Shape is square with rounded corners (use `<rect>` with `rx` attribute)
+- [ ] Aspect ratio 1:1 (square, not circle)
+- [ ] White horizontal rectangle centered in sign
+- [ ] White border around square exterior
+- [ ] Red background (#C1272D)
+- [ ] "DO NOT ENTER" text on white bar (or symbol-only variant)
+- [ ] Geometry correct per MUTCD R5-1
+- [ ] Border present, uniform width
+- [ ] Text centered with >= 8% inner padding
+- [ ] Readable at 96dp, recognizable at 48dp
+- [ ] Valid XML
+- [ ] Colors match MUTCD spec
+
+### Suggested fix approach
+Replace circle with square + rounded corners:
+
+```xml
+<!-- Before -->
+<circle cx="100" cy="100" r="90" fill="#C1272D"/>
+
+<!-- After -->
+<rect x="10" y="10" width="180" height="180" rx="8" fill="#C1272D" stroke="#FFFFFF" stroke-width="6"/>
+```
+
+Keep white bar and text as-is, but verify centering in new square shape.
+
+### Reference
+- MUTCD sign ID: R5-1
+- svg_review_rules.md Section 2: DO NOT ENTER sign requirements
+- Shape: Square with rounded corners, NOT circle
+
+---
+
+## ISSUE #NEW-04: Speed Limit Signs Padding Below 8% Minimum
+
+**Priority:** P0
+**Category:** regulatory
+**Assets:**
+- MUTCD_R2-1_SPEED_LIMIT_65.svg (used by 2 questions)
+- MUTCD_R2-1_SPEED_LIMIT_70.svg (used by 2 questions)
+- MUTCD_R2-1_SPEED_LIMIT_30.svg (used by 1 question)
+- MUTCD_R7-8_NO_PARKING.svg (used by 2 questions)
+
+### Problem
+These signs have insufficient inner padding. Current measurements:
+
+**ViewBox:** 0 0 150 200
+**Outer rect:** x=5, y=5, width=140, height=190
+**Inner content starts:** x=12, y=12
+
+**Effective padding from viewBox edge:** 5px on all sides
+**Padding ratio:** 5/150 = 3.3% (horizontal), 5/200 = 2.5% (vertical)
+
+**Required:** Minimum 8% per svg_review_rules.md Section 3
+**Expected:** 8% of 150px = 12px horizontal, 8% of 200px = 16px vertical
+
+### Why it matters
+Text and borders are too close to the sign edge. At small render sizes, this risks clipping, overlapping, or poor visual separation. Per review rules Section 3: "Minimum inner padding: 8% of the sign's primary dimension."
+
+### Acceptance criteria
+- [ ] Inner padding >= 8% of primary dimension
+- [ ] For 150x200 viewBox: minimum 12px horizontal, 16px vertical
+- [ ] Recommended: 10% = 15px horizontal, 20px vertical
+- [ ] Text bounding box does not intersect border stroke
+- [ ] Border follows sign shape precisely
+- [ ] Text hierarchy preserved: SPEED/LIMIT smaller, number largest
+- [ ] Consistent padding within speed limit sign family
+- [ ] All 4 files fixed with same padding ratio
 - [ ] Readable at 96dp, recognizable at 48dp
 
+### Suggested fix approach
+**Option 1:** Increase padding by adjusting outer rect (recommended):
+```xml
+<!-- Before -->
+<rect x="5" y="5" width="140" height="190" rx="6" .../>
+
+<!-- After (10% padding = 15px, 20px) -->
+<rect x="15" y="20" width="120" height="160" rx="6" .../>
+```
+
+Adjust inner border and text positions proportionally.
+
+**Option 2:** Expand viewBox and keep absolute positions:
+```xml
+<!-- Before -->
+viewBox="0 0 150 200"
+
+<!-- After -->
+viewBox="0 0 180 240"
+```
+This keeps existing element positions but increases relative padding.
+
+**Verification formula:**
+```
+horizontal_padding = (viewBox_width - rect_width) / 2
+padding_ratio = horizontal_padding / viewBox_width
+Must be >= 0.08 (8%)
+```
+
+### Reference
+- MUTCD sign ID: R2-1 (Speed Limit)
+- svg_review_rules.md Section 3: Padding Rules
+- Minimum: 8%, Recommended: 10-12%
+
 ---
 
-## Issue #2: Embedded text readability issues at mobile sizes
+## ISSUE #NEW-05: School Speed Limit Bottom Text Overflow Risk
 
-**Priority:** P1
-**Labels:** svg, priority/P1, svg-readability
-**GitHub:** https://github.com/aider/dmv-android/issues/2
-
-### Assets Affected
-All assets with embedded text, including:
-- PARKING_PARALLEL_STEPS (uses 10px font-size)
-- SPEED_FOLLOWING_DISTANCE_3SEC (uses 18px, 14px)
-- SAFE_BLIND_SPOT_CHECK (uses 14px)
-- SPEED_HIGHWAY_70MPH (uses 13px)
-- PAVEMENT_STOP_LINE, PAVEMENT_ONLY_TEXT, PAVEMENT_NO_PASSING_ZONE
-- All MUTCD signs with internal text
+**Priority:** P0
+**Category:** school
+**Assets:** MUTCD_S4-3_SCHOOL_SPEED_LIMIT_20.svg
+**Used by:** 3 questions (HIGH priority - most-used school sign)
 
 ### Problem
-Many SVGs embed text with small font sizes (10px-18px) that render at 3-6dp on a 96dp canvas, far below the 10dp legibility threshold. A 10px font in 200x200 viewBox at 96dp renders at approximately 4.8dp - completely illegible.
+Bottom text "WHEN CHILDREN" (y=175, font-size=14) and "PRESENT" (y=190, font-size=14) are positioned too close to the bottom edge:
 
-### Why It Matters
-Users on phones cannot read text below 10dp. Unreadable text creates frustration and confusion.
+**ViewBox height:** 200px
+**Text at y=190:** Only 10px from bottom (5% padding)
+**Text at y=175:** Only 25px from bottom with 14px font height
 
-### Acceptance Criteria
-- [ ] Text within signs sized relative to sign dimensions, not absolute pixels
-- [ ] Instructional labels removed or increased to minimum 18px in 200x200 viewBox
-- [ ] Step numbers replaced with larger symbols (≥30px diameter)
-- [ ] Essential text minimum 20px font in 200x200 viewBox
-- [ ] Test at 96px: all text legible
-- [ ] Use bold/black weights for contrast
+**Required:** Minimum 8% of 200px = 16px from bottom edge
+**Current:** ~5% (below minimum)
+
+### Why it matters
+At small render sizes, text near edges risks being cut off by container bounds or becoming unreadable due to poor spacing. This sign is used by 3 questions (tied for most-used), making it high-priority.
+
+### Acceptance criteria
+- [ ] Bottom text minimum 16px from bottom edge (8% of 200px)
+- [ ] Recommended: 20px from bottom (10%)
+- [ ] All text legible at 96dp render
+- [ ] Text hierarchy: SCHOOL/SPEED/LIMIT smaller (20px), number largest (64px), conditions smallest but readable (14px min)
+- [ ] Vertical spacing balanced across sign height
+- [ ] No text overflow or clipping
+- [ ] Valid XML
+- [ ] Readable at 96dp
+
+### Suggested fix approach
+**Option 1:** Move bottom text up (simplest):
+```xml
+<!-- Before -->
+<text y="175" font-size="14">WHEN CHILDREN</text>
+<text y="190" font-size="14">PRESENT</text>
+
+<!-- After -->
+<text y="165" font-size="14">WHEN CHILDREN</text>
+<text y="180" font-size="14">PRESENT</text>
+```
+
+**Option 2:** Reduce bottom text font size and adjust spacing:
+```xml
+<text y="170" font-size="12">WHEN CHILDREN</text>
+<text y="183" font-size="12">PRESENT</text>
+```
+
+Verify 96dp legibility after change.
+
+### Reference
+- MUTCD sign ID: S4-3 (School Speed Limit)
+- svg_review_rules.md Section 3: Minimum 8% inner padding
+- Section 4: Text must be legible at 96dp
 
 ---
 
-## Issue #3: Inconsistent viewBox dimensions across categories
+## ISSUE #NEW-06: STOP Sign Redundant Overlapping Text Elements
+
+**Priority:** P0
+**Category:** regulatory
+**Assets:** MUTCD_R1-1_STOP.svg
+**Used by:** 2 questions
+
+### Problem
+The STOP sign SVG contains redundant overlapping elements:
+1. Main octagon polygon with fill
+2. Inner border polygon (likely duplicate/redundant)
+3. Text element
+
+If both polygons exist with the same shape but different strokes/fills, this adds unnecessary complexity and file size.
+
+**Note:** This is lower priority than #NEW-01 (geometry issue) but should be addressed in the same fix.
+
+### Why it matters
+Redundant elements increase file size and parsing overhead. The inner border can be achieved with a single polygon and appropriate stroke.
+
+### Acceptance criteria
+- [ ] Single octagon polygon for main shape
+- [ ] Border achieved via stroke on single polygon OR separate inner polygon (not both redundantly)
+- [ ] File size minimized
+- [ ] Visual appearance matches MUTCD R1-1
+- [ ] Valid SVG structure
+
+### Suggested fix approach
+Review after fixing #NEW-01 geometry. Use single polygon with double stroke technique or clean up redundant paths.
+
+### Reference
+- svg_review_rules.md Section 8: Clean, minimal SVG structure
+
+---
+
+## P1 ISSUES (IMPORTANT - DEGRADE EXPERIENCE)
+
+These issues from the previous audit remain valid and should be fixed after P0 issues.
+
+---
+
+## ISSUE #1: Missing Training Cues in Intersection Scenarios
 
 **Priority:** P1
-**Labels:** svg, priority/P1, svg-consistency
-**GitHub:** https://github.com/aider/dmv-android/issues/3
+**Category:** intersection
+**Assets:**
+- INTERSECTION_4WAY_STOP (used by 1 question)
+- INTERSECTION_UNCONTROLLED (used by 1 question)
+- INTERSECTION_T_STOP (used by 1 question)
+- INTERSECTION_ROUNDABOUT (used by 1 question)
+- INTERSECTION_EMERGENCY_VEHICLE (used by 2 questions)
+- INTERSECTION_SCHOOL_BUS_STOPPED (used by 2 questions)
 
-### Assets Affected
+### Problem
+Intersection scenarios lack sufficient visual training cues. Examples:
+- INTERSECTION_4WAY_STOP: has stop lines and signs ✓, but NO vehicles or arrows to show "two vehicles arrive at same time" scenario
+- INTERSECTION_ROUNDABOUT: basic structure ✓, but NO yield lines/triangles, incomplete directional arrows
+- Most scenes: missing vehicles when scenario requires vehicle interaction
+
+Per svg_review_rules.md Section 2 (quality checks): Training assets should have >= 2 learning cues.
+
+### Why it matters
+Right-of-way questions test complex spatial reasoning. Without visible vehicles, arrows, and proper markings, learners cannot visualize the scenarios being tested.
+
+### Acceptance criteria
+- [ ] At least 2 vehicles present when scenario involves vehicle interaction
+- [ ] Vehicles as simple colored rectangles (avoid detail → noise at 96dp)
+- [ ] Directional arrows showing intended vehicle paths
+- [ ] Stop/yield lines present at appropriate approaches
+- [ ] Yield triangles at roundabout entries
+- [ ] All SVG marker references defined in `<defs>` (no broken url(#id))
+- [ ] Consistent vehicle colors: blue for ego (#3366CC), gray for others (#666666)
+- [ ] Readable at 96dp, recognizable at 48dp
+
+### Suggested fix approach
+For each asset:
+1. Add 2-3 vehicle rectangles (30×18px or 18×30px depending on orientation)
+2. Add directional arrow paths with proper markers
+3. Verify yield lines/stop lines are present and visible (8px stroke minimum)
+4. Define all markers in `<defs>` section
+
+### Reference
+- svg_review_rules.md Section 2 (quality): >= 2 learning cues for scenes
+- Previous audit issue #1
+
+---
+
+## ISSUE #2: Embedded Text Readability at Mobile Sizes
+
+**Priority:** P1
+**Category:** readability
+**Assets:** 20+ assets with embedded text
+
+### Problem
+Text with small font sizes (10-18px) renders at 3-6dp on 96dp canvas, below 10dp legibility threshold.
+
+**Examples:**
+- PARKING_PARALLEL_STEPS: 10px font → 4.8dp at 96dp (unreadable)
+- SPEED_FOLLOWING_DISTANCE_3SEC: 18px, 14px fonts → 6-8dp (barely readable)
+- SAFE_BLIND_SPOT_CHECK: 14px labels → ~6dp
+
+Per svg_review_rules.md Section 4: "Text that becomes an unreadable blob at 96dp = hard fail."
+
+### Why it matters
+Mobile users cannot read text below 10dp. Creates frustration and fails accessibility.
+
+### Acceptance criteria
+- [ ] Essential text minimum 20px font in 200×200 viewBox (renders ~9.6dp at 96dp)
+- [ ] Recommended: 24px+ for labels, 60px+ for numbers
+- [ ] Instructional labels either removed or increased to >= 20px
+- [ ] Step numbers replaced with larger symbols (30px+ diameter)
+- [ ] Bold/black weights for contrast
+- [ ] Test at 96px render: all text legible
+
+### Suggested fix approach
+**Option 1:** Increase font sizes:
+- Small labels (10-14px) → 20-24px
+- Medium labels (18px) → 24-28px
+- Large numbers (already OK at 60px+)
+
+**Option 2:** Remove instructional text, rely on question text
+
+**Option 3:** Replace text with symbols where appropriate
+
+### Reference
+- svg_review_rules.md Section 4: Mobile Readability Rules
+- Previous audit issue #2
+
+---
+
+## ISSUE #3: Inconsistent ViewBox Dimensions Across Categories
+
+**Priority:** P1
+**Category:** consistency
+**Assets:** 49 MUTCD signs with 5 different viewBox sizes
+
+### Problem
 **MUTCD Signs:** 5 different viewBox sizes:
 - 0 0 200 200 (27 signs)
 - 0 0 150 200 (11 signs)
@@ -98,552 +465,362 @@ Users on phones cannot read text below 10dp. Unreadable text creates frustration
 - 0 0 120 150 (2 signs)
 
 **SIGNAL Assets:** Two ratios:
-- 0 0 100 250 (10 standard)
-- 0 0 100 150 (3 pedestrian)
+- 0 0 100 250 (10 signals)
+- 0 0 100 150 (3 signals)
 
-**INTERSECTION Assets:** 2 outliers among 8
+Causes visual "jumping" when signs appear in sequence in UI.
 
-### Problem
-Inconsistent viewBox causes visual "jumping" when assets cycle in quiz, inconsistent padding, and unclear standards.
+### Why it matters
+Inconsistent viewBox sizes cause visual discontinuity. Signs of the same family should have consistent aspect ratios for professional appearance.
 
-### Why It Matters
-Professional appearance requires consistent sizing within categories. Visual jumping creates cognitive load.
+### Acceptance criteria
+- [ ] All square regulatory signs: 0 0 200 200
+- [ ] All portrait rectangular signs: 0 0 150 200
+- [ ] All landscape rectangular signs: 0 0 200 100
+- [ ] All warning diamonds: 0 0 200 200
+- [ ] All vertical signals: 0 0 100 250
+- [ ] Consistent padding within each category
+- [ ] Visual appearance preserved after normalization
 
-### Acceptance Criteria
-- [ ] All MUTCD regulatory/warning signs: 0 0 200 200
-- [ ] All MUTCD guide signs: 0 0 200 150
-- [ ] Exception: ONE_WAY, WRONG_WAY: 0 0 200 100 (correct wide format)
-- [ ] All standard signals: 0 0 100 250
-- [ ] All pedestrian signals: 0 0 100 150
-- [ ] All intersections: 0 0 200 200 (square) or 300 200 (highway merges)
-- [ ] Document in assets/review/viewbox_standards.md
+### Suggested fix approach
+1. Group signs by aspect ratio (square, portrait 3:4, landscape 2:1)
+2. Choose standard viewBox for each group
+3. Scale/reposition elements to fit new viewBox
+4. Verify padding ratios remain consistent
 
----
-
-## Issue #4: Missing stop/yield lines in key intersection scenarios (P0)
-
-**Priority:** P0
-**Labels:** svg, priority/P0, svg-correctness
-**GitHub:** https://github.com/aider/dmv-android/issues/4
-
-### Assets Affected
-- INTERSECTION_ROUNDABOUT (used by TX-ROW-0006)
-- INTERSECTION_PEDESTRIAN_CROSSWALK (used by TX-ROW-0031)
-
-### Problem
-**INTERSECTION_ROUNDABOUT:**
-- Question tests yielding to circulating traffic
-- Asset has NO yield lines/triangles at any entry point
-- Without yield markings, learners can't identify where/when to yield
-
-**INTERSECTION_PEDESTRIAN_CROSSWALK:**
-- Need to verify stop line and zebra stripe visibility
-
-### Why It Matters
-This is P0 because the visual asset contradicts the learning objective. Stop/yield lines are PRIMARY cues drivers use. An asset that omits them teaches the wrong pattern.
-
-### Acceptance Criteria
-- [ ] ROUNDABOUT: White yield triangles at all 4 entries, 5-10px before circular road
-- [ ] PEDESTRIAN_CROSSWALK: Verify stop line behind vehicle
-- [ ] PEDESTRIAN_CROSSWALK: Verify zebra stripes clearly visible
-- [ ] Audit ALL intersections: stop lines where stop signs exist
-- [ ] Audit ALL intersections: yield lines where yield expected
-- [ ] Test at 96dp: markings visible and recognizable
+### Reference
+- svg_review_rules.md Section 3: Consistent padding within families
+- Previous audit issue #3
 
 ---
 
-## Issue #5: MUTCD_R1-1_STOP redundant path+text
-
-**Priority:** P2
-**Labels:** svg, priority/P2, svg-performance
-**GitHub:** https://github.com/aider/dmv-android/issues/5
-
-### Assets Affected
-- MUTCD_R1-1_STOP (used by TX-ROW-0007, TX-SIG-0001)
-
-### Problem
-The SVG contains both complex path-based "STOP" text (lines 13-20) and regular <text> "STOP" (line 24), resulting in overlapping redundant content.
-
-### Why It Matters
-- Unnecessary file size
-- Maintenance confusion
-- Performance overhead
-
-### Acceptance Criteria
-- [ ] Remove either path-based or text-based STOP
-- [ ] Recommendation: Keep <text> version (simpler, cleaner)
-- [ ] Test at 96dp: text remains bold and legible
-- [ ] Use Arial or system font
-
----
-
-## Issue #6: Thin stroke widths disappear at mobile sizes
+## ISSUE #6: Thin Stroke Widths Disappear at Mobile
 
 **Priority:** P1
-**Labels:** svg, priority/P1, svg-readability
-**GitHub:** https://github.com/aider/dmv-android/issues/6
-
-### Assets Affected
-Most PAVEMENT_* and INTERSECTION_* assets (~40 assets):
-- Lane markings: 4px or 10px in 300px viewBox
-- Stop lines: 4px in 200px viewBox
-- Directional arrows: No explicit width (defaults to 1px)
-
-**Calculation:** 4px in 300px viewBox at 96dp = 1.28dp (invisible)
+**Category:** readability
+**Assets:** PAVEMENT_*, INTERSECTION_* (~40 assets)
 
 ### Problem
-Road markings become hairline artifacts or vanish completely at 96dp. Users can't distinguish solid vs dashed lines, see stop lines, or read lane arrows.
+Lane markings and stop lines use 4px stroke widths which render at ~1.28-1.9dp at 96dp, borderline invisible.
 
-### Why It Matters
-Mobile rendering requires optical sizing, not geometric accuracy. We must "cheat" scale to maintain readability.
+**Examples:**
+- PAVEMENT_DOUBLE_YELLOW_SOLID: center lines 4px stroke
+- INTERSECTION_* stop lines: 4px stroke
 
-### Acceptance Criteria
-- [ ] Lane markings: minimum 8px stroke in 300px viewBox (2.5dp at 96dp)
-- [ ] Stop/yield lines: minimum 6px in 200px viewBox (2.8dp)
-- [ ] Crosswalk stripes: minimum 8px width
-- [ ] Directional arrows: minimum 8-10px stroke
-- [ ] Test at 96dp: all markings visible
-- [ ] Test at 48dp: still recognizable
+Per svg_review_rules.md Section 4: "Any stroke that vanishes entirely at 96dp render = hard fail."
+
+### Why it matters
+Critical road markings must be clearly visible for training effectiveness.
+
+### Acceptance criteria
+- [ ] Lane markings: minimum 8px stroke in 300×200 viewBox (2.5dp at 96dp)
+- [ ] Stop lines: minimum 8-12px stroke (3-4dp at 96dp)
+- [ ] Sign borders: minimum 6px stroke (2.9dp at 96dp)
+- [ ] Border visible at 96dp
+- [ ] Strokes do not vanish at 48dp
+- [ ] All ~40 affected files updated
+
+### Suggested fix approach
+Batch update stroke-width values:
+```bash
+# Find all stroke-width < 6
+grep -l 'stroke-width="[1-5]"' assets/svg/PAVEMENT_*.svg assets/svg/INTERSECTION_*.svg
+
+# Update to 8px for lane markings
+sed -i '' 's/stroke-width="4"/stroke-width="8"/g' assets/svg/PAVEMENT_*.svg
+```
+
+Verify visually at 96px render.
+
+### Reference
+- svg_review_rules.md Section 4: Minimum stroke widths
+- Previous audit issue #6
 
 ---
 
-## Issue #7: Undefined marker references break arrow rendering
+## ISSUE #7: Undefined Marker References Break Arrows
 
 **Priority:** P1
-**Labels:** svg, priority/P1, svg-correctness
-**GitHub:** https://github.com/aider/dmv-android/issues/7
-
-### Assets Affected
-- INTERSECTION_ROUNDABOUT: `marker-end="url(#arrowhead)"` but no definition
-- SAFE_BLIND_SPOT_CHECK: `marker-end="url(#arrow)"` but no definition
+**Category:** correctness
+**Assets:** INTERSECTION_ROUNDABOUT, SAFE_BLIND_SPOT_CHECK (possibly others)
 
 ### Problem
-SVG references non-existent marker elements, causing arrows to render as lines without arrowheads. Direction becomes unclear.
+SVGs reference markers via `marker-end="url(#arrowhead)"` but the `<marker id="arrowhead">` is not defined in `<defs>`, causing broken arrow rendering.
 
-### Why It Matters
-Directional arrows teach traffic flow and right-of-way. Without arrowheads, they don't communicate direction.
+### Why it matters
+Broken references cause rendering failures. Arrows are critical training cues for direction and flow.
 
-### Acceptance Criteria
-- [ ] Audit all marker-end/marker-start references
-- [ ] Verify matching <marker id="..."> in <defs>
-- [ ] Add missing definitions
-- [ ] Test in browser: arrowheads appear
-- [ ] Size appropriately relative to stroke-width
+### Acceptance criteria
+- [ ] All `marker-end`, `marker-start`, `marker-mid` references resolve to defined `<marker>` in `<defs>`
+- [ ] Marker definitions present in each SVG that uses them (not external)
+- [ ] Arrows render correctly at all sizes
+- [ ] Valid XML (no broken url() references)
 
-### Suggested Fix
+### Suggested fix approach
+1. Find all `marker-end` references: `grep -r 'marker-' assets/svg/`
+2. For each file, verify corresponding `<marker>` exists in `<defs>`
+3. Add missing marker definitions or fix id mismatches
+
+**Example marker definition:**
 ```xml
 <defs>
-  <marker id="arrowhead" markerWidth="10" markerHeight="10"
-          refX="9" refY="3" orient="auto">
-    <polygon points="0 0, 10 3, 0 6" fill="#FFFFFF"/>
+  <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#FFFFFF"/>
   </marker>
 </defs>
 ```
 
+### Reference
+- svg_review_rules.md Section 8: All url(#id) references must resolve
+- Previous audit issue #7
+
 ---
 
-## Issue #8: Inconsistent color palette across road/grass/marking elements
+## ISSUE #8: Inconsistent Color Palette
 
 **Priority:** P1
-**Labels:** svg, priority/P1, svg-consistency
-**GitHub:** https://github.com/aider/dmv-android/issues/8
-
-### Assets Affected
-~40 assets with road surfaces show color variation:
-- Road: #4A4A4A (most), but #CCCCCC (PARKING_PARALLEL_STEPS), #EEEEEE (SAFE_BLIND_SPOT_CHECK)
-- Grass: #88AA88 (most), #87CEEB (SPEED_HIGHWAY_70MPH sky)
-- Yellow lines: #FFCC00 (verify consistency)
+**Category:** consistency
+**Assets:** ~40 assets with road surfaces, grass, vehicles
 
 ### Problem
-Visual discontinuity when assets cycle in quiz. Users see green background, then gray, then green - feels like different design systems.
+Road surface colors vary: #4A4A4A, #3A3A3A, #5A5A5A
+Grass colors vary: #88AA88, #90B090, #80A080
+Vehicle colors inconsistent
 
-### Why It Matters
-Color consistency is hallmark of professional design. Consistent colors help build mental models.
+### Why it matters
+Professional appearance requires consistent color palette. Helps users recognize scene elements.
 
-### Acceptance Criteria
-Define standard palette:
-- [ ] Road surface: #4A4A4A
-- [ ] Grass/off-road: #88AA88
-- [ ] Sky (highway scenes): #87CEEB
-- [ ] Yellow center lines: #FFCC00
-- [ ] White markings: #FFFFFF
-- [ ] Curbs: #888888
-- [ ] Ego vehicle: #3366CC
-- [ ] Other vehicles: #666666
-- [ ] Document in assets/review/color_palette.md
+### Acceptance criteria
+- [ ] Road surface: #4A4A4A everywhere
+- [ ] Grass/off-road: #88AA88 everywhere
+- [ ] Lane white: #FFFFFF everywhere
+- [ ] Lane yellow: #FFCC00 everywhere
+- [ ] Ego vehicle: #3366CC (blue) everywhere
+- [ ] Other vehicles: #666666 (gray) everywhere
+- [ ] Curbs: #888888 everywhere
+- [ ] All ~40 affected files updated
+- [ ] Document color standards in style guide
 
----
+### Suggested fix approach
+Batch find-replace:
+```bash
+# Normalize road surface
+sed -i '' 's/fill="#[35]A3A3A"/fill="#4A4A4A"/g' assets/svg/*.svg
 
-## Issue #9: Inconsistent shadow/depth effects across signs
-
-**Priority:** P2
-**Labels:** svg, priority/P2, svg-consistency
-**GitHub:** https://github.com/aider/dmv-android/issues/9
-
-### Assets Affected
-- MUTCD_R1-1_STOP: Has shadow
-- MUTCD_R1-2_YIELD: Has shadow
-- MUTCD_W1-1_CURVE_RIGHT: Has shadow
-- Many others: No shadow
-
-### Problem
-Inconsistent shadows create unintended visual hierarchy. At 96dp, 2px shadow offset becomes ~1dp - barely visible and may cause artifacts.
-
-### Why It Matters
-Low priority but affects polish. Either all signs have shadows or none should.
-
-### Acceptance Criteria
-Choose approach:
-- [ ] **Option A (recommended):** Remove all shadows
-- [ ] **Option B:** Add shadows to all signs consistently
-- [ ] Document in style guide
-
-**Recommendation:** Remove shadows. Simpler SVGs, faster rendering, crisper at small sizes. Real signs don't have drop shadows.
-
----
-
-## Issue #10: SAFE_* and SPEED_* training scenarios lack instructional clarity
-
-**Priority:** P1
-**Labels:** svg, priority/P1, svg-correctness
-**GitHub:** https://github.com/aider/dmv-android/issues/10
-
-### Assets Affected
-**SAFE_* (4):** BLIND_SPOT_CHECK, DEFENSIVE_SPACE_CUSHION, MIRROR_ADJUSTMENT, TIRE_TREAD_DEPTH
-**SPEED_* (6):** FOLLOWING_DISTANCE_3SEC, STOPPING_DISTANCE, SCHOOL_ZONE_20MPH, PASSING_CLEARANCE, LIMIT_RESIDENTIAL_30, HIGHWAY_70MPH
-
-### Problem
-Training diagrams teaching complex concepts have issues:
-- BLIND_SPOT_CHECK: 14px text illegible, missing clear "checking" indicator
-- FOLLOWING_DISTANCE_3SEC: 18px label marginally readable
-- STOPPING_DISTANCE: Need to verify component visualization
-- Others: Need clarity verification
-
-### Why It Matters
-These teach critical safety concepts. Unlike signs (just need recognition), diagrams must communicate processes and measurements.
-
-### Acceptance Criteria
-- [ ] Remove illegible text labels (rely on question text)
-- [ ] Use color coding and zones instead of text
-- [ ] Add directional arrows where relevant
-- [ ] Sufficient stroke widths (per issue #6)
-- [ ] Consistent visual language: arrows=direction, zones=distance
-- [ ] Test at 96dp for clarity
-
----
-
-## Issue #11: Traffic signal visual hierarchy needs improvement
-
-**Priority:** P1
-**Labels:** svg, priority/P1, svg-readability
-**GitHub:** https://github.com/aider/dmv-android/issues/11
-
-### Assets Affected
-All 13 SIGNAL_* assets (10 standard + 3 pedestrian)
-
-### Problem
-Need to verify:
-1. Inactive lights visible at 96dp (or blend with housing?)
-2. Active lights bright enough to stand out?
-3. Flashing signals distinguished from solid? (SVG has no animation)
-4. Arrows clearly visible inside active lights?
-
-Potential issues:
-- Inactive #222222 may blend with housing at small sizes
-- Arrow signals need sufficient stroke width
-- Pedestrian countdown: Is number legible?
-
-### Why It Matters
-Signals tested heavily (15+ questions). Users must instantly recognize active light, color, arrow vs solid, flashing vs solid.
-
-### Acceptance Criteria
-- [ ] Active lights: bright saturated colors (#FF4444 red, #FFFF00 yellow, #44FF44 green)
-- [ ] Inactive lights: #444444 (visible but clearly "off")
-- [ ] Active light has visual "glow" at 96dp
-- [ ] Arrow signals: ≥3px stroke, high contrast (black/white)
-- [ ] Pedestrian countdown: ≥20px font or simplify to icon
-- [ ] Test all 13 at 96px height: instant recognition
-
----
-
-## Issue #12: Inconsistent internal padding causes centering issues
-
-**Priority:** P2
-**Labels:** svg, priority/P2, svg-consistency
-**GitHub:** https://github.com/aider/dmv-android/issues/12
-
-### Assets Affected
-All assets, especially MUTCD signs with varying viewBox
-
-### Problem
-Assets with same viewBox may have different internal padding, causing content to appear different sizes in UI and creating visual "jumping".
-
-### Why It Matters
-Consistent padding ensures predictable sizing, no clipping, optical alignment, professional appearance. Lower priority but important for polish.
-
-### Acceptance Criteria
-Establish standard padding:
-- [ ] MUTCD signs (200x200): 10px padding → 180x180 content area
-- [ ] MUTCD guide (200x150): 10px → 180x130 content
-- [ ] Intersections (200x200): 5px → 190x190 content
-- [ ] Pavement (300x200): 10px ends → 280x180 content
-- [ ] Signals (100x250): 10px → 80x230 content
-- [ ] Document in assets/review/padding_standards.md
-
----
-
-## Issue #13: PARKING_PARALLEL_STEPS step numbers illegible (P0)
-
-**Priority:** P0
-**Labels:** svg, priority/P0, svg-readability
-**GitHub:** https://github.com/aider/dmv-android/issues/13
-
-### Assets Affected
-- PARKING_PARALLEL_STEPS (used by TX-PRK-0023)
-
-### Problem
-Step numbers use font-size="10" in 200x200 viewBox. At 96dp: 10 × (96/200) = 4.8dp - completely illegible. Question asks "which way first?" requiring step distinction. Current numbers are physically impossible to read.
-
-### Why It Matters
-P0 because asset is referenced by question, question depends on distinguishing steps, current implementation fails completely.
-
-### Acceptance Criteria
-- [ ] Step indicators distinguishable at 96dp
-- [ ] Users can identify Step 1 vs 2 vs 3 instantly
-- [ ] Visual connection between indicator and vehicle position
-- [ ] Recognizable at 48dp
-
-**Recommended fix:** Replace with large symbolic indicators:
-```xml
-<circle cx="77" cy="80" r="12" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
-<text x="77" y="86" font-family="Arial" font-size="18" font-weight="900">1</text>
+# Normalize grass
+sed -i '' 's/fill="#[89]0[AB]0[89]0"/fill="#88AA88"/g' assets/svg/*.svg
 ```
 
+Create `style_tokens.py` or similar to document standard colors.
+
+### Reference
+- svg_review_rules.md Section 5: Colors match MUTCD spec and style guide
+- Previous audit issue #8
+
 ---
 
-## Issue #14: Remove opacity overlays for mobile performance
+## P2 ISSUES (NICE-TO-HAVE - POLISH)
+
+Lower priority improvements.
+
+---
+
+## ISSUE #10: Shadow/Opacity Effects Add No Value at Mobile
 
 **Priority:** P2
-**Labels:** svg, priority/P2, svg-performance
-**GitHub:** https://github.com/aider/dmv-android/issues/14
-
-### Assets Affected
-Assets using opacity:
-- PAVEMENT_*: Often `<rect fill="#000000" opacity="0.05"/>` for texture
-- MUTCD signs: Shadows with opacity="0.15"
-- Signals: Active lights with opacity="0.6"
+**Category:** performance
+**Assets:** MUTCD_R1-1_STOP, MUTCD_R1-2_YIELD, others with `<filter>` or low-opacity overlays
 
 ### Problem
-Opacity blending requires additional rendering passes, impacts performance on budget Android devices. At 96dp, 5% opacity texture is imperceptible noise - cost with zero benefit.
+Some signs use subtle shadow effects or 5-15% opacity overlays that are invisible at 96dp but add parsing overhead.
 
-### Why It Matters
-Budget phones (common in DMV demographic) have constrained GPU. Simpler SVGs = faster rendering = better UX.
+### Why it matters
+Performance optimization. Invisible effects should be removed.
 
-### Acceptance Criteria
-- [ ] Audit all opacity usage
-- [ ] Remove texture overlays (opacity < 0.1)
-- [ ] Remove/replace shadow effects (per issue #9)
-- [ ] Retain functional opacity (signal glow if aids recognition)
-- [ ] Test before/after performance on mid-range device
-- [ ] Document kept effects and rationale
+### Acceptance criteria
+- [ ] Remove all `<filter>` elements unused at 96dp
+- [ ] Remove opacity overlays < 0.2 (20%)
+- [ ] File size reduction
+- [ ] Visual appearance unchanged at target size
+- [ ] No performance regression
+
+### Suggested fix approach
+1. Identify all `<filter>` elements: `grep -l '<filter' assets/svg/*.svg`
+2. Identify low-opacity elements: `grep -E 'opacity="0\.[0-1]' assets/svg/*.svg`
+3. Remove and test at 96px render
+
+### Reference
+- Previous audit issue #10
 
 ---
 
-## Issue #15: Create missing high-value training assets
-
-**Priority:** P1
-**Labels:** svg, priority/P1, svg-missing-asset
-**GitHub:** https://github.com/aider/dmv-android/issues/15
-
-### Assets Needed
-1. **INTERSECTION_SIGNAL_PROTECTED_LEFT** (P1) - Protected left turn scenario
-2. **PAVEMENT_GORE_AREA** (P1) - Exit ramp striped triangle
-3. **MARKING_HAND_SIGNAL_LEFT** (P1) - Arm extended left
-4. **MARKING_HAND_SIGNAL_RIGHT** (P1) - Arm bent up
-5. **MARKING_HAND_SIGNAL_STOP** (P1) - Arm bent down
-6. **INTERSECTION_DOUBLE_TURN_LANES** (P2) - Two left turn lanes
-7. **PAVEMENT_SHARED_CENTER_TURN_LANE_SCENARIO** (P2) - Using center turn lane
-
-### Problem
-These concepts appear in DMV guides but lack visuals. Questions must rely on text-only, which is less effective than visual demonstration.
-
-### Why It Matters
-Visual learning more effective for spatial/procedural concepts. Hand signals especially: "arm bent up at elbow" confusing in text, instantly clear in diagram.
-
-### Acceptance Criteria
-For each new asset:
-- [ ] Follow viewBox standards (issue #3)
-- [ ] Follow color palette (issue #8)
-- [ ] Follow stroke guidelines (issue #6)
-- [ ] Avoid text dependency (issue #2)
-- [ ] Include learning cues (issue #1)
-- [ ] Test at 96dp and 48dp
-- [ ] Add manifest entry
-
-**Priority:** Hand signals (3) + gore area first, others later.
-
----
-
-## Issue #16: Verify and fix any clipping/cropping issues
-
-**Priority:** P1
-**Labels:** svg, priority/P1, svg-correctness
-**GitHub:** https://github.com/aider/dmv-android/issues/16
-
-### Assets Affected
-Systematic audit needed; potential candidates:
-- Assets with complex paths near viewBox edges
-- Rotated elements (diamond warning signs)
-- Text extending beyond calculated bounds
-- Elements positioned at viewBox boundaries
-
-### Problem
-Elements extending beyond viewBox get clipped, causing missing sign parts, truncated text, incomplete markings, broken appearance.
-
-### Why It Matters
-Clipped content creates broken appearance and may remove critical information. A stop sign with top cut off is not recognizable.
-
-### Acceptance Criteria
-- [ ] Audit all 109 SVGs for clipping
-- [ ] Verify all content within viewBox bounds
-- [ ] Check rotated elements: corners stay in bounds
-- [ ] Check text: bounding box within viewBox
-- [ ] Fix by expanding viewBox OR repositioning content
-- [ ] Test at 96dp: no visual clipping
-
-**Approach:** Create audit script + manual visual check. If audit finds zero issues, close as "verified OK".
-
----
-
-## Issue #17: Verify all manifest entries match files
-
-**Priority:** P1
-**Labels:** svg, priority/P1, svg-consistency
-**GitHub:** https://github.com/aider/dmv-android/issues/17
-
-### Assets Affected
-All 109 assets (comprehensive audit)
-
-### Problem
-Manifest must perfectly align with filesystem:
-1. Every manifest entry has matching file
-2. Every file has matching manifest entry
-3. AssetId matches filename (without .svg)
-4. File paths correct ("assets/svg/ASSETID.svg")
-
-**Current state:** 109 entries, 109 files - looks good but needs verification.
-
-### Why It Matters
-Mismatches cause runtime crashes, missing assets in quiz, incorrect assets shown, development confusion.
-
-### Acceptance Criteria
-- [ ] Every manifest entry has corresponding file
-- [ ] Every file has corresponding manifest entry
-- [ ] AssetIds match filenames
-- [ ] File paths formatted correctly
-- [ ] No duplicate assetIds
-- [ ] All 109 pass validation
-- [ ] Document validation script
-
-**Create:** `assets/scripts/validate_manifest.py` for automated checking.
-
----
-
-## Issue #18: Document asset creation standards and style guide
+## ISSUE #11: Excessive Metadata in Generated SVGs
 
 **Priority:** P2
-**Labels:** svg, priority/P2, documentation
-**GitHub:** https://github.com/aider/dmv-android/issues/18
+**Category:** performance
+**Assets:** Any SVGs with large `<metadata>` blocks or tool-specific comments
 
 ### Problem
-No written standards for viewBox, colors, strokes, padding, text, shadows, naming, manifest format. Leads to inconsistency, uncertainty, onboarding difficulty.
+Some SVGs may contain editor metadata (Inkscape, Illustrator IDs, etc.) that bloat file size.
 
-### Why It Matters
-Without documentation, problems in issues #1-16 will recur. Documentation serves as design system, quality checklist, onboarding guide, decision record.
+### Why it matters
+Smaller files = faster loading. Metadata serves no purpose in production.
 
-### Acceptance Criteria
-Create `assets/review/style_guide.md` covering:
-- [ ] ViewBox standards by category (ref issue #3)
-- [ ] Color palette with hex values (ref issue #8)
-- [ ] Stroke widths for readability (ref issue #6)
-- [ ] Padding standards (ref issue #12)
-- [ ] Typography rules (ref issue #2)
-- [ ] Effects policy (ref issues #9, #14)
-- [ ] Training asset requirements (ref issues #1, #10)
-- [ ] File naming convention
-- [ ] Manifest format
-- [ ] Testing checklist
+### Acceptance criteria
+- [ ] All `<metadata>` blocks removed
+- [ ] All XML comments removed (except one-line attribution)
+- [ ] Unused `<defs>` cleaned up
+- [ ] File size < 3KB per file
+- [ ] Visual appearance unchanged
 
-Additional docs:
-- [ ] `viewbox_standards.md` - Detailed rationale
-- [ ] `color_palette.md` - Swatch reference
-- [ ] `padding_standards.md` - Visual examples
-- [ ] `validate_manifest.py` - Script
-- [ ] `validate_svg_quality.py` - Quality checks
+### Suggested fix approach
+Use SVGO or manual cleanup:
+```bash
+# Remove metadata
+svgo --remove-metadata assets/svg/*.svg
+
+# Or manual
+sed -i '' '/<metadata>/,/<\/metadata>/d' assets/svg/*.svg
+```
+
+### Reference
+- svg_review_rules.md Section 8: No excessive metadata
+- Previous audit issue #11
 
 ---
 
-## Issue #19: SPEED_HIGHWAY_70MPH unused by any question
+## ISSUE #14: Missing High-Value Concept Assets
 
 **Priority:** P2
-**Labels:** svg, priority/P2, svg-consistency
-**GitHub:** https://github.com/aider/dmv-android/issues/19
-
-### Assets Affected
-- SPEED_HIGHWAY_70MPH (exists but not referenced by any question)
+**Category:** coverage
+**Assets:** Not yet created
 
 ### Problem
-Only unused asset out of 109. Similar assets exist and ARE used (MUTCD_R2-1_SPEED_LIMIT_70 used 2×).
+Some common DMV test concepts lack visual support:
+- Hand signals (left, right, stop)
+- Gore area / exit ramp taper
+- Roundabout multi-lane positioning
+- Shared center turn lane detail
+- HOV lane entry/exit
+- Perpendicular/angle parking
 
-Possible reasons:
-1. Created but question removed/changed
-2. Created speculatively for future
-3. Redundant with MUTCD_R2-1_SPEED_LIMIT_70
+### Why it matters
+Visual assets significantly improve learning retention for spatial concepts.
 
-### Why It Matters
-Low priority (doesn't break anything) but affects maintenance burden, confusion, inventory hygiene.
+### Acceptance criteria
+- [ ] Assets created following established standards
+- [ ] Consistent viewBox with category
+- [ ] Readable at 96dp, recognizable at 48dp
+- [ ] Assigned to relevant questions
+- [ ] Manifest entries added
 
-### Acceptance Criteria
-Choose resolution:
-- [ ] **Option A:** Create question(s) using this asset
-- [ ] **Option B:** Document as "reserved for future use" in manifest
-- [ ] **Option C:** Remove if redundant
-- [ ] Update manifest accordingly
+### Suggested fix approach
+Prioritize based on question coverage gaps:
+1. Hand signals (if questions exist)
+2. Gore area / ramp tapers
+3. Multi-lane roundabout
+4. Others as needed
 
-**Recommendation:** Keep with note "Available for future highway speed questions". Cost of keeping is minimal, may be useful later. This is the only unused asset - excellent utilization rate.
-
----
-
-## Summary Statistics
-
-**Total Issues:** 19
-- **P0 (Critical):** 2 issues (#4, #13)
-- **P1 (Important):** 12 issues (#1, #2, #3, #6, #7, #8, #10, #11, #15, #16, #17)
-- **P2 (Nice-to-have):** 5 issues (#5, #9, #12, #14, #18, #19)
-
-**By Category:**
-- svg-correctness: 6 issues
-- svg-readability: 5 issues
-- svg-consistency: 6 issues
-- svg-performance: 2 issues
-- svg-missing-asset: 1 issue
-- documentation: 1 issue
-
-**Assets Affected:**
-- Direct fixes needed: ~50 assets
-- Batch processing candidates: ~60 assets
-- New assets to create: 7 assets
-- Comprehensive audits: 109 assets (2 issues)
-
-**Next Actions:**
-1. Fix P0 issues #4, #13 immediately
-2. Run audit scripts (issues #16, #17)
-3. Begin P1 batch fixes (strokes, text, viewBox)
-4. Create missing high-value assets (#15)
-5. Polish with P2 improvements
+### Reference
+- Audit report Section: Coverage Analysis
 
 ---
 
-**Document maintained by:** SVG Review Agent
-**Last updated:** 2026-02-09
-**GitHub Issues:** https://github.com/aider/dmv-android/issues
+## ISSUE #16: Documentation - Create SVG Style Guide
+
+**Priority:** P2
+**Category:** documentation
+**Assets:** N/A (new documentation)
+
+### Problem
+No written style guide exists for SVG asset creation standards.
+
+### Why it matters
+Future assets need clear guidelines to maintain consistency.
+
+### Acceptance criteria
+- [ ] Document viewBox standards by category
+- [ ] Document color palette with hex codes
+- [ ] Document stroke width minimums
+- [ ] Document padding requirements (8% minimum)
+- [ ] Document MUTCD geometry specs for common signs
+- [ ] Include code examples and formulas
+- [ ] Reference svg_review_rules.md
+
+### Suggested fix approach
+Create `assets/SVG_STYLE_GUIDE.md` with:
+- Standards from audit report recommendations section
+- MUTCD geometry formulas
+- Color palette reference
+- Mobile readability checklist
+
+### Reference
+- Audit report Section: Standards Recommendations
+
+---
+
+## ISSUE #17: Validation - Add Automated Geometry Tests
+
+**Priority:** P2
+**Category:** tooling
+**Assets:** N/A (new test suite)
+
+### Problem
+No automated validation of sign geometry correctness.
+
+### Why it matters
+Prevents regression of geometry fixes. Enforces MUTCD compliance automatically.
+
+### Acceptance criteria
+- [ ] Python script to validate Golden Set geometry
+- [ ] Check STOP sign is regular octagon (angles, radii, sides)
+- [ ] Check YIELD is equilateral triangle, point-down
+- [ ] Check speed limits have >= 8% padding
+- [ ] Check all viewBox attributes present
+- [ ] Check all marker references resolve
+- [ ] Runs in CI/test suite
+
+### Suggested fix approach
+Create `assets/test_svg_geometry.py`:
+```python
+def test_stop_sign_is_regular_octagon():
+    tree = ET.parse('assets/svg/MUTCD_R1-1_STOP.svg')
+    polygon = tree.find('.//polygon[@fill="#C1272D"]')
+    points = parse_polygon_points(polygon.get('points'))
+
+    angles = calculate_internal_angles(points)
+    assert all(134.5 <= a <= 135.5 for a in angles), "STOP sign not regular octagon"
+
+    radii = calculate_radii_from_center(points)
+    assert max(radii) - min(radii) < 1.0, "STOP sign radii not equal"
+```
+
+Run in CI: `pytest assets/test_svg_geometry.py`
+
+### Reference
+- svg_review_rules.md Section 8: Automated validation recommended
+
+---
+
+## Issue Creation Summary
+
+**Total Issues:** 23
+- **P0 (Blocking):** 6 (NEW: sign geometry failures, XML errors, padding violations)
+- **P1 (Important):** 12 (from previous audit + new geometry-related)
+- **P2 (Nice-to-have):** 5 (polish, documentation, tooling)
+
+**Estimated Fix Time:**
+- P0 issues: 4-6 hours (geometry regeneration + attribute cleanup + padding fixes)
+- P1 issues: 8-12 hours (stroke widths, training cues, viewBox normalization)
+- P2 issues: 4-8 hours (cleanup, documentation, tests)
+
+**Total:** ~20-26 hours to address all issues
+
+**Recommended Order:**
+1. Fix all P0 issues first (blocking)
+2. Apply P1 batched fixes (readability, consistency)
+3. Polish with P2 improvements (performance, documentation)
+
+---
+
+**End of Issues Document**

@@ -1,13 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <polygon points="100,10 190,75 160,175 40,175 10,75" fill="#C8F526" stroke="#000000" stroke-width="4"/>
-  <circle cx="80" cy="70" r="12" fill="#000000"/>
-  <line x1="80" y1="82" x2="80" y2="115" stroke="#000000" stroke-width="7"/>
-  <line x1="65" y1="95" x2="95" y2="95" stroke="#000000" stroke-width="7"/>
-  <line x1="80" y1="115" x2="70" y2="140" stroke="#000000" stroke-width="7"/>
-  <line x1="80" y1="115" x2="90" y2="140" stroke="#000000" stroke-width="7"/>
-  <circle cx="120" cy="70" r="12" fill="#000000"/>
-  <line x1="120" y1="82" x2="120" y2="115" stroke="#000000" stroke-width="7"/>
-  <line x1="105" y1="95" x2="135" y2="95" stroke="#000000" stroke-width="7"/>
-  <line x1="120" y1="115" x2="110" y2="140" stroke="#000000" stroke-width="7"/>
-  <line x1="120" y1="115" x2="130" y2="140" stroke="#000000" stroke-width="7"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_S1-1_SCHOOL_CROSSING">
+<path d="M100 16 L156 66 L142 174 L58 174 L44 66 Z" fill="#D9F000" stroke="#000000" stroke-width="6"/>
+  <g fill="#000000" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="84" cy="76" r="8"/>
+    <path d="M84 84 V112" stroke-width="6"/>
+    <path d="M72 96 H94" stroke-width="6"/>
+    <path d="M84 112 L74 132" stroke-width="6"/>
+    <path d="M84 112 L96 132" stroke-width="6"/>
+    <circle cx="114" cy="82" r="8"/>
+    <path d="M114 90 V118" stroke-width="6"/>
+    <path d="M102 102 H124" stroke-width="6"/>
+    <path d="M114 118 L102 138" stroke-width="6"/>
+    <path d="M114 118 L126 138" stroke-width="6"/>
+  </g>
 </svg>

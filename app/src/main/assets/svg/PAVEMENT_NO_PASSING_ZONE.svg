@@ -1,17 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400">
-  <!-- Road surface -->
-  <rect x="0" y="0" width="300" height="400" fill="#555555"/>
-
-  <!-- Double solid yellow lines (no passing zone) -->
-  <line x1="145" y1="0" x2="145" y2="400" stroke="#FFFF00" stroke-width="3"/>
-  <line x1="155" y1="0" x2="155" y2="400" stroke="#FFFF00" stroke-width="3"/>
-
-  <!-- Edge lines -->
-  <line x1="20" y1="0" x2="20" y2="400" stroke="#FFFFFF" stroke-width="2"/>
-  <line x1="280" y1="0" x2="280" y2="400" stroke="#FFFFFF" stroke-width="2"/>
-
-  <!-- "NO PASSING ZONE" text -->
-  <text x="70" y="160" font-family="Arial Black, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">NO</text>
-  <text x="70" y="190" font-family="Arial Black, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PASSING</text>
-  <text x="70" y="220" font-family="Arial Black, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">ZONE</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="PAVEMENT_NO_PASSING_ZONE">
+<g transform="translate(12 41.3333) scale(0.5867)">
+    <!-- Road surface -->
+      <rect x="0" y="0" width="300" height="200" fill="#4A4A4A"/>
+      <!-- Subtle texture -->
+      
+      <text x="150" y="85" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="900" fill="#FFFFFF" text-anchor="middle">NO</text>
+      <text x="150" y="120" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="900" fill="#FFFFFF" text-anchor="middle">PASSING</text>
+      <text x="150" y="155" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="900" fill="#FFFFFF" text-anchor="middle">ZONE</text>
+  </g>
 </svg>

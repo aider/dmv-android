@@ -1,20 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 200">
-  <!-- Shadow -->
-  <rect x="7" y="7" width="140" height="190" rx="6" fill="#000000" opacity="0.15"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_R7-8_NO_PARKING">
+<g transform="translate(34 12) scale(0.88)">
+    <!-- Main sign background -->
+      <rect x="5" y="5" width="140" height="190" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="4"/>
 
-  <!-- Main sign background -->
-  <rect x="5" y="5" width="140" height="190" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="4"/>
+      <!-- Inner border -->
+      <rect x="12" y="12" width="126" height="176" rx="3" fill="none" stroke="#000000" stroke-width="2"/>
 
-  <!-- Inner border -->
-  <rect x="12" y="12" width="126" height="176" rx="3" fill="none" stroke="#000000" stroke-width="2"/>
+      <!-- NO text in red -->
+      <text x="75" y="50" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="900" fill="#C1272D" text-anchor="middle" letter-spacing="2">NO</text>
 
-  <!-- NO text in red -->
-  <text x="75" y="50" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="900" fill="#C1272D" text-anchor="middle" letter-spacing="2">NO</text>
+      <!-- Large P symbol with circle -->
+      <circle cx="75" cy="110" r="38" fill="none" stroke="#000000" stroke-width="4"/>
+      <text x="75" y="130" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="900" fill="#000000" text-anchor="middle">P</text>
 
-  <!-- Large P symbol with circle -->
-  <circle cx="75" cy="110" r="38" fill="none" stroke="#000000" stroke-width="4"/>
-  <text x="75" y="130" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="900" fill="#000000" text-anchor="middle">P</text>
-
-  <!-- PARKING text -->
-  <text x="75" y="175" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#000000" text-anchor="middle" letter-spacing="1">PARKING</text>
+      <!-- PARKING text -->
+      <text x="75" y="175" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#000000" text-anchor="middle" letter-spacing="1">PARKING</text>
+  </g>
 </svg>

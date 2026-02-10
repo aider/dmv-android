@@ -1,24 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
-  <!-- Road surface -->
-  <rect x="0" y="0" width="400" height="300" fill="#555555"/>
-
-  <!-- Left lanes (normal dashed white) -->
-  <line x1="100" y1="0" x2="100" y2="300" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="15,10"/>
-
-  <!-- Center turn lane boundaries (double yellow with breaks) -->
-  <line x1="150" y1="0" x2="150" y2="300" stroke="#FFFF00" stroke-width="3" stroke-dasharray="20,15"/>
-  <line x1="250" y1="0" x2="250" y2="300" stroke="#FFFF00" stroke-width="3" stroke-dasharray="20,15"/>
-
-  <!-- Right lanes (normal dashed white) -->
-  <line x1="300" y1="0" x2="300" y2="300" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="15,10"/>
-
-  <!-- Left turn arrow in center lane -->
-  <line x1="200" y1="220" x2="200" y2="140" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
-  <path d="M 200,140 L 165,180" stroke="#FFFFFF" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <polygon points="158,178 165,180 162,170" fill="#FFFFFF"/>
-
-  <!-- Right turn arrow in center lane (opposite direction) -->
-  <line x1="200" y1="80" x2="200" y2="160" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
-  <path d="M 200,160 L 235,120" stroke="#FFFFFF" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <polygon points="242,122 235,120 238,130" fill="#FFFFFF"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="PAVEMENT_TURN_LANE_CENTER">
+<g transform="translate(12 41.3333) scale(0.5867)">
+    <!-- Road surface -->
+      <rect x="0" y="0" width="300" height="200" fill="#4A4A4A"/>
+      <!-- Subtle texture -->
+      
+      <!-- Double yellow on sides -->
+      <rect x="80" y="0" width="6" height="200" fill="#FFCC00"/>
+      <rect x="214" y="0" width="6" height="200" fill="#FFCC00"/>
+      <!-- Center lane arrows pointing both ways -->
+      <g fill="#FFFFFF">
+        <rect x="140" y="60" width="20" height="30" rx="3"/>
+        <path d="M 150,50 L 130,65 L 170,65 Z"/>
+        <rect x="140" y="110" width="20" height="30" rx="3"/>
+        <path d="M 150,150 L 170,135 L 130,135 Z"/>
+      </g>
+  </g>
 </svg>

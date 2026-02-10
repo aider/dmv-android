@@ -1,6 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
-  <rect x="7" y="7" width="190" height="90" rx="6" fill="#000000" opacity="0.15"/>
-  <rect x="5" y="5" width="190" height="90" rx="6" fill="#006B3F" stroke="#FFFFFF" stroke-width="3"/>
-  <text x="30" y="45" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900" fill="#FFFFFF" text-anchor="start">DALLAS</text>
-  <text x="30" y="72" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="start">215 MILES</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_D3-1_DISTANCE_SIGN">
+<rect x="12" y="52" width="176" height="96" rx="8" fill="#006B3F" stroke="#FFFFFF" stroke-width="4"/>
+  <text x="28" y="94" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="900" fill="#FFFFFF">DALLAS</text>
+  <text x="28" y="126" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">215 MILES</text>
 </svg>

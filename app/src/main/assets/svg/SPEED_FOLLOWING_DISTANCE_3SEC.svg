@@ -1,32 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
-  <!-- Road -->
-  <rect x="0" y="100" width="400" height="80" fill="#555555"/>
-  <line x1="0" y1="140" x2="400" y2="140" stroke="#FFFF00" stroke-width="3" stroke-dasharray="20,15"/>
-
-  <!-- Leading vehicle -->
-  <rect x="300" y="110" width="40" height="25" fill="#CC0000" stroke="#660000" stroke-width="2" rx="3"/>
-  <rect x="305" y="115" width="12" height="10" fill="#87CEEB"/>
-  <rect x="323" y="115" width="12" height="10" fill="#87CEEB"/>
-
-  <!-- Following vehicle -->
-  <rect x="150" y="110" width="40" height="25" fill="#0066CC" stroke="#003366" stroke-width="2" rx="3"/>
-  <rect x="155" y="115" width="12" height="10" fill="#87CEEB"/>
-  <rect x="173" y="115" width="12" height="10" fill="#87CEEB"/>
-
-  <!-- Distance marker -->
-  <line x1="190" y1="80" x2="300" y2="80" stroke="#00AA00" stroke-width="3" marker-start="url(#arrowleft)" marker-end="url(#arrowright)"/>
-  <text x="245" y="70" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#00AA00" text-anchor="middle">3 SEC</text>
-
-  <!-- Reference point (sign post) -->
-  <rect x="295" y="50" width="5" height="50" fill="#666666"/>
-  <rect x="280" y="45" width="35" height="15" fill="#FFFF00" stroke="#000000" stroke-width="1"/>
-
-  <defs>
-    <marker id="arrowleft" markerWidth="10" markerHeight="10" refX="1" refY="5" orient="auto">
-      <polygon points="10,5 0,0 0,10" fill="#00AA00"/>
-    </marker>
-    <marker id="arrowright" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
-      <polygon points="0,5 10,0 10,10" fill="#00AA00"/>
-    </marker>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="SPEED_FOLLOWING_DISTANCE_3SEC">
+<g transform="translate(12 41.3333) scale(0.5867)">
+    <rect x="0" y="0" width="300" height="200" fill="#88AA88"/>
+      <rect x="0" y="70" width="300" height="60" fill="#4A4A4A"/>
+      <!-- Lane markings -->
+      <rect x="146" y="75" width="8" height="15" fill="#FFCC00"/>
+      <rect x="146" y="110" width="8" height="15" fill="#FFCC00"/>
+      <!-- Lead vehicle -->
+      <rect x="200" y="85" width="30" height="18" rx="3" fill="#666666"/>
+      <!-- Following vehicle -->
+      <rect x="80" y="85" width="30" height="18" rx="3" fill="#3366CC"/>
+      <!-- Distance indicator -->
+      <line x1="110" y1="60" x2="200" y2="60" stroke="#00FF00" stroke-width="8"/>
+      <line x1="110" y1="55" x2="110" y2="65" stroke="#00FF00" stroke-width="8"/>
+      <line x1="200" y1="55" x2="200" y2="65" stroke="#00FF00" stroke-width="8"/>
+      <text x="155" y="50" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="900" fill="#00FF00" text-anchor="middle">3 SEC</text>
+      <text x="150" y="162" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#000000" text-anchor="middle">MIN SAFE</text>
+      <text x="150" y="180" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#000000" text-anchor="middle">FOLLOWING DISTANCE</text>
+  </g>
 </svg>

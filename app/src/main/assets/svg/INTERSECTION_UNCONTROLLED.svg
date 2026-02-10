@@ -1,21 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
-  <!-- Roads -->
-  <rect x="120" y="0" width="60" height="300" fill="#555555"/>
-  <rect x="0" y="120" width="300" height="60" fill="#555555"/>
-
-  <!-- Center intersection -->
-  <rect x="120" y="120" width="60" height="60" fill="#666666"/>
-
-  <!-- Lane markings (white dashed) -->
-  <line x1="150" y1="0" x2="150" y2="110" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="10,10"/>
-  <line x1="150" y1="190" x2="150" y2="300" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="10,10"/>
-  <line x1="0" y1="150" x2="110" y2="150" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="10,10"/>
-  <line x1="190" y1="150" x2="300" y2="150" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="10,10"/>
-
-  <!-- NO signs - just intersection -->
-
-  <!-- Vehicles approaching -->
-  <rect x="140" y="60" width="20" height="30" fill="#0066CC" stroke="#003366" stroke-width="1" rx="2"/>
-  <rect x="210" y="140" width="30" height="20" fill="#CC0000" stroke="#660000" stroke-width="1" rx="2"/>
-  <rect x="60" y="140" width="30" height="20" fill="#00AA00" stroke="#006600" stroke-width="1" rx="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="INTERSECTION_UNCONTROLLED">
+<defs><marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#FFFFFF"/></marker></defs>
+  <rect x="0" y="0" width="200" height="200" fill="#88AA88"/>
+  <rect x="0" y="70" width="200" height="60" fill="#4A4A4A"/>
+  <rect x="70" y="0" width="60" height="200" fill="#4A4A4A"/>
+  <!-- Center lines (NO stop lines — that's the lesson) -->
+  <rect x="98" y="0" width="4" height="70" fill="#FFCC00"/>
+  <rect x="98" y="130" width="4" height="70" fill="#FFCC00"/>
+  <rect x="0" y="98" width="70" height="4" fill="#FFCC00"/>
+  <rect x="130" y="98" width="70" height="4" fill="#FFCC00"/>
+  <!-- Blue ego vehicle from west -->
+  <rect x="22" y="75" width="30" height="18" rx="3" fill="#3366CC"/>
+  <path d="M 54,84 L 66,84" fill="none" stroke="#FFFFFF" stroke-width="3" marker-end="url(#arr)"/>
+  <!-- Gray vehicle from north -->
+  <rect x="75" y="22" width="18" height="30" rx="3" fill="#666666"/>
+  <path d="M 84,54 L 84,66" fill="none" stroke="#FFFFFF" stroke-width="3" marker-end="url(#arr)"/>
 </svg>

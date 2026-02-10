@@ -1,19 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 200">
-  <!-- Main sign background -->
-  <rect x="5" y="5" width="140" height="190" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="4"/>
-
-  <!-- Inner border -->
-  <rect x="12" y="12" width="126" height="176" rx="3" fill="none" stroke="#000000" stroke-width="2"/>
-
-  <!-- SPEED text -->
-  <text x="75" y="50" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#000000" text-anchor="middle" letter-spacing="1">SPEED</text>
-
-  <!-- LIMIT text -->
-  <text x="75" y="78" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#000000" text-anchor="middle" letter-spacing="1">LIMIT</text>
-
-  <!-- Horizontal separator line -->
-  <line x1="25" y1="88" x2="125" y2="88" stroke="#000000" stroke-width="2"/>
-
-  <!-- Speed number -->
-  <text x="75" y="160" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="900" fill="#000000" text-anchor="middle">65</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_R2-1_SPEED_LIMIT_65">
+<rect x="34" y="8" width="132" height="184" rx="8" fill="#FFFFFF" stroke="#000000" stroke-width="4"/>
+  <rect x="40" y="14" width="120" height="172" rx="5" fill="none" stroke="#000000" stroke-width="2"/>
+  <text x="100" y="50" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="middle">SPEED</text>
+  <text x="100" y="78" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="middle">LIMIT</text>
+  <line x1="56" y1="88" x2="144" y2="88" stroke="#000000" stroke-width="2"/>
+  <text x="100" y="162" font-family="Arial, Helvetica, sans-serif" font-size="74" font-weight="900" text-anchor="middle">65</text>
 </svg>

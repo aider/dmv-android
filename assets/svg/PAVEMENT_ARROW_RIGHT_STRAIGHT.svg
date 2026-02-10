@@ -1,17 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
-  <!-- Road surface -->
-  <rect x="0" y="0" width="300" height="200" fill="#4A4A4A"/>
-  <!-- Subtle texture -->
-  <rect x="0" y="0" width="300" height="200" fill="#000000" opacity="0.05"/>
-  
-  <g fill="#FFFFFF">
-    <!-- Vertical shaft -->
-    <rect x="117" y="80" width="18" height="90" rx="4"/>
-    <!-- Up arrow -->
-    <path d="M 126,60 L 100,90 L 152,90 Z"/>
-    <!-- Right turn -->
-    <rect x="126" y="126" width="64" height="22" rx="4"/>
-    <path d="M 190,137 L 215,115 L 215,159 Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="PAVEMENT_ARROW_RIGHT_STRAIGHT">
+<g transform="translate(12 41.3333) scale(0.5867)">
+    <!-- Road surface -->
+      <rect x="0" y="0" width="300" height="200" fill="#4A4A4A"/>
+      <!-- Subtle texture -->
+      
+      <g fill="#FFFFFF">
+        <!-- Vertical shaft -->
+        <rect x="117" y="80" width="18" height="90" rx="4"/>
+        <!-- Up arrow -->
+        <path d="M 126,60 L 100,90 L 152,90 Z"/>
+        <!-- Right turn -->
+        <rect x="126" y="126" width="64" height="22" rx="4"/>
+        <path d="M 190,137 L 215,115 L 215,159 Z"/>
+      </g>
   </g>
-
 </svg>

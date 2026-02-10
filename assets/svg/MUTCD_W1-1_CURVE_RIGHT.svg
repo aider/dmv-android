@@ -1,17 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <!-- Yellow diamond background -->
-  <rect x="10" y="10" width="180" height="180" rx="8" fill="#FFCC00" transform="rotate(45 100 100)"/>
-
-  <!-- Black border -->
-  <rect x="10" y="10" width="180" height="180" rx="8" fill="none" stroke="#000000" stroke-width="6" transform="rotate(45 100 100)"/>
-
-  <!-- Right curve arrow symbol -->
-  <g fill="none" stroke="#000000" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
-    <!-- Vertical part coming from bottom -->
-    <path d="M 65,135 L 65,85"/>
-    <!-- Curve turning right -->
-    <path d="M 65,85 Q 65,60 90,60 L 135,60"/>
-    <!-- Arrow head pointing right -->
-    <path d="M 135,60 L 122,52 M 135,60 L 122,68"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_W1-1_CURVE_RIGHT">
+<rect x="22" y="22" width="156" height="156" transform="rotate(45 100 100)" fill="#FFCC00" stroke="#000000" stroke-width="6"/>
+  <path d="M72 136 V86 Q72 62 96 62 H132" fill="none" stroke="#000000" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M132 62 L118 54 M132 62 L118 70" fill="none" stroke="#000000" stroke-width="12" stroke-linecap="round"/>
 </svg>

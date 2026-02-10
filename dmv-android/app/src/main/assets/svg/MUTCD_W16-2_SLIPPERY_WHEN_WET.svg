@@ -1,15 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <!-- Shadow -->
-  <rect x="12" y="12" width="180" height="180" rx="8" fill="#000000" opacity="0.15" transform="rotate(45 100 100)"/>
-  <!-- Yellow diamond background -->
-  <rect x="10" y="10" width="180" height="180" rx="8" fill="#FFCC00" transform="rotate(45 100 100)"/>
-  <!-- Black border -->
-  <rect x="10" y="10" width="180" height="180" rx="8" fill="none" stroke="#000000" stroke-width="6" transform="rotate(45 100 100)"/>
-  
-  <g fill="none" stroke="#000000" stroke-width="10" stroke-linecap="round">
-    <path d="M 60,120 L 80,100 Q 100,80 120,100 L 140,120"/>
-    <path d="M 120,100 L 135,85" stroke-width="8"/>
-    <path d="M 135,85 L 140,75 L 145,85 L 135,85" fill="#000000"/>
-  </g>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_W16-2_SLIPPERY_WHEN_WET">
+<rect x="22" y="22" width="156" height="156" transform="rotate(45 100 100)" fill="#FFCC00" stroke="#000000" stroke-width="6"/>
+  <path d="M90 62 Q114 76 98 92 Q84 108 102 122" fill="none" stroke="#000000" stroke-width="10" stroke-linecap="round"/>
+  <path d="M112 84 Q128 96 114 110 Q102 122 116 136" fill="none" stroke="#000000" stroke-width="10" stroke-linecap="round"/>
 </svg>

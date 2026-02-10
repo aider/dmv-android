@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <rect x="10" y="10" width="180" height="180" fill="#FFFF00" stroke="#000000" stroke-width="4" rx="5" transform="rotate(45 100 100)"/>
-  <line x1="110" y1="140" x2="110" y2="60" stroke="#000000" stroke-width="6" stroke-linecap="round"/>
-  <path d="M 70,140 L 70,100 L 110,60" stroke="#000000" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_W4-2_LANE_ENDS_MERGE">
+<rect x="22" y="22" width="156" height="156" transform="rotate(45 100 100)" fill="#FFCC00" stroke="#000000" stroke-width="6"/>
+  <path d="M82 144 V64" fill="none" stroke="#000000" stroke-width="12" stroke-linecap="round"/>
+  <path d="M118 144 V102 Q118 84 104 72" fill="none" stroke="#000000" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
-  <!-- Road surface -->
-  <rect x="0" y="0" width="300" height="200" fill="#4A4A4A"/>
-  <!-- Subtle texture -->
-  <rect x="0" y="0" width="300" height="200" fill="#000000" opacity="0.05"/>
-  
-  <g fill="#FFFFFF">
-    <rect x="140" y="80" width="20" height="90" rx="4"/>
-    <path d="M 150,60 L 120,90 L 180,90 Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="PAVEMENT_ARROW_STRAIGHT">
+<g transform="translate(12 41.3333) scale(0.5867)">
+    <!-- Road surface -->
+      <rect x="0" y="0" width="300" height="200" fill="#4A4A4A"/>
+      <!-- Subtle texture -->
+      
+      <g fill="#FFFFFF">
+        <rect x="140" y="80" width="20" height="90" rx="4"/>
+        <path d="M 150,60 L 120,90 L 180,90 Z"/>
+      </g>
   </g>
-
 </svg>

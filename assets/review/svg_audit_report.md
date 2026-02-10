@@ -1,8 +1,9 @@
 # SVG Asset Audit Report
 
-**Generated:** 2026-02-09
+**Generated:** 2026-02-09 (UPDATED with MUTCD Geometry Compliance Check)
 **Scope:** 109 SVG assets reviewed
 **Repository:** `/Users/ayder/projects/dmv.tx/`
+**Review Rules:** `assets/review/svg_review_rules.md` v1.0
 
 ---
 
@@ -11,275 +12,454 @@
 - **Total assets in manifest:** 109
 - **Total SVG files on disk:** 109
 - **Assets referenced by questions:** 108 (99% coverage)
-- **Unused assets:** 1 (SPEED_HIGHWAY_70MPH)
 - **Questions using images:** 136 questions across 8 topics
-- **Issues identified:** 19 (P0: 2, P1: 12, P2: 5)
-- **Overall health:** ⚠️ **Good structure, needs mobile optimization**
+- **Issues identified:** 23 total (**P0: 6**, P1: 12, P2: 5)
+- **Overall health:** ❌ **CRITICAL ISSUES FOUND - Sign correctness failures**
 
-The asset library has excellent coverage and organization. All files have manifest entries, nearly all are actively used by questions, and the naming conventions are consistent. However, the assets were designed for general use and need optimization for mobile rendering at 96dp target size.
+### Critical New Findings (P0)
 
-**Critical findings:**
-- **Mobile readability:** Text, stroke widths, and fine details become illegible at 96dp render size
-- **Training effectiveness:** Key intersection scenarios lack vehicles, arrows, and road markings needed to teach concepts
-- **Consistency gaps:** ViewBox dimensions, colors, and padding vary within asset categories
+This audit enforces the **hard-fail sign correctness rules** from `svg_review_rules.md`. The following P0 issues were discovered:
 
-**Recommended action order:**
-1. Fix P0 issues #4, #13 (missing critical markings, illegible step numbers)
-2. Apply P1 batched fixes (stroke widths, training cues, viewBox normalization)
-3. Create missing high-value assets (hand signals, gore area)
-4. Polish with P2 improvements (shadows, opacity cleanup, documentation)
+1. **MUTCD_R1-1_STOP:** ❌ **NOT a true regular octagon** - angles alternate 125°/144° instead of 135°, radii vary by 6.55px
+2. **Invalid XML:** 4 assets have duplicate `font-weight` attributes (parser error)
+3. **MUTCD_R5-1_DO_NOT_ENTER:** Shape is circle, should be square per MUTCD R5-1
+4. **Speed Limit signs:** Padding < 8% minimum requirement
+5. **School Speed Limit sign:** Bottom text overflow risk
+
+### Sign Correctness Hard-Fail Summary
+
+Per `svg_review_rules.md` Section 1: **Any sign whose geometry, border, or text is incorrect — even slightly — is a hard fail.**
+
+**Result:** 5 Golden Set signs FAIL geometry/border/padding requirements.
+
+---
+
+## Golden Set Status
+
+The Golden Set comprises critical regulatory/warning signs that must have correct MUTCD geometry. Per review rules, these MUST be verified and reported in every audit.
+
+| Sign Type | Asset File | Status | Issue | Geometry Check |
+|-----------|-----------|--------|-------|----------------|
+| **STOP** | MUTCD_R1-1_STOP.svg | ❌ **needs_fix** | #NEW-01 | NOT regular octagon - angles 125°/144° (expect 135°), radii vary 6.55px |
+| **YIELD** | MUTCD_R1-2_YIELD.svg | ✓ ok | — | Equilateral triangle, point-down, sides 173.4±0.6px ✓ |
+| **SPEED LIMIT 65** | MUTCD_R2-1_SPEED_LIMIT_65.svg | ⚠️ **needs_fix** | #NEW-02 | Rectangle ✓, border ✓, padding BELOW 8% minimum |
+| **SPEED LIMIT 70** | MUTCD_R2-1_SPEED_LIMIT_70.svg | ⚠️ **needs_fix** | #NEW-02 | Rectangle ✓, border ✓, padding BELOW 8% minimum |
+| **SPEED LIMIT 30** | MUTCD_R2-1_SPEED_LIMIT_30.svg | ⚠️ **needs_fix** | #NEW-02 | Rectangle ✓, border ✓, padding BELOW 8% minimum |
+| **DO NOT ENTER** | MUTCD_R5-1_DO_NOT_ENTER.svg | ❌ **needs_fix** | #NEW-03 | WRONG SHAPE - uses circle, should be square with rounded corners per R5-1 |
+| **WRONG WAY** | MUTCD_R5-1a_WRONG_WAY.svg | ✓ ok | — | Rectangle landscape ✓, border ✓, text centered ✓ |
+| **ONE WAY** | MUTCD_R10-6_ONE_WAY.svg | ✓ ok | — | Rectangle landscape ✓, arrow visible ✓, border ✓ |
+| **NO PARKING** | MUTCD_R7-8_NO_PARKING.svg | ⚠️ **needs_fix** | #NEW-02 | Rectangle ✓, border ✓, padding BELOW 8% minimum |
+| **SCHOOL ZONE** | MUTCD_S1-1_SCHOOL_CROSSING.svg | ✓ ok | — | Pentagon point-up ✓, fluorescent yellow-green ✓, symbols visible ✓ |
+| **RAILROAD CROSSING** | MUTCD_R15-1_RAILROAD_CROSSING.svg | ✓ ok | — | Circle ✓, X and RR ✓, yellow background ✓ |
+| **MERGE** | MUTCD_W3-1_MERGE.svg | ✓ ok | — | Diamond (rotated square) ✓, yellow ✓, border ✓ |
+| **SCHOOL SPEED LIMIT 20** | MUTCD_S4-3_SCHOOL_SPEED_LIMIT_20.svg | ⚠️ **needs_fix** | #NEW-04 | Rectangle ✓, bottom text overflow risk, padding insufficient |
+
+### Golden Set Summary
+- **Total:** 13 sign types
+- **OK:** 5 (38%)
+- **Needs Fix:** 8 (62%)
+- **Missing:** 0
+
+---
+
+## Critical Issues Detail
+
+### P0-01: STOP Sign NOT a True Regular Octagon
+
+**Asset:** MUTCD_R1-1_STOP.svg (used by 2 questions)
+
+**MUTCD Requirement (R1-1):** True regular octagon with 8 equal sides and 8 equal internal angles of 135°.
+
+**Current Geometry:**
+- Vertices: 8 ✓
+- Radii from center: 90.00, 83.45, 88.00, 83.45, 90.00, 83.45, 88.00, 83.45 (variation: 6.55px ❌)
+- Side lengths: 65.30, 67.08, 67.08, 65.30, 65.30, 67.08, 67.08, 65.30 (variation: 1.78px ❌)
+- Internal angles: 125.3°, 143.9°, 126.9°, 143.9°, 125.3°, 143.9°, 126.9°, 143.9° ❌
+- Expected angles: all 135°
+
+**Verdict:** ❌ NOT A REGULAR OCTAGON - alternating angles violate MUTCD spec
+
+**Impact:** This is the most recognizable traffic sign. Incorrect geometry undermines training accuracy and fails regulatory compliance.
+
+---
+
+### P0-02: Invalid XML - Duplicate Attributes
+
+**Assets:**
+- SPEED_FOLLOWING_DISTANCE_3SEC.svg (used by 2 questions)
+- SPEED_HIGHWAY_70MPH.svg
+- SPEED_SCHOOL_ZONE_20MPH.svg (used by 1 question)
+- SPEED_STOPPING_DISTANCE.svg (used by 1 question)
+
+**Error:** Duplicate `font-weight` attribute on `<text>` elements (e.g., `font-weight="bold" font-weight="900"`)
+
+**Impact:** These files fail XML validation. While some parsers may tolerate this, it's non-compliant SVG.
+
+**Example:**
+```xml
+<!-- Line 15 in SPEED_FOLLOWING_DISTANCE_3SEC.svg -->
+<text ... font-size="28" font-weight="bold" font-weight="900" ...>
+```
+
+---
+
+### P0-03: DO NOT ENTER Wrong Shape
+
+**Asset:** MUTCD_R5-1_DO_NOT_ENTER.svg (used by 1 question)
+
+**MUTCD Requirement (R5-1):** Square with rounded corners, white horizontal bar, red background.
+
+**Current Geometry:** Circle (`<circle cx="100" cy="100" r="90">`)
+
+**Verdict:** ❌ WRONG SHAPE - uses circle instead of square
+
+**Impact:** The shape is part of sign recognition training. Circle vs. square changes the meaning.
+
+---
+
+### P0-04: Speed Limit Signs Padding Violation
+
+**Assets:**
+- MUTCD_R2-1_SPEED_LIMIT_65.svg (used by 2 questions)
+- MUTCD_R2-1_SPEED_LIMIT_70.svg (used by 2 questions)
+- MUTCD_R2-1_SPEED_LIMIT_30.svg (used by 1 question)
+- MUTCD_R7-8_NO_PARKING.svg (used by 2 questions)
+
+**Requirement:** Minimum 8% inner padding per svg_review_rules.md Section 3.
+
+**Current State:**
+- ViewBox: 0 0 150 200
+- Outer rect: x=5, y=5, width=140, height=190
+- Inner rect: x=12, y=12, width=126, height=176
+- Effective padding from outer edge: 5px
+- Padding ratio: 5/150 = 3.3% (horizontal), 5/200 = 2.5% (vertical)
+
+**Verdict:** ❌ BELOW 8% MINIMUM - padding is 2.5-3.3% instead of required 8%
+
+**Impact:** Text/numbers risk being cut off at small render sizes or touching borders.
+
+---
+
+### P0-05: School Speed Limit Text Overflow Risk
+
+**Asset:** MUTCD_S4-3_SCHOOL_SPEED_LIMIT_20.svg (used by 3 questions - HIGH priority)
+
+**Issue:** Bottom text "WHEN CHILDREN" (y=175) and "PRESENT" (y=190) at 14px font are only 10px and 5px from bottom edge respectively. With a viewBox height of 200, this gives ~5% padding at the bottom.
+
+**Requirement:** Minimum 8% padding = 16px from bottom edge
+
+**Verdict:** ⚠️ Text overflow risk at bottom edge
 
 ---
 
 ## Asset Inventory by Category
 
-| Category | Count | Primary ViewBox | Notes |
-|----------|-------|-----------------|-------|
-| MUTCD Signs | 49 | 0 0 200 200 (27) | 5 different viewBox sizes - needs normalization |
-| SIGNAL | 13 | 0 0 100 250 (10) | Standard + pedestrian signals |
-| PAVEMENT | 22 | 0 0 300 200 (22) | ✓ Consistent viewBox |
-| INTERSECTION | 8 | 0 0 200 200 (6) | Mostly consistent |
-| PARKING | 5 | 0 0 200 200 (5) | ✓ Consistent viewBox |
-| SAFE | 4 | 0 0 200 200 (4) | ✓ Consistent viewBox |
-| SPEED | 6 | 0 0 300 200 (6) | ✓ Consistent viewBox |
-| SPECIAL | 2 | Mixed | Small category |
+| Category | Count | Primary ViewBox | Status | Issues |
+|----------|-------|-----------------|--------|--------|
+| **MUTCD Regulatory** | 20 | Mixed (5 sizes) | ⚠️ Needs work | Geometry failures, padding violations |
+| **MUTCD Warning** | 16 | 0 0 200 200 | ✓ Good | Diamond shapes correct |
+| **MUTCD School** | 2 | 150x200 / 200x200 | ⚠️ Needs work | Padding issues |
+| **SIGNAL** | 13 | 0 0 100 250 (10) | ✓ Good | Consistent |
+| **PAVEMENT** | 22 | 0 0 300 200 | ✓ Good | Consistent viewBox |
+| **INTERSECTION** | 8 | 0 0 200 200 (6) | ⚠️ Needs work | Training cues needed |
+| **PARKING** | 5 | 0 0 200 200 | ✓ Good | Consistent |
+| **SAFE** | 4 | 0 0 200 200 | ✓ Good | Consistent |
+| **SPEED** | 6 | 0 0 300 200 | ❌ FAIL | 4 files have XML errors |
+| **SPECIAL** | 2 | Mixed | ✓ Good | Small category |
+| **OTHER** | 11 | Mixed | ⚠️ Check | Route markers, service signs |
 
 ---
 
-## Top 20 Most-Used Assets
+## Top 20 Most-Used Assets (by Question References)
 
-Assets referenced most frequently by questions (highest priority for quality):
+| Rank | Count | Asset ID | Category | Status |
+|------|-------|----------|----------|--------|
+| 1 | 3× | MUTCD_R1-2_YIELD | regulatory | ✓ OK |
+| 2 | 3× | MUTCD_R15-1_RAILROAD_CROSSING | regulatory | ✓ OK |
+| 3 | 3× | MUTCD_S4-3_SCHOOL_SPEED_LIMIT_20 | school | ❌ P0-05 |
+| 4 | 2× | MUTCD_R8-3a_NO_PARKING_ANYTIME | regulatory | ✓ OK |
+| 5 | 2× | MUTCD_R7-8_NO_PARKING | regulatory | ❌ P0-04 |
+| 6 | 2× | MUTCD_R7-107_HANDICAPPED_PARKING | regulatory | ✓ OK |
+| 7 | 2× | PAVEMENT_HANDICAP_SYMBOL | pavement | ✓ OK |
+| 8 | 2× | PAVEMENT_SCHOOL_ZONE | pavement | ⚠️ P1 |
+| 9 | 2× | PAVEMENT_RAILROAD_CROSSING_X | pavement | ✓ OK |
+| 10 | 2× | MUTCD_R1-1_STOP | regulatory | ❌ P0-01 |
+| 11 | 2× | MUTCD_W11-1_PEDESTRIAN_CROSSING | warning | ✓ OK |
+| 12 | 2× | MUTCD_W11-2_BICYCLE_CROSSING | warning | ✓ OK |
+| 13 | 2× | INTERSECTION_EMERGENCY_VEHICLE | intersection | ⚠️ P1 |
+| 14 | 2× | INTERSECTION_SCHOOL_BUS_STOPPED | intersection | ⚠️ P1 |
+| 15 | 2× | MUTCD_W3-1_MERGE | warning | ✓ OK |
+| 16 | 2× | MUTCD_R10-6_ONE_WAY | regulatory | ✓ OK |
+| 17 | 2× | SPEED_FOLLOWING_DISTANCE_3SEC | speed | ❌ P0-02 |
+| 18 | 2× | MUTCD_R2-1_SPEED_LIMIT_65 | regulatory | ❌ P0-04 |
+| 19 | 2× | MUTCD_R10-7_DO_NOT_PASS | regulatory | ✓ OK |
+| 20 | 2× | MUTCD_R2-1_SPEED_LIMIT_70 | regulatory | ❌ P0-04 |
 
-| Rank | Count | Asset ID | Status |
-|------|-------|----------|--------|
-| 1 | 3× | MUTCD_R1-2_YIELD | ✓ OK, check readability |
-| 2 | 3× | MUTCD_R15-1_RAILROAD_CROSSING | ✓ OK |
-| 3 | 3× | MUTCD_S4-3_SCHOOL_SPEED_LIMIT_20 | ⚠️ Text size issue #2 |
-| 4-5 | 2× | MUTCD_R8-3a_NO_PARKING_ANYTIME | ⚠️ ViewBox inconsistent #3 |
-| 4-5 | 2× | MUTCD_R7-8_NO_PARKING | ✓ OK |
-| 6-7 | 2× | MUTCD_R7-107_HANDICAPPED_PARKING | ✓ OK |
-| 6-7 | 2× | PAVEMENT_HANDICAP_SYMBOL | ✓ OK |
-| 8-9 | 2× | PAVEMENT_SCHOOL_ZONE | ⚠️ Text size issue #2 |
-| 8-9 | 2× | PAVEMENT_RAILROAD_CROSSING_X | ✓ OK |
-| 10-11 | 2× | MUTCD_R1-1_STOP | ⚠️ Redundant text issue #5 |
-| 10-11 | 2× | MUTCD_W11-1_PEDESTRIAN_CROSSING | ✓ OK |
-| 12-13 | 2× | MUTCD_W11-2_BICYCLE_CROSSING | ✓ OK |
-| 12-13 | 2× | INTERSECTION_EMERGENCY_VEHICLE | ⚠️ Missing training cues #1 |
-| 14-15 | 2× | INTERSECTION_SCHOOL_BUS_STOPPED | ⚠️ Missing training cues #1 |
-| 14-15 | 2× | MUTCD_W3-1_MERGE | ✓ OK |
-| 16-17 | 2× | MUTCD_R10-6_ONE_WAY | ⚠️ ViewBox 0 0 200 100 (exception OK) |
-| 16-17 | 2× | SPEED_FOLLOWING_DISTANCE_3SEC | ⚠️ Text size issue #2 |
-| 18-19 | 2× | MUTCD_R2-1_SPEED_LIMIT_65 | ⚠️ Text size issue #2 |
-| 18-19 | 2× | MUTCD_R10-7_DO_NOT_PASS | ✓ OK |
-| 20 | 2× | MUTCD_R2-1_SPEED_LIMIT_70 | ⚠️ Text size issue #2 |
-
----
-
-## Issues Summary
-
-### P0 Issues (Critical - Block Learning)
-
-| # | Title | Assets Affected | Impact |
-|---|-------|-----------------|--------|
-| [#4](https://github.com/aider/dmv-android/issues/4) | Missing stop/yield lines in key intersection scenarios | INTERSECTION_ROUNDABOUT, INTERSECTION_PEDESTRIAN_CROSSWALK | Asset lacks primary visual cue being tested |
-| [#13](https://github.com/aider/dmv-android/issues/13) | PARKING_PARALLEL_STEPS step numbers illegible | PARKING_PARALLEL_STEPS | Question depends on distinguishing steps, numbers are 4.8dp (unreadable) |
-
-**Action required:** Fix immediately before any other work. These directly harm learning effectiveness.
+**Critical:** 8 of the top 20 most-used assets have P0 issues.
 
 ---
 
-### P1 Issues (Important - Degrade Experience)
+## Recurring Patterns
 
-| # | Title | Assets Affected | Category |
-|---|-------|-----------------|----------|
-| [#1](https://github.com/aider/dmv-android/issues/1) | Missing training cues in intersection scenarios | 6 INTERSECTION_* assets | svg-correctness |
-| [#2](https://github.com/aider/dmv-android/issues/2) | Embedded text readability at mobile sizes | 20+ assets with text | svg-readability |
-| [#3](https://github.com/aider/dmv-android/issues/3) | Inconsistent viewBox dimensions | 49 MUTCD signs (5 different sizes) | svg-consistency |
-| [#6](https://github.com/aider/dmv-android/issues/6) | Thin stroke widths disappear at mobile | PAVEMENT_*, INTERSECTION_* (~40 assets) | svg-readability |
-| [#7](https://github.com/aider/dmv-android/issues/7) | Undefined marker references break arrows | INTERSECTION_ROUNDABOUT, SAFE_BLIND_SPOT_CHECK | svg-correctness |
-| [#8](https://github.com/aider/dmv-android/issues/8) | Inconsistent color palette | ~40 assets with road surfaces | svg-consistency |
-| [#10](https://github.com/aider/dmv-android/issues/10) | SAFE_* and SPEED_* lack instructional clarity | 10 training scenario assets | svg-correctness |
-| [#11](https://github.com/aider/dmv-android/issues/11) | Traffic signal visual hierarchy needs improvement | 13 SIGNAL_* assets | svg-readability |
-| [#15](https://github.com/aider/dmv-android/issues/15) | Missing high-value training assets | 7 new assets needed | svg-missing-asset |
-| [#16](https://github.com/aider/dmv-android/issues/16) | Verify and fix clipping/cropping | All 109 assets (audit) | svg-correctness |
-| [#17](https://github.com/aider/dmv-android/issues/17) | Verify manifest/file alignment | All 109 assets (audit) | svg-consistency |
+### Pattern 1: Sign Geometry Approximations (5 occurrences)
+**Issue:** Hand-drawn sign shapes deviate from MUTCD specs
+- MUTCD_R1-1_STOP: irregular octagon (angles off by 10°)
+- MUTCD_R5-1_DO_NOT_ENTER: circle instead of square
+
+**Fix:** Use MUTCD-compliant primitives or component library
 
 ---
 
-### P2 Issues (Nice-to-Have - Polish)
+### Pattern 2: Padding Below 8% Minimum (8 occurrences)
+**Issue:** Text/content too close to sign borders
+- All SPEED_LIMIT signs: 2.5-3.3% instead of 8%
+- School speed limit: bottom text at 5% padding
+- NO_PARKING signs: similar issue
 
-| # | Title | Assets Affected |
-|---|-------|-----------------|
-| [#5](https://github.com/aider/dmv-android/issues/5) | MUTCD_R1-1_STOP redundant path+text | MUTCD_R1-1_STOP |
-| [#9](https://github.com/aider/dmv-android/issues/9) | Inconsistent shadow/depth effects | MUTCD signs with shadows |
-| [#12](https://github.com/aider/dmv-android/issues/12) | Inconsistent internal padding | All categories |
-| [#14](https://github.com/aider/dmv-android/issues/14) | Remove opacity overlays for performance | Assets using opacity effects |
-| [#18](https://github.com/aider/dmv-android/issues/18) | Document asset creation standards | N/A - documentation |
-| [#19](https://github.com/aider/dmv-android/issues/19) | SPEED_HIGHWAY_70MPH unused | 1 unused asset |
+**Fix:** Increase sign outer rect dimensions or reduce inner content size
+
+---
+
+### Pattern 3: Duplicate XML Attributes (4 occurrences)
+**Issue:** Invalid SVG due to duplicate `font-weight`
+- All SPEED_* educational diagrams affected
+
+**Fix:** Remove `font-weight="bold"`, keep only `font-weight="900"`
+
+---
+
+### Pattern 4: ViewBox Inconsistency Within Categories (49 regulatory signs)
+**Issue:** 5 different viewBox sizes within MUTCD regulatory signs
+- Causes visual "jumping" when signs appear in sequence
+- Existing P1 issue from previous audit
+
+---
+
+## Standards Recommendations
+
+### 1. Sign Geometry Standards
+
+**STOP Signs (R1-1):**
+- Use formula for regular octagon: vertices at 45° intervals
+- Center at (100, 100), radius 90px
+- Verify: all angles = 135°, all sides equal length
+
+**DO NOT ENTER (R5-1):**
+- Shape: `<rect>` with `rx` for rounded corners, NOT `<circle>`
+- Aspect ratio: 1:1 (square)
+- White bar height: ~15% of sign height
+
+**SPEED LIMIT Signs (R2-1):**
+- Aspect ratio: 3:4 (portrait rectangle)
+- Minimum padding: 8% = 12px horizontal, 16px vertical for 150x200 viewBox
+- Recommended: 10% = 15px horizontal, 20px vertical
+- Text hierarchy: SPEED 24px, LIMIT 24px, number 76px
+
+---
+
+### 2. ViewBox Standards by Category
+
+| Category | Recommended ViewBox | Rationale |
+|----------|---------------------|-----------|
+| **Regulatory (square)** | 0 0 200 200 | Standard for octagon, circle, diamond signs |
+| **Regulatory (portrait)** | 0 0 150 200 | Speed limit, parking, turn restrictions |
+| **Regulatory (landscape)** | 0 0 200 100 | ONE WAY, WRONG WAY |
+| **Warning (diamond)** | 0 0 200 200 | All diamond shapes fit well |
+| **Signals (vertical)** | 0 0 100 250 | Standard 3-light vertical signal |
+| **Pavement** | 0 0 300 200 | Wide lane view |
+| **Intersection** | 0 0 200 200 | Standard overhead view |
+
+---
+
+### 3. Padding Standards
+
+**Minimum inner padding:** 8% of primary dimension
+**Recommended:** 10-12% for comfort
+
+**Calculation:**
+```
+For 150x200 viewBox (portrait):
+- Primary dimension: 150 (width)
+- 8% minimum: 0.08 × 150 = 12px
+- Recommended 10%: 0.10 × 150 = 15px
+
+Current outer rect: x=5, width=140 → only 5px padding = 3.3% ❌
+Correct outer rect: x=15, width=120 → 15px padding = 10% ✓
+```
+
+---
+
+### 4. Stroke Width Standards
+
+**For mobile readability at 96dp:**
+
+| Element Type | ViewBox 200×200 | ViewBox 300×200 | Effective dp at 96dp |
+|--------------|-----------------|-----------------|----------------------|
+| Lane markings | 8px | 8px | 3.8dp / 2.5dp |
+| Stop lines | 8px | 12px | 3.8dp / 3.8dp |
+| Sign borders | 6px | 6px | 2.9dp |
+| Fine details | 4px minimum | 4px minimum | 1.9dp |
+
+**Recommendation:** Use 8px minimum for all critical markings in pavement assets.
+
+---
+
+### 5. Color Palette (MUTCD Standard)
+
+```python
+# Regulatory/Warning Colors
+MUTCD_RED = "#C1272D"          # Stop, yield, prohibitory
+MUTCD_YELLOW = "#FFCC00"       # Warning signs
+MUTCD_GREEN = "#00843D"        # Guide signs (not widely used in this set)
+MUTCD_BLUE = "#003F87"         # Service/motorist info
+MUTCD_ORANGE = "#FF6B00"       # Construction/work zone
+MUTCD_FLUORESCENT_YELLOW = "#C8E800"  # School/pedestrian
+
+# Scene Elements
+ROAD_SURFACE = "#4A4A4A"       # Asphalt
+GRASS_OFFROAD = "#88AA88"      # Grass/shoulder
+LANE_WHITE = "#FFFFFF"         # White markings
+LANE_YELLOW = "#FFCC00"        # Yellow center lines
+EGO_VEHICLE = "#3366CC"        # User's vehicle (blue)
+OTHER_VEHICLE = "#666666"      # Other traffic (gray)
+```
+
+---
+
+## Coverage Analysis
+
+### Well-Covered Concepts
+✓ Stop/yield right-of-way
+✓ Lane markings (all major types)
+✓ Traffic signals (standard + arrows + pedestrian)
+✓ Warning signs (curves, intersections, hazards)
+✓ Parking scenarios (parallel, hill, disabled)
+✓ School zones
+✓ Railroad crossings
+
+### Coverage Gaps (Potential Future Assets)
+- Hand signals (left, right, stop) - currently text-only
+- Gore area / exit ramp tapers
+- Roundabout lane positioning (multiple lanes)
+- Shared turn lane (center TWLTL detail)
+- Perpendicular/angle parking
+- Highway HOV lane entry/exit
+- Flashing beacon types
 
 ---
 
 ## Manifest Alignment
 
-**Status:** ✅ **Excellent**
+### Files vs. Manifest
+- **Total SVG files:** 109
+- **Total manifest entries:** 109
+- **Perfect alignment:** ✓ All files have manifest entries
+- **Orphaned files:** 0
+- **Broken references:** 0
 
-- **Files without manifest entry:** 0
-- **Manifest entries without file:** 0
-- **AssetId/filename mismatches:** 0 (verified)
-- **Path format errors:** 0
-- **Duplicate assetIds:** 0
-
-All 109 assets have perfect 1:1 alignment between manifest entries and filesystem. File paths follow convention: `assets/svg/{ASSETID}.svg`
-
-**Issue #17** will create validation script to maintain this alignment automatically.
-
----
-
-## Recurring Patterns (Top Issues by Frequency)
-
-### 1. Text Illegibility (affects ~20 assets)
-**Pattern:** Font sizes 10-18px in 200px viewBox render at 4.8-8.6dp at 96dp target size
-**Threshold:** Need ≥10dp for legibility → ≥20px font in 200px viewBox
-**Issue:** #2 (P1)
-
-### 2. Thin Strokes (affects ~40 assets)
-**Pattern:** Lane markings, stop lines use 4px stroke in 200-300px viewBox
-**Calculation:** 4px @ 96dp in 300px viewBox = 1.28dp (invisible)
-**Minimum:** 8px stroke for 300px viewBox (2.5dp at 96dp)
-**Issue:** #6 (P1)
-
-### 3. ViewBox Inconsistency (affects 49 MUTCD signs)
-**Pattern:** Similar signs use 5 different viewBox dimensions
-**Impact:** Visual "jumping" when assets cycle in quiz
-**Solution:** Standardize by sign type (regulatory=200x200, guide=200x150)
-**Issue:** #3 (P1)
-
-### 4. Missing Learning Cues (affects 16 assets)
-**Pattern:** Intersection/scenario assets lack vehicles, arrows, markings needed to teach concepts
-**Example:** 4-way stop shows intersection but no vehicles (can't visualize "two arrive at same time")
-**Solution:** Add 2+ learning cues per scenario (vehicles, arrows, lines)
-**Issues:** #1, #10 (P1)
-
-### 5. Color Palette Drift (affects ~40 assets)
-**Pattern:** Road surfaces vary (#4A4A4A vs #CCCCCC vs #EEEEEE)
-**Impact:** Visual discontinuity between assets
-**Solution:** Document and enforce standard palette
-**Issue:** #8 (P1)
+### Asset Usage
+- **Referenced by questions:** 108 / 109 (99%)
+- **Unused assets:** 1 (SPEED_HIGHWAY_70MPH - created but not yet assigned to questions)
 
 ---
 
-## Technical Debt Summary
+## File Size Analysis
 
-**Low-hanging fruit (quick wins):**
-- Remove shadow effects (simple delete, improves performance)
-- Fix broken marker references (add missing `<defs>`)
-- Remove redundant STOP text (delete lines)
-- Increase font sizes (find-replace font-size values)
+| Size Range | Count | Notes |
+|------------|-------|-------|
+| < 1KB | 79 | Good - clean, simple signs |
+| 1-2KB | 24 | Acceptable - intersection scenes |
+| 2-3KB | 5 | Check for optimization |
+| > 3KB | 1 | PAVEMENT_BIKE_LANE (needs review) |
 
-**Medium effort (batch processing):**
-- Normalize viewBox dimensions by category
+**Average size:** 847 bytes
+**Median size:** 782 bytes
+**Largest:** PAVEMENT_BIKE_LANE (4.2KB - likely has complex path data)
+
+---
+
+## Action Plan
+
+### Phase 1: Fix P0 Issues (Immediate - BLOCKING)
+
+1. **Fix STOP sign geometry** (#NEW-01)
+   - Regenerate using regular octagon formula
+   - Verify all angles = 135°, all radii equal
+
+2. **Fix duplicate XML attributes** (#NEW-02)
+   - SPEED_FOLLOWING_DISTANCE_3SEC
+   - SPEED_HIGHWAY_70MPH
+   - SPEED_SCHOOL_ZONE_20MPH
+   - SPEED_STOPPING_DISTANCE
+   - Remove `font-weight="bold"`, keep `font-weight="900"`
+
+3. **Fix DO NOT ENTER shape** (#NEW-03)
+   - Change from circle to square with rounded corners
+   - ViewBox 0 0 200 200, outer square rx=6
+
+4. **Fix speed limit padding** (#NEW-04)
+   - Increase padding to 10% minimum
+   - Adjust outer rect: x=15, y=20 (instead of x=5, y=5)
+   - Reduce inner content size if needed
+
+5. **Fix school speed limit overflow** (#NEW-05)
+   - Move bottom text up or reduce font size
+   - Ensure 16px minimum from bottom edge (8% of 200px)
+
+### Phase 2: Fix P1 Issues (High Priority)
+- Apply previous audit's P1 fixes (still valid)
+- Normalize viewBox dimensions
+- Add training cues to intersection scenarios
 - Increase stroke widths for pavement markings
-- Standardize color palette (find-replace hex values)
-- Add vehicles/arrows to intersection scenarios
 
-**High effort (careful manual work):**
-- Create 7 new missing assets (hand signals, gore area, etc.)
-- Re-design training scenarios for clarity
-- Audit all 109 assets for clipping (requires visual review)
+### Phase 3: Documentation & Validation
+- Create primitives library for MUTCD-compliant shapes
+- Add geometry validation tests
+- Document sign construction standards
 
 ---
 
-## Recommendations
+## Validation Checklist (Per Sign)
 
-### Immediate Actions (This Week)
-1. **Fix P0 #4:** Add yield lines to INTERSECTION_ROUNDABOUT (30 min)
-2. **Fix P0 #13:** Increase step number sizes in PARKING_PARALLEL_STEPS (20 min)
-3. **Fix P1 #7:** Add missing marker definitions to affected assets (1 hour)
-4. **Run Issue #17 validation:** Verify manifest alignment is truly perfect (30 min)
+Use this checklist for every Golden Set sign:
 
-### Short-term (This Sprint)
-1. **Batch fix stroke widths (Issue #6):** Write script to increase all lane marking strokes to 8px+ (2-3 hours)
-2. **Batch fix text sizes (Issue #2):** Increase or remove text <20px (2-3 hours)
-3. **Normalize viewBox for MUTCD signs (Issue #3):** Group by type, standardize dimensions (4-6 hours)
-4. **Add training cues to intersections (Issue #1):** Add vehicles, arrows to 6 assets (6-8 hours)
+### Structural Checks
+- [ ] Valid XML (no duplicate attributes, well-formed)
+- [ ] viewBox present and appropriate for sign type
+- [ ] File size < 3KB
 
-### Medium-term (Next Sprint)
-1. **Create missing assets (Issue #15):** Priority: hand signals (3), gore area (1) (8-12 hours)
-2. **Enhance SAFE/SPEED scenarios (Issue #10):** Improve clarity of 10 training assets (8-10 hours)
-3. **Standardize colors (Issue #8):** Document palette, apply to all assets (3-4 hours)
+### Sign Correctness (Hard Fail)
+- [ ] Shape matches MUTCD spec (count sides, measure angles)
+- [ ] Correct orientation (point-up/point-down for triangles, diamond rotation)
+- [ ] Border present where MUTCD requires it
+- [ ] Border width consistent (6-8px for 200px viewBox)
+- [ ] Text matches real sign (STOP, YIELD, speed number)
+- [ ] Text centered with >= 8% inner padding
+- [ ] No text overflow beyond sign boundary
 
-### Long-term (Backlog)
-1. **Performance optimization (Issues #9, #14):** Remove shadows, opacity overlays (3-4 hours)
-2. **Documentation (Issue #18):** Create comprehensive style guide (6-8 hours)
-3. **Padding normalization (Issue #12):** Standardize internal spacing (4-6 hours)
+### Mobile Readability (Hard Fail)
+- [ ] Recognizable at 96dp render
+- [ ] Shape distinguishable at 48dp render
+- [ ] Border visible at 96dp (minimum 6px stroke in 200px viewBox)
+- [ ] Text legible at 96dp (minimum 20px font for labels, 60px for numbers)
 
----
-
-## Quality Metrics
-
-### Current State
-- **Manifest accuracy:** 100% (109/109 aligned)
-- **Asset utilization:** 99% (108/109 used by questions)
-- **ViewBox consistency:** 60% (varies by category)
-- **Mobile readability:** ⚠️ 40% (text/strokes need fixes)
-- **Training effectiveness:** ⚠️ 50% (scenarios need learning cues)
-
-### Target State (After Issue Resolution)
-- **Manifest accuracy:** 100% (maintain)
-- **Asset utilization:** 100% (resolve #19)
-- **ViewBox consistency:** 95%+ (standardize by category)
-- **Mobile readability:** 90%+ (fix text, strokes)
-- **Training effectiveness:** 90%+ (add cues, enhance scenarios)
-
----
-
-## Issue Reference
-
-### All Issues Created
-1. [#1](https://github.com/aider/dmv-android/issues/1) - Missing training cues in intersection scenarios (P1, svg-correctness)
-2. [#2](https://github.com/aider/dmv-android/issues/2) - Embedded text readability issues (P1, svg-readability)
-3. [#3](https://github.com/aider/dmv-android/issues/3) - Inconsistent viewBox dimensions (P1, svg-consistency)
-4. [#4](https://github.com/aider/dmv-android/issues/4) - Missing stop/yield lines (P0, svg-correctness)
-5. [#5](https://github.com/aider/dmv-android/issues/5) - MUTCD_R1-1_STOP redundant text (P2, svg-performance)
-6. [#6](https://github.com/aider/dmv-android/issues/6) - Thin stroke widths (P1, svg-readability)
-7. [#7](https://github.com/aider/dmv-android/issues/7) - Undefined marker references (P1, svg-correctness)
-8. [#8](https://github.com/aider/dmv-android/issues/8) - Inconsistent color palette (P1, svg-consistency)
-9. [#9](https://github.com/aider/dmv-android/issues/9) - Inconsistent shadow effects (P2, svg-consistency)
-10. [#10](https://github.com/aider/dmv-android/issues/10) - SAFE/SPEED scenarios lack clarity (P1, svg-correctness)
-11. [#11](https://github.com/aider/dmv-android/issues/11) - Traffic signal visual hierarchy (P1, svg-readability)
-12. [#12](https://github.com/aider/dmv-android/issues/12) - Inconsistent internal padding (P2, svg-consistency)
-13. [#13](https://github.com/aider/dmv-android/issues/13) - PARKING_PARALLEL_STEPS illegible (P0, svg-readability)
-14. [#14](https://github.com/aider/dmv-android/issues/14) - Remove opacity overlays (P2, svg-performance)
-15. [#15](https://github.com/aider/dmv-android/issues/15) - Missing high-value assets (P1, svg-missing-asset)
-16. [#16](https://github.com/aider/dmv-android/issues/16) - Verify clipping issues (P1, svg-correctness)
-17. [#17](https://github.com/aider/dmv-android/issues/17) - Verify manifest alignment (P1, svg-consistency)
-18. [#18](https://github.com/aider/dmv-android/issues/18) - Document asset standards (P2, documentation)
-19. [#19](https://github.com/aider/dmv-android/issues/19) - SPEED_HIGHWAY_70MPH unused (P2, svg-consistency)
-
-**Priority breakdown:**
-- P0 (Critical): 2 issues
-- P1 (Important): 12 issues
-- P2 (Nice-to-have): 5 issues
+### Quality Checks (Soft Fail)
+- [ ] Colors match MUTCD spec
+- [ ] No clipping (content within viewBox with 5% margin)
+- [ ] Consistent with other signs in same family
 
 ---
 
 ## Conclusion
 
-The SVG asset library is well-organized and comprehensive, with excellent manifest hygiene and near-perfect utilization. The primary challenge is mobile optimization: assets were designed for general use but need adjustments for the 96dp target render size on mobile devices.
+This audit identified **6 new P0 critical issues** that block MUTCD compliance:
 
-The issues created provide a clear roadmap for improvement, grouped by pattern to enable efficient batch processing. Addressing the 2 P0 issues and top P1 issues will bring the library to production-ready quality for mobile educational use.
+1. STOP sign geometry failure (most critical)
+2. 4 files with invalid XML
+3. DO NOT ENTER wrong shape
+4. Speed limit padding violations
+5. School speed limit overflow
 
-**Estimated effort to resolve all P0+P1 issues:** 40-50 hours
-**Estimated effort to resolve all issues (P0+P1+P2):** 60-70 hours
+**All 6 P0 issues MUST be fixed before the app is production-ready.** Sign correctness is non-negotiable for a driver education app.
 
-**Next steps:**
-1. Review and prioritize issues with stakeholders
-2. Fix P0 issues immediately
-3. Create backlog tickets for P1 issues in priority order
-4. Begin systematic batch fixes starting with highest-impact issues
-
----
-
-**Report generated by:** SVG Review Agent
-**Audit date:** 2026-02-09
-**Contact:** See project repository for issue tracking and updates
+**Recommendation:** Pause other SVG work and fix all P0 issues first. Then proceed with P1 optimizations from the previous audit.

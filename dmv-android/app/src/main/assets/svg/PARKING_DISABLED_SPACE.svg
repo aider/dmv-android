@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <rect x="0" y="0" width="200" height="200" fill="#4A4A4A"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="PARKING_DISABLED_SPACE">
+<rect x="0" y="0" width="200" height="200" fill="#4A4A4A"/>
   <!-- Parking space -->
   <rect x="20" y="20" width="160" height="160" fill="#003DA5" opacity="0.3"/>
   <rect x="20" y="20" width="160" height="160" fill="none" stroke="#FFFFFF" stroke-width="4"/>

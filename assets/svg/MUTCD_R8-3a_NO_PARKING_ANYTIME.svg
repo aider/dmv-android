@@ -1,26 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 200">
-  <!-- Main sign background with red border -->
-  <rect x="5" y="5" width="140" height="190" rx="6" fill="#FFFFFF" stroke="#C1272D" stroke-width="6"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_R8-3a_NO_PARKING_ANYTIME">
+  <rect x="30" y="8" width="140" height="184" rx="8" fill="#FFFFFF" stroke="#C1272D" stroke-width="6"/>
+  <rect x="38" y="16" width="124" height="168" rx="4" fill="none" stroke="#C1272D" stroke-width="2"/>
 
-  <!-- Inner border -->
-  <rect x="14" y="14" width="122" height="172" rx="3" fill="none" stroke="#C1272D" stroke-width="2"/>
+  <text x="100" y="50" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="900" fill="#000000" text-anchor="middle">NO</text>
+  <text x="100" y="84" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="900" fill="#000000" text-anchor="middle">PARKING</text>
+  <text x="100" y="116" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="900" fill="#000000" text-anchor="middle">ANYTIME</text>
 
-  <!-- NO text -->
-  <text x="75" y="48" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="900" fill="#000000" text-anchor="middle" letter-spacing="1">NO</text>
-
-  <!-- PARKING text -->
-  <text x="75" y="80" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="900" fill="#000000" text-anchor="middle" letter-spacing="1">PARKING</text>
-
-  <!-- ANYTIME text -->
-  <text x="75" y="118" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="900" fill="#000000" text-anchor="middle" letter-spacing="1">ANYTIME</text>
-
-  <!-- Double-headed vertical arrow -->
   <g fill="#000000">
-    <!-- Arrow shaft -->
-    <rect x="67" y="135" width="16" height="45" rx="2"/>
-    <!-- Top arrow head -->
-    <path d="M 75,135 L 62,148 L 88,148 Z"/>
-    <!-- Bottom arrow head -->
-    <path d="M 75,180 L 88,167 L 62,167 Z"/>
+    <rect x="93" y="128" width="14" height="44" rx="2"/>
+    <path d="M100 126 L88 138 H112 Z"/>
+    <path d="M100 174 L112 162 H88 Z"/>
   </g>
 </svg>

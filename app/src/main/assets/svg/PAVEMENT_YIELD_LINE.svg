@@ -1,19 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
-  <!-- Road surface -->
-  <rect x="0" y="0" width="300" height="200" fill="#555555"/>
-
-  <!-- Lane lines -->
-  <line x1="100" y1="0" x2="100" y2="200" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="12,8"/>
-  <line x1="200" y1="0" x2="200" y2="200" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="12,8"/>
-
-  <!-- Yield line (row of solid white triangles) -->
-  <polygon points="30,130 40,145 20,145" fill="#FFFFFF"/>
-  <polygon points="60,130 70,145 50,145" fill="#FFFFFF"/>
-  <polygon points="90,130 100,145 80,145" fill="#FFFFFF"/>
-  <polygon points="120,130 130,145 110,145" fill="#FFFFFF"/>
-  <polygon points="150,130 160,145 140,145" fill="#FFFFFF"/>
-  <polygon points="180,130 190,145 170,145" fill="#FFFFFF"/>
-  <polygon points="210,130 220,145 200,145" fill="#FFFFFF"/>
-  <polygon points="240,130 250,145 230,145" fill="#FFFFFF"/>
-  <polygon points="270,130 280,145 260,145" fill="#FFFFFF"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="PAVEMENT_YIELD_LINE">
+<g transform="translate(12 41.3333) scale(0.5867)">
+    <!-- Road surface -->
+      <rect x="0" y="0" width="300" height="200" fill="#4A4A4A"/>
+      <!-- Subtle texture -->
+      
+      <!-- Yield line (triangular teeth pattern) -->
+      <path d="M 10,85 L 30,100 L 10,115 Z" fill="#FFFFFF"/>
+      <path d="M 50,85 L 70,100 L 50,115 Z" fill="#FFFFFF"/>
+      <path d="M 90,85 L 110,100 L 90,115 Z" fill="#FFFFFF"/>
+      <path d="M 130,85 L 150,100 L 130,115 Z" fill="#FFFFFF"/>
+      <path d="M 170,85 L 190,100 L 170,115 Z" fill="#FFFFFF"/>
+      <path d="M 210,85 L 230,100 L 210,115 Z" fill="#FFFFFF"/>
+      <path d="M 250,85 L 270,100 L 250,115 Z" fill="#FFFFFF"/>
+      <path d="M 290,85 L 300,100 L 290,115 Z" fill="#FFFFFF"/>
+  </g>
 </svg>

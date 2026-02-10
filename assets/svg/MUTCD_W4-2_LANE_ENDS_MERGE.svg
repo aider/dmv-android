@@ -1,12 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <!-- Yellow diamond background -->
-  <rect x="10" y="10" width="180" height="180" rx="8" fill="#FFCC00" transform="rotate(45 100 100)"/>
-  <!-- Black border -->
-  <rect x="10" y="10" width="180" height="180" rx="8" fill="none" stroke="#000000" stroke-width="6" transform="rotate(45 100 100)"/>
-  
-  <g fill="none" stroke="#000000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
-    <line x1="115" y1="145" x2="115" y2="55"/>
-    <path d="M 65,145 L 65,95 L 115,55"/>
-  </g>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_W4-2_LANE_ENDS_MERGE">
+<rect x="22" y="22" width="156" height="156" transform="rotate(45 100 100)" fill="#FFCC00" stroke="#000000" stroke-width="6"/>
+  <path d="M82 144 V64" fill="none" stroke="#000000" stroke-width="12" stroke-linecap="round"/>
+  <path d="M118 144 V102 Q118 84 104 72" fill="none" stroke="#000000" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

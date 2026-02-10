@@ -1,38 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
-  <!-- Road with lanes -->
-  <rect x="0" y="50" width="400" height="200" fill="#555555"/>
-  <line x1="0" y1="150" x2="400" y2="150" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="20,15"/>
-
-  <!-- Your car (center) -->
-  <rect x="150" y="120" width="45" height="25" fill="#0066CC" stroke="#003366" stroke-width="2" rx="3"/>
-  <rect x="155" y="125" width="12" height="8" fill="#87CEEB"/>
-  <rect x="178" y="125" width="12" height="8" fill="#87CEEB"/>
-
-  <!-- Side mirrors view zones (light green) -->
-  <path d="M 150,132 Q 100,100 80,80 L 80,180 Q 100,160 150,132 Z" fill="#90EE90" opacity="0.3"/>
-  <path d="M 195,132 Q 245,100 265,80 L 265,180 Q 245,160 195,132 Z" fill="#90EE90" opacity="0.3"/>
-
-  <!-- Blind spot zones (red) -->
-  <ellipse cx="110" cy="132" rx="35" ry="45" fill="#FF0000" opacity="0.4"/>
-  <ellipse cx="235" cy="132" rx="35" ry="45" fill="#FF0000" opacity="0.4"/>
-
-  <!-- Text labels -->
-  <text x="110" y="138" font-family="Arial Black, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">BLIND</text>
-  <text x="110" y="155" font-family="Arial Black, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">SPOT</text>
-
-  <text x="235" y="138" font-family="Arial Black, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">BLIND</text>
-  <text x="235" y="155" font-family="Arial Black, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">SPOT</text>
-
-  <!-- Car in blind spot -->
-  <rect x="95" y="118" width="30" height="18" fill="#CC0000" stroke="#660000" stroke-width="2" rx="2" opacity="0.8"/>
-
-  <!-- Head turn arrow -->
-  <path d="M 170,110 Q 160,90 140,85" stroke="#FFFF00" stroke-width="3" fill="none" marker-end="url(#arrowyellow)"/>
-  <text x="145" y="70" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#FFFF00">Look!</text>
-
-  <defs>
-    <marker id="arrowyellow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
-      <polygon points="0,0 10,5 0,10" fill="#FFFF00"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="SAFE_BLIND_SPOT_CHECK">
+<defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#FFCC00"/>
     </marker>
   </defs>
+  <rect x="0" y="0" width="200" height="200" fill="#88AA88"/>
+  <!-- Vehicle (top view) -->
+  <rect x="70" y="60" width="60" height="80" rx="8" fill="#3366CC" stroke="#000000" stroke-width="2"/>
+  <!-- Driver position -->
+  <circle cx="85" cy="90" r="8" fill="#FFCC00"/>
+  <!-- Mirrors -->
+  <rect x="65" y="75" width="8" height="12" rx="2" fill="#666666"/>
+  <rect x="127" y="75" width="8" height="12" rx="2" fill="#666666"/>
+  <!-- Blind spot zones (red) -->
+  <path d="M 130,60 L 160,40 L 160,85 L 130,80 Z" fill="#FF0000" opacity="0.4" stroke="#FF0000" stroke-width="2"/>
+  <path d="M 130,140 L 160,160 L 160,115 L 130,120 Z" fill="#FF0000" opacity="0.4" stroke="#FF0000" stroke-width="2"/>
+  <!-- Safe zones (green) -->
+  <path d="M 100,55 L 100,20 L 130,20 L 130,60 Z" fill="#00FF00" opacity="0.3"/>
+  <!-- Head turn indicator -->
+  <path d="M 85,90 L 95,85" stroke="#FFCC00" stroke-width="3" marker-end="url(#arrow)"/>
 </svg>

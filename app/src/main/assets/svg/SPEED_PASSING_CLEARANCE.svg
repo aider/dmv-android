@@ -1,27 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
-  <!-- Two-lane road -->
-  <rect x="0" y="80" width="400" height="100" fill="#555555"/>
-
-  <!-- Center line (dashed yellow - passing allowed) -->
-  <line x1="0" y1="130" x2="400" y2="130" stroke="#FFFF00" stroke-width="3" stroke-dasharray="20,15"/>
-
-  <!-- Edge lines -->
-  <line x1="0" y1="85" x2="400" y2="85" stroke="#FFFFFF" stroke-width="2"/>
-  <line x1="0" y1="175" x2="400" y2="175" stroke="#FFFFFF" stroke-width="2"/>
-
-  <!-- Slow vehicle being passed -->
-  <rect x="200" y="145" width="30" height="18" fill="#666666" stroke="#333333" stroke-width="1" rx="2"/>
-
-  <!-- Passing vehicle in opposite lane -->
-  <rect x="240" y="95" width="35" height="20" fill="#0066CC" stroke="#003366" stroke-width="2" rx="2"/>
-
-  <!-- Safe clearance distance ahead (dotted line) -->
-  <line x1="275" y1="105" x2="380" y2="105" stroke="#00AA00" stroke-width="2" stroke-dasharray="5,5"/>
-  <text x="327" y="95" font-family="Arial, sans-serif" font-size="14" fill="#00AA00" text-anchor="middle">Safe clearance</text>
-
-  <!-- Oncoming vehicle (far ahead) -->
-  <rect x="380" y="95" width="15" height="10" fill="#CC0000" stroke="#660000" stroke-width="1" rx="1" opacity="0.7"/>
-
-  <!-- Distance marker -->
-  <text x="327" y="220" font-family="Arial, sans-serif" font-size="16" fill="#000000" text-anchor="middle">Must have clear view ahead</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="SPEED_PASSING_CLEARANCE">
+<g transform="translate(12 41.3333) scale(0.5867)">
+    <rect x="0" y="0" width="300" height="200" fill="#88AA88"/>
+      <rect x="0" y="70" width="300" height="60" fill="#4A4A4A"/>
+      <!-- Center line (dashed yellow) -->
+      <rect x="146" y="75" width="8" height="15" fill="#FFCC00"/>
+      <rect x="146" y="110" width="8" height="15" fill="#FFCC00"/>
+      <!-- Vehicle being passed -->
+      <rect x="120" y="92" width="28" height="16" rx="3" fill="#666666"/>
+      <!-- Passing vehicle -->
+      <rect x="80" y="78" width="28" height="16" rx="3" fill="#3366CC"/>
+      <!-- Oncoming vehicle (far away) -->
+      <rect x="240" y="85" width="20" height="14" rx="2" fill="#CC0000"/>
+      <!-- Required clearance zone -->
+      <rect x="80" y="72" width="180" height="28" fill="none" stroke="#00FF00" stroke-width="8" stroke-dasharray="4,4"/>
+      <text x="150" y="35" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900" fill="#00FF00" text-anchor="middle">CLEAR AHEAD</text>
+      <text x="150" y="165" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#000000" text-anchor="middle">ADEQUATE PASSING</text>
+      <text x="150" y="183" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#000000" text-anchor="middle">CLEARANCE</text>
+  </g>
 </svg>

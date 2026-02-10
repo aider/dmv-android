@@ -1,6 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <circle cx="100" cy="100" r="90" fill="#FFFFFF" stroke="#FF0000" stroke-width="8"/>
-  <path d="M 120,140 L 120,90 Q 120,70 100,70 Q 80,70 80,90 L 80,110" stroke="#000000" stroke-width="8" fill="none" stroke-linecap="round"/>
-  <polygon points="75,105 80,110 85,105" fill="#000000"/>
-  <line x1="50" y1="50" x2="150" y2="150" stroke="#FF0000" stroke-width="10" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_R3-3_NO_U_TURN">
+<!-- Outer white border -->
+  <circle cx="100" cy="100" r="90" fill="#FFFFFF"/>
+
+  <!-- Red circle -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#C1272D" stroke-width="12"/>
+
+  <!-- Inner white area -->
+  <circle cx="100" cy="100" r="78" fill="#FFFFFF"/>
+
+  <!-- U-turn arrow (black) -->
+  <g fill="none" stroke="#000000" stroke-width="16" stroke-linecap="round">
+    <!-- Vertical part coming down from top -->
+    <path d="M 120,60 L 120,110"/>
+    <!-- U curve turning left -->
+    <path d="M 120,110 Q 120,135 95,135 Q 70,135 70,110 L 70,80"/>
+    <!-- Arrow head pointing up on left side -->
+    <path d="M 70,80 L 62,90 M 70,80 L 78,90" stroke-linejoin="miter"/>
+  </g>
+
+  <!-- Red prohibition slash (diagonal) -->
+  <line x1="42" y1="42" x2="158" y2="158" stroke="#C1272D" stroke-width="14" stroke-linecap="round"/>
 </svg>

@@ -1,16 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <!-- Shadow -->
-  <circle cx="102" cy="102" r="90" fill="#000000" opacity="0.15"/>
-
-  <!-- Main red circle -->
-  <circle cx="100" cy="100" r="90" fill="#C1272D"/>
-
-  <!-- White horizontal bar -->
-  <rect x="25" y="85" width="150" height="30" rx="3" fill="#FFFFFF"/>
-
-  <!-- DO NOT ENTER text in red on white bar -->
-  <text x="100" y="108" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="900" fill="#C1272D" text-anchor="middle" letter-spacing="1">DO NOT ENTER</text>
-
-  <!-- Subtle white border on circle -->
-  <circle cx="100" cy="100" r="90" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_R5-1_DO_NOT_ENTER">
+<circle cx="100" cy="100" r="92" fill="#C9252D"/>
+  <circle cx="100" cy="100" r="92" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+  <rect x="20" y="78" width="160" height="44" rx="4" fill="#FFFFFF"/>
+  <text x="100" y="107" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="900" fill="#C9252D" text-anchor="middle" letter-spacing="0.3">DO NOT ENTER</text>
 </svg>

@@ -1,7 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="PARKING_HILL_UPHILL_CURB">
+<defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#FF0000"/>
+    </marker>
+  </defs>
   <!-- Hill background -->
   <rect x="0" y="0" width="200" height="200" fill="#88AA88"/>
-  <path d="M 0,150 Q 50,120 100,100 Q 150,80 200,60 L 200,200 L 0,200 Z" fill="#CCCCCC"/>
+  <path d="M 0,150 Q 50,120 100,100 Q 150,80 200,60 L 200,200 L 0,200 Z" fill="#BBBBBB"/>
   <!-- Curb -->
   <rect x="0" y="95" width="200" height="8" fill="#888888"/>
   <!-- Road -->
@@ -15,8 +20,6 @@
   <line x1="98" y1="162" x2="92" y2="168" stroke="#FFCC00" stroke-width="3"/>
   <!-- Arrow showing slope direction -->
   <path d="M 150,60 L 150,90" stroke="#FF0000" stroke-width="3" marker-end="url(#arrow)"/>
-  <text x="165" y="80" font-family="Arial" font-size="12" fill="#FF0000">UP</text>
+  <text x="165" y="80" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="900" fill="#FF0000">UP</text>
   <!-- Label -->
-  <text x="100" y="30" font-family="Arial" font-size="14" font-weight="700" fill="#000000" text-anchor="middle">WHEELS AWAY</text>
-  <text x="100" y="48" font-family="Arial" font-size="14" font-weight="700" fill="#000000" text-anchor="middle">FROM CURB</text>
 </svg>

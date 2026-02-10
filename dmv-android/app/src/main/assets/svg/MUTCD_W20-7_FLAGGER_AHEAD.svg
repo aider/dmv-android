@@ -1,18 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <!-- Shadow -->
-  <rect x="12" y="12" width="180" height="180" rx="8" fill="#000000" opacity="0.15" transform="rotate(45 100 100)"/>
-  <!-- Yellow diamond background -->
-  <rect x="10" y="10" width="180" height="180" rx="8" fill="#FFCC00" transform="rotate(45 100 100)"/>
-  <!-- Black border -->
-  <rect x="10" y="10" width="180" height="180" rx="8" fill="none" stroke="#000000" stroke-width="6" transform="rotate(45 100 100)"/>
-  
-  <g fill="#000000" stroke="#000000">
-    <circle cx="100" cy="60" r="14"/>
-    <line x1="100" y1="74" x2="100" y2="115" stroke-width="10"/>
-    <line x1="100" y1="85" x2="130" y2="70" stroke-width="8"/>
-    <line x1="100" y1="85" x2="70" y2="95" stroke-width="8"/>
-    <line x1="100" y1="115" x2="85" y2="145" stroke-width="10"/>
-    <line x1="100" y1="115" x2="115" y2="145" stroke-width="10"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_W20-7_FLAGGER_AHEAD">
+<rect x="22" y="22" width="156" height="156" transform="rotate(45 100 100)" fill="#FFCC00" stroke="#000000" stroke-width="6"/>
+  <g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="92" cy="60" r="10" fill="#000000" stroke="none"/>
+    <path d="M92 72 L90 100" fill="none" stroke-width="8"/>
+    <path d="M74 88 L104 92" fill="none" stroke-width="8"/>
+    <path d="M90 100 L78 128" fill="none" stroke-width="8"/>
+    <path d="M90 100 L106 128" fill="none" stroke-width="8"/>
+    <rect x="114" y="74" width="20" height="28" rx="2" fill="none" stroke-width="6"/>
+    <line x1="124" y1="102" x2="124" y2="138" stroke-width="6"/>
   </g>
-
 </svg>

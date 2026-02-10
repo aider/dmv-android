@@ -1,8 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <rect x="12" y="12" width="180" height="180" rx="8" fill="#000000" opacity="0.15" transform="rotate(45 100 100)"/>
-  <rect x="10" y="10" width="180" height="180" rx="8" fill="#FF6600" transform="rotate(45 100 100)"/>
-  <rect x="10" y="10" width="180" height="180" rx="8" fill="none" stroke="#000000" stroke-width="6" transform="rotate(45 100 100)"/>
-  <g fill="#000000">
-    <path d="M 100,60 L 140,130 L 125,130 L 125,145 L 75,145 L 75,130 L 60,130 Z"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_OM1-1_KEEP_RIGHT">
+<rect x="28" y="8" width="144" height="184" rx="10" fill="#FFCC00" stroke="#000000" stroke-width="6"/>
+  <path d="M68 46 H132 V82 H116 V132 H132 L100 170 L68 132 H84 V82 H68 Z" fill="#000000"/>
+  <path d="M120 46 H132 V58" fill="none" stroke="#000000" stroke-width="8" stroke-linecap="round"/>
 </svg>

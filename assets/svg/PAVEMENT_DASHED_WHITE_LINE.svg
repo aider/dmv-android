@@ -1,13 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
-  <!-- Road surface -->
-  <rect x="0" y="0" width="300" height="200" fill="#4A4A4A"/>
-  <!-- Subtle texture -->
-  <rect x="0" y="0" width="300" height="200" fill="#000000" opacity="0.05"/>
-  
-  <rect x="145" y="5" width="10" height="30" fill="#FFFFFF"/>
-  <rect x="145" y="45" width="10" height="30" fill="#FFFFFF"/>
-  <rect x="145" y="85" width="10" height="30" fill="#FFFFFF"/>
-  <rect x="145" y="125" width="10" height="30" fill="#FFFFFF"/>
-  <rect x="145" y="165" width="10" height="30" fill="#FFFFFF"/>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="PAVEMENT_DASHED_WHITE_LINE">
+<g transform="translate(12 41.3333) scale(0.5867)">
+    <!-- Road surface -->
+      <rect x="0" y="0" width="300" height="200" fill="#4A4A4A"/>
+      <!-- Subtle texture -->
+      
+      <rect x="145" y="5" width="10" height="30" fill="#FFFFFF"/>
+      <rect x="145" y="45" width="10" height="30" fill="#FFFFFF"/>
+      <rect x="145" y="85" width="10" height="30" fill="#FFFFFF"/>
+      <rect x="145" y="125" width="10" height="30" fill="#FFFFFF"/>
+      <rect x="145" y="165" width="10" height="30" fill="#FFFFFF"/>
+  </g>
 </svg>

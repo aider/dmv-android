@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 200">
-  <rect x="5" y="5" width="140" height="190" fill="#FFFFFF" stroke="#000000" stroke-width="3" rx="5"/>
-  <text x="75" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#000000" text-anchor="middle">KEEP</text>
-  <text x="75" y="85" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#000000" text-anchor="middle">RIGHT</text>
-  <polygon points="75,130 100,155 90,155 90,175 60,175 60,155 50,155" fill="#000000"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_R4-7_KEEP_RIGHT">
+<rect x="34" y="8" width="132" height="184" rx="8" fill="#FFFFFF" stroke="#000000" stroke-width="4"/>
+  <rect x="40" y="14" width="120" height="172" rx="5" fill="none" stroke="#000000" stroke-width="2"/>
+  <text x="100" y="54" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="900" text-anchor="middle">KEEP</text>
+  <text x="100" y="90" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="900" text-anchor="middle">RIGHT</text>
+  <path d="M98 146 V114 H88 L100 100 L112 114 H104 V136 H120 V150 H98 Z" fill="#000000"/>
 </svg>

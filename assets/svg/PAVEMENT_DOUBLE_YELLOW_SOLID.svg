@@ -1,13 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
-  <!-- Road surface -->
-  <rect x="0" y="0" width="300" height="200" fill="#4A4A4A"/>
-  <!-- Subtle texture -->
-  <rect x="0" y="0" width="300" height="200" fill="#000000" opacity="0.05"/>
-  
-  <rect x="142" y="0" width="8" height="200" fill="#FFCC00"/>
-  <rect x="150" y="0" width="8" height="200" fill="#FFCC00"/>
-  <!-- White edge lines -->
-  <rect x="20" y="0" width="6" height="200" fill="#FFFFFF"/>
-  <rect x="274" y="0" width="6" height="200" fill="#FFFFFF"/>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="PAVEMENT_DOUBLE_YELLOW_SOLID">
+<g transform="translate(12 41.3333) scale(0.5867)">
+    <!-- Road surface -->
+      <rect x="0" y="0" width="300" height="200" fill="#4A4A4A"/>
+      <!-- Subtle texture -->
+      
+      <rect x="142" y="0" width="8" height="200" fill="#FFCC00"/>
+      <rect x="150" y="0" width="8" height="200" fill="#FFCC00"/>
+      <!-- White edge lines -->
+      <rect x="20" y="0" width="6" height="200" fill="#FFFFFF"/>
+      <rect x="274" y="0" width="6" height="200" fill="#FFFFFF"/>
+  </g>
 </svg>

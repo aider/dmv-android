@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <rect x="0" y="0" width="200" height="200" fill="#EEEEEE"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="SAFE_MIRROR_ADJUSTMENT">
+<rect x="0" y="0" width="200" height="200" fill="#EEEEEE"/>
   <!-- Vehicle (top view) -->
   <rect x="70" y="70" width="60" height="90" rx="8" fill="#3366CC" stroke="#000000" stroke-width="2"/>
   <!-- Driver -->
@@ -16,6 +16,6 @@
   <path d="M 68,96 L 20,70 L 20,122 Z" fill="#87CEEB" opacity="0.4"/>
   <!-- Right mirror zone -->
   <path d="M 132,96 L 180,70 L 180,122 Z" fill="#87CEEB" opacity="0.4"/>
-  <text x="100" y="15" font-family="Arial" font-size="12" font-weight="700" fill="#000000" text-anchor="middle">REAR VIEW</text>
-  <text x="100" y="185" font-family="Arial" font-size="14" font-weight="700" fill="#000000" text-anchor="middle">ADJUST ALL MIRRORS</text>
+  <text x="100" y="15" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#000000" text-anchor="middle">REAR VIEW</text>
+  <text x="100" y="185" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#000000" text-anchor="middle">ADJUST ALL MIRRORS</text>
 </svg>

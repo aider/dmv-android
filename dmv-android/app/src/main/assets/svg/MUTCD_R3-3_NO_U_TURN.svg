@@ -1,8 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <!-- Shadow -->
-  <circle cx="102" cy="102" r="90" fill="#000000" opacity="0.15"/>
-
-  <!-- Outer white border -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_R3-3_NO_U_TURN">
+<!-- Outer white border -->
   <circle cx="100" cy="100" r="90" fill="#FFFFFF"/>
 
   <!-- Red circle -->

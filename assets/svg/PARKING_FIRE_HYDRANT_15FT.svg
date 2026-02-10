@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <rect x="0" y="0" width="200" height="200" fill="#CCCCCC"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="PARKING_FIRE_HYDRANT_15FT">
+<rect x="0" y="0" width="200" height="200" fill="#CCCCCC"/>
   <rect x="0" y="0" width="200" height="15" fill="#888888"/>
   <rect x="0" y="15" width="200" height="185" fill="#4A4A4A"/>
   <!-- Fire hydrant -->
@@ -14,7 +14,7 @@
   <line x1="100" y1="70" x2="100" y2="150" stroke="#FFCC00" stroke-width="2"/>
   <line x1="95" y1="70" x2="105" y2="70" stroke="#FFCC00" stroke-width="2"/>
   <line x1="95" y1="150" x2="105" y2="150" stroke="#FFCC00" stroke-width="2"/>
-  <text x="115" y="115" font-family="Arial" font-size="18" font-weight="900" fill="#FFCC00">15 FT</text>
+  <text x="115" y="115" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="900" fill="#FFCC00">15 FT</text>
   <!-- No parking zone -->
   <rect x="85" y="155" width="30" height="20" rx="2" fill="#FF0000" opacity="0.3"/>
   <line x1="85" y1="155" x2="115" y2="175" stroke="#FF0000" stroke-width="3"/>

@@ -1,7 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
-  <rect x="5" y="5" width="140" height="140" fill="#0033A0" stroke="#FFFFFF" stroke-width="3" rx="5"/>
-  <rect x="50" y="50" width="25" height="40" fill="#FFFFFF"/>
-  <rect x="75" y="60" width="15" height="30" fill="#FFFFFF"/>
-  <circle cx="82" cy="55" r="5" fill="#FFFFFF"/>
-  <line x1="60" y1="60" x2="70" y2="50" stroke="#FFFFFF" stroke-width="3"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_D9-3_GAS_STATION">
+<rect x="26" y="22" width="148" height="156" rx="8" fill="#003DA5" stroke="#FFFFFF" stroke-width="4"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="68" y="66" width="44" height="66" rx="4"/>
+    <line x1="112" y1="74" x2="134" y2="96"/>
+    <line x1="134" y1="96" x2="134" y2="130"/>
+    <rect x="128" y="130" width="14" height="18" rx="2" fill="#FFFFFF" stroke="none"/>
+  </g>
 </svg>

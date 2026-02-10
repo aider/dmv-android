@@ -1,17 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <!-- Shadow -->
-  <rect x="12" y="12" width="180" height="180" rx="8" fill="#000000" opacity="0.15" transform="rotate(45 100 100)"/>
-  <!-- Yellow diamond background -->
-  <rect x="10" y="10" width="180" height="180" rx="8" fill="#FFCC00" transform="rotate(45 100 100)"/>
-  <!-- Black border -->
-  <rect x="10" y="10" width="180" height="180" rx="8" fill="none" stroke="#000000" stroke-width="6" transform="rotate(45 100 100)"/>
-  
-  <g fill="none" stroke="#000000" stroke-width="8">
-    <rect x="60" y="70" width="80" height="70" rx="3"/>
-    <line x1="60" y1="105" x2="140" y2="105"/>
-    <circle cx="100" cy="60" r="8" fill="#000000"/>
-    <line x1="80" y1="80" x2="100" y2="60" stroke-width="6"/>
-    <line x1="120" y1="80" x2="100" y2="60" stroke-width="6"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_W20-1_ROAD_CONSTRUCTION">
+<rect x="22" y="22" width="156" height="156" transform="rotate(45 100 100)" fill="#FFCC00" stroke="#000000" stroke-width="6"/>
+  <g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="92" cy="60" r="10" fill="#000000" stroke="none"/>
+    <path d="M92 72 L88 98" fill="none" stroke-width="8"/>
+    <path d="M74 86 L104 90" fill="none" stroke-width="8"/>
+    <path d="M88 98 L76 128" fill="none" stroke-width="8"/>
+    <path d="M88 98 L104 126" fill="none" stroke-width="8"/>
+    <path d="M106 110 L138 98" fill="none" stroke-width="8"/>
   </g>
-
 </svg>

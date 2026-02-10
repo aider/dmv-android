@@ -1,19 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <!-- Pentagon shape - fluorescent yellow-green -->
-  <path d="M 100,10 L 186,73 L 150,183 L 50,183 L 14,73 Z" fill="#C8E800" stroke="#000000" stroke-width="6"/>
-  <!-- Two children silhouettes -->
-  <g fill="#000000">
-    <!-- Left child -->
-    <circle cx="75" cy="75" r="12"/>
-    <rect x="68" y="87" width="14" height="30" rx="7"/>
-    <rect x="63" y="92" width="24" height="8" rx="4"/>
-    <rect x="68" y="117" width="6" height="25" rx="3"/>
-    <rect x="81" y="117" width="6" height="25" rx="3"/>
-    <!-- Right child -->
-    <circle cx="125" cy="75" r="12"/>
-    <rect x="118" y="87" width="14" height="30" rx="7"/>
-    <rect x="113" y="92" width="24" height="8" rx="4"/>
-    <rect x="118" y="117" width="6" height="25" rx="3"/>
-    <rect x="131" y="117" width="6" height="25" rx="3"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_S1-1_SCHOOL_CROSSING">
+<path d="M100 16 L156 66 L142 174 L58 174 L44 66 Z" fill="#D9F000" stroke="#000000" stroke-width="6"/>
+  <g fill="#000000" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="84" cy="76" r="8"/>
+    <path d="M84 84 V112" stroke-width="6"/>
+    <path d="M72 96 H94" stroke-width="6"/>
+    <path d="M84 112 L74 132" stroke-width="6"/>
+    <path d="M84 112 L96 132" stroke-width="6"/>
+    <circle cx="114" cy="82" r="8"/>
+    <path d="M114 90 V118" stroke-width="6"/>
+    <path d="M102 102 H124" stroke-width="6"/>
+    <path d="M114 118 L102 138" stroke-width="6"/>
+    <path d="M114 118 L126 138" stroke-width="6"/>
   </g>
 </svg>

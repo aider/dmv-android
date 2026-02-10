@@ -1,8 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <rect x="10" y="10" width="180" height="180" fill="#FFFF00" stroke="#000000" stroke-width="4" rx="5" transform="rotate(45 100 100)"/>
-  <rect x="60" y="85" width="80" height="20" rx="10" fill="none" stroke="#000000" stroke-width="6"/>
-  <path d="M 85,95 Q 80,75 95,70" stroke="#000000" stroke-width="3" fill="none"/>
-  <path d="M 100,95 Q 95,75 110,70" stroke="#000000" stroke-width="3" fill="none"/>
-  <path d="M 115,95 Q 110,75 125,70" stroke="#000000" stroke-width="3" fill="none"/>
-  <path d="M 80,120 Q 85,125 100,115 Q 115,125 120,120" stroke="#000000" stroke-width="5" fill="none" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_W16-2_SLIPPERY_WHEN_WET">
+<rect x="22" y="22" width="156" height="156" transform="rotate(45 100 100)" fill="#FFCC00" stroke="#000000" stroke-width="6"/>
+  <path d="M90 62 Q114 76 98 92 Q84 108 102 122" fill="none" stroke="#000000" stroke-width="10" stroke-linecap="round"/>
+  <path d="M112 84 Q128 96 114 110 Q102 122 116 136" fill="none" stroke="#000000" stroke-width="10" stroke-linecap="round"/>
 </svg>

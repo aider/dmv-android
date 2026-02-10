@@ -1,10 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <!-- Main triangle - white background -->
-  <polygon points="100,183 13,33 187,33" fill="#FFFFFF" stroke="#C1272D" stroke-width="10"/>
-
-  <!-- Inner red border -->
-  <polygon points="100,173 23,43 177,43" fill="#FFFFFF" stroke="#C1272D" stroke-width="3"/>
-
-  <!-- YIELD text -->
-  <text x="100" y="115" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="900" fill="#C1272D" text-anchor="middle" letter-spacing="3">YIELD</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_R1-2_YIELD">
+  <polygon points="100,8 190,170 10,170" fill="#C9252D"/>
+  <polygon points="100,20 176,160 24,160" fill="#FFFFFF"/>
+  <polygon points="100,30 166,152 34,152" fill="none" stroke="#C9252D" stroke-width="4"/>
+  <text x="100" y="120" font-family="Arial, Helvetica, sans-serif" font-size="26" letter-spacing="1" font-weight="900" fill="#C9252D" text-anchor="middle">YIELD</text>
 </svg>

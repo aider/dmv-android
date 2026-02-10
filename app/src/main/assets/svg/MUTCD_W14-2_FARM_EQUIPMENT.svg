@@ -1,7 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <rect x="10" y="10" width="180" height="180" fill="#FFFF00" stroke="#000000" stroke-width="4" rx="5" transform="rotate(45 100 100)"/>
-  <rect x="80" y="75" width="35" height="30" fill="none" stroke="#000000" stroke-width="4"/>
-  <circle cx="70" cy="115" r="15" fill="none" stroke="#000000" stroke-width="5"/>
-  <circle cx="125" cy="115" r="10" fill="none" stroke="#000000" stroke-width="4"/>
-  <line x1="95" y1="85" x2="125" y2="85" stroke="#000000" stroke-width="4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_W14-2_FARM_EQUIPMENT">
+<rect x="22" y="22" width="156" height="156" transform="rotate(45 100 100)" fill="#FFCC00" stroke="#000000" stroke-width="6"/>
+  <g fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="78" cy="124" r="14"/>
+    <circle cx="124" cy="126" r="10"/>
+    <rect x="88" y="90" width="28" height="18" rx="2"/>
+    <path d="M100 90 V78"/>
+    <path d="M100 98 L76 98"/>
+  </g>
 </svg>

@@ -1,17 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
-  <!-- Road surface -->
-  <rect x="0" y="0" width="300" height="200" fill="#555555"/>
-
-  <!-- Lane line -->
-  <line x1="150" y1="0" x2="150" y2="200" stroke="#FFFF00" stroke-width="3" stroke-dasharray="15,10"/>
-
-  <!-- Railroad crossing X marking -->
-  <line x1="80" y1="70" x2="220" y2="130" stroke="#FFFFFF" stroke-width="12"/>
-  <line x1="220" y1="70" x2="80" y2="130" stroke="#FFFFFF" stroke-width="12"/>
-
-  <!-- Stop line before tracks -->
-  <line x1="30" y1="140" x2="270" y2="140" stroke="#FFFFFF" stroke-width="6"/>
-
-  <!-- "RR" text -->
-  <text x="150" y="175" font-family="Arial Black, sans-serif" font-size="36" font-weight="bold" fill="#FFFFFF" text-anchor="middle">RR</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="PAVEMENT_RAILROAD_CROSSING_X">
+<g transform="translate(12 41.3333) scale(0.5867)">
+    <!-- Road surface -->
+      <rect x="0" y="0" width="300" height="200" fill="#4A4A4A"/>
+      <!-- Subtle texture -->
+      
+      <!-- Large X marking -->
+      <g fill="#FFFFFF">
+        <rect x="70" y="30" width="160" height="25" rx="5" transform="rotate(45 150 100)"/>
+        <rect x="70" y="30" width="160" height="25" rx="5" transform="rotate(-45 150 100)"/>
+      </g>
+      <!-- R R text -->
+      <text x="120" y="180" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="900" fill="#FFFFFF" text-anchor="middle">R</text>
+      <text x="180" y="180" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="900" fill="#FFFFFF" text-anchor="middle">R</text>
+  </g>
 </svg>

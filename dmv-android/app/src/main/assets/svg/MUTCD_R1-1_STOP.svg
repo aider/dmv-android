@@ -1,25 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <!-- Subtle shadow for depth -->
-  <polygon points="100,12 158,42 188,100 158,158 100,188 42,158 12,100 42,42" fill="#000000" opacity="0.15" transform="translate(2,2)"/>
-
-  <!-- Main octagonal sign - MUTCD Red -->
-  <polygon points="100,10 158,40 188,100 158,160 100,190 42,160 12,100 42,40" fill="#C1272D" stroke="#FFFFFF" stroke-width="8"/>
-
-  <!-- Inner white border -->
-  <polygon points="100,18 154,46 182,100 154,154 100,182 46,154 18,100 46,46" fill="none" stroke="#FFFFFF" stroke-width="3"/>
-
-  <!-- STOP text as paths (Highway Gothic font style) -->
-  <g fill="#FFFFFF">
-    <!-- S -->
-    <path d="M 42 80 Q 42 70 52 70 L 68 70 Q 78 70 78 80 Q 78 85 73 87 Q 78 89 78 94 Q 78 104 68 104 L 52 104 Q 42 104 42 94 L 50 94 Q 50 96 52 96 L 68 96 Q 70 96 70 94 Q 70 92 68 92 L 52 92 Q 42 92 42 82 Q 42 80 42 80 M 50 82 Q 50 80 52 78 L 68 78 Q 70 78 70 80 Q 70 82 68 82 L 52 82 Q 50 82 50 82"/>
-    <!-- T -->
-    <path d="M 84 70 L 116 70 L 116 78 L 104 78 L 104 104 L 96 104 L 96 78 L 84 78 Z"/>
-    <!-- O -->
-    <path d="M 122 70 Q 132 70 132 80 L 132 94 Q 132 104 122 104 L 138 104 Q 148 104 148 94 L 148 80 Q 148 70 138 70 Z M 140 80 Q 140 78 138 78 L 122 78 Q 124 78 124 80 L 124 94 Q 124 96 122 96 L 138 96 Q 140 96 140 94 Z"/>
-    <!-- P -->
-    <path d="M 154 70 L 162 70 L 162 84 L 170 84 Q 180 84 180 94 Q 180 104 170 104 L 154 104 Z M 162 92 L 170 92 Q 172 92 172 94 Q 172 96 170 96 L 162 96 Z"/>
-  </g>
-
-  <!-- Redrawn STOP text (simplified, more legible) -->
-  <text x="100" y="115" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">STOP</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_R1-1_STOP">
+  <polygon points="100,8 164,36 192,100 164,164 100,192 36,164 8,100 36,36" fill="#FFFFFF"/>
+  <polygon points="100,16 156,42 184,100 156,158 100,184 44,158 16,100 44,42" fill="#C9252D"/>
+  <polygon points="100,20 152,44 180,100 152,156 100,180 48,156 20,100 48,44" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+  <text x="100" y="122" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="900" fill="#FFFFFF" text-anchor="middle">STOP</text>
 </svg>

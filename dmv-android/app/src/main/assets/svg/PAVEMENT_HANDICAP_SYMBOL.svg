@@ -1,17 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
-  <!-- Road surface -->
-  <rect x="0" y="0" width="300" height="200" fill="#4A4A4A"/>
-  <!-- Subtle texture -->
-  <rect x="0" y="0" width="300" height="200" fill="#000000" opacity="0.05"/>
-  
-  <!-- Wheelchair symbol -->
-  <g fill="#003DA5">
-    <rect x="0" y="0" width="300" height="200" fill="#FFFFFF"/>
-    <circle cx="150" cy="70" r="18"/>
-    <path d="M 150,88 L 150,125" stroke="#003DA5" stroke-width="14" fill="none"/>
-    <path d="M 135,105 L 165,105" stroke="#003DA5" stroke-width="12" fill="none"/>
-    <circle cx="130" cy="145" r="26" fill="none" stroke="#003DA5" stroke-width="10"/>
-    <circle cx="170" cy="145" r="16" fill="none" stroke="#003DA5" stroke-width="8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="PAVEMENT_HANDICAP_SYMBOL">
+<g transform="translate(12 41.3333) scale(0.5867)">
+    <!-- Road surface -->
+      <rect x="0" y="0" width="300" height="200" fill="#4A4A4A"/>
+      <!-- Subtle texture -->
+      
+      <!-- Wheelchair symbol -->
+      <g fill="#003DA5">
+        <rect x="0" y="0" width="300" height="200" fill="#FFFFFF"/>
+        <circle cx="150" cy="70" r="18"/>
+        <path d="M 150,88 L 150,125" stroke="#003DA5" stroke-width="14" fill="none"/>
+        <path d="M 135,105 L 165,105" stroke="#003DA5" stroke-width="12" fill="none"/>
+        <circle cx="130" cy="145" r="26" fill="none" stroke="#003DA5" stroke-width="10"/>
+        <circle cx="170" cy="145" r="16" fill="none" stroke="#003DA5" stroke-width="8"/>
+      </g>
   </g>
-
 </svg>

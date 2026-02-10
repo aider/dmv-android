@@ -1,19 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
-  <!-- Road surface -->
-  <rect x="0" y="0" width="300" height="200" fill="#555555"/>
-
-  <!-- Lane line -->
-  <line x1="150" y1="0" x2="150" y2="200" stroke="#FFFF00" stroke-width="3" stroke-dasharray="15,10"/>
-
-  <!-- Zebra stripe crosswalk -->
-  <rect x="50" y="60" width="20" height="80" fill="#FFFFFF"/>
-  <rect x="80" y="60" width="20" height="80" fill="#FFFFFF"/>
-  <rect x="110" y="60" width="20" height="80" fill="#FFFFFF"/>
-  <rect x="170" y="60" width="20" height="80" fill="#FFFFFF"/>
-  <rect x="200" y="60" width="20" height="80" fill="#FFFFFF"/>
-  <rect x="230" y="60" width="20" height="80" fill="#FFFFFF"/>
-
-  <!-- Crosswalk boundaries -->
-  <line x1="40" y1="60" x2="260" y2="60" stroke="#FFFFFF" stroke-width="3"/>
-  <line x1="40" y1="140" x2="260" y2="140" stroke="#FFFFFF" stroke-width="3"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="PAVEMENT_CROSSWALK_ZEBRA">
+<g transform="translate(12 41.3333) scale(0.5867)">
+    <!-- Road surface -->
+      <rect x="0" y="0" width="300" height="200" fill="#4A4A4A"/>
+      <!-- Subtle texture -->
+      
+      <!-- Zebra stripes -->
+      <rect x="0" y="70" width="26" height="60" fill="#FFFFFF"/>
+      <rect x="32" y="70" width="26" height="60" fill="#FFFFFF"/>
+      <rect x="64" y="70" width="26" height="60" fill="#FFFFFF"/>
+      <rect x="96" y="70" width="26" height="60" fill="#FFFFFF"/>
+      <rect x="128" y="70" width="26" height="60" fill="#FFFFFF"/>
+      <rect x="160" y="70" width="26" height="60" fill="#FFFFFF"/>
+      <rect x="192" y="70" width="26" height="60" fill="#FFFFFF"/>
+      <rect x="224" y="70" width="26" height="60" fill="#FFFFFF"/>
+      <rect x="256" y="70" width="26" height="60" fill="#FFFFFF"/>
+  </g>
 </svg>

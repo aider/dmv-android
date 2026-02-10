@@ -1,18 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <rect x="0" y="0" width="200" height="200" fill="#88AA88"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="INTERSECTION_PEDESTRIAN_CROSSWALK">
+<rect x="0" y="0" width="200" height="200" fill="#88AA88"/>
   <rect x="0" y="70" width="200" height="60" fill="#4A4A4A"/>
-  <!-- Crosswalk -->
-  <rect x="80" y="70" width="12" height="60" fill="#FFFFFF"/>
-  <rect x="96" y="70" width="12" height="60" fill="#FFFFFF"/>
-  <rect x="112" y="70" width="12" height="60" fill="#FFFFFF"/>
-  <!-- Pedestrian -->
-  <g fill="#FFCC00" stroke="#000000" stroke-width="2">
-    <circle cx="100" cy="88" r="6"/>
-    <line x1="100" y1="94" x2="100" y2="110" stroke-width="4"/>
-    <line x1="92" y1="100" x2="108" y2="100" stroke-width="3"/>
-    <line x1="100" y1="110" x2="94" y2="122" stroke-width="4"/>
-    <line x1="100" y1="110" x2="106" y2="122" stroke-width="4"/>
-  </g>
-  <!-- Stopped vehicle -->
-  <rect x="20" y="90" width="35" height="20" rx="3" fill="#333333"/>
+  <!-- Stop line -->
+  <rect x="0" y="64" width="70" height="6" fill="#FFFFFF"/>
+  <!-- Crosswalk zebra stripes -->
+  <rect x="79.0" y="70" width="12" height="60" fill="#FFFFFF"/>
+  <rect x="95.0" y="70" width="12" height="60" fill="#FFFFFF"/>
+  <rect x="111.0" y="70" width="12" height="60" fill="#FFFFFF"/>
+  <!-- Pedestrian in crosswalk -->
+  <g fill="#FFCC00" stroke="#000000" stroke-width="2" transform="translate(100,88) scale(1)"><circle cx="0" cy="0" r="6"/><line x1="0" y1="6" x2="0" y2="22" stroke-width="4"/><line x1="-8" y1="12" x2="8" y2="12" stroke-width="3"/><line x1="0" y1="22" x2="-6" y2="34" stroke-width="4"/><line x1="0" y1="22" x2="6" y2="34" stroke-width="4"/></g>
+  <!-- Stopped vehicle behind stop line -->
+  <rect x="20" y="45" width="35" height="20" rx="3" fill="#666666"/>
 </svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MARKING_HAND_SIGNAL_LEFT">
+<rect x="0" y="0" width="200" height="200" fill="#87CEEB"/>
+  <!-- Road -->
+  <rect x="0" y="130" width="200" height="70" fill="#4A4A4A"/>
+  <!-- Vehicle (rear view) -->
+  <rect x="55" y="110" width="90" height="70" rx="6" fill="#3366CC"/>
+  <!-- Rear window -->
+  <rect x="65" y="115" width="70" height="30" rx="4" fill="#87CEEB" opacity="0.7"/>
+  <!-- Taillights -->
+  <rect x="57" y="165" width="12" height="8" rx="2" fill="#FF0000"/>
+  <rect x="131" y="165" width="12" height="8" rx="2" fill="#FF0000"/>
+  <!-- Driver window (left side) -->
+  <rect x="42" y="118" width="18" height="25" rx="3" fill="#87CEEB" opacity="0.7"/>
+  <!-- Left arm extended straight out -->
+  <line x1="42" y1="130" x2="8" y2="130" stroke="#FFE0BD" stroke-width="8" stroke-linecap="round"/>
+  <!-- Hand (palm forward) -->
+  <circle cx="8" cy="130" r="6" fill="#FFE0BD" stroke="#CC9966" stroke-width="2"/>
+  <!-- Label -->
+  <text x="100" y="25" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="900" fill="#000000" text-anchor="middle">LEFT TURN</text>
+</svg>

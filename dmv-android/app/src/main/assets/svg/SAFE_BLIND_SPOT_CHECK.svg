@@ -1,5 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <rect x="0" y="0" width="200" height="200" fill="#EEEEEE"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="SAFE_BLIND_SPOT_CHECK">
+<defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#FFCC00"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="200" height="200" fill="#88AA88"/>
   <!-- Vehicle (top view) -->
   <rect x="70" y="60" width="60" height="80" rx="8" fill="#3366CC" stroke="#000000" stroke-width="2"/>
   <!-- Driver position -->
@@ -14,5 +19,4 @@
   <path d="M 100,55 L 100,20 L 130,20 L 130,60 Z" fill="#00FF00" opacity="0.3"/>
   <!-- Head turn indicator -->
   <path d="M 85,90 L 95,85" stroke="#FFCC00" stroke-width="3" marker-end="url(#arrow)"/>
-  <text x="100" y="180" font-family="Arial" font-size="14" font-weight="700" fill="#000000" text-anchor="middle">CHECK BLIND SPOTS</text>
 </svg>

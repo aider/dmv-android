@@ -1,9 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 250">
-  <rect x="5" y="5" width="140" height="240" fill="#C8F526" stroke="#000000" stroke-width="3" rx="5"/>
-  <text x="75" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">SCHOOL</text>
-  <text x="75" y="70" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">SPEED</text>
-  <text x="75" y="95" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">LIMIT</text>
-  <text x="75" y="160" font-family="Arial Black, sans-serif" font-size="72" font-weight="bold" fill="#000000" text-anchor="middle">20</text>
-  <text x="75" y="205" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#000000" text-anchor="middle">WHEN</text>
-  <text x="75" y="228" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#000000" text-anchor="middle">CHILDREN</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_S4-3_SCHOOL_SPEED_LIMIT_20">
+  <rect x="30" y="8" width="140" height="184" rx="8" fill="#FFFFFF" stroke="#000000" stroke-width="4"/>
+  <rect x="38" y="16" width="124" height="168" rx="4" fill="none" stroke="#000000" stroke-width="2"/>
+
+  <text x="100" y="44" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="800" fill="#000000" text-anchor="middle">SCHOOL</text>
+  <text x="100" y="66" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="800" fill="#000000" text-anchor="middle">SPEED</text>
+  <text x="100" y="88" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="800" fill="#000000" text-anchor="middle">LIMIT</text>
+
+  <text x="100" y="142" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="900" fill="#000000" text-anchor="middle">20</text>
+
+  <text x="100" y="169" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#000000" text-anchor="middle">WHEN CHILDREN</text>
+  <text x="100" y="180" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#000000" text-anchor="middle">PRESENT</text>
 </svg>

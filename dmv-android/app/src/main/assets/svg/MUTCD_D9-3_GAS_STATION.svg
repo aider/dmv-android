@@ -1,10 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
-  <rect x="7" y="7" width="140" height="140" rx="8" fill="#000000" opacity="0.15"/>
-  <rect x="5" y="5" width="140" height="140" rx="8" fill="#003DA5" stroke="#FFFFFF" stroke-width="4"/>
-  <g fill="none" stroke="#FFFFFF" stroke-width="8">
-    <rect x="45" y="50" width="40" height="50" rx="4"/>
-    <path d="M 85,65 L 100,65 L 100,95"/>
-    <rect x="95" y="90" width="15" height="20" rx="3" fill="#FFFFFF"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_D9-3_GAS_STATION">
+<rect x="26" y="22" width="148" height="156" rx="8" fill="#003DA5" stroke="#FFFFFF" stroke-width="4"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="68" y="66" width="44" height="66" rx="4"/>
+    <line x1="112" y1="74" x2="134" y2="96"/>
+    <line x1="134" y1="96" x2="134" y2="130"/>
+    <rect x="128" y="130" width="14" height="18" rx="2" fill="#FFFFFF" stroke="none"/>
   </g>
-  <circle cx="107" cy="72" r="8" fill="#FFFFFF"/>
 </svg>

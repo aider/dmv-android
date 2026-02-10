@@ -1,18 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 250">
-  <!-- Housing -->
-  <rect x="10" y="10" width="80" height="230" rx="8" fill="#1A1A1A" stroke="#000000" stroke-width="3"/>
-  <!-- Visors -->
-  <rect x="8" y="28" width="84" height="8" rx="4" fill="#000000"/>
-  <rect x="8" y="103" width="84" height="8" rx="4" fill="#000000"/>
-  <rect x="8" y="178" width="84" height="8" rx="4" fill="#000000"/>
-  <!-- Red light -->
-  <circle cx="50" cy="50" r="28" fill="#222222" stroke="#000000" stroke-width="2"/>
-  
-  <!-- Yellow light -->
-  <circle cx="50" cy="125" r="28" fill="#FFCC00" stroke="#000000" stroke-width="2"/>
-  <circle cx="50" cy="125" r="25" fill="#FFEE44" opacity="0.6"/>
-  <!-- Green light -->
-  <circle cx="50" cy="200" r="28" fill="#222222" stroke="#000000" stroke-width="2"/>
-  
-  <path d="M 58,125 L 42,125 L 42,120 L 35,127 L 42,134 L 42,129 L 58,129 Z" fill="#000000"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="SIGNAL_YELLOW_ARROW_LEFT">
+<g transform="translate(64.8 12) scale(0.704)">
+    <!-- Housing -->
+      <rect x="10" y="10" width="80" height="230" rx="8" fill="#1A1A1A" stroke="#000000" stroke-width="3"/>
+      <!-- Visors -->
+      <rect x="8" y="28" width="84" height="8" rx="4" fill="#000000"/>
+      <rect x="8" y="103" width="84" height="8" rx="4" fill="#000000"/>
+      <rect x="8" y="178" width="84" height="8" rx="4" fill="#000000"/>
+      <!-- Red light (inactive) -->
+      <circle cx="50" cy="50" r="28" fill="#444444" stroke="#000000" stroke-width="2"/>
+      <!-- Yellow light (active) -->
+      <circle cx="50" cy="125" r="28" fill="#FFCC00" stroke="#000000" stroke-width="2"/>
+      <circle cx="50" cy="125" r="25" fill="#FFEE44" opacity="0.6"/>
+      <!-- Left arrow on yellow -->
+      <path d="M 30,125 L 45,113 L 45,120 L 68,120 L 68,130 L 45,130 L 45,137 Z" fill="#000000"/>
+      <!-- Green light (inactive) -->
+      <circle cx="50" cy="200" r="28" fill="#444444" stroke="#000000" stroke-width="2"/>
+  </g>
 </svg>

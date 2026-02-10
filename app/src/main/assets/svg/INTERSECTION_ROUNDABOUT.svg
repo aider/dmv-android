@@ -1,32 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
-  <!-- Roads approaching roundabout -->
-  <rect x="135" y="0" width="30" height="80" fill="#555555"/>
-  <rect x="135" y="220" width="30" height="80" fill="#555555"/>
-  <rect x="0" y="135" width="80" height="30" fill="#555555"/>
-  <rect x="220" y="135" width="80" height="30" fill="#555555"/>
-
-  <!-- Outer circle of roundabout -->
-  <circle cx="150" cy="150" r="70" fill="none" stroke="#555555" stroke-width="30"/>
-
-  <!-- Center island -->
-  <circle cx="150" cy="150" r="45" fill="#90EE90" stroke="#006400" stroke-width="2"/>
-
-  <!-- Yield markings (triangles at entries) -->
-  <polygon points="150,75 145,85 155,85" fill="#FFFFFF"/>
-  <polygon points="150,225 145,215 155,215" fill="#FFFFFF"/>
-  <polygon points="75,150 85,145 85,155" fill="#FFFFFF"/>
-  <polygon points="225,150 215,145 215,155" fill="#FFFFFF"/>
-
-  <!-- Direction arrows (counterclockwise) -->
-  <path d="M 180,120 A 30,30 0 0,1 180,180" stroke="#FFFFFF" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
-
-  <!-- Vehicles -->
-  <rect x="145" y="40" width="15" height="25" fill="#0066CC" stroke="#003366" stroke-width="1" rx="2"/>
-  <rect x="200" y="110" width="25" height="15" fill="#CC0000" stroke="#660000" stroke-width="1" rx="2"/>
-
-  <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <polygon points="0,0 10,3 0,6" fill="#FFFFFF"/>
-    </marker>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="INTERSECTION_ROUNDABOUT">
+<defs><marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#FFFFFF"/></marker></defs>
+  <rect x="0" y="0" width="200" height="200" fill="#88AA88"/>
+  <!-- Circular road -->
+  <circle cx="100" cy="100" r="47.5" fill="none" stroke="#4A4A4A" stroke-width="25"/>
+  <circle cx="100" cy="100" r="35" fill="#88AA88"/>
+  <!-- Approach roads -->
+  <rect x="90" y="0" width="20" height="50" fill="#4A4A4A"/>
+  <rect x="150" y="90" width="50" height="20" fill="#4A4A4A"/>
+  <rect x="90" y="150" width="20" height="50" fill="#4A4A4A"/>
+  <rect x="0" y="90" width="50" height="20" fill="#4A4A4A"/>
+  <!-- Yield triangles at entries -->
+  <polygon points="92.0,50 108.0,50 100,42" fill="#FFFFFF"/>
+  <polygon points="150,92.0 150,108.0 158,100" fill="#FFFFFF"/>
+  <polygon points="92.0,150 108.0,150 100,158" fill="#FFFFFF"/>
+  <polygon points="50,92.0 50,108.0 42,100" fill="#FFFFFF"/>
+  <!-- Counterclockwise flow arrows -->
+  <path d="M 100,30 Q 80,40 70,55" fill="none" stroke="#FFFFFF" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 170,100 Q 160,80 145,70" fill="none" stroke="#FFFFFF" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 100,170 Q 120,160 130,145" fill="none" stroke="#FFFFFF" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 30,100 Q 40,120 55,130" fill="none" stroke="#FFFFFF" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <!-- Ego vehicle (blue) entering from south -->
+  <rect x="88" y="158" width="24" height="16" rx="3" fill="#3366CC"/>
+  <!-- Other vehicle (gray) in roundabout -->
+  <rect x="132" y="88" width="24" height="16" rx="3" fill="#666666"/>
 </svg>

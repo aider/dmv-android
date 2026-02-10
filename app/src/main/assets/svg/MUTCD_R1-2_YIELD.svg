@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <polygon points="100,20 180,160 20,160" fill="#FFFFFF" stroke="#FF0000" stroke-width="6"/>
-  <text x="100" y="130" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#FF0000" text-anchor="middle">YIELD</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_R1-2_YIELD">
+  <polygon points="100,8 190,170 10,170" fill="#C9252D"/>
+  <polygon points="100,20 176,160 24,160" fill="#FFFFFF"/>
+  <polygon points="100,30 166,152 34,152" fill="none" stroke="#C9252D" stroke-width="4"/>
+  <text x="100" y="120" font-family="Arial, Helvetica, sans-serif" font-size="26" letter-spacing="1" font-weight="900" fill="#C9252D" text-anchor="middle">YIELD</text>
 </svg>

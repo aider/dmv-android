@@ -1,22 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <!-- Road surface -->
-  <rect x="0" y="0" width="200" height="300" fill="#555555"/>
-
-  <!-- Lane edges -->
-  <line x1="20" y1="0" x2="20" y2="300" stroke="#FFFFFF" stroke-width="2"/>
-  <line x1="180" y1="0" x2="180" y2="300" stroke="#FFFFFF" stroke-width="2"/>
-
-  <!-- Sharrow symbol (bicycle + chevrons = shared lane marking) -->
-  <!-- Bicycle -->
-  <circle cx="100" cy="160" r="12" fill="none" stroke="#FFFFFF" stroke-width="3"/>
-  <circle cx="100" cy="190" r="12" fill="none" stroke="#FFFFFF" stroke-width="3"/>
-  <line x1="100" y1="160" x2="110" y2="172" stroke="#FFFFFF" stroke-width="3"/>
-  <line x1="110" y1="172" x2="100" y2="190" stroke="#FFFFFF" stroke-width="3"/>
-  <line x1="110" y1="172" x2="110" y2="155" stroke="#FFFFFF" stroke-width="3"/>
-  <circle cx="112" cy="148" r="4" fill="#FFFFFF"/>
-  <line x1="110" y1="172" x2="95" y2="155" stroke="#FFFFFF" stroke-width="3"/>
-
-  <!-- Double chevrons above -->
-  <polygon points="100,100 115,120 108,120 100,110 92,120 85,120" fill="#FFFFFF"/>
-  <polygon points="100,70 115,90 108,90 100,80 92,90 85,90" fill="#FFFFFF"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="PAVEMENT_SHARROW">
+<g transform="translate(12 41.3333) scale(0.5867)">
+    <!-- Road surface -->
+      <rect x="0" y="0" width="300" height="200" fill="#4A4A4A"/>
+      <!-- Subtle texture -->
+      
+      <!-- Shared lane bicycle marking with chevrons -->
+      <g fill="#FFFFFF">
+        <!-- Top chevron -->
+        <path d="M 150,50 L 130,70 L 140,70 L 150,60 L 160,70 L 170,70 Z"/>
+        <!-- Bottom chevron -->
+        <path d="M 150,75 L 130,95 L 140,95 L 150,85 L 160,95 L 170,95 Z"/>
+        <!-- Bike symbol -->
+        <circle cx="120" cy="130" r="14" fill="none" stroke="#FFFFFF" stroke-width="8"/>
+        <circle cx="180" cy="130" r="14" fill="none" stroke="#FFFFFF" stroke-width="8"/>
+        <line x1="120" y1="130" x2="150" y2="110" stroke="#FFFFFF" stroke-width="8"/>
+        <line x1="150" y1="110" x2="180" y2="130" stroke="#FFFFFF" stroke-width="8"/>
+      </g>
+  </g>
 </svg>

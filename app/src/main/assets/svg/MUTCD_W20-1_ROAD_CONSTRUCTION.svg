@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <rect x="10" y="10" width="180" height="180" fill="#FF6600" stroke="#000000" stroke-width="4" rx="5" transform="rotate(45 100 100)"/>
-  <circle cx="70" cy="95" r="8" fill="#000000"/>
-  <line x1="70" y1="103" x2="70" y2="130" stroke="#000000" stroke-width="6"/>
-  <line x1="60" y1="113" x2="80" y2="118" stroke="#000000" stroke-width="6"/>
-  <line x1="70" y1="130" x2="65" y2="145" stroke="#000000" stroke-width="6"/>
-  <line x1="70" y1="130" x2="75" y2="145" stroke="#000000" stroke-width="6"/>
-  <rect x="95" y="115" width="35" height="25" fill="none" stroke="#000000" stroke-width="5"/>
-  <line x1="100" y1="110" x2="125" y2="110" stroke="#000000" stroke-width="4"/>
-  <line x1="112" y1="70" x2="112" y2="110" stroke="#000000" stroke-width="4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_W20-1_ROAD_CONSTRUCTION">
+<rect x="22" y="22" width="156" height="156" transform="rotate(45 100 100)" fill="#FFCC00" stroke="#000000" stroke-width="6"/>
+  <g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="92" cy="60" r="10" fill="#000000" stroke="none"/>
+    <path d="M92 72 L88 98" fill="none" stroke-width="8"/>
+    <path d="M74 86 L104 90" fill="none" stroke-width="8"/>
+    <path d="M88 98 L76 128" fill="none" stroke-width="8"/>
+    <path d="M88 98 L104 126" fill="none" stroke-width="8"/>
+    <path d="M106 110 L138 98" fill="none" stroke-width="8"/>
+  </g>
 </svg>

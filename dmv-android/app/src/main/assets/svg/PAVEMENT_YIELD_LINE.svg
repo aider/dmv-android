@@ -1,17 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
-  <!-- Road surface -->
-  <rect x="0" y="0" width="300" height="200" fill="#4A4A4A"/>
-  <!-- Subtle texture -->
-  <rect x="0" y="0" width="300" height="200" fill="#000000" opacity="0.05"/>
-  
-  <!-- Yield line (triangular teeth pattern) -->
-  <path d="M 10,85 L 30,100 L 10,115 Z" fill="#FFFFFF"/>
-  <path d="M 50,85 L 70,100 L 50,115 Z" fill="#FFFFFF"/>
-  <path d="M 90,85 L 110,100 L 90,115 Z" fill="#FFFFFF"/>
-  <path d="M 130,85 L 150,100 L 130,115 Z" fill="#FFFFFF"/>
-  <path d="M 170,85 L 190,100 L 170,115 Z" fill="#FFFFFF"/>
-  <path d="M 210,85 L 230,100 L 210,115 Z" fill="#FFFFFF"/>
-  <path d="M 250,85 L 270,100 L 250,115 Z" fill="#FFFFFF"/>
-  <path d="M 290,85 L 300,100 L 290,115 Z" fill="#FFFFFF"/>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="PAVEMENT_YIELD_LINE">
+<g transform="translate(12 41.3333) scale(0.5867)">
+    <!-- Road surface -->
+      <rect x="0" y="0" width="300" height="200" fill="#4A4A4A"/>
+      <!-- Subtle texture -->
+      
+      <!-- Yield line (triangular teeth pattern) -->
+      <path d="M 10,85 L 30,100 L 10,115 Z" fill="#FFFFFF"/>
+      <path d="M 50,85 L 70,100 L 50,115 Z" fill="#FFFFFF"/>
+      <path d="M 90,85 L 110,100 L 90,115 Z" fill="#FFFFFF"/>
+      <path d="M 130,85 L 150,100 L 130,115 Z" fill="#FFFFFF"/>
+      <path d="M 170,85 L 190,100 L 170,115 Z" fill="#FFFFFF"/>
+      <path d="M 210,85 L 230,100 L 210,115 Z" fill="#FFFFFF"/>
+      <path d="M 250,85 L 270,100 L 250,115 Z" fill="#FFFFFF"/>
+      <path d="M 290,85 L 300,100 L 290,115 Z" fill="#FFFFFF"/>
+  </g>
 </svg>
