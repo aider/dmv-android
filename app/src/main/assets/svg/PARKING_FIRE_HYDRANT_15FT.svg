@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200">
+  <!-- Street -->
+  <rect x="0" y="80" width="350" height="80" fill="#555555"/>
+
+  <!-- Sidewalk/curb -->
+  <rect x="0" y="0" width="350" height="80" fill="#CCCCCC"/>
+
+  <!-- Fire hydrant -->
+  <rect x="170" y="40" width="15" height="35" fill="#FF0000" stroke="#AA0000" stroke-width="2" rx="2"/>
+  <rect x="165" y="35" width="25" height="8" fill="#FF0000" stroke="#AA0000" stroke-width="2"/>
+  <circle cx="177" cy="50" r="4" fill="#FFFF00"/>
+
+  <!-- 15 feet distance marker (left side) -->
+  <line x1="100" y1="60" x2="165" y2="60" stroke="#00AA00" stroke-width="3" marker-start="url(#arrowleft2)" marker-end="url(#arrowright2)"/>
+  <text x="132" y="50" font-family="Arial Bold, sans-serif" font-size="16" font-weight="bold" fill="#00AA00" text-anchor="middle">15 FT</text>
+
+  <!-- 15 feet distance marker (right side) -->
+  <line x1="190" y1="60" x2="255" y2="60" stroke="#00AA00" stroke-width="3" marker-start="url(#arrowleft2)" marker-end="url(#arrowright2)"/>
+  <text x="222" y="50" font-family="Arial Bold, sans-serif" font-size="16" font-weight="bold" fill="#00AA00" text-anchor="middle">15 FT</text>
+
+  <!-- Legal parking (far from hydrant) -->
+  <rect x="40" y="90" width="35" height="20" fill="#00AA00" stroke="#006600" stroke-width="2" rx="2" opacity="0.7"/>
+  <text x="57" y="130" font-family="Arial, sans-serif" font-size="12" fill="#00AA00" text-anchor="middle">OK</text>
+
+  <!-- Illegal parking (too close) -->
+  <rect x="120" y="90" width="35" height="20" fill="#FF0000" stroke="#AA0000" stroke-width="2" rx="2" opacity="0.7"/>
+  <text x="137" y="130" font-family="Arial, sans-serif" font-size="12" fill="#FF0000" text-anchor="middle">NO</text>
+
+  <defs>
+    <marker id="arrowleft2" markerWidth="10" markerHeight="10" refX="1" refY="5" orient="auto">
+      <polygon points="10,5 0,0 0,10" fill="#00AA00"/>
+    </marker>
+    <marker id="arrowright2" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <polygon points="0,5 10,0 10,10" fill="#00AA00"/>
+    </marker>
+  </defs>
+</svg>

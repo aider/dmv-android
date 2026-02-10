@@ -1,0 +1,1858 @@
+[
+  {
+    "id": "TX-ROW-0001",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "At a 4-way stop intersection, two vehicles arrive at the same time from different directions. Who has the right-of-way?",
+    "choices": [
+      "The vehicle on the right",
+      "The vehicle on the left",
+      "The larger vehicle",
+      "Whoever honks first"
+    ],
+    "correctIndex": 0,
+    "explanation": "When two vehicles arrive simultaneously at a 4-way stop, the driver on the right has the right-of-way. This rule prevents confusion and reduces the risk of collisions.",
+    "reference": "DL-7: Right-of-Way Rules",
+    "image": {
+      "type": "svg",
+      "assetId": "INTERSECTION_4WAY_STOP"
+    }
+  },
+  {
+    "id": "TX-ROW-0002",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 1,
+    "text": "At a 4-way stop, if you arrive first, when should you proceed?",
+    "choices": [
+      "After coming to a complete stop and when it is safe",
+      "Immediately without stopping",
+      "After waiting for all other vehicles",
+      "Only when another driver signals you to go"
+    ],
+    "correctIndex": 0,
+    "explanation": "The first vehicle to arrive at a 4-way stop and come to a complete stop has the right-of-way and may proceed when safe. This maintains orderly traffic flow.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0003",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "At an uncontrolled intersection where there are no signs or signals, who has the right-of-way?",
+    "choices": [
+      "The vehicle on the right",
+      "The vehicle traveling faster",
+      "The vehicle on the left",
+      "The vehicle that arrives first"
+    ],
+    "correctIndex": 0,
+    "explanation": "At uncontrolled intersections, the vehicle on the right has the right-of-way when two vehicles arrive at approximately the same time. Always approach these intersections with caution.",
+    "reference": "DL-7: Right-of-Way Rules",
+    "image": {
+      "type": "svg",
+      "assetId": "INTERSECTION_UNCONTROLLED"
+    }
+  },
+  {
+    "id": "TX-ROW-0004",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "You are turning left at an intersection with a green light. Oncoming traffic is approaching. What should you do?",
+    "choices": [
+      "Yield to oncoming traffic before turning",
+      "Turn immediately since you have a green light",
+      "Honk and proceed with caution",
+      "Wait for the light to turn yellow"
+    ],
+    "correctIndex": 0,
+    "explanation": "Even with a green light, vehicles turning left must yield to oncoming traffic traveling straight. Left-turning vehicles must wait for a safe gap in traffic.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0005",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "At a T-intersection, you are on the through street and another vehicle is at the end of the T. Who has the right-of-way?",
+    "choices": [
+      "You have the right-of-way on the through street",
+      "The vehicle at the end of the T",
+      "Whoever arrives first",
+      "The larger vehicle"
+    ],
+    "correctIndex": 0,
+    "explanation": "Traffic on the through street at a T-intersection has the right-of-way over vehicles entering from the terminating street. The entering vehicle must yield.",
+    "reference": "DL-7: Right-of-Way Rules",
+    "image": {
+      "type": "svg",
+      "assetId": "INTERSECTION_T_STOP"
+    }
+  },
+  {
+    "id": "TX-ROW-0006",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "You are entering a roundabout. Traffic is already circulating inside. Who has the right-of-way?",
+    "choices": [
+      "Vehicles already in the roundabout",
+      "You, as the entering vehicle",
+      "Vehicles to your left",
+      "Whoever is driving faster"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vehicles already circulating in a roundabout always have the right-of-way. Entering vehicles must yield until there is a safe gap to merge.",
+    "reference": "DL-7: Right-of-Way Rules",
+    "image": {
+      "type": "svg",
+      "assetId": "INTERSECTION_ROUNDABOUT"
+    }
+  },
+  {
+    "id": "TX-ROW-0007",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 1,
+    "text": "You arrive at an intersection with a stop sign. What must you do before proceeding?",
+    "choices": [
+      "Come to a complete stop and yield to traffic",
+      "Slow down and proceed if clear",
+      "Stop only if other vehicles are present",
+      "Honk and proceed slowly"
+    ],
+    "correctIndex": 0,
+    "explanation": "A stop sign requires a complete stop before the stop line or crosswalk. You must yield the right-of-way to vehicles and pedestrians before proceeding safely.",
+    "reference": "DL-7: Right-of-Way Rules",
+    "image": {
+      "type": "svg",
+      "assetId": "MUTCD_R1-1_STOP"
+    }
+  },
+  {
+    "id": "TX-ROW-0008",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "At a 4-way stop, three vehicles arrive at the same time. Vehicle A is on your right, Vehicle B is across from you, and you are Vehicle C. Who goes first?",
+    "choices": [
+      "Vehicle A on your right",
+      "You (Vehicle C)",
+      "Vehicle B across from you",
+      "All vehicles proceed together"
+    ],
+    "correctIndex": 0,
+    "explanation": "When multiple vehicles arrive simultaneously at a 4-way stop, the vehicle on the right has priority. In this case, Vehicle A has the right-of-way.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0009",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "You are at a 4-way stop and want to turn left. A vehicle across from you arrives at the same time and wants to go straight. Who has the right-of-way?",
+    "choices": [
+      "The vehicle going straight",
+      "You, turning left",
+      "Whoever proceeds first",
+      "Both can go simultaneously"
+    ],
+    "correctIndex": 0,
+    "explanation": "When two vehicles face each other at an intersection, straight-through traffic has the right-of-way over left-turning traffic. Wait for the straight vehicle to clear before turning.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0010",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "You approach an intersection where the traffic signal is not working. How should you treat this intersection?",
+    "choices": [
+      "As a 4-way stop",
+      "As an uncontrolled intersection where you can proceed freely",
+      "As a yield sign for all directions",
+      "As a green light for your direction"
+    ],
+    "correctIndex": 0,
+    "explanation": "When traffic signals are not functioning, all drivers must treat the intersection as a 4-way stop. Come to a complete stop and proceed according to right-of-way rules.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0011",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 1,
+    "text": "You see a yield sign at an intersection. What does this mean?",
+    "choices": [
+      "Slow down and give right-of-way to other vehicles and pedestrians",
+      "Stop completely before proceeding",
+      "Proceed without slowing if the road is clear",
+      "Honk to warn other drivers"
+    ],
+    "correctIndex": 0,
+    "explanation": "A yield sign requires you to slow down and be ready to stop, giving the right-of-way to vehicles and pedestrians. You may proceed only when it is safe to do so.",
+    "reference": "DL-7: Right-of-Way Rules",
+    "image": {
+      "type": "svg",
+      "assetId": "MUTCD_R1-2_YIELD"
+    }
+  },
+  {
+    "id": "TX-ROW-0012",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 4,
+    "text": "At a 4-way stop, you arrive second. The first vehicle is turning left across your path, and a third vehicle arrives after you on your right. When do you proceed?",
+    "choices": [
+      "After the first vehicle completes their turn, before the third vehicle",
+      "After both the first and third vehicles",
+      "At the same time as the third vehicle",
+      "Before the first vehicle completes their turn"
+    ],
+    "correctIndex": 0,
+    "explanation": "At a 4-way stop, proceed in order of arrival. Since you arrived second, you go after the first vehicle clears, and before the third vehicle that arrived after you.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0013",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "You are turning right at an intersection. A vehicle is approaching from the left intending to turn left onto the same street. Who has the right-of-way?",
+    "choices": [
+      "The vehicle turning left from the opposite direction",
+      "You, turning right",
+      "Whoever signals first",
+      "Whoever completes the turn faster"
+    ],
+    "correctIndex": 0,
+    "explanation": "When both vehicles are turning onto the same street, the vehicle making the left turn generally has the right-of-way over the right-turning vehicle to avoid collision in the intersection.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0014",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "You are driving on a two-lane road and want to turn left into a driveway. Oncoming traffic is approaching. What should you do?",
+    "choices": [
+      "Yield to oncoming traffic before turning",
+      "Turn quickly before oncoming traffic reaches you",
+      "Signal and expect oncoming traffic to stop",
+      "Turn only if you can complete it in under 3 seconds"
+    ],
+    "correctIndex": 0,
+    "explanation": "Drivers turning left across oncoming traffic must yield the right-of-way to vehicles traveling straight. Wait for a safe gap before turning.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0015",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 1,
+    "text": "When making a right turn at a red light (where permitted), what must you do first?",
+    "choices": [
+      "Come to a complete stop and yield to all traffic and pedestrians",
+      "Slow down and proceed if clear",
+      "Honk to alert other drivers",
+      "Wait for the green light"
+    ],
+    "correctIndex": 0,
+    "explanation": "Before turning right on red, you must come to a complete stop and yield to all vehicles and pedestrians. Proceed only when safe and where right turns on red are permitted.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0016",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "At an uncontrolled intersection, you and another vehicle approach from perpendicular directions at about the same time. You are both going straight. Who yields?",
+    "choices": [
+      "You yield if the other vehicle is on your right",
+      "The other vehicle always yields to you",
+      "Whoever is traveling faster proceeds first",
+      "Both vehicles should stop and wait"
+    ],
+    "correctIndex": 0,
+    "explanation": "At uncontrolled intersections, when two vehicles arrive simultaneously, the vehicle on the left must yield to the vehicle on the right. This is the fundamental right-of-way rule.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0017",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "You are in a roundabout and want to exit. A vehicle is trying to enter. Who has the right-of-way?",
+    "choices": [
+      "You have the right-of-way while in the roundabout",
+      "The entering vehicle",
+      "Whoever signals first",
+      "Both proceed with caution"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vehicles already circulating in a roundabout always have the right-of-way over entering vehicles. The entering driver must wait for a safe gap.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0018",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 4,
+    "text": "At an intersection, you have a green light but there are vehicles still in the intersection from the previous signal cycle. What should you do?",
+    "choices": [
+      "Wait for the intersection to clear before entering",
+      "Proceed immediately since you have the green light",
+      "Honk to clear the intersection",
+      "Enter slowly and navigate around the vehicles"
+    ],
+    "correctIndex": 0,
+    "explanation": "Even with a green light, you must yield to vehicles already in the intersection. Never enter an intersection until it is clear and you can completely cross.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0019",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 1,
+    "text": "You are approaching an intersection where you want to turn right, and the light is green. What should you do?",
+    "choices": [
+      "Slow down, check for pedestrians and traffic, then turn when safe",
+      "Turn at full speed since you have a green light",
+      "Stop completely before turning",
+      "Turn only if there are no pedestrians anywhere nearby"
+    ],
+    "correctIndex": 0,
+    "explanation": "Even with a green light, you must yield to pedestrians in the crosswalk and oncoming traffic before turning. Always slow down and check before completing the turn.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0020",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "Two vehicles arrive at a 4-way stop at the same time. One is turning right, the other is turning left. Who has the right-of-way?",
+    "choices": [
+      "The vehicle turning right",
+      "The vehicle turning left",
+      "Both can proceed at the same time",
+      "Whoever signals first"
+    ],
+    "correctIndex": 0,
+    "explanation": "When two vehicles arrive simultaneously and one is turning right, the right-turning vehicle generally has the right-of-way because the turn is less complex and involves less crossing traffic.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0021",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "At an intersection with a flashing red light, how should you proceed?",
+    "choices": [
+      "Treat it as a stop sign",
+      "Slow down and proceed with caution",
+      "Stop only if other vehicles are present",
+      "Proceed at normal speed"
+    ],
+    "correctIndex": 0,
+    "explanation": "A flashing red light means the same as a stop sign. You must come to a complete stop, yield to traffic and pedestrians, and proceed when safe.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0022",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "At an intersection with a flashing yellow light, what should you do?",
+    "choices": [
+      "Slow down and proceed with caution",
+      "Stop completely",
+      "Proceed at normal speed",
+      "Treat it as a yield sign"
+    ],
+    "correctIndex": 0,
+    "explanation": "A flashing yellow light means slow down and proceed with caution. You do not need to stop, but should be alert for potential hazards at the intersection.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0023",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "You are at a 4-way stop and the vehicle on your left arrived just before you. That vehicle is going straight, and you want to turn left. Who proceeds first?",
+    "choices": [
+      "The vehicle on your left that arrived first",
+      "You can proceed at the same time",
+      "You should proceed first since you are turning",
+      "Whoever has more space to maneuver"
+    ],
+    "correctIndex": 0,
+    "explanation": "At a 4-way stop, vehicles proceed in the order they arrive. The vehicle that arrived first has the right-of-way regardless of the direction they intend to travel.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0024",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 4,
+    "text": "At an intersection, you have a left turn arrow (green arrow) but pedestrians are still crossing. What should you do?",
+    "choices": [
+      "Yield to pedestrians even though you have the arrow",
+      "Proceed since you have the green arrow",
+      "Honk to alert pedestrians",
+      "Turn slowly and expect pedestrians to move"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pedestrians always have the right-of-way when they are legally in a crosswalk, even if you have a green arrow. You must wait for them to clear before turning.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0025",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "When leaving a parking lot or driveway to enter a street, who has the right-of-way?",
+    "choices": [
+      "Vehicles already on the street",
+      "You, as the exiting vehicle",
+      "Whoever signals first",
+      "Whoever proceeds first"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vehicles on the street always have the right-of-way over vehicles entering from driveways or parking lots. You must yield before entering the roadway.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0026",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 5,
+    "text": "At a complex intersection with multiple lanes, you are in a left turn lane with a green light (not an arrow). Oncoming traffic has a green light. Pedestrians are crossing the street you want to turn onto. Who goes first?",
+    "choices": [
+      "Pedestrians, then oncoming traffic, then you",
+      "You have priority with your green light",
+      "Oncoming traffic only",
+      "Pedestrians only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pedestrians have the highest priority, followed by oncoming straight traffic, and finally left-turning vehicles. You must yield to both pedestrians and oncoming vehicles.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0027",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "In a roundabout, you need to exit but a pedestrian is in the crosswalk at your exit. What should you do?",
+    "choices": [
+      "Stop and yield to the pedestrian",
+      "Proceed slowly since you are exiting",
+      "Honk to warn the pedestrian",
+      "Take the next exit instead"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pedestrians always have the right-of-way in crosswalks, including those at roundabout exits. You must stop and wait for them to cross safely.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0028",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 1,
+    "text": "What does a green traffic light mean for your right-of-way?",
+    "choices": [
+      "You may proceed, but must yield to pedestrians and vehicles already in the intersection",
+      "You have absolute right-of-way and can proceed immediately",
+      "You must stop and then proceed",
+      "Only pedestrians may proceed"
+    ],
+    "correctIndex": 0,
+    "explanation": "A green light means you may proceed through the intersection, but you must still yield to pedestrians and any vehicles already lawfully in the intersection.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0029",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 4,
+    "text": "At a 4-way stop, all four vehicles arrive at exactly the same time. How should this situation be resolved?",
+    "choices": [
+      "Drivers should make eye contact and proceed cautiously one at a time",
+      "All vehicles proceed simultaneously",
+      "The largest vehicle goes first",
+      "Wait for a police officer to direct traffic"
+    ],
+    "correctIndex": 0,
+    "explanation": "When all vehicles arrive simultaneously at a 4-way stop, drivers should use caution, make eye contact, and communicate to determine a safe order of proceeding.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0030",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "You approach a T-intersection where you are on the terminating street. You have a stop sign. Who has the right-of-way?",
+    "choices": [
+      "Vehicles on the through street",
+      "You, after stopping",
+      "Whoever arrives first",
+      "Vehicles turning into your street"
+    ],
+    "correctIndex": 0,
+    "explanation": "At a T-intersection, traffic on the through street has the right-of-way. You must stop and yield to all traffic on the through street before entering.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0031",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "A pedestrian is crossing the street at a marked crosswalk. What should you do?",
+    "choices": [
+      "Stop and yield to the pedestrian",
+      "Proceed if you have a green light",
+      "Honk to warn the pedestrian",
+      "Speed up to cross before them"
+    ],
+    "correctIndex": 0,
+    "explanation": "Drivers must always yield to pedestrians in marked crosswalks, regardless of traffic signals. Pedestrian safety is the top priority.",
+    "reference": "DL-7: Right-of-Way Rules",
+    "image": {
+      "type": "svg",
+      "assetId": "INTERSECTION_PEDESTRIAN_CROSSWALK"
+    }
+  },
+  {
+    "id": "TX-ROW-0032",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 1,
+    "text": "You see a pedestrian waiting to cross at an unmarked crosswalk at an intersection. What should you do?",
+    "choices": [
+      "Stop and allow the pedestrian to cross",
+      "Proceed since there is no marked crosswalk",
+      "Slow down but continue through",
+      "Honk to indicate they should wait"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pedestrians have the right-of-way at both marked and unmarked crosswalks at intersections. Drivers must yield to pedestrians crossing in these areas.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0033",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "A pedestrian has a white cane or is using a guide dog. What does this indicate?",
+    "choices": [
+      "The pedestrian is blind or visually impaired and has the right-of-way",
+      "The pedestrian is a crossing guard",
+      "The pedestrian is conducting a safety demonstration",
+      "The pedestrian prefers not to be disturbed"
+    ],
+    "correctIndex": 0,
+    "explanation": "A white cane or guide dog indicates the pedestrian is blind or visually impaired. These pedestrians always have the right-of-way, and drivers must yield and take extra caution.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0034",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "You are turning right at an intersection and a pedestrian is crossing the street you are turning onto. The pedestrian has a 'Don't Walk' signal. Who has the right-of-way?",
+    "choices": [
+      "The pedestrian still has the right-of-way if they are in the crosswalk",
+      "You have the right-of-way since the pedestrian's signal says 'Don't Walk'",
+      "Whoever reaches the crosswalk first",
+      "Neither, both should stop"
+    ],
+    "correctIndex": 0,
+    "explanation": "Once a pedestrian is in the crosswalk, they have the right-of-way regardless of the pedestrian signal. Drivers must yield to pedestrians already crossing.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0035",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 1,
+    "text": "You approach a school zone during school hours and see children crossing. What should you do?",
+    "choices": [
+      "Stop and yield to all children crossing",
+      "Slow down but continue if safe",
+      "Honk to alert children to your presence",
+      "Proceed at normal speed if no crossing guard is present"
+    ],
+    "correctIndex": 0,
+    "explanation": "Children crossing in school zones always have the right-of-way. Drivers must stop and yield to ensure their safety, especially during school hours.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0036",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "A pedestrian is crossing in the middle of the block (not at a crosswalk or intersection). Who has the right-of-way?",
+    "choices": [
+      "You have the right-of-way, but should still avoid hitting the pedestrian",
+      "The pedestrian always has the right-of-way",
+      "Whoever reaches the point first",
+      "The pedestrian if they signal to cross"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pedestrians jaywalking outside of crosswalks must yield to vehicles. However, drivers still have a duty to avoid hitting pedestrians even when the pedestrian is at fault.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0037",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "You are approaching a crosswalk where a pedestrian has just stepped off the curb on the far side of the road (multiple lanes away from you). What should you do?",
+    "choices": [
+      "Stop and yield to the pedestrian",
+      "Continue since the pedestrian is far away",
+      "Slow down slightly but proceed",
+      "Honk to alert the pedestrian"
+    ],
+    "correctIndex": 0,
+    "explanation": "Texas law requires drivers to yield to pedestrians in any part of the crosswalk, not just the lane closest to you. Stop and allow the pedestrian to cross safely.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0038",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "A bicycle is riding on the road in front of you. How should you treat this bicycle?",
+    "choices": [
+      "As a vehicle with the same rights and responsibilities",
+      "As a pedestrian that must move to the sidewalk",
+      "As an obstacle to avoid quickly",
+      "As having less right-of-way than cars"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bicycles are considered vehicles under Texas law and have the same rights and responsibilities as cars. Treat cyclists with respect and follow all right-of-way rules.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0039",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "You are turning right and there is a bicycle lane to your right. A cyclist is approaching in the bike lane. What should you do?",
+    "choices": [
+      "Yield to the cyclist before turning across the bike lane",
+      "Turn quickly before the cyclist reaches you",
+      "Honk and proceed with your turn",
+      "Signal for the cyclist to stop"
+    ],
+    "correctIndex": 0,
+    "explanation": "Drivers must yield to cyclists in bike lanes before turning across the lane. Check your mirrors and blind spots, and wait for the cyclist to pass before turning.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0040",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "A pedestrian is on the sidewalk next to the road, not attempting to cross. Do you need to yield?",
+    "choices": [
+      "No, but be prepared to stop if they enter the roadway",
+      "Yes, always yield to pedestrians on sidewalks",
+      "Yes, if they make eye contact",
+      "No, pedestrians on sidewalks have no priority"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pedestrians on sidewalks are not in the roadway and you do not need to yield. However, stay alert and be ready to stop if they enter the roadway or approach a crosswalk.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0041",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 1,
+    "text": "When can pedestrians cross at a red light?",
+    "choices": [
+      "Never, unless the pedestrian signal shows 'Walk'",
+      "Anytime if no vehicles are coming",
+      "During the red light phase for vehicles",
+      "Only with a crossing guard present"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pedestrians must obey pedestrian signals just as drivers obey traffic signals. Pedestrians should only cross when their signal shows 'Walk' or the walking person symbol.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0042",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "You are driving on a road with a bike lane. The bike lane is to your right and there are no cyclists present. Can you drive in the bike lane?",
+    "choices": [
+      "Only when turning, merging, or parking where permitted",
+      "Yes, if no cyclists are present",
+      "Never, under any circumstances",
+      "Yes, to pass slow-moving traffic"
+    ],
+    "correctIndex": 0,
+    "explanation": "Drivers may only enter bike lanes when necessary for turning, merging, or legal parking. Otherwise, bike lanes are reserved exclusively for bicycle traffic.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0043",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 4,
+    "text": "A pedestrian is crossing mid-block against a 'Don't Walk' signal. You have a green light. What should you do?",
+    "choices": [
+      "Slow or stop to avoid hitting the pedestrian, even though you have the right-of-way",
+      "Proceed at speed since you have the right-of-way",
+      "Honk loudly and maintain speed",
+      "Flash your lights and continue"
+    ],
+    "correctIndex": 0,
+    "explanation": "While the pedestrian is violating the law, drivers still have a duty to avoid collisions. Slow down or stop to prevent hitting the pedestrian, even when you have the legal right-of-way.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0044",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "A bicycle is traveling on the road without a bike lane. Where should the cyclist ride?",
+    "choices": [
+      "As far right as practicable, but still on the roadway",
+      "On the left side facing traffic",
+      "In the center of the lane at all times",
+      "On the sidewalk only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cyclists should ride as far to the right as safely practicable when there is no bike lane. They are entitled to use the full lane when necessary for safety.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0045",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 1,
+    "text": "When passing a cyclist on the road, how much space should you give?",
+    "choices": [
+      "At least 3 feet of clearance",
+      "At least 1 foot of clearance",
+      "As much space as possible, but no specific distance",
+      "At least 6 feet of clearance"
+    ],
+    "correctIndex": 0,
+    "explanation": "Texas law requires drivers to give at least 3 feet of clearance when passing a cyclist. If you cannot safely pass with this distance, slow down and wait for a safe opportunity.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0046",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "You see a pedestrian with a white cane crossing at an intersection. The light turns green for you. What should you do?",
+    "choices": [
+      "Wait for the pedestrian to completely finish crossing before proceeding",
+      "Proceed slowly and honk to alert them",
+      "Drive around the pedestrian carefully",
+      "Flash your lights to signal them to hurry"
+    ],
+    "correctIndex": 0,
+    "explanation": "Blind or visually impaired pedestrians always have the right-of-way. Wait patiently and allow them to cross completely before proceeding, regardless of your signal.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0047",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "You are approaching a crosswalk where the pedestrian signal is flashing 'Don't Walk' but no pedestrians are present. Can you turn?",
+    "choices": [
+      "Yes, if there are no pedestrians in or approaching the crosswalk",
+      "No, you must wait for a solid 'Walk' signal",
+      "Yes, but only if you honk first",
+      "No, the flashing signal means stop"
+    ],
+    "correctIndex": 0,
+    "explanation": "A flashing 'Don't Walk' signal is for pedestrians who haven't started crossing. If no pedestrians are present or approaching, you may proceed with caution after yielding appropriately.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0048",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 4,
+    "text": "A cyclist is making a left turn at an intersection from the left turn lane. You are behind them. What should you do?",
+    "choices": [
+      "Wait for the cyclist to complete the turn, treating them as any other vehicle",
+      "Pass the cyclist on the right before they turn",
+      "Honk to encourage them to move faster",
+      "Move to the straight lane to avoid waiting"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bicycles are vehicles and have the right to use turn lanes and make turns like any other vehicle. Wait patiently for the cyclist to complete their turn safely.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0049",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "You see a pedestrian crossing sign warning. What does this mean?",
+    "choices": [
+      "Be alert for pedestrians crossing in this area",
+      "Pedestrians must use this crossing only",
+      "Stop and wait for pedestrians",
+      "Pedestrians are prohibited in this area"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pedestrian crossing warning signs alert drivers to areas where pedestrians frequently cross. Slow down and be prepared to yield to pedestrians.",
+    "reference": "DL-7: Right-of-Way Rules",
+    "image": {
+      "type": "svg",
+      "assetId": "MUTCD_W11-1_PEDESTRIAN_CROSSING"
+    }
+  },
+  {
+    "id": "TX-ROW-0050",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "A group of pedestrians is crossing at a crosswalk. Half have crossed and are now on the other side, while the rest are still crossing. Can you proceed?",
+    "choices": [
+      "No, wait for all pedestrians to completely finish crossing",
+      "Yes, you can proceed in the empty lanes",
+      "Yes, if you proceed slowly",
+      "Yes, if you honk first"
+    ],
+    "correctIndex": 0,
+    "explanation": "You must wait for all pedestrians to completely clear the crosswalk before proceeding. Even if some lanes appear clear, more pedestrians may still be crossing.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0051",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 1,
+    "text": "Can pedestrians walk in the roadway if a sidewalk is available?",
+    "choices": [
+      "No, pedestrians must use the sidewalk when one is available",
+      "Yes, pedestrians can always choose to walk in the road",
+      "Yes, but only during daylight hours",
+      "Yes, if they walk facing traffic"
+    ],
+    "correctIndex": 0,
+    "explanation": "Texas law requires pedestrians to use sidewalks when they are available. Walking in the roadway when a sidewalk exists is prohibited.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0052",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "You see a bicycle crossing warning sign. What should you do?",
+    "choices": [
+      "Be alert for cyclists crossing or entering the roadway",
+      "Stop and wait for cyclists",
+      "Cyclists are prohibited from crossing here",
+      "Sound your horn when you see cyclists"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bicycle crossing warning signs indicate areas where cyclists frequently cross or enter the roadway. Slow down and watch carefully for cyclists.",
+    "reference": "DL-7: Right-of-Way Rules",
+    "image": {
+      "type": "svg",
+      "assetId": "MUTCD_W11-2_BICYCLE_CROSSING"
+    }
+  },
+  {
+    "id": "TX-ROW-0053",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 4,
+    "text": "A cyclist is riding in the center of a narrow lane. Can you pass them?",
+    "choices": [
+      "Only if you can change lanes completely or provide at least 3 feet of clearance",
+      "Yes, by squeezing past them in the same lane",
+      "Yes, by honking first to move them over",
+      "No, you must follow behind until they move"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cyclists may take the full lane when necessary for safety. You may only pass by changing lanes completely or ensuring at least 3 feet of clearance, never by squeezing past in the same lane.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0054",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "You are stopped at a red light. A pedestrian starts crossing against the 'Don't Walk' signal. What should you do when your light turns green?",
+    "choices": [
+      "Wait for the pedestrian to finish crossing before proceeding",
+      "Proceed slowly and honk",
+      "Proceed since you have the green light",
+      "Turn on your hazard lights and wait"
+    ],
+    "correctIndex": 0,
+    "explanation": "Even if a pedestrian is crossing illegally, you must yield and allow them to finish crossing safely. Never enter an intersection with pedestrians still in your path.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0055",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "A cyclist is approaching a stop sign at the same time as you. You are also at a stop sign from a different direction. Who proceeds first?",
+    "choices": [
+      "Follow normal right-of-way rules as if the cyclist is a vehicle",
+      "You always have priority over cyclists",
+      "The cyclist must always yield to motor vehicles",
+      "Whoever is faster proceeds first"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bicycles are treated as vehicles and follow the same right-of-way rules. Apply the same rules you would for two motor vehicles arriving at a stop sign.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0056",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 1,
+    "text": "If a sidewalk is not available, which side of the road should pedestrians walk on?",
+    "choices": [
+      "On the left side, facing oncoming traffic",
+      "On the right side, with traffic flow",
+      "In the center of the road",
+      "On whichever side has better lighting"
+    ],
+    "correctIndex": 0,
+    "explanation": "When no sidewalk is available, pedestrians should walk on the left side of the road facing oncoming traffic so they can see vehicles approaching.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0057",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 5,
+    "text": "At an intersection, you have a green light. A pedestrian with a white cane is crossing against the pedestrian signal, and a cyclist is making a left turn in front of you. Who has priority?",
+    "choices": [
+      "The pedestrian with the white cane has highest priority, then the cyclist, then you",
+      "You have priority with your green light",
+      "The cyclist has priority as they arrived first",
+      "All should proceed with caution simultaneously"
+    ],
+    "correctIndex": 0,
+    "explanation": "Blind or visually impaired pedestrians always have the highest priority. Cyclists are treated as vehicles. You must yield to both the pedestrian and the cyclist before proceeding.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0058",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "You are driving on a road where there is both a bike lane and a sidewalk. Where should cyclists ride?",
+    "choices": [
+      "In the bike lane, not on the sidewalk",
+      "On the sidewalk only",
+      "Either the bike lane or sidewalk, their choice",
+      "On the road with motor vehicles"
+    ],
+    "correctIndex": 0,
+    "explanation": "When a bike lane is present, cyclists should use it rather than the sidewalk. Bike lanes are designed specifically for bicycle traffic and provide the safest route.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0059",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "You are turning into a driveway and must cross a sidewalk. Pedestrians are walking on the sidewalk. Who has the right-of-way?",
+    "choices": [
+      "Pedestrians on the sidewalk",
+      "You, as you are entering private property",
+      "Whoever reaches the driveway first",
+      "Neither, both must stop"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pedestrians on sidewalks always have the right-of-way over vehicles entering or exiting driveways. You must stop and yield before crossing the sidewalk.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0060",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 4,
+    "text": "A pedestrian is standing at the curb at a marked crosswalk, looking as if they want to cross. Are you required to stop?",
+    "choices": [
+      "Yes, if the pedestrian indicates intent to cross or steps into the roadway",
+      "No, only if they are already in the crosswalk",
+      "Yes, pedestrians always have priority near crosswalks",
+      "No, they must wait for you to pass"
+    ],
+    "correctIndex": 0,
+    "explanation": "Texas law requires drivers to yield to pedestrians who have shown intent to cross by stepping into the roadway or clearly indicating they wish to cross.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0061",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "An emergency vehicle with flashing lights and sirens is approaching from behind. What should you do?",
+    "choices": [
+      "Pull over to the right and stop",
+      "Speed up to get out of the way",
+      "Stop immediately in your current lane",
+      "Change lanes to the left"
+    ],
+    "correctIndex": 0,
+    "explanation": "When an emergency vehicle approaches with lights and sirens, you must pull over to the right side of the road and stop until it passes. This provides a clear path for the emergency vehicle.",
+    "reference": "DL-7: Right-of-Way Rules",
+    "image": {
+      "type": "svg",
+      "assetId": "INTERSECTION_EMERGENCY_VEHICLE"
+    }
+  },
+  {
+    "id": "TX-ROW-0062",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 1,
+    "text": "You hear sirens from an emergency vehicle but don't see it. What should you do?",
+    "choices": [
+      "Slow down, be alert, and be prepared to pull over",
+      "Continue driving normally",
+      "Stop immediately",
+      "Speed up to clear the area"
+    ],
+    "correctIndex": 0,
+    "explanation": "If you hear sirens but don't see the emergency vehicle, slow down and stay alert. Be prepared to pull over when you locate the vehicle's position.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0063",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "An emergency vehicle is approaching with lights and sirens while you are in an intersection. What should you do?",
+    "choices": [
+      "Clear the intersection first, then pull over",
+      "Stop immediately in the intersection",
+      "Speed through the intersection",
+      "Back up to let the emergency vehicle through"
+    ],
+    "correctIndex": 0,
+    "explanation": "Never stop in an intersection, even for an emergency vehicle. Continue through the intersection, then pull over to the right and stop as soon as safely possible.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0064",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "A school bus has stopped with its red lights flashing and stop sign extended. You are on the same side of the road. What must you do?",
+    "choices": [
+      "Stop at least 20 feet away and remain stopped until the bus moves or the lights stop flashing",
+      "Slow down and proceed with caution",
+      "Stop briefly then proceed if no children are visible",
+      "Change lanes and pass the bus slowly"
+    ],
+    "correctIndex": 0,
+    "explanation": "When a school bus displays flashing red lights and an extended stop sign, you must stop at least 20 feet away and remain stopped until the bus begins moving or the lights stop flashing.",
+    "reference": "DL-7: Right-of-Way Rules",
+    "image": {
+      "type": "svg",
+      "assetId": "INTERSECTION_SCHOOL_BUS_STOPPED"
+    }
+  },
+  {
+    "id": "TX-ROW-0065",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "A school bus is stopped with red flashing lights on a two-lane road. You are approaching from the opposite direction. What should you do?",
+    "choices": [
+      "Stop and remain stopped until the bus moves or the lights stop flashing",
+      "Slow down but proceed with caution",
+      "Proceed normally as the bus is on the other side",
+      "Stop only if you see children"
+    ],
+    "correctIndex": 0,
+    "explanation": "On an undivided two-lane road, traffic in both directions must stop for a school bus with flashing red lights. This protects children who may cross the road.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0066",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 4,
+    "text": "You are on a highway separated by a median or barrier. A school bus on the other side has stopped with red lights flashing. Must you stop?",
+    "choices": [
+      "No, you may proceed with caution",
+      "Yes, you must always stop for school buses",
+      "Only if the median is less than 10 feet wide",
+      "Yes, but only if children are present"
+    ],
+    "correctIndex": 0,
+    "explanation": "On a divided highway with a physical barrier or median, traffic traveling in the opposite direction does not need to stop for a school bus. The barrier prevents children from crossing.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0067",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 1,
+    "text": "What do flashing yellow lights on a school bus indicate?",
+    "choices": [
+      "The bus is preparing to stop; slow down and prepare to stop",
+      "You may pass the bus",
+      "The bus is stopped; you must stop",
+      "Children are boarding; stop immediately"
+    ],
+    "correctIndex": 0,
+    "explanation": "Flashing yellow lights on a school bus mean it is preparing to stop. Slow down and be ready to stop when the red lights begin flashing.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0068",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "An emergency vehicle is parked on the side of the road with flashing lights. What should you do?",
+    "choices": [
+      "Move over to a non-adjacent lane if safe, or slow down to 20 mph below the speed limit",
+      "Maintain your speed and lane",
+      "Stop behind the emergency vehicle",
+      "Flash your lights and proceed"
+    ],
+    "correctIndex": 0,
+    "explanation": "Texas Move Over law requires drivers to move over to a non-adjacent lane if safe. If you cannot move over, you must slow down to 20 mph below the posted speed limit.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0069",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "You are at a red light and an emergency vehicle behind you has lights and sirens on. There is no room to pull to the right. What should you do?",
+    "choices": [
+      "Stay stopped and wait for the light to change or for the emergency vehicle to find another route",
+      "Drive through the red light to clear the way",
+      "Back up to make room",
+      "Pull into the intersection"
+    ],
+    "correctIndex": 0,
+    "explanation": "Never run a red light, even for an emergency vehicle. Stay stopped and the emergency vehicle will navigate around you or wait for the light to change.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0070",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "A funeral procession is passing through an intersection. The procession has a green light but you arrived at the intersection first. What should you do?",
+    "choices": [
+      "Yield to the entire funeral procession",
+      "Proceed since you arrived first",
+      "Proceed if you have a green light",
+      "Honk to alert the procession"
+    ],
+    "correctIndex": 0,
+    "explanation": "Funeral processions have the right-of-way at intersections. All vehicles in the procession may proceed together, and other traffic must yield to the entire procession.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0071",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 4,
+    "text": "How can you identify a funeral procession?",
+    "choices": [
+      "Vehicles have headlights on and often have funeral flags or follow a hearse",
+      "Vehicles are driving slowly",
+      "Vehicles have their hazard lights on",
+      "There is always a police escort"
+    ],
+    "correctIndex": 0,
+    "explanation": "Funeral processions typically have headlights on during the day, may display funeral flags, and follow a hearse. Not all processions have police escorts.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0072",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "Can you pass an emergency vehicle that is stopped on the side of the road with lights flashing?",
+    "choices": [
+      "Yes, but you must move over or slow down significantly",
+      "No, you must stop behind it",
+      "Yes, at normal speed in the far lane",
+      "No, you must turn around and find another route"
+    ],
+    "correctIndex": 0,
+    "explanation": "You may pass a stopped emergency vehicle, but you must follow the Move Over law: change lanes if safe, or slow down to 20 mph below the speed limit.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0073",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "You are on a single-lane road and an emergency vehicle approaches from behind with lights and sirens. What should you do?",
+    "choices": [
+      "Pull over to the right as far as possible and stop",
+      "Speed up to find a wider area",
+      "Stop in the middle of the road",
+      "Continue until you reach a parking lot"
+    ],
+    "correctIndex": 0,
+    "explanation": "Even on a single-lane road, pull as far to the right as safely possible and stop. The emergency vehicle will navigate around you if there is room, or wait until you can move further.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0074",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 1,
+    "text": "A school bus has its red lights flashing. When can you proceed?",
+    "choices": [
+      "When the red lights stop flashing and the stop sign is retracted",
+      "When you don't see any children",
+      "After stopping for 10 seconds",
+      "When the bus driver waves you on"
+    ],
+    "correctIndex": 0,
+    "explanation": "You may only proceed past a stopped school bus when the red lights stop flashing and the stop sign is retracted, indicating it is safe for the bus to resume travel.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0075",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 4,
+    "text": "You are on a five-lane road (two lanes each direction with a center turn lane). A school bus on your side has stopped with red lights flashing. Must you stop?",
+    "choices": [
+      "Yes, all traffic on your side must stop",
+      "No, you can change lanes and proceed",
+      "Only if you are in the lane next to the bus",
+      "No, five-lane roads are exempt"
+    ],
+    "correctIndex": 0,
+    "explanation": "All traffic traveling in the same direction as a stopped school bus must stop, regardless of the number of lanes. You cannot change lanes to go around the bus.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0076",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "A city bus is signaling to merge back into traffic from a bus stop. What should you do?",
+    "choices": [
+      "Yield and allow the bus to merge when safe",
+      "Maintain your speed and position",
+      "Speed up to pass the bus",
+      "Honk to indicate the bus should wait"
+    ],
+    "correctIndex": 0,
+    "explanation": "Texas law requires drivers to yield to buses signaling to re-enter traffic from a designated stop. Slow down and allow the bus to merge safely.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0077",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "Can you follow closely behind an emergency vehicle with lights and sirens to get through traffic faster?",
+    "choices": [
+      "No, this is illegal and dangerous",
+      "Yes, if you maintain a safe following distance",
+      "Yes, but only on highways",
+      "Yes, if you also turn on your hazard lights"
+    ],
+    "correctIndex": 0,
+    "explanation": "It is illegal to follow within 500 feet of an emergency vehicle responding to a call. This practice is dangerous and can result in tickets and fines.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0078",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "You are approaching an emergency vehicle with flashing lights stopped on a two-lane road with no room to move over. What should you do?",
+    "choices": [
+      "Slow down to 20 mph below the posted speed limit",
+      "Stop completely behind the emergency vehicle",
+      "Proceed at the posted speed limit",
+      "Turn around and find another route"
+    ],
+    "correctIndex": 0,
+    "explanation": "If you cannot safely move over to a non-adjacent lane, you must slow down to 20 mph below the posted speed limit when passing emergency vehicles with flashing lights.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0079",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 5,
+    "text": "At an intersection, a school bus with flashing red lights is stopped on your right, an emergency vehicle with sirens is approaching from behind, and a pedestrian is in the crosswalk ahead. Who has priority?",
+    "choices": [
+      "The pedestrian, then the school bus, then the emergency vehicle",
+      "The emergency vehicle has priority over all",
+      "The school bus has priority over all",
+      "Follow order of arrival"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pedestrian safety is paramount. The school bus stop creates a protected zone for children. The emergency vehicle can navigate around once pedestrians are clear and the bus situation is resolved.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0080",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "Can you pass a school bus that is stopped with flashing red lights on a multi-lane highway if you are in the far left lane?",
+    "choices": [
+      "No, all lanes of traffic in your direction must stop",
+      "Yes, if you are more than two lanes away",
+      "Yes, if you slow down significantly",
+      "Yes, if the highway is divided"
+    ],
+    "correctIndex": 0,
+    "explanation": "All traffic traveling in the same direction as the school bus must stop when red lights are flashing, regardless of how many lanes separate you from the bus.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0081",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 1,
+    "text": "You want to change lanes on a highway. Who has the right-of-way?",
+    "choices": [
+      "The vehicle already in the lane you want to enter",
+      "You, if you signal first",
+      "Whoever is traveling faster",
+      "You, if you complete the lane change quickly"
+    ],
+    "correctIndex": 0,
+    "explanation": "The vehicle already established in a lane has the right-of-way. You must yield to traffic in the lane you wish to enter and only merge when it is safe.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0082",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "You are merging onto a highway from an entrance ramp. Who has the right-of-way?",
+    "choices": [
+      "Vehicles already on the highway",
+      "You, as the merging vehicle",
+      "Whoever is traveling faster",
+      "Whoever signals first"
+    ],
+    "correctIndex": 0,
+    "explanation": "Traffic already on the highway has the right-of-way. Merging vehicles must yield, adjust speed, and find a safe gap to enter the highway traffic.",
+    "reference": "DL-7: Right-of-Way Rules",
+    "image": {
+      "type": "svg",
+      "assetId": "INTERSECTION_MERGE_HIGHWAY"
+    }
+  },
+  {
+    "id": "TX-ROW-0083",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 1,
+    "text": "You are on a highway and see a vehicle merging from an entrance ramp. What should you do?",
+    "choices": [
+      "Maintain your speed and position, or move over if safe to help them merge",
+      "Speed up to prevent them from merging in front of you",
+      "Slow down and stop to let them in",
+      "Honk to warn them you have the right-of-way"
+    ],
+    "correctIndex": 0,
+    "explanation": "While highway traffic has the right-of-way, it is courteous and safer to move over or adjust speed if possible to help merging traffic. If not possible, maintain your speed and position.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0084",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "You are on a highway and need to exit. Another vehicle is in your blind spot. Who has the right-of-way?",
+    "choices": [
+      "The vehicle in your blind spot",
+      "You, because you need to exit",
+      "Whoever signals first",
+      "Both should proceed with caution"
+    ],
+    "correctIndex": 0,
+    "explanation": "The vehicle already in the lane has the right-of-way. If a vehicle is in your blind spot, you must slow down or speed up to create space before changing lanes to exit.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0085",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "Two vehicles are merging onto a highway from separate entrance ramps at the same point. Who has the right-of-way?",
+    "choices": [
+      "The vehicle that is ahead or on the right",
+      "The vehicle traveling faster",
+      "Both must stop and yield",
+      "The vehicle on the left"
+    ],
+    "correctIndex": 0,
+    "explanation": "When two vehicles are merging simultaneously, standard right-of-way rules apply. The vehicle ahead or to the right has priority, but both must yield to highway traffic.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0086",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "You are passing a slower vehicle on a two-lane highway. An oncoming vehicle appears. Who has the right-of-way?",
+    "choices": [
+      "The oncoming vehicle in its own lane",
+      "You, because you started passing first",
+      "Whoever is traveling faster",
+      "Both should slow down"
+    ],
+    "correctIndex": 0,
+    "explanation": "Oncoming traffic always has the right-of-way in their own lane. If you cannot complete a pass safely before oncoming traffic reaches you, you must abort the pass and return to your lane.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0087",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "You are entering a highway from a parking lot or driveway. Who has the right-of-way?",
+    "choices": [
+      "All vehicles already on the highway",
+      "You, if you signal properly",
+      "Whoever proceeds first",
+      "You, if no vehicles are immediately visible"
+    ],
+    "correctIndex": 0,
+    "explanation": "When entering any roadway from private property like a parking lot or driveway, you must yield to all traffic already on the road. Wait for a safe gap before entering.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0088",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 1,
+    "text": "You see a merge warning sign on the highway. What does this indicate?",
+    "choices": [
+      "Traffic from another roadway will be merging ahead; be prepared to adjust",
+      "You must merge into another lane immediately",
+      "All traffic must stop",
+      "Your lane is ending"
+    ],
+    "correctIndex": 0,
+    "explanation": "A merge warning sign alerts you that traffic from an entrance ramp or merging lane will be joining your roadway. Be prepared to adjust speed or move over if safe.",
+    "reference": "DL-7: Right-of-Way Rules",
+    "image": {
+      "type": "svg",
+      "assetId": "MUTCD_W3-1_MERGE"
+    }
+  },
+  {
+    "id": "TX-ROW-0089",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "You are driving on a highway and your lane is ending (forced merge). Who has the right-of-way?",
+    "choices": [
+      "Vehicles in the continuing lane",
+      "You, because your lane is ending",
+      "Whoever signals first",
+      "Whoever is ahead"
+    ],
+    "correctIndex": 0,
+    "explanation": "When your lane is ending and you must merge, you must yield to traffic in the continuing lane. You cannot force your way in; wait for a safe gap.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0090",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "You are on a highway entrance ramp with a yield sign. When can you merge?",
+    "choices": [
+      "Only when there is a safe gap in highway traffic",
+      "After stopping completely",
+      "Whenever you signal your intention",
+      "When you reach the end of the ramp"
+    ],
+    "correctIndex": 0,
+    "explanation": "A yield sign means you must give right-of-way to highway traffic and merge only when there is a safe gap. Adjust your speed to find an appropriate opening.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0091",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 4,
+    "text": "You are on a three-lane highway. You are in the center lane. Vehicles are merging from the right, and a vehicle on your left is signaling to move into your lane. Who has the right-of-way?",
+    "choices": [
+      "You have the right-of-way in your current lane over both vehicles",
+      "The merging vehicle has priority",
+      "The vehicle on your left has priority",
+      "Whoever signals first"
+    ],
+    "correctIndex": 0,
+    "explanation": "As the vehicle established in your lane, you have the right-of-way over both vehicles trying to enter your lane. Both the merging and lane-changing vehicles must yield to you.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0092",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "You are exiting a highway and need to cross lanes of traffic. Who has the right-of-way?",
+    "choices": [
+      "Vehicles in the lanes you need to cross",
+      "You, because you are exiting",
+      "Whoever signals first",
+      "You, if you are running out of road"
+    ],
+    "correctIndex": 0,
+    "explanation": "When changing lanes to exit, you must yield to all vehicles in the lanes you need to cross. Plan ahead and move over early to avoid last-minute dangerous maneuvers.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0093",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "On a two-lane road, you are behind a slow-moving vehicle and want to pass. There is a dashed yellow line. What should you do?",
+    "choices": [
+      "Check for oncoming traffic, and pass only if you can complete it safely before any oncoming vehicle arrives",
+      "Pass whenever you want since the line is dashed",
+      "Honk first, then pass",
+      "Wait until the yellow line is completely gone"
+    ],
+    "correctIndex": 0,
+    "explanation": "A dashed yellow line indicates passing is permitted, but you must yield to oncoming traffic. Only pass when you can see far enough ahead and complete the pass safely.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0094",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 4,
+    "text": "You are on a highway acceleration lane (entrance ramp). The lane is about to end and you need to merge, but there is steady traffic and no gaps. What should you do?",
+    "choices": [
+      "Adjust your speed to create a gap, or use the shoulder if necessary and safe, rather than forcing a merge",
+      "Force your way into traffic",
+      "Stop at the end of the ramp and wait for a gap",
+      "Sound your horn and merge gradually"
+    ],
+    "correctIndex": 0,
+    "explanation": "Never stop on an acceleration lane unless absolutely necessary. Adjust speed to find or create a gap. If the lane ends, carefully use the shoulder before forcing an unsafe merge.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0095",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 1,
+    "text": "You see a lane ends sign. What should you do?",
+    "choices": [
+      "Merge into the continuing lane when it is safe to do so",
+      "Stop and wait for an opening",
+      "Speed up to merge before the lane ends",
+      "Continue to the very end and force your way in"
+    ],
+    "correctIndex": 0,
+    "explanation": "A lane ends sign gives you advance warning to merge safely into the continuing lane. Signal, check blind spots, and merge when there is a safe gap in traffic.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0096",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "You are passing a vehicle on a two-lane road. Oncoming traffic suddenly appears closer than expected. What should you do?",
+    "choices": [
+      "Abort the pass and return to your lane immediately",
+      "Complete the pass as quickly as possible",
+      "Flash your lights at the oncoming vehicle",
+      "Both you and the oncoming vehicle should pull over"
+    ],
+    "correctIndex": 0,
+    "explanation": "If oncoming traffic appears during a pass and you cannot complete it safely, immediately abort the pass and return to your original lane. Oncoming traffic has the right-of-way in their lane.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0097",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "You are on a highway and traffic ahead is slowing down for a vehicle entering from an entrance ramp. What should you do?",
+    "choices": [
+      "Slow down with traffic and maintain safe following distance",
+      "Change lanes immediately to avoid slowing down",
+      "Speed up to pass before the merging vehicle",
+      "Flash your lights at the merging vehicle"
+    ],
+    "correctIndex": 0,
+    "explanation": "When traffic slows to allow merging vehicles, maintain a safe following distance and slow down with traffic. Abrupt lane changes or speed increases can cause accidents.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0098",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 4,
+    "text": "You are on a two-lane highway passing a slow vehicle. Another faster vehicle behind you is tailgating. Who has the right-of-way?",
+    "choices": [
+      "You have the right-of-way to complete your pass safely before returning to your lane",
+      "The tailgating vehicle should pass both of you",
+      "You should abort your pass for the faster vehicle",
+      "The slow vehicle you are passing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Once you have legally and safely begun passing, you have the right to complete the maneuver. The tailgating vehicle must wait. However, complete your pass promptly and return to your lane.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0099",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "You are preparing to merge onto a highway. Should you stop on the entrance ramp?",
+    "choices": [
+      "Only if absolutely necessary; use the ramp to accelerate and merge smoothly",
+      "Yes, always stop before merging",
+      "Yes, unless you have a clear view",
+      "No, never stop under any circumstances"
+    ],
+    "correctIndex": 0,
+    "explanation": "Entrance ramps are designed for acceleration to match highway speed and merge smoothly. Stopping creates a dangerous situation. Only stop if there is no other safe option.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0100",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 5,
+    "text": "You are on a highway in heavy traffic. Your exit is coming up, but you are in the left lane and there is no gap to move right. What should you do?",
+    "choices": [
+      "Miss your exit and take the next one",
+      "Force your way across lanes immediately",
+      "Stop and wait for traffic to let you in",
+      "Drive on the shoulder to reach your exit"
+    ],
+    "correctIndex": 0,
+    "explanation": "Never make unsafe lane changes or stop on a highway. If you cannot safely reach your exit, miss it and take the next exit. Plan ahead in the future to move over earlier.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0101",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "At a 4-way stop, you arrive at the same time as another vehicle to your left. You are both turning right onto the same road. Who has the right-of-way?",
+    "choices": [
+      "You have the right-of-way since you are on the right",
+      "The vehicle on your left",
+      "Both can proceed simultaneously",
+      "Whoever has a larger turning radius"
+    ],
+    "correctIndex": 0,
+    "explanation": "When two vehicles arrive simultaneously, the vehicle on the right has the right-of-way. Even though both are turning onto the same road, standard right-of-way rules apply.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0102",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 4,
+    "text": "You are turning left from a minor road onto a major highway. Traffic on the highway is heavy in both directions. When can you proceed?",
+    "choices": [
+      "Only when there is a sufficient gap in both directions to complete the turn safely",
+      "When traffic in one direction clears",
+      "After waiting 30 seconds",
+      "When another driver signals you to go"
+    ],
+    "correctIndex": 0,
+    "explanation": "When turning left onto a highway, you must yield to traffic from both directions. Wait for a gap large enough to enter and cross or merge safely without causing others to brake.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0103",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "You are at an intersection waiting to turn left. Your light turns yellow, then red, but you are already in the intersection. What should you do?",
+    "choices": [
+      "Complete your turn when oncoming traffic stops",
+      "Reverse back behind the stop line",
+      "Turn immediately before the light turns red",
+      "Wait in the intersection through the entire red light cycle"
+    ],
+    "correctIndex": 0,
+    "explanation": "If you are already legally in the intersection when the light turns red, you have the right to clear the intersection by completing your turn once oncoming traffic stops.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0104",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "At an intersection with a four-way flashing red light, how should you proceed?",
+    "choices": [
+      "Treat each direction as a stop sign and proceed in order of arrival",
+      "Proceed with caution without stopping",
+      "Yield to all traffic then proceed",
+      "The main road has priority"
+    ],
+    "correctIndex": 0,
+    "explanation": "When all directions have flashing red lights, treat the intersection as a four-way stop. Each vehicle must stop completely and proceed in order of arrival, yielding to the right if simultaneous.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0105",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "You are in a roundabout. An emergency vehicle with lights and sirens is trying to enter. What should you do?",
+    "choices": [
+      "Exit the roundabout at the next available exit and pull over",
+      "Stop immediately in the roundabout",
+      "Speed up to clear the roundabout quickly",
+      "Continue normally since you have the right-of-way"
+    ],
+    "correctIndex": 0,
+    "explanation": "Never stop in a roundabout. Continue to the next exit, then pull over to the right to allow the emergency vehicle to pass. Clear the roundabout as quickly and safely as possible.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0106",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 4,
+    "text": "At a T-intersection, you are on the through road. A vehicle on the terminating road has a stop sign. You want to turn left onto the terminating road. Who proceeds first?",
+    "choices": [
+      "You proceed first as you are on the through road",
+      "The vehicle with the stop sign proceeds first",
+      "Both proceed with caution",
+      "The vehicle going straight always has priority"
+    ],
+    "correctIndex": 0,
+    "explanation": "Traffic on the through road has the right-of-way over traffic entering from the terminating road. You may turn left without yielding to the stopped vehicle, though caution is always wise.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0107",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "You are merging onto a highway. The vehicle behind you on the highway is tailgating the car in front of it. Should you merge into that gap?",
+    "choices": [
+      "No, find a safer gap with adequate following distance",
+      "Yes, signal and merge quickly",
+      "Yes, the tailgater will make room",
+      "Yes, you have the right to merge"
+    ],
+    "correctIndex": 0,
+    "explanation": "Never merge into an unsafe gap with inadequate following distance. Look for a safe gap where vehicles have proper spacing. Merging into a tight space increases collision risk.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0108",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 5,
+    "text": "You are at a complex intersection. You have a green left turn arrow. A pedestrian with a guide dog is crossing the street you want to turn onto, but their signal shows 'Don't Walk'. An oncoming car runs the red light. Who do you yield to?",
+    "choices": [
+      "Both the pedestrian and the red-light-running vehicle to avoid collisions",
+      "Neither, you have a green arrow",
+      "Only the pedestrian",
+      "Only the vehicle running the red light"
+    ],
+    "correctIndex": 0,
+    "explanation": "Safety always comes first. Despite having the legal right-of-way with your green arrow, you must avoid collisions with both the pedestrian and the vehicle violating the signal.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0109",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "You are driving on a highway in the left lane. You see a slower vehicle ahead in your lane. Do you have the right to stay in the left lane?",
+    "choices": [
+      "No, the left lane is for passing; move right after passing",
+      "Yes, you can drive in any lane at any time",
+      "Yes, if you are going the speed limit",
+      "Only if there is heavy traffic"
+    ],
+    "correctIndex": 0,
+    "explanation": "The left lane on multi-lane highways is designated for passing. After passing slower traffic, you should move back to the right lane to allow others to pass.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0110",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "You are on a two-lane road following a mail carrier who stops frequently. Can you pass?",
+    "choices": [
+      "Yes, if it is safe and legal to pass",
+      "No, you must always follow postal vehicles",
+      "Yes, postal vehicles do not have right-of-way",
+      "No, unless they signal you to pass"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mail carriers do not have special right-of-way privileges while delivering mail. You may pass when it is safe and legal to do so, following normal passing rules.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0111",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 4,
+    "text": "At an uncontrolled intersection, you are turning left and another vehicle is approaching from the right going straight. Who has the right-of-way?",
+    "choices": [
+      "The vehicle on the right going straight has right-of-way over your left turn",
+      "You have the right-of-way since you arrived first",
+      "Both should proceed with caution",
+      "Whoever signals first"
+    ],
+    "correctIndex": 0,
+    "explanation": "At an uncontrolled intersection, the vehicle on the right has priority. Additionally, left-turning vehicles must yield to straight-through traffic. The vehicle on the right going straight has double priority.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0112",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "You are exiting a parking garage onto a busy street. A pedestrian is walking on the sidewalk approaching your exit. Who has the right-of-way?",
+    "choices": [
+      "The pedestrian on the sidewalk",
+      "You, as you are exiting private property",
+      "Whoever reaches the driveway first",
+      "You, if you honk to alert the pedestrian"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pedestrians on sidewalks always have the right-of-way over vehicles entering or exiting driveways. You must stop and yield before crossing the sidewalk to enter the street.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0113",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "You approach a railway crossing with flashing lights. The gates are not down yet. What should you do?",
+    "choices": [
+      "Stop and do not proceed until the lights stop flashing",
+      "Proceed quickly before the gates come down",
+      "Slow down and proceed with caution",
+      "Proceed if you don't see a train"
+    ],
+    "correctIndex": 0,
+    "explanation": "Flashing lights at a railway crossing mean a train is approaching. Stop at least 15 feet from the tracks and do not proceed until the lights stop flashing and gates are fully raised.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0114",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 1,
+    "text": "At an intersection with a traffic light, you want to go straight and have a green light. Do you need to yield to any traffic?",
+    "choices": [
+      "Yes, yield to pedestrians in the crosswalk and vehicles already in the intersection",
+      "No, green means you have absolute right-of-way",
+      "Only to emergency vehicles",
+      "Only if the light just turned green"
+    ],
+    "correctIndex": 0,
+    "explanation": "Even with a green light, you must yield to pedestrians lawfully in the crosswalk and any vehicles already in the intersection before you enter.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0115",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "You are on a highway that is ending (merging into another highway). Does traffic on the continuing highway need to yield to you?",
+    "choices": [
+      "No, you must yield to traffic on the continuing highway",
+      "Yes, they must let you merge",
+      "Whoever is traveling faster has priority",
+      "You have equal priority"
+    ],
+    "correctIndex": 0,
+    "explanation": "When your highway is ending and merging into another highway, you must yield to traffic on the continuing highway. Watch for merge signs and find a safe gap to merge.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0116",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 4,
+    "text": "At a 4-way stop, you arrive first. As you begin to proceed, another vehicle runs the stop sign from your right. What should you do?",
+    "choices": [
+      "Stop or slow down to avoid a collision, even though you have the right-of-way",
+      "Continue since you have the right-of-way",
+      "Honk and maintain speed",
+      "Accelerate to assert your right-of-way"
+    ],
+    "correctIndex": 0,
+    "explanation": "Having the legal right-of-way does not guarantee safety. Always be prepared to yield to avoid a collision, even when another driver violates traffic laws.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0117",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 2,
+    "text": "You see a one-way sign. A vehicle is driving the wrong way toward you. Who has the right-of-way?",
+    "choices": [
+      "You do, but avoid the collision by pulling to the right if possible",
+      "The wrong-way driver must turn around",
+      "Whoever is driving faster",
+      "Neither, both should stop"
+    ],
+    "correctIndex": 0,
+    "explanation": "You have the legal right-of-way on a one-way street, but safety is paramount. Pull to the right and avoid the wrong-way driver, then report the dangerous situation if possible.",
+    "reference": "DL-7: Right-of-Way Rules",
+    "image": {
+      "type": "svg",
+      "assetId": "MUTCD_R10-6_ONE_WAY"
+    }
+  },
+  {
+    "id": "TX-ROW-0118",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 5,
+    "text": "You are in the intersection waiting to turn left. The light is green. Oncoming traffic is heavy but stops for a pedestrian in the crosswalk. The light turns yellow. What should you do?",
+    "choices": [
+      "Wait for the pedestrian to clear and oncoming traffic to stop, then complete your turn",
+      "Turn immediately while oncoming traffic is stopped",
+      "Back up out of the intersection",
+      "Wait through the red light until the next green"
+    ],
+    "correctIndex": 0,
+    "explanation": "If you are legally in the intersection, you must clear it. Wait for the pedestrian to clear and oncoming traffic to stop, then complete your turn even if the light is red.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0119",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 3,
+    "text": "Two vehicles approach an uncontrolled intersection from perpendicular directions. Vehicle A is on a wider road, Vehicle B is on a narrow road. Who has the right-of-way?",
+    "choices": [
+      "The vehicle on the right, regardless of road width",
+      "Vehicle A on the wider road",
+      "Vehicle B on the narrow road",
+      "Both should stop and negotiate"
+    ],
+    "correctIndex": 0,
+    "explanation": "At uncontrolled intersections, the vehicle on the right has the right-of-way regardless of road size. Road width does not determine priority unless signs or signals indicate otherwise.",
+    "reference": "DL-7: Right-of-Way Rules"
+  },
+  {
+    "id": "TX-ROW-0120",
+    "topic": "RIGHT_OF_WAY",
+    "difficulty": 4,
+    "text": "You are turning right at a red light (where permitted). A vehicle to your left is turning left onto the same road with a green arrow. Who has the right-of-way?",
+    "choices": [
+      "The vehicle with the green left turn arrow",
+      "You, making the right turn",
+      "Both can proceed simultaneously",
+      "Whoever signals first"
+    ],
+    "correctIndex": 0,
+    "explanation": "A green arrow gives that driver the right-of-way. When turning right on red, you must yield to all traffic, including vehicles with a green arrow turning onto the same road.",
+    "reference": "DL-7: Right-of-Way Rules"
+  }
+]

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+  <!-- Road surface -->
+  <rect x="0" y="0" width="300" height="200" fill="#555555"/>
+
+  <!-- Lane lines -->
+  <line x1="100" y1="0" x2="100" y2="200" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="12,8"/>
+  <line x1="200" y1="0" x2="200" y2="200" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="12,8"/>
+
+  <!-- Yield line (row of solid white triangles) -->
+  <polygon points="30,130 40,145 20,145" fill="#FFFFFF"/>
+  <polygon points="60,130 70,145 50,145" fill="#FFFFFF"/>
+  <polygon points="90,130 100,145 80,145" fill="#FFFFFF"/>
+  <polygon points="120,130 130,145 110,145" fill="#FFFFFF"/>
+  <polygon points="150,130 160,145 140,145" fill="#FFFFFF"/>
+  <polygon points="180,130 190,145 170,145" fill="#FFFFFF"/>
+  <polygon points="210,130 220,145 200,145" fill="#FFFFFF"/>
+  <polygon points="240,130 250,145 230,145" fill="#FFFFFF"/>
+  <polygon points="270,130 280,145 260,145" fill="#FFFFFF"/>
+</svg>

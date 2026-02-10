@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 250">
+  <!-- Main road (horizontal) -->
+  <rect x="0" y="95" width="300" height="60" fill="#555555"/>
+
+  <!-- Side road (vertical, ending at main road) -->
+  <rect x="120" y="0" width="60" height="155" fill="#555555"/>
+
+  <!-- Lane markings on main road -->
+  <line x1="0" y1="125" x2="110" y2="125" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="10,10"/>
+  <line x1="190" y1="125" x2="300" y2="125" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="10,10"/>
+
+  <!-- Lane marking on side road -->
+  <line x1="150" y1="0" x2="150" y2="85" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="10,10"/>
+
+  <!-- Stop line on side road -->
+  <line x1="125" y1="95" x2="175" y2="95" stroke="#FFFFFF" stroke-width="3"/>
+
+  <!-- Stop sign on side road -->
+  <polygon points="150,75 158,80 158,88 150,93 142,88 142,80" fill="#FF0000" stroke="#FFFFFF" stroke-width="1"/>
+
+  <!-- Vehicle waiting to turn -->
+  <rect x="140" y="50" width="20" height="30" fill="#0066CC" stroke="#003366" stroke-width="1" rx="2"/>
+
+  <!-- Vehicle on main road -->
+  <rect x="40" y="105" width="30" height="20" fill="#CC0000" stroke="#660000" stroke-width="1" rx="2"/>
+</svg>

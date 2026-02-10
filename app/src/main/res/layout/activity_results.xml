@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/results_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/results_title"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:id="@+id/score_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Score: 25/30 (83%)"
+        android:textSize="24sp"
+        android:textColor="@color/primary"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/pass_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You Passed!"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/correct"
+        android:gravity="center"
+        android:layout_marginBottom="48dp" />
+
+    <Button
+        android:id="@+id/btn_back_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back_to_menu"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btn_try_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/try_again"
+        android:textSize="16sp"
+        android:padding="16dp" />
+
+</LinearLayout>

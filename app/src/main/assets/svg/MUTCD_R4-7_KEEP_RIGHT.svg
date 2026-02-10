@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 200">
+  <rect x="5" y="5" width="140" height="190" fill="#FFFFFF" stroke="#000000" stroke-width="3" rx="5"/>
+  <text x="75" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#000000" text-anchor="middle">KEEP</text>
+  <text x="75" y="85" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#000000" text-anchor="middle">RIGHT</text>
+  <polygon points="75,130 100,155 90,155 90,175 60,175 60,155 50,155" fill="#000000"/>
+</svg>

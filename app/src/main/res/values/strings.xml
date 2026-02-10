@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Texas DMV Practice</string>
+    <string name="welcome_title">Texas Driver License Practice Test</string>
+    <string name="welcome_subtitle">660 questions covering all topics</string>
+    <string name="start_quiz">Start Practice Test</string>
+    <string name="select_topic">Select Topic</string>
+    <string name="all_topics">All Topics (660 questions)</string>
+    <string name="topic_signs">Signs (120 questions)</string>
+    <string name="topic_traffic_signals">Traffic Signals (60 questions)</string>
+    <string name="topic_pavement_markings">Pavement Markings (70 questions)</string>
+    <string name="topic_right_of_way">Right of Way (120 questions)</string>
+    <string name="topic_speed_distance">Speed &amp; Distance (80 questions)</string>
+    <string name="topic_parking">Parking (60 questions)</string>
+    <string name="topic_safe_driving">Safe Driving (90 questions)</string>
+    <string name="topic_special_situations">Special Situations (60 questions)</string>
+    <string name="submit_answer">Submit Answer</string>
+    <string name="next_question">Next Question</string>
+    <string name="finish_quiz">Finish Quiz</string>
+    <string name="correct">Correct!</string>
+    <string name="incorrect">Incorrect</string>
+    <string name="question_progress">Question %1$d of %2$d</string>
+    <string name="results_title">Quiz Results</string>
+    <string name="score_format">Score: %1$d / %2$d (%3$d%%)</string>
+    <string name="review_answers">Review Answers</string>
+    <string name="try_again">Try Again</string>
+    <string name="back_to_menu">Back to Menu</string>
+</resources>

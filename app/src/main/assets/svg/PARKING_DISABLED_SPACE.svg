@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 300">
+  <!-- Parking lot surface -->
+  <rect x="0" y="0" width="250" height="300" fill="#666666"/>
+
+  <!-- Disabled parking space (blue) -->
+  <rect x="25" y="50" width="200" height="200" fill="#0066CC" opacity="0.3"/>
+  <line x1="25" y1="50" x2="25" y2="250" stroke="#FFFFFF" stroke-width="4"/>
+  <line x1="225" y1="50" x2="225" y2="250" stroke="#FFFFFF" stroke-width="4"/>
+
+  <!-- Large handicap symbol on pavement -->
+  <circle cx="125" cy="110" r="18" fill="#FFFFFF"/>
+  <path d="M 125,128 L 125,160 L 105,180" stroke="#FFFFFF" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 125,145 L 150,145" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 125,160 Q 135,160 135,172 L 135,185" stroke="#FFFFFF" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <circle cx="107" cy="180" r="20" fill="none" stroke="#FFFFFF" stroke-width="8"/>
+  <circle cx="135" cy="185" r="20" fill="none" stroke="#FFFFFF" stroke-width="8"/>
+
+  <!-- Sign post -->
+  <rect x="200" y="60" width="8" height="120" fill="#666666"/>
+
+  <!-- Disabled parking sign -->
+  <rect x="170" y="50" width="70" height="80" fill="#0066CC" stroke="#FFFFFF" stroke-width="3"/>
+  <circle cx="205" cy="70" r="8" fill="#FFFFFF"/>
+  <path d="M 205,78 L 205,95 L 195,105" stroke="#FFFFFF" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 205,87 L 215,87" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="196" cy="105" r="8" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+
+  <!-- Fine amount -->
+  <rect x="170" y="135" width="70" height="25" fill="#FFFFFF"/>
+  <text x="205" y="153" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#000000" text-anchor="middle">$500 FINE</text>
+</svg>

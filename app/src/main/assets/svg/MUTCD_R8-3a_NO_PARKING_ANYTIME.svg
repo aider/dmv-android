@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 200">
+  <rect x="5" y="5" width="140" height="190" fill="#FFFFFF" stroke="#FF0000" stroke-width="4" rx="5"/>
+  <text x="75" y="45" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#000000" text-anchor="middle">NO</text>
+  <text x="75" y="75" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#000000" text-anchor="middle">PARKING</text>
+  <text x="75" y="115" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#000000" text-anchor="middle">ANYTIME</text>
+  <line x1="30" y1="130" x2="120" y2="130" stroke="#000000" stroke-width="2"/>
+  <polygon points="65,145 85,145 85,155 95,155 75,180 55,155 65,155" fill="#000000"/>
+</svg>

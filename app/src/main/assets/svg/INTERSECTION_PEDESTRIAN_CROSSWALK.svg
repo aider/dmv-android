@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 250">
+  <!-- Road -->
+  <rect x="0" y="75" width="300" height="100" fill="#555555"/>
+
+  <!-- Center line -->
+  <line x1="0" y1="125" x2="300" y2="125" stroke="#FFFF00" stroke-width="3" stroke-dasharray="15,10"/>
+
+  <!-- Edge lines -->
+  <line x1="0" y1="80" x2="300" y2="80" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="0" y1="170" x2="300" y2="170" stroke="#FFFFFF" stroke-width="2"/>
+
+  <!-- Crosswalk (zebra stripes) -->
+  <rect x="130" y="80" width="15" height="90" fill="#FFFFFF"/>
+  <rect x="155" y="80" width="15" height="90" fill="#FFFFFF"/>
+
+  <!-- Pedestrian crossing -->
+  <circle cx="150" cy="55" r="8" fill="#000000"/>
+  <line x1="150" y1="63" x2="150" y2="85" stroke="#000000" stroke-width="5"/>
+  <line x1="140" y1="70" x2="160" y2="75" stroke="#000000" stroke-width="5"/>
+  <line x1="150" y1="85" x2="145" y2="105" stroke="#000000" stroke-width="5"/>
+  <line x1="150" y1="85" x2="155" y2="105" stroke="#000000" stroke-width="5"/>
+
+  <!-- Vehicle stopped before crosswalk -->
+  <rect x="60" y="85" width="35" height="20" fill="#0066CC" stroke="#003366" stroke-width="1" rx="2"/>
+
+  <!-- Stop line -->
+  <line x1="125" y1="85" x2="125" y2="165" stroke="#FFFFFF" stroke-width="3"/>
+</svg>

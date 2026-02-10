@@ -1,0 +1,611 @@
+[
+  {
+    "id": "TX-PRK-0001",
+    "topic": "PARKING",
+    "difficulty": 1,
+    "text": "What is the minimum distance you must park from a fire hydrant?",
+    "choices": ["15 feet", "10 feet", "20 feet", "25 feet"],
+    "correctIndex": 0,
+    "explanation": "You must park at least 15 feet away from a fire hydrant to allow fire department access in emergencies. Parking too close is illegal and dangerous.",
+    "reference": "DL-7: Parking Rules",
+    "image": {"type": "svg", "assetId": "PARKING_FIRE_HYDRANT_15FT"}
+  },
+  {
+    "id": "TX-PRK-0002",
+    "topic": "PARKING",
+    "difficulty": 1,
+    "text": "How far must you park from a crosswalk at an intersection?",
+    "choices": ["20 feet", "15 feet", "25 feet", "30 feet"],
+    "correctIndex": 0,
+    "explanation": "Texas law requires parking at least 20 feet from a crosswalk to maintain pedestrian visibility and safety at intersections.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0003",
+    "topic": "PARKING",
+    "difficulty": 2,
+    "text": "What does a blue painted curb indicate?",
+    "choices": ["Disabled parking only with valid permit", "Passenger loading zone", "Limited time parking", "Commercial loading zone"],
+    "correctIndex": 0,
+    "explanation": "Blue curbs designate disabled parking spaces. Only vehicles displaying a valid disabled placard or license plate may park there, and violations carry significant fines.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0004",
+    "topic": "PARKING",
+    "difficulty": 1,
+    "text": "Is it legal to park on a sidewalk?",
+    "choices": ["No, it blocks pedestrian access", "Yes, if you leave room to walk", "Yes, in residential areas only", "Yes, if no pedestrians are present"],
+    "correctIndex": 0,
+    "explanation": "Parking on sidewalks is always illegal because it obstructs pedestrian pathways and creates safety hazards, especially for people with disabilities or mobility devices.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0005",
+    "topic": "PARKING",
+    "difficulty": 2,
+    "text": "How far must you park from a stop sign or traffic signal?",
+    "choices": ["30 feet", "15 feet", "20 feet", "50 feet"],
+    "correctIndex": 0,
+    "explanation": "You must park at least 30 feet from any stop sign, traffic signal, or flashing beacon to ensure the sign remains visible to approaching drivers.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0006",
+    "topic": "PARKING",
+    "difficulty": 3,
+    "text": "What does a red painted curb mean?",
+    "choices": ["No stopping or parking at any time", "Fire lane - emergency vehicles only", "Loading zone during business hours", "No parking during rush hour"],
+    "correctIndex": 0,
+    "explanation": "Red curbs prohibit all stopping and parking at any time. This is the most restrictive curb marking and violations can result in tickets or towing.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0007",
+    "topic": "PARKING",
+    "difficulty": 2,
+    "text": "Can you park in front of a private driveway?",
+    "choices": ["No, it blocks property access", "Yes, if the property owner agrees", "Yes, for less than 5 minutes", "Yes, if no car is in the driveway"],
+    "correctIndex": 0,
+    "explanation": "Parking in front of any driveway, including private driveways, is illegal because it blocks property owners from entering or exiting their property.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0008",
+    "topic": "PARKING",
+    "difficulty": 3,
+    "text": "How far from a railroad crossing must you avoid parking?",
+    "choices": ["50 feet", "30 feet", "20 feet", "100 feet"],
+    "correctIndex": 0,
+    "explanation": "Texas law prohibits parking within 50 feet of a railroad crossing to maintain clear sightlines and ensure vehicles can safely cross the tracks without obstruction.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0009",
+    "topic": "PARKING",
+    "difficulty": 1,
+    "text": "What does double parking mean?",
+    "choices": ["Parking alongside a vehicle already parked at the curb", "Parking in two spaces at once", "Parking in a no parking zone", "Parking for twice the allowed time"],
+    "correctIndex": 0,
+    "explanation": "Double parking is parking your vehicle beside another vehicle that is already parked at the curb, blocking the travel lane. This is illegal and creates traffic hazards.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0010",
+    "topic": "PARKING",
+    "difficulty": 2,
+    "text": "What does a yellow painted curb typically indicate?",
+    "choices": ["Loading zone for commercial vehicles", "Caution area - park carefully", "School zone parking", "Temporary parking only"],
+    "correctIndex": 0,
+    "explanation": "Yellow curbs designate loading zones, usually for commercial vehicles to load or unload goods. Time limits and restrictions are typically posted on nearby signs.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0011",
+    "topic": "PARKING",
+    "difficulty": 2,
+    "text": "Is it legal to park within an intersection?",
+    "choices": ["No, intersections must remain clear", "Yes, if the intersection is small", "Yes, if no other cars are approaching", "Yes, during off-peak hours"],
+    "correctIndex": 0,
+    "explanation": "Parking within any intersection is always illegal. Intersections must remain clear for turning vehicles and to maintain traffic flow and safety.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0012",
+    "topic": "PARKING",
+    "difficulty": 3,
+    "text": "How far must you park from a fire station driveway on the same side of the street?",
+    "choices": ["20 feet", "15 feet", "30 feet", "50 feet"],
+    "correctIndex": 0,
+    "explanation": "You must park at least 20 feet from a fire station driveway entrance when parking on the same side of the street to allow emergency vehicles quick access.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0013",
+    "topic": "PARKING",
+    "difficulty": 4,
+    "text": "How far must you park from a fire station driveway on the opposite side of the street?",
+    "choices": ["75 feet", "50 feet", "100 feet", "20 feet"],
+    "correctIndex": 0,
+    "explanation": "When parking across from a fire station driveway, you must stay at least 75 feet away to provide adequate maneuvering space for large emergency vehicles.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0014",
+    "topic": "PARKING",
+    "difficulty": 2,
+    "text": "Can you park in a designated bike lane?",
+    "choices": ["No, bike lanes must remain clear", "Yes, if no cyclists are present", "Yes, for brief stops only", "Yes, during non-peak hours"],
+    "correctIndex": 0,
+    "explanation": "Parking in bike lanes is illegal as it forces cyclists into traffic and creates dangerous conditions. Bike lanes must remain clear at all times.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0015",
+    "topic": "PARKING",
+    "difficulty": 1,
+    "text": "What does a white painted curb indicate?",
+    "choices": ["Passenger loading zone with time limit", "No parking at any time", "Parking for white vehicles only", "Government vehicles only"],
+    "correctIndex": 0,
+    "explanation": "White curbs designate passenger loading and unloading zones with limited time allowances, typically for dropping off or picking up passengers quickly.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0016",
+    "topic": "PARKING",
+    "difficulty": 2,
+    "text": "What does a green painted curb typically indicate?",
+    "choices": ["Limited time parking, usually 15-30 minutes", "Parking for hybrid vehicles", "Free parking all day", "Visitor parking only"],
+    "correctIndex": 0,
+    "explanation": "Green curbs indicate short-term parking with time limits, commonly 15 to 30 minutes. Check posted signs for specific time restrictions in that area.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0017",
+    "topic": "PARKING",
+    "difficulty": 3,
+    "text": "Is it legal to park between a safety zone and the adjacent curb?",
+    "choices": ["No, this area must remain clear", "Yes, if the safety zone is empty", "Yes, during off-peak hours", "Yes, for emergency stops"],
+    "correctIndex": 0,
+    "explanation": "Parking between a safety zone and the curb is prohibited to maintain pedestrian safety areas and ensure clear access for people entering or exiting transit vehicles.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0018",
+    "topic": "PARKING",
+    "difficulty": 4,
+    "text": "You see a sign that says 'NO PARKING ANYTIME' with a red circle and slash. What does this mean?",
+    "choices": ["Parking is never permitted in this location", "Parking is allowed only during emergencies", "Parking is allowed with a permit", "Parking is restricted during business hours"],
+    "correctIndex": 0,
+    "explanation": "A 'NO PARKING ANYTIME' sign with prohibitory markings means parking is absolutely forbidden at all times, day or night, regardless of circumstances.",
+    "reference": "DL-7: Parking Rules",
+    "image": {"type": "svg", "assetId": "MUTCD_R8-3a_NO_PARKING_ANYTIME"}
+  },
+  {
+    "id": "TX-PRK-0019",
+    "topic": "PARKING",
+    "difficulty": 2,
+    "text": "Can you park directly on a crosswalk?",
+    "choices": ["No, crosswalks must remain clear", "Yes, if no pedestrians are crossing", "Yes, if the signal is red", "Yes, partially if necessary"],
+    "correctIndex": 0,
+    "explanation": "Parking on crosswalks is illegal as it blocks pedestrian right-of-way and creates safety hazards, especially for people with visual impairments or mobility devices.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0020",
+    "topic": "PARKING",
+    "difficulty": 3,
+    "text": "What should you always check before parking in a location with posted signs?",
+    "choices": ["Time restrictions and permit requirements", "The color of nearby vehicles", "The weather forecast", "The street name"],
+    "correctIndex": 0,
+    "explanation": "Always read parking signs carefully for time limits, permit requirements, street cleaning schedules, and restricted hours to avoid tickets or towing.",
+    "reference": "DL-7: Parking Rules",
+    "image": {"type": "svg", "assetId": "MUTCD_R7-8_NO_PARKING"}
+  },
+  {
+    "id": "TX-PRK-0021",
+    "topic": "PARKING",
+    "difficulty": 1,
+    "text": "When parallel parking, what is the first step?",
+    "choices": ["Signal and pull alongside the car ahead", "Turn your wheels toward the curb", "Back up slowly", "Check your blind spot"],
+    "correctIndex": 0,
+    "explanation": "The first step in parallel parking is to signal your intention and pull alongside the car in front of the space, positioning about 2-3 feet away.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0022",
+    "topic": "PARKING",
+    "difficulty": 2,
+    "text": "How far should you position your car from the vehicle ahead when beginning parallel parking?",
+    "choices": ["2-3 feet", "1 foot", "4-5 feet", "6 inches"],
+    "correctIndex": 0,
+    "explanation": "Position your vehicle 2-3 feet away from the car ahead. This distance provides adequate room to maneuver while backing into the parking space.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0023",
+    "topic": "PARKING",
+    "difficulty": 3,
+    "text": "After pulling alongside the car ahead, which way should you turn your wheels as you begin backing?",
+    "choices": ["Sharply toward the curb", "Sharply away from the curb", "Keep wheels straight", "Slightly to the left"],
+    "correctIndex": 0,
+    "explanation": "Turn your wheels sharply toward the curb as you begin backing. This angles your vehicle into the parking space and positions it correctly.",
+    "reference": "DL-7: Parking Rules",
+    "image": {"type": "svg", "assetId": "PARKING_PARALLEL_STEPS"}
+  },
+  {
+    "id": "TX-PRK-0024",
+    "topic": "PARKING",
+    "difficulty": 3,
+    "text": "When your car reaches about a 45-degree angle during parallel parking, what should you do with your wheels?",
+    "choices": ["Straighten them", "Turn them more toward the curb", "Turn them away from the curb", "Keep them in the same position"],
+    "correctIndex": 0,
+    "explanation": "At approximately 45 degrees, straighten your wheels and continue backing. This prevents your front end from swinging too far into the street.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0025",
+    "topic": "PARKING",
+    "difficulty": 2,
+    "text": "What is the maximum distance from the curb your vehicle should be when parallel parked in Texas?",
+    "choices": ["18 inches", "12 inches", "24 inches", "6 inches"],
+    "correctIndex": 0,
+    "explanation": "Texas law requires that parallel parked vehicles be within 18 inches of the curb. Parking farther out obstructs traffic flow and is a violation.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0026",
+    "topic": "PARKING",
+    "difficulty": 2,
+    "text": "Approximately how large should a parallel parking space be for safe parking?",
+    "choices": ["About 1.5 times your vehicle length", "Exactly the same as your vehicle length", "Twice your vehicle length", "Three times your vehicle length"],
+    "correctIndex": 0,
+    "explanation": "A safe parallel parking space should be about 1.5 times the length of your vehicle, providing enough room to maneuver in and out without hitting other cars.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0027",
+    "topic": "PARKING",
+    "difficulty": 1,
+    "text": "What should you do before pulling out of a parallel parking space?",
+    "choices": ["Check mirrors and blind spots, then signal", "Accelerate quickly to merge", "Sound your horn", "Turn on hazard lights"],
+    "correctIndex": 0,
+    "explanation": "Always check all mirrors and blind spots for traffic, cyclists, and pedestrians before exiting. Signal your intention to alert other drivers.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0028",
+    "topic": "PARKING",
+    "difficulty": 2,
+    "text": "When parallel parking, how should you control your speed?",
+    "choices": ["Back slowly with gentle brake pressure", "Back quickly to minimize time", "Use cruise control", "Accelerate while turning"],
+    "correctIndex": 0,
+    "explanation": "Back into the space slowly, maintaining control with gentle brake pressure. Slow speed allows you to make adjustments and prevents collisions.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0029",
+    "topic": "PARKING",
+    "difficulty": 3,
+    "text": "After backing until nearly parallel to the curb, which way should you turn your wheels to straighten the vehicle?",
+    "choices": ["Away from the curb", "Toward the curb", "Keep wheels straight", "Alternate left and right"],
+    "correctIndex": 0,
+    "explanation": "Once nearly parallel, turn wheels away from the curb while continuing to back slowly. This straightens your vehicle and centers it in the space.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0030",
+    "topic": "PARKING",
+    "difficulty": 2,
+    "text": "Can you parallel park within 15 feet of a fire hydrant?",
+    "choices": ["No, you must stay at least 15 feet away", "Yes, if you leave your keys in the car", "Yes, if you stay in the vehicle", "Yes, for less than 5 minutes"],
+    "correctIndex": 0,
+    "explanation": "You cannot parallel park or stop within 15 feet of a fire hydrant under any circumstances, as this blocks emergency access to water supplies.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0031",
+    "topic": "PARKING",
+    "difficulty": 3,
+    "text": "When parking uphill with a curb, which way should you turn your wheels?",
+    "choices": ["Away from the curb (left)", "Toward the curb (right)", "Straight ahead", "Either direction is acceptable"],
+    "correctIndex": 0,
+    "explanation": "When parking uphill with a curb, turn wheels away from (left of) the curb. If the car rolls backward, the back of the tire will hit the curb and prevent the car from rolling into traffic.",
+    "reference": "DL-7: Parking Rules",
+    "image": {"type": "svg", "assetId": "PARKING_HILL_UPHILL_CURB"}
+  },
+  {
+    "id": "TX-PRK-0032",
+    "topic": "PARKING",
+    "difficulty": 3,
+    "text": "When parking downhill with a curb, which way should you turn your wheels?",
+    "choices": ["Toward the curb (right)", "Away from the curb (left)", "Straight ahead", "Either direction is acceptable"],
+    "correctIndex": 0,
+    "explanation": "When parking downhill with a curb, turn wheels toward (right to) the curb. If the car rolls forward, the front tire will hit the curb and stop the vehicle.",
+    "reference": "DL-7: Parking Rules",
+    "image": {"type": "svg", "assetId": "PARKING_HILL_DOWNHILL_CURB"}
+  },
+  {
+    "id": "TX-PRK-0033",
+    "topic": "PARKING",
+    "difficulty": 4,
+    "text": "When parking uphill without a curb, which way should you turn your wheels?",
+    "choices": ["Right, toward the road shoulder", "Left, away from the road shoulder", "Straight ahead", "It doesn't matter without a curb"],
+    "correctIndex": 0,
+    "explanation": "Without a curb, turn wheels right toward the shoulder. If the car rolls backward, it will go off the road away from traffic rather than into the traffic lane.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0034",
+    "topic": "PARKING",
+    "difficulty": 4,
+    "text": "When parking downhill without a curb, which way should you turn your wheels?",
+    "choices": ["Right, toward the road shoulder", "Left, away from the road shoulder", "Straight ahead", "It doesn't matter without a curb"],
+    "correctIndex": 0,
+    "explanation": "Without a curb on a downhill, turn wheels right toward the shoulder. If the car rolls forward, it will move off the road rather than into traffic.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0035",
+    "topic": "PARKING",
+    "difficulty": 2,
+    "text": "What should you always engage when parking on a hill?",
+    "choices": ["The parking brake", "The turn signal", "The hazard lights", "The air conditioning"],
+    "correctIndex": 0,
+    "explanation": "Always set your parking brake when parking on any hill to provide an additional safety mechanism that prevents your vehicle from rolling.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0036",
+    "topic": "PARKING",
+    "difficulty": 3,
+    "text": "When parking on a hill with an automatic transmission, what gear should you use?",
+    "choices": ["Park", "Drive", "Neutral", "Reverse"],
+    "correctIndex": 0,
+    "explanation": "Put an automatic transmission in Park when parking on a hill. Combined with the parking brake and properly turned wheels, this secures your vehicle.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0037",
+    "topic": "PARKING",
+    "difficulty": 4,
+    "text": "When parking uphill with a manual transmission, which gear provides the best safety?",
+    "choices": ["First gear (lowest gear)", "Reverse", "Neutral", "Third gear"],
+    "correctIndex": 0,
+    "explanation": "Use first gear (lowest gear) when parking uphill with a manual transmission. This provides maximum resistance against backward rolling if the brake fails.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0038",
+    "topic": "PARKING",
+    "difficulty": 4,
+    "text": "When parking downhill with a manual transmission, which gear should you use?",
+    "choices": ["Reverse", "First gear", "Neutral", "Second gear"],
+    "correctIndex": 0,
+    "explanation": "When parking downhill with a manual transmission, use reverse gear to provide resistance against forward rolling if other parking mechanisms fail.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0039",
+    "topic": "PARKING",
+    "difficulty": 2,
+    "text": "Why is it important to turn your wheels properly when parking on a hill?",
+    "choices": ["To prevent the car from rolling into traffic if brakes fail", "To make it easier to drive away", "To reduce tire wear", "To improve fuel economy"],
+    "correctIndex": 0,
+    "explanation": "Properly turned wheels ensure that if your parking brake fails, the vehicle will roll into the curb or off the road, not into traffic, preventing accidents.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0040",
+    "topic": "PARKING",
+    "difficulty": 3,
+    "text": "What is the purpose of turning wheels toward the curb when parked downhill?",
+    "choices": ["The front tire hits the curb if the car rolls forward", "It makes backing out easier", "It prevents tire theft", "It improves the vehicle's appearance"],
+    "correctIndex": 0,
+    "explanation": "Turning wheels toward the curb when parked downhill means the front tire will contact the curb if the vehicle rolls forward, stopping it before entering traffic.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0041",
+    "topic": "PARKING",
+    "difficulty": 1,
+    "text": "Who is legally allowed to park in a disabled parking space?",
+    "choices": ["Only vehicles with valid disabled placards or plates", "Anyone if the space is empty", "Anyone for brief stops", "Family members of disabled persons"],
+    "correctIndex": 0,
+    "explanation": "Only vehicles displaying a valid disabled parking placard or license plate may use disabled parking spaces. Unauthorized use is illegal and heavily fined.",
+    "reference": "DL-7: Parking Rules",
+    "image": {"type": "svg", "assetId": "PARKING_DISABLED_SPACE"}
+  },
+  {
+    "id": "TX-PRK-0042",
+    "topic": "PARKING",
+    "difficulty": 2,
+    "text": "What is the minimum fine for illegally parking in a disabled parking space in Texas?",
+    "choices": ["$500 or more", "$100", "$250", "$50"],
+    "correctIndex": 0,
+    "explanation": "Texas imposes fines of $500 or more for unauthorized use of disabled parking spaces, reflecting the serious nature of this violation and its impact on people with disabilities.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0043",
+    "topic": "PARKING",
+    "difficulty": 2,
+    "text": "What color is a permanent disabled parking placard?",
+    "choices": ["Blue", "Red", "Green", "Yellow"],
+    "correctIndex": 0,
+    "explanation": "Permanent disabled parking placards are blue in color and are issued to individuals with long-term mobility impairments that qualify them for disabled parking privileges.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0044",
+    "topic": "PARKING",
+    "difficulty": 3,
+    "text": "What color is a temporary disabled parking placard?",
+    "choices": ["Red", "Blue", "Yellow", "Orange"],
+    "correctIndex": 0,
+    "explanation": "Temporary disabled parking placards are red and are issued for short-term disabilities, typically with an expiration date of six months or less.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0045",
+    "topic": "PARKING",
+    "difficulty": 2,
+    "text": "Can you park in the diagonal striped area next to a disabled parking space?",
+    "choices": ["No, these access aisles must remain clear", "Yes, if the disabled space is empty", "Yes, for motorcycles only", "Yes, for brief stops"],
+    "correctIndex": 0,
+    "explanation": "Diagonal striped access aisles next to disabled spaces must remain completely clear. They provide necessary space for wheelchair deployment and are not parking areas.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0046",
+    "topic": "PARKING",
+    "difficulty": 3,
+    "text": "What does a 'Van Accessible' sign indicate at a disabled parking space?",
+    "choices": ["The space is wider for wheelchair lifts and ramps", "Only vans can park there", "The space is for commercial vehicles", "The space has a longer time limit"],
+    "correctIndex": 0,
+    "explanation": "Van accessible spaces are wider than standard disabled spaces to accommodate wheelchair lifts and ramps. All vehicles with valid disabled permits can use them, but they prioritize vans.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0047",
+    "topic": "PARKING",
+    "difficulty": 2,
+    "text": "Is it legal to use someone else's disabled parking placard?",
+    "choices": ["No, it must be used only by the person to whom it was issued", "Yes, if they give you permission", "Yes, if you're running an errand for them", "Yes, if they're in the vehicle with you"],
+    "correctIndex": 0,
+    "explanation": "Disabled parking permits are issued to specific individuals and cannot be transferred or borrowed. Using another person's permit is illegal and subject to fines.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0048",
+    "topic": "PARKING",
+    "difficulty": 3,
+    "text": "What makes a parking space legally designated as a disabled parking space?",
+    "choices": ["Both proper signage and pavement markings", "Only the wheelchair symbol painted on the ground", "Only the vertical sign post", "Either signage or pavement markings"],
+    "correctIndex": 0,
+    "explanation": "Legal disabled parking spaces require both a vertical sign meeting specifications and pavement markings with the international symbol of access for proper designation.",
+    "reference": "DL-7: Parking Rules",
+    "image": {"type": "svg", "assetId": "MUTCD_R7-107_HANDICAPPED_PARKING"}
+  },
+  {
+    "id": "TX-PRK-0049",
+    "topic": "PARKING",
+    "difficulty": 4,
+    "text": "Can you park in a disabled space if you're just dropping off a person with disabilities?",
+    "choices": ["No, unless the vehicle displays a valid permit", "Yes, for passenger loading only", "Yes, if you stay in the vehicle", "Yes, for less than 5 minutes"],
+    "correctIndex": 0,
+    "explanation": "Even when transporting a person with disabilities, the vehicle must display a valid disabled parking permit to use disabled parking spaces, or you must use regular passenger loading zones.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0050",
+    "topic": "PARKING",
+    "difficulty": 3,
+    "text": "What does the international symbol of access (wheelchair symbol) on pavement indicate?",
+    "choices": ["The space is reserved for disabled parking permit holders", "Anyone can park if they assist disabled persons", "Wheelchair repair services available", "The area is wheelchair accessible"],
+    "correctIndex": 0,
+    "explanation": "The wheelchair symbol painted on pavement identifies spaces reserved exclusively for vehicles displaying valid disabled parking permits, ensuring accessibility for those who need it.",
+    "reference": "DL-7: Parking Rules",
+    "image": {"type": "svg", "assetId": "PAVEMENT_HANDICAP_SYMBOL"}
+  },
+  {
+    "id": "TX-PRK-0051",
+    "topic": "PARKING",
+    "difficulty": 2,
+    "text": "When parallel parking, what should you monitor while backing into the space?",
+    "choices": ["All mirrors and the rear window", "Only the driver's side mirror", "Only the rearview mirror", "Only the passenger side mirror"],
+    "correctIndex": 0,
+    "explanation": "Check all mirrors and look through the rear window while backing to monitor your distance from both the curb and other vehicles, ensuring safe clearance.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0052",
+    "topic": "PARKING",
+    "difficulty": 1,
+    "text": "What should you do if your parallel parking attempt is not successful on the first try?",
+    "choices": ["Pull forward and try again", "Leave the car in the current position", "Give up and find another space", "Ask a passenger to guide you"],
+    "correctIndex": 0,
+    "explanation": "If your first attempt doesn't position you correctly, simply pull forward and repeat the process. Multiple attempts are normal when learning to parallel park.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0053",
+    "topic": "PARKING",
+    "difficulty": 3,
+    "text": "Can you parallel park in front of a driveway if the space is large enough?",
+    "choices": ["No, blocking driveways is always illegal", "Yes, if you fit completely in the space", "Yes, if the driveway appears unused", "Yes, during nighttime hours"],
+    "correctIndex": 0,
+    "explanation": "Regardless of space size, parking in front of any driveway is illegal because it blocks property access. Always ensure your entire vehicle is clear of driveway entrances.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0054",
+    "topic": "PARKING",
+    "difficulty": 2,
+    "text": "When preparing to parallel park, what should you do to alert other drivers?",
+    "choices": ["Use your turn signal", "Flash your headlights", "Sound your horn", "Turn on hazard lights"],
+    "correctIndex": 0,
+    "explanation": "Always activate your turn signal before beginning to parallel park. This alerts following drivers of your intention to stop and allows them to safely pass or wait.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0055",
+    "topic": "PARKING",
+    "difficulty": 4,
+    "text": "After parallel parking on a steep hill, what additional precautions should you take?",
+    "choices": ["Turn wheels appropriately and set parking brake firmly", "Leave the car in neutral for easy rolling", "Keep the engine running", "Place wheel chocks on all four tires"],
+    "correctIndex": 0,
+    "explanation": "On steep hills, combine proper wheel positioning with a firmly set parking brake and appropriate gear selection to create multiple safety systems against rolling.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0056",
+    "topic": "PARKING",
+    "difficulty": 3,
+    "text": "Why must access aisles next to disabled parking spaces remain clear?",
+    "choices": ["They provide room for wheelchair ramps and mobility devices", "They are reserved for disabled motorcycles", "They mark fire lanes", "They indicate loading zones"],
+    "correctIndex": 0,
+    "explanation": "Access aisles provide essential space for people using wheelchairs, walkers, or other mobility devices to safely enter and exit their vehicles. Blocking them prevents access.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0057",
+    "topic": "PARKING",
+    "difficulty": 2,
+    "text": "What should you do if all regular parking spaces are full but disabled spaces are available?",
+    "choices": ["Find parking elsewhere; never use disabled spaces without a permit", "Park in a disabled space briefly", "Park in the access aisle instead", "Wait for a regular space to open"],
+    "correctIndex": 0,
+    "explanation": "Disabled parking spaces are legally reserved for permit holders at all times. Without a valid permit, you must find alternative parking regardless of convenience.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0058",
+    "topic": "PARKING",
+    "difficulty": 3,
+    "text": "When exiting a parallel parking space on a busy street, what is the safest procedure?",
+    "choices": ["Check all mirrors and blind spots, signal, and merge when clear", "Pull out quickly to avoid blocking traffic", "Sound horn and pull out immediately", "Wait for all traffic to stop"],
+    "correctIndex": 0,
+    "explanation": "Safety requires checking all mirrors and blind spots for traffic, cyclists, and pedestrians, signaling your intention, and merging smoothly when you have a safe gap.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0059",
+    "topic": "PARKING",
+    "difficulty": 5,
+    "text": "A car is parked facing uphill on a steep street with no curb. If the parking brake fails, which way will the car roll and why is the wheel position critical?",
+    "choices": ["Backward into traffic unless wheels are turned right toward the shoulder", "Forward down the hill unless wheels are turned left", "Backward into the shoulder if wheels are straight", "It won't roll if in park gear"],
+    "correctIndex": 0,
+    "explanation": "Without a curb, gravity pulls the car backward downhill. Wheels turned right direct the car toward the shoulder and away from traffic if brake systems fail, preventing collisions.",
+    "reference": "DL-7: Parking Rules"
+  },
+  {
+    "id": "TX-PRK-0060",
+    "topic": "PARKING",
+    "difficulty": 5,
+    "text": "What is the primary reason Texas law requires parking within 18 inches of the curb when parallel parked?",
+    "choices": ["To maintain traffic flow and prevent obstruction of the travel lane", "To prevent damage to the vehicle's tires", "To make it easier for other drivers to parallel park", "To comply with federal highway regulations"],
+    "correctIndex": 0,
+    "explanation": "The 18-inch rule ensures parked vehicles don't protrude excessively into the travel lane, maintaining safe traffic flow and reducing collision risks with passing vehicles.",
+    "reference": "DL-7: Parking Rules"
+  }
+]

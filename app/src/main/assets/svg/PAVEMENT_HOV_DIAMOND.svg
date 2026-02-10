@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Road surface -->
+  <rect x="0" y="0" width="200" height="300" fill="#555555"/>
+
+  <!-- Lane edges -->
+  <line x1="20" y1="0" x2="20" y2="300" stroke="#FFFFFF" stroke-width="3"/>
+  <line x1="180" y1="0" x2="180" y2="300" stroke="#FFFFFF" stroke-width="3"/>
+
+  <!-- HOV diamond symbol -->
+  <path d="M 100,80 L 140,150 L 100,220 L 60,150 Z" fill="none" stroke="#FFFFFF" stroke-width="8"/>
+
+  <!-- "HOV" or "2+" text inside diamond (optional) -->
+  <text x="100" y="160" font-family="Arial Black, sans-serif" font-size="32" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2+</text>
+</svg>

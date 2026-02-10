@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Street with parked cars -->
+  <rect x="0" y="0" width="400" height="300" fill="#555555"/>
+
+  <!-- Curb -->
+  <rect x="0" y="0" width="400" height="30" fill="#AAAAAA"/>
+
+  <!-- Parked cars (before and after) -->
+  <!-- Front car -->
+  <rect x="50" y="40" width="40" height="70" fill="#666666" stroke="#333333" stroke-width="2" rx="3"/>
+
+  <!-- Back car -->
+  <rect x="250" y="40" width="40" height="70" fill="#666666" stroke="#333333" stroke-width="2" rx="3"/>
+
+  <!-- Parking space (empty) -->
+  <rect x="95" y="35" width="150" height="80" fill="none" stroke="#FFFF00" stroke-width="2" stroke-dasharray="8,4"/>
+
+  <!-- Your car (parking) - shown at angle -->
+  <rect x="140" y="150" width="40" height="70" fill="#0066CC" stroke="#003366" stroke-width="2" rx="3" transform="rotate(-35 160 185)"/>
+
+  <!-- Step numbers -->
+  <circle cx="120" cy="200" r="15" fill="#FFFFFF" opacity="0.8"/>
+  <text x="120" y="207" font-family="Arial Black, sans-serif" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">1</text>
+
+  <!-- Arrow showing backing motion -->
+  <path d="M 180,220 Q 160,180 150,150" stroke="#00FF00" stroke-width="3" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowgreen)"/>
+
+  <defs>
+    <marker id="arrowgreen" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <polygon points="0,0 10,5 0,10" fill="#00FF00"/>
+    </marker>
+  </defs>
+</svg>

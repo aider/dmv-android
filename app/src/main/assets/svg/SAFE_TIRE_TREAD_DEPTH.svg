@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 250">
+  <!-- Tire cross-section -->
+  <ellipse cx="150" cy="125" rx="100" ry="110" fill="#333333"/>
+  <ellipse cx="150" cy="125" rx="70" ry="80" fill="#666666"/>
+
+  <!-- Tread pattern -->
+  <rect x="50" y="120" width="15" height="40" fill="#000000"/>
+  <rect x="75" y="115" width="15" height="50" fill="#000000"/>
+  <rect x="100" y="110" width="15" height="60" fill="#000000"/>
+  <rect x="125" y="108" width="15" height="64" fill="#000000"/>
+  <rect x="150" y="107" width="15" height="66" fill="#000000"/>
+  <rect x="175" y="108" width="15" height="64" fill="#000000"/>
+  <rect x="200" y="110" width="15" height="60" fill="#000000"/>
+  <rect x="225" y="115" width="15" height="50" fill="#000000"/>
+
+  <!-- Penny test illustration -->
+  <circle cx="150" cy="80" r="20" fill="#CD7F32" stroke="#8B4513" stroke-width="2"/>
+  <text x="150" y="88" font-family="Arial Black, sans-serif" font-size="16" font-weight="bold" fill="#000000" text-anchor="middle">1¢</text>
+
+  <!-- Arrow pointing to tread -->
+  <line x1="150" y1="100" x2="150" y2="107" stroke="#FFFF00" stroke-width="3" marker-end="url(#arrowyel)"/>
+
+  <!-- Depth measurement -->
+  <line x1="165" y1="107" x2="165" y2="173" stroke="#00FF00" stroke-width="2"/>
+  <line x1="160" y1="107" x2="170" y2="107" stroke="#00FF00" stroke-width="2"/>
+  <line x1="160" y1="173" x2="170" y2="173" stroke="#00FF00" stroke-width="2"/>
+  <text x="185" y="143" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#00FF00">Min: 2/32"</text>
+
+  <!-- Warning text -->
+  <text x="150" y="230" font-family="Arial Bold, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Replace if Lincoln's head visible</text>
+
+  <defs>
+    <marker id="arrowyel" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <polygon points="0,0 10,5 0,10" fill="#FFFF00"/>
+    </marker>
+  </defs>
+</svg>

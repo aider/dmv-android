@@ -1,0 +1,1372 @@
+[
+  {
+    "id": "TX-SAF-0001",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "What is the most important defensive driving technique?",
+    "choices": [
+      "Maintaining a space cushion around your vehicle",
+      "Driving at the speed limit",
+      "Using cruise control",
+      "Following traffic flow"
+    ],
+    "correctIndex": 0,
+    "explanation": "Maintaining a space cushion gives you time and room to react to hazards. Space on all sides of your vehicle is your best protection against collisions.",
+    "reference": "DL-7: Safe Driving Practices",
+    "image": {
+      "type": "svg",
+      "assetId": "SAFE_DEFENSIVE_SPACE_CUSHION"
+    }
+  },
+  {
+    "id": "TX-SAF-0002",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "How often should you check your mirrors while driving?",
+    "choices": [
+      "Every 5-8 seconds",
+      "Every 15-20 seconds",
+      "Only when changing lanes",
+      "Once per minute"
+    ],
+    "correctIndex": 0,
+    "explanation": "You should check your mirrors every 5-8 seconds to maintain awareness of your surroundings. Regular mirror checks help you spot potential hazards and make informed driving decisions.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0003",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 1,
+    "text": "What is the minimum recommended following distance in good conditions?",
+    "choices": [
+      "3 seconds",
+      "1 second",
+      "5 seconds",
+      "2 car lengths"
+    ],
+    "correctIndex": 0,
+    "explanation": "The 3-second rule provides adequate time to react to sudden stops or hazards. This time-based measurement works at any speed and adjusts automatically as your speed changes.",
+    "reference": "DL-7: Safe Driving Practices",
+    "image": {
+      "type": "svg",
+      "assetId": "SPEED_FOLLOWING_DISTANCE_3SEC"
+    }
+  },
+  {
+    "id": "TX-SAF-0004",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "How far ahead should you scan the road while driving on a highway?",
+    "choices": [
+      "12-15 seconds ahead",
+      "5-8 seconds ahead",
+      "3-5 seconds ahead",
+      "20-25 seconds ahead"
+    ],
+    "correctIndex": 0,
+    "explanation": "Scanning 12-15 seconds ahead allows you to identify potential hazards early and make smooth adjustments. This gives you adequate time to plan your response without sudden maneuvers.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0005",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "When should you check your blind spots?",
+    "choices": [
+      "Before changing lanes, turning, or backing up",
+      "Only when backing up",
+      "Once every few minutes",
+      "Only in heavy traffic"
+    ],
+    "correctIndex": 0,
+    "explanation": "Blind spots hide vehicles that aren't visible in your mirrors. Checking blind spots before lane changes, turns, and backing prevents collisions with vehicles you can't see in mirrors alone.",
+    "reference": "DL-7: Safe Driving Practices",
+    "image": {
+      "type": "svg",
+      "assetId": "SAFE_BLIND_SPOT_CHECK"
+    }
+  },
+  {
+    "id": "TX-SAF-0006",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "What does 'aim high in steering' mean in defensive driving?",
+    "choices": [
+      "Look far down the road, not just at the vehicle ahead",
+      "Hold the steering wheel at the top",
+      "Drive in the left lane",
+      "Keep your hands high on the wheel"
+    ],
+    "correctIndex": 0,
+    "explanation": "Aiming high means focusing your vision far ahead rather than just the immediate area. This helps you spot hazards early and maintain better vehicle control by looking where you want to go.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0007",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "What should you do when encountering an aggressive driver?",
+    "choices": [
+      "Let them pass and maintain a safe distance",
+      "Speed up to stay ahead of them",
+      "Brake suddenly to teach them a lesson",
+      "Signal aggressively to show your frustration"
+    ],
+    "correctIndex": 0,
+    "explanation": "The safest response to aggressive drivers is to avoid engagement and let them pass. Responding aggressively creates dangerous situations and escalates conflict on the road.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0008",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 1,
+    "text": "What is the safest way to handle a cell phone call while driving?",
+    "choices": [
+      "Pull over safely before answering",
+      "Use speakerphone while driving",
+      "Answer only at red lights",
+      "Keep calls under one minute"
+    ],
+    "correctIndex": 0,
+    "explanation": "Even hands-free phone use creates mental distraction. The only truly safe option is to pull over in a safe location before making or answering calls.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0009",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "What does 'leave yourself an out' mean in defensive driving?",
+    "choices": [
+      "Always have an escape route if trouble develops",
+      "Keep an extra car key hidden",
+      "Park near exits",
+      "Avoid dead-end streets"
+    ],
+    "correctIndex": 0,
+    "explanation": "Having an escape route means positioning your vehicle so you have space to maneuver if a hazard appears. This strategy prevents being boxed in with nowhere to go during emergencies.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0010",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "When should you increase your following distance beyond 3 seconds?",
+    "choices": [
+      "In rain, fog, or poor visibility conditions",
+      "Only when driving at night",
+      "Only on highways",
+      "Never, 3 seconds is always adequate"
+    ],
+    "correctIndex": 0,
+    "explanation": "Adverse conditions like rain, fog, or darkness require more following distance because your stopping distance increases and visibility decreases. Doubling to 6 seconds or more provides an adequate safety margin.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0011",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 4,
+    "text": "What is the main purpose of the 'Smith System' of defensive driving?",
+    "choices": [
+      "To organize driver behavior for early hazard recognition",
+      "To teach emergency braking techniques",
+      "To improve fuel economy",
+      "To reduce insurance premiums"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Smith System provides five principles that help drivers identify hazards before they become emergencies. Early recognition allows time for smooth, controlled responses rather than panic reactions.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0012",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "What should you watch for to predict another driver's actions?",
+    "choices": [
+      "Brake lights, turn signals, and head movements",
+      "Vehicle color and make",
+      "License plate numbers",
+      "The driver's age"
+    ],
+    "correctIndex": 0,
+    "explanation": "Visual clues like brake lights, signals, and where drivers are looking help predict their next move. Anticipating actions allows you to prepare and avoid conflicts before they develop.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0013",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "What does 'keep your eyes moving' mean in defensive driving?",
+    "choices": [
+      "Continuously scan mirrors, gauges, and ahead rather than fixating",
+      "Look left and right constantly",
+      "Never focus on any one thing",
+      "Avoid looking at the road ahead"
+    ],
+    "correctIndex": 0,
+    "explanation": "Moving your eyes prevents tunnel vision and helps you gather information from all around your vehicle. Scanning creates a complete awareness picture rather than focusing on just one area.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0014",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 1,
+    "text": "When should you yield even if you have the right-of-way?",
+    "choices": [
+      "When necessary to avoid a collision",
+      "Never, always take your right-of-way",
+      "Only at stop signs",
+      "Only to emergency vehicles"
+    ],
+    "correctIndex": 0,
+    "explanation": "Safety always comes before right-of-way rules. If another driver fails to yield or creates a dangerous situation, it's better to yield than to insist on your legal right and risk a crash.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0015",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 4,
+    "text": "How can you make sure other drivers see you?",
+    "choices": [
+      "Use signals, horn, and lights to communicate your presence",
+      "Drive faster than traffic",
+      "Use bright colored vehicles only",
+      "Stay in the left lane"
+    ],
+    "correctIndex": 0,
+    "explanation": "Communication through signals, lights, and horn alerts others to your presence and intentions. Active communication prevents the 'I didn't see them' type of collision.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0016",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "What is the safest position when stopped behind another vehicle at a traffic light?",
+    "choices": [
+      "Far enough back to see the rear tires of the vehicle ahead",
+      "As close as possible to maximize space",
+      "One car length back",
+      "Two feet behind their bumper"
+    ],
+    "correctIndex": 0,
+    "explanation": "Seeing the rear tires and some pavement gives you space to maneuver if needed and prevents being trapped if you're rear-ended. This position also allows you to pull around a disabled vehicle.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0017",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "What should you do if you realize you're about to miss your exit on a highway?",
+    "choices": [
+      "Continue to the next exit and turn around",
+      "Slow down and change lanes quickly",
+      "Stop on the highway and back up",
+      "Cut across multiple lanes immediately"
+    ],
+    "correctIndex": 0,
+    "explanation": "Missing an exit is inconvenient but not dangerous. Making sudden lane changes or stopping creates collision risks that far outweigh the time lost by taking the next exit.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0018",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "What is the best strategy for driving in heavy traffic?",
+    "choices": [
+      "Maintain steady speed and avoid unnecessary lane changes",
+      "Change lanes frequently to find faster movement",
+      "Drive on the shoulder when traffic slows",
+      "Follow vehicles closely to prevent lane changes"
+    ],
+    "correctIndex": 0,
+    "explanation": "Steady driving in heavy traffic reduces collision risk and actually doesn't cost much time compared to aggressive lane changing. Constant lane changes create more opportunities for crashes.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0019",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 4,
+    "text": "What is the primary cause of rear-end collisions?",
+    "choices": [
+      "Following too closely for conditions",
+      "Driving too slowly",
+      "Using brake lights improperly",
+      "Poor road maintenance"
+    ],
+    "correctIndex": 0,
+    "explanation": "Most rear-end crashes result from inadequate following distance. When drivers follow too closely, they don't have time to react when the vehicle ahead slows or stops suddenly.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0020",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "What should you do when you see a vehicle preparing to enter your lane?",
+    "choices": [
+      "Adjust speed or position to create space for them",
+      "Speed up to close the gap",
+      "Honk your horn continuously",
+      "Maintain your exact speed and position"
+    ],
+    "correctIndex": 0,
+    "explanation": "Defensive driving means helping other drivers execute their maneuvers safely. Creating space prevents conflicts even when other drivers don't signal properly or misjudge gaps.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0021",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "How should you position your hands to maintain best control while driving?",
+    "choices": [
+      "At 9 and 3 o'clock or 8 and 4 o'clock positions",
+      "At 10 and 2 o'clock positions",
+      "One hand at 12 o'clock",
+      "Both hands at the bottom of the wheel"
+    ],
+    "correctIndex": 0,
+    "explanation": "The 9 and 3 or 8 and 4 positions provide excellent control while reducing injury risk from airbag deployment. These positions allow full steering range without crossing arms.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0022",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "What is the best way to handle distractions inside your vehicle?",
+    "choices": [
+      "Address them before driving or pull over safely",
+      "Glance at them quickly while driving straight",
+      "Handle them only at traffic lights",
+      "Deal with them while other passengers watch the road"
+    ],
+    "correctIndex": 0,
+    "explanation": "Even brief distractions significantly increase crash risk. Taking care of issues before starting to drive or pulling over safely eliminates the danger of divided attention.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0023",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 4,
+    "text": "When is it acceptable to drive in another vehicle's blind spot?",
+    "choices": [
+      "Never, always move ahead or drop back",
+      "When passing on the right",
+      "In slow-moving traffic only",
+      "When the other driver appears experienced"
+    ],
+    "correctIndex": 0,
+    "explanation": "Staying in blind spots puts your safety in another driver's hands. Positioning yourself where you can be seen gives you control over your safety and prevents being struck during their lane changes.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0024",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "What should you do when approaching an intersection with a green light?",
+    "choices": [
+      "Check for vehicles running the red light before entering",
+      "Accelerate through quickly",
+      "Assume all cross traffic will stop",
+      "Focus only on the signal"
+    ],
+    "correctIndex": 0,
+    "explanation": "Green lights give you the right-of-way but not absolute safety. Checking for red light runners before entering intersections prevents the most common type of intersection crash.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0025",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "What is the main benefit of smooth, gradual steering and braking?",
+    "choices": [
+      "Maintains vehicle stability and gives you more control",
+      "Uses less fuel",
+      "Extends brake life",
+      "Looks more professional"
+    ],
+    "correctIndex": 0,
+    "explanation": "Smooth inputs keep weight transfer gradual, maintaining tire traction and vehicle stability. Sudden movements can break traction and cause loss of control, especially in adverse conditions.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0026",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 1,
+    "text": "What is the legal blood alcohol concentration (BAC) limit for drivers 21 and over in Texas?",
+    "choices": [
+      "0.08%",
+      "0.10%",
+      "0.05%",
+      "0.02%"
+    ],
+    "correctIndex": 0,
+    "explanation": "In Texas, it is illegal to drive with a BAC of 0.08% or higher for drivers 21 and over. Driving while impaired is dangerous and carries serious penalties including fines, license suspension, and possible jail time.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0027",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "What is the BAC limit for drivers under 21 years old in Texas?",
+    "choices": [
+      "Any detectable amount",
+      "0.02%",
+      "0.04%",
+      "0.08%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Texas has a zero-tolerance policy for underage drinking and driving. Any detectable amount of alcohol in a driver under 21 results in license suspension and other penalties.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0028",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 1,
+    "text": "When does alcohol impairment begin?",
+    "choices": [
+      "With the first drink",
+      "At 0.08% BAC",
+      "After three drinks",
+      "Only when you feel drunk"
+    ],
+    "correctIndex": 0,
+    "explanation": "Alcohol impairs judgment, reaction time, and coordination starting with the very first drink, even before you feel its effects. The legal limit recognizes significant impairment, but impairment begins much earlier.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0029",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "What is the approximate rate at which the body eliminates alcohol?",
+    "choices": [
+      "One standard drink per hour",
+      "One standard drink per 30 minutes",
+      "Two standard drinks per hour",
+      "Three standard drinks per hour"
+    ],
+    "correctIndex": 0,
+    "explanation": "The liver metabolizes approximately one standard drink per hour. This rate cannot be increased by coffee, cold showers, or exercise - only time eliminates alcohol from your system.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0030",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "Which abilities are most affected by alcohol consumption?",
+    "choices": [
+      "Judgment, reaction time, and coordination",
+      "Hearing and taste",
+      "Strength and flexibility",
+      "Memory of traffic laws only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Alcohol impairs the brain functions most critical for driving: making good decisions, reacting quickly to hazards, and coordinating precise movements. These impairments dramatically increase crash risk.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0031",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 1,
+    "text": "What is the safest choice if you've been drinking?",
+    "choices": [
+      "Use a designated driver, taxi, or rideshare service",
+      "Drive slowly and carefully",
+      "Wait an hour before driving",
+      "Drink coffee to sober up"
+    ],
+    "correctIndex": 0,
+    "explanation": "The only safe choice after drinking is not to drive. Designated drivers, taxis, rideshares, or staying put eliminate the risk of impaired driving crashes.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0032",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "What is the BAC limit for commercial drivers in Texas?",
+    "choices": [
+      "0.04%",
+      "0.08%",
+      "0.02%",
+      "0.06%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Commercial drivers face a stricter 0.04% BAC limit due to the greater responsibility of operating large vehicles. This stricter standard reflects the increased danger posed by impaired commercial vehicle operation.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0033",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "Can prescription medications impair driving ability?",
+    "choices": [
+      "Yes, many prescriptions can cause drowsiness or impairment",
+      "No, prescription medications are always safe for driving",
+      "Only if taken in excess",
+      "Only if mixed with alcohol"
+    ],
+    "correctIndex": 0,
+    "explanation": "Many prescription medications cause drowsiness, dizziness, or impaired judgment that affects driving ability. Always check medication labels and ask your doctor or pharmacist about driving effects.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0034",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "What happens when alcohol is combined with other drugs?",
+    "choices": [
+      "The combined effect is greater than either substance alone",
+      "They cancel each other out",
+      "Only the alcohol effect matters",
+      "The effects remain the same"
+    ],
+    "correctIndex": 0,
+    "explanation": "Combining alcohol with other drugs creates multiplied impairment beyond the sum of individual effects. This synergistic effect dramatically increases danger and can be fatal even at lower doses.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0035",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "What are warning signs of drowsy driving?",
+    "choices": [
+      "Yawning, heavy eyelids, drifting from lane, and missing exits",
+      "Slight hunger and thirst",
+      "Needing to adjust the radio",
+      "Feeling energetic but bored"
+    ],
+    "correctIndex": 0,
+    "explanation": "These physical and behavioral signs indicate dangerous fatigue levels. If you experience any of these symptoms, you should stop driving immediately and rest.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0036",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "How often should you take breaks on a long trip?",
+    "choices": [
+      "Every 2 hours or 100 miles",
+      "Every 4 hours or 200 miles",
+      "Every 30 minutes",
+      "Only when you feel tired"
+    ],
+    "correctIndex": 0,
+    "explanation": "Regular breaks every 2 hours or 100 miles prevent fatigue from building to dangerous levels. Taking breaks before you feel tired is more effective than waiting until fatigue sets in.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0037",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 1,
+    "text": "What is the only cure for drowsiness while driving?",
+    "choices": [
+      "Sleep",
+      "Coffee",
+      "Fresh air",
+      "Loud music"
+    ],
+    "correctIndex": 0,
+    "explanation": "Only actual sleep restores alertness. Coffee, fresh air, and music may provide brief alertness but don't address the underlying fatigue that impairs your driving ability.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0038",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "How long should a power nap be if you're drowsy while driving?",
+    "choices": [
+      "15-20 minutes",
+      "5 minutes",
+      "45 minutes",
+      "2 hours"
+    ],
+    "correctIndex": 0,
+    "explanation": "A 15-20 minute power nap can temporarily restore alertness without entering deep sleep that causes grogginess. However, this is only a temporary solution - you still need proper sleep.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0039",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "Can over-the-counter medications impair driving?",
+    "choices": [
+      "Yes, many cause drowsiness or reduced alertness",
+      "No, over-the-counter medications are always safe",
+      "Only if you take more than directed",
+      "Only cold medications can impair driving"
+    ],
+    "correctIndex": 0,
+    "explanation": "Many over-the-counter medications, especially antihistamines and cold remedies, cause drowsiness or reduced reaction time. Always read labels and choose non-drowsy formulations when available.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0040",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 4,
+    "text": "Why is drowsy driving as dangerous as drunk driving?",
+    "choices": [
+      "It impairs reaction time, judgment, and can cause microsleeps",
+      "It only affects reaction time slightly",
+      "It's actually less dangerous than drunk driving",
+      "It only affects vision"
+    ],
+    "correctIndex": 0,
+    "explanation": "Severe drowsiness impairs driving abilities as much as alcohol intoxication. Microsleeps, where you briefly lose consciousness for seconds, mean you're driving blind and completely unable to react.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0041",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "What should you do if you start feeling drowsy while driving?",
+    "choices": [
+      "Find a safe place to pull over and rest or sleep",
+      "Open the windows and continue",
+      "Turn up the radio and keep driving",
+      "Drink an energy drink and continue"
+    ],
+    "correctIndex": 0,
+    "explanation": "Once drowsiness sets in, temporary measures like fresh air or caffeine are unreliable. The only safe response is to stop driving and rest or sleep until you're fully alert.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0042",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "Which illegal drugs can impair driving ability?",
+    "choices": [
+      "All illegal drugs can impair driving",
+      "Only marijuana affects driving",
+      "Only stimulants affect driving",
+      "Illegal drugs don't affect driving as much as alcohol"
+    ],
+    "correctIndex": 0,
+    "explanation": "Every illegal drug affects brain function in ways that impair driving ability. Whether depressants, stimulants, or hallucinogens, all illegal drugs compromise the skills needed for safe driving.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0043",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 4,
+    "text": "What should you check before taking any medication and driving?",
+    "choices": [
+      "Read labels and ask your doctor or pharmacist about driving effects",
+      "Only check if it's a new medication",
+      "Just see how you feel after taking it",
+      "Check only if it's a prescription medication"
+    ],
+    "correctIndex": 0,
+    "explanation": "Medication labels and professional advice help you understand potential impairment effects before you drive. Waiting to see how you feel puts you on the road already impaired.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0044",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "What is the greatest danger of driving after drinking small amounts of alcohol?",
+    "choices": [
+      "Impaired judgment may lead to poor decisions",
+      "You'll get a ticket",
+      "Your vision becomes blurry",
+      "You'll drive too slowly"
+    ],
+    "correctIndex": 0,
+    "explanation": "Alcohol impairs judgment first, often before physical impairments are obvious. Poor judgment leads to risky decisions like speeding, tailgating, or attempting maneuvers you wouldn't try sober.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0045",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "What time of day are you most at risk for drowsy driving?",
+    "choices": [
+      "Late night and early morning hours, especially 2-6 AM",
+      "During rush hour",
+      "Mid-afternoon only",
+      "Evening hours before dinner"
+    ],
+    "correctIndex": 0,
+    "explanation": "Your body's natural sleep-wake cycle makes you most drowsy during typical sleeping hours, especially 2-6 AM. Many drowsy driving crashes occur during these hours when alertness is naturally lowest.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0046",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 1,
+    "text": "What should you do when it starts raining?",
+    "choices": [
+      "Reduce speed and increase following distance",
+      "Maintain the same speed",
+      "Speed up to get through the rain quickly",
+      "Use parking lights only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rain reduces traction and visibility, requiring slower speeds and more following distance. These adjustments give you time to react and stop safely on slippery roads.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0047",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "Why are roads most slippery during the first few minutes of rain?",
+    "choices": [
+      "Rain mixes with oil and dust to create a slick film",
+      "Rainwater alone is very slippery",
+      "Tires don't work well when first wet",
+      "Road surface expands when wet"
+    ],
+    "correctIndex": 0,
+    "explanation": "Accumulated oil, grease, and dust on dry roads mix with initial rain to create an extremely slippery surface. After heavier rain washes this away, traction improves somewhat.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0048",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "How much should you increase your following distance in rain?",
+    "choices": [
+      "Double it to at least 6 seconds",
+      "Add 1 second to make it 4 seconds",
+      "Keep it at 3 seconds",
+      "Triple it to 9 seconds"
+    ],
+    "correctIndex": 0,
+    "explanation": "Wet roads double your stopping distance, requiring doubled following time. Six seconds provides the space needed to stop safely when traction is reduced by wet pavement.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0049",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "What is hydroplaning?",
+    "choices": [
+      "When tires lose contact with the road due to water",
+      "When wipers don't clear water fast enough",
+      "When water gets in the engine",
+      "When rain reduces visibility"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hydroplaning occurs when water builds up faster than tires can push it aside, causing tires to ride on a water film. This eliminates traction and control.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0050",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "What should you do if your vehicle starts hydroplaning?",
+    "choices": [
+      "Ease off the gas and steer straight until you regain traction",
+      "Brake hard immediately",
+      "Accelerate to power through",
+      "Turn the steering wheel sharply"
+    ],
+    "correctIndex": 0,
+    "explanation": "When hydroplaning, braking or sharp steering can cause loss of control when traction returns. Easing off the gas and steering straight lets the vehicle slow naturally and regain traction smoothly.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0051",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "What type of headlights should you use in fog?",
+    "choices": [
+      "Low beams",
+      "High beams",
+      "Parking lights",
+      "No lights"
+    ],
+    "correctIndex": 0,
+    "explanation": "Low beams illuminate the road without reflecting back from fog. High beams reflect off fog particles, creating glare that actually reduces visibility.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0052",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 1,
+    "text": "What should you do when driving in fog?",
+    "choices": [
+      "Slow down, use low beams, and increase following distance",
+      "Use high beams and maintain speed",
+      "Follow the taillights of the car ahead closely",
+      "Use parking lights only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Fog requires reduced speed for limited visibility, low beams to avoid glare, and increased following distance to allow for reduced visibility and reaction time.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0053",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "How should you adjust your speed on icy roads?",
+    "choices": [
+      "Reduce speed drastically and increase following distance to 9+ seconds",
+      "Reduce speed by 5-10 mph",
+      "Maintain normal speed with winter tires",
+      "Slow down only on curves"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ice eliminates most tire traction, requiring drastically reduced speeds and greatly increased following distances. Even small inputs can cause loss of control on ice.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0054",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "What is the best technique for driving on ice or snow?",
+    "choices": [
+      "Use gentle, smooth steering and braking inputs",
+      "Brake and steer sharply to maintain control",
+      "Accelerate hard to power through",
+      "Use cruise control to maintain steady speed"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ice and snow provide minimal traction. Gentle inputs work within the limited available traction, while sudden movements break traction and cause loss of control.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0055",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "When must you use headlights in Texas?",
+    "choices": [
+      "From 30 minutes after sunset to 30 minutes before sunrise",
+      "From sunset to sunrise",
+      "Only when you can't see clearly",
+      "Whenever it's raining"
+    ],
+    "correctIndex": 0,
+    "explanation": "Texas law requires headlights from 30 minutes after sunset to 30 minutes before sunrise. This ensures visibility during twilight hours when light is poor but not completely dark.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0056",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "When should you use high beams, and when should you dim them?",
+    "choices": [
+      "Use high beams in rural areas, dim within 500 feet of oncoming traffic",
+      "Use high beams everywhere except in cities",
+      "Dim high beams within 1000 feet of oncoming traffic",
+      "Never use high beams"
+    ],
+    "correctIndex": 0,
+    "explanation": "High beams improve visibility in dark, rural areas but must be dimmed within 500 feet of oncoming traffic to avoid blinding other drivers and causing crashes.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0057",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "Why should you reduce speed when driving at night?",
+    "choices": [
+      "Your headlights don't illuminate as far as you can see during the day",
+      "There's always more traffic at night",
+      "Speed limits are lower at night",
+      "Your reaction time is slower at night"
+    ],
+    "correctIndex": 0,
+    "explanation": "Even high beams illuminate only a limited distance ahead. Driving at daytime speeds at night can mean you're overdriving your headlights and unable to stop for hazards you see.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0058",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "What additional hazards should you watch for at night?",
+    "choices": [
+      "Pedestrians, cyclists, and animals that are harder to see",
+      "Higher speed limits",
+      "More traffic",
+      "Better visibility"
+    ],
+    "correctIndex": 0,
+    "explanation": "Darkness makes pedestrians, cyclists, and animals much harder to see, yet they're often more present at night. Extra vigilance compensates for reduced visibility of these hazards.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0059",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "What should you do when experiencing sun glare?",
+    "choices": [
+      "Use sun visor, wear sunglasses, and slow down",
+      "Speed up to get through it quickly",
+      "Close your eyes briefly",
+      "Look directly at the sun to adjust your eyes"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sun glare can temporarily blind drivers. Using visors and sunglasses helps, but slowing down is essential since you may not see hazards until very close.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0060",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 4,
+    "text": "What factors contribute to hydroplaning?",
+    "choices": [
+      "Speed, tire tread depth, and water depth on the road",
+      "Only vehicle speed",
+      "Only tire pressure",
+      "Only the type of road surface"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hydroplaning risk increases with higher speeds, worn tire treads that can't channel water away, and deeper standing water. All three factors work together to determine risk.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0061",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "When should you use headlights during rain in Texas?",
+    "choices": [
+      "Anytime you need windshield wipers",
+      "Only at night",
+      "Only in heavy rain",
+      "Headlights aren't required in rain"
+    ],
+    "correctIndex": 0,
+    "explanation": "Texas law requires headlights when using windshield wipers. This improves your visibility of the road and helps other drivers see your vehicle in reduced visibility conditions.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0062",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 4,
+    "text": "Why is black ice particularly dangerous?",
+    "choices": [
+      "It's nearly invisible on the road surface",
+      "It's thicker than regular ice",
+      "It only forms on highways",
+      "It's actually less slippery than white ice"
+    ],
+    "correctIndex": 0,
+    "explanation": "Black ice is transparent, allowing the black pavement to show through, making it nearly invisible to drivers. This invisibility means drivers don't slow down or prepare for the ice.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0063",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "What should you avoid during rain to prevent hydroplaning?",
+    "choices": [
+      "Sudden braking or steering and high speeds",
+      "Using windshield wipers",
+      "Turning on headlights",
+      "Driving in the right lane"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sudden movements and high speeds increase hydroplaning risk. Smooth, gradual inputs and moderate speeds keep tires in contact with the road despite water on the surface.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0064",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "Where is ice most likely to form on roads?",
+    "choices": [
+      "On bridges, overpasses, and shaded areas",
+      "In direct sunlight",
+      "In the center lanes only",
+      "On well-traveled roads"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bridges and overpasses freeze first because cold air circulates above and below, cooling them faster. Shaded areas stay cold longer, allowing ice to persist after sunny areas thaw.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0065",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "What is the main purpose of windshield wipers?",
+    "choices": [
+      "To maintain clear visibility through the windshield",
+      "To clean bugs off the windshield",
+      "To cool the windshield",
+      "To alert other drivers of your presence"
+    ],
+    "correctIndex": 0,
+    "explanation": "Windshield wipers maintain visibility by removing rain, snow, and debris from your line of sight. Clear visibility is essential for seeing hazards and reacting appropriately.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0066",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 1,
+    "text": "What is the minimum tire tread depth required in Texas?",
+    "choices": [
+      "2/32 of an inch",
+      "1/32 of an inch",
+      "4/32 of an inch",
+      "6/32 of an inch"
+    ],
+    "correctIndex": 0,
+    "explanation": "Texas requires minimum 2/32 inch tread depth. Tread channels water away from the tire contact patch, and worn tread greatly increases hydroplaning risk and reduces traction.",
+    "reference": "DL-7: Safe Driving Practices",
+    "image": {
+      "type": "svg",
+      "assetId": "SAFE_TIRE_TREAD_DEPTH"
+    }
+  },
+  {
+    "id": "TX-SAF-0067",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "How can you check tire tread depth using a penny?",
+    "choices": [
+      "Insert penny with Lincoln's head down; if you see his full head, tires are worn",
+      "Insert penny with Lincoln's head up; if you see his feet, tires are worn",
+      "Insert penny sideways between treads",
+      "Place penny flat on the tire surface"
+    ],
+    "correctIndex": 0,
+    "explanation": "The penny test uses Lincoln's head as a gauge. If his entire head is visible when inserted upside down into tread grooves, the tread is worn to unsafe levels and tires should be replaced.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0068",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "How often should you check tire pressure?",
+    "choices": [
+      "At least once a month",
+      "Once a year",
+      "Only when tires look low",
+      "Every time you get gas"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tire pressure changes with temperature and slowly decreases over time. Monthly checks ensure proper pressure, which affects handling, tire wear, fuel economy, and safety.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0069",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "What are signs that your brakes need service?",
+    "choices": [
+      "Grinding noise, pulling to one side, or soft brake pedal",
+      "Brakes work perfectly as always",
+      "Slight squeaking when first starting to drive",
+      "Firm brake pedal with no noise"
+    ],
+    "correctIndex": 0,
+    "explanation": "Grinding indicates worn brake pads damaging rotors, pulling suggests uneven brake wear, and soft pedal indicates fluid or system problems. All require immediate service to maintain safe stopping ability.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0070",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "Why is it important to keep all vehicle lights working?",
+    "choices": [
+      "They help you see and help others see you",
+      "They're required only for inspection",
+      "They only matter at night",
+      "They don't affect safety"
+    ],
+    "correctIndex": 0,
+    "explanation": "Headlights illuminate the road ahead, while brake lights and turn signals communicate your intentions to other drivers. Non-working lights create hazards for you and others.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0071",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 1,
+    "text": "When should you adjust your mirrors?",
+    "choices": [
+      "Before you start driving",
+      "While driving in traffic",
+      "Only when changing lanes",
+      "Once a month"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mirrors should be adjusted before driving to provide the best view of surrounding traffic. Adjusting while driving diverts attention from the road and creates danger.",
+    "reference": "DL-7: Safe Driving Practices",
+    "image": {
+      "type": "svg",
+      "assetId": "SAFE_MIRROR_ADJUSTMENT"
+    }
+  },
+  {
+    "id": "TX-SAF-0072",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "What should you do if your windshield wipers are leaving streaks or missing spots?",
+    "choices": [
+      "Replace the wiper blades",
+      "Use more washer fluid",
+      "Increase wiper speed",
+      "Clean the windshield more often"
+    ],
+    "correctIndex": 0,
+    "explanation": "Streaking and missed spots indicate worn wiper blades that no longer make proper contact. Worn blades reduce visibility in rain, so replacement is necessary for safety.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0073",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "How often should tires be rotated?",
+    "choices": [
+      "Every 5,000-7,500 miles",
+      "Once a year regardless of mileage",
+      "Every 15,000 miles",
+      "Only when you notice uneven wear"
+    ],
+    "correctIndex": 0,
+    "explanation": "Regular rotation every 5,000-7,500 miles promotes even wear across all tires, extending tire life and maintaining consistent traction. Waiting until wear is visible means the damage is already done.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0074",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "Why should you never ignore dashboard warning lights?",
+    "choices": [
+      "They indicate problems that could affect vehicle safety or cause damage",
+      "They're just reminders for service",
+      "They usually turn off on their own",
+      "They only matter for newer vehicles"
+    ],
+    "correctIndex": 0,
+    "explanation": "Warning lights alert you to problems affecting safety, performance, or component longevity. Ignoring them can lead to breakdowns, accidents, or expensive repairs that could have been prevented.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0075",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "What fluids should be checked regularly in your vehicle?",
+    "choices": [
+      "Engine oil, coolant, brake fluid, power steering fluid, and windshield washer fluid",
+      "Only engine oil",
+      "Only windshield washer fluid",
+      "No fluids need regular checking"
+    ],
+    "correctIndex": 0,
+    "explanation": "Each fluid serves critical functions for safe operation. Low levels can lead to engine damage, overheating, brake failure, steering problems, or reduced visibility - all serious safety issues.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0076",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "What can happen if you drive on severely worn tires?",
+    "choices": [
+      "Increased risk of blowouts, hydroplaning, and reduced traction",
+      "Better fuel economy",
+      "Smoother ride",
+      "No significant effect"
+    ],
+    "correctIndex": 0,
+    "explanation": "Worn tires have less rubber to absorb stress, increasing blowout risk, and shallow treads can't channel water away, causing hydroplaning. Both situations drastically increase crash risk.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0077",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 4,
+    "text": "What should you check on tires besides tread depth?",
+    "choices": [
+      "Pressure, uneven wear patterns, and sidewall damage",
+      "Only the color",
+      "Only the brand",
+      "Only the age based on the manufacturer date"
+    ],
+    "correctIndex": 0,
+    "explanation": "Proper pressure affects handling and wear, uneven wear indicates alignment or suspension problems, and sidewall damage can cause sudden failure. All factors affect tire safety beyond just tread depth.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0078",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "Why should you keep your windshield clean both inside and out?",
+    "choices": [
+      "To maintain maximum visibility in all conditions",
+      "To improve vehicle appearance",
+      "To prevent insurance issues",
+      "Only the outside needs cleaning"
+    ],
+    "correctIndex": 0,
+    "explanation": "Inside film and outside dirt both reduce visibility, especially at night or in bright sun when glare is magnified. Clean glass provides the clearest view for identifying hazards.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0079",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "What is the main benefit of regular vehicle maintenance?",
+    "choices": [
+      "Prevents breakdowns and ensures all safety systems work properly",
+      "Improves vehicle resale value",
+      "Satisfies insurance requirements",
+      "Makes the vehicle look newer"
+    ],
+    "correctIndex": 0,
+    "explanation": "Regular maintenance catches problems before they cause breakdowns or accidents. Well-maintained brakes, tires, lights, and other systems provide the reliability you need for safe operation.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0080",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "What is the purpose of checking tire pressure with a gauge rather than visual inspection?",
+    "choices": [
+      "Tires can be significantly under-inflated without looking flat",
+      "Visual inspection is actually more accurate",
+      "Gauges are only needed for new tires",
+      "Tire pressure doesn't affect safety"
+    ],
+    "correctIndex": 0,
+    "explanation": "Modern radial tires can be dangerously under-inflated yet appear normal visually. Only a pressure gauge provides accurate measurement to ensure proper inflation for safety and performance.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0081",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 1,
+    "text": "Who must wear seatbelts in Texas?",
+    "choices": [
+      "All vehicle occupants",
+      "Only the driver",
+      "Only front seat passengers",
+      "Only children under 12"
+    ],
+    "correctIndex": 0,
+    "explanation": "Texas law requires all vehicle occupants to wear seatbelts. Unbelted passengers become projectiles in crashes, endangering themselves and others in the vehicle.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0082",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "How much do seatbelts reduce the risk of death in a crash?",
+    "choices": [
+      "By about 45%",
+      "By about 10%",
+      "By about 75%",
+      "By about 90%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Seatbelts reduce death risk by approximately 45% and serious injury risk by 50%. They keep occupants in the vehicle and positioned for airbag protection during crashes.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0083",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "How should you wear your seatbelt correctly?",
+    "choices": [
+      "Lap belt across hips, shoulder belt across chest and shoulder",
+      "Both straps loose and comfortable",
+      "Shoulder belt under your arm",
+      "Lap belt across stomach"
+    ],
+    "correctIndex": 0,
+    "explanation": "Proper seatbelt positioning distributes crash forces across strong body parts. Lap belts across hips engage pelvis bones, shoulder belts across chest spread forces across the ribcage and collarbone.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0084",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "Until what age or height must children use booster seats in Texas?",
+    "choices": [
+      "Age 8 or 4 feet 9 inches tall",
+      "Age 6 or 4 feet tall",
+      "Age 10 or 5 feet tall",
+      "Age 12 or 5 feet 5 inches tall"
+    ],
+    "correctIndex": 0,
+    "explanation": "Texas law requires booster seats until children are 8 years old or reach 4 feet 9 inches in height. Boosters position adult seatbelts correctly on smaller bodies for maximum protection.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0085",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "Where is the safest place for children under 13 to ride?",
+    "choices": [
+      "In the back seat",
+      "In the front passenger seat",
+      "In the front seat with airbag turned off",
+      "Anywhere with a seatbelt"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back seat is safest for children under 13 because it's farther from front impact zones and airbag deployment forces. Rear seats provide maximum protection for smaller occupants.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0086",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "How far should you sit from the steering wheel to allow for safe airbag deployment?",
+    "choices": [
+      "At least 10 inches",
+      "At least 6 inches",
+      "At least 15 inches",
+      "Distance doesn't matter"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ten inches allows the airbag space to inflate before reaching you, cushioning impact rather than striking you. Sitting too close means the inflating airbag itself can cause injury.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0087",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "Do airbags replace the need for seatbelts?",
+    "choices": [
+      "No, airbags are designed to work with seatbelts, not replace them",
+      "Yes, airbags provide complete protection alone",
+      "Only in newer vehicles",
+      "Only for front seat passengers"
+    ],
+    "correctIndex": 0,
+    "explanation": "Airbags are supplemental restraints that work with seatbelts. Without seatbelts, occupants can strike the airbag too hard or miss it entirely, defeating its protective benefit.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0088",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 3,
+    "text": "How should pregnant women wear seatbelts?",
+    "choices": [
+      "Lap belt below the belly, shoulder belt between breasts",
+      "Not wear seatbelts at all",
+      "Lap belt across belly, no shoulder belt",
+      "Shoulder belt only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Proper positioning protects both mother and baby. Lap belt below the belly avoids abdominal pressure, while shoulder belt across the chest provides upper body restraint without harming the baby.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0089",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 2,
+    "text": "When should rear-facing child safety seats be turned to face forward?",
+    "choices": [
+      "After age 2 or when child exceeds seat's height/weight limits",
+      "After age 1",
+      "Immediately after birth",
+      "After age 3"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rear-facing seats protect infants' developing necks and spines better than forward-facing. Children should remain rear-facing past age 2 or until they outgrow the seat's limits for maximum protection.",
+    "reference": "DL-7: Safe Driving Practices"
+  },
+  {
+    "id": "TX-SAF-0090",
+    "topic": "SAFE_DRIVING",
+    "difficulty": 4,
+    "text": "Why should you never place a rear-facing child seat in front of an active airbag?",
+    "choices": [
+      "Airbag deployment can cause severe injury or death to the child",
+      "It will damage the airbag",
+      "It's uncomfortable for the child",
+      "It blocks the driver's view"
+    ],
+    "correctIndex": 0,
+    "explanation": "Airbags deploy with tremendous force designed for adults. This force can cause fatal injuries when directed at a rear-facing seat, which positions the child's head close to the airbag deployment zone.",
+    "reference": "DL-7: Safe Driving Practices"
+  }
+]

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 200">
+  <rect x="5" y="5" width="140" height="190" fill="#FFFFFF" stroke="#000000" stroke-width="3" rx="5"/>
+  <text x="75" y="50" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">SPEED</text>
+  <text x="75" y="75" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">LIMIT</text>
+  <text x="75" y="145" font-family="Arial Black, sans-serif" font-size="72" font-weight="bold" fill="#000000" text-anchor="middle">30</text>
+</svg>

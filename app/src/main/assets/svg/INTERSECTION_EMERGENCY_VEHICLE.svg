@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- Roads -->
+  <rect x="120" y="0" width="60" height="300" fill="#555555"/>
+  <rect x="0" y="120" width="300" height="60" fill="#555555"/>
+
+  <!-- Center intersection -->
+  <rect x="120" y="120" width="60" height="60" fill="#666666"/>
+
+  <!-- Lane markings -->
+  <line x1="150" y1="0" x2="150" y2="110" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="10,10"/>
+  <line x1="150" y1="190" x2="150" y2="300" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="10,10"/>
+  <line x1="0" y1="150" x2="110" y2="150" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="10,10"/>
+  <line x1="190" y1="150" x2="300" y2="150" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="10,10"/>
+
+  <!-- Emergency vehicle (ambulance/fire truck - white/red with lights) -->
+  <rect x="135" y="200" width="30" height="45" fill="#FFFFFF" stroke="#CC0000" stroke-width="2" rx="2"/>
+  <rect x="140" y="205" width="20" height="15" fill="#87CEEB"/>
+
+  <!-- Emergency lights flashing -->
+  <circle cx="142" cy="200" r="4" fill="#FF0000" opacity="0.9"/>
+  <circle cx="158" cy="200" r="4" fill="#0000FF" opacity="0.9"/>
+  <circle cx="142" cy="200" r="6" fill="none" stroke="#FF0000" stroke-width="1" opacity="0.5"/>
+  <circle cx="158" cy="200" r="6" fill="none" stroke="#0000FF" stroke-width="1" opacity="0.5"/>
+
+  <!-- Light rays effect -->
+  <line x1="142" y1="200" x2="130" y2="185" stroke="#FF0000" stroke-width="2" opacity="0.4"/>
+  <line x1="158" y1="200" x2="170" y2="185" stroke="#0000FF" stroke-width="2" opacity="0.4"/>
+
+  <!-- Regular vehicles pulling over -->
+  <rect x="125" y="60" width="20" height="30" fill="#0066CC" stroke="#003366" stroke-width="1" rx="2"/>
+  <rect x="155" y="65" width="20" height="30" fill="#00AA00" stroke="#006600" stroke-width="1" rx="2"/>
+  <rect x="40" y="135" width="30" height="20" fill="#CC6600" stroke="#663300" stroke-width="1" rx="2"/>
+</svg>

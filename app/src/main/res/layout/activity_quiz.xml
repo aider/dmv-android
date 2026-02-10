@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/primary">
+
+        <TextView
+            android:id="@+id/question_progress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Question 1 of 30"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/score_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: 0/0"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/question_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone"
+                android:contentDescription="Question Image"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/question_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question text will appear here"
+                android:textSize="18sp"
+                android:textColor="@color/text_primary"
+                android:lineSpacing="4dp"
+                android:layout_marginBottom="24dp" />
+
+            <RadioGroup
+                android:id="@+id/choices_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/choice_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Choice A"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp" />
+
+                <RadioButton
+                    android:id="@+id/choice_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Choice B"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp" />
+
+                <RadioButton
+                    android:id="@+id/choice_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Choice C"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp" />
+
+                <RadioButton
+                    android:id="@+id/choice_d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Choice D"
+                    android:padding="12dp"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/feedback_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginTop="16dp"
+                android:background="#E8F5E9"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/feedback_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/correct"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/correct"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/feedback_explanation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Explanation text"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_primary"
+                    android:lineSpacing="2dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit_answer"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:layout_margin="16dp" />
+
+</LinearLayout>

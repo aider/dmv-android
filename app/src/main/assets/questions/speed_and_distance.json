@@ -1,0 +1,811 @@
+[
+  {
+    "id": "TX-SPD-0001",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 1,
+    "text": "What is the typical speed limit in a school zone when children are present?",
+    "choices": ["15-20 mph", "25 mph", "30 mph", "35 mph"],
+    "correctIndex": 0,
+    "explanation": "School zone speed limits are typically 15-20 mph when children are present or when school zone signals are flashing. This reduced speed helps protect children crossing streets.",
+    "reference": "DL-7: Speed Limits and Safe Distances",
+    "image": {"type": "svg", "assetId": "SPEED_SCHOOL_ZONE_20MPH"}
+  },
+  {
+    "id": "TX-SPD-0002",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 1,
+    "text": "What is the typical speed limit in a residential area unless otherwise posted?",
+    "choices": ["30 mph", "35 mph", "40 mph", "45 mph"],
+    "correctIndex": 0,
+    "explanation": "Texas law sets the prima facie speed limit in residential areas at 30 mph unless otherwise posted. This speed allows drivers adequate time to react to pedestrians, children, and vehicles entering the roadway.",
+    "reference": "DL-7: Speed Limits and Safe Distances",
+    "image": {"type": "svg", "assetId": "SPEED_LIMIT_RESIDENTIAL_30"}
+  },
+  {
+    "id": "TX-SPD-0003",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 2,
+    "text": "What is the maximum speed limit on rural Texas highways?",
+    "choices": ["70-75 mph depending on the road", "65 mph", "80 mph", "60 mph"],
+    "correctIndex": 0,
+    "explanation": "Rural Texas highways can have speed limits up to 70-75 mph depending on the type of road and posted signs. Drivers should always check posted speed limit signs as they vary by location.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0004",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 2,
+    "text": "The basic speed law requires you to:",
+    "choices": ["Never drive faster than is safe for current conditions", "Always drive at the posted speed limit", "Drive at least 5 mph below the speed limit in rain", "Match the speed of surrounding traffic"],
+    "correctIndex": 0,
+    "explanation": "The basic speed law requires drivers to never exceed a speed that is reasonable and prudent under current conditions, regardless of posted limits. Weather, visibility, and traffic may require slower speeds than posted.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0005",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 2,
+    "text": "When should you reduce your speed below the posted limit?",
+    "choices": ["In poor weather, heavy traffic, or reduced visibility", "Only when a police officer is present", "Never, the posted limit is always safe", "Only at night"],
+    "correctIndex": 0,
+    "explanation": "Drivers must reduce speed below posted limits when conditions such as rain, fog, ice, heavy traffic, or poor visibility make the posted speed unsafe. Safe driving requires adjusting to current conditions.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0006",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 3,
+    "text": "What is a prima facie speed limit?",
+    "choices": ["A speed limit that applies based on road type even when not posted", "The minimum speed allowed on highways", "A temporary speed limit during construction", "A speed limit that only applies during daytime"],
+    "correctIndex": 0,
+    "explanation": "Prima facie speed limits are statutory limits that apply to certain types of roads based on their characteristics, even without posted signs. For example, 30 mph in residential areas applies even without signs.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0007",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 1,
+    "text": "What is the typical speed limit on urban highways in Texas?",
+    "choices": ["60 mph", "70 mph", "55 mph", "65 mph"],
+    "correctIndex": 0,
+    "explanation": "Urban highways in Texas typically have a 60 mph speed limit, which is lower than rural highways due to increased traffic density and more frequent exits and entrances.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0008",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 3,
+    "text": "What does driving too slowly on a highway violate?",
+    "choices": ["Minimum speed laws that prohibit impeding traffic flow", "No law, you can drive as slowly as you want", "Only the basic speed law", "School zone regulations"],
+    "correctIndex": 0,
+    "explanation": "Texas law prohibits driving so slowly that you impede the normal and reasonable movement of traffic. Minimum speed limits exist on many highways to maintain safe traffic flow.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0009",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 2,
+    "text": "When are school zone speed limits typically enforced?",
+    "choices": ["When children are present or signals are flashing", "24 hours a day, 7 days a week", "Only during morning hours", "Only on weekdays"],
+    "correctIndex": 0,
+    "explanation": "School zone speed limits are enforced when children are present, when crossing guards are on duty, or when school zone signals are flashing. Outside these times, regular speed limits apply.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0010",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 2,
+    "text": "What should you do when driving through a construction zone?",
+    "choices": ["Reduce speed and obey posted construction zone speed limits", "Maintain normal speed if workers are not visible", "Increase speed to exit the zone quickly", "Only slow down if flaggers are present"],
+    "correctIndex": 0,
+    "explanation": "Construction zones require reduced speeds as posted. Even when workers are not visible, narrow lanes, uneven surfaces, and equipment create hazards requiring slower speeds.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0011",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 3,
+    "text": "On a highway with a posted speed limit of 65 mph, what is generally considered impeding traffic?",
+    "choices": ["Driving significantly below the posted limit without justification", "Driving exactly at the speed limit", "Driving 5 mph over the limit", "Driving in the right lane"],
+    "correctIndex": 0,
+    "explanation": "Driving significantly slower than the posted limit without good reason (weather, mechanical issues) can impede traffic flow and create hazards. Drivers should maintain a reasonable speed or use slower-traffic lanes.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0012",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 4,
+    "text": "Which factor most affects whether a speed is legally considered 'reasonable and prudent'?",
+    "choices": ["Current road and traffic conditions", "The posted speed limit only", "The speed of the fastest vehicles", "The time of day"],
+    "correctIndex": 0,
+    "explanation": "A 'reasonable and prudent' speed depends primarily on current conditions including weather, visibility, traffic density, and road surface. Even speeds below posted limits can be unreasonable if conditions are poor.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0013",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 1,
+    "text": "What is the purpose of reduced speed limits in school zones?",
+    "choices": ["To give drivers more time to react to children", "To reduce vehicle wear and tear", "To increase fuel efficiency", "To reduce traffic noise"],
+    "correctIndex": 0,
+    "explanation": "School zone speed limits are reduced to give drivers more time to see and react to children who may unexpectedly enter the roadway. Children are less predictable and more vulnerable than adult pedestrians.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0014",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 2,
+    "text": "What speed limit typically applies in alleys in Texas?",
+    "choices": ["15 mph", "20 mph", "25 mph", "30 mph"],
+    "correctIndex": 0,
+    "explanation": "The prima facie speed limit in alleys is 15 mph unless otherwise posted. This low speed accounts for limited visibility, narrow passages, and frequent pedestrian activity.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0015",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 3,
+    "text": "When can you legally exceed the posted speed limit?",
+    "choices": ["Never, posted limits are legal maximums under ideal conditions", "When passing another vehicle", "When keeping up with traffic flow", "When running late for an appointment"],
+    "correctIndex": 0,
+    "explanation": "Posted speed limits are legal maximums that apply under ideal conditions. Exceeding them is illegal even when passing, matching traffic, or in a hurry. Safe passing must occur within the speed limit.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0016",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 4,
+    "text": "A highway has a 70 mph speed limit but heavy fog reduces visibility to 100 feet. What is the legal maximum speed?",
+    "choices": ["Whatever speed is safe for the conditions, likely well below 70 mph", "70 mph, the posted limit always applies", "60 mph, reduced by 10 mph for fog", "55 mph, the standard reduced-visibility limit"],
+    "correctIndex": 0,
+    "explanation": "The basic speed law requires driving at a safe speed for conditions regardless of posted limits. With 100-foot visibility, a safe speed would be far below 70 mph to allow adequate stopping distance.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0017",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 2,
+    "text": "What is the typical speed limit on numbered highways in rural areas?",
+    "choices": ["70 mph for most highways", "60 mph for all highways", "55 mph unless posted higher", "75 mph for all rural roads"],
+    "correctIndex": 0,
+    "explanation": "Most rural numbered highways in Texas have a 70 mph speed limit, though some may be posted at 75 mph. Always check posted signs as limits vary by specific road and location.",
+    "reference": "DL-7: Speed Limits and Safe Distances",
+    "image": {"type": "svg", "assetId": "MUTCD_R2-1_SPEED_LIMIT_70"}
+  },
+  {
+    "id": "TX-SPD-0018",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 3,
+    "text": "How should you adjust your speed when approaching a curve?",
+    "choices": ["Slow down before entering the curve, not while in it", "Maintain speed and brake in the curve if needed", "Accelerate through the curve for stability", "Speed doesn't matter if you have good tires"],
+    "correctIndex": 0,
+    "explanation": "Drivers should reduce speed before entering a curve, not while in it. Braking in a curve can cause loss of traction and control, especially on wet or icy roads.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0019",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 4,
+    "text": "Why is driving significantly slower than traffic flow dangerous even if you're at the speed limit?",
+    "choices": ["It creates speed differentials that cause accidents", "It's not dangerous, slower is always safer", "It only affects traffic flow, not safety", "It's only dangerous if you're in the left lane"],
+    "correctIndex": 0,
+    "explanation": "Large speed differences between vehicles increase collision risk as faster vehicles must suddenly brake or change lanes. Matching reasonable traffic flow (within legal limits) is often safer than going much slower.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0020",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 5,
+    "text": "What is the main reason speed limits are lower at night in some areas?",
+    "choices": ["Reduced visibility limits reaction time and sight distance", "To reduce noise for residents", "Nighttime speed limits are actually the same", "To save fuel with lower speeds"],
+    "correctIndex": 0,
+    "explanation": "When posted, night speed limits reflect reduced visibility that decreases the distance you can see hazards, reducing available reaction time. Even with headlights, nighttime sight distance is significantly less than daytime.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0021",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 2,
+    "text": "What is the speed limit for a narrow, winding country road if no signs are posted?",
+    "choices": ["Whatever speed is safe for the road conditions", "30 mph as the residential default", "55 mph as the standard rural limit", "45 mph for unpaved roads"],
+    "correctIndex": 0,
+    "explanation": "On roads without posted limits, the basic speed law requires driving at a safe speed for conditions. A narrow, winding road requires much slower speeds than straight highways, regardless of default limits.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0022",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 1,
+    "text": "Where are you most likely to find a 20 mph speed limit?",
+    "choices": ["School zones", "Residential streets", "Highways", "Business districts"],
+    "correctIndex": 0,
+    "explanation": "School zones typically have 15-20 mph speed limits when children are present, making them the most common location for such low speed limits. This protects vulnerable child pedestrians.",
+    "reference": "DL-7: Speed Limits and Safe Distances",
+    "image": {"type": "svg", "assetId": "MUTCD_S4-3_SCHOOL_SPEED_LIMIT_20"}
+  },
+  {
+    "id": "TX-SPD-0023",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 3,
+    "text": "When is it legal to drive below the minimum speed limit on a highway?",
+    "choices": ["When safety requires it due to weather or vehicle problems", "Never, minimum limits must always be obeyed", "Only during rush hour", "When driving a large truck"],
+    "correctIndex": 0,
+    "explanation": "Drivers may go below minimum speed limits when safety requires it, such as in severe weather, mechanical problems, or other hazardous conditions. However, if your vehicle cannot maintain minimum speed, use a different route.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0024",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 2,
+    "text": "What is the general speed limit in business or urban districts unless posted otherwise?",
+    "choices": ["30 mph", "35 mph", "40 mph", "25 mph"],
+    "correctIndex": 0,
+    "explanation": "The prima facie speed limit in business and urban districts is 30 mph unless otherwise posted. This accounts for increased pedestrian activity, frequent intersections, and vehicles entering the roadway.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0025",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 4,
+    "text": "How does speed affect your field of vision?",
+    "choices": ["Higher speeds narrow your field of vision to straight ahead", "Speed does not affect field of vision", "Higher speeds improve peripheral vision", "Only extreme speeds above 100 mph affect vision"],
+    "correctIndex": 0,
+    "explanation": "As speed increases, your useful field of vision narrows, creating tunnel vision. At high speeds, you focus more on the road ahead and notice less in your periphery, reducing awareness of hazards.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0026",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 3,
+    "text": "What should you do if other vehicles are exceeding the speed limit?",
+    "choices": ["Drive at a safe, legal speed; don't follow unsafe behavior", "Match their speed to avoid being a hazard", "Report them immediately to police", "Flash your lights to warn them"],
+    "correctIndex": 0,
+    "explanation": "Never exceed speed limits just because others do. Maintain a safe, legal speed and let faster vehicles pass. You're responsible for your own safe driving, not matching unsafe behavior.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0027",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 5,
+    "text": "Why is speeding particularly dangerous on wet roads even at moderate speeds?",
+    "choices": ["Stopping distance increases dramatically and hydroplaning risk rises", "Wet roads are not more dangerous if you maintain speed", "Only speeds above 60 mph are dangerous on wet roads", "Wet roads only affect visibility, not traction"],
+    "correctIndex": 0,
+    "explanation": "Wet roads reduce tire traction, increasing stopping distance significantly. Additionally, higher speeds increase hydroplaning risk where tires lose contact with the road entirely. Reduced speed is essential on wet surfaces.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0028",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 2,
+    "text": "When entering a highway from an entrance ramp, you should:",
+    "choices": ["Accelerate to match highway traffic speed before merging", "Enter slowly and speed up after merging", "Stop at the end of the ramp to check traffic", "Maintain the posted ramp speed limit"],
+    "correctIndex": 0,
+    "explanation": "Entrance ramps are designed for accelerating to highway speeds before merging. Entering at speeds much lower than traffic flow creates dangerous speed differentials and collision risk.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0029",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 4,
+    "text": "What is the relationship between speed and crash severity?",
+    "choices": ["Higher speeds exponentially increase injury severity and fatality risk", "Speed has minimal effect on crash outcomes", "Speed only matters in head-on collisions", "Modern safety features eliminate speed-related risks"],
+    "correctIndex": 0,
+    "explanation": "Crash severity increases exponentially with speed. A crash at 60 mph releases four times the energy of one at 30 mph, dramatically increasing injury severity and the likelihood of fatalities.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0030",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 1,
+    "text": "Which of these is a legal speed limit sign?",
+    "choices": ["A white rectangular sign with black numbers and 'SPEED LIMIT' text", "A yellow diamond-shaped warning sign", "A red octagonal stop sign", "A green guide sign"],
+    "correctIndex": 0,
+    "explanation": "Speed limit signs are white rectangular signs with black lettering showing the speed limit and the words 'SPEED LIMIT'. This standard design makes them easily recognizable to all drivers.",
+    "reference": "DL-7: Speed Limits and Safe Distances",
+    "image": {"type": "svg", "assetId": "MUTCD_R2-1_SPEED_LIMIT_65"}
+  },
+  {
+    "id": "TX-SPD-0031",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 1,
+    "text": "Under ideal conditions, what is the minimum safe following distance?",
+    "choices": ["At least 3 seconds behind the vehicle ahead", "At least 2 car lengths", "At least 50 feet", "At least 1 second per 10 mph"],
+    "correctIndex": 0,
+    "explanation": "The 3-second rule is the minimum safe following distance under ideal conditions. This time-based measurement works at any speed and gives you enough time to react and stop if needed.",
+    "reference": "DL-7: Speed Limits and Safe Distances",
+    "image": {"type": "svg", "assetId": "SPEED_FOLLOWING_DISTANCE_3SEC"}
+  },
+  {
+    "id": "TX-SPD-0032",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 1,
+    "text": "How do you measure the 3-second following distance?",
+    "choices": ["Pick a fixed object, count seconds from when the front vehicle passes until you pass it", "Count the number of car lengths between vehicles", "Estimate the distance in feet", "Use your speedometer reading"],
+    "correctIndex": 0,
+    "explanation": "To measure following distance, pick a fixed object like a sign or tree. When the vehicle ahead passes it, count 'one-thousand-one, one-thousand-two, one-thousand-three.' You should not reach that object before finishing the count.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0033",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 2,
+    "text": "When following a large truck or bus, you should maintain:",
+    "choices": ["At least 4 seconds following distance", "The standard 3 seconds following distance", "At least 2 seconds following distance", "Whatever distance allows you to see around it"],
+    "correctIndex": 0,
+    "explanation": "Large vehicles require at least 4 seconds following distance because they can block your view ahead, may stop suddenly, and their size makes judging distance more difficult. Extra space provides safer reaction time.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0034",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 2,
+    "text": "How should you adjust following distance in rain?",
+    "choices": ["Double your following distance to at least 6 seconds", "Maintain the standard 3 seconds", "Reduce following distance to stay closer", "Add 1 second for a total of 4 seconds"],
+    "correctIndex": 0,
+    "explanation": "Wet roads require at least double the normal following distance because stopping distance increases significantly. A 6-second gap provides the extra time and space needed to stop safely on wet pavement.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0035",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 3,
+    "text": "What following distance should you maintain on icy roads?",
+    "choices": ["At least 9 seconds or more", "The standard 3 seconds", "At least 6 seconds", "At least 4 seconds"],
+    "correctIndex": 0,
+    "explanation": "Ice dramatically reduces traction, requiring triple or more following distance (9+ seconds). Stopping on ice can take 3-10 times longer than on dry pavement, necessitating much greater space.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0036",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 2,
+    "text": "What is tailgating?",
+    "choices": ["Following too closely behind another vehicle", "Driving with the tailgate down", "Parking too close to another vehicle", "Changing lanes without signaling"],
+    "correctIndex": 0,
+    "explanation": "Tailgating means following too closely behind another vehicle, not maintaining a safe following distance. It's dangerous and illegal because it doesn't allow enough time or space to stop if the lead vehicle brakes suddenly.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0037",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 3,
+    "text": "Why is a time-based following distance (seconds) better than a distance-based one (feet)?",
+    "choices": ["Time-based distances work at all speeds automatically", "Feet are easier to measure than seconds", "Time-based distances are shorter", "Distance-based measurements are more accurate"],
+    "correctIndex": 0,
+    "explanation": "A time-based following distance automatically adjusts for speed. At 30 mph, 3 seconds equals 132 feet; at 60 mph, it equals 264 feet. This ensures adequate space at any speed without complex calculations.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0038",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 2,
+    "text": "What should you do if someone is tailgating you?",
+    "choices": ["Maintain your speed, change lanes if safe, and let them pass", "Brake suddenly to teach them a lesson", "Speed up to increase the gap", "Tailgate the vehicle in front of you"],
+    "correctIndex": 0,
+    "explanation": "When being tailgated, maintain steady speed and move to another lane if possible to let the tailgater pass. Never brake suddenly or speed excessively, as both create additional hazards.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0039",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 3,
+    "text": "What is the 'space cushion' concept?",
+    "choices": ["Maintaining safe space on all sides of your vehicle", "Only maintaining distance from the vehicle ahead", "Extra space only needed in bad weather", "Space between your seat and the steering wheel"],
+    "correctIndex": 0,
+    "explanation": "A space cushion means maintaining adequate space on all sides of your vehicle—front, rear, and both sides. This provides escape routes and reaction time if hazards develop from any direction.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0040",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 4,
+    "text": "Why is following distance particularly important at night?",
+    "choices": ["Reduced visibility limits your ability to see hazards ahead", "Roads are more slippery at night", "Other drivers are always impaired at night", "Speed limits are lower at night"],
+    "correctIndex": 0,
+    "explanation": "At night, even with headlights, you cannot see as far ahead as during daylight. Increased following distance compensates for reduced visibility and gives more time to identify and react to hazards.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0041",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 2,
+    "text": "When following a motorcycle, you should:",
+    "choices": ["Give extra following distance as motorcycles can stop quickly", "Follow more closely to be visible in their mirrors", "Maintain the standard 3-second distance", "Match their exact speed and position"],
+    "correctIndex": 0,
+    "explanation": "Motorcycles can stop more quickly than cars, and they're harder to see. Providing extra following distance (4+ seconds) protects both you and the motorcyclist if sudden braking is needed.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0042",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 3,
+    "text": "What happens to required following distance as your speed increases?",
+    "choices": ["The distance in feet increases proportionally while time stays constant", "Both time and distance decrease", "Time increases but distance stays the same", "Nothing changes if you maintain 3 seconds"],
+    "correctIndex": 0,
+    "explanation": "At higher speeds, you travel more feet per second, so a 3-second following distance covers more ground. The time interval stays constant (3 seconds), but the physical distance increases with speed.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0043",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 4,
+    "text": "How does fatigue affect safe following distance?",
+    "choices": ["Increase following distance as reaction time is slower when tired", "Following distance doesn't need adjustment for fatigue", "Decrease distance to stay more alert", "Only adjust at night when fatigued"],
+    "correctIndex": 0,
+    "explanation": "Fatigue slows reaction time significantly. Increasing following distance compensates for the delayed response, providing extra time and space to recognize hazards and react safely despite reduced alertness.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0044",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 3,
+    "text": "In heavy traffic moving at 20 mph, what following distance should you maintain?",
+    "choices": ["At least 3 seconds, the minimum regardless of speed", "1 second is sufficient at low speeds", "Following distance doesn't matter in slow traffic", "As close as possible to keep traffic moving"],
+    "correctIndex": 0,
+    "explanation": "The 3-second rule applies at all speeds, even slow traffic. Low speeds don't eliminate the need for reaction time and stopping distance. Adequate space prevents rear-end collisions if traffic stops suddenly.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0045",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 5,
+    "text": "Why is it dangerous to follow closely even if you're confident in your reaction time?",
+    "choices": ["The vehicle ahead might stop instantly due to a collision, giving you no warning", "Confident drivers never have accidents", "Close following actually improves aerodynamics", "Modern brakes make following distance irrelevant"],
+    "correctIndex": 0,
+    "explanation": "If the vehicle ahead hits something, it stops almost instantly with no brake lights or warning. No matter how quick your reactions, you need physical distance to stop. Human reaction time cannot overcome physics.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0046",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 2,
+    "text": "What is the primary benefit of maintaining proper following distance?",
+    "choices": ["It provides adequate time and space to react to sudden stops", "It reduces fuel consumption", "It prevents other vehicles from changing lanes ahead of you", "It allows you to drive faster"],
+    "correctIndex": 0,
+    "explanation": "Proper following distance's main benefit is providing sufficient time to perceive a hazard, react, and stop before hitting the vehicle ahead. This reaction and stopping space is critical for avoiding rear-end collisions.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0047",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 4,
+    "text": "How should following distance change in fog?",
+    "choices": ["Increase significantly because you cannot see ahead clearly", "Decrease so you can follow the vehicle's taillights", "Maintain normal distance but use hazard lights", "Following distance is irrelevant in fog"],
+    "correctIndex": 0,
+    "explanation": "Fog severely reduces visibility of hazards ahead. Increased following distance gives more time to react to vehicles stopped or slowing ahead that you cannot see until the last moment. Never follow taillights closely in fog.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0048",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 3,
+    "text": "What should you do when vehicles keep merging into your following space?",
+    "choices": ["Slow down to re-establish a safe following distance", "Maintain your speed and accept reduced space", "Speed up to close the gap and prevent merging", "Change to a slower lane"],
+    "correctIndex": 0,
+    "explanation": "When vehicles merge into your space cushion, ease off the accelerator to gradually re-establish safe following distance. Never speed up or tailgate to prevent lane changes, as this creates hazards.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0049",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 5,
+    "text": "Why is the '1 car length per 10 mph' rule considered inadequate?",
+    "choices": ["It doesn't account for reaction time, only braking distance", "It provides too much following distance", "Car lengths vary too much between vehicles", "It's actually the most accurate method"],
+    "correctIndex": 0,
+    "explanation": "The 'car length per 10 mph' rule only estimates braking distance but ignores reaction time distance. Additionally, judging car lengths while driving is difficult. Time-based rules (3-second rule) account for both reaction and braking.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0050",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 2,
+    "text": "When should you increase following distance beyond the 3-second minimum?",
+    "choices": ["In bad weather, heavy traffic, or when following large vehicles", "Only when visibility is reduced", "Never, 3 seconds is always sufficient", "Only on highways"],
+    "correctIndex": 0,
+    "explanation": "Increase following distance beyond 3 seconds in adverse conditions: bad weather, poor visibility, heavy traffic, when fatigued, when following motorcycles or large vehicles, or when being tailgated. Multiple factors often require extra space.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0051",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 1,
+    "text": "What is the danger of following too closely?",
+    "choices": ["You may not have enough time to stop if the vehicle ahead brakes suddenly", "You will use more fuel", "You will get a ticket", "The vehicle ahead will slow down"],
+    "correctIndex": 0,
+    "explanation": "Following too closely is dangerous because you may not have sufficient distance to stop if the vehicle ahead brakes suddenly. Rear-end collisions are often caused by inadequate following distance.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0052",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 4,
+    "text": "How does vehicle weight affect the following distance you should maintain?",
+    "choices": ["Heavier vehicles need more following distance because they take longer to stop", "Weight doesn't affect following distance", "Lighter vehicles need more following distance", "Only commercial vehicles need to consider weight"],
+    "correctIndex": 0,
+    "explanation": "Heavier vehicles have more momentum and require greater distance to stop. If driving a heavy vehicle, truck, or towing a trailer, increase your following distance beyond the standard minimum to account for increased stopping distance.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0053",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 3,
+    "text": "What is the correct following distance when driving downhill?",
+    "choices": ["Increase following distance as gravity makes stopping more difficult", "Decrease distance since you're going slower downhill", "Maintain the standard 3 seconds", "Downhill grades don't affect following distance"],
+    "correctIndex": 0,
+    "explanation": "Downhill grades increase stopping distance because gravity pulls your vehicle forward while braking. Increase following distance on downhill sections to compensate for this additional momentum and longer stopping distances.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0054",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 2,
+    "text": "How can you tell if you're maintaining a safe following distance?",
+    "choices": ["You can stop comfortably without hard braking if the vehicle ahead stops", "You can see the rear tires of the vehicle ahead", "Other drivers don't merge into your space", "Your speedometer matches the vehicle ahead"],
+    "correctIndex": 0,
+    "explanation": "A safe following distance allows you to stop completely without hard braking if the vehicle ahead stops suddenly. If you must brake hard or swerve to avoid a collision, your following distance is too short.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0055",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 4,
+    "text": "Why should you avoid 'drafting' or following large trucks closely on highways?",
+    "choices": ["You cannot see ahead, stopping distance is insufficient, and debris from the truck can hit you", "It's actually safer because the truck blocks wind", "Trucks don't mind being followed closely", "It improves your fuel economy significantly"],
+    "correctIndex": 0,
+    "explanation": "Following trucks closely ('drafting') is extremely dangerous. You cannot see hazards ahead, don't have adequate stopping distance if the truck brakes, and tire debris or cargo can strike your vehicle with no warning.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0056",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 2,
+    "text": "Total stopping distance consists of which two components?",
+    "choices": ["Reaction distance and braking distance", "Thinking time and stopping time", "Speed distance and brake distance", "Perception time and skid distance"],
+    "correctIndex": 0,
+    "explanation": "Total stopping distance equals reaction distance (distance traveled while you recognize danger and move foot to brake) plus braking distance (distance traveled while braking to a stop).",
+    "reference": "DL-7: Speed Limits and Safe Distances",
+    "image": {"type": "svg", "assetId": "SPEED_STOPPING_DISTANCE"}
+  },
+  {
+    "id": "TX-SPD-0057",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 3,
+    "text": "What is typical reaction time for an alert driver?",
+    "choices": ["0.75 to 1.5 seconds", "0.25 seconds", "3 seconds", "5 seconds"],
+    "correctIndex": 0,
+    "explanation": "Most alert drivers have a reaction time of 0.75 to 1.5 seconds from seeing a hazard to beginning braking. During this time, the vehicle continues at the same speed, covering significant distance.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0058",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 4,
+    "text": "How does doubling your speed affect braking distance?",
+    "choices": ["Braking distance quadruples (increases by 4 times)", "Braking distance doubles", "Braking distance stays the same", "Braking distance triples"],
+    "correctIndex": 0,
+    "explanation": "Braking distance increases exponentially with speed. Doubling speed from 30 to 60 mph quadruples braking distance because kinetic energy increases by the square of velocity. This is why speed is so critical to safety.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0059",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 2,
+    "text": "Which factor has the greatest effect on stopping distance?",
+    "choices": ["Vehicle speed", "Tire brand", "Radio volume", "Number of passengers"],
+    "correctIndex": 0,
+    "explanation": "Speed is the single most important factor affecting stopping distance. Higher speeds exponentially increase both reaction distance and braking distance, making speed control critical for safety.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0060",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 3,
+    "text": "How do wet roads affect stopping distance?",
+    "choices": ["Stopping distance can double or more on wet roads", "Stopping distance decreases slightly on wet roads", "Wet roads don't affect stopping distance", "Stopping distance increases by 10% on wet roads"],
+    "correctIndex": 0,
+    "explanation": "Wet roads significantly reduce tire traction, potentially doubling stopping distance or more compared to dry pavement. This is why reducing speed and increasing following distance in rain is critical.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0061",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 4,
+    "text": "What is brake fade and when does it occur?",
+    "choices": ["Reduced braking power from overheated brakes, common on long downhill grades", "The normal wearing down of brake pads over time", "A type of brake fluid", "Brake failure from cold temperatures"],
+    "correctIndex": 0,
+    "explanation": "Brake fade occurs when brakes overheat from excessive use, particularly on long downhill grades. Overheated brakes lose effectiveness, dramatically increasing stopping distance. Use lower gears to slow on long hills rather than continuous braking.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0062",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 3,
+    "text": "How does driving uphill versus downhill affect stopping distance?",
+    "choices": ["Stopping distance is shorter uphill and longer downhill", "Stopping distance is longer uphill and shorter downhill", "Grade has no effect on stopping distance", "Stopping distance is the same in both directions"],
+    "correctIndex": 0,
+    "explanation": "Gravity helps slow your vehicle when going uphill, reducing stopping distance. When going downhill, gravity pulls the vehicle forward, working against your brakes and increasing stopping distance significantly.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0063",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 2,
+    "text": "What happens to reaction distance as speed increases?",
+    "choices": ["Reaction distance increases proportionally with speed", "Reaction distance decreases with speed", "Reaction distance stays constant regardless of speed", "Reaction distance doubles when speed doubles"],
+    "correctIndex": 0,
+    "explanation": "Reaction distance increases directly with speed. If reaction time is 1.5 seconds, at 30 mph you travel 66 feet during reaction time, but at 60 mph you travel 132 feet before even starting to brake.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0064",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 4,
+    "text": "How does tire tread depth affect stopping distance?",
+    "choices": ["Worn tires with shallow tread increase stopping distance, especially on wet roads", "Tread depth has no effect on stopping", "Shallow tread actually decreases stopping distance", "Tread depth only matters for off-road driving"],
+    "correctIndex": 0,
+    "explanation": "Adequate tread depth is essential for traction, especially on wet roads where treads channel water away. Worn tires with shallow tread increase stopping distance and hydroplaning risk. Check tread depth regularly.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0065",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 5,
+    "text": "Why is stopping distance on ice up to 10 times greater than on dry pavement?",
+    "choices": ["Ice provides almost no friction between tires and road surface", "Ice makes tires harder and less flexible", "Ice damages brake systems", "Ice is heavier than dry pavement"],
+    "correctIndex": 0,
+    "explanation": "Ice creates an extremely low-friction surface between tires and road. With minimal friction, tires cannot grip effectively regardless of braking pressure, causing vehicles to slide and dramatically increasing stopping distance.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0066",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 3,
+    "text": "How should you use brakes when driving with anti-lock brakes (ABS)?",
+    "choices": ["Apply firm, steady pressure without pumping", "Pump the brakes rapidly", "Press and release repeatedly", "Use parking brake first"],
+    "correctIndex": 0,
+    "explanation": "With ABS, apply firm, steady pressure to the brake pedal. The system automatically pumps the brakes to prevent wheel lockup. Never pump ABS brakes manually as this reduces their effectiveness.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0067",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 2,
+    "text": "What is the main advantage of anti-lock brakes (ABS)?",
+    "choices": ["They allow you to steer while braking hard", "They reduce stopping distance on all surfaces", "They eliminate the need for brake maintenance", "They work better than regular brakes on ice"],
+    "correctIndex": 0,
+    "explanation": "ABS's main advantage is maintaining steering control during hard braking by preventing wheel lockup. While they may slightly reduce stopping distance on some surfaces, maintaining steering control to avoid hazards is their primary benefit.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0068",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 4,
+    "text": "How does vehicle weight affect stopping distance?",
+    "choices": ["Heavier vehicles have more momentum and require greater distance to stop", "Weight has no effect on stopping distance", "Heavier vehicles stop more quickly due to better traction", "Only weight above 10,000 pounds affects stopping"],
+    "correctIndex": 0,
+    "explanation": "Heavier vehicles have more momentum (mass times velocity) and require more force and distance to stop. A loaded truck takes much longer to stop than an empty car, even at the same speed.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0069",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 3,
+    "text": "What should you do to avoid brake fade on a long downhill grade?",
+    "choices": ["Use a lower gear and engine braking instead of constant braking", "Ride the brakes continuously", "Shift to neutral and coast", "Accelerate to get down the hill faster"],
+    "correctIndex": 0,
+    "explanation": "Use lower gears and engine braking on long downhill grades to avoid overheating brakes. Engine braking slows the vehicle without using brakes, preventing brake fade and maintaining full braking ability for emergencies.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0070",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 5,
+    "text": "At 55 mph, approximately how many feet does a vehicle travel during a 1.5 second reaction time?",
+    "choices": ["About 121 feet", "About 50 feet", "About 200 feet", "About 80 feet"],
+    "correctIndex": 0,
+    "explanation": "At 55 mph, a vehicle travels about 81 feet per second (55 mph ÷ 60 min × 5,280 ft ÷ 60 sec). In 1.5 seconds of reaction time, the vehicle travels approximately 121 feet before braking even begins.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0071",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 1,
+    "text": "When must you be able to stop your vehicle?",
+    "choices": ["Within the distance you can see ahead", "Within 100 feet at any speed", "Within 3 seconds", "Within the posted speed limit distance"],
+    "correctIndex": 0,
+    "explanation": "You must always be able to stop within the distance you can see ahead (your sight distance). If you cannot see far ahead due to darkness, fog, or curves, you must slow down accordingly.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0072",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 3,
+    "text": "How much does stopping distance typically increase when a vehicle is towing a trailer?",
+    "choices": ["Stopping distance can increase by 20-40% or more", "Trailers don't affect stopping distance", "Stopping distance decreases when towing", "Stopping distance increases by only 5%"],
+    "correctIndex": 0,
+    "explanation": "Towing a trailer significantly increases vehicle weight and momentum, increasing stopping distance by 20-40% or more depending on trailer weight. Always increase following distance when towing.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0073",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 2,
+    "text": "What is 'perception time' in the context of stopping distance?",
+    "choices": ["The time it takes to recognize a hazard exists", "The time it takes to apply the brakes", "The time your brakes take to engage", "The time between seeing something and deciding what it is"],
+    "correctIndex": 0,
+    "explanation": "Perception time is the moment you first see a hazard until you recognize it as a danger. This is part of overall reaction time and varies based on alertness, visibility, and hazard obviousness.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0074",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 4,
+    "text": "Why can't you simply memorize one stopping distance that applies to all situations?",
+    "choices": ["Stopping distance varies with speed, road conditions, vehicle weight, and brakes", "Stopping distance is always the same", "Only speed affects stopping distance", "Memorizing one distance is actually recommended"],
+    "correctIndex": 0,
+    "explanation": "Stopping distance varies dramatically based on multiple factors: speed, road surface condition, tire condition, brake condition, vehicle weight, grade, and weather. Safe driving requires adjusting for current conditions, not memorizing one distance.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0075",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 5,
+    "text": "How does tire pressure affect stopping distance?",
+    "choices": ["Both under-inflation and over-inflation increase stopping distance", "Only over-inflation affects stopping distance", "Tire pressure has no effect on stopping", "Under-inflation decreases stopping distance"],
+    "correctIndex": 0,
+    "explanation": "Improper tire pressure, whether too high or too low, reduces the tire's contact patch with the road, decreasing traction and increasing stopping distance. Maintain manufacturer-recommended tire pressure for optimal braking.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0076",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 3,
+    "text": "When passing another vehicle, how much clear distance ahead do you typically need?",
+    "choices": ["At least 1/3 to 1/2 mile of clear visibility", "100 feet of clear space", "500 feet of clear space", "Whatever distance you can see"],
+    "correctIndex": 0,
+    "explanation": "Safe passing requires at least 1/3 to 1/2 mile of clear visibility ahead to ensure you can complete the pass and return to your lane safely before meeting oncoming traffic.",
+    "reference": "DL-7: Speed Limits and Safe Distances",
+    "image": {"type": "svg", "assetId": "SPEED_PASSING_CLEARANCE"}
+  },
+  {
+    "id": "TX-SPD-0077",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 2,
+    "text": "When is it safe to return to the right lane after passing?",
+    "choices": ["When you can see the passed vehicle in your rearview mirror", "As soon as you're alongside the vehicle", "After you're 10 feet ahead", "When your front bumper is ahead of theirs"],
+    "correctIndex": 0,
+    "explanation": "Return to the right lane only when you can see the entire passed vehicle in your rearview mirror. This ensures adequate clearance and avoids cutting off the other driver.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0078",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 2,
+    "text": "What is the minimum clearance required when passing a bicycle in Texas?",
+    "choices": ["3 feet", "1 foot", "6 feet", "5 feet"],
+    "correctIndex": 0,
+    "explanation": "Texas law requires drivers to maintain at least 3 feet of clearance when passing a bicycle. This distance protects cyclists from side-swipe collisions and air turbulence from passing vehicles.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0079",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 3,
+    "text": "When is passing on the right permitted?",
+    "choices": ["On multi-lane roads or when a vehicle ahead is turning left", "Anytime on any road", "Never under any circumstances", "Only on highways with 3 or more lanes"],
+    "correctIndex": 0,
+    "explanation": "Passing on the right is legal only in specific situations: on roads with multiple lanes going the same direction, or when the vehicle ahead is turning left. Never pass on the right using the shoulder or off-road areas.",
+    "reference": "DL-7: Speed Limits and Safe Distances"
+  },
+  {
+    "id": "TX-SPD-0080",
+    "topic": "SPEED_AND_DISTANCE",
+    "difficulty": 4,
+    "text": "Why should you not pass near intersections, curves, or hills?",
+    "choices": ["You cannot see far enough ahead to ensure oncoming traffic won't reach you", "It's not dangerous, just illegal", "Other vehicles might turn into your path or appear suddenly", "Passing is slow in these areas"],
+    "correctIndex": 0,
+    "explanation": "Intersections, curves, and hills limit visibility of oncoming traffic. Without adequate sight distance, you cannot determine if sufficient space exists to pass safely. Unexpected vehicles may also enter from side roads at intersections.",
+    "reference": "DL-7: Speed Limits and Safe Distances",
+    "image": {"type": "svg", "assetId": "MUTCD_R10-7_DO_NOT_PASS"}
+  }
+]
