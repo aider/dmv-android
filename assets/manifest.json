@@ -1,14 +1,14 @@
 [
   {
     "assetId": "MUTCD_R1-1_STOP",
-    "description": "Octagonal red STOP sign with white text",
+    "description": "Professional octagonal STOP sign with MUTCD red (#C1272D), white border, bold text, and subtle shadow for depth",
     "file": "assets/svg/MUTCD_R1-1_STOP.svg",
     "sourceUrl": "generated",
     "license": "generated"
   },
   {
     "assetId": "MUTCD_R1-2_YIELD",
-    "description": "Triangular YIELD sign with red border and text",
+    "description": "Triangular YIELD sign with white background, bold red border, and professional red text with shadow",
     "file": "assets/svg/MUTCD_R1-2_YIELD.svg",
     "sourceUrl": "generated",
     "license": "generated"

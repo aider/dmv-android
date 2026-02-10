@@ -1,0 +1,765 @@
+[
+  {
+    "assetId": "MUTCD_R1-1_STOP",
+    "description": "Octagonal red STOP sign with white text",
+    "file": "assets/svg/MUTCD_R1-1_STOP.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_R1-2_YIELD",
+    "description": "Triangular YIELD sign with red border and text",
+    "file": "assets/svg/MUTCD_R1-2_YIELD.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_R2-1_SPEED_LIMIT_65",
+    "description": "Speed Limit 65 mph sign",
+    "file": "assets/svg/MUTCD_R2-1_SPEED_LIMIT_65.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_R2-1_SPEED_LIMIT_70",
+    "description": "Speed Limit 70 mph sign",
+    "file": "assets/svg/MUTCD_R2-1_SPEED_LIMIT_70.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_R2-1_SPEED_LIMIT_30",
+    "description": "Speed Limit 30 mph sign",
+    "file": "assets/svg/MUTCD_R2-1_SPEED_LIMIT_30.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_R3-1_NO_LEFT_TURN",
+    "description": "No left turn sign with red circle and slash",
+    "file": "assets/svg/MUTCD_R3-1_NO_LEFT_TURN.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_R3-2_NO_RIGHT_TURN",
+    "description": "No right turn sign with red circle and slash",
+    "file": "assets/svg/MUTCD_R3-2_NO_RIGHT_TURN.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_R3-3_NO_U_TURN",
+    "description": "No U-turn sign with red circle and slash",
+    "file": "assets/svg/MUTCD_R3-3_NO_U_TURN.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_R5-1_DO_NOT_ENTER",
+    "description": "Do Not Enter sign - red circle with white bar",
+    "file": "assets/svg/MUTCD_R5-1_DO_NOT_ENTER.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_R5-1a_WRONG_WAY",
+    "description": "Wrong Way sign - red rectangle with white text",
+    "file": "assets/svg/MUTCD_R5-1a_WRONG_WAY.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_R7-8_NO_PARKING",
+    "description": "No Parking sign with red NO and P symbol",
+    "file": "assets/svg/MUTCD_R7-8_NO_PARKING.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_R8-3a_NO_PARKING_ANYTIME",
+    "description": "No Parking Anytime sign with arrow",
+    "file": "assets/svg/MUTCD_R8-3a_NO_PARKING_ANYTIME.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_R10-6_ONE_WAY",
+    "description": "One Way sign with arrow",
+    "file": "assets/svg/MUTCD_R10-6_ONE_WAY.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_R10-7_DO_NOT_PASS",
+    "description": "Do Not Pass sign with lane marking illustration",
+    "file": "assets/svg/MUTCD_R10-7_DO_NOT_PASS.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_R15-1_RAILROAD_CROSSING",
+    "description": "Railroad Crossing round sign with RR and X",
+    "file": "assets/svg/MUTCD_R15-1_RAILROAD_CROSSING.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_W1-1_CURVE_RIGHT",
+    "description": "Warning sign - curve to the right",
+    "file": "assets/svg/MUTCD_W1-1_CURVE_RIGHT.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_W1-2_CURVE_LEFT",
+    "description": "Warning sign - curve to the left",
+    "file": "assets/svg/MUTCD_W1-2_CURVE_LEFT.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_W1-6_WINDING_ROAD",
+    "description": "Warning sign - winding road ahead",
+    "file": "assets/svg/MUTCD_W1-6_WINDING_ROAD.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_W2-1_SIDE_ROAD",
+    "description": "Warning sign - side road intersection",
+    "file": "assets/svg/MUTCD_W2-1_SIDE_ROAD.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_W2-2_Y_INTERSECTION",
+    "description": "Warning sign - Y-intersection ahead",
+    "file": "assets/svg/MUTCD_W2-2_Y_INTERSECTION.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_W2-3_T_INTERSECTION",
+    "description": "Warning sign - T-intersection ahead",
+    "file": "assets/svg/MUTCD_W2-3_T_INTERSECTION.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_W3-1_MERGE",
+    "description": "Warning sign - merging traffic",
+    "file": "assets/svg/MUTCD_W3-1_MERGE.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_W4-2_LANE_ENDS_MERGE",
+    "description": "Warning sign - lane ends, merge left",
+    "file": "assets/svg/MUTCD_W4-2_LANE_ENDS_MERGE.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_W8-1_HILL",
+    "description": "Warning sign - steep grade or hill",
+    "file": "assets/svg/MUTCD_W8-1_HILL.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_W11-1_PEDESTRIAN_CROSSING",
+    "description": "Warning sign - pedestrian crossing ahead",
+    "file": "assets/svg/MUTCD_W11-1_PEDESTRIAN_CROSSING.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_W11-2_BICYCLE_CROSSING",
+    "description": "Warning sign - bicycle crossing ahead",
+    "file": "assets/svg/MUTCD_W11-2_BICYCLE_CROSSING.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_W14-1_TRUCK_CROSSING",
+    "description": "Warning sign - truck crossing or heavy trucks",
+    "file": "assets/svg/MUTCD_W14-1_TRUCK_CROSSING.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_W14-2_FARM_EQUIPMENT",
+    "description": "Warning sign - farm equipment on road",
+    "file": "assets/svg/MUTCD_W14-2_FARM_EQUIPMENT.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_S1-1_SCHOOL_CROSSING",
+    "description": "School crossing sign - pentagon with children",
+    "file": "assets/svg/MUTCD_S1-1_SCHOOL_CROSSING.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_S4-3_SCHOOL_SPEED_LIMIT_20",
+    "description": "School speed limit 20 mph when children present",
+    "file": "assets/svg/MUTCD_S4-3_SCHOOL_SPEED_LIMIT_20.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_W16-2_SLIPPERY_WHEN_WET",
+    "description": "Warning sign - slippery when wet",
+    "file": "assets/svg/MUTCD_W16-2_SLIPPERY_WHEN_WET.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_W20-1_ROAD_CONSTRUCTION",
+    "description": "Work zone sign - road construction ahead",
+    "file": "assets/svg/MUTCD_W20-1_ROAD_CONSTRUCTION.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_W20-7_FLAGGER_AHEAD",
+    "description": "Work zone sign - flagger ahead",
+    "file": "assets/svg/MUTCD_W20-7_FLAGGER_AHEAD.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_OM1-1_KEEP_RIGHT",
+    "description": "Work zone - keep right arrow",
+    "file": "assets/svg/MUTCD_OM1-1_KEEP_RIGHT.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_OM2-1_KEEP_LEFT",
+    "description": "Work zone - keep left arrow",
+    "file": "assets/svg/MUTCD_OM2-1_KEEP_LEFT.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_I-5_INTERSTATE_35",
+    "description": "Interstate 35 route marker",
+    "file": "assets/svg/MUTCD_I-5_INTERSTATE_35.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_I-5_INTERSTATE_10",
+    "description": "Interstate 10 route marker",
+    "file": "assets/svg/MUTCD_I-5_INTERSTATE_10.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_M1-1_US_ROUTE_90",
+    "description": "US Route 90 marker",
+    "file": "assets/svg/MUTCD_M1-1_US_ROUTE_90.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_M1-4_STATE_ROUTE_71",
+    "description": "Texas State Highway 71 marker",
+    "file": "assets/svg/MUTCD_M1-4_STATE_ROUTE_71.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_D1-1_EXIT_SIGN",
+    "description": "Highway exit sign with number and destination",
+    "file": "assets/svg/MUTCD_D1-1_EXIT_SIGN.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_D3-1_DISTANCE_SIGN",
+    "description": "Distance sign showing miles to destination",
+    "file": "assets/svg/MUTCD_D3-1_DISTANCE_SIGN.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_D9-1_REST_AREA",
+    "description": "Rest area service sign",
+    "file": "assets/svg/MUTCD_D9-1_REST_AREA.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_D9-2_HOSPITAL",
+    "description": "Hospital service sign with H symbol",
+    "file": "assets/svg/MUTCD_D9-2_HOSPITAL.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_D9-3_GAS_STATION",
+    "description": "Gas station service sign",
+    "file": "assets/svg/MUTCD_D9-3_GAS_STATION.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_R7-107_HANDICAPPED_PARKING",
+    "description": "Handicapped accessible parking sign",
+    "file": "assets/svg/MUTCD_R7-107_HANDICAPPED_PARKING.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_R3-4_NO_TRUCKS",
+    "description": "No trucks allowed sign",
+    "file": "assets/svg/MUTCD_R3-4_NO_TRUCKS.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_R4-7_KEEP_RIGHT",
+    "description": "Keep right regulatory sign with arrow",
+    "file": "assets/svg/MUTCD_R4-7_KEEP_RIGHT.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_R6-1_LEFT_TURN_ONLY",
+    "description": "Left turn only lane sign",
+    "file": "assets/svg/MUTCD_R6-1_LEFT_TURN_ONLY.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "MUTCD_R6-2_RIGHT_TURN_ONLY",
+    "description": "Right turn only lane sign",
+    "file": "assets/svg/MUTCD_R6-2_RIGHT_TURN_ONLY.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "SIGNAL_SOLID_RED",
+    "description": "Traffic signal showing solid red light",
+    "file": "assets/svg/SIGNAL_SOLID_RED.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "SIGNAL_SOLID_YELLOW",
+    "description": "Traffic signal showing solid yellow light",
+    "file": "assets/svg/SIGNAL_SOLID_YELLOW.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "SIGNAL_SOLID_GREEN",
+    "description": "Traffic signal showing solid green light",
+    "file": "assets/svg/SIGNAL_SOLID_GREEN.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "SIGNAL_GREEN_ARROW_LEFT",
+    "description": "Traffic signal with green left turn arrow",
+    "file": "assets/svg/SIGNAL_GREEN_ARROW_LEFT.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "SIGNAL_GREEN_ARROW_RIGHT",
+    "description": "Traffic signal with green right turn arrow",
+    "file": "assets/svg/SIGNAL_GREEN_ARROW_RIGHT.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "SIGNAL_YELLOW_ARROW_LEFT",
+    "description": "Traffic signal with yellow left turn arrow",
+    "file": "assets/svg/SIGNAL_YELLOW_ARROW_LEFT.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "SIGNAL_RED_ARROW_LEFT",
+    "description": "Traffic signal with red left turn arrow",
+    "file": "assets/svg/SIGNAL_RED_ARROW_LEFT.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "SIGNAL_FLASHING_RED",
+    "description": "Traffic signal with flashing red light",
+    "file": "assets/svg/SIGNAL_FLASHING_RED.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "SIGNAL_FLASHING_YELLOW",
+    "description": "Traffic signal with flashing yellow light",
+    "file": "assets/svg/SIGNAL_FLASHING_YELLOW.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "SIGNAL_PED_WALK",
+    "description": "Pedestrian signal showing WALK",
+    "file": "assets/svg/SIGNAL_PED_WALK.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "SIGNAL_PED_DONT_WALK",
+    "description": "Pedestrian signal showing DON'T WALK",
+    "file": "assets/svg/SIGNAL_PED_DONT_WALK.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "SIGNAL_PED_COUNTDOWN",
+    "description": "Pedestrian signal with countdown timer",
+    "file": "assets/svg/SIGNAL_PED_COUNTDOWN.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "SIGNAL_RED_YELLOW_TOGETHER",
+    "description": "Traffic signal with both red and yellow lights on",
+    "file": "assets/svg/SIGNAL_RED_YELLOW_TOGETHER.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "INTERSECTION_4WAY_STOP",
+    "description": "Four-way stop intersection diagram with vehicles",
+    "file": "assets/svg/INTERSECTION_4WAY_STOP.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "INTERSECTION_UNCONTROLLED",
+    "description": "Uncontrolled intersection with no signs or signals",
+    "file": "assets/svg/INTERSECTION_UNCONTROLLED.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "INTERSECTION_T_STOP",
+    "description": "T-intersection with stop sign on side road",
+    "file": "assets/svg/INTERSECTION_T_STOP.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "INTERSECTION_ROUNDABOUT",
+    "description": "Roundabout intersection with yield markings",
+    "file": "assets/svg/INTERSECTION_ROUNDABOUT.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "INTERSECTION_MERGE_HIGHWAY",
+    "description": "Highway merge scenario with entrance ramp",
+    "file": "assets/svg/INTERSECTION_MERGE_HIGHWAY.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "INTERSECTION_PEDESTRIAN_CROSSWALK",
+    "description": "Pedestrian crosswalk with vehicle stopped",
+    "file": "assets/svg/INTERSECTION_PEDESTRIAN_CROSSWALK.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "INTERSECTION_SCHOOL_BUS_STOPPED",
+    "description": "School bus stopped with extended stop sign",
+    "file": "assets/svg/INTERSECTION_SCHOOL_BUS_STOPPED.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "INTERSECTION_EMERGENCY_VEHICLE",
+    "description": "Emergency vehicle approaching intersection with lights",
+    "file": "assets/svg/INTERSECTION_EMERGENCY_VEHICLE.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "PAVEMENT_SOLID_WHITE_LINE",
+    "description": "Solid white lane separator line",
+    "file": "assets/svg/PAVEMENT_SOLID_WHITE_LINE.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "PAVEMENT_DASHED_WHITE_LINE",
+    "description": "Dashed white lane separator line (passing allowed)",
+    "file": "assets/svg/PAVEMENT_DASHED_WHITE_LINE.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "PAVEMENT_DOUBLE_YELLOW_SOLID",
+    "description": "Double solid yellow center line (no passing)",
+    "file": "assets/svg/PAVEMENT_DOUBLE_YELLOW_SOLID.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "PAVEMENT_SINGLE_YELLOW_DASHED",
+    "description": "Single dashed yellow center line (passing allowed)",
+    "file": "assets/svg/PAVEMENT_SINGLE_YELLOW_DASHED.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "PAVEMENT_DOUBLE_YELLOW_MIXED",
+    "description": "Double yellow line - one solid, one dashed",
+    "file": "assets/svg/PAVEMENT_DOUBLE_YELLOW_MIXED.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "PAVEMENT_ARROW_LEFT",
+    "description": "Left turn arrow pavement marking",
+    "file": "assets/svg/PAVEMENT_ARROW_LEFT.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "PAVEMENT_ARROW_RIGHT",
+    "description": "Right turn arrow pavement marking",
+    "file": "assets/svg/PAVEMENT_ARROW_RIGHT.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "PAVEMENT_ARROW_STRAIGHT",
+    "description": "Straight ahead arrow pavement marking",
+    "file": "assets/svg/PAVEMENT_ARROW_STRAIGHT.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "PAVEMENT_ARROW_LEFT_STRAIGHT",
+    "description": "Combined left turn and straight arrow",
+    "file": "assets/svg/PAVEMENT_ARROW_LEFT_STRAIGHT.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "PAVEMENT_ARROW_RIGHT_STRAIGHT",
+    "description": "Combined right turn and straight arrow",
+    "file": "assets/svg/PAVEMENT_ARROW_RIGHT_STRAIGHT.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "PAVEMENT_CROSSWALK_ZEBRA",
+    "description": "Zebra stripe crosswalk pattern",
+    "file": "assets/svg/PAVEMENT_CROSSWALK_ZEBRA.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "PAVEMENT_STOP_LINE",
+    "description": "Stop line with STOP text on pavement",
+    "file": "assets/svg/PAVEMENT_STOP_LINE.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "PAVEMENT_BIKE_LANE",
+    "description": "Bike lane with bicycle symbol",
+    "file": "assets/svg/PAVEMENT_BIKE_LANE.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "PAVEMENT_HOV_DIAMOND",
+    "description": "HOV (High Occupancy Vehicle) diamond marking",
+    "file": "assets/svg/PAVEMENT_HOV_DIAMOND.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "PAVEMENT_ONLY_TEXT",
+    "description": "ONLY text with arrow on pavement",
+    "file": "assets/svg/PAVEMENT_ONLY_TEXT.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "PAVEMENT_YIELD_LINE",
+    "description": "Yield line with triangle pattern",
+    "file": "assets/svg/PAVEMENT_YIELD_LINE.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "PAVEMENT_SCHOOL_ZONE",
+    "description": "School zone pavement marking with speed limit",
+    "file": "assets/svg/PAVEMENT_SCHOOL_ZONE.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "PAVEMENT_NO_PASSING_ZONE",
+    "description": "No passing zone pavement text marking",
+    "file": "assets/svg/PAVEMENT_NO_PASSING_ZONE.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "PAVEMENT_TURN_LANE_CENTER",
+    "description": "Center two-way left turn lane marking",
+    "file": "assets/svg/PAVEMENT_TURN_LANE_CENTER.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "PAVEMENT_RAILROAD_CROSSING_X",
+    "description": "Railroad crossing X pavement marking",
+    "file": "assets/svg/PAVEMENT_RAILROAD_CROSSING_X.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "PAVEMENT_SHARROW",
+    "description": "Sharrow (shared lane) bicycle marking",
+    "file": "assets/svg/PAVEMENT_SHARROW.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "PAVEMENT_HANDICAP_SYMBOL",
+    "description": "Handicapped parking symbol on pavement",
+    "file": "assets/svg/PAVEMENT_HANDICAP_SYMBOL.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "SPEED_FOLLOWING_DISTANCE_3SEC",
+    "description": "Following distance diagram showing 3-second rule",
+    "file": "assets/svg/SPEED_FOLLOWING_DISTANCE_3SEC.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "SPEED_STOPPING_DISTANCE",
+    "description": "Stopping distance diagram with reaction and braking",
+    "file": "assets/svg/SPEED_STOPPING_DISTANCE.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "SPEED_SCHOOL_ZONE_20MPH",
+    "description": "School zone with 20 mph speed limit scene",
+    "file": "assets/svg/SPEED_SCHOOL_ZONE_20MPH.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "SPEED_PASSING_CLEARANCE",
+    "description": "Passing clearance distance diagram",
+    "file": "assets/svg/SPEED_PASSING_CLEARANCE.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "SPEED_LIMIT_RESIDENTIAL_30",
+    "description": "Residential street with 30 mph speed limit",
+    "file": "assets/svg/SPEED_LIMIT_RESIDENTIAL_30.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "SPEED_HIGHWAY_70MPH",
+    "description": "Highway scene with 70 mph speed limit",
+    "file": "assets/svg/SPEED_HIGHWAY_70MPH.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "PARKING_PARALLEL_STEPS",
+    "description": "Parallel parking procedure step diagram",
+    "file": "assets/svg/PARKING_PARALLEL_STEPS.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "PARKING_HILL_UPHILL_CURB",
+    "description": "Uphill parking with curb - wheels away from curb",
+    "file": "assets/svg/PARKING_HILL_UPHILL_CURB.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "PARKING_HILL_DOWNHILL_CURB",
+    "description": "Downhill parking with curb - wheels toward curb",
+    "file": "assets/svg/PARKING_HILL_DOWNHILL_CURB.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "PARKING_FIRE_HYDRANT_15FT",
+    "description": "Fire hydrant parking restriction - 15 feet minimum",
+    "file": "assets/svg/PARKING_FIRE_HYDRANT_15FT.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "PARKING_DISABLED_SPACE",
+    "description": "Disabled parking space with sign and pavement marking",
+    "file": "assets/svg/PARKING_DISABLED_SPACE.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "SAFE_BLIND_SPOT_CHECK",
+    "description": "Blind spot zones and checking procedure",
+    "file": "assets/svg/SAFE_BLIND_SPOT_CHECK.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "SAFE_DEFENSIVE_SPACE_CUSHION",
+    "description": "360-degree space cushion around vehicle",
+    "file": "assets/svg/SAFE_DEFENSIVE_SPACE_CUSHION.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "SAFE_MIRROR_ADJUSTMENT",
+    "description": "Proper mirror adjustment zones and procedure",
+    "file": "assets/svg/SAFE_MIRROR_ADJUSTMENT.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "SPECIAL_WORK_ZONE_FLAGGER",
+    "description": "Work zone with flagger directing traffic",
+    "file": "assets/svg/SPECIAL_WORK_ZONE_FLAGGER.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "SPECIAL_RAILROAD_STOP_PROCEDURE",
+    "description": "Railroad crossing stop procedure - 15-50 feet before tracks",
+    "file": "assets/svg/SPECIAL_RAILROAD_STOP_PROCEDURE.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  },
+  {
+    "assetId": "SAFE_TIRE_TREAD_DEPTH",
+    "description": "Tire tread depth check using penny test",
+    "file": "assets/svg/SAFE_TIRE_TREAD_DEPTH.svg",
+    "sourceUrl": "generated",
+    "license": "generated"
+  }
+]
