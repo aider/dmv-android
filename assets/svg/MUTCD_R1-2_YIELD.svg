@@ -1,7 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <!-- Shadow -->
-  <polygon points="100,185 15,35 185,35" fill="#000000" opacity="0.15" transform="translate(2,2)"/>
-
   <!-- Main triangle - white background -->
   <polygon points="100,183 13,33 187,33" fill="#FFFFFF" stroke="#C1272D" stroke-width="10"/>
 

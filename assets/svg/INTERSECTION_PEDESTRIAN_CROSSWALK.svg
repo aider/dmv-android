@@ -1,7 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
   <rect x="0" y="0" width="200" height="200" fill="#88AA88"/>
   <rect x="0" y="70" width="200" height="60" fill="#4A4A4A"/>
-  <!-- Crosswalk -->
+  <!-- Stop line (behind vehicle) -->
+  <rect x="0" y="64" width="70" height="6" fill="#FFFFFF"/>
+  <!-- Crosswalk zebra stripes -->
   <rect x="80" y="70" width="12" height="60" fill="#FFFFFF"/>
   <rect x="96" y="70" width="12" height="60" fill="#FFFFFF"/>
   <rect x="112" y="70" width="12" height="60" fill="#FFFFFF"/>
@@ -13,6 +15,6 @@
     <line x1="100" y1="110" x2="94" y2="122" stroke-width="4"/>
     <line x1="100" y1="110" x2="106" y2="122" stroke-width="4"/>
   </g>
-  <!-- Stopped vehicle -->
-  <rect x="20" y="90" width="35" height="20" rx="3" fill="#333333"/>
+  <!-- Stopped vehicle (behind stop line) -->
+  <rect x="20" y="45" width="35" height="20" rx="3" fill="#666666"/>
 </svg>

@@ -1,9 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#FFFFFF"/>
+    </marker>
+  </defs>
   <rect x="0" y="0" width="200" height="200" fill="#88AA88"/>
   <rect x="0" y="70" width="200" height="60" fill="#4A4A4A"/>
   <rect x="70" y="0" width="60" height="200" fill="#4A4A4A"/>
-  <rect x="98" y="70" width="4" height="60" fill="#FFCC00"/>
-  <rect x="70" y="98" width="60" height="4" fill="#FFCC00"/>
-  <!-- No signs or signals -->
-  <text x="100" y="40" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#333333" text-anchor="middle">UNCONTROLLED</text>
+  <!-- Center lines -->
+  <rect x="98" y="0" width="4" height="70" fill="#FFCC00"/>
+  <rect x="98" y="130" width="4" height="70" fill="#FFCC00"/>
+  <rect x="0" y="98" width="70" height="4" fill="#FFCC00"/>
+  <rect x="130" y="98" width="70" height="4" fill="#FFCC00"/>
+  <!-- Blue ego vehicle from west -->
+  <rect x="22" y="75" width="30" height="18" rx="3" fill="#3366CC"/>
+  <path d="M 54,84 L 66,84" fill="none" stroke="#FFFFFF" stroke-width="3" marker-end="url(#arr)"/>
+  <!-- Gray vehicle from north -->
+  <rect x="75" y="22" width="18" height="30" rx="3" fill="#666666"/>
+  <path d="M 84,54 L 84,66" fill="none" stroke="#FFFFFF" stroke-width="3" marker-end="url(#arr)"/>
 </svg>
