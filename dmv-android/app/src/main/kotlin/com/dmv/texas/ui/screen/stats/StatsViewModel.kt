@@ -26,7 +26,7 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     private val db = DMVDatabase.getInstance(application)
-    private val statsRepo = StatsRepository(db.attemptDao(), db.attemptAnswerDao(), db.questionStatsDao())
+    private val statsRepo = StatsRepository(db, db.attemptDao(), db.attemptAnswerDao(), db.questionStatsDao())
 
     private val _state = MutableStateFlow(StatsState())
     val state: StateFlow<StatsState> = _state

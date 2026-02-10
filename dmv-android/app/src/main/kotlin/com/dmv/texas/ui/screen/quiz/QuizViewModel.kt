@@ -49,7 +49,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
 
     private val db = DMVDatabase.getInstance(application)
     private val questionRepo = QuestionRepository(db.questionDao(), db.questionStatsDao())
-    private val statsRepo = StatsRepository(db.attemptDao(), db.attemptAnswerDao(), db.questionStatsDao())
+    private val statsRepo = StatsRepository(db, db.attemptDao(), db.attemptAnswerDao(), db.questionStatsDao())
 
     private val _state = MutableStateFlow(QuizState())
     val state: StateFlow<QuizState> = _state

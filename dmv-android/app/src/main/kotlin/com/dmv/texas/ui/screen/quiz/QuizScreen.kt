@@ -1,5 +1,6 @@
 package com.dmv.texas.ui.screen.quiz
 
+import androidx.activity.compose.BackHandler
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.slideInVertically
@@ -53,6 +54,11 @@ fun QuizScreen(
 ) {
     val state by viewModel.state.collectAsState()
     var showQuitDialog by remember { mutableStateOf(false) }
+
+    // Intercept system back to show quit confirmation
+    BackHandler(enabled = !state.isFinished) {
+        showQuitDialog = true
+    }
 
     // Navigate when quiz finishes and attempt is saved.
     // Data stays in the shared QuizViewModel for ResultsScreen to read.
