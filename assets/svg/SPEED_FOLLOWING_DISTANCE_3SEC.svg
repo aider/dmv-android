@@ -2,8 +2,8 @@
   <rect x="0" y="0" width="300" height="200" fill="#88AA88"/>
   <rect x="0" y="70" width="300" height="60" fill="#4A4A4A"/>
   <!-- Lane markings -->
-  <rect x="148" y="75" width="4" height="15" fill="#FFCC00"/>
-  <rect x="148" y="110" width="4" height="15" fill="#FFCC00"/>
+  <rect x="146" y="75" width="8" height="15" fill="#FFCC00"/>
+  <rect x="146" y="110" width="8" height="15" fill="#FFCC00"/>
   <!-- Lead vehicle -->
   <rect x="200" y="85" width="30" height="18" rx="3" fill="#666666"/>
   <!-- Following vehicle -->

@@ -13,9 +13,9 @@
   <rect x="70" y="98" width="60" height="4" fill="#FFCC00"/>
   <!-- Stop lines (6px for visibility) -->
   <rect x="0" y="64" width="70" height="6" fill="#FFFFFF"/>
-  <rect x="130" y="130" width="70" height="6" fill="#FFFFFF"/>
+  <rect x="130" y="64" width="70" height="6" fill="#FFFFFF"/>
   <rect x="64" y="0" width="6" height="70" fill="#FFFFFF"/>
-  <rect x="130" y="130" width="6" height="70" fill="#FFFFFF"/>
+  <rect x="64" y="130" width="6" height="70" fill="#FFFFFF"/>
   <!-- Stop signs at corners -->
   <g transform="translate(20,35) scale(0.15)">
     <polygon points="100,10 158,40 188,100 158,160 100,190 42,160 12,100 42,40" fill="#C1272D" stroke="#FFFFFF" stroke-width="8"/>
