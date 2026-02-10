@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 200">
+  <rect x="5" y="5" width="140" height="190" fill="#0033A0" stroke="#FFFFFF" stroke-width="3" rx="5"/>
+  <circle cx="75" cy="65" r="12" fill="#FFFFFF"/>
+  <path d="M 75,77 L 75,105 L 60,115 M 75,90 L 95,90 M 75,105 Q 85,105 85,115 L 85,125" stroke="#FFFFFF" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="62" cy="115" r="15" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+  <circle cx="85" cy="125" r="15" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+  <text x="75" y="175" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PARKING</text>
+</svg>

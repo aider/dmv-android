@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+  <!-- Road surface -->
+  <rect x="0" y="0" width="300" height="200" fill="#555555"/>
+
+  <!-- Lane lines -->
+  <line x1="100" y1="0" x2="100" y2="200" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="12,8"/>
+  <line x1="200" y1="0" x2="200" y2="200" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="12,8"/>
+
+  <!-- Stop line (solid white, thick) -->
+  <line x1="20" y1="140" x2="280" y2="140" stroke="#FFFFFF" stroke-width="8"/>
+
+  <!-- "STOP" text on pavement -->
+  <text x="150" y="110" font-family="Arial Black, sans-serif" font-size="48" font-weight="bold" fill="#FFFFFF" text-anchor="middle">STOP</text>
+</svg>

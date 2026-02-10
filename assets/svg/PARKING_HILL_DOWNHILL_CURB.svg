@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 250">
+  <!-- Sloped street (downhill) -->
+  <polygon points="0,120 350,200 350,250 0,250" fill="#555555"/>
+
+  <!-- Curb -->
+  <line x1="0" y1="120" x2="350" y2="200" stroke="#FFFFFF" stroke-width="4"/>
+  <polygon points="0,110 350,190 350,200 0,120" fill="#AAAAAA"/>
+
+  <!-- Parked car -->
+  <rect x="150" y="140" width="50" height="30" fill="#0066CC" stroke="#003366" stroke-width="2" rx="3" transform="rotate(13 175 155)"/>
+
+  <!-- Wheels turned LEFT (toward curb) -->
+  <ellipse cx="160" cy="142" rx="6" ry="10" fill="#000000" transform="rotate(13 160 142)"/>
+  <ellipse cx="190" cy="152" rx="6" ry="10" fill="#000000" transform="rotate(13 190 152)"/>
+
+  <!-- Arrow showing wheel direction -->
+  <path d="M 160,135 L 150,130" stroke="#FF0000" stroke-width="3" marker-end="url(#arrowred2)"/>
+  <text x="120" y="210" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">Wheels TOWARD curb</text>
+
+  <!-- Downhill label -->
+  <polygon points="310,160 320,140 330,160" fill="#FFFF00"/>
+  <text x="320" y="175" font-family="Arial Bold, sans-serif" font-size="18" font-weight="bold" fill="#FFFF00" text-anchor="middle">DOWNHILL</text>
+
+  <defs>
+    <marker id="arrowred2" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <polygon points="0,0 10,5 0,10" fill="#FF0000"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+  <!-- Car from behind/above view -->
+  <rect x="150" y="100" width="100" height="140" fill="#0066CC" stroke="#003366" stroke-width="3" rx="5"/>
+
+  <!-- Rear window -->
+  <rect x="160" y="110" width="80" height="25" fill="#87CEEB" stroke="#003366" stroke-width="2"/>
+
+  <!-- Side mirrors -->
+  <ellipse cx="140" cy="160" rx="18" ry="12" fill="#333333" stroke="#000000" stroke-width="2"/>
+  <ellipse cx="260" cy="160" rx="18" ry="12" fill="#333333" stroke="#000000" stroke-width="2"/>
+
+  <!-- Rearview mirror (inside) -->
+  <rect x="185" y="115" width="30" height="8" fill="#333333" stroke="#000000" stroke-width="1"/>
+
+  <!-- Driver (simple) -->
+  <circle cx="175" cy="180" r="15" fill="#FFE4C4"/>
+
+  <!-- Mirror view zones -->
+  <!-- Left mirror -->
+  <path d="M 140,160 L 60,120 L 60,200 Z" fill="#90EE90" opacity="0.4"/>
+  <text x="85" y="165" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#006600">Left</text>
+
+  <!-- Right mirror -->
+  <path d="M 260,160 L 340,120 L 340,200 Z" fill="#90EE90" opacity="0.4"/>
+  <text x="305" y="165" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#006600">Right</text>
+
+  <!-- Rearview mirror -->
+  <path d="M 200,115 L 200,40 L 150,20 L 250,20 Z" fill="#90EE90" opacity="0.4"/>
+  <text x="200" y="45" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#006600" text-anchor="middle">Rear</text>
+
+  <!-- Adjustment note -->
+  <text x="200" y="20" font-family="Arial Bold, sans-serif" font-size="14" font-weight="bold" fill="#000000" text-anchor="middle">Adjust BEFORE driving</text>
+</svg>

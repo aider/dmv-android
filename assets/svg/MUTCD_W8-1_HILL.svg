@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect x="10" y="10" width="180" height="180" fill="#FFFF00" stroke="#000000" stroke-width="4" rx="5" transform="rotate(45 100 100)"/>
+  <path d="M 50,130 L 70,80 L 90,110 L 110,70 L 130,90 L 150,70" stroke="#000000" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="100" y="155" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">8%</text>
+</svg>

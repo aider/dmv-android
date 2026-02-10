@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- Roads approaching roundabout -->
+  <rect x="135" y="0" width="30" height="80" fill="#555555"/>
+  <rect x="135" y="220" width="30" height="80" fill="#555555"/>
+  <rect x="0" y="135" width="80" height="30" fill="#555555"/>
+  <rect x="220" y="135" width="80" height="30" fill="#555555"/>
+
+  <!-- Outer circle of roundabout -->
+  <circle cx="150" cy="150" r="70" fill="none" stroke="#555555" stroke-width="30"/>
+
+  <!-- Center island -->
+  <circle cx="150" cy="150" r="45" fill="#90EE90" stroke="#006400" stroke-width="2"/>
+
+  <!-- Yield markings (triangles at entries) -->
+  <polygon points="150,75 145,85 155,85" fill="#FFFFFF"/>
+  <polygon points="150,225 145,215 155,215" fill="#FFFFFF"/>
+  <polygon points="75,150 85,145 85,155" fill="#FFFFFF"/>
+  <polygon points="225,150 215,145 215,155" fill="#FFFFFF"/>
+
+  <!-- Direction arrows (counterclockwise) -->
+  <path d="M 180,120 A 30,30 0 0,1 180,180" stroke="#FFFFFF" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Vehicles -->
+  <rect x="145" y="40" width="15" height="25" fill="#0066CC" stroke="#003366" stroke-width="1" rx="2"/>
+  <rect x="200" y="110" width="25" height="15" fill="#CC0000" stroke="#660000" stroke-width="1" rx="2"/>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0,0 10,3 0,6" fill="#FFFFFF"/>
+    </marker>
+  </defs>
+</svg>

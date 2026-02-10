@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 180">
+  <path d="M 10,50 Q 10,10 75,10 Q 140,10 140,50 L 140,160 Q 140,170 75,170 Q 10,170 10,160 Z" fill="#FFFFFF" stroke="#000000" stroke-width="4"/>
+  <text x="75" y="45" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">US</text>
+  <text x="75" y="130" font-family="Arial Black, sans-serif" font-size="72" font-weight="bold" fill="#000000" text-anchor="middle">90</text>
+</svg>

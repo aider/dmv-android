@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 280">
+  <!-- Residential street scene -->
+  <rect x="0" y="0" width="350" height="280" fill="#E8F5E8"/>
+
+  <!-- Houses (simple rectangles) -->
+  <rect x="20" y="80" width="60" height="50" fill="#DEB887" stroke="#8B4513" stroke-width="2"/>
+  <polygon points="50,50 20,80 80,80" fill="#8B4513"/>
+  <rect x="35" y="105" width="15" height="25" fill="#654321"/>
+
+  <rect x="270" y="80" width="60" height="50" fill="#F0E68C" stroke="#8B4513" stroke-width="2"/>
+  <polygon points="300,50 270,80 330,80" fill="#8B4513"/>
+  <rect x="285" y="105" width="15" height="25" fill="#654321"/>
+
+  <!-- Road -->
+  <rect x="0" y="150" width="350" height="80" fill="#555555"/>
+  <line x1="175" y1="150" x2="175" y2="230" stroke="#FFFF00" stroke-width="3" stroke-dasharray="15,10"/>
+
+  <!-- Speed limit sign -->
+  <rect x="100" y="100" width="4" height="50" fill="#666666"/>
+  <rect x="85" y="85" width="34" height="45" fill="#FFFFFF" stroke="#000000" stroke-width="2" rx="2"/>
+  <text x="102" y="102" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#000000" text-anchor="middle">SPEED</text>
+  <text x="102" y="110" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#000000" text-anchor="middle">LIMIT</text>
+  <text x="102" y="125" font-family="Arial Black, sans-serif" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">30</text>
+
+  <!-- Vehicle -->
+  <rect x="160" y="165" width="35" height="20" fill="#0066CC" stroke="#003366" stroke-width="2" rx="2"/>
+</svg>

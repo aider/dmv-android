@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- Roads -->
+  <rect x="120" y="0" width="60" height="300" fill="#555555"/>
+  <rect x="0" y="120" width="300" height="60" fill="#555555"/>
+
+  <!-- Center intersection -->
+  <rect x="120" y="120" width="60" height="60" fill="#666666"/>
+
+  <!-- Lane markings (white dashed) -->
+  <line x1="150" y1="0" x2="150" y2="110" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="10,10"/>
+  <line x1="150" y1="190" x2="150" y2="300" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="10,10"/>
+  <line x1="0" y1="150" x2="110" y2="150" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="10,10"/>
+  <line x1="190" y1="150" x2="300" y2="150" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="10,10"/>
+
+  <!-- Stop signs at all approaches -->
+  <polygon points="150,95 158,100 158,108 150,113 142,108 142,100" fill="#FF0000" stroke="#FFFFFF" stroke-width="1"/>
+  <polygon points="150,205 158,200 158,192 150,187 142,192 142,200" fill="#FF0000" stroke="#FFFFFF" stroke-width="1"/>
+  <polygon points="95,150 100,142 108,142 113,150 108,158 100,158" fill="#FF0000" stroke="#FFFFFF" stroke-width="1"/>
+  <polygon points="205,150 200,142 192,142 187,150 192,158 200,158" fill="#FF0000" stroke="#FFFFFF" stroke-width="1"/>
+
+  <!-- Vehicles (simplified rectangles) -->
+  <rect x="140" y="60" width="20" height="30" fill="#0066CC" stroke="#003366" stroke-width="1" rx="2"/>
+  <rect x="210" y="140" width="30" height="20" fill="#CC0000" stroke="#660000" stroke-width="1" rx="2"/>
+</svg>

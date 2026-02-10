@@ -1,0 +1,1140 @@
+[
+  {
+    "id": "TX-PAV-0001",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 1,
+    "text": "What does a solid white line between lanes indicate?",
+    "choices": [
+      "Lane changes are discouraged but permitted if safe",
+      "Lane changes are prohibited",
+      "Opposing traffic lanes",
+      "Parking is allowed"
+    ],
+    "correctIndex": 0,
+    "explanation": "Solid white lines discourage lane changes but do not legally prohibit them. Drivers should avoid crossing solid white lines unless necessary for safety.",
+    "reference": "DL-7: Pavement Markings",
+    "image": {
+      "type": "svg",
+      "assetId": "PAVEMENT_SOLID_WHITE_LINE"
+    }
+  },
+  {
+    "id": "TX-PAV-0002",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 1,
+    "text": "What does a dashed white line between lanes mean?",
+    "choices": [
+      "Lane changes are permitted",
+      "No passing zone",
+      "Opposing traffic ahead",
+      "Construction zone"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dashed white lines separate lanes of traffic moving in the same direction and indicate that lane changes are permitted when safe to do so.",
+    "reference": "DL-7: Pavement Markings",
+    "image": {
+      "type": "svg",
+      "assetId": "PAVEMENT_DASHED_WHITE_LINE"
+    }
+  },
+  {
+    "id": "TX-PAV-0003",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 2,
+    "text": "What does a double solid yellow line indicate?",
+    "choices": [
+      "Passing is prohibited in both directions",
+      "Passing is allowed with caution",
+      "One-way traffic only",
+      "Shoulder area"
+    ],
+    "correctIndex": 0,
+    "explanation": "Double solid yellow lines mark a no-passing zone for traffic traveling in both directions. Crossing these lines to pass is illegal and dangerous.",
+    "reference": "DL-7: Pavement Markings",
+    "image": {
+      "type": "svg",
+      "assetId": "PAVEMENT_DOUBLE_YELLOW_SOLID"
+    }
+  },
+  {
+    "id": "TX-PAV-0004",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 2,
+    "text": "What is the primary difference between yellow and white pavement lines?",
+    "choices": [
+      "Yellow separates opposing traffic, white separates same-direction traffic",
+      "Yellow means caution, white means proceed",
+      "Yellow is for highways, white is for city streets",
+      "Yellow marks parking areas, white marks driving lanes"
+    ],
+    "correctIndex": 0,
+    "explanation": "Yellow lines separate traffic flowing in opposite directions, while white lines separate lanes of traffic moving in the same direction. This color coding helps drivers understand traffic flow patterns.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0005",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 2,
+    "text": "When you see a single dashed yellow line, what does it indicate?",
+    "choices": [
+      "Passing is allowed when safe",
+      "Passing is never permitted",
+      "Two-way left turn lane",
+      "Emergency vehicles only"
+    ],
+    "correctIndex": 0,
+    "explanation": "A single dashed yellow line indicates that passing is permitted in both directions when it is safe to do so and you can see far enough ahead.",
+    "reference": "DL-7: Pavement Markings",
+    "image": {
+      "type": "svg",
+      "assetId": "PAVEMENT_SINGLE_YELLOW_DASHED"
+    }
+  },
+  {
+    "id": "TX-PAV-0006",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 3,
+    "text": "What does it mean when there is a double yellow line with one solid and one dashed line?",
+    "choices": [
+      "You can pass only if the dashed line is on your side",
+      "You can pass from either direction",
+      "No one can pass from either direction",
+      "Only emergency vehicles can pass"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a solid/dashed combination, passing is allowed only from the side with the dashed line. If the solid line is on your side, you cannot pass.",
+    "reference": "DL-7: Pavement Markings",
+    "image": {
+      "type": "svg",
+      "assetId": "PAVEMENT_DOUBLE_YELLOW_MIXED"
+    }
+  },
+  {
+    "id": "TX-PAV-0007",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 1,
+    "text": "What does a white edge line on the right side of the road mark?",
+    "choices": [
+      "The edge of the roadway",
+      "A bike lane",
+      "A parking zone",
+      "A passing zone"
+    ],
+    "correctIndex": 0,
+    "explanation": "White edge lines mark the right boundary of the roadway where the driving surface ends. They help drivers maintain proper lane position, especially at night or in poor weather.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0008",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 3,
+    "text": "If you are driving and the solid yellow line is on your side with a dashed yellow line on the opposite side, what should you do?",
+    "choices": [
+      "Do not pass, passing is only allowed for opposing traffic",
+      "Pass when safe to do so",
+      "Pass only if no traffic is visible",
+      "Slow down and prepare to stop"
+    ],
+    "correctIndex": 0,
+    "explanation": "When the solid yellow line is on your side, you are prohibited from passing. Only vehicles on the side with the dashed line may pass when safe.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0009",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 2,
+    "text": "What do wider and more frequently spaced dashes in a white line indicate?",
+    "choices": [
+      "An exit or entrance lane is approaching",
+      "Speed up to merge",
+      "Construction zone ahead",
+      "Emergency stopping area"
+    ],
+    "correctIndex": 0,
+    "explanation": "Wider, more frequent dashes indicate a lane transition area where vehicles will be entering or exiting the roadway. This gives drivers advance warning to prepare for merging traffic.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0010",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 2,
+    "text": "What does a yellow edge line on the left side of a divided highway indicate?",
+    "choices": [
+      "The left edge of traffic traveling in your direction",
+      "A passing zone",
+      "Emergency vehicle access",
+      "A carpool lane"
+    ],
+    "correctIndex": 0,
+    "explanation": "On divided highways, a yellow line on the left marks the left edge of your traffic lanes, separating your direction from the opposing traffic lanes or median.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0011",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 3,
+    "text": "When approaching a solid white line at an intersection, what does it indicate?",
+    "choices": [
+      "You should not change lanes within the intersection",
+      "You must stop immediately",
+      "Turn only lanes ahead",
+      "Pedestrian crossing area"
+    ],
+    "correctIndex": 0,
+    "explanation": "Solid white lines at intersections discourage lane changes through the intersection, helping maintain orderly traffic flow and reducing collision risks.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0012",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 1,
+    "text": "Are you legally required to stop at a solid white line?",
+    "choices": [
+      "No, it only discourages lane changes",
+      "Yes, all solid white lines require stopping",
+      "Only during rush hour",
+      "Only if a police officer is present"
+    ],
+    "correctIndex": 0,
+    "explanation": "Solid white lines discourage but do not legally prohibit lane changes. You should only cross them when necessary and safe to do so.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0013",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 4,
+    "text": "What is the purpose of longer dashed white lines with shorter gaps?",
+    "choices": [
+      "To mark a lane drop or merge area requiring extra caution",
+      "To indicate higher speed limits",
+      "To mark carpool lanes",
+      "To designate truck lanes"
+    ],
+    "correctIndex": 0,
+    "explanation": "Extended dashes with reduced gaps signal transition zones where lanes are ending or merging, alerting drivers to use extra caution and prepare for lane changes.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0014",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 3,
+    "text": "What does a double solid white line between lanes indicate?",
+    "choices": [
+      "Crossing is prohibited except in emergencies",
+      "Lanes are for same direction but different vehicle types",
+      "Passing is allowed when clear",
+      "Parking is permitted on both sides"
+    ],
+    "correctIndex": 0,
+    "explanation": "Double solid white lines indicate a barrier between lanes that should not be crossed except in emergency situations. These often separate HOV lanes or mark restricted zones.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0015",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 2,
+    "text": "Why are yellow lines used instead of white on undivided two-way roads?",
+    "choices": [
+      "To warn drivers that oncoming traffic is in the adjacent lane",
+      "To indicate construction zones",
+      "To mark school zones",
+      "To show speed limits"
+    ],
+    "correctIndex": 0,
+    "explanation": "Yellow lines clearly identify that traffic on the other side is traveling in the opposite direction, providing an important visual warning about oncoming vehicles.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0016",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 4,
+    "text": "When can you legally cross a double solid yellow line?",
+    "choices": [
+      "When turning left into or out of a driveway or side street",
+      "When passing slower traffic",
+      "When visibility is clear for at least 500 feet",
+      "Never under any circumstances"
+    ],
+    "correctIndex": 0,
+    "explanation": "While you cannot pass across double solid yellow lines, you may cross them to turn left into or out of driveways, alleys, or side streets when it is safe to do so.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0017",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 3,
+    "text": "What do broken white lines that become solid white lines indicate?",
+    "choices": [
+      "Lane changes should end, an intersection or restricted area is ahead",
+      "Speed limit is increasing",
+      "Emergency vehicles only beyond this point",
+      "Parking is now allowed"
+    ],
+    "correctIndex": 0,
+    "explanation": "The transition from broken to solid white lines warns drivers to complete lane changes before reaching an area where lane changes are discouraged, such as approaching intersections.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0018",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 2,
+    "text": "What does it mean when yellow lines are painted on both sides of your lane?",
+    "choices": [
+      "You are in a center turn lane shared by traffic from both directions",
+      "You are in a restricted zone",
+      "You are driving the wrong way",
+      "You are in a passing zone"
+    ],
+    "correctIndex": 0,
+    "explanation": "Yellow lines on both sides indicate a two-way left turn lane that is shared by traffic from both directions for making left turns only.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0019",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 1,
+    "text": "Which color line separates traffic moving in opposite directions?",
+    "choices": [
+      "Yellow",
+      "White",
+      "Red",
+      "Blue"
+    ],
+    "correctIndex": 0,
+    "explanation": "Yellow lines are always used to separate traffic flowing in opposite directions, providing a clear visual warning of oncoming traffic.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0020",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 4,
+    "text": "If you see solid yellow lines transitioning to dashed yellow lines, what is changing?",
+    "choices": [
+      "You are entering a zone where passing is now permitted",
+      "The speed limit is decreasing",
+      "A school zone is ahead",
+      "You must change lanes"
+    ],
+    "correctIndex": 0,
+    "explanation": "The transition from solid to dashed yellow lines indicates the end of a no-passing zone and the beginning of an area where passing is allowed when safe.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0021",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 2,
+    "text": "What does a wide white edge line indicate?",
+    "choices": [
+      "The edge of the roadway, often used where extra visibility is needed",
+      "A parking lane",
+      "A bike path",
+      "An emergency stopping zone"
+    ],
+    "correctIndex": 0,
+    "explanation": "Wider white edge lines provide enhanced visibility of the roadway edge, especially useful in areas with limited lighting, curves, or poor weather conditions.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0022",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 3,
+    "text": "What is the significance of seeing a dashed yellow line that becomes solid yellow?",
+    "choices": [
+      "A no-passing zone is beginning, complete passes before reaching the solid line",
+      "The road is ending",
+      "A passing zone is starting",
+      "Slow traffic must exit"
+    ],
+    "correctIndex": 0,
+    "explanation": "This transition warns drivers that a no-passing zone is ahead. Any passing maneuver must be completed before reaching the solid yellow line.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0023",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 5,
+    "text": "On a three-lane road with dashed yellow on both sides of the center lane, who can use the center lane?",
+    "choices": [
+      "Traffic from both directions for left turns only",
+      "Only traffic traveling north or east",
+      "Only emergency vehicles",
+      "Faster traffic for passing"
+    ],
+    "correctIndex": 0,
+    "explanation": "This describes a two-way left turn lane where drivers from both directions can enter briefly to make left turns. It is not for passing or through traffic.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0024",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 4,
+    "text": "What should you do when approaching an area where solid white lines separate multiple lanes in the same direction?",
+    "choices": [
+      "Avoid changing lanes and stay in your current lane",
+      "Change lanes quickly before the lines become double",
+      "Slow down to 25 mph",
+      "Activate hazard lights"
+    ],
+    "correctIndex": 0,
+    "explanation": "Solid white lines indicate that lane changes are discouraged in that area. Drivers should remain in their lane to maintain traffic flow and safety.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0025",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 5,
+    "text": "Under what condition might you see both yellow and white lines together in the same lane area?",
+    "choices": [
+      "At a transition from one-way to two-way traffic flow",
+      "In construction zones only",
+      "At state borders",
+      "In residential areas"
+    ],
+    "correctIndex": 0,
+    "explanation": "Yellow and white lines together typically mark transitions between one-way streets (white lines) and two-way roads (yellow center line), helping drivers understand changing traffic patterns.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0026",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 2,
+    "text": "What does a left turn arrow painted on the pavement indicate?",
+    "choices": [
+      "This lane must turn left",
+      "Left turns are prohibited",
+      "This is a passing lane",
+      "Yield to left-turning traffic"
+    ],
+    "correctIndex": 0,
+    "explanation": "A left turn arrow on the pavement indicates a mandatory turn lane. Vehicles in this lane must turn left at the intersection.",
+    "reference": "DL-7: Pavement Markings",
+    "image": {
+      "type": "svg",
+      "assetId": "PAVEMENT_ARROW_LEFT"
+    }
+  },
+  {
+    "id": "TX-PAV-0027",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 1,
+    "text": "What does a straight arrow painted on the pavement mean?",
+    "choices": [
+      "This lane must continue straight",
+      "Merge ahead",
+      "Speed up",
+      "Passing zone"
+    ],
+    "correctIndex": 0,
+    "explanation": "A straight arrow indicates that vehicles in this lane must proceed straight through the intersection and are not permitted to turn.",
+    "reference": "DL-7: Pavement Markings",
+    "image": {
+      "type": "svg",
+      "assetId": "PAVEMENT_ARROW_STRAIGHT"
+    }
+  },
+  {
+    "id": "TX-PAV-0028",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 2,
+    "text": "What does the word 'ONLY' painted on the pavement indicate?",
+    "choices": [
+      "The lane is restricted to the designated direction or purpose shown",
+      "Only one car allowed at a time",
+      "Only buses permitted",
+      "Emergency vehicles only"
+    ],
+    "correctIndex": 0,
+    "explanation": "ONLY emphasizes that the lane is exclusively designated for a specific use, such as turning or a particular vehicle type, and cannot be used for other purposes.",
+    "reference": "DL-7: Pavement Markings",
+    "image": {
+      "type": "svg",
+      "assetId": "PAVEMENT_ONLY_TEXT"
+    }
+  },
+  {
+    "id": "TX-PAV-0029",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 1,
+    "text": "What do zebra-striped white markings on the pavement indicate?",
+    "choices": [
+      "A crosswalk for pedestrians",
+      "A parking zone",
+      "A no-passing zone",
+      "A speed bump ahead"
+    ],
+    "correctIndex": 0,
+    "explanation": "Zebra-stripe markings designate pedestrian crosswalks. Drivers must yield to pedestrians within these marked crossing areas.",
+    "reference": "DL-7: Pavement Markings",
+    "image": {
+      "type": "svg",
+      "assetId": "PAVEMENT_CROSSWALK_ZEBRA"
+    }
+  },
+  {
+    "id": "TX-PAV-0030",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 2,
+    "text": "What does a thick white line across the lane at an intersection indicate?",
+    "choices": [
+      "The stopping point for traffic signals or stop signs",
+      "A speed bump location",
+      "A pedestrian-only zone",
+      "A merge point"
+    ],
+    "correctIndex": 0,
+    "explanation": "A stop line marks where vehicles must stop when required by a traffic signal, stop sign, or to yield to pedestrians. Vehicles should not enter the intersection beyond this line.",
+    "reference": "DL-7: Pavement Markings",
+    "image": {
+      "type": "svg",
+      "assetId": "PAVEMENT_STOP_LINE"
+    }
+  },
+  {
+    "id": "TX-PAV-0031",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 3,
+    "text": "What do white triangles pointing toward your vehicle indicate?",
+    "choices": [
+      "A yield line where you must give right-of-way",
+      "Speed bumps ahead",
+      "Sharp turn warning",
+      "Lane ends"
+    ],
+    "correctIndex": 0,
+    "explanation": "Yield line triangles point toward approaching traffic to indicate where drivers must yield right-of-way to other vehicles or pedestrians. This is common at roundabouts and yield intersections.",
+    "reference": "DL-7: Pavement Markings",
+    "image": {
+      "type": "svg",
+      "assetId": "PAVEMENT_YIELD_LINE"
+    }
+  },
+  {
+    "id": "TX-PAV-0032",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 2,
+    "text": "What does a right turn arrow painted on the pavement mean?",
+    "choices": [
+      "This lane must turn right",
+      "Right turns are prohibited",
+      "Yield to right-turning traffic",
+      "Right lane ends"
+    ],
+    "correctIndex": 0,
+    "explanation": "A right turn arrow designates a mandatory right turn lane. Vehicles positioned in this lane must turn right and cannot proceed straight.",
+    "reference": "DL-7: Pavement Markings",
+    "image": {
+      "type": "svg",
+      "assetId": "PAVEMENT_ARROW_RIGHT"
+    }
+  },
+  {
+    "id": "TX-PAV-0033",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 3,
+    "text": "What does a combined left and straight arrow on the pavement indicate?",
+    "choices": [
+      "You may either turn left or continue straight from this lane",
+      "You must choose left or straight before entering the lane",
+      "Left turns have priority over straight traffic",
+      "This is a passing lane"
+    ],
+    "correctIndex": 0,
+    "explanation": "A combined arrow indicates an optional lane where drivers may either turn or proceed straight. Both movements are permitted from this lane.",
+    "reference": "DL-7: Pavement Markings",
+    "image": {
+      "type": "svg",
+      "assetId": "PAVEMENT_ARROW_LEFT_STRAIGHT"
+    }
+  },
+  {
+    "id": "TX-PAV-0034",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 4,
+    "text": "When you see the word 'STOP' painted on the pavement, what does it indicate?",
+    "choices": [
+      "A stop line position even if the painted line is worn away",
+      "School zone crossing",
+      "Emergency stopping point",
+      "Construction zone boundary"
+    ],
+    "correctIndex": 0,
+    "explanation": "STOP painted on the pavement reinforces the stop requirement and shows where to stop, especially useful when stop lines have faded or in areas where the sign may be less visible.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0035",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 3,
+    "text": "What is the purpose of crosswalk markings at an intersection?",
+    "choices": [
+      "To designate the safe path for pedestrians crossing the street",
+      "To indicate where vehicles should stop",
+      "To mark parking boundaries",
+      "To separate different traffic lanes"
+    ],
+    "correctIndex": 0,
+    "explanation": "Crosswalk markings guide pedestrians across the street safely and alert drivers to areas where they must yield to foot traffic.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0036",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 4,
+    "text": "If you see arrows and the word 'ONLY' together on the pavement, what does this combination mean?",
+    "choices": [
+      "The lane is exclusively for the movement shown by the arrow",
+      "Only one vehicle at a time",
+      "Commercial vehicles only",
+      "Passing is permitted only in this lane"
+    ],
+    "correctIndex": 0,
+    "explanation": "The combination of an arrow with ONLY creates a mandatory lane designation, meaning vehicles in that lane must follow the arrow's direction exclusively.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0037",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 2,
+    "text": "What should you do when you see a stop line at an intersection?",
+    "choices": [
+      "Stop with your front bumper at or before the line",
+      "Stop with your rear bumper at the line",
+      "Slow down but you don't need to stop",
+      "Stop only if pedestrians are present"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vehicles must stop at or before the stop line, ensuring the entire vehicle is behind the line. This provides safe clearance for cross traffic and pedestrians.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0038",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 3,
+    "text": "What do school zone pavement markings typically indicate?",
+    "choices": [
+      "Reduced speed limits and increased pedestrian activity ahead",
+      "Bus stops only",
+      "No parking zones",
+      "Emergency vehicle access"
+    ],
+    "correctIndex": 0,
+    "explanation": "School zone pavement markings warn drivers to reduce speed and watch carefully for children and crossing guards. These areas require heightened awareness.",
+    "reference": "DL-7: Pavement Markings",
+    "image": {
+      "type": "svg",
+      "assetId": "PAVEMENT_SCHOOL_ZONE"
+    }
+  },
+  {
+    "id": "TX-PAV-0039",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 5,
+    "text": "Why might you see a stop line positioned well back from the intersection?",
+    "choices": [
+      "To provide sight distance for turning vehicles or large truck clearance",
+      "To create parking spaces",
+      "To mark a pedestrian waiting area",
+      "Because the marking was placed incorrectly"
+    ],
+    "correctIndex": 0,
+    "explanation": "Stop lines are sometimes set back to improve sight lines at difficult intersections or to provide adequate turning radius for large vehicles like trucks and buses.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0040",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 2,
+    "text": "What does 'NO PASSING ZONE' painted on the pavement mean?",
+    "choices": [
+      "Passing is prohibited in this area due to limited visibility or hazards",
+      "You must drive in single file",
+      "No trucks allowed",
+      "Speed limit is reduced"
+    ],
+    "correctIndex": 0,
+    "explanation": "NO PASSING ZONE pavement text reinforces that passing maneuvers are prohibited, typically due to limited sight distance, curves, or hills.",
+    "reference": "DL-7: Pavement Markings",
+    "image": {
+      "type": "svg",
+      "assetId": "PAVEMENT_NO_PASSING_ZONE"
+    }
+  },
+  {
+    "id": "TX-PAV-0041",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 4,
+    "text": "What does a combined right and straight arrow mean?",
+    "choices": [
+      "You may turn right or continue straight from this lane",
+      "You must turn right, but straight traffic may pass on the left",
+      "Right turns only during certain hours",
+      "Yield to traffic going straight"
+    ],
+    "correctIndex": 0,
+    "explanation": "A combined right-straight arrow indicates a shared lane where both right turns and through movements are permitted, giving drivers flexibility in their direction.",
+    "reference": "DL-7: Pavement Markings",
+    "image": {
+      "type": "svg",
+      "assetId": "PAVEMENT_ARROW_RIGHT_STRAIGHT"
+    }
+  },
+  {
+    "id": "TX-PAV-0042",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 3,
+    "text": "If there is no marked crosswalk at an intersection, where should pedestrians cross?",
+    "choices": [
+      "At the extension of the sidewalk across the intersection",
+      "Anywhere they choose",
+      "Only at traffic signals",
+      "Pedestrians cannot cross without markings"
+    ],
+    "correctIndex": 0,
+    "explanation": "Even without painted markings, an unmarked crosswalk exists at intersections where sidewalks extend. Pedestrians have the right-of-way, and drivers must yield.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0043",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 1,
+    "text": "What color are most pavement arrows and word markings?",
+    "choices": [
+      "White",
+      "Yellow",
+      "Red",
+      "Green"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pavement arrows and word markings are typically white because they provide lane-use guidance for traffic moving in the same direction, consistent with white line usage.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0044",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 4,
+    "text": "What should you do if you realize you are in a turn-only lane but need to go straight?",
+    "choices": [
+      "Complete the turn and find a safe way to return to your route",
+      "Stop and back up to change lanes",
+      "Go straight anyway",
+      "Turn on hazard lights and stop"
+    ],
+    "correctIndex": 0,
+    "explanation": "Once in a mandatory turn lane, you must complete the turn as indicated. Attempting to go straight or change lanes at the last moment creates dangerous situations.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0045",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 5,
+    "text": "Why are some crosswalks marked with two parallel lines while others use zebra stripes?",
+    "choices": [
+      "Both are valid; zebra stripes provide higher visibility in high-traffic areas",
+      "Zebra stripes are only for school zones",
+      "Parallel lines mean yield, zebra means stop",
+      "Different cities use different standards randomly"
+    ],
+    "correctIndex": 0,
+    "explanation": "Both marking styles are legal crosswalks. Zebra stripes are often used in high-traffic or high-risk areas because they provide better visibility and draw more attention from drivers.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0046",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 2,
+    "text": "What is the primary purpose of white pavement markings?",
+    "choices": [
+      "To separate lanes of traffic moving in the same direction",
+      "To separate opposing traffic",
+      "To indicate parking areas",
+      "To mark construction zones"
+    ],
+    "correctIndex": 0,
+    "explanation": "White markings are used to organize and separate traffic moving in the same direction, helping drivers stay in proper lanes and make safe lane changes.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0047",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 1,
+    "text": "What is the primary purpose of yellow pavement markings?",
+    "choices": [
+      "To separate traffic moving in opposite directions",
+      "To indicate caution zones",
+      "To mark parking restrictions",
+      "To designate speed limits"
+    ],
+    "correctIndex": 0,
+    "explanation": "Yellow markings separate traffic flows in opposite directions, warning drivers that vehicles on the other side of the line are approaching them head-on.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0048",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 3,
+    "text": "What does a red curb indicate?",
+    "choices": [
+      "No stopping or parking at any time",
+      "Fire lane parking only",
+      "Emergency vehicle parking",
+      "Loading zone"
+    ],
+    "correctIndex": 0,
+    "explanation": "Red curbs designate no-stopping zones. Vehicles cannot stop, stand, or park in these areas, which are often near fire hydrants or emergency access points.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0049",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 2,
+    "text": "What does a blue curb indicate?",
+    "choices": [
+      "Parking reserved for disabled persons with proper permits",
+      "Police parking only",
+      "Passenger loading zone",
+      "Motorcycle parking"
+    ],
+    "correctIndex": 0,
+    "explanation": "Blue curbs mark disabled parking spaces. Only vehicles displaying valid disabled parking permits or license plates may park in these designated areas.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0050",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 2,
+    "text": "What does a white curb typically indicate?",
+    "choices": [
+      "Passenger loading and unloading only for a limited time",
+      "No parking restrictions",
+      "Disabled parking",
+      "Emergency vehicles only"
+    ],
+    "correctIndex": 0,
+    "explanation": "White curbs designate passenger loading zones where vehicles can stop briefly to pick up or drop off passengers but cannot park for extended periods.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0051",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 3,
+    "text": "What does a yellow curb indicate?",
+    "choices": [
+      "Loading zone or no parking during posted hours",
+      "School zone",
+      "Caution area",
+      "Taxi stand only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Yellow curbs typically mark commercial loading zones where parking is prohibited but brief stops for loading/unloading are permitted during specified times.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0052",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 3,
+    "text": "What does a green curb indicate?",
+    "choices": [
+      "Limited time parking as posted",
+      "Electric vehicle charging only",
+      "Park and ride zone",
+      "Environmentally friendly parking"
+    ],
+    "correctIndex": 0,
+    "explanation": "Green curbs designate short-term parking areas with time limits, typically 15-30 minutes. These allow for brief stops while preventing all-day parking.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0053",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 4,
+    "text": "Can you stop at a red curb to let a passenger out?",
+    "choices": [
+      "No, red curbs prohibit all stopping",
+      "Yes, for up to 3 minutes",
+      "Yes, if you stay in the vehicle",
+      "Yes, during off-peak hours"
+    ],
+    "correctIndex": 0,
+    "explanation": "Red curbs mean absolutely no stopping at any time. This includes dropping off passengers, as these areas must remain clear for emergency access or fire safety.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0054",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 2,
+    "text": "Why do yellow and white lines have different meanings?",
+    "choices": [
+      "To help drivers quickly identify whether adjacent traffic is traveling the same or opposite direction",
+      "Yellow is older, white is newer",
+      "Different colors for different speed limits",
+      "To distinguish urban from rural roads"
+    ],
+    "correctIndex": 0,
+    "explanation": "The color-coding system provides instant visual information about traffic flow direction, which is critical for safety when deciding whether passing or lane changes are safe.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0055",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 4,
+    "text": "What does colored pavement in a bike lane indicate?",
+    "choices": [
+      "Enhanced visibility of the bike lane, especially at conflict points",
+      "Bike racing area",
+      "Bikes must stop",
+      "Bikes have absolute right-of-way"
+    ],
+    "correctIndex": 0,
+    "explanation": "Colored pavement in bike lanes increases visibility at intersections, driveways, or other locations where vehicle-bicycle conflicts are more likely to occur.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0056",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 5,
+    "text": "What is the difference between a white curb and a blue curb?",
+    "choices": [
+      "White is for passenger loading, blue is for disabled parking only",
+      "They mean the same thing",
+      "White is daytime only, blue is 24-hours",
+      "White is free, blue requires payment"
+    ],
+    "correctIndex": 0,
+    "explanation": "White curbs allow brief stops for passenger loading by any vehicle, while blue curbs are exclusively reserved for vehicles with disabled parking credentials.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0057",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 3,
+    "text": "When is parking at a green curb typically allowed?",
+    "choices": [
+      "For the limited time posted on nearby signs",
+      "Only with a permit",
+      "24 hours a day",
+      "Only for electric vehicles"
+    ],
+    "correctIndex": 0,
+    "explanation": "Green curbs indicate time-limited parking. Drivers must check posted signs for specific time limits and any applicable hours of enforcement.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0058",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 4,
+    "text": "What does it mean when the pavement in a bike lane is painted green?",
+    "choices": [
+      "It highlights conflict zones where drivers must be especially cautious of bicyclists",
+      "Only green bikes can use this lane",
+      "Environmentally friendly zone",
+      "Bike lane ends ahead"
+    ],
+    "correctIndex": 0,
+    "explanation": "Green pavement within bike lanes marks areas of potential conflict between bicycles and turning vehicles, alerting both to exercise extra caution.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0059",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 2,
+    "text": "Are you required to park within white painted parking space lines?",
+    "choices": [
+      "Yes, to ensure adequate space for other vehicles and safe access",
+      "No, they are only suggestions",
+      "Only in paid parking lots",
+      "Only if a parking attendant is present"
+    ],
+    "correctIndex": 0,
+    "explanation": "White parking space lines must be observed to ensure orderly parking, accessibility, and adequate space for all vehicles and pedestrians.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0060",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 5,
+    "text": "What legal difference exists between a solid yellow curb and a yellow curb with specific time restrictions posted?",
+    "choices": [
+      "Solid yellow may have restrictions that apply 24/7, while posted times indicate when restrictions are active",
+      "No difference, both mean the same thing",
+      "Solid yellow is more restrictive than posted times",
+      "Posted times override the yellow curb meaning entirely"
+    ],
+    "correctIndex": 0,
+    "explanation": "Yellow curbs must be evaluated based on posted signage. Without time-specific signs, restrictions may apply at all times. Posted signs specify exactly when loading is permitted or prohibited.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0061",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 2,
+    "text": "What does a bicycle symbol painted on the pavement with a solid white line indicate?",
+    "choices": [
+      "A designated bike lane that vehicles should not enter",
+      "Bicycles must exit the roadway",
+      "Bicycle parking area",
+      "Bicycle repair station"
+    ],
+    "correctIndex": 0,
+    "explanation": "A bicycle symbol with a solid white line marks a dedicated bike lane. Motor vehicles should not drive or park in these lanes except when necessary to turn.",
+    "reference": "DL-7: Pavement Markings",
+    "image": {
+      "type": "svg",
+      "assetId": "PAVEMENT_BIKE_LANE"
+    }
+  },
+  {
+    "id": "TX-PAV-0062",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 3,
+    "text": "What does a white diamond symbol painted on the pavement indicate?",
+    "choices": [
+      "A high-occupancy vehicle (HOV) or carpool lane",
+      "Jewelry store ahead",
+      "Premium parking",
+      "Diamond-shaped intersection ahead"
+    ],
+    "correctIndex": 0,
+    "explanation": "Diamond symbols mark HOV lanes reserved for vehicles with multiple occupants. Check posted signs for specific occupancy requirements and hours of operation.",
+    "reference": "DL-7: Pavement Markings",
+    "image": {
+      "type": "svg",
+      "assetId": "PAVEMENT_HOV_DIAMOND"
+    }
+  },
+  {
+    "id": "TX-PAV-0063",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 4,
+    "text": "What does a bicycle symbol with chevron markings (sharrow) indicate?",
+    "choices": [
+      "A shared lane where bicycles and vehicles both have right to use the full lane",
+      "Bicycles must stay to the right",
+      "Bicycle crossing ahead",
+      "Bicycles prohibited"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sharrows indicate shared lane usage where bicycles and motor vehicles share the travel lane. They remind drivers that cyclists have the right to use the full lane.",
+    "reference": "DL-7: Pavement Markings",
+    "image": {
+      "type": "svg",
+      "assetId": "PAVEMENT_SHARROW"
+    }
+  },
+  {
+    "id": "TX-PAV-0064",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 3,
+    "text": "What do the pavement markings for a center two-way left turn lane look like?",
+    "choices": [
+      "Yellow lines on both sides with breaks and arrows pointing in both directions",
+      "Solid white lines on both sides",
+      "Single dashed yellow line in the center",
+      "Double solid yellow lines"
+    ],
+    "correctIndex": 0,
+    "explanation": "Center turn lanes have distinctive yellow lines on both sides with arrows showing that traffic from both directions uses this lane exclusively for left turns, not through travel.",
+    "reference": "DL-7: Pavement Markings",
+    "image": {
+      "type": "svg",
+      "assetId": "PAVEMENT_TURN_LANE_CENTER"
+    }
+  },
+  {
+    "id": "TX-PAV-0065",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 4,
+    "text": "What does an X with the letters RR painted on the pavement indicate?",
+    "choices": [
+      "Railroad crossing ahead",
+      "Road repair zone",
+      "Rest area exit",
+      "Restricted route"
+    ],
+    "correctIndex": 0,
+    "explanation": "The RR with an X marking warns drivers that railroad tracks cross the road ahead. Drivers should slow down and look for trains before crossing.",
+    "reference": "DL-7: Pavement Markings",
+    "image": {
+      "type": "svg",
+      "assetId": "PAVEMENT_RAILROAD_CROSSING_X"
+    }
+  },
+  {
+    "id": "TX-PAV-0066",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 5,
+    "text": "How should you use a center two-way left turn lane?",
+    "choices": [
+      "Enter only to prepare for a left turn, not for passing or through travel",
+      "Use it to pass slow-moving vehicles",
+      "Use it to merge into traffic",
+      "Use it as a continuous travel lane"
+    ],
+    "correctIndex": 0,
+    "explanation": "Center turn lanes are exclusively for preparing to turn left. Drivers should enter the lane close to their turning point and not use it for passing or extended travel.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0067",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 3,
+    "text": "What does a handicapped parking symbol painted on the pavement indicate?",
+    "choices": [
+      "Parking space reserved for vehicles displaying disabled parking credentials",
+      "Accessible route to building entrance",
+      "Wheelchair rental location",
+      "Medical facility parking"
+    ],
+    "correctIndex": 0,
+    "explanation": "The wheelchair symbol marks parking spaces legally reserved for people with disabilities who display valid disabled parking permits or license plates.",
+    "reference": "DL-7: Pavement Markings",
+    "image": {
+      "type": "svg",
+      "assetId": "PAVEMENT_HANDICAP_SYMBOL"
+    }
+  },
+  {
+    "id": "TX-PAV-0068",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 4,
+    "text": "Can you drive in a bike lane to prepare for a right turn?",
+    "choices": [
+      "Yes, you should merge into the bike lane within 200 feet of the turn when safe",
+      "No, never enter a bike lane",
+      "Yes, at any distance from the turn",
+      "Only if no bicycles are visible"
+    ],
+    "correctIndex": 0,
+    "explanation": "Drivers should merge into the bike lane before turning right to avoid cutting off cyclists. Check for bicyclists, signal, and merge safely within 200 feet of the intersection.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0069",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 5,
+    "text": "What is the purpose of a sharrow versus a dedicated bike lane?",
+    "choices": [
+      "Sharrows indicate shared use of the lane, while bike lanes provide exclusive space for bicycles",
+      "Sharrows are for faster cyclists only",
+      "They mean exactly the same thing",
+      "Sharrows are temporary, bike lanes are permanent"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sharrows are used where space is insufficient for a separate bike lane, reminding drivers that cyclists have equal rights to the lane. Bike lanes provide dedicated space separated by lines.",
+    "reference": "DL-7: Pavement Markings"
+  },
+  {
+    "id": "TX-PAV-0070",
+    "topic": "PAVEMENT_MARKINGS",
+    "difficulty": 4,
+    "text": "What should you do when approaching an HOV lane marked with diamonds?",
+    "choices": [
+      "Check posted signs for occupancy requirements and hours before entering",
+      "Enter only during rush hour",
+      "Enter if your vehicle has two or more axles",
+      "These lanes are for emergency vehicles only"
+    ],
+    "correctIndex": 0,
+    "explanation": "HOV lanes have varying requirements for number of occupants and restricted hours. Always check posted signage before entering to ensure compliance with current regulations.",
+    "reference": "DL-7: Pavement Markings"
+  }
+]

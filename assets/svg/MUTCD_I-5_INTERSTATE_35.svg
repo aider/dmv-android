@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
+  <path d="M 10,75 L 75,10 L 140,75 L 75,140 Z" fill="#0033A0" stroke="#FFFFFF" stroke-width="4"/>
+  <text x="75" y="55" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">INTERSTATE</text>
+  <text x="75" y="110" font-family="Arial Black, sans-serif" font-size="56" font-weight="bold" fill="#FFFFFF" text-anchor="middle">35</text>
+</svg>

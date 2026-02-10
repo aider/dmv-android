@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Road -->
+  <rect x="0" y="100" width="400" height="100" fill="#555555"/>
+  <line x1="0" y1="150" x2="400" y2="150" stroke="#FFFF00" stroke-width="3" stroke-dasharray="20,15"/>
+
+  <!-- Your car (center) -->
+  <rect x="180" y="135" width="40" height="22" fill="#0066CC" stroke="#003366" stroke-width="2" rx="3"/>
+
+  <!-- Space cushion zones (green circles) -->
+  <!-- Front space -->
+  <ellipse cx="255" cy="146" rx="50" ry="30" fill="none" stroke="#00FF00" stroke-width="3" stroke-dasharray="8,4"/>
+  <text x="255" y="80" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#00FF00" text-anchor="middle">Front: 3+ sec</text>
+
+  <!-- Rear space -->
+  <ellipse cx="145" cy="146" rx="50" ry="30" fill="none" stroke="#00FF00" stroke-width="3" stroke-dasharray="8,4"/>
+  <text x="145" y="220" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#00FF00" text-anchor="middle">Rear: escape route</text>
+
+  <!-- Side spaces -->
+  <ellipse cx="200" cy="110" rx="35" ry="20" fill="none" stroke="#00FF00" stroke-width="2" stroke-dasharray="6,3"/>
+  <ellipse cx="200" cy="182" rx="35" ry="20" fill="none" stroke="#00FF00" stroke-width="2" stroke-dasharray="6,3"/>
+
+  <!-- Other vehicles (maintaining distance) -->
+  <rect x="280" y="135" width="35" height="20" fill="#666666" stroke="#333333" stroke-width="1" rx="2" opacity="0.6"/>
+  <rect x="90" y="135" width="35" height="20" fill="#666666" stroke="#333333" stroke-width="1" rx="2" opacity="0.6"/>
+
+  <!-- Text label -->
+  <text x="200" y="260" font-family="Arial Black, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">360° SPACE CUSHION</text>
+</svg>

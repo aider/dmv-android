@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+  <!-- Road surface -->
+  <rect x="0" y="0" width="300" height="200" fill="#555555"/>
+
+  <!-- Lane line -->
+  <line x1="150" y1="0" x2="150" y2="200" stroke="#FFFF00" stroke-width="3" stroke-dasharray="15,10"/>
+
+  <!-- Edge lines -->
+  <line x1="20" y1="0" x2="20" y2="200" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="280" y1="0" x2="280" y2="200" stroke="#FFFFFF" stroke-width="2"/>
+
+  <!-- "SCHOOL ZONE" text on pavement -->
+  <text x="70" y="85" font-family="Arial Black, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF" text-anchor="middle">SCHOOL</text>
+  <text x="70" y="125" font-family="Arial Black, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF" text-anchor="middle">ZONE</text>
+
+  <!-- Speed limit "20" -->
+  <text x="230" y="110" font-family="Arial Black, sans-serif" font-size="56" font-weight="bold" fill="#FFFFFF" text-anchor="middle">20</text>
+</svg>

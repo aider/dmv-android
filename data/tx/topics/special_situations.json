@@ -1,0 +1,950 @@
+[
+  {
+    "id": "TX-SPC-0001",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 2,
+    "text": "When a school bus stops with flashing red lights and an extended stop sign on an undivided roadway, vehicles in both directions must:",
+    "choices": [
+      "Stop and remain stopped until the lights stop flashing",
+      "Slow to 20 mph and proceed with caution",
+      "Stop only if on the same side as the bus",
+      "Stop only if children are visible"
+    ],
+    "correctIndex": 0,
+    "explanation": "On an undivided roadway, all vehicles in both directions must stop and remain stopped until the school bus's red lights stop flashing and the stop sign is retracted. This protects children crossing the street.",
+    "reference": "DL-7: Special Driving Situations",
+    "image": {
+      "type": "svg",
+      "assetId": "INTERSECTION_SCHOOL_BUS_STOPPED"
+    }
+  },
+  {
+    "id": "TX-SPC-0002",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 3,
+    "text": "You are traveling on a divided highway with a raised concrete median barrier. A school bus on the opposite side stops with red lights flashing. What should you do?",
+    "choices": [
+      "Continue driving at normal speed since the barrier separates traffic",
+      "Stop until the bus turns off its lights",
+      "Slow to 20 mph until past the bus",
+      "Stop only if the median is less than 5 feet wide"
+    ],
+    "correctIndex": 0,
+    "explanation": "On a divided highway with a physical barrier or median at least 5 feet wide, vehicles on the opposite side do not need to stop for a school bus. The barrier provides adequate separation and children cannot cross.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0003",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 1,
+    "text": "What is the minimum distance you must stop from a school bus with flashing red lights?",
+    "choices": [
+      "20 feet",
+      "10 feet",
+      "15 feet",
+      "25 feet"
+    ],
+    "correctIndex": 0,
+    "explanation": "Texas law requires drivers to stop at least 20 feet away from a stopped school bus with flashing red lights. This distance provides a safety buffer for children boarding or exiting the bus.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0004",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 2,
+    "text": "When driving through an active school zone with flashing signals, the speed limit is typically:",
+    "choices": [
+      "15 to 20 mph when children are present",
+      "25 mph regardless of conditions",
+      "30 mph during school hours only",
+      "10 mph at all times"
+    ],
+    "correctIndex": 0,
+    "explanation": "School zone speed limits are typically reduced to 15-20 mph when children are present or when school zone signals are flashing. These reduced speeds give drivers more time to react to children.",
+    "reference": "DL-7: Special Driving Situations",
+    "image": {
+      "type": "svg",
+      "assetId": "MUTCD_S4-3_SCHOOL_SPEED_LIMIT_20"
+    }
+  },
+  {
+    "id": "TX-SPC-0005",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 4,
+    "text": "A school bus ahead of you is slowing down with amber (yellow) warning lights flashing. What does this indicate?",
+    "choices": [
+      "The bus is preparing to stop to load or unload children",
+      "The bus is experiencing mechanical problems",
+      "You should pass the bus quickly before it stops",
+      "The bus is turning at the next intersection"
+    ],
+    "correctIndex": 0,
+    "explanation": "Amber warning lights on a school bus indicate the driver is preparing to stop to load or unload children. You should slow down and prepare to stop when the red lights begin flashing.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0006",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 3,
+    "text": "What is the penalty range for illegally passing a stopped school bus with flashing red lights in Texas?",
+    "choices": [
+      "$500 to $1,250 fine",
+      "$100 to $300 fine",
+      "$250 to $500 fine",
+      "$1,000 to $2,000 fine"
+    ],
+    "correctIndex": 0,
+    "explanation": "Texas imposes significant penalties for passing a stopped school bus, with fines ranging from $500 to $1,250. These heavy penalties reflect the serious danger this violation poses to children.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0007",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 2,
+    "text": "When are school zone speed limits typically in effect?",
+    "choices": [
+      "When posted signs or flashing lights indicate, usually 30 minutes before and after school",
+      "Only during the exact start and end times of school",
+      "From 7 AM to 7 PM on school days",
+      "24 hours a day when school is in session"
+    ],
+    "correctIndex": 0,
+    "explanation": "School zone speed limits are typically enforced when posted times indicate or when signals are flashing, usually starting 30 minutes before school begins and ending 30 minutes after school ends.",
+    "reference": "DL-7: Special Driving Situations",
+    "image": {
+      "type": "svg",
+      "assetId": "MUTCD_S1-1_SCHOOL_CROSSING"
+    }
+  },
+  {
+    "id": "TX-SPC-0008",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 1,
+    "text": "Can you pass a school bus from either direction when its red lights are flashing?",
+    "choices": [
+      "No, passing is prohibited from both directions on undivided roads",
+      "Yes, but only from the rear",
+      "Yes, if you slow to 15 mph",
+      "Yes, if no children are visible"
+    ],
+    "correctIndex": 0,
+    "explanation": "It is illegal to pass a school bus from any direction when its red lights are flashing on an undivided roadway. All traffic must stop until the lights stop flashing and children are safe.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0009",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 3,
+    "text": "You are on a four-lane road with a painted center turn lane. A school bus on the opposite side stops with red lights flashing. What must you do?",
+    "choices": [
+      "Stop, because a painted median does not divide the roadway",
+      "Continue, because the turn lane separates traffic",
+      "Slow to 20 mph but continue driving",
+      "Stop only if children are crossing"
+    ],
+    "correctIndex": 0,
+    "explanation": "A painted center turn lane or painted median does not divide a roadway. You must stop for a school bus with flashing red lights regardless of which side of the road you are on unless there is a physical barrier or median at least 5 feet wide.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0010",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 2,
+    "text": "When a school bus stop sign is extended and red lights are flashing, when can you proceed?",
+    "choices": [
+      "When the lights stop flashing and the stop sign is retracted",
+      "When the last child has boarded the bus",
+      "After waiting 10 seconds at a complete stop",
+      "When the bus driver waves you forward"
+    ],
+    "correctIndex": 0,
+    "explanation": "You must remain stopped until both the red lights stop flashing and the stop sign is fully retracted. Only then is it safe to proceed, as this signals all children have safely crossed.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0011",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 4,
+    "text": "While driving in a school zone, you see a crossing guard holding up a stop sign. What should you do?",
+    "choices": [
+      "Stop immediately and remain stopped until the guard signals it is safe to proceed",
+      "Slow to 10 mph and proceed carefully around the guard",
+      "Stop only if children are in the crosswalk",
+      "Honk to alert the guard and proceed slowly"
+    ],
+    "correctIndex": 0,
+    "explanation": "A crossing guard has the authority to stop traffic to protect children. You must stop immediately when a guard signals and wait until the guard indicates it is safe to proceed.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0012",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 2,
+    "text": "What does a pentagon-shaped yellow sign with black symbols indicate?",
+    "choices": [
+      "A school zone or school crossing ahead",
+      "A railroad crossing ahead",
+      "A construction zone ahead",
+      "A pedestrian crossing ahead"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pentagon-shaped signs are unique to school zones and school crossings. The distinctive five-sided shape makes these signs easily recognizable so drivers can prepare to watch for children.",
+    "reference": "DL-7: Special Driving Situations",
+    "image": {
+      "type": "svg",
+      "assetId": "PAVEMENT_SCHOOL_ZONE"
+    }
+  },
+  {
+    "id": "TX-SPC-0013",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 3,
+    "text": "A school bus is stopped ahead with alternating flashing red lights but the stop sign is not yet extended. What should you do?",
+    "choices": [
+      "Stop immediately, as flashing red lights require you to stop",
+      "Continue driving since the stop sign is not out",
+      "Slow down and prepare to stop",
+      "Pass quickly before the stop sign extends"
+    ],
+    "correctIndex": 0,
+    "explanation": "Flashing red lights on a school bus require you to stop immediately, regardless of whether the stop sign is extended. The lights are the primary signal that children are loading or unloading.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0014",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 1,
+    "text": "In a school zone, you should be especially alert for:",
+    "choices": [
+      "Children who may suddenly enter the roadway",
+      "Faster traffic from behind",
+      "Animals crossing the street",
+      "Emergency vehicles"
+    ],
+    "correctIndex": 0,
+    "explanation": "Children can be unpredictable and may dart into the street without warning. In school zones, drivers must be especially alert and prepared to stop quickly for children.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0015",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 5,
+    "text": "You are on a highway with five lanes: two in each direction and a center turn lane. A school bus stops on the opposite side with red lights flashing. What is required?",
+    "choices": [
+      "You must stop because the center turn lane does not create a divided highway",
+      "You can continue because there are multiple lanes separating you",
+      "You must slow to 20 mph but need not stop",
+      "You must stop only if the bus is directly across from you"
+    ],
+    "correctIndex": 0,
+    "explanation": "Unless there is a physical barrier or median at least 5 feet wide, the roadway is not considered divided. A center turn lane is painted only, so all traffic must stop for a school bus with flashing red lights.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0016",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 1,
+    "text": "How far from the nearest railroad track must you stop when a train is approaching?",
+    "choices": [
+      "15 to 50 feet",
+      "10 to 25 feet",
+      "5 to 15 feet",
+      "20 to 60 feet"
+    ],
+    "correctIndex": 0,
+    "explanation": "Texas law requires you to stop between 15 and 50 feet from the nearest railroad track when a train is approaching. This distance keeps you safe while allowing trains to pass.",
+    "reference": "DL-7: Special Driving Situations",
+    "image": {
+      "type": "svg",
+      "assetId": "SPECIAL_RAILROAD_STOP_PROCEDURE"
+    }
+  },
+  {
+    "id": "TX-SPC-0017",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 2,
+    "text": "You must stop at a railroad crossing when:",
+    "choices": [
+      "Lights are flashing, gates are lowering, or a train is visible or audible",
+      "Only when a train is visible",
+      "Only when gates are completely down",
+      "Only when a flag person signals you to stop"
+    ],
+    "correctIndex": 0,
+    "explanation": "You must stop at a railroad crossing when warning lights flash, gates are lowering, a train is approaching or visible, or a flag person signals. Any of these conditions indicates an approaching train.",
+    "reference": "DL-7: Special Driving Situations",
+    "image": {
+      "type": "svg",
+      "assetId": "MUTCD_R15-1_RAILROAD_CROSSING"
+    }
+  },
+  {
+    "id": "TX-SPC-0018",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 3,
+    "text": "While crossing railroad tracks, your vehicle becomes stalled on the tracks. What is the first thing you should do?",
+    "choices": [
+      "Get everyone out of the vehicle immediately and move away from the tracks",
+      "Try to restart the vehicle",
+      "Call 911 from inside the vehicle",
+      "Put the vehicle in neutral and try to push it off the tracks"
+    ],
+    "correctIndex": 0,
+    "explanation": "If your vehicle stalls on railroad tracks, immediately get everyone out and move far away from the tracks, preferably in the direction the train is coming from. Lives are more important than the vehicle.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0019",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 2,
+    "text": "When crossing railroad tracks, you should:",
+    "choices": [
+      "Not shift gears while on the tracks",
+      "Speed up to cross as quickly as possible",
+      "Stop on the tracks to look both ways",
+      "Cross at an angle to reduce the distance"
+    ],
+    "correctIndex": 0,
+    "explanation": "Never shift gears while crossing railroad tracks because your vehicle could stall. Cross in the gear you are already in and wait until you have completely cleared the tracks before shifting.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0020",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 1,
+    "text": "A round yellow sign with a black X and two R's means:",
+    "choices": [
+      "Railroad crossing ahead",
+      "Road closed ahead",
+      "Rest area ahead",
+      "Roundabout ahead"
+    ],
+    "correctIndex": 0,
+    "explanation": "The round yellow warning sign with an X and RR indicates a railroad crossing ahead. This advance warning sign gives you time to prepare to stop if necessary.",
+    "reference": "DL-7: Special Driving Situations",
+    "image": {
+      "type": "svg",
+      "assetId": "MUTCD_R15-1_RAILROAD_CROSSING"
+    }
+  },
+  {
+    "id": "TX-SPC-0021",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 4,
+    "text": "After one train passes at a railroad crossing with multiple tracks, you should:",
+    "choices": [
+      "Check for a second train on other tracks before crossing",
+      "Cross immediately before another train comes",
+      "Wait at least 30 seconds before crossing",
+      "Cross only when the gates fully rise"
+    ],
+    "correctIndex": 0,
+    "explanation": "At crossings with multiple tracks, a second train may be approaching on another track. Always check all tracks in both directions before crossing, even after one train has passed.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0022",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 2,
+    "text": "Is it legal to drive around lowered railroad crossing gates?",
+    "choices": [
+      "No, it is illegal and extremely dangerous",
+      "Yes, if you can see no train is coming",
+      "Yes, if you are already partially across when gates lower",
+      "Yes, if the lights stop flashing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Driving around lowered railroad gates is illegal and extremely dangerous. Gates lower because a train is approaching, and going around them can result in a fatal collision.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0023",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 3,
+    "text": "Before crossing railroad tracks, you should make sure:",
+    "choices": [
+      "You can completely clear all tracks without stopping",
+      "No other vehicles are crossing at the same time",
+      "Your vehicle is in first gear",
+      "Your windows are rolled down to hear trains"
+    ],
+    "correctIndex": 0,
+    "explanation": "Before starting to cross railroad tracks, make sure there is enough space on the other side for your entire vehicle to clear all tracks without stopping. Never stop on the tracks.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0024",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 2,
+    "text": "After your vehicle is stalled on railroad tracks and everyone has evacuated, what should you do next?",
+    "choices": [
+      "Call 911 and provide the crossing number posted on the signal equipment",
+      "Return to the vehicle and try to start it again",
+      "Wait by the tracks for the police to arrive",
+      "Try to flag down passing vehicles for help"
+    ],
+    "correctIndex": 0,
+    "explanation": "After evacuating a stalled vehicle on tracks, immediately call 911 and give them the crossing number (posted on the signal or nearby). This helps railroad operators stop any approaching trains.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0025",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 1,
+    "text": "Flashing red lights at a railroad crossing mean:",
+    "choices": [
+      "Stop and do not proceed until the lights stop flashing",
+      "Slow down and proceed with caution",
+      "Stop, look both ways, then proceed",
+      "A train has just passed and the crossing is now clear"
+    ],
+    "correctIndex": 0,
+    "explanation": "Flashing red lights at a railroad crossing mean a train is approaching. You must stop and remain stopped until the lights stop flashing, even if you cannot see or hear a train.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0026",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 4,
+    "text": "What is the minimum distance you must park from railroad tracks?",
+    "choices": [
+      "100 feet",
+      "50 feet",
+      "75 feet",
+      "150 feet"
+    ],
+    "correctIndex": 0,
+    "explanation": "Texas law requires parking at least 100 feet away from railroad tracks. This distance prevents your vehicle from being struck by passing trains and keeps the crossing clear for other traffic.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0027",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 3,
+    "text": "You see a pavement marking with a large X and two R's at an intersection. This indicates:",
+    "choices": [
+      "Railroad tracks cross the road ahead",
+      "Do not enter this intersection",
+      "Reversible lanes ahead",
+      "Restricted parking zone"
+    ],
+    "correctIndex": 0,
+    "explanation": "The X with RR pavement marking warns drivers that railroad tracks cross the roadway. This marking provides an additional visual warning to prepare drivers to stop if a train is approaching.",
+    "reference": "DL-7: Special Driving Situations",
+    "image": {
+      "type": "svg",
+      "assetId": "PAVEMENT_RAILROAD_CROSSING_X"
+    }
+  },
+  {
+    "id": "TX-SPC-0028",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 2,
+    "text": "When approaching railroad tracks, you should always:",
+    "choices": [
+      "Look both directions before crossing, even if no warning signals are present",
+      "Trust the warning signals to alert you to approaching trains",
+      "Cross quickly to minimize time on the tracks",
+      "Stop completely regardless of signals or gates"
+    ],
+    "correctIndex": 0,
+    "explanation": "Always look both ways before crossing railroad tracks, even if there are no signals or if signals are not activated. Signals can malfunction, and trains may approach unexpectedly.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0029",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 5,
+    "text": "If you cannot get your vehicle off railroad tracks and you can see or hear a train approaching, you should move away from the tracks:",
+    "choices": [
+      "In the direction the train is coming from, at an angle away from the tracks",
+      "In the direction the train is traveling",
+      "Perpendicular to the tracks on either side",
+      "Directly away from your vehicle"
+    ],
+    "correctIndex": 0,
+    "explanation": "Move in the direction the train is coming from at an angle away from the tracks. This protects you from debris that will fly in the direction the train is traveling when it strikes your vehicle.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0030",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 3,
+    "text": "At a railroad crossing without gates or flashing lights, you must:",
+    "choices": [
+      "Slow down, look both ways, and be prepared to stop",
+      "Always come to a complete stop",
+      "Proceed at normal speed if no train is visible",
+      "Sound your horn before crossing"
+    ],
+    "correctIndex": 0,
+    "explanation": "At passive railroad crossings (no gates or lights), you must slow down, look carefully in both directions, and be prepared to stop if a train is approaching. Not all crossings have warning devices.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0031",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 2,
+    "text": "What does an orange diamond-shaped sign indicate?",
+    "choices": [
+      "Work zone or construction area ahead",
+      "School zone ahead",
+      "Railroad crossing ahead",
+      "Detour ahead"
+    ],
+    "correctIndex": 0,
+    "explanation": "Orange diamond-shaped signs indicate temporary work zones or construction areas. These signs warn drivers to prepare for changed conditions, workers, and equipment on or near the roadway.",
+    "reference": "DL-7: Special Driving Situations",
+    "image": {
+      "type": "svg",
+      "assetId": "MUTCD_W20-1_ROAD_CONSTRUCTION"
+    }
+  },
+  {
+    "id": "TX-SPC-0032",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 1,
+    "text": "In active work zones in Texas, traffic fines are:",
+    "choices": [
+      "Doubled",
+      "The same as normal",
+      "Tripled",
+      "Increased by 50%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Texas doubles fines for traffic violations in active work zones where workers are present. These increased penalties encourage drivers to slow down and drive carefully to protect workers.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0033",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 2,
+    "text": "When you see a flagger holding a STOP paddle, you must:",
+    "choices": [
+      "Stop immediately and remain stopped until the flagger signals you to proceed",
+      "Slow to 10 mph and proceed with caution",
+      "Stop, then proceed if the way looks clear",
+      "Stop only if workers are in the roadway"
+    ],
+    "correctIndex": 0,
+    "explanation": "A flagger with a STOP paddle has the same authority as a stop sign. You must stop immediately and wait until the flagger uses the SLOW paddle or signals you to proceed.",
+    "reference": "DL-7: Special Driving Situations",
+    "image": {
+      "type": "svg",
+      "assetId": "SPECIAL_WORK_ZONE_FLAGGER"
+    }
+  },
+  {
+    "id": "TX-SPC-0034",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 3,
+    "text": "Under Texas Move Over Law, when you see a stopped emergency vehicle with flashing lights on the roadside, you must:",
+    "choices": [
+      "Change lanes away from the vehicle, or slow to 20 mph below the limit if you cannot change lanes",
+      "Slow to 20 mph regardless of which lane you are in",
+      "Stop completely until the vehicle leaves",
+      "Change lanes only if directed by emergency personnel"
+    ],
+    "correctIndex": 0,
+    "explanation": "Texas Move Over Law requires drivers to change lanes away from stopped emergency vehicles with flashing lights. If you cannot change lanes safely, you must slow to 20 mph below the posted limit.",
+    "reference": "DL-7: Special Driving Situations",
+    "image": {
+      "type": "svg",
+      "assetId": "INTERSECTION_EMERGENCY_VEHICLE"
+    }
+  },
+  {
+    "id": "TX-SPC-0035",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 2,
+    "text": "A flagger displays a SLOW paddle. What should you do?",
+    "choices": [
+      "Reduce your speed and proceed with caution",
+      "Come to a complete stop",
+      "Maintain your current speed",
+      "Slow to exactly 20 mph"
+    ],
+    "correctIndex": 0,
+    "explanation": "When a flagger displays a SLOW paddle (orange), reduce your speed and proceed with caution. Be prepared to stop if conditions require or if the flagger changes to a STOP signal.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0036",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 4,
+    "text": "If the posted speed limit is 25 mph or less and you cannot change lanes away from a stopped emergency vehicle, how much must you slow down?",
+    "choices": [
+      "To 5 mph",
+      "To 10 mph",
+      "To 15 mph",
+      "To 20 mph below the limit"
+    ],
+    "correctIndex": 0,
+    "explanation": "Under Texas Move Over Law, if the posted limit is 25 mph or less and you cannot change lanes, you must slow to 5 mph. For higher speed limits, slow to 20 mph below the posted limit.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0037",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 1,
+    "text": "In work zones, you should:",
+    "choices": [
+      "Watch for workers and equipment entering the roadway",
+      "Speed up to exit the zone quickly",
+      "Change lanes frequently to find the fastest route",
+      "Follow very closely to the vehicle ahead"
+    ],
+    "correctIndex": 0,
+    "explanation": "In work zones, always watch for workers and equipment that may enter the roadway unexpectedly. Stay alert and be prepared to stop or slow down for changing conditions.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0038",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 3,
+    "text": "What is the maximum fine for violating the Texas Move Over Law?",
+    "choices": [
+      "$2,000",
+      "$500",
+      "$1,000",
+      "$5,000"
+    ],
+    "correctIndex": 0,
+    "explanation": "Violating Texas Move Over Law can result in fines up to $2,000. If the violation results in property damage, bodily injury, or death, penalties are even more severe.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0039",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 2,
+    "text": "Which vehicles are covered under the Texas Move Over Law?",
+    "choices": [
+      "Police, fire, EMS, tow trucks, and TxDOT vehicles with flashing lights",
+      "Only police and fire vehicles",
+      "Only emergency medical vehicles",
+      "Any vehicle with hazard lights on"
+    ],
+    "correctIndex": 0,
+    "explanation": "Texas Move Over Law applies to police, fire, EMS, tow trucks, and TxDOT maintenance vehicles when they are stopped with flashing lights. This protects all roadside workers and emergency personnel.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0040",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 2,
+    "text": "When approaching a work zone where lanes are merging, you should:",
+    "choices": [
+      "Merge early and avoid unnecessary lane changes",
+      "Continue in your lane until the last possible moment",
+      "Speed up to merge ahead of other traffic",
+      "Change lanes multiple times to find the fastest route"
+    ],
+    "correctIndex": 0,
+    "explanation": "Merge early when approaching lane closures in work zones. This reduces congestion and dangerous last-minute lane changes, making the work zone safer for everyone.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0041",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 3,
+    "text": "A flagger extends their arm horizontally. This signal means:",
+    "choices": [
+      "Stop",
+      "Slow down",
+      "Proceed",
+      "Prepare to stop"
+    ],
+    "correctIndex": 0,
+    "explanation": "When a flagger extends their arm horizontally, this is a stop signal. You must stop immediately and remain stopped until the flagger signals you to proceed.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0042",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 1,
+    "text": "An orange warning sign with a symbol of a person holding a flag indicates:",
+    "choices": [
+      "Flagger ahead in work zone",
+      "Flag ceremony ahead",
+      "Pedestrian crossing ahead",
+      "Rest area ahead"
+    ],
+    "correctIndex": 0,
+    "explanation": "An orange warning sign showing a person with a flag alerts drivers that a flagger is ahead controlling traffic. Prepare to slow down or stop as directed by the flagger.",
+    "reference": "DL-7: Special Driving Situations",
+    "image": {
+      "type": "svg",
+      "assetId": "MUTCD_W20-7_FLAGGER_AHEAD"
+    }
+  },
+  {
+    "id": "TX-SPC-0043",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 4,
+    "text": "When a flagger waves a flag in a vertical up-and-down motion, you should:",
+    "choices": [
+      "Slow down",
+      "Stop immediately",
+      "Proceed at normal speed",
+      "Speed up to clear the area"
+    ],
+    "correctIndex": 0,
+    "explanation": "A vertical up-and-down flag motion from a flagger signals drivers to slow down. This is different from the STOP paddle and indicates caution is needed but you may continue at reduced speed.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0044",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 2,
+    "text": "In work zones, you should NOT:",
+    "choices": [
+      "Change lanes unnecessarily",
+      "Obey reduced speed limits",
+      "Watch for workers",
+      "Follow posted detour signs"
+    ],
+    "correctIndex": 0,
+    "explanation": "Avoid unnecessary lane changes in work zones. Frequent lane changes increase the risk of collisions and can endanger workers. Stay in your lane unless you must merge due to lane closures.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0045",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 3,
+    "text": "You must treat a flagger's signals the same as:",
+    "choices": [
+      "Official traffic control signals",
+      "Suggestions for safer driving",
+      "Warning signs only",
+      "Advisory speed limits"
+    ],
+    "correctIndex": 0,
+    "explanation": "Flaggers have the same authority as traffic control signals. You must obey their directions just as you would obey a stop sign or traffic light. Failure to obey can result in citations.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0046",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 1,
+    "text": "If your vehicle breaks down on the highway, you should:",
+    "choices": [
+      "Pull over to the right shoulder, turn on hazard lights, and raise your hood",
+      "Stop in your lane and turn on hazard lights",
+      "Continue driving to the nearest exit",
+      "Stop on the left shoulder for easier access to help"
+    ],
+    "correctIndex": 0,
+    "explanation": "When your vehicle breaks down, safely pull to the right shoulder, activate hazard lights, and raise the hood to signal trouble. This alerts other drivers and keeps you out of traffic lanes.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0047",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 2,
+    "text": "If you experience a tire blowout while driving, you should:",
+    "choices": [
+      "Grip the wheel firmly, avoid sudden braking, and let the vehicle slow naturally",
+      "Brake hard immediately to stop quickly",
+      "Accelerate to maintain control",
+      "Turn sharply toward the shoulder"
+    ],
+    "correctIndex": 0,
+    "explanation": "During a tire blowout, grip the wheel firmly, avoid sudden braking, and let the vehicle slow down naturally. Steer straight and brake gently once speed is reduced, then pull off the road safely.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0048",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 3,
+    "text": "If your brakes fail while driving, you should first:",
+    "choices": [
+      "Pump the brake pedal rapidly several times",
+      "Pull the parking brake hard",
+      "Turn off the engine",
+      "Shift into neutral"
+    ],
+    "correctIndex": 0,
+    "explanation": "If brakes fail, first pump the brake pedal rapidly to build up brake fluid pressure. This may restore enough braking power to slow or stop. If this fails, downshift and use the parking brake gradually.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0049",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 2,
+    "text": "If your vehicle catches fire, you should:",
+    "choices": [
+      "Pull over immediately, get everyone out, move far away, and call 911",
+      "Drive to the nearest fire station",
+      "Try to put out the fire with a portable extinguisher",
+      "Open the hood to see where the fire is"
+    ],
+    "correctIndex": 0,
+    "explanation": "If your vehicle catches fire, immediately pull over, evacuate everyone, move far from the vehicle, and call 911. Vehicle fires spread rapidly and the vehicle may explode. Never open the hood of a car with an engine fire.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0050",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 1,
+    "text": "If you are involved in a crash, you must:",
+    "choices": [
+      "Stop immediately at the scene or nearby",
+      "Continue to the nearest police station",
+      "Exchange information only if someone is injured",
+      "Leave if the other driver agrees it was minor"
+    ],
+    "correctIndex": 0,
+    "explanation": "Texas law requires you to stop immediately after any crash. Leaving the scene is a hit-and-run crime with serious penalties, even for minor crashes with no injuries.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0051",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 3,
+    "text": "After a crash, you must report it to police if:",
+    "choices": [
+      "There are injuries or property damage exceeding $1,000",
+      "Any vehicle needs to be towed",
+      "Airbags deployed in any vehicle",
+      "More than two vehicles are involved"
+    ],
+    "correctIndex": 0,
+    "explanation": "Texas law requires crash reports when there are injuries, deaths, or property damage exceeding $1,000. File the report within 10 days of the crash, even if police did not come to the scene.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0052",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 2,
+    "text": "If your vehicle is broken down on a busy highway, you should generally:",
+    "choices": [
+      "Stay in your vehicle with doors locked until help arrives",
+      "Stand behind your vehicle to warn other drivers",
+      "Walk to the nearest exit to call for help",
+      "Accept rides from passing motorists"
+    ],
+    "correctIndex": 0,
+    "explanation": "On busy highways, it is generally safer to stay inside your locked vehicle with your seatbelt on until help arrives. Standing outside puts you at risk of being struck by passing vehicles.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0053",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 4,
+    "text": "If you must exit your disabled vehicle on a highway, you should:",
+    "choices": [
+      "Exit through the passenger side door away from traffic",
+      "Exit through the driver's side door",
+      "Exit only after stopping all traffic with hand signals",
+      "Wait until emergency vehicles arrive to exit"
+    ],
+    "correctIndex": 0,
+    "explanation": "If you must exit a disabled vehicle on a highway, use the passenger side door to exit away from traffic. This reduces your risk of being struck by passing vehicles.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0054",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 2,
+    "text": "After a crash, you should exchange which information with the other driver?",
+    "choices": [
+      "Name, address, phone number, insurance information, and driver license number",
+      "Only insurance information",
+      "Only name and phone number",
+      "Only insurance and vehicle registration"
+    ],
+    "correctIndex": 0,
+    "explanation": "After a crash, exchange names, addresses, phone numbers, insurance information, and driver license numbers with all involved parties. This information is needed for insurance claims and police reports.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0055",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 3,
+    "text": "If you encounter a hazardous materials spill on the roadway, you should:",
+    "choices": [
+      "Stay upwind and uphill from the spill, do not touch it, and call 911",
+      "Drive through it quickly to avoid prolonged exposure",
+      "Stop and help injured people immediately",
+      "Place warning flares near the spill to alert others"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hazardous materials spills can be deadly. Stay upwind and uphill to avoid fumes, do not touch the material, and immediately call 911. Let trained hazmat teams handle the situation.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0056",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 1,
+    "text": "After a crash with no injuries, should you move the vehicles if they are blocking traffic?",
+    "choices": [
+      "Yes, if it is safe to do so, move vehicles to the shoulder",
+      "No, never move vehicles until police arrive",
+      "Yes, always move vehicles immediately regardless of conditions",
+      "No, leave vehicles in place to preserve evidence"
+    ],
+    "correctIndex": 0,
+    "explanation": "If there are no injuries and it is safe to do so, Texas law requires you to move vehicles to the shoulder to prevent additional crashes. Take photos first if possible for insurance purposes.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0057",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 4,
+    "text": "If your brakes fail and pumping does not restore pressure, you should next:",
+    "choices": [
+      "Downshift to a lower gear to use engine braking",
+      "Turn off the ignition immediately",
+      "Swerve side to side to slow down",
+      "Drive off the road into a ditch"
+    ],
+    "correctIndex": 0,
+    "explanation": "If pumping the brakes does not work, downshift to a lower gear to use engine braking to slow the vehicle. Then gradually apply the parking brake. Look for an escape route such as an uphill area or open space.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0058",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 2,
+    "text": "If you are involved in a crash, you should NOT:",
+    "choices": [
+      "Admit fault or apologize at the scene",
+      "Check for injuries to all parties",
+      "Call 911 if anyone is hurt",
+      "Exchange insurance information"
+    ],
+    "correctIndex": 0,
+    "explanation": "Never admit fault or apologize at the scene of a crash, as statements can be used against you later. Stick to facts when exchanging information and let insurance companies and authorities determine fault.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0059",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 3,
+    "text": "If you have warning triangles or flares after a breakdown, you should place them:",
+    "choices": [
+      "Behind your vehicle at increasing distances to warn approaching traffic",
+      "In front of your vehicle only",
+      "Under your vehicle to mark its location",
+      "On top of your vehicle for better visibility"
+    ],
+    "correctIndex": 0,
+    "explanation": "Place warning triangles or flares behind your vehicle at increasing distances (such as 10, 100, and 200 feet) to give approaching drivers advance warning. This helps prevent additional crashes.",
+    "reference": "DL-7: Special Driving Situations"
+  },
+  {
+    "id": "TX-SPC-0060",
+    "topic": "SPECIAL_SITUATIONS",
+    "difficulty": 5,
+    "text": "If you are the first to arrive at a crash scene with injured people, your first priority should be to:",
+    "choices": [
+      "Call 911 and keep injured people still unless they are in immediate danger",
+      "Move all injured people away from vehicles immediately",
+      "Give first aid before calling for emergency help",
+      "Direct traffic around the crash scene"
+    ],
+    "correctIndex": 0,
+    "explanation": "At a crash scene, first call 911 to get professional help on the way. Keep injured people still unless there is immediate danger like fire, as moving them can worsen injuries. Let trained medical personnel provide treatment.",
+    "reference": "DL-7: Special Driving Situations"
+  }
+]

@@ -46,7 +46,10 @@ captures/
 .navigation/
 output.json
 
-# OS-specific files
+# Node modules
+node_modules/
+
+# OS files
 .DS_Store
 .DS_Store?
 ._*
@@ -55,9 +58,25 @@ output.json
 ehthumbs.db
 Thumbs.db
 
+# IDE files
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
 # Version control
 .svn/
-.git/
 
 # Android Profiling
 *.hprof
+
+# Build outputs
+dist/
