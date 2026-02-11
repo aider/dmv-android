@@ -21,6 +21,7 @@ import com.dmv.texas.ui.screen.import_.ImportScreen
 import com.dmv.texas.ui.screen.quiz.QuizScreen
 import com.dmv.texas.ui.screen.quiz.QuizViewModel
 import com.dmv.texas.ui.screen.results.ResultsScreen
+import com.dmv.texas.ui.screen.about.AboutScreen
 import com.dmv.texas.ui.screen.stats.StatsScreen
 
 /**
@@ -64,6 +65,9 @@ fun NavGraph(
                 },
                 onOpenDebug = {
                     navController.navigate(Screen.Debug.route)
+                },
+                onOpenAbout = {
+                    navController.navigate(Screen.About.route)
                 }
             )
         }
@@ -152,6 +156,13 @@ fun NavGraph(
         // ── Data Quality ────────────────────────────────────────
         composable(Screen.DataQuality.route) {
             DataQualityScreen(
+                onBack = { navController.popBackStack() }
+            )
+        }
+
+        // ── About ──────────────────────────────────────────────
+        composable(Screen.About.route) {
+            AboutScreen(
                 onBack = { navController.popBackStack() }
             )
         }
