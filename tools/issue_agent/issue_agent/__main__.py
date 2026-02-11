@@ -4,6 +4,8 @@ Starts a FastAPI server that accepts GitHub webhook events (issue opened/reopene
 and can also be triggered manually via POST /run/{issue_number}.
 """
 
+from __future__ import annotations
+
 import hashlib
 import hmac
 import json
