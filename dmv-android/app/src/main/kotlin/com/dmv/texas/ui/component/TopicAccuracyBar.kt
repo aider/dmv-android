@@ -19,7 +19,7 @@ import com.dmv.texas.ui.theme.CorrectGreen
 import com.dmv.texas.ui.theme.DMVTheme
 import com.dmv.texas.ui.theme.IncorrectRed
 import com.dmv.texas.ui.theme.WarningAmber
-import java.util.Locale
+import com.dmv.texas.ui.util.formatTopicDisplayName
 
 /**
  * Displays a topic name with a horizontal progress bar showing accuracy percentage.
@@ -53,7 +53,7 @@ fun TopicAccuracyBar(
             verticalAlignment = Alignment.CenterVertically
         ) {
             Text(
-                text = formatTopicName(topic),
+                text = formatTopicDisplayName(topic),
                 style = MaterialTheme.typography.bodyLarge,
                 fontWeight = FontWeight.Medium,
                 modifier = Modifier.weight(1f)
@@ -76,20 +76,6 @@ fun TopicAccuracyBar(
     }
 }
 
-/**
- * Formats a topic name by replacing underscores with spaces and converting to title case.
- * For example, "road_signs" becomes "Road Signs".
- */
-private fun formatTopicName(topic: String): String {
-    return topic
-        .replace('_', ' ')
-        .split(' ')
-        .joinToString(" ") { word ->
-            word.replaceFirstChar {
-                if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString()
-            }
-        }
-}
 
 @Preview(showBackground = true)
 @Composable

@@ -20,6 +20,7 @@ import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.RangeSlider
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
@@ -35,6 +36,7 @@ import com.dmv.texas.data.local.dao.TopicCount
 import com.dmv.texas.data.model.QuizConfig
 import com.dmv.texas.data.model.QuizMode
 import com.dmv.texas.ui.theme.DMVTheme
+import com.dmv.texas.ui.util.formatTopicDisplayName
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
@@ -48,190 +50,205 @@ fun HomeScreen(
     val state by viewModel.state.collectAsState()
 
     Column(
-        modifier = modifier
-            .fillMaxSize()
-            .verticalScroll(rememberScrollState())
-            .padding(horizontal = 20.dp, vertical = 16.dp),
-        verticalArrangement = Arrangement.spacedBy(16.dp)
+        modifier = modifier.fillMaxSize()
     ) {
-        // Title
-        Text(
-            text = "TX DMV Practice",
-            style = MaterialTheme.typography.headlineLarge,
-            modifier = Modifier.fillMaxWidth(),
-            textAlign = TextAlign.Center
-        )
-
-        Text(
-            text = "${state.totalQuestions} questions available",
-            style = MaterialTheme.typography.bodyMedium,
-            color = MaterialTheme.colorScheme.onSurfaceVariant,
-            modifier = Modifier.fillMaxWidth(),
-            textAlign = TextAlign.Center
-        )
-
-        HorizontalDivider()
-
-        // Mode selector
-        Text(
-            text = "Mode",
-            style = MaterialTheme.typography.titleLarge
-        )
-
-        FlowRow(
-            horizontalArrangement = Arrangement.spacedBy(8.dp),
-            verticalArrangement = Arrangement.spacedBy(8.dp)
+        // Scrollable content
+        Column(
+            modifier = Modifier
+                .weight(1f)
+                .verticalScroll(rememberScrollState())
+                .padding(horizontal = 20.dp, vertical = 16.dp),
+            verticalArrangement = Arrangement.spacedBy(16.dp)
         ) {
-            QuizMode.entries.forEach { mode ->
-                val label = when (mode) {
-                    QuizMode.MISTAKES -> "${mode.displayName} (${state.mistakeCount})"
-                    else -> mode.displayName
-                }
-                FilterChip(
-                    selected = state.selectedMode == mode,
-                    onClick = { viewModel.setMode(mode) },
-                    label = { Text(label) },
-                    enabled = mode != QuizMode.MISTAKES || state.mistakeCount > 0
-                )
-            }
-        }
+            // Title
+            Text(
+                text = "TX DMV Practice",
+                style = MaterialTheme.typography.headlineLarge,
+                modifier = Modifier.fillMaxWidth(),
+                textAlign = TextAlign.Center
+            )
 
-        // Topic selection (hidden for MISTAKES mode)
-        if (state.selectedMode != QuizMode.MISTAKES) {
+            Text(
+                text = "${state.totalQuestions} questions available",
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                modifier = Modifier.fillMaxWidth(),
+                textAlign = TextAlign.Center
+            )
+
             HorizontalDivider()
 
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceBetween,
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Text(
-                    text = "Topics",
-                    style = MaterialTheme.typography.titleLarge
-                )
-                Row {
-                    TextButton(onClick = { viewModel.selectAllTopics() }) {
-                        Text("All")
-                    }
-                    TextButton(onClick = { viewModel.clearAllTopics() }) {
-                        Text("None")
-                    }
-                }
-            }
-
-            state.topics.forEach { topicCount ->
-                Row(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(vertical = 2.dp),
-                    verticalAlignment = Alignment.CenterVertically
-                ) {
-                    Checkbox(
-                        checked = state.selectedTopics.contains(topicCount.topic),
-                        onCheckedChange = { viewModel.toggleTopic(topicCount.topic) }
-                    )
-                    Spacer(Modifier.width(8.dp))
-                    Text(
-                        text = topicCount.topic,
-                        style = MaterialTheme.typography.bodyLarge,
-                        modifier = Modifier.weight(1f)
-                    )
-                    Text(
-                        text = "${topicCount.count}",
-                        style = MaterialTheme.typography.bodyMedium,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
-                }
-            }
-        }
-
-        HorizontalDivider()
-
-        // Question count selector
-        Text(
-            text = "Questions",
-            style = MaterialTheme.typography.titleLarge
-        )
-
-        FlowRow(
-            horizontalArrangement = Arrangement.spacedBy(8.dp),
-            verticalArrangement = Arrangement.spacedBy(8.dp)
-        ) {
-            listOf(10, 20, 30, 50).forEach { count ->
-                FilterChip(
-                    selected = state.questionCount == count,
-                    onClick = { viewModel.setQuestionCount(count) },
-                    label = { Text("$count") }
-                )
-            }
-        }
-
-        HorizontalDivider()
-
-        // Difficulty range slider
-        Text(
-            text = "Difficulty",
-            style = MaterialTheme.typography.titleLarge
-        )
-
-        val difficultyLabels = mapOf(1 to "Easy", 2 to "Medium", 3 to "Hard")
-
-        Text(
-            text = "${difficultyLabels[state.minDifficulty] ?: state.minDifficulty}" +
-                " - ${difficultyLabels[state.maxDifficulty] ?: state.maxDifficulty}",
-            style = MaterialTheme.typography.bodyMedium,
-            color = MaterialTheme.colorScheme.onSurfaceVariant
-        )
-
-        RangeSlider(
-            value = state.minDifficulty.toFloat()..state.maxDifficulty.toFloat(),
-            onValueChange = { range ->
-                viewModel.setDifficultyRange(
-                    range.start.toInt(),
-                    range.endInclusive.toInt()
-                )
-            },
-            valueRange = 1f..3f,
-            steps = 1
-        )
-
-        Spacer(Modifier.height(8.dp))
-
-        // Start Quiz button
-        Button(
-            onClick = { onStartQuiz(viewModel.buildConfig()) },
-            enabled = viewModel.canStart(),
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(56.dp)
-        ) {
+            // Mode selector
             Text(
-                text = "Start Quiz",
+                text = "Mode",
                 style = MaterialTheme.typography.titleLarge
             )
-        }
 
-        // Stats button
-        OutlinedButton(
-            onClick = onOpenStats,
-            modifier = Modifier.fillMaxWidth()
-        ) {
-            Text("View Stats")
-        }
+            FlowRow(
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                verticalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                QuizMode.entries.forEach { mode ->
+                    val label = when (mode) {
+                        QuizMode.MISTAKES -> "${mode.displayName} (${state.mistakeCount})"
+                        else -> mode.displayName
+                    }
+                    FilterChip(
+                        selected = state.selectedMode == mode,
+                        onClick = { viewModel.setMode(mode) },
+                        label = { Text(label) },
+                        enabled = mode != QuizMode.MISTAKES || state.mistakeCount > 0
+                    )
+                }
+            }
 
-        // Debug button
-        TextButton(
-            onClick = onOpenDebug,
-            modifier = Modifier.fillMaxWidth()
-        ) {
+            // Topic selection (hidden for MISTAKES mode)
+            if (state.selectedMode != QuizMode.MISTAKES) {
+                HorizontalDivider()
+
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text(
+                        text = "Topics",
+                        style = MaterialTheme.typography.titleLarge
+                    )
+                    Row {
+                        TextButton(onClick = { viewModel.selectAllTopics() }) {
+                            Text("All")
+                        }
+                        TextButton(onClick = { viewModel.clearAllTopics() }) {
+                            Text("None")
+                        }
+                    }
+                }
+
+                state.topics.forEach { topicCount ->
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(vertical = 2.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Checkbox(
+                            checked = state.selectedTopics.contains(topicCount.topic),
+                            onCheckedChange = { viewModel.toggleTopic(topicCount.topic) }
+                        )
+                        Spacer(Modifier.width(8.dp))
+                        Text(
+                            text = formatTopicDisplayName(topicCount.topic),
+                            style = MaterialTheme.typography.bodyLarge,
+                            modifier = Modifier.weight(1f)
+                        )
+                        Text(
+                            text = "${topicCount.count}",
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                }
+            }
+
+            HorizontalDivider()
+
+            // Question count selector
             Text(
-                text = "Debug",
-                color = MaterialTheme.colorScheme.outline
+                text = "Questions",
+                style = MaterialTheme.typography.titleLarge
             )
+
+            FlowRow(
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                verticalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                listOf(10, 20, 30, 50).forEach { count ->
+                    FilterChip(
+                        selected = state.questionCount == count,
+                        onClick = { viewModel.setQuestionCount(count) },
+                        label = { Text("$count") }
+                    )
+                }
+            }
+
+            HorizontalDivider()
+
+            // Difficulty range slider
+            Text(
+                text = "Difficulty",
+                style = MaterialTheme.typography.titleLarge
+            )
+
+            val difficultyLabels = mapOf(1 to "Easy", 2 to "Medium", 3 to "Hard")
+
+            Text(
+                text = "${difficultyLabels[state.minDifficulty] ?: state.minDifficulty}" +
+                    " - ${difficultyLabels[state.maxDifficulty] ?: state.maxDifficulty}",
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant
+            )
+
+            RangeSlider(
+                value = state.minDifficulty.toFloat()..state.maxDifficulty.toFloat(),
+                onValueChange = { range ->
+                    viewModel.setDifficultyRange(
+                        range.start.toInt(),
+                        range.endInclusive.toInt()
+                    )
+                },
+                valueRange = 1f..3f,
+                steps = 1
+            )
+
+            // Stats button
+            OutlinedButton(
+                onClick = onOpenStats,
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text("View Stats")
+            }
+
+            // Debug button
+            TextButton(
+                onClick = onOpenDebug,
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text(
+                    text = "Debug",
+                    color = MaterialTheme.colorScheme.outline
+                )
+            }
+
+            // Bottom padding for scrollable content
+            Spacer(Modifier.height(8.dp))
         }
 
-        // Bottom padding for edge-to-edge
-        Spacer(Modifier.height(16.dp))
+        // Sticky bottom bar with Start Quiz CTA
+        Surface(
+            tonalElevation = 3.dp,
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 20.dp, vertical = 12.dp),
+                verticalArrangement = Arrangement.spacedBy(4.dp)
+            ) {
+                Button(
+                    onClick = { onStartQuiz(viewModel.buildConfig()) },
+                    enabled = viewModel.canStart(),
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(56.dp)
+                ) {
+                    Text(
+                        text = "Start Quiz",
+                        style = MaterialTheme.typography.titleLarge
+                    )
+                }
+            }
+        }
     }
 }
 
@@ -290,7 +307,7 @@ private fun HomeScreenPreview() {
                     Checkbox(checked = true, onCheckedChange = {})
                     Spacer(Modifier.width(8.dp))
                     Text(
-                        text = topicCount.topic,
+                        text = formatTopicDisplayName(topicCount.topic),
                         style = MaterialTheme.typography.bodyLarge,
                         modifier = Modifier.weight(1f)
                     )

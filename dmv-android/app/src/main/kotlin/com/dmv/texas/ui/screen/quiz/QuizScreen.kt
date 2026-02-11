@@ -44,6 +44,7 @@ import com.dmv.texas.ui.component.QuestionImage
 import com.dmv.texas.ui.component.TimerDisplay
 import com.dmv.texas.ui.theme.CorrectGreen
 import com.dmv.texas.ui.theme.IncorrectRed
+import com.dmv.texas.ui.util.formatTopicDisplayName
 
 @Composable
 fun QuizScreen(
@@ -158,7 +159,7 @@ fun QuizScreen(
 
             // Topic badge
             Text(
-                text = question.topic,
+                text = formatTopicDisplayName(question.topic),
                 style = MaterialTheme.typography.labelLarge,
                 color = MaterialTheme.colorScheme.primary
             )
