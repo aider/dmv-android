@@ -1,21 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="PARKING_FIRE_HYDRANT_15FT">
-<rect x="0" y="0" width="200" height="200" fill="#CCCCCC"/>
-  <rect x="0" y="0" width="200" height="15" fill="#888888"/>
-  <rect x="0" y="15" width="200" height="185" fill="#4A4A4A"/>
-  <!-- Fire hydrant -->
-  <g transform="translate(100,25)">
-    <rect x="-8" y="0" width="16" height="30" rx="3" fill="#FF0000"/>
-    <circle cx="0" cy="15" r="6" fill="#FFCC00"/>
-    <rect x="-12" y="8" width="6" height="4" fill="#FFCC00"/>
-    <rect x="6" y="8" width="6" height="4" fill="#FFCC00"/>
-    <rect x="-6" y="30" width="12" height="5" fill="#FF0000"/>
-  </g>
-  <!-- 15 ft measurement -->
-  <line x1="100" y1="70" x2="100" y2="150" stroke="#FFCC00" stroke-width="2"/>
-  <line x1="95" y1="70" x2="105" y2="70" stroke="#FFCC00" stroke-width="2"/>
-  <line x1="95" y1="150" x2="105" y2="150" stroke="#FFCC00" stroke-width="2"/>
-  <text x="115" y="115" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="900" fill="#FFCC00">15 FT</text>
-  <!-- No parking zone -->
-  <rect x="85" y="155" width="30" height="20" rx="2" fill="#FF0000" opacity="0.3"/>
-  <line x1="85" y1="155" x2="115" y2="175" stroke="#FF0000" stroke-width="3"/>
+  <rect x="0" y="0" width="200" height="200" fill="#CCCCCC"/>
+  <rect x="0" y="0" width="200" height="14" fill="#888888"/>
+  <rect x="0" y="14" width="200" height="186" fill="#4A4A4A"/>
+
+  <rect x="93" y="26" width="14" height="26" rx="3" fill="#FF0000"/>
+  <circle cx="100" cy="39" r="5" fill="#FFCC00"/>
+  <rect x="87" y="32" width="6" height="4" fill="#FFCC00"/>
+  <rect x="107" y="32" width="6" height="4" fill="#FFCC00"/>
+
+  <line x1="100" y1="68" x2="100" y2="148" stroke="#FFCC00" stroke-width="2"/>
+  <line x1="95" y1="68" x2="105" y2="68" stroke="#FFCC00" stroke-width="2"/>
+  <line x1="95" y1="148" x2="105" y2="148" stroke="#FFCC00" stroke-width="2"/>
+  <text x="118" y="112" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="900" fill="#FFCC00">15 FT</text>
+
+  <rect x="86" y="154" width="28" height="18" rx="2" fill="#AA4444"/>
+  <line x1="86" y1="154" x2="114" y2="172" stroke="#FF0000" stroke-width="3"/>
 </svg>

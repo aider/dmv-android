@@ -1,28 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="SPECIAL_RAILROAD_STOP_PROCEDURE">
   <rect x="8" y="24" width="184" height="152" fill="#88AA88"/>
-  <rect x="8" y="82" width="184" height="36" fill="#4A4A4A"/>
+  <rect x="8" y="80" width="184" height="36" fill="#4A4A4A"/>
 
-  <rect x="118" y="24" width="6" height="152" fill="#8B4513"/>
-  <rect x="138" y="24" width="6" height="152" fill="#8B4513"/>
-  <g fill="#4A2511">
-    <rect x="112" y="38" width="38" height="6"/>
-    <rect x="112" y="60" width="38" height="6"/>
-    <rect x="112" y="82" width="38" height="6"/>
-    <rect x="112" y="104" width="38" height="6"/>
-    <rect x="112" y="126" width="38" height="6"/>
-    <rect x="112" y="148" width="38" height="6"/>
+  <rect x="132" y="24" width="6" height="152" fill="#8B4513"/>
+  <rect x="148" y="24" width="6" height="152" fill="#8B4513"/>
+  <g fill="#6A3210">
+    <rect x="124" y="38" width="38" height="5"/>
+    <rect x="124" y="60" width="38" height="5"/>
+    <rect x="124" y="82" width="38" height="5"/>
+    <rect x="124" y="104" width="38" height="5"/>
+    <rect x="124" y="126" width="38" height="5"/>
+    <rect x="124" y="148" width="38" height="5"/>
   </g>
 
-  <rect x="54" y="90" width="24" height="14" rx="2" fill="#3366CC"/>
-  <circle cx="60" cy="104" r="3" fill="#1A1A1A"/>
-  <circle cx="72" cy="104" r="3" fill="#1A1A1A"/>
+  <rect x="56" y="89" width="22" height="14" rx="2" fill="#3366CC"/>
+  <circle cx="62" cy="103" r="3" fill="#1A1A1A"/>
+  <circle cx="72" cy="103" r="3" fill="#1A1A1A"/>
 
-  <rect x="92" y="80" width="3" height="38" fill="#FFFFFF"/>
+  <rect x="96" y="80" width="3" height="36" fill="#FFFFFF"/>
+  <line x1="99" y1="97" x2="131" y2="97" stroke="#FFCC00" stroke-width="3"/>
+  <line x1="99" y1="92" x2="99" y2="102" stroke="#FFCC00" stroke-width="2"/>
+  <line x1="131" y1="92" x2="131" y2="102" stroke="#FFCC00" stroke-width="2"/>
 
-  <line x1="94" y1="98" x2="118" y2="98" stroke="#FFCC00" stroke-width="2"/>
-  <line x1="94" y1="94" x2="94" y2="102" stroke="#FFCC00" stroke-width="2"/>
-  <line x1="118" y1="94" x2="118" y2="102" stroke="#FFCC00" stroke-width="2"/>
-
-  <text x="106" y="120" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="900" fill="#FFCC00" text-anchor="middle">15-50 FT</text>
-  <text x="100" y="42" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="900" fill="#000000" text-anchor="middle">STOP BEFORE TRACKS</text>
+  <text x="111" y="118" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="900" fill="#FFCC00" text-anchor="middle">15-50 FT</text>
+  <text x="80" y="42" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="900" fill="#000000" text-anchor="middle">STOP BEFORE</text>
+  <text x="80" y="52" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="900" fill="#000000" text-anchor="middle">TRACKS</text>
 </svg>

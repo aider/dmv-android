@@ -1,0 +1,589 @@
+{
+  "version": 1,
+  "generatedAt": "2026-02-10T05:49:40.593Z",
+  "sourceManifest": "assets/manifest.json",
+  "mode": "ok-only",
+  "count": 116,
+  "entries": [
+    {
+      "assetId": "INTERSECTION_4WAY_STOP",
+      "file": "assets/svg/INTERSECTION_4WAY_STOP.svg",
+      "sha256": "d76ff56783e86c26d076861a0823538b366f7182f117aa3401e1c8019d93fe0d"
+    },
+    {
+      "assetId": "INTERSECTION_DOUBLE_TURN_LANES",
+      "file": "assets/svg/INTERSECTION_DOUBLE_TURN_LANES.svg",
+      "sha256": "4a1e0baa922872b09969d3637c6c546894b9e126f7ba48b29521a5715322db3f"
+    },
+    {
+      "assetId": "INTERSECTION_EMERGENCY_VEHICLE",
+      "file": "assets/svg/INTERSECTION_EMERGENCY_VEHICLE.svg",
+      "sha256": "a6a77af4f4a853cd73f96f825159f9e32aea87aca28632f476b5fe126eb5d8f1"
+    },
+    {
+      "assetId": "INTERSECTION_MERGE_HIGHWAY",
+      "file": "assets/svg/INTERSECTION_MERGE_HIGHWAY.svg",
+      "sha256": "a2440dd42a94758acac988cd25c9beee195ff501e5e8c21b0c55ec221399b96c"
+    },
+    {
+      "assetId": "INTERSECTION_PEDESTRIAN_CROSSWALK",
+      "file": "assets/svg/INTERSECTION_PEDESTRIAN_CROSSWALK.svg",
+      "sha256": "502eff69c3e413b658a868a577736d60a6f0b4d520dd74aeeccdc15ce6648eed"
+    },
+    {
+      "assetId": "INTERSECTION_ROUNDABOUT",
+      "file": "assets/svg/INTERSECTION_ROUNDABOUT.svg",
+      "sha256": "a592a57434d4d0fa8ff69ca4ccfcf1766db36a37268fba874eed02048151e67a"
+    },
+    {
+      "assetId": "INTERSECTION_SCHOOL_BUS_STOPPED",
+      "file": "assets/svg/INTERSECTION_SCHOOL_BUS_STOPPED.svg",
+      "sha256": "32e53f2716ce24b76eb0d856d3dbec053e8c807d07fe9e09212f4464d8e6e7c9"
+    },
+    {
+      "assetId": "INTERSECTION_SIGNAL_PROTECTED_LEFT",
+      "file": "assets/svg/INTERSECTION_SIGNAL_PROTECTED_LEFT.svg",
+      "sha256": "41537582fa02b935d723190d75ac7effcd10c8d0c5048d628c3c6942046347d3"
+    },
+    {
+      "assetId": "INTERSECTION_T_STOP",
+      "file": "assets/svg/INTERSECTION_T_STOP.svg",
+      "sha256": "9d6a2ca4c870b02768348d2ffeed89af4e8a3a4963d89e460a78fdc765dbad13"
+    },
+    {
+      "assetId": "INTERSECTION_UNCONTROLLED",
+      "file": "assets/svg/INTERSECTION_UNCONTROLLED.svg",
+      "sha256": "72e1b6dfa648fa68ae5d8f08579957f07f857f4438871ec13fc78aabafee6084"
+    },
+    {
+      "assetId": "MARKING_HAND_SIGNAL_LEFT",
+      "file": "assets/svg/MARKING_HAND_SIGNAL_LEFT.svg",
+      "sha256": "e7693fc01bcfc0b36796a489c860def170e24c30a6a4d3608d8fdfc61fa68995"
+    },
+    {
+      "assetId": "MARKING_HAND_SIGNAL_RIGHT",
+      "file": "assets/svg/MARKING_HAND_SIGNAL_RIGHT.svg",
+      "sha256": "c8a262b4d17880f606589514c485c534d00254b516a744fcfdd1b9860b345e72"
+    },
+    {
+      "assetId": "MARKING_HAND_SIGNAL_STOP",
+      "file": "assets/svg/MARKING_HAND_SIGNAL_STOP.svg",
+      "sha256": "baf614f9019b3960ba31a6fae574ee15e0f035adcf8c7bb53e8c2f2d70f229a8"
+    },
+    {
+      "assetId": "MUTCD_D1-1_EXIT_SIGN",
+      "file": "assets/svg/MUTCD_D1-1_EXIT_SIGN.svg",
+      "sha256": "da1704fc0eaa76ff84b4eb712642dc2c39ba7ff408071e209ff790500fff0977"
+    },
+    {
+      "assetId": "MUTCD_D3-1_DISTANCE_SIGN",
+      "file": "assets/svg/MUTCD_D3-1_DISTANCE_SIGN.svg",
+      "sha256": "a6b6176b34c51632b253a9a072fe984b00d25dae1a30d78bbfe1e6d39754c6e5"
+    },
+    {
+      "assetId": "MUTCD_D9-1_REST_AREA",
+      "file": "assets/svg/MUTCD_D9-1_REST_AREA.svg",
+      "sha256": "1d62a4a2cec2516aab3cc8b5cd662e34e4130863b3f539c005aa17e7dd4d9f5a"
+    },
+    {
+      "assetId": "MUTCD_D9-2_HOSPITAL",
+      "file": "assets/svg/MUTCD_D9-2_HOSPITAL.svg",
+      "sha256": "c5407815cee122707ab53e41249dd45541b9d710da220e97b391eba2ef7dd611"
+    },
+    {
+      "assetId": "MUTCD_D9-3_GAS_STATION",
+      "file": "assets/svg/MUTCD_D9-3_GAS_STATION.svg",
+      "sha256": "1f027946edc8b66da0ae3721f4b5a08784b88a7cf50cb9ca0c42a13db2636c21"
+    },
+    {
+      "assetId": "MUTCD_I-5_INTERSTATE_10",
+      "file": "assets/svg/MUTCD_I-5_INTERSTATE_10.svg",
+      "sha256": "01c1ffe925bde5cd99d514e22e8e1e91bce8ce5c38382ddcf54ef26ae3f93357"
+    },
+    {
+      "assetId": "MUTCD_I-5_INTERSTATE_35",
+      "file": "assets/svg/MUTCD_I-5_INTERSTATE_35.svg",
+      "sha256": "0d6ea8947ad234e0783f6b1ffa74698b1d82974e023d6c801d719efede2502fb"
+    },
+    {
+      "assetId": "MUTCD_M1-1_US_ROUTE_90",
+      "file": "assets/svg/MUTCD_M1-1_US_ROUTE_90.svg",
+      "sha256": "fa7fd6736b6e492533594a44523c3af7fa243e75cad47d6dafeafc9ccf73ea5b"
+    },
+    {
+      "assetId": "MUTCD_M1-4_STATE_ROUTE_71",
+      "file": "assets/svg/MUTCD_M1-4_STATE_ROUTE_71.svg",
+      "sha256": "00ac704231eafdbcc3e02f51732fae06392f239dff3acf58862601c0b25a1fac"
+    },
+    {
+      "assetId": "MUTCD_OM1-1_KEEP_RIGHT",
+      "file": "assets/svg/MUTCD_OM1-1_KEEP_RIGHT.svg",
+      "sha256": "e16b0d13cccec21bc2ce0141fcd3d5886f3f520719caad3bec3583c2cbf71df5"
+    },
+    {
+      "assetId": "MUTCD_OM2-1_KEEP_LEFT",
+      "file": "assets/svg/MUTCD_OM2-1_KEEP_LEFT.svg",
+      "sha256": "6e8910fcce0585f202d3795ba81b5e9e5ba3f610ce4fcd8dbc2a2bdf849f5dc2"
+    },
+    {
+      "assetId": "MUTCD_R1-1_STOP",
+      "file": "assets/svg/MUTCD_R1-1_STOP.svg",
+      "sha256": "e06dc585ba0a4f5bbe2a8afdaafa8bb01d29306591d7ce942a17552b53e1e132"
+    },
+    {
+      "assetId": "MUTCD_R1-2_YIELD",
+      "file": "assets/svg/MUTCD_R1-2_YIELD.svg",
+      "sha256": "0cf1caf1c4b4fef2a06a1fcfb872fe3d778f6514319b8eadda828b5c1196a967"
+    },
+    {
+      "assetId": "MUTCD_R10-6_ONE_WAY",
+      "file": "assets/svg/MUTCD_R10-6_ONE_WAY.svg",
+      "sha256": "5c83d31cdf1066f56f3b6813fe25c39a88796811daf828fda98cd75bae1da566"
+    },
+    {
+      "assetId": "MUTCD_R10-7_DO_NOT_PASS",
+      "file": "assets/svg/MUTCD_R10-7_DO_NOT_PASS.svg",
+      "sha256": "d4562e9dca096f3647d0e314b23565cafbebf87f73a4c352da272ef51a65473a"
+    },
+    {
+      "assetId": "MUTCD_R15-1_RAILROAD_CROSSING",
+      "file": "assets/svg/MUTCD_R15-1_RAILROAD_CROSSING.svg",
+      "sha256": "b745b1fe56995bbde277a9e9702b0743ac35eac3bb413d34f3eb5c0bcbdf7514"
+    },
+    {
+      "assetId": "MUTCD_R2-1_SPEED_LIMIT_30",
+      "file": "assets/svg/MUTCD_R2-1_SPEED_LIMIT_30.svg",
+      "sha256": "86ecb79ca63f0e50d335676c27b3726332020737a2c58bc21e4b8e6f1a57b792"
+    },
+    {
+      "assetId": "MUTCD_R2-1_SPEED_LIMIT_65",
+      "file": "assets/svg/MUTCD_R2-1_SPEED_LIMIT_65.svg",
+      "sha256": "b255ecb529268cd5c43aaa5b8de985f36a3106e3578970bb1cccbf7321055dfb"
+    },
+    {
+      "assetId": "MUTCD_R2-1_SPEED_LIMIT_70",
+      "file": "assets/svg/MUTCD_R2-1_SPEED_LIMIT_70.svg",
+      "sha256": "9ed3fcab8a06195ecff88a913c90edcaa62e0a1c680e642c9913058998cd4156"
+    },
+    {
+      "assetId": "MUTCD_R3-1_NO_LEFT_TURN",
+      "file": "assets/svg/MUTCD_R3-1_NO_LEFT_TURN.svg",
+      "sha256": "dc70937801408d430046c4849dd1b3c3050d533333dedb93a5da67b2555979ee"
+    },
+    {
+      "assetId": "MUTCD_R3-2_NO_RIGHT_TURN",
+      "file": "assets/svg/MUTCD_R3-2_NO_RIGHT_TURN.svg",
+      "sha256": "13147265c8fe1baa123125eb488fcdc68ddbe9b071b6509582187fd99f52e5dd"
+    },
+    {
+      "assetId": "MUTCD_R3-3_NO_U_TURN",
+      "file": "assets/svg/MUTCD_R3-3_NO_U_TURN.svg",
+      "sha256": "d44b807972c0ac1cc15dbab21875fbc632621592f399f81022aef1f55b4aceb7"
+    },
+    {
+      "assetId": "MUTCD_R3-4_NO_TRUCKS",
+      "file": "assets/svg/MUTCD_R3-4_NO_TRUCKS.svg",
+      "sha256": "b1052901496581573c51dfce05b8383acea6a1f72767a5a134dd2d0c554fbc45"
+    },
+    {
+      "assetId": "MUTCD_R4-7_KEEP_RIGHT",
+      "file": "assets/svg/MUTCD_R4-7_KEEP_RIGHT.svg",
+      "sha256": "4d432f56de086e0bd2581f380200110b69abe1fdcddfc0934edc8cf0ce615d42"
+    },
+    {
+      "assetId": "MUTCD_R5-1_DO_NOT_ENTER",
+      "file": "assets/svg/MUTCD_R5-1_DO_NOT_ENTER.svg",
+      "sha256": "c767ec06261ae1a940f277f2a820d2dd0929279e97269a28d9659fe18ee3d739"
+    },
+    {
+      "assetId": "MUTCD_R5-1a_WRONG_WAY",
+      "file": "assets/svg/MUTCD_R5-1a_WRONG_WAY.svg",
+      "sha256": "bbc6dd545269c0623d400155c8f0ba0ce163294a69087789e822842a80c3201d"
+    },
+    {
+      "assetId": "MUTCD_R6-1_LEFT_TURN_ONLY",
+      "file": "assets/svg/MUTCD_R6-1_LEFT_TURN_ONLY.svg",
+      "sha256": "6a11f3f9248f472f071a3db2ab324656c1fa07d5b16f7a3ef6680c7f58d1e46b"
+    },
+    {
+      "assetId": "MUTCD_R6-2_RIGHT_TURN_ONLY",
+      "file": "assets/svg/MUTCD_R6-2_RIGHT_TURN_ONLY.svg",
+      "sha256": "28fc3fdf1d9430110b8830808dcb86b889eef2a32a5d1cfc8a3b3f45a5da70d7"
+    },
+    {
+      "assetId": "MUTCD_R7-107_HANDICAPPED_PARKING",
+      "file": "assets/svg/MUTCD_R7-107_HANDICAPPED_PARKING.svg",
+      "sha256": "06fa3409a7e4be99563a250934f9af92b40037873e25ccf3159fc385d1605b63"
+    },
+    {
+      "assetId": "MUTCD_R7-8_NO_PARKING",
+      "file": "assets/svg/MUTCD_R7-8_NO_PARKING.svg",
+      "sha256": "a9b11203ce96b3e54b54b6c5ae5a85468690b228fab74f729f0b2850d595d49d"
+    },
+    {
+      "assetId": "MUTCD_R8-3a_NO_PARKING_ANYTIME",
+      "file": "assets/svg/MUTCD_R8-3a_NO_PARKING_ANYTIME.svg",
+      "sha256": "b99a1760beff8c2dd579491421315a98401c52e8ea6e64aa8368f1fa5424c677"
+    },
+    {
+      "assetId": "MUTCD_S1-1_SCHOOL_CROSSING",
+      "file": "assets/svg/MUTCD_S1-1_SCHOOL_CROSSING.svg",
+      "sha256": "eae56fe9ee4263bc758ca4866e3c7b8faf2ed941fdcaec907a7323953c65a939"
+    },
+    {
+      "assetId": "MUTCD_S4-3_SCHOOL_SPEED_LIMIT_20",
+      "file": "assets/svg/MUTCD_S4-3_SCHOOL_SPEED_LIMIT_20.svg",
+      "sha256": "c03526135ae60714c8214ddec56ce55aeddd8d0f63bf65a7e85651eafece6b2b"
+    },
+    {
+      "assetId": "MUTCD_W1-1_CURVE_RIGHT",
+      "file": "assets/svg/MUTCD_W1-1_CURVE_RIGHT.svg",
+      "sha256": "2c8cf2241c072ef6232bb42ea0b661845a41b94eabfb5543d6d0be22f08c97bb"
+    },
+    {
+      "assetId": "MUTCD_W1-2_CURVE_LEFT",
+      "file": "assets/svg/MUTCD_W1-2_CURVE_LEFT.svg",
+      "sha256": "f5d2a35b3d4c613f62d4e9b89969b2d35b4b6108b3bb23d57884372531ef91fd"
+    },
+    {
+      "assetId": "MUTCD_W1-6_WINDING_ROAD",
+      "file": "assets/svg/MUTCD_W1-6_WINDING_ROAD.svg",
+      "sha256": "9caacee8bde33eea30eac42e39b6515f85d6db5ea29f9649e85237ac8b1e23d9"
+    },
+    {
+      "assetId": "MUTCD_W11-1_PEDESTRIAN_CROSSING",
+      "file": "assets/svg/MUTCD_W11-1_PEDESTRIAN_CROSSING.svg",
+      "sha256": "bed2f042753ce91346f63bf1ee7708ef02d370576052521e5052e777ee461f87"
+    },
+    {
+      "assetId": "MUTCD_W11-2_BICYCLE_CROSSING",
+      "file": "assets/svg/MUTCD_W11-2_BICYCLE_CROSSING.svg",
+      "sha256": "0f0eb715c1f8d0c05f63a688ecab335acf601ab935ddfe127a73c0048f7b1b36"
+    },
+    {
+      "assetId": "MUTCD_W14-1_TRUCK_CROSSING",
+      "file": "assets/svg/MUTCD_W14-1_TRUCK_CROSSING.svg",
+      "sha256": "a097c9ff40efd0a547f6c3b966adf61b459a4db52814747e3dc75cdd2151b375"
+    },
+    {
+      "assetId": "MUTCD_W14-2_FARM_EQUIPMENT",
+      "file": "assets/svg/MUTCD_W14-2_FARM_EQUIPMENT.svg",
+      "sha256": "f63c8d5d855628d5631ff3951a5885adca173597c9b3f2ff21c45a3d8d01484f"
+    },
+    {
+      "assetId": "MUTCD_W16-2_SLIPPERY_WHEN_WET",
+      "file": "assets/svg/MUTCD_W16-2_SLIPPERY_WHEN_WET.svg",
+      "sha256": "e1902b5b4256377405fd4d5b2eda7585beda0ef6676d6984d301cd6a4744f209"
+    },
+    {
+      "assetId": "MUTCD_W2-1_SIDE_ROAD",
+      "file": "assets/svg/MUTCD_W2-1_SIDE_ROAD.svg",
+      "sha256": "99a3ca4c9510dd2abacbf8608ed99482d607e3fafb3c382bd3832dce371609c5"
+    },
+    {
+      "assetId": "MUTCD_W2-2_Y_INTERSECTION",
+      "file": "assets/svg/MUTCD_W2-2_Y_INTERSECTION.svg",
+      "sha256": "eff56aa655328b53787865d036468833c5b1376c305bf532af8b93a2334b3a91"
+    },
+    {
+      "assetId": "MUTCD_W2-3_T_INTERSECTION",
+      "file": "assets/svg/MUTCD_W2-3_T_INTERSECTION.svg",
+      "sha256": "a6eedecdb4457bcafea6ad84b36091cc714fd7ea5a4428ac487e1e854de1d06c"
+    },
+    {
+      "assetId": "MUTCD_W20-1_ROAD_CONSTRUCTION",
+      "file": "assets/svg/MUTCD_W20-1_ROAD_CONSTRUCTION.svg",
+      "sha256": "504760394646a238e732730f59f931072485b687d337c079c79c18c013248411"
+    },
+    {
+      "assetId": "MUTCD_W20-7_FLAGGER_AHEAD",
+      "file": "assets/svg/MUTCD_W20-7_FLAGGER_AHEAD.svg",
+      "sha256": "d53339f1a8175562e22c174ad15010851fbeac993bc7e0264c148819a1e06799"
+    },
+    {
+      "assetId": "MUTCD_W3-1_MERGE",
+      "file": "assets/svg/MUTCD_W3-1_MERGE.svg",
+      "sha256": "9028a765de6441aaad3027aa079662576d2c43f7d5a480b60cff525731144320"
+    },
+    {
+      "assetId": "MUTCD_W4-2_LANE_ENDS_MERGE",
+      "file": "assets/svg/MUTCD_W4-2_LANE_ENDS_MERGE.svg",
+      "sha256": "f4f87d3423e6365fa6293b9fe46db42cfa064a003932f85479312ce480a17674"
+    },
+    {
+      "assetId": "MUTCD_W8-1_HILL",
+      "file": "assets/svg/MUTCD_W8-1_HILL.svg",
+      "sha256": "fb2e79467b9af33bd5657d1d9776914c4133c621b8a017eb550b0518585544b1"
+    },
+    {
+      "assetId": "PARKING_DISABLED_SPACE",
+      "file": "assets/svg/PARKING_DISABLED_SPACE.svg",
+      "sha256": "2dd92ad882758f24927afae4f8bec13586cf20e1425d0604689d99400fdfaedc"
+    },
+    {
+      "assetId": "PARKING_FIRE_HYDRANT_15FT",
+      "file": "assets/svg/PARKING_FIRE_HYDRANT_15FT.svg",
+      "sha256": "5e6cb3eea581fa6c9aa5e8c8b9ead1196ded8f2925aa63cbe4d146102e254215"
+    },
+    {
+      "assetId": "PARKING_HILL_DOWNHILL_CURB",
+      "file": "assets/svg/PARKING_HILL_DOWNHILL_CURB.svg",
+      "sha256": "5d804b206f72d67afa561934fcfeb7bc1ca8b517877d300e1e2cf2769951c1a1"
+    },
+    {
+      "assetId": "PARKING_HILL_UPHILL_CURB",
+      "file": "assets/svg/PARKING_HILL_UPHILL_CURB.svg",
+      "sha256": "03056389e4efc8407653214ef969501b420dab41ab5d9390cc434ed24822b4d0"
+    },
+    {
+      "assetId": "PARKING_PARALLEL_STEPS",
+      "file": "assets/svg/PARKING_PARALLEL_STEPS.svg",
+      "sha256": "6c9191c8d13c83d7e5a33d21a457c0c558a9c2afd3912d3913623e10381c16de"
+    },
+    {
+      "assetId": "PAVEMENT_ARROW_LEFT",
+      "file": "assets/svg/PAVEMENT_ARROW_LEFT.svg",
+      "sha256": "aa5f788d917f8bde554728f2f69a5ed854ef090105553275493e3b846ce2c882"
+    },
+    {
+      "assetId": "PAVEMENT_ARROW_LEFT_STRAIGHT",
+      "file": "assets/svg/PAVEMENT_ARROW_LEFT_STRAIGHT.svg",
+      "sha256": "07ca143e0471a2a25ecdce6f15964d00fba09b6fe6622090a33c0800d7a993fb"
+    },
+    {
+      "assetId": "PAVEMENT_ARROW_RIGHT",
+      "file": "assets/svg/PAVEMENT_ARROW_RIGHT.svg",
+      "sha256": "2cda6ff16839e2dca39f9dd4e13557ed3e2afc0990bc1361fe2b88e5f802be83"
+    },
+    {
+      "assetId": "PAVEMENT_ARROW_RIGHT_STRAIGHT",
+      "file": "assets/svg/PAVEMENT_ARROW_RIGHT_STRAIGHT.svg",
+      "sha256": "f1e3a817f24f8b74769d28e384955b8c64170bf437842da16b10510a2f4eac75"
+    },
+    {
+      "assetId": "PAVEMENT_ARROW_STRAIGHT",
+      "file": "assets/svg/PAVEMENT_ARROW_STRAIGHT.svg",
+      "sha256": "bedfbc0d6eb95733753c9e7c2c4194d7300e03416ec2d05fc5b8437e70b8f0f9"
+    },
+    {
+      "assetId": "PAVEMENT_BIKE_LANE",
+      "file": "assets/svg/PAVEMENT_BIKE_LANE.svg",
+      "sha256": "501db8469ba55489db23f12262d9ffa062c7c355aa915eed47e76af3afa7e3a9"
+    },
+    {
+      "assetId": "PAVEMENT_CROSSWALK_ZEBRA",
+      "file": "assets/svg/PAVEMENT_CROSSWALK_ZEBRA.svg",
+      "sha256": "41427595fb1b70357dba7724aa91d9f14435b12a81ba648b644fa0793a26267b"
+    },
+    {
+      "assetId": "PAVEMENT_DASHED_WHITE_LINE",
+      "file": "assets/svg/PAVEMENT_DASHED_WHITE_LINE.svg",
+      "sha256": "99a27ab242150244862b194f9efc2b650a8fbcd402076f6371a44f87d5169202"
+    },
+    {
+      "assetId": "PAVEMENT_DOUBLE_YELLOW_MIXED",
+      "file": "assets/svg/PAVEMENT_DOUBLE_YELLOW_MIXED.svg",
+      "sha256": "7e96ffebadd7c29d699b5bbe6e0de51805fdc5a5933c28f3c32fff96be1cffd0"
+    },
+    {
+      "assetId": "PAVEMENT_DOUBLE_YELLOW_SOLID",
+      "file": "assets/svg/PAVEMENT_DOUBLE_YELLOW_SOLID.svg",
+      "sha256": "ddb397dc6eee55fc39abacc38022d668ea3c794fb723067727afe54921053e03"
+    },
+    {
+      "assetId": "PAVEMENT_GORE_AREA",
+      "file": "assets/svg/PAVEMENT_GORE_AREA.svg",
+      "sha256": "e6dc87fed5d2cff06e06f61180fe992134da898b455a58d9aeda4b09b0153e95"
+    },
+    {
+      "assetId": "PAVEMENT_HANDICAP_SYMBOL",
+      "file": "assets/svg/PAVEMENT_HANDICAP_SYMBOL.svg",
+      "sha256": "71c41366113baa19c28b1b85a792ffecf9d38070ad2c1f975e0bb44ca6aa32c7"
+    },
+    {
+      "assetId": "PAVEMENT_HOV_DIAMOND",
+      "file": "assets/svg/PAVEMENT_HOV_DIAMOND.svg",
+      "sha256": "86f349790e36c96323bc4c0b701e71055d6e55d3e88206fde32acc7076c3d9ee"
+    },
+    {
+      "assetId": "PAVEMENT_NO_PASSING_ZONE",
+      "file": "assets/svg/PAVEMENT_NO_PASSING_ZONE.svg",
+      "sha256": "d08e2feefae03e1da8e79462088152f096951cd37b991927948c0edcd7597f57"
+    },
+    {
+      "assetId": "PAVEMENT_ONLY_TEXT",
+      "file": "assets/svg/PAVEMENT_ONLY_TEXT.svg",
+      "sha256": "57fb8810b84cafb8ff8b356b11f10c53bbce287ed94743e952493f6e7d4728bb"
+    },
+    {
+      "assetId": "PAVEMENT_RAILROAD_CROSSING_X",
+      "file": "assets/svg/PAVEMENT_RAILROAD_CROSSING_X.svg",
+      "sha256": "78054538dc6a2435c2c6c238e637d2485d9349facae294ccf9bf2039341ccdfa"
+    },
+    {
+      "assetId": "PAVEMENT_SCHOOL_ZONE",
+      "file": "assets/svg/PAVEMENT_SCHOOL_ZONE.svg",
+      "sha256": "d37eea70152cddfae4247993342270211c4735bac37a38f8a11bf7faf346ba4b"
+    },
+    {
+      "assetId": "PAVEMENT_SHARED_CENTER_TURN_LANE",
+      "file": "assets/svg/PAVEMENT_SHARED_CENTER_TURN_LANE.svg",
+      "sha256": "dd39a26cd4433705706dee72930da2ddd350381fed82854d031affaf04439931"
+    },
+    {
+      "assetId": "PAVEMENT_SHARROW",
+      "file": "assets/svg/PAVEMENT_SHARROW.svg",
+      "sha256": "b0ddf63b9e38c5cddcb048a53240e23fd0a8ab4368e51c8df47fb13fdb55ddce"
+    },
+    {
+      "assetId": "PAVEMENT_SINGLE_YELLOW_DASHED",
+      "file": "assets/svg/PAVEMENT_SINGLE_YELLOW_DASHED.svg",
+      "sha256": "57ebd60824c5db22ff8450e6e2bc5f762d1cf001a006c772c5f2469fc903bd35"
+    },
+    {
+      "assetId": "PAVEMENT_SOLID_WHITE_LINE",
+      "file": "assets/svg/PAVEMENT_SOLID_WHITE_LINE.svg",
+      "sha256": "3f5dbe0753e40293aa5d9746f3f441c72736ef8d20f8a91f3a16e266a4d2070a"
+    },
+    {
+      "assetId": "PAVEMENT_STOP_LINE",
+      "file": "assets/svg/PAVEMENT_STOP_LINE.svg",
+      "sha256": "32966ad26d672b0242e5c936fff833d1c80a631c591910be0e234e3ad3281ca5"
+    },
+    {
+      "assetId": "PAVEMENT_TURN_LANE_CENTER",
+      "file": "assets/svg/PAVEMENT_TURN_LANE_CENTER.svg",
+      "sha256": "2054d5ba519f4c54dcc25bca8bce8296d32a3df5583ef315adaefc3fdb05f3c8"
+    },
+    {
+      "assetId": "PAVEMENT_YIELD_LINE",
+      "file": "assets/svg/PAVEMENT_YIELD_LINE.svg",
+      "sha256": "00a9fa076542bf4ca81ca286fb41caa2cdaa68c71a6fbbd4352cdfda7ba7849c"
+    },
+    {
+      "assetId": "SAFE_BLIND_SPOT_CHECK",
+      "file": "assets/svg/SAFE_BLIND_SPOT_CHECK.svg",
+      "sha256": "3e2bbbaa74b1bb9d281ad8640d6e9286bba16246ff995104397defd8c419d768"
+    },
+    {
+      "assetId": "SAFE_DEFENSIVE_SPACE_CUSHION",
+      "file": "assets/svg/SAFE_DEFENSIVE_SPACE_CUSHION.svg",
+      "sha256": "683bb5c2eb1a1a0f641b15396a6e8645f0a303f79d9b2925b8b336aec62e0fcb"
+    },
+    {
+      "assetId": "SAFE_MIRROR_ADJUSTMENT",
+      "file": "assets/svg/SAFE_MIRROR_ADJUSTMENT.svg",
+      "sha256": "17ad1eac3f245a928b3cd859e95c144f4bbcd9d529172281baaea46c5dd58bd2"
+    },
+    {
+      "assetId": "SAFE_TIRE_TREAD_DEPTH",
+      "file": "assets/svg/SAFE_TIRE_TREAD_DEPTH.svg",
+      "sha256": "874475ca1fb1911b7b21ddfb29ef153ca71e61a1979e7a76096836d97ff21986"
+    },
+    {
+      "assetId": "SIGNAL_FLASHING_RED",
+      "file": "assets/svg/SIGNAL_FLASHING_RED.svg",
+      "sha256": "32f53e89030acf400d1ef7555a4a442b3115a6b109daafdb27c4e55362d57358"
+    },
+    {
+      "assetId": "SIGNAL_FLASHING_YELLOW",
+      "file": "assets/svg/SIGNAL_FLASHING_YELLOW.svg",
+      "sha256": "01c02a2e329a90f2635c34bd1f629ff183affa02790c0d8ac4a1559a9dda8d98"
+    },
+    {
+      "assetId": "SIGNAL_GREEN_ARROW_LEFT",
+      "file": "assets/svg/SIGNAL_GREEN_ARROW_LEFT.svg",
+      "sha256": "9036a3fa063cbd97dcf2dc516c78875a239ac73c89d441075320552ddd83897d"
+    },
+    {
+      "assetId": "SIGNAL_GREEN_ARROW_RIGHT",
+      "file": "assets/svg/SIGNAL_GREEN_ARROW_RIGHT.svg",
+      "sha256": "a15856f824233cc7d58e58f35f42a511814e54188d091dc8227b6ca3f7a8ab67"
+    },
+    {
+      "assetId": "SIGNAL_PED_COUNTDOWN",
+      "file": "assets/svg/SIGNAL_PED_COUNTDOWN.svg",
+      "sha256": "564d733ed28e48a3531fdce1add8f58f9011b7790796c1ca11fa9927ba680dee"
+    },
+    {
+      "assetId": "SIGNAL_PED_DONT_WALK",
+      "file": "assets/svg/SIGNAL_PED_DONT_WALK.svg",
+      "sha256": "1b25ffd5933b55316894f98d16a2c97a4016e68210fd181e9f5394b7012c3aad"
+    },
+    {
+      "assetId": "SIGNAL_PED_WALK",
+      "file": "assets/svg/SIGNAL_PED_WALK.svg",
+      "sha256": "cedee0bf339f6931f3e081639a5c5b0f1f6a96a20b25e0b9838435d79caf88e3"
+    },
+    {
+      "assetId": "SIGNAL_RED_ARROW_LEFT",
+      "file": "assets/svg/SIGNAL_RED_ARROW_LEFT.svg",
+      "sha256": "668cafdae8441f4169e79c5df3a591e4f3e8c38b7ff0af0583708f8a8bd1e965"
+    },
+    {
+      "assetId": "SIGNAL_RED_YELLOW_TOGETHER",
+      "file": "assets/svg/SIGNAL_RED_YELLOW_TOGETHER.svg",
+      "sha256": "2f3511b08b2acbf492d3a5573ba4630cabe30c4eb0889af87e813bfb237b4196"
+    },
+    {
+      "assetId": "SIGNAL_SOLID_GREEN",
+      "file": "assets/svg/SIGNAL_SOLID_GREEN.svg",
+      "sha256": "5d220196337f3c36656058546f03abd7b74c26246edf65d753ee15a9f9096665"
+    },
+    {
+      "assetId": "SIGNAL_SOLID_RED",
+      "file": "assets/svg/SIGNAL_SOLID_RED.svg",
+      "sha256": "e355d2fcb72d5a092576436b3f662fd36699c2efbfde63b837701fd4041b9262"
+    },
+    {
+      "assetId": "SIGNAL_SOLID_YELLOW",
+      "file": "assets/svg/SIGNAL_SOLID_YELLOW.svg",
+      "sha256": "5f023d0afbc440f84bf782fda3c3ecc4961e27e37eb799fe4058dabda94e8cf7"
+    },
+    {
+      "assetId": "SIGNAL_YELLOW_ARROW_LEFT",
+      "file": "assets/svg/SIGNAL_YELLOW_ARROW_LEFT.svg",
+      "sha256": "3912e4ff0419b1abde2d2587c119d1af044de9343bb2d9e1d5ca1409a698c43b"
+    },
+    {
+      "assetId": "SPECIAL_RAILROAD_STOP_PROCEDURE",
+      "file": "assets/svg/SPECIAL_RAILROAD_STOP_PROCEDURE.svg",
+      "sha256": "deec52148cc2643cd109d65ee393601c7827e627a7fc50850d051ae40a371d9c"
+    },
+    {
+      "assetId": "SPECIAL_WORK_ZONE_FLAGGER",
+      "file": "assets/svg/SPECIAL_WORK_ZONE_FLAGGER.svg",
+      "sha256": "b43c61137c7daab9e4e7c9e05c06088b44074efd88bd9bd9f37a68a5ca655def"
+    },
+    {
+      "assetId": "SPEED_FOLLOWING_DISTANCE_3SEC",
+      "file": "assets/svg/SPEED_FOLLOWING_DISTANCE_3SEC.svg",
+      "sha256": "5445ce11c5c2ddeefe20017e7c3efe90355cfc35512a48096832b0591a241af3"
+    },
+    {
+      "assetId": "SPEED_HIGHWAY_70MPH",
+      "file": "assets/svg/SPEED_HIGHWAY_70MPH.svg",
+      "sha256": "b10322e7afee0f87b7ddbf072e635e9d2b1c716f68b512063da93907b223daf5"
+    },
+    {
+      "assetId": "SPEED_LIMIT_RESIDENTIAL_30",
+      "file": "assets/svg/SPEED_LIMIT_RESIDENTIAL_30.svg",
+      "sha256": "4918c914f77537d926236fe6982361b74b56204b0c9b419b2a7d3f2d62b0a167"
+    },
+    {
+      "assetId": "SPEED_PASSING_CLEARANCE",
+      "file": "assets/svg/SPEED_PASSING_CLEARANCE.svg",
+      "sha256": "cd1272a5de62daa602f2fc66d3f7bf4080da3a3c0a4fb542bccb538e023a5f98"
+    },
+    {
+      "assetId": "SPEED_SCHOOL_ZONE_20MPH",
+      "file": "assets/svg/SPEED_SCHOOL_ZONE_20MPH.svg",
+      "sha256": "d860f43970978f6e1f14712db94275e37b62dc5ecb91ef45ca91254bf71ba700"
+    },
+    {
+      "assetId": "SPEED_STOPPING_DISTANCE",
+      "file": "assets/svg/SPEED_STOPPING_DISTANCE.svg",
+      "sha256": "9caf1399740750fc5eaac320276d0900c69559c93da7406f2fd4cf0d1611a4d7"
+    }
+  ]
+}

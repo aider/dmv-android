@@ -1,0 +1,466 @@
+{
+  "INTERSECTION_4WAY_STOP::intersection 4way stop driving intersection diagram": {
+    "checkedAt": "2026-02-10",
+    "error": "Error: DuckDuckGo HTTP 403"
+  },
+  "INTERSECTION_DOUBLE_TURN_LANES::intersection double turn lanes driving intersection diagram": {
+    "checkedAt": "2026-02-10",
+    "error": "Error: DuckDuckGo HTTP 403"
+  },
+  "INTERSECTION_EMERGENCY_VEHICLE::intersection emergency vehicle driving intersection diagram": {
+    "checkedAt": "2026-02-10",
+    "error": "Error: DuckDuckGo HTTP 403"
+  },
+  "INTERSECTION_MERGE_HIGHWAY::intersection merge highway driving intersection diagram": {
+    "checkedAt": "2026-02-10",
+    "error": "Error: DuckDuckGo HTTP 403"
+  },
+  "INTERSECTION_PEDESTRIAN_CROSSWALK::intersection pedestrian crosswalk driving intersection diagram": {
+    "checkedAt": "2026-02-10",
+    "error": "Error: DuckDuckGo HTTP 403"
+  },
+  "INTERSECTION_ROUNDABOUT::intersection roundabout driving intersection diagram": {
+    "checkedAt": "2026-02-10",
+    "error": "Error: DuckDuckGo HTTP 403"
+  },
+  "INTERSECTION_SCHOOL_BUS_STOPPED::intersection school bus stopped driving intersection diagram": {
+    "checkedAt": "2026-02-10",
+    "error": "Error: DuckDuckGo HTTP 403"
+  },
+  "INTERSECTION_SIGNAL_PROTECTED_LEFT::intersection signal protected left driving intersection diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "INTERSECTION_T_STOP::intersection t stop driving intersection diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "INTERSECTION_UNCONTROLLED::intersection uncontrolled driving intersection diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MARKING_HAND_SIGNAL_LEFT::driver hand signal marking hand signal left bicycle hand signals": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MARKING_HAND_SIGNAL_RIGHT::driver hand signal marking hand signal right bicycle hand signals": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MARKING_HAND_SIGNAL_STOP::driver hand signal marking hand signal stop bicycle hand signals": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_D1-1_EXIT_SIGN::D1-1 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_D3-1_DISTANCE_SIGN::D3-1 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_D9-1_REST_AREA::D9-1 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_D9-2_HOSPITAL::D9-2 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_D9-3_GAS_STATION::D9-3 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_I-5_INTERSTATE_10::I-5 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_I-5_INTERSTATE_35::I-5 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_M1-1_US_ROUTE_90::M1-1 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_M1-4_STATE_ROUTE_71::M1-4 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_OM1-1_KEEP_RIGHT::OM1-1 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_OM2-1_KEEP_LEFT::OM2-1 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_R1-1_STOP::R1-1 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_R1-2_YIELD::R1-2 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_R10-6_ONE_WAY::R10-6 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_R10-7_DO_NOT_PASS::R10-7 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_R15-1_RAILROAD_CROSSING::R15-1 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_R2-1_SPEED_LIMIT_30::R2-1 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_R2-1_SPEED_LIMIT_65::R2-1 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_R2-1_SPEED_LIMIT_70::R2-1 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_R3-1_NO_LEFT_TURN::R3-1 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "error": "Error: DuckDuckGo HTTP 403"
+  },
+  "MUTCD_R3-2_NO_RIGHT_TURN::R3-2 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "error": "Error: DuckDuckGo HTTP 403"
+  },
+  "MUTCD_R3-3_NO_U_TURN::R3-3 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "error": "Error: DuckDuckGo HTTP 403"
+  },
+  "MUTCD_R3-4_NO_TRUCKS::R3-4 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "error": "Error: DuckDuckGo HTTP 403"
+  },
+  "MUTCD_R4-7_KEEP_RIGHT::R4-7 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "error": "Error: DuckDuckGo HTTP 403"
+  },
+  "MUTCD_R5-1_DO_NOT_ENTER::R5-1 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "error": "Error: DuckDuckGo HTTP 403"
+  },
+  "MUTCD_R5-1a_WRONG_WAY::R5-1a MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "error": "Error: DuckDuckGo HTTP 403"
+  },
+  "MUTCD_R6-1_LEFT_TURN_ONLY::R6-1 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_R6-2_RIGHT_TURN_ONLY::R6-2 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_R7-107_HANDICAPPED_PARKING::R7-107 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_R7-8_NO_PARKING::R7-8 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_R8-3a_NO_PARKING_ANYTIME::R8-3a MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_S1-1_SCHOOL_CROSSING::S1-1 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_S4-3_SCHOOL_SPEED_LIMIT_20::S4-3 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_W1-1_CURVE_RIGHT::W1-1 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_W1-2_CURVE_LEFT::W1-2 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_W1-6_WINDING_ROAD::W1-6 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_W11-1_PEDESTRIAN_CROSSING::W11-1 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_W11-2_BICYCLE_CROSSING::W11-2 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_W14-1_TRUCK_CROSSING::W14-1 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_W14-2_FARM_EQUIPMENT::W14-2 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_W16-2_SLIPPERY_WHEN_WET::W16-2 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_W2-1_SIDE_ROAD::W2-1 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_W2-2_Y_INTERSECTION::W2-2 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_W2-3_T_INTERSECTION::W2-3 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_W20-1_ROAD_CONSTRUCTION::W20-1 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_W20-7_FLAGGER_AHEAD::W20-7 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_W3-1_MERGE::W3-1 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_W4-2_LANE_ENDS_MERGE::W4-2 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "MUTCD_W8-1_HILL::W8-1 MUTCD traffic sign diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PARKING_DISABLED_SPACE::parking disabled space parking rule diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PARKING_FIRE_HYDRANT_15FT::parking fire hydrant 15ft parking rule diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PARKING_HILL_DOWNHILL_CURB::parking hill downhill curb parking rule diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PARKING_HILL_UPHILL_CURB::parking hill uphill curb parking rule diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PARKING_PARALLEL_STEPS::parking parallel steps parking rule diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PAVEMENT_ARROW_LEFT::pavement arrow left pavement marking MUTCD": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PAVEMENT_ARROW_LEFT_STRAIGHT::pavement arrow left straight pavement marking MUTCD": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PAVEMENT_ARROW_RIGHT::pavement arrow right pavement marking MUTCD": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PAVEMENT_ARROW_RIGHT_STRAIGHT::pavement arrow right straight pavement marking MUTCD": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PAVEMENT_ARROW_STRAIGHT::pavement arrow straight pavement marking MUTCD": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PAVEMENT_BIKE_LANE::pavement bike lane pavement marking MUTCD": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PAVEMENT_CROSSWALK_ZEBRA::pavement crosswalk zebra pavement marking MUTCD": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PAVEMENT_DASHED_WHITE_LINE::pavement dashed white line pavement marking MUTCD": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PAVEMENT_DOUBLE_YELLOW_MIXED::pavement double yellow mixed pavement marking MUTCD": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PAVEMENT_DOUBLE_YELLOW_SOLID::pavement double yellow solid pavement marking MUTCD": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PAVEMENT_GORE_AREA::pavement gore area pavement marking MUTCD": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PAVEMENT_HANDICAP_SYMBOL::pavement handicap symbol pavement marking MUTCD": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PAVEMENT_HOV_DIAMOND::pavement hov diamond pavement marking MUTCD": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PAVEMENT_NO_PASSING_ZONE::pavement no passing zone pavement marking MUTCD": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PAVEMENT_ONLY_TEXT::pavement only text pavement marking MUTCD": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PAVEMENT_RAILROAD_CROSSING_X::pavement railroad crossing x pavement marking MUTCD": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PAVEMENT_SCHOOL_ZONE::pavement school zone pavement marking MUTCD": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PAVEMENT_SHARED_CENTER_TURN_LANE::pavement shared center turn lane pavement marking MUTCD": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PAVEMENT_SHARROW::pavement sharrow pavement marking MUTCD": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PAVEMENT_SINGLE_YELLOW_DASHED::pavement single yellow dashed pavement marking MUTCD": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PAVEMENT_SOLID_WHITE_LINE::pavement solid white line pavement marking MUTCD": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PAVEMENT_STOP_LINE::pavement stop line pavement marking MUTCD": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PAVEMENT_TURN_LANE_CENTER::pavement turn lane center pavement marking MUTCD": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "PAVEMENT_YIELD_LINE::pavement yield line pavement marking MUTCD": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "SAFE_BLIND_SPOT_CHECK::safe blind spot check driver safety diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "SAFE_DEFENSIVE_SPACE_CUSHION::safe defensive space cushion driver safety diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "SAFE_MIRROR_ADJUSTMENT::safe mirror adjustment driver safety diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "SAFE_TIRE_TREAD_DEPTH::safe tire tread depth driver safety diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "SIGNAL_FLASHING_RED::signal flashing red traffic signal indication": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "SIGNAL_FLASHING_YELLOW::signal flashing yellow traffic signal indication": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "SIGNAL_GREEN_ARROW_LEFT::signal green arrow left traffic signal indication": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "SIGNAL_GREEN_ARROW_RIGHT::signal green arrow right traffic signal indication": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "SIGNAL_PED_COUNTDOWN::signal ped countdown traffic signal indication": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "SIGNAL_PED_DONT_WALK::signal ped dont walk traffic signal indication": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "SIGNAL_PED_WALK::signal ped walk traffic signal indication": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "SIGNAL_RED_ARROW_LEFT::signal red arrow left traffic signal indication": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "SIGNAL_RED_YELLOW_TOGETHER::signal red yellow together traffic signal indication": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "SIGNAL_SOLID_GREEN::signal solid green traffic signal indication": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "SIGNAL_SOLID_RED::signal solid red traffic signal indication": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "SIGNAL_SOLID_YELLOW::signal solid yellow traffic signal indication": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "SIGNAL_YELLOW_ARROW_LEFT::signal yellow arrow left traffic signal indication": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "SPECIAL_RAILROAD_STOP_PROCEDURE::special railroad stop procedure driving rule diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "SPECIAL_WORK_ZONE_FLAGGER::special work zone flagger driving rule diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "SPEED_FOLLOWING_DISTANCE_3SEC::speed following distance 3sec safe driving distance diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "SPEED_HIGHWAY_70MPH::speed highway 70mph safe driving distance diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "SPEED_LIMIT_RESIDENTIAL_30::speed limit residential 30 safe driving distance diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "SPEED_PASSING_CLEARANCE::speed passing clearance safe driving distance diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "SPEED_SCHOOL_ZONE_20MPH::speed school zone 20mph safe driving distance diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  },
+  "SPEED_STOPPING_DISTANCE::speed stopping distance safe driving distance diagram": {
+    "checkedAt": "2026-02-10",
+    "results": []
+  }
+}

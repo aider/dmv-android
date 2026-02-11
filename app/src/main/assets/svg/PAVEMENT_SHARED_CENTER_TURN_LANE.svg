@@ -1,35 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="PAVEMENT_SHARED_CENTER_TURN_LANE">
-<g transform="translate(12 41.3333) scale(0.5867)">
-    <rect x="0" y="0" width="300" height="200" fill="#88AA88"/>
-      <!-- 5-lane road -->
-      <rect x="0" y="40" width="300" height="120" fill="#4A4A4A"/>
-      <!-- Lane lines (white dashed) -->
-      <rect x="10" y="72" width="20" height="8" fill="#FFFFFF"/>
-      <rect x="50" y="72" width="20" height="8" fill="#FFFFFF"/>
-      <rect x="90" y="72" width="20" height="8" fill="#FFFFFF"/>
-      <rect x="130" y="72" width="20" height="8" fill="#FFFFFF"/>
-      <rect x="170" y="72" width="20" height="8" fill="#FFFFFF"/>
-      <rect x="210" y="72" width="20" height="8" fill="#FFFFFF"/>
-      <rect x="250" y="72" width="20" height="8" fill="#FFFFFF"/>
-      <rect x="10" y="120" width="20" height="8" fill="#FFFFFF"/>
-      <rect x="50" y="120" width="20" height="8" fill="#FFFFFF"/>
-      <rect x="90" y="120" width="20" height="8" fill="#FFFFFF"/>
-      <rect x="130" y="120" width="20" height="8" fill="#FFFFFF"/>
-      <rect x="170" y="120" width="20" height="8" fill="#FFFFFF"/>
-      <rect x="210" y="120" width="20" height="8" fill="#FFFFFF"/>
-      <rect x="250" y="120" width="20" height="8" fill="#FFFFFF"/>
-      <!-- Center turn lane boundaries (solid yellow + dashed yellow) -->
-      <line x1="0" y1="88" x2="300" y2="88" stroke="#FFCC00" stroke-width="8"/>
-      <line x1="0" y1="112" x2="300" y2="112" stroke="#FFCC00" stroke-width="8"/>
-      <line x1="0" y1="96" x2="300" y2="96" stroke="#FFCC00" stroke-width="6" stroke-dasharray="10,8"/>
-      <line x1="0" y1="104" x2="300" y2="104" stroke="#FFCC00" stroke-width="6" stroke-dasharray="10,8"/>
-      <!-- Turn arrows in center lane (opposing directions) -->
-      <path d="M 80,100 L 60,100 L 60,95 L 50,102 L 60,109 L 60,104 L 80,104 Z" fill="#FFFFFF"/>
-      <path d="M 220,100 L 240,100 L 240,95 L 250,102 L 240,109 L 240,104 L 220,104 Z" fill="#FFFFFF"/>
-      <!-- Vehicle using center lane to turn left -->
-      <rect x="140" y="92" width="30" height="18" rx="3" fill="#3366CC"/>
-      <!-- Label -->
-      <text x="150" y="166" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#000000" text-anchor="middle">CENTER TWO-WAY</text>
-      <text x="150" y="184" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#000000" text-anchor="middle">LEFT TURN LANE</text>
-  </g>
+  <rect x="8" y="24" width="184" height="152" fill="#88AA88"/>
+  <rect x="8" y="64" width="184" height="74" fill="#4A4A4A"/>
+
+  <rect x="18" y="82" width="16" height="4" fill="#FFFFFF"/>
+  <rect x="42" y="82" width="16" height="4" fill="#FFFFFF"/>
+  <rect x="66" y="82" width="16" height="4" fill="#FFFFFF"/>
+  <rect x="118" y="82" width="16" height="4" fill="#FFFFFF"/>
+  <rect x="142" y="82" width="16" height="4" fill="#FFFFFF"/>
+  <rect x="166" y="82" width="16" height="4" fill="#FFFFFF"/>
+
+  <rect x="18" y="116" width="16" height="4" fill="#FFFFFF"/>
+  <rect x="42" y="116" width="16" height="4" fill="#FFFFFF"/>
+  <rect x="66" y="116" width="16" height="4" fill="#FFFFFF"/>
+  <rect x="118" y="116" width="16" height="4" fill="#FFFFFF"/>
+  <rect x="142" y="116" width="16" height="4" fill="#FFFFFF"/>
+  <rect x="166" y="116" width="16" height="4" fill="#FFFFFF"/>
+
+  <line x1="8" y1="92" x2="192" y2="92" stroke="#FFCC00" stroke-width="4"/>
+  <line x1="8" y1="110" x2="192" y2="110" stroke="#FFCC00" stroke-width="4"/>
+  <line x1="8" y1="98" x2="192" y2="98" stroke="#FFCC00" stroke-width="2" stroke-dasharray="7 6"/>
+  <line x1="8" y1="104" x2="192" y2="104" stroke="#FFCC00" stroke-width="2" stroke-dasharray="7 6"/>
+
+  <path d="M 70 101 L 58 101 L 58 98 L 50 103 L 58 108 L 58 105 L 70 105 Z" fill="#FFFFFF"/>
+  <path d="M 130 101 L 142 101 L 142 98 L 150 103 L 142 108 L 142 105 L 130 105 Z" fill="#FFFFFF"/>
+
+  <rect x="92" y="96" width="16" height="12" rx="2" fill="#3366CC"/>
+
+  <text x="100" y="156" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="900" fill="#000000" text-anchor="middle">CENTER TWO-WAY</text>
+  <text x="100" y="168" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="900" fill="#000000" text-anchor="middle">LEFT TURN LANE</text>
 </svg>

@@ -1,32 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="SPEED_SCHOOL_ZONE_20MPH">
-<g transform="translate(12 41.3333) scale(0.5867)">
-    <rect x="0" y="0" width="300" height="200" fill="#88AA88"/>
-      <rect x="0" y="70" width="300" height="60" fill="#4A4A4A"/>
-      <!-- School zone sign -->
-      <g transform="translate(50,20) scale(0.3)">
-        <path d="M 100,10 L 186,73 L 150,183 L 50,183 L 14,73 Z" fill="#C8E800" stroke="#000000" stroke-width="6"/>
-        <g fill="#000000" transform="scale(0.8) translate(25,25)">
-          <circle cx="75" cy="75" r="12"/>
-          <rect x="68" y="87" width="14" height="25" rx="7"/>
-          <circle cx="125" cy="75" r="12"/>
-          <rect x="118" y="87" width="14" height="25" rx="7"/>
-        </g>
-      </g>
-      <!-- Speed limit sign -->
-      <g transform="translate(120,15) scale(0.45)">
-        <rect x="5" y="5" width="140" height="190" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="8"/>
-        <text x="75" y="60" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#000000" text-anchor="middle">SPEED</text>
-        <text x="75" y="85" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#000000" text-anchor="middle">LIMIT</text>
-        <text x="75" y="150" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="900" fill="#000000" text-anchor="middle">20</text>
-      </g>
-      <!-- Children crossing -->
-      <g fill="#FFCC00" stroke="#000000" stroke-width="8">
-        <circle cx="220" cy="88" r="6"/>
-        <line x1="220" y1="94" x2="220" y2="110" stroke-width="8"/>
-        <line x1="212" y1="100" x2="228" y2="100" stroke-width="8"/>
-        <line x1="220" y1="110" x2="214" y2="122" stroke-width="8"/>
-        <line x1="220" y1="110" x2="226" y2="122" stroke-width="8"/>
-      </g>
-      <text x="150" y="175" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#000000" text-anchor="middle">SLOW IN SCHOOL ZONES</text>
+  <rect x="8" y="24" width="184" height="152" fill="#88AA88"/>
+  <rect x="8" y="86" width="184" height="28" fill="#4A4A4A"/>
+
+  <path d="M56 76 L66 58 L86 58 L96 76 L88 102 L64 102 Z" fill="#C8E800" stroke="#000000" stroke-width="2"/>
+  <circle cx="73" cy="70" r="2.2" fill="#000000"/>
+  <circle cx="80" cy="70" r="2.2" fill="#000000"/>
+  <rect x="72" y="73" width="2.5" height="7" fill="#000000"/>
+  <rect x="79" y="73" width="2.5" height="7" fill="#000000"/>
+
+  <rect x="82" y="52" width="56" height="74" rx="3" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+  <text x="110" y="67" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="800" fill="#000000" text-anchor="middle">SPEED</text>
+  <text x="110" y="79" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="800" fill="#000000" text-anchor="middle">LIMIT</text>
+  <text x="110" y="108" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="900" fill="#000000" text-anchor="middle">20</text>
+
+  <g fill="#111111">
+    <circle cx="144" cy="98" r="6"/>
+    <rect x="140" y="104" width="8" height="12" rx="3"/>
+    <line x1="136" y1="109" x2="152" y2="109" stroke="#111111" stroke-width="3" stroke-linecap="round"/>
+    <line x1="141" y1="116" x2="136" y2="127" stroke="#111111" stroke-width="3" stroke-linecap="round"/>
+    <line x1="147" y1="116" x2="152" y2="127" stroke="#111111" stroke-width="3" stroke-linecap="round"/>
   </g>
+
+  <text x="100" y="158" font-family="Arial, Helvetica, sans-serif" font-size="7" font-weight="900" fill="#000000" text-anchor="middle">SLOW IN SCHOOL ZONES</text>
 </svg>

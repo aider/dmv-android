@@ -1,20 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="SPEED_FOLLOWING_DISTANCE_3SEC">
-<g transform="translate(12 41.3333) scale(0.5867)">
-    <rect x="0" y="0" width="300" height="200" fill="#88AA88"/>
-      <rect x="0" y="70" width="300" height="60" fill="#4A4A4A"/>
-      <!-- Lane markings -->
-      <rect x="146" y="75" width="8" height="15" fill="#FFCC00"/>
-      <rect x="146" y="110" width="8" height="15" fill="#FFCC00"/>
-      <!-- Lead vehicle -->
-      <rect x="200" y="85" width="30" height="18" rx="3" fill="#666666"/>
-      <!-- Following vehicle -->
-      <rect x="80" y="85" width="30" height="18" rx="3" fill="#3366CC"/>
-      <!-- Distance indicator -->
-      <line x1="110" y1="60" x2="200" y2="60" stroke="#00FF00" stroke-width="8"/>
-      <line x1="110" y1="55" x2="110" y2="65" stroke="#00FF00" stroke-width="8"/>
-      <line x1="200" y1="55" x2="200" y2="65" stroke="#00FF00" stroke-width="8"/>
-      <text x="155" y="50" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="900" fill="#00FF00" text-anchor="middle">3 SEC</text>
-      <text x="150" y="162" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#000000" text-anchor="middle">MIN SAFE</text>
-      <text x="150" y="180" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#000000" text-anchor="middle">FOLLOWING DISTANCE</text>
-  </g>
+  <rect x="8" y="24" width="184" height="152" fill="#88AA88"/>
+  <rect x="8" y="82" width="184" height="46" fill="#4A4A4A"/>
+
+  <rect x="98" y="86" width="4" height="13" fill="#FFCC00"/>
+  <rect x="98" y="111" width="4" height="13" fill="#FFCC00"/>
+
+  <rect x="60" y="94" width="18" height="12" rx="2" fill="#3366CC"/>
+  <rect x="122" y="94" width="18" height="12" rx="2" fill="#666666"/>
+
+  <line x1="78" y1="74" x2="122" y2="74" stroke="#39FF14" stroke-width="3"/>
+  <line x1="78" y1="70" x2="78" y2="78" stroke="#39FF14" stroke-width="3"/>
+  <line x1="122" y1="70" x2="122" y2="78" stroke="#39FF14" stroke-width="3"/>
+
+  <text x="100" y="66" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="900" fill="#00E63A" text-anchor="middle">3 SEC</text>
+  <text x="100" y="154" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="900" fill="#000000" text-anchor="middle">MIN SAFE</text>
+  <text x="100" y="166" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="900" fill="#000000" text-anchor="middle">FOLLOWING DISTANCE</text>
 </svg>

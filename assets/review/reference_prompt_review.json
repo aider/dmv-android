@@ -1,0 +1,1751 @@
+{
+  "generatedAt": "2026-02-10",
+  "total": 116,
+  "keep": 116,
+  "skip": 0,
+  "rows": [
+    {
+      "assetId": "INTERSECTION_4WAY_STOP",
+      "category": "intersection",
+      "query": "intersection 4way stop driving intersection diagram",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Top-down intersection diagrams: lane lines and control devices must be semantically unambiguous.",
+        "Vehicle scale should be consistent across intersection assets (about 14-18% lane span)."
+      ]
+    },
+    {
+      "assetId": "INTERSECTION_DOUBLE_TURN_LANES",
+      "category": "intersection",
+      "query": "intersection double turn lanes driving intersection diagram",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Top-down intersection diagrams: lane lines and control devices must be semantically unambiguous.",
+        "Vehicle scale should be consistent across intersection assets (about 14-18% lane span)."
+      ]
+    },
+    {
+      "assetId": "INTERSECTION_EMERGENCY_VEHICLE",
+      "category": "intersection",
+      "query": "intersection emergency vehicle driving intersection diagram",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Top-down intersection diagrams: lane lines and control devices must be semantically unambiguous.",
+        "Vehicle scale should be consistent across intersection assets (about 14-18% lane span)."
+      ]
+    },
+    {
+      "assetId": "INTERSECTION_MERGE_HIGHWAY",
+      "category": "intersection",
+      "query": "intersection merge highway driving intersection diagram",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Top-down intersection diagrams: lane lines and control devices must be semantically unambiguous.",
+        "Vehicle scale should be consistent across intersection assets (about 14-18% lane span)."
+      ]
+    },
+    {
+      "assetId": "INTERSECTION_PEDESTRIAN_CROSSWALK",
+      "category": "intersection",
+      "query": "intersection pedestrian crosswalk driving intersection diagram",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Top-down intersection diagrams: lane lines and control devices must be semantically unambiguous.",
+        "Vehicle scale should be consistent across intersection assets (about 14-18% lane span)."
+      ]
+    },
+    {
+      "assetId": "INTERSECTION_ROUNDABOUT",
+      "category": "intersection",
+      "query": "intersection roundabout driving intersection diagram",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Top-down intersection diagrams: lane lines and control devices must be semantically unambiguous.",
+        "Vehicle scale should be consistent across intersection assets (about 14-18% lane span).",
+        "Roundabout arrows should be evenly spaced and tangent to circular travel path."
+      ]
+    },
+    {
+      "assetId": "INTERSECTION_SCHOOL_BUS_STOPPED",
+      "category": "intersection",
+      "query": "intersection school bus stopped driving intersection diagram",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Top-down intersection diagrams: lane lines and control devices must be semantically unambiguous.",
+        "Vehicle scale should be consistent across intersection assets (about 14-18% lane span).",
+        "Stopped school bus should show active red stop arm and implied no-passing context."
+      ]
+    },
+    {
+      "assetId": "INTERSECTION_SIGNAL_PROTECTED_LEFT",
+      "category": "intersection",
+      "query": "intersection signal protected left driving intersection diagram",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Top-down intersection diagrams: lane lines and control devices must be semantically unambiguous.",
+        "Vehicle scale should be consistent across intersection assets (about 14-18% lane span).",
+        "Protected-left example must clearly show green arrow phase vs opposing traffic control."
+      ]
+    },
+    {
+      "assetId": "INTERSECTION_T_STOP",
+      "category": "intersection",
+      "query": "intersection t stop driving intersection diagram",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Top-down intersection diagrams: lane lines and control devices must be semantically unambiguous.",
+        "Vehicle scale should be consistent across intersection assets (about 14-18% lane span)."
+      ]
+    },
+    {
+      "assetId": "INTERSECTION_UNCONTROLLED",
+      "category": "intersection",
+      "query": "intersection uncontrolled driving intersection diagram",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Top-down intersection diagrams: lane lines and control devices must be semantically unambiguous.",
+        "Vehicle scale should be consistent across intersection assets (about 14-18% lane span)."
+      ]
+    },
+    {
+      "assetId": "MARKING_HAND_SIGNAL_LEFT",
+      "category": "marking",
+      "query": "driver hand signal marking hand signal left bicycle hand signals",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Hand signals must originate from driver side window with anatomically clear arm angles."
+      ]
+    },
+    {
+      "assetId": "MARKING_HAND_SIGNAL_RIGHT",
+      "category": "marking",
+      "query": "driver hand signal marking hand signal right bicycle hand signals",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Hand signals must originate from driver side window with anatomically clear arm angles."
+      ]
+    },
+    {
+      "assetId": "MARKING_HAND_SIGNAL_STOP",
+      "category": "marking",
+      "query": "driver hand signal marking hand signal stop bicycle hand signals",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Hand signals must originate from driver side window with anatomically clear arm angles."
+      ]
+    },
+    {
+      "assetId": "MUTCD_D1-1_EXIT_SIGN",
+      "category": "mutcd",
+      "query": "D1-1 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_D1-1.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/MUTCD_D1-1.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code D1-1. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_D3-1_DISTANCE_SIGN",
+      "category": "mutcd",
+      "query": "D3-1 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_D3-1.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c2/MUTCD_D3-1.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code D3-1. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_D9-1_REST_AREA",
+      "category": "mutcd",
+      "query": "D9-1 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_D9-1.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/MUTCD_D9-1.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code D9-1. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_D9-2_HOSPITAL",
+      "category": "mutcd",
+      "query": "D9-2 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_D9-2.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fd/MUTCD_D9-2.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code D9-2. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_D9-3_GAS_STATION",
+      "category": "mutcd",
+      "query": "D9-3 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_D9-3.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/MUTCD_D9-3.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code D9-3. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_I-5_INTERSTATE_10",
+      "category": "mutcd",
+      "query": "I-5 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_I-5.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/MUTCD_I3-5.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code I-5. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding.",
+        "Interstate shield: red top banner with full INTERSTATE word centered and not cropped."
+      ]
+    },
+    {
+      "assetId": "MUTCD_I-5_INTERSTATE_35",
+      "category": "mutcd",
+      "query": "I-5 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_I-5.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/MUTCD_I3-5.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code I-5. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding.",
+        "Interstate shield: red top banner with full INTERSTATE word centered and not cropped."
+      ]
+    },
+    {
+      "assetId": "MUTCD_M1-1_US_ROUTE_90",
+      "category": "mutcd",
+      "query": "M1-1 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_M1-1.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/MUTCD_M1-1_%282_digits%29.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code M1-1. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding.",
+        "Route marker numerals must fill 45-55% of marker height and remain optically centered."
+      ]
+    },
+    {
+      "assetId": "MUTCD_M1-4_STATE_ROUTE_71",
+      "category": "mutcd",
+      "query": "M1-4 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_M1-4.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/MUTCD_M1-4_%282_digits%29.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code M1-4. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding.",
+        "Route marker numerals must fill 45-55% of marker height and remain optically centered."
+      ]
+    },
+    {
+      "assetId": "MUTCD_OM1-1_KEEP_RIGHT",
+      "category": "mutcd",
+      "query": "OM1-1 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_OM1-1.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/30/MUTCD_OM1-1.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code OM1-1. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding.",
+        "Route marker numerals must fill 45-55% of marker height and remain optically centered.",
+        "Object marker arrow: strong vertical stem with directional head; avoid blob-like top."
+      ]
+    },
+    {
+      "assetId": "MUTCD_OM2-1_KEEP_LEFT",
+      "category": "mutcd",
+      "query": "OM2-1 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "MUTCD OM2-1 reference bundle",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009r1r2/part2/part2a.htm",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code OM2-1. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding.",
+        "Object marker arrow: strong vertical stem with directional head; avoid blob-like top."
+      ]
+    },
+    {
+      "assetId": "MUTCD_R1-1_STOP",
+      "category": "mutcd",
+      "query": "R1-1 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_R1-1.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c0/MUTCD_R1-1.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code R1-1. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding.",
+        "STOP legend: wide uppercase letters, centered, total text width about 62-70% of octagon width."
+      ]
+    },
+    {
+      "assetId": "MUTCD_R1-2_YIELD",
+      "category": "mutcd",
+      "query": "R1-2 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_R1-2.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/MUTCD_R1-2.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code R1-2. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding.",
+        "Yield triangle must be apex-down with balanced red border and centered YIELD legend."
+      ]
+    },
+    {
+      "assetId": "MUTCD_R10-6_ONE_WAY",
+      "category": "mutcd",
+      "query": "R10-6 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_R10-6.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dc/MUTCD_R10-6.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code R10-6. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_R10-7_DO_NOT_PASS",
+      "category": "mutcd",
+      "query": "R10-7 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_R10-7.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/MUTCD_R10-7.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code R10-7. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_R15-1_RAILROAD_CROSSING",
+      "category": "mutcd",
+      "query": "R15-1 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_R15-1.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/MUTCD_R15-1.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code R15-1. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_R2-1_SPEED_LIMIT_30",
+      "category": "mutcd",
+      "query": "R2-1 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_R2-1.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/MUTCD_R2-1.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code R2-1. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding.",
+        "Speed limit layout: SPEED LIMIT top stack, horizontal separator, large numeral block centered."
+      ]
+    },
+    {
+      "assetId": "MUTCD_R2-1_SPEED_LIMIT_65",
+      "category": "mutcd",
+      "query": "R2-1 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_R2-1.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/MUTCD_R2-1.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code R2-1. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding.",
+        "Speed limit layout: SPEED LIMIT top stack, horizontal separator, large numeral block centered."
+      ]
+    },
+    {
+      "assetId": "MUTCD_R2-1_SPEED_LIMIT_70",
+      "category": "mutcd",
+      "query": "R2-1 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_R2-1.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/MUTCD_R2-1.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code R2-1. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding.",
+        "Speed limit layout: SPEED LIMIT top stack, horizontal separator, large numeral block centered."
+      ]
+    },
+    {
+      "assetId": "MUTCD_R3-1_NO_LEFT_TURN",
+      "category": "mutcd",
+      "query": "R3-1 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_R3-1.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8f/MUTCD_R3-1.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code R3-1. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding.",
+        "Prohibition signs: red circle + 45-degree slash must intersect black symbol cleanly."
+      ]
+    },
+    {
+      "assetId": "MUTCD_R3-2_NO_RIGHT_TURN",
+      "category": "mutcd",
+      "query": "R3-2 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_R3-2.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/MUTCD_R3-2.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code R3-2. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding.",
+        "Prohibition signs: red circle + 45-degree slash must intersect black symbol cleanly."
+      ]
+    },
+    {
+      "assetId": "MUTCD_R3-3_NO_U_TURN",
+      "category": "mutcd",
+      "query": "R3-3 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_R3-3.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/MUTCD_R3-3.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code R3-3. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding.",
+        "Prohibition signs: red circle + 45-degree slash must intersect black symbol cleanly."
+      ]
+    },
+    {
+      "assetId": "MUTCD_R3-4_NO_TRUCKS",
+      "category": "mutcd",
+      "query": "R3-4 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_R3-4.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d1/MUTCD_R3-4.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code R3-4. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding.",
+        "Prohibition signs: red circle + 45-degree slash must intersect black symbol cleanly."
+      ]
+    },
+    {
+      "assetId": "MUTCD_R4-7_KEEP_RIGHT",
+      "category": "mutcd",
+      "query": "R4-7 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_R4-7.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/MUTCD_R4-7.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code R4-7. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_R5-1_DO_NOT_ENTER",
+      "category": "mutcd",
+      "query": "R5-1 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_R5-1.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/MUTCD_R5-1.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code R5-1. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_R5-1a_WRONG_WAY",
+      "category": "mutcd",
+      "query": "R5-1a MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_R5-1a.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2a/MUTCD_R5-1a.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code R5-1a. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_R6-1_LEFT_TURN_ONLY",
+      "category": "mutcd",
+      "query": "R6-1 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_R6-1.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7a/MUTCD_R6-1L.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code R6-1. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_R6-2_RIGHT_TURN_ONLY",
+      "category": "mutcd",
+      "query": "R6-2 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_R6-2.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/MUTCD_R6-2L.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code R6-2. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_R7-107_HANDICAPPED_PARKING",
+      "category": "mutcd",
+      "query": "R7-107 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_R7-107.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/MUTCD_R7-107.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code R7-107. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_R7-8_NO_PARKING",
+      "category": "mutcd",
+      "query": "R7-8 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_R7-8.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d9/MUTCD_R7-8.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code R7-8. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_R8-3a_NO_PARKING_ANYTIME",
+      "category": "mutcd",
+      "query": "R8-3a MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_R8-3a.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/MUTCD_R8-3a.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code R8-3a. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding.",
+        "NO PARKING ANYTIME text must fit without overlap; reduce font size before touching border."
+      ]
+    },
+    {
+      "assetId": "MUTCD_S1-1_SCHOOL_CROSSING",
+      "category": "mutcd",
+      "query": "S1-1 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_S1-1.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/MUTCD_S1-1.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code S1-1. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_S4-3_SCHOOL_SPEED_LIMIT_20",
+      "category": "mutcd",
+      "query": "S4-3 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_S4-3.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/MUTCD_S4-3P.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code S4-3. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding.",
+        "Bottom legend WHEN CHILDREN PRESENT must remain fully readable at 128px preview."
+      ]
+    },
+    {
+      "assetId": "MUTCD_W1-1_CURVE_RIGHT",
+      "category": "mutcd",
+      "query": "W1-1 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_W1-1.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/MUTCD_W1-1L.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code W1-1. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_W1-2_CURVE_LEFT",
+      "category": "mutcd",
+      "query": "W1-2 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_W1-2.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/MUTCD_W1-2L.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code W1-2. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_W1-6_WINDING_ROAD",
+      "category": "mutcd",
+      "query": "W1-6 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_W1-6.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b2/MUTCD_W1-6L.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code W1-6. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_W11-1_PEDESTRIAN_CROSSING",
+      "category": "mutcd",
+      "query": "W11-1 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_W11-1.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/MUTCD_W11-1.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code W11-1. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_W11-2_BICYCLE_CROSSING",
+      "category": "mutcd",
+      "query": "W11-2 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_W11-2.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/MUTCD_W11-2.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code W11-2. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_W14-1_TRUCK_CROSSING",
+      "category": "mutcd",
+      "query": "W14-1 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_W14-1.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/MUTCD_W14-1.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code W14-1. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_W14-2_FARM_EQUIPMENT",
+      "category": "mutcd",
+      "query": "W14-2 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_W14-2.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/MUTCD_W14-2.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code W14-2. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_W16-2_SLIPPERY_WHEN_WET",
+      "category": "mutcd",
+      "query": "W16-2 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "MUTCD W16-2 reference bundle",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009r1r2/part2/part2a.htm",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code W16-2. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_W2-1_SIDE_ROAD",
+      "category": "mutcd",
+      "query": "W2-1 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_W2-1.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/MUTCD_W2-1.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code W2-1. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_W2-2_Y_INTERSECTION",
+      "category": "mutcd",
+      "query": "W2-2 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_W2-2.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fc/MUTCD_W2-2R.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code W2-2. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_W2-3_T_INTERSECTION",
+      "category": "mutcd",
+      "query": "W2-3 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_W2-3.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/MUTCD_W2-3R.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code W2-3. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_W20-1_ROAD_CONSTRUCTION",
+      "category": "mutcd",
+      "query": "W20-1 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_W20-1.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/MUTCD_CW20-1.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code W20-1. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_W20-7_FLAGGER_AHEAD",
+      "category": "mutcd",
+      "query": "W20-7 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "MUTCD W20-7 reference bundle",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009r1r2/part2/part2a.htm",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code W20-7. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_W3-1_MERGE",
+      "category": "mutcd",
+      "query": "W3-1 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_W3-1.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/MUTCD_W3-1.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code W3-1. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_W4-2_LANE_ENDS_MERGE",
+      "category": "mutcd",
+      "query": "W4-2 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_W4-2.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e5/MUTCD_W4-2R.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code W4-2. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "MUTCD_W8-1_HILL",
+      "category": "mutcd",
+      "query": "W8-1 MUTCD traffic sign diagram",
+      "bestReferenceTitle": "File:MUTCD_W8-1.svg",
+      "bestReferenceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/MUTCD_W8-1.svg",
+      "bestReferenceScore": 9,
+      "decision": "keep",
+      "reason": "Top result score 9. Contains code W8-1. Domain: upload.wikimedia.org.",
+      "promptAdditions": [
+        "Use official MUTCD code geometry proportions for this exact code.",
+        "Set sign footprint to 76-84% of canvas width and center exactly in viewBox.",
+        "Constrain border thickness and inset to consistent ratio (outer border > inner keyline).",
+        "Keep all legend text inside safe area with at least 8 units side padding."
+      ]
+    },
+    {
+      "assetId": "PARKING_DISABLED_SPACE",
+      "category": "parking",
+      "query": "parking disabled space parking rule diagram",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Use consistent icon stroke family and avoid decorative elements that reduce instructional clarity.",
+        "Keep all instructional text within safe margins and center labels to prevent truncation."
+      ]
+    },
+    {
+      "assetId": "PARKING_FIRE_HYDRANT_15FT",
+      "category": "parking",
+      "query": "parking fire hydrant 15ft parking rule diagram",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Use consistent icon stroke family and avoid decorative elements that reduce instructional clarity.",
+        "Keep all instructional text within safe margins and center labels to prevent truncation."
+      ]
+    },
+    {
+      "assetId": "PARKING_HILL_DOWNHILL_CURB",
+      "category": "parking",
+      "query": "parking hill downhill curb parking rule diagram",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Use consistent icon stroke family and avoid decorative elements that reduce instructional clarity.",
+        "Keep all instructional text within safe margins and center labels to prevent truncation."
+      ]
+    },
+    {
+      "assetId": "PARKING_HILL_UPHILL_CURB",
+      "category": "parking",
+      "query": "parking hill uphill curb parking rule diagram",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Use consistent icon stroke family and avoid decorative elements that reduce instructional clarity.",
+        "Keep all instructional text within safe margins and center labels to prevent truncation."
+      ]
+    },
+    {
+      "assetId": "PARKING_PARALLEL_STEPS",
+      "category": "parking",
+      "query": "parking parallel steps parking rule diagram",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Use consistent icon stroke family and avoid decorative elements that reduce instructional clarity.",
+        "Keep all instructional text within safe margins and center labels to prevent truncation."
+      ]
+    },
+    {
+      "assetId": "PAVEMENT_ARROW_LEFT",
+      "category": "pavement",
+      "query": "pavement arrow left pavement marking MUTCD",
+      "bestReferenceTitle": "MUTCD Part 3B Pavement and Curb Markings",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part3/part3b.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use lane-centered markings with accurate line type (solid, dashed, double, shark teeth).",
+        "Text markings must be road-aligned and not exceed 70% lane width."
+      ]
+    },
+    {
+      "assetId": "PAVEMENT_ARROW_LEFT_STRAIGHT",
+      "category": "pavement",
+      "query": "pavement arrow left straight pavement marking MUTCD",
+      "bestReferenceTitle": "MUTCD Part 3B Pavement and Curb Markings",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part3/part3b.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use lane-centered markings with accurate line type (solid, dashed, double, shark teeth).",
+        "Text markings must be road-aligned and not exceed 70% lane width."
+      ]
+    },
+    {
+      "assetId": "PAVEMENT_ARROW_RIGHT",
+      "category": "pavement",
+      "query": "pavement arrow right pavement marking MUTCD",
+      "bestReferenceTitle": "MUTCD Part 3B Pavement and Curb Markings",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part3/part3b.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use lane-centered markings with accurate line type (solid, dashed, double, shark teeth).",
+        "Text markings must be road-aligned and not exceed 70% lane width."
+      ]
+    },
+    {
+      "assetId": "PAVEMENT_ARROW_RIGHT_STRAIGHT",
+      "category": "pavement",
+      "query": "pavement arrow right straight pavement marking MUTCD",
+      "bestReferenceTitle": "MUTCD Part 3B Pavement and Curb Markings",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part3/part3b.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use lane-centered markings with accurate line type (solid, dashed, double, shark teeth).",
+        "Text markings must be road-aligned and not exceed 70% lane width."
+      ]
+    },
+    {
+      "assetId": "PAVEMENT_ARROW_STRAIGHT",
+      "category": "pavement",
+      "query": "pavement arrow straight pavement marking MUTCD",
+      "bestReferenceTitle": "MUTCD Part 3B Pavement and Curb Markings",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part3/part3b.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use lane-centered markings with accurate line type (solid, dashed, double, shark teeth).",
+        "Text markings must be road-aligned and not exceed 70% lane width."
+      ]
+    },
+    {
+      "assetId": "PAVEMENT_BIKE_LANE",
+      "category": "pavement",
+      "query": "pavement bike lane pavement marking MUTCD",
+      "bestReferenceTitle": "MUTCD Part 3B Pavement and Curb Markings",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part3/part3b.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use lane-centered markings with accurate line type (solid, dashed, double, shark teeth).",
+        "Text markings must be road-aligned and not exceed 70% lane width."
+      ]
+    },
+    {
+      "assetId": "PAVEMENT_CROSSWALK_ZEBRA",
+      "category": "pavement",
+      "query": "pavement crosswalk zebra pavement marking MUTCD",
+      "bestReferenceTitle": "MUTCD Part 3B Pavement and Curb Markings",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part3/part3b.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use lane-centered markings with accurate line type (solid, dashed, double, shark teeth).",
+        "Text markings must be road-aligned and not exceed 70% lane width."
+      ]
+    },
+    {
+      "assetId": "PAVEMENT_DASHED_WHITE_LINE",
+      "category": "pavement",
+      "query": "pavement dashed white line pavement marking MUTCD",
+      "bestReferenceTitle": "MUTCD Part 3B Pavement and Curb Markings",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part3/part3b.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use lane-centered markings with accurate line type (solid, dashed, double, shark teeth).",
+        "Text markings must be road-aligned and not exceed 70% lane width."
+      ]
+    },
+    {
+      "assetId": "PAVEMENT_DOUBLE_YELLOW_MIXED",
+      "category": "pavement",
+      "query": "pavement double yellow mixed pavement marking MUTCD",
+      "bestReferenceTitle": "MUTCD Part 3B Pavement and Curb Markings",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part3/part3b.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use lane-centered markings with accurate line type (solid, dashed, double, shark teeth).",
+        "Text markings must be road-aligned and not exceed 70% lane width."
+      ]
+    },
+    {
+      "assetId": "PAVEMENT_DOUBLE_YELLOW_SOLID",
+      "category": "pavement",
+      "query": "pavement double yellow solid pavement marking MUTCD",
+      "bestReferenceTitle": "MUTCD Part 3B Pavement and Curb Markings",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part3/part3b.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use lane-centered markings with accurate line type (solid, dashed, double, shark teeth).",
+        "Text markings must be road-aligned and not exceed 70% lane width."
+      ]
+    },
+    {
+      "assetId": "PAVEMENT_GORE_AREA",
+      "category": "pavement",
+      "query": "pavement gore area pavement marking MUTCD",
+      "bestReferenceTitle": "MUTCD Part 3B Pavement and Curb Markings",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part3/part3b.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use lane-centered markings with accurate line type (solid, dashed, double, shark teeth).",
+        "Text markings must be road-aligned and not exceed 70% lane width.",
+        "Gore area hatch must taper correctly and include explicit no-drive area boundary."
+      ]
+    },
+    {
+      "assetId": "PAVEMENT_HANDICAP_SYMBOL",
+      "category": "pavement",
+      "query": "pavement handicap symbol pavement marking MUTCD",
+      "bestReferenceTitle": "MUTCD Part 3B Pavement and Curb Markings",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part3/part3b.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use lane-centered markings with accurate line type (solid, dashed, double, shark teeth).",
+        "Text markings must be road-aligned and not exceed 70% lane width."
+      ]
+    },
+    {
+      "assetId": "PAVEMENT_HOV_DIAMOND",
+      "category": "pavement",
+      "query": "pavement hov diamond pavement marking MUTCD",
+      "bestReferenceTitle": "MUTCD Part 3B Pavement and Curb Markings",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part3/part3b.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use lane-centered markings with accurate line type (solid, dashed, double, shark teeth).",
+        "Text markings must be road-aligned and not exceed 70% lane width."
+      ]
+    },
+    {
+      "assetId": "PAVEMENT_NO_PASSING_ZONE",
+      "category": "pavement",
+      "query": "pavement no passing zone pavement marking MUTCD",
+      "bestReferenceTitle": "MUTCD Part 3B Pavement and Curb Markings",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part3/part3b.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use lane-centered markings with accurate line type (solid, dashed, double, shark teeth).",
+        "Text markings must be road-aligned and not exceed 70% lane width."
+      ]
+    },
+    {
+      "assetId": "PAVEMENT_ONLY_TEXT",
+      "category": "pavement",
+      "query": "pavement only text pavement marking MUTCD",
+      "bestReferenceTitle": "MUTCD Part 3B Pavement and Curb Markings",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part3/part3b.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use lane-centered markings with accurate line type (solid, dashed, double, shark teeth).",
+        "Text markings must be road-aligned and not exceed 70% lane width."
+      ]
+    },
+    {
+      "assetId": "PAVEMENT_RAILROAD_CROSSING_X",
+      "category": "pavement",
+      "query": "pavement railroad crossing x pavement marking MUTCD",
+      "bestReferenceTitle": "MUTCD Part 8B Signs and Markings at Highway-Rail Grade Crossings",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part8/part8b.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use lane-centered markings with accurate line type (solid, dashed, double, shark teeth).",
+        "Text markings must be road-aligned and not exceed 70% lane width.",
+        "Railroad X and RR letters must follow MUTCD pavement lettering spacing."
+      ]
+    },
+    {
+      "assetId": "PAVEMENT_SCHOOL_ZONE",
+      "category": "pavement",
+      "query": "pavement school zone pavement marking MUTCD",
+      "bestReferenceTitle": "MUTCD Part 3B Pavement and Curb Markings",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part3/part3b.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use lane-centered markings with accurate line type (solid, dashed, double, shark teeth).",
+        "Text markings must be road-aligned and not exceed 70% lane width.",
+        "School zone text should be horizontally centered, stacked, and sized for mobile legibility."
+      ]
+    },
+    {
+      "assetId": "PAVEMENT_SHARED_CENTER_TURN_LANE",
+      "category": "pavement",
+      "query": "pavement shared center turn lane pavement marking MUTCD",
+      "bestReferenceTitle": "MUTCD Part 3B Pavement and Curb Markings",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part3/part3b.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use lane-centered markings with accurate line type (solid, dashed, double, shark teeth).",
+        "Text markings must be road-aligned and not exceed 70% lane width.",
+        "Center two-way left-turn lane needs opposing arrows in dashed yellow envelope."
+      ]
+    },
+    {
+      "assetId": "PAVEMENT_SHARROW",
+      "category": "pavement",
+      "query": "pavement sharrow pavement marking MUTCD",
+      "bestReferenceTitle": "MUTCD Part 3B Pavement and Curb Markings",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part3/part3b.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use lane-centered markings with accurate line type (solid, dashed, double, shark teeth).",
+        "Text markings must be road-aligned and not exceed 70% lane width."
+      ]
+    },
+    {
+      "assetId": "PAVEMENT_SINGLE_YELLOW_DASHED",
+      "category": "pavement",
+      "query": "pavement single yellow dashed pavement marking MUTCD",
+      "bestReferenceTitle": "MUTCD Part 3B Pavement and Curb Markings",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part3/part3b.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use lane-centered markings with accurate line type (solid, dashed, double, shark teeth).",
+        "Text markings must be road-aligned and not exceed 70% lane width."
+      ]
+    },
+    {
+      "assetId": "PAVEMENT_SOLID_WHITE_LINE",
+      "category": "pavement",
+      "query": "pavement solid white line pavement marking MUTCD",
+      "bestReferenceTitle": "MUTCD Part 3B Pavement and Curb Markings",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part3/part3b.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use lane-centered markings with accurate line type (solid, dashed, double, shark teeth).",
+        "Text markings must be road-aligned and not exceed 70% lane width."
+      ]
+    },
+    {
+      "assetId": "PAVEMENT_STOP_LINE",
+      "category": "pavement",
+      "query": "pavement stop line pavement marking MUTCD",
+      "bestReferenceTitle": "MUTCD Part 3B Pavement and Curb Markings",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part3/part3b.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use lane-centered markings with accurate line type (solid, dashed, double, shark teeth).",
+        "Text markings must be road-aligned and not exceed 70% lane width."
+      ]
+    },
+    {
+      "assetId": "PAVEMENT_TURN_LANE_CENTER",
+      "category": "pavement",
+      "query": "pavement turn lane center pavement marking MUTCD",
+      "bestReferenceTitle": "MUTCD Part 3B Pavement and Curb Markings",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part3/part3b.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use lane-centered markings with accurate line type (solid, dashed, double, shark teeth).",
+        "Text markings must be road-aligned and not exceed 70% lane width."
+      ]
+    },
+    {
+      "assetId": "PAVEMENT_YIELD_LINE",
+      "category": "pavement",
+      "query": "pavement yield line pavement marking MUTCD",
+      "bestReferenceTitle": "MUTCD Part 3B Pavement and Curb Markings",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part3/part3b.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use lane-centered markings with accurate line type (solid, dashed, double, shark teeth).",
+        "Text markings must be road-aligned and not exceed 70% lane width."
+      ]
+    },
+    {
+      "assetId": "SAFE_BLIND_SPOT_CHECK",
+      "category": "safe",
+      "query": "safe blind spot check driver safety diagram",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Use consistent icon stroke family and avoid decorative elements that reduce instructional clarity.",
+        "Keep all instructional text within safe margins and center labels to prevent truncation."
+      ]
+    },
+    {
+      "assetId": "SAFE_DEFENSIVE_SPACE_CUSHION",
+      "category": "safe",
+      "query": "safe defensive space cushion driver safety diagram",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Use consistent icon stroke family and avoid decorative elements that reduce instructional clarity.",
+        "Keep all instructional text within safe margins and center labels to prevent truncation."
+      ]
+    },
+    {
+      "assetId": "SAFE_MIRROR_ADJUSTMENT",
+      "category": "safe",
+      "query": "safe mirror adjustment driver safety diagram",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Use consistent icon stroke family and avoid decorative elements that reduce instructional clarity.",
+        "Keep all instructional text within safe margins and center labels to prevent truncation."
+      ]
+    },
+    {
+      "assetId": "SAFE_TIRE_TREAD_DEPTH",
+      "category": "safe",
+      "query": "safe tire tread depth driver safety diagram",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Use consistent icon stroke family and avoid decorative elements that reduce instructional clarity.",
+        "Keep all instructional text within safe margins and center labels to prevent truncation."
+      ]
+    },
+    {
+      "assetId": "SIGNAL_FLASHING_RED",
+      "category": "signal",
+      "query": "signal flashing red traffic signal indication",
+      "bestReferenceTitle": "MUTCD Part 4D Highway Traffic Signals",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part4/part4d.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Traffic signal heads should use standard light order and clear active indication emphasis.",
+        "Pedestrian module text/icons must not clip and must remain legible at 128px."
+      ]
+    },
+    {
+      "assetId": "SIGNAL_FLASHING_YELLOW",
+      "category": "signal",
+      "query": "signal flashing yellow traffic signal indication",
+      "bestReferenceTitle": "MUTCD Part 4D Highway Traffic Signals",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part4/part4d.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Traffic signal heads should use standard light order and clear active indication emphasis.",
+        "Pedestrian module text/icons must not clip and must remain legible at 128px."
+      ]
+    },
+    {
+      "assetId": "SIGNAL_GREEN_ARROW_LEFT",
+      "category": "signal",
+      "query": "signal green arrow left traffic signal indication",
+      "bestReferenceTitle": "MUTCD Part 4D Highway Traffic Signals",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part4/part4d.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Traffic signal heads should use standard light order and clear active indication emphasis.",
+        "Pedestrian module text/icons must not clip and must remain legible at 128px."
+      ]
+    },
+    {
+      "assetId": "SIGNAL_GREEN_ARROW_RIGHT",
+      "category": "signal",
+      "query": "signal green arrow right traffic signal indication",
+      "bestReferenceTitle": "MUTCD Part 4D Highway Traffic Signals",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part4/part4d.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Traffic signal heads should use standard light order and clear active indication emphasis.",
+        "Pedestrian module text/icons must not clip and must remain legible at 128px."
+      ]
+    },
+    {
+      "assetId": "SIGNAL_PED_COUNTDOWN",
+      "category": "signal",
+      "query": "signal ped countdown traffic signal indication",
+      "bestReferenceTitle": "MUTCD Part 4E Pedestrian Control Features",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part4/part4e.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Traffic signal heads should use standard light order and clear active indication emphasis.",
+        "Pedestrian module text/icons must not clip and must remain legible at 128px.",
+        "Countdown numeral should dominate upper panel and remain centered."
+      ]
+    },
+    {
+      "assetId": "SIGNAL_PED_DONT_WALK",
+      "category": "signal",
+      "query": "signal ped dont walk traffic signal indication",
+      "bestReferenceTitle": "MUTCD Part 4E Pedestrian Control Features",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part4/part4e.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Traffic signal heads should use standard light order and clear active indication emphasis.",
+        "Pedestrian module text/icons must not clip and must remain legible at 128px.",
+        "DON’T WALK panel text should use apostrophe and balanced two-line arrangement."
+      ]
+    },
+    {
+      "assetId": "SIGNAL_PED_WALK",
+      "category": "signal",
+      "query": "signal ped walk traffic signal indication",
+      "bestReferenceTitle": "MUTCD Part 4E Pedestrian Control Features",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part4/part4e.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Traffic signal heads should use standard light order and clear active indication emphasis.",
+        "Pedestrian module text/icons must not clip and must remain legible at 128px.",
+        "WALK word must fit inside white panel with uniform margins."
+      ]
+    },
+    {
+      "assetId": "SIGNAL_RED_ARROW_LEFT",
+      "category": "signal",
+      "query": "signal red arrow left traffic signal indication",
+      "bestReferenceTitle": "MUTCD Part 4D Highway Traffic Signals",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part4/part4d.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Traffic signal heads should use standard light order and clear active indication emphasis.",
+        "Pedestrian module text/icons must not clip and must remain legible at 128px."
+      ]
+    },
+    {
+      "assetId": "SIGNAL_RED_YELLOW_TOGETHER",
+      "category": "signal",
+      "query": "signal red yellow together traffic signal indication",
+      "bestReferenceTitle": "MUTCD Part 4D Highway Traffic Signals",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part4/part4d.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Traffic signal heads should use standard light order and clear active indication emphasis.",
+        "Pedestrian module text/icons must not clip and must remain legible at 128px."
+      ]
+    },
+    {
+      "assetId": "SIGNAL_SOLID_GREEN",
+      "category": "signal",
+      "query": "signal solid green traffic signal indication",
+      "bestReferenceTitle": "MUTCD Part 4D Highway Traffic Signals",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part4/part4d.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Traffic signal heads should use standard light order and clear active indication emphasis.",
+        "Pedestrian module text/icons must not clip and must remain legible at 128px."
+      ]
+    },
+    {
+      "assetId": "SIGNAL_SOLID_RED",
+      "category": "signal",
+      "query": "signal solid red traffic signal indication",
+      "bestReferenceTitle": "MUTCD Part 4D Highway Traffic Signals",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part4/part4d.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Traffic signal heads should use standard light order and clear active indication emphasis.",
+        "Pedestrian module text/icons must not clip and must remain legible at 128px."
+      ]
+    },
+    {
+      "assetId": "SIGNAL_SOLID_YELLOW",
+      "category": "signal",
+      "query": "signal solid yellow traffic signal indication",
+      "bestReferenceTitle": "MUTCD Part 4D Highway Traffic Signals",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part4/part4d.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Traffic signal heads should use standard light order and clear active indication emphasis.",
+        "Pedestrian module text/icons must not clip and must remain legible at 128px."
+      ]
+    },
+    {
+      "assetId": "SIGNAL_YELLOW_ARROW_LEFT",
+      "category": "signal",
+      "query": "signal yellow arrow left traffic signal indication",
+      "bestReferenceTitle": "MUTCD Part 4D Highway Traffic Signals",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part4/part4d.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Traffic signal heads should use standard light order and clear active indication emphasis.",
+        "Pedestrian module text/icons must not clip and must remain legible at 128px."
+      ]
+    },
+    {
+      "assetId": "SPECIAL_RAILROAD_STOP_PROCEDURE",
+      "category": "special",
+      "query": "special railroad stop procedure driving rule diagram",
+      "bestReferenceTitle": "MUTCD Part 8B Signs and Markings at Highway-Rail Grade Crossings",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part8/part8b.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use consistent icon stroke family and avoid decorative elements that reduce instructional clarity.",
+        "Keep all instructional text within safe margins and center labels to prevent truncation."
+      ]
+    },
+    {
+      "assetId": "SPECIAL_WORK_ZONE_FLAGGER",
+      "category": "special",
+      "query": "special work zone flagger driving rule diagram",
+      "bestReferenceTitle": "MUTCD Part 6F Temporary Traffic Control Zone Devices",
+      "bestReferenceUrl": "https://mutcd.fhwa.dot.gov/htm/2009/part6/part6f.htm",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: mutcd.fhwa.dot.gov.",
+      "promptAdditions": [
+        "Use consistent icon stroke family and avoid decorative elements that reduce instructional clarity.",
+        "Keep all instructional text within safe margins and center labels to prevent truncation."
+      ]
+    },
+    {
+      "assetId": "SPEED_FOLLOWING_DISTANCE_3SEC",
+      "category": "speed",
+      "query": "speed following distance 3sec safe driving distance diagram",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Educational speed diagrams should keep one teaching point per frame and avoid text crowding."
+      ]
+    },
+    {
+      "assetId": "SPEED_HIGHWAY_70MPH",
+      "category": "speed",
+      "query": "speed highway 70mph safe driving distance diagram",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Educational speed diagrams should keep one teaching point per frame and avoid text crowding."
+      ]
+    },
+    {
+      "assetId": "SPEED_LIMIT_RESIDENTIAL_30",
+      "category": "speed",
+      "query": "speed limit residential 30 safe driving distance diagram",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Educational speed diagrams should keep one teaching point per frame and avoid text crowding."
+      ]
+    },
+    {
+      "assetId": "SPEED_PASSING_CLEARANCE",
+      "category": "speed",
+      "query": "speed passing clearance safe driving distance diagram",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Educational speed diagrams should keep one teaching point per frame and avoid text crowding.",
+        "Passing clearance panel should show both vehicles and required safe gap dimension clearly."
+      ]
+    },
+    {
+      "assetId": "SPEED_SCHOOL_ZONE_20MPH",
+      "category": "speed",
+      "query": "speed school zone 20mph safe driving distance diagram",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Educational speed diagrams should keep one teaching point per frame and avoid text crowding."
+      ]
+    },
+    {
+      "assetId": "SPEED_STOPPING_DISTANCE",
+      "category": "speed",
+      "query": "speed stopping distance safe driving distance diagram",
+      "bestReferenceTitle": "Texas Driver Handbook (DL-7) official reference",
+      "bestReferenceUrl": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
+      "bestReferenceScore": 8,
+      "decision": "keep",
+      "reason": "Top result score 8. Domain: dps.texas.gov.",
+      "promptAdditions": [
+        "Educational speed diagrams should keep one teaching point per frame and avoid text crowding.",
+        "Reaction vs braking segments must be separated with clear labels and non-overlapping text."
+      ]
+    }
+  ]
+}

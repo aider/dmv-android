@@ -1,0 +1,54 @@
+# SVG Review Report
+
+Date: 2026-02-10
+
+## Summary
+- Total assets: 116
+- OK: 84
+- Needs fix: 32
+- Standard viewBox: `0 0 200 200`
+- Standard canvas size: `200x200`
+- Standard padding for normalized assets: `12`
+
+## Fixed Assets
+- `MUTCD_R1-1_STOP`
+- `MUTCD_R1-2_YIELD`
+- `MUTCD_I-5_INTERSTATE_10`
+- `MUTCD_I-5_INTERSTATE_35`
+- `SPEED_PASSING_CLEARANCE`
+- `PAVEMENT_GORE_AREA`
+- `PAVEMENT_SCHOOL_ZONE`
+- `PAVEMENT_SHARED_CENTER_TURN_LANE`
+- `PAVEMENT_BIKE_LANE`
+- `SPEED_HIGHWAY_70MPH`
+- `SPEED_LIMIT_RESIDENTIAL_30`
+- `PAVEMENT_NO_PASSING_ZONE`
+- `PAVEMENT_ONLY_TEXT`
+- `PAVEMENT_STOP_LINE`
+- `SPEED_FOLLOWING_DISTANCE_3SEC`
+- `SAFE_TIRE_TREAD_DEPTH`
+- `SPECIAL_WORK_ZONE_FLAGGER`
+- `SPECIAL_RAILROAD_STOP_PROCEDURE`
+- `SIGNAL_PED_WALK`
+- `SIGNAL_PED_DONT_WALK`
+- `SIGNAL_PED_COUNTDOWN`
+- `INTERSECTION_SCHOOL_BUS_STOPPED`
+- `MARKING_HAND_SIGNAL_LEFT`
+- `MARKING_HAND_SIGNAL_RIGHT`
+- `MARKING_HAND_SIGNAL_STOP`
+- `PARKING_FIRE_HYDRANT_15FT`
+
+## Remaining Issues
+- 32 assets still carry renderer-risk transforms (`translate/scale`) and are marked `needs_fix` in manifest.
+- Priority group:
+  - `SIGNAL_*` legacy light packs with scaled root groups.
+  - `PAVEMENT_*` legacy marking templates with scaled root groups.
+  - `INTERSECTION_T_STOP`, `INTERSECTION_MERGE_HIGHWAY`, `INTERSECTION_PEDESTRIAN_CROSSWALK`.
+  - `MUTCD_R7-8_NO_PARKING`, `PARKING_DISABLED_SPACE`.
+
+## May Require Redesign
+- `PAVEMENT_SHARROW`
+- `PAVEMENT_RAILROAD_CROSSING_X`
+- `PAVEMENT_HOV_DIAMOND`
+- `SIGNAL_RED_YELLOW_TOGETHER`
+- `INTERSECTION_MERGE_HIGHWAY`

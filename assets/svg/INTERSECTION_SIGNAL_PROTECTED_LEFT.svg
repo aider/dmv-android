@@ -1,38 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="INTERSECTION_SIGNAL_PROTECTED_LEFT">
-<defs>
-    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
-      <path d="M 0,0 L 8,3 L 0,6 Z" fill="#3366CC"/>
+  <defs>
+    <marker id="turn-head" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <path d="M 0 0 L 8 3 L 0 6 Z" fill="#3366CC"/>
     </marker>
   </defs>
+
   <rect x="0" y="0" width="200" height="200" fill="#88AA88"/>
-  <!-- Roads -->
   <rect x="0" y="70" width="200" height="60" fill="#4A4A4A"/>
   <rect x="70" y="0" width="60" height="200" fill="#4A4A4A"/>
-  <!-- Center lines -->
-  <rect x="0" y="97" width="70" height="6" fill="#FFCC00"/>
-  <rect x="130" y="97" width="70" height="6" fill="#FFCC00"/>
-  <rect x="97" y="0" width="6" height="70" fill="#FFCC00"/>
-  <rect x="97" y="130" width="6" height="70" fill="#FFCC00"/>
-  <!-- Stop lines -->
+
+  <rect x="0" y="98" width="70" height="4" fill="#FFCC00"/>
+  <rect x="130" y="98" width="70" height="4" fill="#FFCC00"/>
+  <rect x="98" y="0" width="4" height="70" fill="#FFCC00"/>
+  <rect x="98" y="130" width="4" height="70" fill="#FFCC00"/>
+
   <rect x="0" y="64" width="70" height="6" fill="#FFFFFF"/>
   <rect x="130" y="130" width="70" height="6" fill="#FFFFFF"/>
-  <rect x="64" y="130" width="6" height="70" fill="#FFFFFF"/>
-  <rect x="130" y="0" width="6" height="70" fill="#FFFFFF"/>
-  <!-- Left turn pavement arrow -->
-  <path d="M 85,115 L 85,80 L 78,80 L 90,70 L 102,80 L 95,80 L 95,100" fill="#FFFFFF"/>
-  <!-- Traffic signal (green arrow) -->
-  <g transform="translate(135,5) scale(0.3)">
-    <rect x="5" y="5" width="80" height="230" rx="8" fill="#1A1A1A" stroke="#000000" stroke-width="3"/>
-    <circle cx="45" cy="50" r="28" fill="#444444"/>
-    <circle cx="45" cy="125" r="28" fill="#444444"/>
-    <circle cx="45" cy="200" r="28" fill="#00B140"/>
-    <circle cx="45" cy="200" r="25" fill="#44FF44" opacity="0.6"/>
-    <path d="M 25,200 L 40,188 L 40,195 L 63,195 L 63,205 L 40,205 L 40,212 Z" fill="#FFFFFF"/>
-  </g>
-  <!-- Ego vehicle turning left -->
-  <rect x="80" y="110" width="18" height="30" rx="3" fill="#3366CC"/>
-  <!-- Turn path arrow -->
-  <path d="M 90,108 Q 90,90 75,80" fill="none" stroke="#3366CC" stroke-width="6" marker-end="url(#arrow)"/>
-  <!-- Oncoming vehicle stopped -->
-  <rect x="105" y="78" width="18" height="30" rx="3" fill="#666666"/>
+
+  <path d="M 88 114 L 88 86 L 81 86 L 92 74 L 103 86 L 96 86 L 96 102" fill="#FFFFFF"/>
+
+  <rect x="135" y="8" width="30" height="56" rx="5" fill="#1A1A1A" stroke="#000000" stroke-width="2"/>
+  <circle cx="150" cy="22" r="6" fill="#444444"/>
+  <circle cx="150" cy="36" r="6" fill="#444444"/>
+  <circle cx="150" cy="50" r="6" fill="#00B140"/>
+  <path d="M 144 50 L 148 46 L 148 48 L 156 48 L 156 52 L 148 52 L 148 54 Z" fill="#FFFFFF"/>
+
+  <rect x="82" y="110" width="16" height="28" rx="3" fill="#3366CC"/>
+  <path d="M 90 108 Q 90 90 76 82" fill="none" stroke="#3366CC" stroke-width="4" marker-end="url(#turn-head)"/>
+
+  <rect x="104" y="78" width="16" height="28" rx="3" fill="#666666"/>
 </svg>

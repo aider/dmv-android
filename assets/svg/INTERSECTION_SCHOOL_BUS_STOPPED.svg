@@ -18,8 +18,8 @@
   <circle cx="70" cy="78" r="3.5" fill="#FF0000"/>
   <circle cx="116" cy="78" r="3.5" fill="#FF0000"/>
 
-  <polygon points="132,87 141,91 145,100 141,109 132,113 123,109 119,100 123,91" fill="#C1272D" stroke="#FFFFFF" stroke-width="1.5"/>
-  <text x="132" y="102" font-family="Arial, Helvetica, sans-serif" font-size="5.5" font-weight="900" fill="#FFFFFF" text-anchor="middle">STOP</text>
+  <polygon points="132,86 142,90 146,100 142,110 132,114 122,110 118,100 122,90" fill="#C1272D" stroke="#FFFFFF" stroke-width="1.5"/>
+  <text x="132" y="102" font-family="Arial, Helvetica, sans-serif" font-size="6" font-weight="900" fill="#FFFFFF" text-anchor="middle">STOP</text>
 
   <rect x="28" y="89" width="24" height="12" rx="2" fill="#666666"/>
   <rect x="148" y="89" width="24" height="12" rx="2" fill="#666666"/>
