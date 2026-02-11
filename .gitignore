@@ -80,3 +80,6 @@ Thumbs.db
 
 # Build outputs
 dist/
+
+# Issue agent
+tools/issue_agent/.env
