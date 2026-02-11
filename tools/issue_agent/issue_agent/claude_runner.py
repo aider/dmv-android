@@ -1,109 +1,20 @@
-"""Run Claude Code CLI with stream-json + partial messages, printing to terminal."""
+"""Run Claude Code CLI, printing output to terminal."""
 
 from __future__ import annotations
 
-import json
 import logging
+import os
+import pty
 import shlex
+import signal
 import subprocess
 import sys
 import threading
+import time
 
 from . import config
 
 log = logging.getLogger(__name__)
-
-
-def _process_stdout(pipe) -> list[str]:
-    """Read stream-json lines, print human-readable output to terminal, collect raw."""
-    lines: list[str] = []
-    for raw in pipe:
-        raw = raw.rstrip("\n")
-        lines.append(raw)
-
-        try:
-            event = json.loads(raw)
-        except (json.JSONDecodeError, TypeError):
-            print(raw, file=sys.stderr, flush=True)
-            continue
-
-        etype = event.get("type", "")
-
-        # --- stream_event: partial deltas (text, tool_use) ---
-        if etype == "stream_event":
-            inner = event.get("event", {})
-            inner_type = inner.get("type", "")
-
-            # Text delta — partial assistant text
-            if inner_type == "content_block_delta":
-                delta = inner.get("delta", {})
-                if delta.get("type") == "text_delta":
-                    print(delta.get("text", ""), end="", file=sys.stderr, flush=True)
-                elif delta.get("type") == "input_json_delta":
-                    pass  # tool input streaming, skip
-
-            # Content block start — tool_use begins
-            elif inner_type == "content_block_start":
-                block = inner.get("content_block", {})
-                if block.get("type") == "tool_use":
-                    name = block.get("name", "?")
-                    print(f"\n> [{name}] ", end="", file=sys.stderr, flush=True)
-
-        # --- assistant: complete message ---
-        elif etype == "assistant":
-            msg = event.get("message", {})
-            content = msg.get("content", []) if isinstance(msg, dict) else []
-            for block in content:
-                if not isinstance(block, dict):
-                    continue
-                if block.get("type") == "text":
-                    text = block.get("text", "")
-                    if text.strip():
-                        print(f"\n{text}", file=sys.stderr, flush=True)
-                elif block.get("type") == "tool_use":
-                    name = block.get("name", "?")
-                    inp = block.get("input", {})
-                    if name == "Bash":
-                        print(f"\n> Bash: {inp.get('command', '')[:300]}", file=sys.stderr, flush=True)
-                    elif name in ("Write", "Edit"):
-                        print(f"\n> {name}: {inp.get('file_path', '?')}", file=sys.stderr, flush=True)
-                    elif name in ("Read", "Glob", "Grep"):
-                        detail = inp.get("file_path", "") or inp.get("pattern", "") or inp.get("path", "")
-                        print(f"\n> {name}: {detail[:200]}", file=sys.stderr, flush=True)
-                    else:
-                        print(f"\n> {name}", file=sys.stderr, flush=True)
-
-        # --- tool_use (top-level, non-stream) ---
-        elif etype == "tool_use":
-            name = event.get("name", "?")
-            inp = event.get("input", {})
-            if name == "Bash":
-                print(f"\n> Bash: {inp.get('command', '')[:300]}", file=sys.stderr, flush=True)
-            elif name in ("Write", "Edit"):
-                print(f"\n> {name}: {inp.get('file_path', '?')}", file=sys.stderr, flush=True)
-            else:
-                print(f"\n> {name}: {str(inp)[:200]}", file=sys.stderr, flush=True)
-
-        # --- result ---
-        elif etype == "result":
-            text = event.get("result", "")
-            cost = event.get("total_cost_usd", 0)
-            turns = event.get("num_turns", 0)
-            print(f"\n{'='*50}", file=sys.stderr, flush=True)
-            print(f"Done. Turns: {turns}, Cost: ${cost:.4f}", file=sys.stderr, flush=True)
-            if text:
-                # Show first 500 chars of result
-                print(text[:500], file=sys.stderr, flush=True)
-
-        # --- system init ---
-        elif etype == "system":
-            subtype = event.get("subtype", "")
-            if subtype == "init":
-                model = event.get("model", "?")
-                sid = event.get("session_id", "?")
-                print(f"[Claude {model} | session: {sid}]", file=sys.stderr, flush=True)
-
-    return lines
 
 
 def _stream_stderr(pipe) -> list[str]:
@@ -117,10 +28,16 @@ def _stream_stderr(pipe) -> list[str]:
     return lines
 
 
-def run_claude(prompt: str, cwd: str) -> subprocess.CompletedProcess[str]:
-    """Invoke Claude Code with stream-json + partial messages.
+def run_claude(
+    prompt: str,
+    cwd: str,
+    agent: str | None = None,
+    max_turns: int | None = None,
+) -> subprocess.CompletedProcess[str]:
+    """Invoke Claude Code in print mode and capture the result.
 
     Output is printed to terminal in real-time AND captured for the API response.
+    If agent is provided, runs with --agent <name> (e.g. "android-app-agent").
     """
     cmd: list[str] = [
         config.CLAUDE_CMD,
@@ -128,12 +45,11 @@ def run_claude(prompt: str, cwd: str) -> subprocess.CompletedProcess[str]:
         "-p",
         prompt,
         "--max-turns",
-        str(config.MAX_TURNS),
-        "--output-format",
-        "stream-json",
-        "--verbose",
-        "--include-partial-messages",
+        str(max_turns if max_turns is not None else config.MAX_TURNS),
     ]
+
+    if agent:
+        cmd.extend(["--agent", agent])
 
     extra = config.CLAUDE_ARGS.strip()
     if extra:
@@ -154,7 +70,11 @@ def run_claude(prompt: str, cwd: str) -> subprocess.CompletedProcess[str]:
 
     def read_stdout():
         nonlocal stdout_lines
-        stdout_lines = _process_stdout(proc.stdout)
+        for line in proc.stdout:
+            line = line.rstrip("\n")
+            stdout_lines.append(line)
+            if line.strip():
+                print(line, file=sys.stderr, flush=True)
 
     def read_stderr():
         nonlocal stderr_lines
@@ -181,4 +101,87 @@ def run_claude(prompt: str, cwd: str) -> subprocess.CompletedProcess[str]:
         returncode=proc.returncode,
         stdout="\n".join(stdout_lines),
         stderr="\n".join(stderr_lines),
+    )
+
+
+def run_claude_tui(prompt: str, cwd: str, agent: str | None = None) -> subprocess.CompletedProcess[str]:
+    """Invoke Claude Code in TUI mode via a pseudo-TTY.
+
+    Claude sees a real terminal and renders its native colored output.
+    All output goes directly to the server's terminal (stdout).
+    Returns a CompletedProcess with empty stdout/stderr since output is not captured.
+    If agent is provided, runs with --agent <name>.
+    """
+    cmd: list[str] = [
+        config.CLAUDE_CMD,
+        "--dangerously-skip-permissions",
+    ]
+
+    if agent:
+        cmd.extend(["--agent", agent])
+
+    log.info("Running Claude TUI: %s", " ".join(cmd))
+
+    master_fd, slave_fd = pty.openpty()
+
+    proc = subprocess.Popen(
+        cmd,
+        cwd=cwd,
+        stdin=slave_fd,
+        stdout=slave_fd,
+        stderr=slave_fd,
+        close_fds=True,
+    )
+    os.close(slave_fd)  # parent doesn't need the slave side
+
+    # Reader thread: relay raw PTY output to our terminal
+    stop_event = threading.Event()
+
+    def _relay():
+        while not stop_event.is_set():
+            try:
+                data = os.read(master_fd, 4096)
+                if not data:
+                    break
+                sys.stdout.buffer.write(data)
+                sys.stdout.buffer.flush()
+            except OSError:
+                break
+
+    reader = threading.Thread(target=_relay, daemon=True)
+    reader.start()
+
+    # Optionally send the prompt after a short init delay
+    if config.TUI_SEND_PROMPT:
+        time.sleep(0.5)
+        os.write(master_fd, (prompt + "\n").encode())
+
+    # Wait with timeout
+    timeout = config.TUI_TIMEOUT_SECONDS
+    try:
+        proc.wait(timeout=timeout)
+    except subprocess.TimeoutExpired:
+        log.warning("Claude TUI timed out after %ds, sending SIGTERM", timeout)
+        proc.send_signal(signal.SIGTERM)
+        try:
+            proc.wait(timeout=10)
+        except subprocess.TimeoutExpired:
+            log.warning("SIGTERM ignored, sending SIGKILL")
+            proc.kill()
+            proc.wait()
+
+    stop_event.set()
+    try:
+        os.close(master_fd)
+    except OSError:
+        pass
+    reader.join(timeout=2)
+
+    log.info("Claude TUI exited with code %d", proc.returncode)
+
+    return subprocess.CompletedProcess(
+        args=cmd,
+        returncode=proc.returncode,
+        stdout="",
+        stderr="",
     )

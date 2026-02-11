@@ -1,0 +1,29 @@
+Review PR #{pr_number} against its linked issue.
+
+## PR Context
+- PR #{pr_number}: {pr_title}
+- PR URL: {pr_url}
+
+PR Body:
+{pr_body}
+
+## Linked Issue Context
+- Issue #{issue_number}: {issue_title}
+
+Issue Body:
+{issue_body}
+
+## Changed Files
+{files}
+
+## Diff
+{diff}
+
+Follow your agent instructions exactly:
+1. Use the Issue as your source of truth for requirements (R1..Rn).
+2. Map each requirement to evidence in the PR diff.
+3. Review UX/Android standards if UI is impacted.
+4. Produce your full review in the ## Agent Review format.
+5. Include your final verdict: APPROVE or REQUEST CHANGES.
+
+NEVER include absolute local file paths in your output.

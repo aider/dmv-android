@@ -25,11 +25,12 @@ python -m issue_agent
 
 ## Endpoints
 
-| Method | Path                  | Description                        |
-|--------|-----------------------|------------------------------------|
-| POST   | `/webhook`            | GitHub webhook receiver            |
-| POST   | `/run/{issue_number}` | Manual trigger for a single issue  |
-| GET    | `/health`             | Health check + currently running   |
+| Method | Path                      | Description                              |
+|--------|---------------------------|------------------------------------------|
+| POST   | `/webhook`                | GitHub webhook receiver                  |
+| POST   | `/run/{issue_number}`     | Manual trigger (stream-json output)      |
+| POST   | `/run_tui/{issue_number}` | Experimental TUI mode (colored terminal) |
+| GET    | `/health`                 | Health check + currently running         |
 
 ## Manual trigger
 
@@ -55,9 +56,27 @@ curl -X POST http://127.0.0.1:8347/run/42
 | `WEBHOOK_SECRET` | No       | (empty)             | GitHub webhook HMAC secret     |
 | `CLAUDE_CMD`     | No       | `claude`            | Path to Claude CLI             |
 | `CLAUDE_ARGS`    | No       | (empty)             | Extra CLI args for Claude      |
-| `MAX_TURNS`      | No       | `25`                | Max agentic turns per run      |
-| `HOST`           | No       | `127.0.0.1`         | Bind address                   |
-| `PORT`           | No       | `8347`              | Bind port                      |
+| `MAX_TURNS`           | No       | `25`                | Max agentic turns per run                  |
+| `HOST`                | No       | `127.0.0.1`         | Bind address                               |
+| `PORT`                | No       | `8347`              | Bind port                                  |
+| `TUI_TIMEOUT_SECONDS` | No       | `600`               | Timeout for TUI mode runs                  |
+| `TUI_SEND_PROMPT`     | No       | `false`             | Auto-send the issue prompt in TUI mode     |
+
+## TUI Mode (Experimental)
+
+The `/run_tui/{issue_number}` endpoint launches Claude Code in interactive TUI mode
+via a pseudo-TTY. Claude's native colored output renders directly in the server
+terminal.
+
+```bash
+curl -X POST http://127.0.0.1:8347/run_tui/42
+```
+
+By default, Claude launches but the issue prompt is **not** sent automatically --
+you'll see the interactive TUI waiting for input in the server terminal. Set
+`TUI_SEND_PROMPT=true` to auto-send the issue prompt after a short init delay.
+
+The existing `/run/{n}` endpoint is unchanged and continues to use `stream-json`.
 
 ## Branch Naming
 

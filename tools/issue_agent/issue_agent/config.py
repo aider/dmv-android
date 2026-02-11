@@ -19,4 +19,11 @@ MAX_TURNS = int(os.environ.get("MAX_TURNS", "25"))
 HOST = os.environ.get("HOST", "127.0.0.1")
 PORT = int(os.environ.get("PORT", "8347"))
 
+TUI_TIMEOUT_SECONDS = int(os.environ.get("TUI_TIMEOUT_SECONDS", "600"))
+TUI_SEND_PROMPT = os.environ.get("TUI_SEND_PROMPT", "false").lower() in ("true", "1", "yes")
+
+REVIEW_MAX_TURNS = int(os.environ.get("REVIEW_MAX_TURNS", "10"))
+FIX_REVIEW_MAX_TURNS = int(os.environ.get("FIX_REVIEW_MAX_TURNS", "25"))
+REVIEW_MAX_DIFF_CHARS = int(os.environ.get("REVIEW_MAX_DIFF_CHARS", "50000"))
+
 STATE_FILE = os.path.expanduser("~/.issue_agent_state.json")
