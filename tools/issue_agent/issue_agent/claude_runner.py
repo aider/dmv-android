@@ -100,6 +100,7 @@ def run_claude(prompt: str, cwd: str) -> subprocess.CompletedProcess[str]:
         str(config.MAX_TURNS),
         "--output-format",
         "stream-json",
+        "--verbose",
     ]
 
     extra = config.CLAUDE_ARGS.strip()
