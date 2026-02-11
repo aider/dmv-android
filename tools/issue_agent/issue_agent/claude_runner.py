@@ -15,7 +15,7 @@ log = logging.getLogger(__name__)
 
 
 def _process_stdout(pipe) -> list[str]:
-    """Read stream-json lines, print human-readable summary to terminal, collect raw."""
+    """Read stream-json lines, print human-readable output to terminal, collect raw."""
     lines: list[str] = []
     for raw in pipe:
         raw = raw.rstrip("\n")
@@ -29,45 +29,79 @@ def _process_stdout(pipe) -> list[str]:
 
         etype = event.get("type", "")
 
-        # Assistant text (partial chunks arrive here too)
-        if etype == "assistant":
-            content = event.get("message", "")
-            if isinstance(content, str) and content.strip():
-                print(content, file=sys.stderr, flush=True)
-            elif isinstance(content, list):
-                for block in content:
-                    if isinstance(block, dict) and block.get("type") == "text":
-                        text = block.get("text", "")
-                        if text.strip():
-                            print(text, end="", file=sys.stderr, flush=True)
+        # --- stream_event: partial deltas (text, tool_use) ---
+        if etype == "stream_event":
+            inner = event.get("event", {})
+            inner_type = inner.get("type", "")
 
-        # Tool use — show what Claude is doing
+            # Text delta — partial assistant text
+            if inner_type == "content_block_delta":
+                delta = inner.get("delta", {})
+                if delta.get("type") == "text_delta":
+                    print(delta.get("text", ""), end="", file=sys.stderr, flush=True)
+                elif delta.get("type") == "input_json_delta":
+                    pass  # tool input streaming, skip
+
+            # Content block start — tool_use begins
+            elif inner_type == "content_block_start":
+                block = inner.get("content_block", {})
+                if block.get("type") == "tool_use":
+                    name = block.get("name", "?")
+                    print(f"\n> [{name}] ", end="", file=sys.stderr, flush=True)
+
+        # --- assistant: complete message ---
+        elif etype == "assistant":
+            msg = event.get("message", {})
+            content = msg.get("content", []) if isinstance(msg, dict) else []
+            for block in content:
+                if not isinstance(block, dict):
+                    continue
+                if block.get("type") == "text":
+                    text = block.get("text", "")
+                    if text.strip():
+                        print(f"\n{text}", file=sys.stderr, flush=True)
+                elif block.get("type") == "tool_use":
+                    name = block.get("name", "?")
+                    inp = block.get("input", {})
+                    if name == "Bash":
+                        print(f"\n> Bash: {inp.get('command', '')[:300]}", file=sys.stderr, flush=True)
+                    elif name in ("Write", "Edit"):
+                        print(f"\n> {name}: {inp.get('file_path', '?')}", file=sys.stderr, flush=True)
+                    elif name in ("Read", "Glob", "Grep"):
+                        detail = inp.get("file_path", "") or inp.get("pattern", "") or inp.get("path", "")
+                        print(f"\n> {name}: {detail[:200]}", file=sys.stderr, flush=True)
+                    else:
+                        print(f"\n> {name}", file=sys.stderr, flush=True)
+
+        # --- tool_use (top-level, non-stream) ---
         elif etype == "tool_use":
             name = event.get("name", "?")
             inp = event.get("input", {})
             if name == "Bash":
-                cmd = inp.get("command", "")
-                print(f"\n> {name}: {cmd[:200]}", file=sys.stderr, flush=True)
+                print(f"\n> Bash: {inp.get('command', '')[:300]}", file=sys.stderr, flush=True)
             elif name in ("Write", "Edit"):
-                path = inp.get("file_path", "?")
-                print(f"\n> {name}: {path}", file=sys.stderr, flush=True)
-            elif name in ("Read", "Glob", "Grep"):
-                print(f"\n> {name}: {str(inp)[:200]}", file=sys.stderr, flush=True)
+                print(f"\n> {name}: {inp.get('file_path', '?')}", file=sys.stderr, flush=True)
             else:
-                print(f"\n> {name}", file=sys.stderr, flush=True)
+                print(f"\n> {name}: {str(inp)[:200]}", file=sys.stderr, flush=True)
 
-        # Result (final output)
+        # --- result ---
         elif etype == "result":
             text = event.get("result", "")
+            cost = event.get("total_cost_usd", 0)
+            turns = event.get("num_turns", 0)
+            print(f"\n{'='*50}", file=sys.stderr, flush=True)
+            print(f"Done. Turns: {turns}, Cost: ${cost:.4f}", file=sys.stderr, flush=True)
             if text:
-                print(f"\n=== RESULT ===\n{text[:1000]}", file=sys.stderr, flush=True)
+                # Show first 500 chars of result
+                print(text[:500], file=sys.stderr, flush=True)
 
-        # System
+        # --- system init ---
         elif etype == "system":
             subtype = event.get("subtype", "")
             if subtype == "init":
-                session = event.get("session_id", "?")
-                print(f"[session: {session}]", file=sys.stderr, flush=True)
+                model = event.get("model", "?")
+                sid = event.get("session_id", "?")
+                print(f"[Claude {model} | session: {sid}]", file=sys.stderr, flush=True)
 
     return lines
 
