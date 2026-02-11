@@ -54,13 +54,13 @@ jobs:
             - Summarize what changed and why for PR description.
           claude_args: "--max-turns 25"
 
-      - name: Commit changes
+      - name: Commit and push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"
           git add -A
           git commit -m "Fix #${{ github.event.issue.number }}: ${{ github.event.issue.title }}" || echo "Nothing to commit"
-
-      - name: Push branch
-        run: |
           git push -u origin HEAD
 
       - name: Create PR
