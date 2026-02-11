@@ -1,0 +1,84 @@
+name: Issue Auto-Fix (Self-hosted)
+
+on:
+  issues:
+    types: [opened, reopened]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: issue-autofix-${{ github.event.issue.number }}
+  cancel-in-progress: true
+
+jobs:
+  fix:
+    # ВАЖНО: запускать только если issue создал владелец репо (ты)
+    if: github.event.issue.user.login == github.repository_owner
+    runs-on: [self-hosted]
+
+    steps:
+      - name: Post start comment
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            **Self-hosted Auto-Fix**
+            Started on local runner for issue #${{ github.event.issue.number }}…
+
+      - uses: actions/checkout@v4
+
+      - name: Create branch
+        run: |
+          git checkout -b "bot/issue-${{ github.event.issue.number }}-fix"
+
+      - name: Claude Code - implement fix
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            Fix GitHub issue #${{ github.event.issue.number }}.
+
+            Title: ${{ github.event.issue.title }}
+
+            Body:
+            ${{ github.event.issue.body }}
+
+            Requirements:
+            - Make minimal, targeted changes.
+            - If you can add a small validation/test, do it.
+            - Summarize what changed and why for PR description.
+          claude_args: |
+            --max-turns 25
+            --allowedTools "Read,Glob,Grep,Edit,Write,Bash"
+
+      - name: Commit changes
+        run: |
+          git add -A
+          git commit -m "Fix #${{ github.event.issue.number }}: ${{ github.event.issue.title }}" || echo "Nothing to commit"
+
+      - name: Push branch
+        run: |
+          git push -u origin HEAD
+
+      - name: Create PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr create \
+            --title "Fix #${{ github.event.issue.number }}: ${{ github.event.issue.title }}" \
+            --body "Auto-fix for issue #${{ github.event.issue.number }}" \
+            --base main \
+            --head "bot/issue-${{ github.event.issue.number }}-fix" \
+          || echo "PR may already exist"
+
+      - name: Comment done
+        if: always()
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            **Self-hosted Auto-Fix**
+            Finished. Check Actions run + PR list for results.
