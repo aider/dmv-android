@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv(Path(__file__).resolve().parent.parent / ".env")
 
 GITHUB_TOKEN = os.environ["GITHUB_TOKEN"]
-GITHUB_REPO = os.environ.get("GITHUB_REPO", "ayder/dmv.tx")
+GITHUB_REPO = os.environ.get("GITHUB_REPO", "aider/dmv-android")
 PROJECT_KEY = os.environ.get("PROJECT_KEY", "dmv")
 WEBHOOK_SECRET = os.environ.get("WEBHOOK_SECRET", "")
 

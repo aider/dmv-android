@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 # 3. Set required env vars
 export GITHUB_TOKEN=$(gh auth token)
-export GITHUB_REPO=ayder/dmv.tx
+export GITHUB_REPO=aider/dmv-android
 
 # 4. Run
 python -m issue_agent
@@ -50,7 +50,7 @@ curl -X POST http://127.0.0.1:8347/run/42
 | Variable         | Required | Default             | Description                    |
 |------------------|----------|---------------------|--------------------------------|
 | `GITHUB_TOKEN`   | Yes      | -                   | GitHub personal access token   |
-| `GITHUB_REPO`    | No       | `ayder/dmv.tx`      | Owner/repo                     |
+| `GITHUB_REPO`    | No       | `aider/dmv-android`      | Owner/repo                     |
 | `PROJECT_KEY`    | No       | `dmv`               | Branch name prefix key         |
 | `WEBHOOK_SECRET` | No       | (empty)             | GitHub webhook HMAC secret     |
 | `CLAUDE_CMD`     | No       | `claude`            | Path to Claude CLI             |
