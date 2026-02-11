@@ -83,3 +83,4 @@ dist/
 
 # Issue agent
 tools/issue_agent/.env
+.venv/
