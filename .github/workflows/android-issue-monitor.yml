@@ -9,52 +9,61 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  triage:
+  implement:
     if: >-
       contains(github.event.issue.labels.*.name, 'android')
       && (github.event.action != 'labeled' || github.event.label.name == 'android')
     runs-on: ubuntu-latest
     permissions:
       issues: write
-      contents: read
+      contents: write
+      pull-requests: write
       id-token: write
 
     steps:
-      - name: Post triage comment
+      - name: Post status comment
         id: comment
         uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
-            **Android Issue Triage** :mag:
-            Claude Code is analyzing this issue...
+            **Android Agent** :robot:
+            Working on this issue — will open a PR when ready...
 
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Claude Code investigation
+      - name: Claude Code implementation
+        id: claude
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           prompt: |
-            Investigate GitHub issue #${{ github.event.issue.number }} for the DMV Texas Android app.
+            You are an autonomous Android engineer. Implement GitHub issue #${{ github.event.issue.number }}.
 
             TITLE: ${{ github.event.issue.title }}
             BODY: ${{ github.event.issue.body }}
-            AUTHOR: ${{ github.event.issue.user.login }}
 
-            Please:
-            1) Analyze the issue and propose a task breakdown
-            2) Identify relevant files/classes in the repo
-            3) Suggest a fix approach
-          claude_args: "--max-turns 10"
+            Instructions:
+            1) Read and understand the full issue.
+            2) Explore the codebase to find relevant files.
+            3) Implement the changes described in the issue.
+            4) Create clear, focused commits with descriptive messages.
+            5) If the issue has a task checklist, complete as many tasks as possible.
+            6) Do NOT create new markdown documentation files unless the issue explicitly asks for them.
+            7) Prefer small, focused changes over large rewrites.
 
-      - name: Update comment with result link
+            The Android app is at dmv-android/ using Kotlin, Jetpack Compose, Room, and Coil 3.
+          claude_args: "--max-turns 30"
+
+      - name: Update comment with result
         if: always()
         uses: peter-evans/create-or-update-comment@v4
         with:
           comment-id: ${{ steps.comment.outputs.comment-id }}
           edit-mode: replace
           body: |
-            **Android Issue Triage** :white_check_mark:
-            Analysis completed.
+            **Android Agent** ${{ steps.claude.outcome == 'success' && ':white_check_mark:' || ':x:' }}
+            Implementation ${{ steps.claude.outcome == 'success' && 'completed' || 'failed' }}.
             [Workflow run](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
