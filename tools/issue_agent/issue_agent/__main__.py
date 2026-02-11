@@ -4,12 +4,11 @@ Starts a FastAPI server that accepts GitHub webhook events (issue opened/reopene
 and can also be triggered manually via POST /run/{issue_number}.
 """
 
-from __future__ import annotations
-
 import hashlib
 import hmac
 import json
 import logging
+from typing import Optional, Set
 
 import uvicorn
 from fastapi import FastAPI, Header, HTTPException, Request
@@ -26,10 +25,10 @@ log = logging.getLogger("issue_agent")
 app = FastAPI(title="Issue Agent", version="0.1.0")
 
 # Track running issues to prevent concurrent runs on the same issue
-_running: set[int] = set()
+_running: Set[int] = set()
 
 
-def _verify_signature(payload: bytes, signature: str | None) -> bool:
+def _verify_signature(payload: bytes, signature: Optional[str]) -> bool:
     """Verify GitHub webhook HMAC-SHA256 signature if a secret is configured."""
     if not config.WEBHOOK_SECRET:
         return True  # no secret configured, skip verification
@@ -44,8 +43,8 @@ def _verify_signature(payload: bytes, signature: str | None) -> bool:
 @app.post("/webhook")
 async def webhook(
     request: Request,
-    x_hub_signature_256: str | None = Header(None),
-    x_github_event: str | None = Header(None),
+    x_hub_signature_256: Optional[str] = Header(None),
+    x_github_event: Optional[str] = Header(None),
 ):
     """Handle GitHub issue webhook events."""
     body = await request.body()
