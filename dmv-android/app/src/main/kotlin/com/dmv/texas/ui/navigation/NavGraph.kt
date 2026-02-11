@@ -13,6 +13,7 @@ import androidx.navigation.compose.navigation
 import com.dmv.texas.DMVApp
 import com.dmv.texas.data.model.QuizConfig
 import com.dmv.texas.data.model.QuizMode
+import com.dmv.texas.ui.screen.about.AboutScreen
 import com.dmv.texas.ui.screen.debug.AssetAuditScreen
 import com.dmv.texas.ui.screen.debug.DataQualityScreen
 import com.dmv.texas.ui.screen.debug.DebugScreen
@@ -64,6 +65,9 @@ fun NavGraph(
                 },
                 onOpenDebug = {
                     navController.navigate(Screen.Debug.route)
+                },
+                onOpenAbout = {
+                    navController.navigate(Screen.About.route)
                 }
             )
         }
@@ -130,6 +134,13 @@ fun NavGraph(
                     navController.popBackStack()
                     navController.navigate(QUIZ_FLOW_ROUTE)
                 }
+            )
+        }
+
+        // ── About ──────────────────────────────────────────────────
+        composable(Screen.About.route) {
+            AboutScreen(
+                onBack = { navController.popBackStack() }
             )
         }
 
