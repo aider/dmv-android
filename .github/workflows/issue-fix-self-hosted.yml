@@ -36,6 +36,7 @@ jobs:
           git checkout -b "bot/issue-${{ github.event.issue.number }}-fix"
 
       - name: Claude Code - implement fix
+        continue-on-error: true
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
@@ -51,9 +52,7 @@ jobs:
             - Make minimal, targeted changes.
             - If you can add a small validation/test, do it.
             - Summarize what changed and why for PR description.
-          claude_args: |
-            --max-turns 25
-            --allowedTools "Read,Glob,Grep,Edit,Write,Bash"
+          claude_args: "--max-turns 25"
 
       - name: Commit changes
         run: |
