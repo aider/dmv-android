@@ -108,6 +108,19 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
         )
     }
 
+    /** Returns a default config for one-tap Quick Start (Practice, 20 Qs, all topics). */
+    fun quickStartConfig(): QuizConfig {
+        val s = _state.value
+        return QuizConfig(
+            mode = QuizMode.PRACTICE,
+            stateCode = "TX",
+            topics = s.topics.map { it.topic },
+            questionCount = 20,
+            minDifficulty = 1,
+            maxDifficulty = 3
+        )
+    }
+
     /** Returns true if the current config can start a quiz. */
     fun canStart(): Boolean {
         val s = _state.value
