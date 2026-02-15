@@ -1,0 +1,160 @@
+name: Codex Hook Review
+
+on:
+  pull_request:
+    types:
+      - ready_for_review
+      - synchronize
+      - reopened
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: codex-hook-review-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  codex-review:
+    if: github.event.pull_request.draft == false && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: self-hosted
+    timeout-minutes: 25
+    env:
+      GH_TOKEN: ${{ github.token }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      CODEX_MODEL: ${{ vars.CODEX_MODEL }}
+      REPO: ${{ github.repository }}
+      PR: ${{ github.event.pull_request.number }}
+      BASE_REF: ${{ github.event.pull_request.base.ref }}
+      HEAD_REF: ${{ github.event.pull_request.head.ref }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Preflight
+        run: |
+          set -euo pipefail
+          command -v codex >/dev/null || { echo "codex CLI not found on runner"; exit 1; }
+          command -v gh >/dev/null || { echo "gh CLI not found on runner"; exit 1; }
+          if [[ -z "${OPENAI_API_KEY:-}" ]]; then
+            echo "OPENAI_API_KEY secret is required."
+            exit 1
+          fi
+          git fetch origin "$BASE_REF"
+
+      - name: Build Prompt
+        run: |
+          set -euo pipefail
+
+          if [[ -f docs/review/reviewer-agent-prompt.md ]]; then
+            cp docs/review/reviewer-agent-prompt.md /tmp/reviewer_agent_prompt.md
+          else
+            cat > /tmp/reviewer_agent_prompt.md <<'PROMPT'
+          Review this PR for product outcome quality, not only code style.
+
+          Review priorities (in order):
+          1) Product correctness and user impact
+          2) Visual quality in rendered UI/screenshots
+          3) Reference fidelity (MUTCD/state source)
+          4) Code quality and maintainability
+
+          Must validate:
+          - Correctness of changed behavior
+          - Visual quality in rendered output
+          - Readability at 96dp and 48dp for sign assets
+          - Semantic fidelity to authoritative references
+          - Text fitting: no clipping, overflow, merged letters, or cropped glyphs
+          - Layout fidelity: shape, border widths, spacing, text placement
+
+          Evidence rules:
+          - If PR changes SVG/assets/UI and has no visual evidence: BLOCK
+          - If sign fixes lack both 96dp and 48dp renders: BLOCK
+          - Include at least one authoritative reference link when applicable
+
+          Blocking policy:
+          - BLOCK on any P0/P1 finding
+          - BLOCK if evidence is missing or insufficient
+          - BLOCK if visual output conflicts with reference semantics
+          - BLOCK if any score is below 4/5
+          - BLOCK if confidence is below 0.75
+
+          Output exactly one structured block and nothing else:
+          <!-- product-review-verdict -->
+          Prompt-Version: reviewer-agent-v2
+          Reviewer-Agent: codex-hook-review
+          PR: #<number>
+          Scope: <svg|android|mixed|other>
+
+          Verdict: PASS|BLOCK
+          Confidence: <0.00-1.00>
+
+          P0 Findings: <none or concise list>
+          P1 Findings: <none or concise list>
+          P2 Findings: <none or concise list>
+          P3 Findings: <none or concise list>
+
+          Readability: <1-5>/5
+          Semantic Clarity: <1-5>/5
+          Contrast: <1-5>/5
+          Consistency: <1-5>/5
+          Reference Compliance: PASS|FAIL
+          Reference Links:
+          - <url 1>
+          - <url 2>
+
+          Required Fixes:
+          1. <first required change, or "None">
+          2. <second required change, or "None">
+          <!-- /product-review-verdict -->
+          PROMPT
+          fi
+
+          cat > /tmp/codex_prompt.txt <<EOF
+          $(cat /tmp/reviewer_agent_prompt.md)
+
+          Review target:
+          - Repository: ${REPO}
+          - PR: #${PR}
+          - Base branch: origin/${BASE_REF}
+          - Head branch: ${HEAD_REF}
+
+          Instructions:
+          - Review real changes in this PR against base.
+          - Prioritize correctness, UX impact, and visual/reference fidelity.
+          - Output ONLY the final structured verdict block and nothing else.
+          EOF
+
+      - name: Run Codex Review
+        run: |
+          set -euo pipefail
+          MODEL="${CODEX_MODEL:-gpt-5}"
+          codex review \
+            --base "origin/${BASE_REF}" \
+            --title "PR #${PR} hook review" \
+            -m "${MODEL}" \
+            "$(cat /tmp/codex_prompt.txt)" \
+            --output-last-message /tmp/codex_review.txt
+          test -s /tmp/codex_review.txt
+
+      - name: Post Review Comment
+        run: |
+          set -euo pipefail
+          gh pr comment "${PR}" --repo "${REPO}" --body-file /tmp/codex_review.txt
+
+      - name: Enforce Verdict
+        run: |
+          set -euo pipefail
+          if ! grep -Eq '^Verdict:[[:space:]]*(PASS|BLOCK)' /tmp/codex_review.txt; then
+            gh pr review "${PR}" --repo "${REPO}" --request-changes --body "Codex hook review did not include a valid Verdict line."
+            exit 1
+          fi
+
+          if grep -Eq '^Verdict:[[:space:]]*BLOCK' /tmp/codex_review.txt; then
+            gh pr review "${PR}" --repo "${REPO}" --request-changes --body "Codex hook review verdict: BLOCK"
+            exit 1
+          fi
