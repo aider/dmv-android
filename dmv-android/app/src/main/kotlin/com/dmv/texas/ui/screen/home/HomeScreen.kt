@@ -79,7 +79,7 @@ fun HomeScreen(
             )
 
             Text(
-                text = "${state.totalQuestions} questions \u2022 8 topics \u2022 100% offline",
+                text = "${state.totalQuestions} questions \u2022 ${state.topics.size} topics \u2022 100% offline",
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.outline,
                 modifier = Modifier.fillMaxWidth(),
