@@ -92,7 +92,7 @@ fun HomeScreen(
                 enabled = !state.isLoading,
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(52.dp)
+                    .height(56.dp)
             ) {
                 Text(
                     text = "Quick Start \u2022 20 Questions",
