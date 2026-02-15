@@ -1159,7 +1159,7 @@
     "sourceUrl": "generated",
     "license": "generated",
     "status": "ok",
-    "lastReviewedAt": "2026-02-14",
+    "lastReviewedAt": "2026-02-15",
     "tags": [
       "svg",
       "dmv",
@@ -1167,7 +1167,7 @@
       "mutcd",
       "sign"
     ],
-    "notes": "Fixed: Changed from circle to square with rounded corners per MUTCD R5-1. Added proper borders and shadow.",
+    "notes": "Authentic MUTCD R5-1 per Fig 2B-11: white text on red, blank white separator bar. Font: 24px, no clipping, 5.76dp at 48dp. (Issue #76)",
     "promptSpec": {
       "version": 1,
       "status": "draft",
