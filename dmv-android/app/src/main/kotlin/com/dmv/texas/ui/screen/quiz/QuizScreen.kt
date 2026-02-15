@@ -91,6 +91,33 @@ fun QuizScreen(
         )
     }
 
+    // Handle missing quiz configuration (e.g. after process death)
+    if (state.isMissingConfig) {
+        Box(
+            modifier = modifier.fillMaxSize(),
+            contentAlignment = Alignment.Center
+        ) {
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.spacedBy(16.dp)
+            ) {
+                Text(
+                    text = "Quiz session expired",
+                    style = MaterialTheme.typography.headlineMedium
+                )
+                Text(
+                    text = "Please start a new quiz from the home screen.",
+                    style = MaterialTheme.typography.bodyLarge,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+                Button(onClick = onQuit) {
+                    Text("Back to Home")
+                }
+            }
+        }
+        return
+    }
+
     if (state.isLoading) {
         Box(
             modifier = modifier.fillMaxSize(),

@@ -25,6 +25,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         val answers: Map<String, Int> = emptyMap(),
         val isLoading: Boolean = true,
         val isFinished: Boolean = false,
+        val isMissingConfig: Boolean = false,
         val timerMs: Long = 0,
         val startTimeMs: Long = 0,
         val config: QuizConfig = QuizConfig(),
@@ -66,6 +67,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             loadQuestions(config)
         } else {
             Log.w("QuizViewModel", "No pendingQuizConfig found -- quiz cannot start")
+            _state.value = QuizState(isLoading = false, isMissingConfig = true)
         }
     }
 
