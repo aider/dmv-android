@@ -1,6 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_R1-1_STOP">
-  <polygon points="100,8 164,36 192,100 164,164 100,192 36,164 8,100 36,36" fill="#FFFFFF"/>
-  <polygon points="100,16 156,42 184,100 156,158 100,184 44,158 16,100 44,42" fill="#C9252D"/>
-  <polygon points="100,20 152,44 180,100 152,156 100,180 48,156 20,100 48,44" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD R1-1 STOP Sign">
+  <!-- Shadow -->
+  <polygon points="100,10 163.64,36.36 190,100 163.64,163.64 100,190 36.36,163.64 10,100 36.36,36.36" fill="#000000" opacity="0.15" transform="translate(2,2)"/>
+
+  <!-- Outer white border (regular octagon) -->
+  <polygon points="100,10 163.64,36.36 190,100 163.64,163.64 100,190 36.36,163.64 10,100 36.36,36.36" fill="#FFFFFF"/>
+
+  <!-- Red background (regular octagon, inset) -->
+  <polygon points="100,18 157.28,42.72 182,100 157.28,157.28 100,182 42.72,157.28 18,100 42.72,42.72" fill="#C1272D"/>
+
+  <!-- Inner white border (regular octagon, inset) -->
+  <polygon points="100,22 153.56,45.44 178,100 153.56,154.56 100,178 46.44,154.56 22,100 46.44,45.44" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+
+  <!-- STOP text -->
   <text x="100" y="122" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="900" fill="#FFFFFF" text-anchor="middle">STOP</text>
 </svg>

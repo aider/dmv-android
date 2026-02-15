@@ -1,8 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_R2-1_SPEED_LIMIT_65">
-<rect x="34" y="8" width="132" height="184" rx="8" fill="#FFFFFF" stroke="#000000" stroke-width="4"/>
-  <rect x="40" y="14" width="120" height="172" rx="5" fill="none" stroke="#000000" stroke-width="2"/>
-  <text x="100" y="50" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="middle">SPEED</text>
-  <text x="100" y="78" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="middle">LIMIT</text>
-  <line x1="56" y1="88" x2="144" y2="88" stroke="#000000" stroke-width="2"/>
-  <text x="100" y="162" font-family="Arial, Helvetica, sans-serif" font-size="74" font-weight="900" text-anchor="middle">65</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 200" width="150" height="200" role="img" aria-label="MUTCD R2-1 SPEED LIMIT 65">
+  <!-- Shadow -->
+  <rect x="10" y="10" width="130" height="180" rx="8" fill="#000000" opacity="0.15" transform="translate(2,2)"/>
+
+  <!-- Outer white background with black border -->
+  <rect x="10" y="10" width="130" height="180" rx="8" fill="#FFFFFF" stroke="#000000" stroke-width="4"/>
+
+  <!-- Inner black border -->
+  <rect x="17" y="17" width="116" height="166" rx="5" fill="none" stroke="#000000" stroke-width="2"/>
+
+  <!-- SPEED text -->
+  <text x="75" y="45" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#000000" text-anchor="middle">SPEED</text>
+
+  <!-- LIMIT text -->
+  <text x="75" y="72" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#000000" text-anchor="middle">LIMIT</text>
+
+  <!-- Horizontal divider line -->
+  <line x1="30" y1="82" x2="120" y2="82" stroke="#000000" stroke-width="2"/>
+
+  <!-- Speed number -->
+  <text x="75" y="156" font-family="Arial, Helvetica, sans-serif" font-size="74" font-weight="900" fill="#000000" text-anchor="middle">65</text>
 </svg>
