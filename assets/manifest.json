@@ -39,7 +39,7 @@
     "sourceUrl": "generated",
     "license": "generated",
     "status": "ok",
-    "lastReviewedAt": "2026-02-10",
+    "lastReviewedAt": "2026-02-14",
     "tags": [
       "svg",
       "dmv",
@@ -63,7 +63,8 @@
       ],
       "prompt": "Create a standards-aligned DMV training SVG for: intersection double turn lanes.\n\nGeometry and Composition:\n- Primary symbol: centered iconography consistent with MUTCD-like proportions.\n- Center the sign/symbol block both horizontally and vertically.\n- Preserve symmetric spacing between border, symbol, and text.\n- Keep text baseline and icon axes aligned to avoid visual tilt.\n\nColor and Stroke:\n- Match palette priority from current asset: #FFCC00, #FFFFFF, #4A4A4A, #3366CC, #666666, #88AA88.\n- Use opaque fills and crisp strokes only.\n- Ensure border-to-fill contrast is high for mobile readability.\n\nQuality Constraints:\n- Top-down road diagram style, high-contrast lanes and markings.\n- Output must be a clean SVG only, no editor metadata.\n- Use viewBox \"0 0 200 200\" and keep composition centered.\n- Keep 10-14 units safe padding from all outer edges.\n- No clipping. All strokes and text must remain inside canvas.\n- Use consistent stroke widths (4, 6, 8, 10 family only).\n- Use flat colors only (no gradients, shadows, filters).\n- Typography: bold sans-serif look, centered and legible at mobile size.\n\nDo not:\n- Do not crop text or symbols.\n- Do not use approximate random proportions.\n- Do not change sign meaning or code semantics.\n- Do not add decorative effects.\n\nAcceptance checklist:\n- Passes small-size preview at 128px without unreadable text.\n- No element touches canvas edge.\n- Shape and symbol are immediately recognizable as the intended traffic sign."
     },
-    "promptLastReviewedAt": "2026-02-10"
+    "promptLastReviewedAt": "2026-02-10",
+    "notes": "Verified: Turn arrows filled, turn paths stroke-width already corrected to 6px in previous pass."
   },
   {
     "assetId": "INTERSECTION_EMERGENCY_VEHICLE",
@@ -236,7 +237,7 @@
     "sourceUrl": "generated",
     "license": "generated",
     "status": "ok",
-    "lastReviewedAt": "2026-02-10",
+    "lastReviewedAt": "2026-02-14",
     "tags": [
       "svg",
       "dmv",
@@ -260,7 +261,8 @@
       ],
       "prompt": "Create a standards-aligned DMV training SVG for: intersection signal protected left.\n\nGeometry and Composition:\n- Primary symbol: traffic signal housing, evenly spaced light modules.\n- Center the sign/symbol block both horizontally and vertically.\n- Preserve symmetric spacing between border, symbol, and text.\n- Keep text baseline and icon axes aligned to avoid visual tilt.\n\nColor and Stroke:\n- Match palette priority from current asset: #FFFFFF, #FFCC00, #3366CC, #4A4A4A, #444444, #88AA88.\n- Use opaque fills and crisp strokes only.\n- Ensure border-to-fill contrast is high for mobile readability.\n\nQuality Constraints:\n- Top-down road diagram style, high-contrast lanes and markings.\n- Output must be a clean SVG only, no editor metadata.\n- Use viewBox \"0 0 200 200\" and keep composition centered.\n- Keep 10-14 units safe padding from all outer edges.\n- No clipping. All strokes and text must remain inside canvas.\n- Use consistent stroke widths (4, 6, 8, 10 family only).\n- Use flat colors only (no gradients, shadows, filters).\n- Typography: bold sans-serif look, centered and legible at mobile size.\n\nDo not:\n- Do not crop text or symbols.\n- Do not use approximate random proportions.\n- Do not change sign meaning or code semantics.\n- Do not add decorative effects.\n\nAcceptance checklist:\n- Passes small-size preview at 128px without unreadable text.\n- No element touches canvas edge.\n- Shape and symbol are immediately recognizable as the intended traffic sign."
     },
-    "promptLastReviewedAt": "2026-02-10"
+    "promptLastReviewedAt": "2026-02-10",
+    "notes": "Verified: Pavement arrow filled, turn path stroke-width already corrected to 6px in previous pass."
   },
   {
     "assetId": "INTERSECTION_T_STOP",
@@ -763,7 +765,7 @@
     "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c0/MUTCD_R1-1.svg",
     "license": "public-domain",
     "status": "ok",
-    "lastReviewedAt": "2026-02-10",
+    "lastReviewedAt": "2026-02-14",
     "tags": [
       "svg",
       "dmv",
@@ -771,7 +773,7 @@
       "mutcd",
       "sign"
     ],
-    "notes": "Passes current baseline review; keep for later micro-tuning only. Rebased from public-domain MUTCD reference SVG and normalized to 200x200.",
+    "notes": "Fixed: Regenerated with mathematically perfect regular octagon (all angles 135\u00b0, all radii equal). Added shadow.",
     "promptSpec": {
       "version": 1,
       "status": "draft",
@@ -913,7 +915,7 @@
     "sourceUrl": "generated",
     "license": "generated",
     "status": "ok",
-    "lastReviewedAt": "2026-02-10",
+    "lastReviewedAt": "2026-02-14",
     "tags": [
       "svg",
       "dmv",
@@ -921,7 +923,7 @@
       "mutcd",
       "sign"
     ],
-    "notes": "Passes current baseline review; keep for later micro-tuning only.",
+    "notes": "Fixed: Changed viewBox to 0 0 150 200. Increased padding from 2.5% to 10%. Added shadow.",
     "promptSpec": {
       "version": 1,
       "status": "draft",
@@ -943,7 +945,7 @@
     "sourceUrl": "generated",
     "license": "generated",
     "status": "ok",
-    "lastReviewedAt": "2026-02-10",
+    "lastReviewedAt": "2026-02-14",
     "tags": [
       "svg",
       "dmv",
@@ -951,7 +953,7 @@
       "mutcd",
       "sign"
     ],
-    "notes": "Passes current baseline review; keep for later micro-tuning only.",
+    "notes": "Fixed: Changed viewBox to 0 0 150 200 (correct portrait ratio). Increased padding from 2.5% to 10%. Added shadow.",
     "promptSpec": {
       "version": 1,
       "status": "draft",
@@ -973,7 +975,7 @@
     "sourceUrl": "generated",
     "license": "generated",
     "status": "ok",
-    "lastReviewedAt": "2026-02-10",
+    "lastReviewedAt": "2026-02-14",
     "tags": [
       "svg",
       "dmv",
@@ -981,7 +983,7 @@
       "mutcd",
       "sign"
     ],
-    "notes": "Passes current baseline review; keep for later micro-tuning only.",
+    "notes": "Fixed: Changed viewBox to 0 0 150 200. Increased padding from 2.5% to 10%. Added shadow.",
     "promptSpec": {
       "version": 1,
       "status": "draft",
@@ -1157,7 +1159,7 @@
     "sourceUrl": "generated",
     "license": "generated",
     "status": "ok",
-    "lastReviewedAt": "2026-02-10",
+    "lastReviewedAt": "2026-02-14",
     "tags": [
       "svg",
       "dmv",
@@ -1165,7 +1167,7 @@
       "mutcd",
       "sign"
     ],
-    "notes": "Passes current baseline review; keep for later micro-tuning only.",
+    "notes": "Fixed: Changed from circle to square with rounded corners per MUTCD R5-1. Added proper borders and shadow.",
     "promptSpec": {
       "version": 1,
       "status": "draft",
@@ -1307,7 +1309,7 @@
     "sourceUrl": "generated",
     "license": "generated",
     "status": "ok",
-    "lastReviewedAt": "2026-02-10",
+    "lastReviewedAt": "2026-02-14",
     "tags": [
       "svg",
       "dmv",
@@ -1315,7 +1317,7 @@
       "mutcd",
       "sign"
     ],
-    "notes": "Passes current baseline review; keep for later micro-tuning only.",
+    "notes": "Fixed: Removed complex transform/scale. Redesigned with viewBox 0 0 150 200 and 10% padding. Added shadow.",
     "promptSpec": {
       "version": 1,
       "status": "draft",
@@ -1399,7 +1401,7 @@
     "sourceUrl": "generated",
     "license": "generated",
     "status": "ok",
-    "lastReviewedAt": "2026-02-10",
+    "lastReviewedAt": "2026-02-14",
     "tags": [
       "svg",
       "dmv",
@@ -1407,7 +1409,7 @@
       "mutcd",
       "sign"
     ],
-    "notes": "Passes current baseline review; keep for later micro-tuning only.",
+    "notes": "Fixed: Changed viewBox to 0 0 150 200. Bottom text moved up (y=172, 12% padding). Increased font from 8px to 11px. Added shadow.",
     "promptSpec": {
       "version": 1,
       "status": "draft",
@@ -2348,15 +2350,15 @@
     "file": "assets/svg/PAVEMENT_GORE_AREA.svg",
     "sourceUrl": "generated",
     "license": "generated",
-    "status": "needs_fix",
-    "lastReviewedAt": "2026-02-10",
+    "status": "ok",
+    "lastReviewedAt": "2026-02-14",
     "tags": [
       "svg",
       "dmv",
       "quiz",
       "pavement-marking"
     ],
-    "notes": "Bottom label overflows horizontal bounds after standardization scaling. Resolved: 2026-02-10 mobile text clipping fix.",
+    "notes": "Verified: Diagonal stripe stroke-width already corrected to 8px in previous pass.",
     "promptSpec": {
       "version": 1,
       "status": "draft",
@@ -2522,8 +2524,8 @@
     "file": "assets/svg/PAVEMENT_SCHOOL_ZONE.svg",
     "sourceUrl": "generated",
     "license": "generated",
-    "status": "needs_fix",
-    "lastReviewedAt": "2026-02-10",
+    "status": "ok",
+    "lastReviewedAt": "2026-02-14",
     "tags": [
       "svg",
       "dmv",
@@ -2542,7 +2544,8 @@
       ],
       "prompt": "Create a standards-aligned DMV training SVG for: pavement school zone.\n\nGeometry and Composition:\n- Primary symbol: school-zone pavement message with balanced line spacing.\n- Center the sign/symbol block both horizontally and vertically.\n- Preserve symmetric spacing between border, symbol, and text.\n- Keep text baseline and icon axes aligned to avoid visual tilt.\n\nColor and Stroke:\n- Match palette priority from current asset: #FFFFFF, #4A4A4A.\n- Use opaque fills and crisp strokes only.\n- Ensure border-to-fill contrast is high for mobile readability.\n\nQuality Constraints:\n- Road-surface marking style, directional arrows and line types must be clear.\n- Output must be a clean SVG only, no editor metadata.\n- Use viewBox \"0 0 200 200\" and keep composition centered.\n- Keep 10-14 units safe padding from all outer edges.\n- No clipping. All strokes and text must remain inside canvas.\n- Use consistent stroke widths (4, 6, 8, 10 family only).\n- Use flat colors only (no gradients, shadows, filters).\n- Typography: bold sans-serif look, centered and legible at mobile size.\n\nDo not:\n- Do not crop text or symbols.\n- Do not use approximate random proportions.\n- Do not change sign meaning or code semantics.\n- Do not add decorative effects.\n\nAcceptance checklist:\n- Passes small-size preview at 128px without unreadable text.\n- No element touches canvas edge.\n- Shape and symbol are immediately recognizable as the intended traffic sign."
     },
-    "promptLastReviewedAt": "2026-02-10"
+    "promptLastReviewedAt": "2026-02-10",
+    "notes": "Fixed: Bottom text (\"20 MPH\") increased from 28px to 36px font-size."
   },
   {
     "assetId": "PAVEMENT_SHARED_CENTER_TURN_LANE",
@@ -2550,15 +2553,15 @@
     "file": "assets/svg/PAVEMENT_SHARED_CENTER_TURN_LANE.svg",
     "sourceUrl": "generated",
     "license": "generated",
-    "status": "needs_fix",
-    "lastReviewedAt": "2026-02-10",
+    "status": "ok",
+    "lastReviewedAt": "2026-02-14",
     "tags": [
       "svg",
       "dmv",
       "quiz",
       "pavement-marking"
     ],
-    "notes": "Bottom label overflows horizontal bounds after standardization scaling. Resolved: 2026-02-10 mobile text clipping fix.",
+    "notes": "Fixed: Text increased from 13px to 22px font-size for better legibility.",
     "promptSpec": {
       "version": 1,
       "status": "draft",

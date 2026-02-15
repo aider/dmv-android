@@ -1,6 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_R5-1_DO_NOT_ENTER">
-<circle cx="100" cy="100" r="92" fill="#C9252D"/>
-  <circle cx="100" cy="100" r="92" fill="none" stroke="#FFFFFF" stroke-width="3"/>
-  <rect x="20" y="78" width="160" height="44" rx="4" fill="#FFFFFF"/>
-  <text x="100" y="107" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="900" fill="#C9252D" text-anchor="middle" letter-spacing="0.3">DO NOT ENTER</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD R5-1 DO NOT ENTER Sign">
+  <!-- Shadow -->
+  <rect x="10" y="10" width="180" height="180" rx="8" fill="#000000" opacity="0.15" transform="translate(2,2)"/>
+
+  <!-- Outer white border (square with rounded corners) -->
+  <rect x="10" y="10" width="180" height="180" rx="8" fill="#FFFFFF"/>
+
+  <!-- Red background (square with rounded corners, inset) -->
+  <rect x="16" y="16" width="168" height="168" rx="6" fill="#C1272D"/>
+
+  <!-- Inner white border -->
+  <rect x="20" y="20" width="160" height="160" rx="4" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+
+  <!-- White horizontal bar -->
+  <rect x="30" y="80" width="140" height="40" rx="2" fill="#FFFFFF"/>
+
+  <!-- DO NOT ENTER text -->
+  <text x="100" y="108" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="900" fill="#C1272D" text-anchor="middle" letter-spacing="0.5">DO NOT ENTER</text>
 </svg>
