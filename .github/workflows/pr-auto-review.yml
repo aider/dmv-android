@@ -104,7 +104,8 @@ jobs:
           body="$(gh pr view "$PR" --repo "$REPO" --json body --jq '.body // ""')"
           comments="$(gh pr view "$PR" --repo "$REPO" --json comments --jq '.comments[].body // ""' 2>/dev/null || true)"
           review_comments="$(gh api "repos/$REPO/pulls/$PR/comments" --jq '.[].body // ""' 2>/dev/null || true)"
-          all_text="$body"$'\n'"$comments"$'\n'"$review_comments"
+          reviews_text="$(gh api "repos/$REPO/pulls/$PR/reviews" --jq '.[].body // ""' 2>/dev/null || true)"
+          all_text="$body"$'\n'"$comments"$'\n'"$review_comments"$'\n'"$reviews_text"
 
           failures=()
 
@@ -174,6 +175,67 @@ jobs:
             fi
           fi
 
+          verdict_block="$(awk '
+            /<!-- product-review-verdict -->/ {
+              capture = 1
+              block = $0 ORS
+              next
+            }
+            capture == 1 {
+              block = block $0 ORS
+              if ($0 ~ /<!-- \/product-review-verdict -->/) {
+                last = block
+                capture = 0
+                block = ""
+              }
+            }
+            END { printf "%s", last }
+          ' <<< "$all_text")"
+
+          if [[ -z "$verdict_block" ]]; then
+            failures+=("Missing structured reviewer verdict comment. Use docs/review/reviewer-agent-prompt.md and include <!-- product-review-verdict --> markers.")
+          else
+            prompt_version="$(sed -nE 's/^Prompt-Version:[[:space:]]*(.+)$/\1/p' <<< "$verdict_block" | head -n1)"
+            reviewer_verdict="$(sed -nE 's/^Verdict:[[:space:]]*(PASS|BLOCK).*$/\1/p' <<< "$verdict_block" | head -n1)"
+            reference_compliance="$(sed -nE 's/^Reference Compliance:[[:space:]]*(PASS|FAIL).*$/\1/p' <<< "$verdict_block" | head -n1)"
+
+            if [[ -z "$prompt_version" ]]; then
+              failures+=("Reviewer verdict block is missing Prompt-Version.")
+            fi
+
+            if [[ -z "$reviewer_verdict" ]]; then
+              failures+=("Reviewer verdict block is missing Verdict: PASS|BLOCK.")
+            elif [[ "$reviewer_verdict" == "BLOCK" ]]; then
+              failures+=("Reviewer verdict is BLOCK.")
+            fi
+
+            for sev in P0 P1 P2 P3; do
+              if ! grep -Eq "^${sev} Findings:[[:space:]]*" <<< "$verdict_block"; then
+                failures+=("Reviewer verdict block is missing '${sev} Findings:' line.")
+              fi
+            done
+
+            for key in "Readability" "Semantic Clarity" "Contrast" "Consistency"; do
+              score_line="$(grep -E "^${key}:[[:space:]]*[1-5]/5" <<< "$verdict_block" | head -n1 || true)"
+              score="$(sed -nE 's/.*([1-5])\/5.*/\1/p' <<< "$score_line" | head -n1)"
+              if [[ -z "$score" ]]; then
+                failures+=("Reviewer verdict block is missing score: ${key}: N/5")
+              elif [[ "$score" -lt 4 ]]; then
+                failures+=("Reviewer ${key} score is ${score}/5 (minimum passing score is 4/5)")
+              fi
+            done
+
+            if [[ -z "$reference_compliance" ]]; then
+              failures+=("Reviewer verdict block is missing Reference Compliance: PASS|FAIL.")
+            elif [[ "$reference_compliance" == "FAIL" ]]; then
+              failures+=("Reviewer marked Reference Compliance as FAIL.")
+            fi
+
+            if ! grep -Eq '^Reference Links:[[:space:]]*' <<< "$verdict_block"; then
+              failures+=("Reviewer verdict block is missing 'Reference Links:' section.")
+            fi
+          fi
+
           report=""
           if [[ "${#failures[@]}" -gt 0 ]]; then
             for f in "${failures[@]}"; do
@@ -192,7 +254,9 @@ jobs:
 
           ${details}
 
-          Required policy: \`docs/review/product-review-rubric.md\`"
+          Required policies:
+          - \`docs/review/product-review-rubric.md\`
+          - \`docs/review/reviewer-agent-prompt.md\`"
 
             existing_id="$(
               gh api "repos/$REPO/issues/$PR/comments" --jq ".[] | select(.user.login==\"github-actions[bot]\") | select(.body | contains(\"$marker\")) | .id" | tail -n1 || true
