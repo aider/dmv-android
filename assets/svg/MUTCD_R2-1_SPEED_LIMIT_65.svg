@@ -1,7 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 200" width="150" height="200" role="img" aria-label="MUTCD R2-1 SPEED LIMIT 65">
-  <!-- Shadow -->
-  <rect x="10" y="10" width="130" height="180" rx="8" fill="#000000" opacity="0.15" transform="translate(2,2)"/>
-
   <!-- Outer white background with black border -->
   <rect x="10" y="10" width="130" height="180" rx="8" fill="#FFFFFF" stroke="#000000" stroke-width="4"/>
 
