@@ -32,6 +32,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.dmv.texas.BuildConfig
 import com.dmv.texas.data.local.dao.TopicCount
 import com.dmv.texas.data.model.QuizConfig
 import com.dmv.texas.data.model.QuizMode
@@ -210,15 +211,17 @@ fun HomeScreen(
                 Text("View Stats")
             }
 
-            // Debug button
-            TextButton(
-                onClick = onOpenDebug,
-                modifier = Modifier.fillMaxWidth()
-            ) {
-                Text(
-                    text = "Debug",
-                    color = MaterialTheme.colorScheme.outline
-                )
+            // Debug button (debug builds only)
+            if (BuildConfig.DEBUG) {
+                TextButton(
+                    onClick = onOpenDebug,
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Text(
+                        text = "Debug",
+                        color = MaterialTheme.colorScheme.outline
+                    )
+                }
             }
 
             // About button
