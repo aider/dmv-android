@@ -3,6 +3,7 @@ package com.dmv.texas.ui.navigation
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.viewmodel.compose.viewModel
@@ -79,7 +80,9 @@ fun NavGraph(
         ) {
             composable(Screen.Quiz.route) {
                 // Scope QuizViewModel to the quiz_flow parent graph entry
-                val parentEntry = navController.getBackStackEntry(QUIZ_FLOW_ROUTE)
+                val parentEntry = remember(it) {
+                    navController.getBackStackEntry(QUIZ_FLOW_ROUTE)
+                }
                 val quizViewModel: QuizViewModel = viewModel(parentEntry)
 
                 QuizScreen(
@@ -96,7 +99,9 @@ fun NavGraph(
             }
 
             composable(Screen.Results.route) {
-                val parentEntry = navController.getBackStackEntry(QUIZ_FLOW_ROUTE)
+                val parentEntry = remember(it) {
+                    navController.getBackStackEntry(QUIZ_FLOW_ROUTE)
+                }
                 val quizViewModel: QuizViewModel = viewModel(parentEntry)
                 val state by quizViewModel.state.collectAsState()
                 val context = LocalContext.current
