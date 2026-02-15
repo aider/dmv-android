@@ -44,6 +44,7 @@ fun HomeScreen(
     onStartQuiz: (QuizConfig) -> Unit,
     onOpenStats: () -> Unit,
     onOpenDebug: () -> Unit = {},
+    onOpenAbout: () -> Unit = {},
     modifier: Modifier = Modifier,
     viewModel: HomeViewModel = viewModel()
 ) {
@@ -216,6 +217,17 @@ fun HomeScreen(
             ) {
                 Text(
                     text = "Debug",
+                    color = MaterialTheme.colorScheme.outline
+                )
+            }
+
+            // About button
+            TextButton(
+                onClick = onOpenAbout,
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text(
+                    text = "About",
                     color = MaterialTheme.colorScheme.outline
                 )
             }
