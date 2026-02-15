@@ -3,6 +3,8 @@ package com.dmv.texas.ui.screen.home
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
+import com.dmv.texas.DMVApp
+import com.dmv.texas.analytics.AnalyticsEvents
 import com.dmv.texas.data.local.dao.TopicCount
 import com.dmv.texas.data.local.db.DMVDatabase
 import com.dmv.texas.data.model.QuizConfig
@@ -26,8 +28,10 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
         val isLoading: Boolean = true
     )
 
+    private val app = getApplication<DMVApp>()
     private val db = DMVDatabase.getInstance(application)
     private val questionRepo = QuestionRepository(db.questionDao(), db.questionStatsDao())
+    private val analytics = app.analytics
 
     private val _state = MutableStateFlow(HomeState())
     val state: StateFlow<HomeState> = _state
@@ -48,6 +52,9 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
                 totalQuestions = totalQuestions,
                 isLoading = false
             )
+            analytics.logEvent(AnalyticsEvents.HOME_VIEWED, mapOf(
+                "question_count" to totalQuestions
+            ))
         }
     }
 

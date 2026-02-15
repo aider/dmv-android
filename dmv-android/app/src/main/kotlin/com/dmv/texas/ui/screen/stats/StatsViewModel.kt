@@ -3,6 +3,8 @@ package com.dmv.texas.ui.screen.stats
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
+import com.dmv.texas.DMVApp
+import com.dmv.texas.analytics.AnalyticsEvents
 import com.dmv.texas.data.local.dao.TopicAccuracy
 import com.dmv.texas.data.local.db.DMVDatabase
 import com.dmv.texas.data.local.entity.AttemptEntity
@@ -25,13 +27,16 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
             get() = if (overallTotal > 0) (overallCorrect * 100) / overallTotal else 0
     }
 
+    private val app = getApplication<DMVApp>()
     private val db = DMVDatabase.getInstance(application)
     private val statsRepo = StatsRepository(db, db.attemptDao(), db.attemptAnswerDao(), db.questionStatsDao())
+    private val analytics = app.analytics
 
     private val _state = MutableStateFlow(StatsState())
     val state: StateFlow<StatsState> = _state
 
     init {
+        analytics.logEvent(AnalyticsEvents.STATS_OPENED)
         loadStats()
     }
 
