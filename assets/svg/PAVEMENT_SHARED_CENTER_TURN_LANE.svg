@@ -1,5 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="PAVEMENT_SHARED_CENTER_TURN_LANE">
-<g transform="translate(12 41.3333) scale(0.5867)">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200" role="img" aria-label="PAVEMENT_SHARED_CENTER_TURN_LANE">
     <rect x="0" y="0" width="300" height="200" fill="#88AA88"/>
       <!-- 5-lane road -->
       <rect x="0" y="40" width="300" height="120" fill="#4A4A4A"/>
@@ -31,5 +30,4 @@
       <!-- Label -->
       <text x="150" y="170" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#000000" text-anchor="middle">CENTER TWO-WAY</text>
       <text x="150" y="190" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#000000" text-anchor="middle">LEFT TURN LANE</text>
-  </g>
 </svg>
