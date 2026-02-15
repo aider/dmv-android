@@ -1167,7 +1167,7 @@
       "mutcd",
       "sign"
     ],
-    "notes": "Redesigned to circular MUTCD R5-1 geometry. Font: 20px, letter-spacing: 0.5, bar: 150×30. Readable at 48dp. (Issue #76)",
+    "notes": "Redesigned to circular MUTCD R5-1 geometry. Font: 24px (meets acceptance), letter-spacing: 0, bar: 150×36. 5.76dp at 48dp. (Issue #76)",
     "promptSpec": {
       "version": 1,
       "status": "draft",
