@@ -1,5 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="PAVEMENT_GORE_AREA">
-<g transform="translate(12 41.3333) scale(0.5867)">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200" role="img" aria-label="PAVEMENT_GORE_AREA">
     <rect x="0" y="0" width="300" height="200" fill="#88AA88"/>
       <!-- Main highway -->
       <rect x="0" y="60" width="300" height="80" fill="#4A4A4A"/>
@@ -34,5 +33,4 @@
       <!-- Label -->
       <text x="150" y="168" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#000000" text-anchor="middle">GORE AREA</text>
       <text x="150" y="186" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#000000" text-anchor="middle">DO NOT DRIVE</text>
-  </g>
 </svg>

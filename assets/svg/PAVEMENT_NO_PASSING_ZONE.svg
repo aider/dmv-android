@@ -1,5 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="PAVEMENT_NO_PASSING_ZONE">
-<g transform="translate(12 41.3333) scale(0.5867)">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200" role="img" aria-label="PAVEMENT_NO_PASSING_ZONE">
     <!-- Road surface -->
       <rect x="0" y="0" width="300" height="200" fill="#4A4A4A"/>
       <!-- Subtle texture -->
@@ -7,5 +6,4 @@
       <text x="150" y="85" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="900" fill="#FFFFFF" text-anchor="middle">NO</text>
       <text x="150" y="120" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="900" fill="#FFFFFF" text-anchor="middle">PASSING</text>
       <text x="150" y="155" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="900" fill="#FFFFFF" text-anchor="middle">ZONE</text>
-  </g>
 </svg>
