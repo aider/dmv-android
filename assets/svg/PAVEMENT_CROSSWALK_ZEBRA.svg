@@ -1,5 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="PAVEMENT_CROSSWALK_ZEBRA">
-<g transform="translate(12 41.3333) scale(0.5867)">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200" role="img" aria-label="PAVEMENT_CROSSWALK_ZEBRA">
     <!-- Road surface -->
       <rect x="0" y="0" width="300" height="200" fill="#4A4A4A"/>
       <!-- Subtle texture -->
@@ -14,5 +13,4 @@
       <rect x="192" y="70" width="26" height="60" fill="#FFFFFF"/>
       <rect x="224" y="70" width="26" height="60" fill="#FFFFFF"/>
       <rect x="256" y="70" width="26" height="60" fill="#FFFFFF"/>
-  </g>
 </svg>
