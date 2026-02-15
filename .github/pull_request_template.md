@@ -33,3 +33,7 @@ Consistency: /5
 ## Reviewer Notes
 - Known tradeoffs:
 - Follow-up issue(s):
+
+## Reviewer Agent Verdict
+- [ ] Reviewer agent posted a structured verdict comment using `docs/review/reviewer-agent-prompt.md`
+- Verdict comment link:

@@ -72,9 +72,18 @@ The PR is blocked when any of the following is true:
 4. Score all four rubric dimensions.
 5. Leave findings ordered by severity (P0 to P3).
 6. Approve only if all blocking rules pass.
+7. Post a structured reviewer verdict using `docs/review/reviewer-agent-prompt.md`.
 
 ## Reviewer Output Format
-- Verdict: PASS or BLOCK
-- Findings: ordered list with severity and file/asset reference
-- Scores: Readability, Semantic Clarity, Contrast, Consistency
-- Required follow-ups (if blocked)
+- Use markers:
+  - `<!-- product-review-verdict -->`
+  - `<!-- /product-review-verdict -->`
+- Include:
+  - `Verdict: PASS|BLOCK`
+  - `P0 Findings:` / `P1 Findings:` / `P2 Findings:` / `P3 Findings:`
+  - `Readability: N/5`
+  - `Semantic Clarity: N/5`
+  - `Contrast: N/5`
+  - `Consistency: N/5`
+  - `Reference Compliance: PASS|FAIL`
+  - `Reference Links:`
