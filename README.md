@@ -257,10 +257,13 @@ console.log(stopSign.file); // assets/svg/MUTCD_R1-1_STOP.svg
 6. Update review tables: `node scripts/generate_review_tables.js`
 
 ### Adding Assets
-1. Create hand-coded SVG in `assets/svg/`
-2. Add entry to `assets/manifest.json`
-3. Reference in question using `assetId`
-4. Run validation: `node scripts/validate_assets.js`
+1. **Read the style guide**: `docs/growth/image-style-guide.md` (REQUIRED for all visual assets)
+2. Create hand-coded SVG in `assets/svg/` following learner-focused design standards
+3. Add entry to `assets/manifest.json`
+4. Reference in question using `assetId`
+5. Run validation: `node scripts/validate_assets.js`
+
+**Important**: All SVG assets must follow the mobile readability standards and MUTCD accuracy guidelines in the style guide.
 
 ---
 
