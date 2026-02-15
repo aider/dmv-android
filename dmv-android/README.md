@@ -132,14 +132,22 @@ Adding support for a new state (e.g., California) requires **no code changes**. 
 
 5. **Version upgrades:** To update a pack, increment `version` in the JSON. The importer only re-imports when the bundled version exceeds the installed version.
 
+## Tests
+
+Instrumented tests (run on device/emulator via `./gradlew connectedDebugAndroidTest`):
+
+- **`PackImporterTest`** (7 tests): insert + count, upsert idempotency, upsert replaces fields, soft-delete reimport, deactivate isolation, version store/retrieve/upsert/null
+- **`QuizGeneratorTest`** (12 tests): topic filter (single + multi), difficulty range, limit, no duplicates, isActive filtering, empty results, combined filters
+
+Tests use `Room.inMemoryDatabaseBuilder` with `allowMainThreadQueries()`.
+
 ## Known Limitations / Future Work
 
-- **Single state hardcoded in UI.** While the data layer supports multiple states, the UI currently uses `STATE_CODE = "TX"` throughout. A state selection screen is needed for multi-state support.
-- **No process death recovery for in-progress quizzes.** `pendingQuizConfig` lives on the `Application` object, which does not survive process death. The quiz restarts from Home if the process is killed.
+- **Single state hardcoded in UI.** While the data layer supports multiple states, the UI currently uses `stateCode = "TX"` throughout. A state selection screen is needed for multi-state support.
+- **No process death recovery for in-progress quizzes.** `pendingQuizConfig` lives on the `Application` object, which does not survive process death. A graceful fallback navigates the user back to Home.
 - **No question bookmarking.** Users cannot save individual questions for later review.
 - **No search or filter within stats.** The stats screen shows all-time data without date filtering.
 - **Release builds** require ProGuard/R8 testing -- only debug builds have been verified.
-- **No unit or instrumented tests.** Test coverage should be added for the import pipeline, quiz scoring, and stats repository.
 
 ## Content
 
