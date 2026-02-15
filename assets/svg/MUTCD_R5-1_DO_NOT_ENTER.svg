@@ -11,9 +11,10 @@
   <!-- Inner white border ring -->
   <circle cx="100" cy="100" r="80" fill="none" stroke="#FFFFFF" stroke-width="3"/>
 
-  <!-- White horizontal bar -->
-  <rect x="25" y="82" width="150" height="36" rx="2" fill="#FFFFFF"/>
+  <!-- White horizontal bar (center, taller for two-line text) -->
+  <rect x="20" y="75" width="160" height="50" rx="2" fill="#FFFFFF"/>
 
-  <!-- DO NOT ENTER text -->
-  <text x="100" y="107" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900" fill="#C1272D" text-anchor="middle" letter-spacing="0">DO NOT ENTER</text>
+  <!-- DO NOT ENTER text (two lines) -->
+  <text x="100" y="98" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900" fill="#C1272D" text-anchor="middle">DO NOT</text>
+  <text x="100" y="118" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900" fill="#C1272D" text-anchor="middle">ENTER</text>
 </svg>
