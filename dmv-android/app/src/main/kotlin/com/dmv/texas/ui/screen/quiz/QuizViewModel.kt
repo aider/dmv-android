@@ -5,6 +5,7 @@ import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.dmv.texas.DMVApp
+import com.dmv.texas.analytics.AnalyticsEvents
 import com.dmv.texas.data.local.db.DMVDatabase
 import com.dmv.texas.data.local.entity.QuestionEntity
 import com.dmv.texas.data.model.QuizConfig
@@ -47,9 +48,11 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             get() = if (questions.isEmpty()) 0f else (currentIndex + 1).toFloat() / questions.size
     }
 
+    private val app = getApplication<DMVApp>()
     private val db = DMVDatabase.getInstance(application)
     private val questionRepo = QuestionRepository(db.questionDao(), db.questionStatsDao())
     private val statsRepo = StatsRepository(db, db.attemptDao(), db.attemptAnswerDao(), db.questionStatsDao())
+    private val analytics = app.analytics
 
     private val _state = MutableStateFlow(QuizState())
     val state: StateFlow<QuizState> = _state
@@ -79,6 +82,11 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
                 startTimeMs = System.currentTimeMillis(),
                 timerMs = config.timeLimitMs ?: 0
             )
+            analytics.logEvent(AnalyticsEvents.QUIZ_STARTED, mapOf(
+                "mode" to config.mode.name,
+                "question_count" to questions.size,
+                "topics" to config.topics.joinToString(",")
+            ))
             if (config.timeLimitMs != null) {
                 startTimer()
             }
@@ -144,6 +152,20 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
 
         val duration = System.currentTimeMillis() - current.startTimeMs
         _state.value = current.copy(isFinished = true, durationMs = duration)
+
+        val correctCount = current.answers.count { (qId, selected) ->
+            current.questions.find { it.id == qId }?.correctIndex == selected
+        }
+        val scorePct = if (current.questions.isNotEmpty()) {
+            (correctCount * 100) / current.questions.size
+        } else 0
+        analytics.logEvent(AnalyticsEvents.QUIZ_COMPLETED, mapOf(
+            "mode" to current.config.mode.name,
+            "question_count" to current.questions.size,
+            "correct" to correctCount,
+            "score_pct" to scorePct,
+            "duration_s" to (duration / 1000)
+        ))
 
         viewModelScope.launch {
             val attemptId = statsRepo.saveAttempt(
