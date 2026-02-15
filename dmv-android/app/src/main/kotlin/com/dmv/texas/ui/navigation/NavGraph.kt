@@ -125,6 +125,16 @@ fun NavGraph(
                         app.pendingQuizConfig = state.config
                         navController.popBackStack(Screen.Home.route, inclusive = false)
                         navController.navigate(QUIZ_FLOW_ROUTE)
+                    },
+                    onPracticeMistakes = {
+                        // Launch a Mistakes-mode quiz with all topics
+                        (context.applicationContext as DMVApp).pendingQuizConfig = QuizConfig(
+                            mode = QuizMode.MISTAKES,
+                            stateCode = state.config.stateCode,
+                            questionCount = 20
+                        )
+                        navController.popBackStack(Screen.Home.route, inclusive = false)
+                        navController.navigate(QUIZ_FLOW_ROUTE)
                     }
                 )
             }

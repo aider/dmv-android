@@ -44,6 +44,7 @@ fun ResultsScreen(
     durationMs: Long,
     onBackToHome: () -> Unit,
     onRetryQuiz: () -> Unit,
+    onPracticeMistakes: (() -> Unit)? = null,
     modifier: Modifier = Modifier
 ) {
     val totalCount = questions.size
@@ -135,6 +136,20 @@ fun ResultsScreen(
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
+
+                // Encouragement message based on score band
+                Spacer(Modifier.height(4.dp))
+                Text(
+                    text = when {
+                        percentage >= 90 -> "Outstanding! You really know your stuff."
+                        percentage >= 70 -> "Great job! You're on track to pass."
+                        percentage >= 50 -> "Good effort! A little more practice and you'll pass."
+                        else -> "Keep practicing — every attempt builds knowledge."
+                    },
+                    style = MaterialTheme.typography.bodyLarge,
+                    textAlign = TextAlign.Center,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
             }
         }
 
@@ -185,7 +200,19 @@ fun ResultsScreen(
                 modifier = Modifier.fillMaxWidth(),
                 verticalArrangement = Arrangement.spacedBy(12.dp)
             ) {
-                Button(
+                // Targeted CTA: practice mistakes when there are wrong answers
+                if (missedQuestions.isNotEmpty() && onPracticeMistakes != null) {
+                    Button(
+                        onClick = onPracticeMistakes,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(48.dp)
+                    ) {
+                        Text("Practice ${missedQuestions.size} Missed Questions")
+                    }
+                }
+
+                OutlinedButton(
                     onClick = onRetryQuiz,
                     modifier = Modifier
                         .fillMaxWidth()
