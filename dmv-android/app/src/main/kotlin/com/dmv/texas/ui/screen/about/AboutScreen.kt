@@ -19,8 +19,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.dmv.texas.BuildConfig
+import com.dmv.texas.ui.theme.DMVTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -67,5 +69,13 @@ fun AboutScreen(
                 textAlign = TextAlign.Center
             )
         }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun AboutScreenPreview() {
+    DMVTheme(dynamicColor = false) {
+        AboutScreen(onBack = {})
     }
 }
