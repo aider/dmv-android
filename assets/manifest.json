@@ -3345,19 +3345,19 @@
   },
   {
     "assetId": "SPEED_FOLLOWING_DISTANCE_3SEC",
-    "description": "Following distance diagram showing 3-second rule",
+    "description": "Following distance diagram showing 3-second rule (visual only, no text labels)",
     "file": "assets/svg/SPEED_FOLLOWING_DISTANCE_3SEC.svg",
     "sourceUrl": "generated",
     "license": "generated",
-    "status": "needs_fix",
-    "lastReviewedAt": "2026-02-10",
+    "status": "ok",
+    "lastReviewedAt": "2026-02-15",
     "tags": [
       "svg",
       "dmv",
       "quiz",
       "speed"
     ],
-    "notes": "Bottom label overflows horizontal bounds and is unreadable on mobile cards. Resolved: 2026-02-10 mobile text clipping fix.",
+    "notes": "Issue #88: Removed instructional text ('3 SEC', 'MIN SAFE FOLLOWING DISTANCE') and scale transform. Visual-only interpretation required.",
     "promptSpec": {
       "version": 1,
       "status": "draft",
