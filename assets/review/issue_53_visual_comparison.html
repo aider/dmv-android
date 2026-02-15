@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue #53: Visual Comparison - Modified SVG Assets</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            padding: 20px;
+        }
+
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #bdc3c7;
+            font-size: 14px;
+        }
+
+        .instruction {
+            background: #3498db;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .instruction h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .instruction ul {
+            margin-left: 20px;
+        }
+
+        .instruction li {
+            margin: 5px 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .asset-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 2px solid #e0e0e0;
+        }
+
+        .asset-id {
+            font-weight: 600;
+            font-size: 12px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            text-align: center;
+            word-break: break-word;
+        }
+
+        .size-group {
+            margin-bottom: 20px;
+        }
+
+        .size-label {
+            font-size: 11px;
+            color: #7f8c8d;
+            text-align: center;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .svg-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+        }
+
+        .svg-container svg {
+            display: block;
+        }
+
+        .size-96dp {
+            width: 96px;
+            height: 96px;
+        }
+
+        .size-48dp {
+            width: 48px;
+            height: 48dp;
+        }
+
+        .footer {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 12px;
+        }
+
+        .priority-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+
+        .p0 {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .p1 {
+            background: #f39c12;
+            color: white;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .instruction {
+                display: none;
+            }
+
+            .asset-card {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Issue #53: Visual Comparison</h1>
+        <p>9 Modified SVG Assets - Rendered at Mobile Sizes (96dp and 48dp)</p>
+        <p><strong>Branch:</strong> feature/DMV-53-clean | <strong>Date:</strong> 2026-02-14</p>
+    </div>
+
+    <div class="instruction">
+        <h2>📸 To Create Screenshots for PR:</h2>
+        <ul>
+            <li>Open this page in a browser</li>
+            <li>Take a full-page screenshot (⌘+Shift+4 on Mac, then press Space)</li>
+            <li>Or use browser DevTools to capture full page screenshot</li>
+            <li>Attach the screenshot to PR #64 as visual evidence</li>
+            <li>Alternatively: Print to PDF for archival</li>
+        </ul>
+    </div>
+
+    <div class="grid">
+        <!-- STOP Sign -->
+        <div class="asset-card">
+            <div class="asset-id">
+                MUTCD_R1-1_STOP
+                <span class="priority-badge p0">P0</span>
+            </div>
+            <div class="size-group">
+                <div class="size-label">96dp (standard mobile)</div>
+                <div class="svg-container">
+                    <img src="../svg/MUTCD_R1-1_STOP.svg" class="size-96dp" alt="STOP sign at 96dp">
+                </div>
+            </div>
+            <div class="size-group">
+                <div class="size-label">48dp (list item)</div>
+                <div class="svg-container">
+                    <img src="../svg/MUTCD_R1-1_STOP.svg" class="size-48dp" alt="STOP sign at 48dp">
+                </div>
+            </div>
+        </div>
+
+        <!-- DO NOT ENTER -->
+        <div class="asset-card">
+            <div class="asset-id">
+                MUTCD_R5-1_DO_NOT_ENTER
+                <span class="priority-badge p0">P0</span>
+            </div>
+            <div class="size-group">
+                <div class="size-label">96dp (standard mobile)</div>
+                <div class="svg-container">
+                    <img src="../svg/MUTCD_R5-1_DO_NOT_ENTER.svg" class="size-96dp" alt="DO NOT ENTER sign at 96dp">
+                </div>
+            </div>
+            <div class="size-group">
+                <div class="size-label">48dp (list item)</div>
+                <div class="svg-container">
+                    <img src="../svg/MUTCD_R5-1_DO_NOT_ENTER.svg" class="size-48dp" alt="DO NOT ENTER sign at 48dp">
+                </div>
+            </div>
+        </div>
+
+        <!-- SPEED LIMIT 65 -->
+        <div class="asset-card">
+            <div class="asset-id">
+                MUTCD_R2-1_SPEED_LIMIT_65
+                <span class="priority-badge p0">P0</span>
+            </div>
+            <div class="size-group">
+                <div class="size-label">96dp (standard mobile)</div>
+                <div class="svg-container">
+                    <img src="../svg/MUTCD_R2-1_SPEED_LIMIT_65.svg" class="size-96dp" alt="Speed Limit 65 at 96dp">
+                </div>
+            </div>
+            <div class="size-group">
+                <div class="size-label">48dp (list item)</div>
+                <div class="svg-container">
+                    <img src="../svg/MUTCD_R2-1_SPEED_LIMIT_65.svg" class="size-48dp" alt="Speed Limit 65 at 48dp">
+                </div>
+            </div>
+        </div>
+
+        <!-- SPEED LIMIT 70 -->
+        <div class="asset-card">
+            <div class="asset-id">
+                MUTCD_R2-1_SPEED_LIMIT_70
+                <span class="priority-badge p0">P0</span>
+            </div>
+            <div class="size-group">
+                <div class="size-label">96dp (standard mobile)</div>
+                <div class="svg-container">
+                    <img src="../svg/MUTCD_R2-1_SPEED_LIMIT_70.svg" class="size-96dp" alt="Speed Limit 70 at 96dp">
+                </div>
+            </div>
+            <div class="size-group">
+                <div class="size-label">48dp (list item)</div>
+                <div class="svg-container">
+                    <img src="../svg/MUTCD_R2-1_SPEED_LIMIT_70.svg" class="size-48dp" alt="Speed Limit 70 at 48dp">
+                </div>
+            </div>
+        </div>
+
+        <!-- SPEED LIMIT 30 -->
+        <div class="asset-card">
+            <div class="asset-id">
+                MUTCD_R2-1_SPEED_LIMIT_30
+                <span class="priority-badge p0">P0</span>
+            </div>
+            <div class="size-group">
+                <div class="size-label">96dp (standard mobile)</div>
+                <div class="svg-container">
+                    <img src="../svg/MUTCD_R2-1_SPEED_LIMIT_30.svg" class="size-96dp" alt="Speed Limit 30 at 96dp">
+                </div>
+            </div>
+            <div class="size-group">
+                <div class="size-label">48dp (list item)</div>
+                <div class="svg-container">
+                    <img src="../svg/MUTCD_R2-1_SPEED_LIMIT_30.svg" class="size-48dp" alt="Speed Limit 30 at 48dp">
+                </div>
+            </div>
+        </div>
+
+        <!-- NO PARKING -->
+        <div class="asset-card">
+            <div class="asset-id">
+                MUTCD_R7-8_NO_PARKING
+                <span class="priority-badge p0">P0</span>
+            </div>
+            <div class="size-group">
+                <div class="size-label">96dp (standard mobile)</div>
+                <div class="svg-container">
+                    <img src="../svg/MUTCD_R7-8_NO_PARKING.svg" class="size-96dp" alt="NO PARKING at 96dp">
+                </div>
+            </div>
+            <div class="size-group">
+                <div class="size-label">48dp (list item)</div>
+                <div class="svg-container">
+                    <img src="../svg/MUTCD_R7-8_NO_PARKING.svg" class="size-48dp" alt="NO PARKING at 48dp">
+                </div>
+            </div>
+        </div>
+
+        <!-- SCHOOL SPEED LIMIT 20 -->
+        <div class="asset-card">
+            <div class="asset-id">
+                MUTCD_S4-3_SCHOOL_SPEED_LIMIT_20
+                <span class="priority-badge p0">P0</span>
+            </div>
+            <div class="size-group">
+                <div class="size-label">96dp (standard mobile)</div>
+                <div class="svg-container">
+                    <img src="../svg/MUTCD_S4-3_SCHOOL_SPEED_LIMIT_20.svg" class="size-96dp" alt="School Speed Limit 20 at 96dp">
+                </div>
+            </div>
+            <div class="size-group">
+                <div class="size-label">48dp (list item)</div>
+                <div class="svg-container">
+                    <img src="../svg/MUTCD_S4-3_SCHOOL_SPEED_LIMIT_20.svg" class="size-48dp" alt="School Speed Limit 20 at 48dp">
+                </div>
+            </div>
+        </div>
+
+        <!-- SHARED CENTER TURN LANE -->
+        <div class="asset-card">
+            <div class="asset-id">
+                PAVEMENT_SHARED_CENTER_TURN_LANE
+                <span class="priority-badge p1">P1</span>
+            </div>
+            <div class="size-group">
+                <div class="size-label">96dp (standard mobile)</div>
+                <div class="svg-container">
+                    <img src="../svg/PAVEMENT_SHARED_CENTER_TURN_LANE.svg" class="size-96dp" alt="Shared Center Turn Lane at 96dp">
+                </div>
+            </div>
+            <div class="size-group">
+                <div class="size-label">48dp (list item)</div>
+                <div class="svg-container">
+                    <img src="../svg/PAVEMENT_SHARED_CENTER_TURN_LANE.svg" class="size-48dp" alt="Shared Center Turn Lane at 48dp">
+                </div>
+            </div>
+        </div>
+
+        <!-- SCHOOL ZONE -->
+        <div class="asset-card">
+            <div class="asset-id">
+                PAVEMENT_SCHOOL_ZONE
+                <span class="priority-badge p1">P1</span>
+            </div>
+            <div class="size-group">
+                <div class="size-label">96dp (standard mobile)</div>
+                <div class="svg-container">
+                    <img src="../svg/PAVEMENT_SCHOOL_ZONE.svg" class="size-96dp" alt="Pavement School Zone at 96dp">
+                </div>
+            </div>
+            <div class="size-group">
+                <div class="size-label">48dp (list item)</div>
+                <div class="svg-container">
+                    <img src="../svg/PAVEMENT_SCHOOL_ZONE.svg" class="size-48dp" alt="Pavement School Zone at 48dp">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><strong>Issue #53:</strong> Redesign top 15 problematic training images (Batch 1)</p>
+        <p><strong>Agent:</strong> SVG Asset Curator | <strong>Generated:</strong> 2026-02-14</p>
+        <p>All assets rendered at actual mobile sizes for visual verification</p>
+    </div>
+</body>
+</html>
