@@ -1159,7 +1159,7 @@
     "sourceUrl": "generated",
     "license": "generated",
     "status": "ok",
-    "lastReviewedAt": "2026-02-14",
+    "lastReviewedAt": "2026-02-15",
     "tags": [
       "svg",
       "dmv",
@@ -1167,7 +1167,7 @@
       "mutcd",
       "sign"
     ],
-    "notes": "Fixed: Changed from circle to square with rounded corners per MUTCD R5-1. Added proper borders and shadow.",
+    "notes": "Increased text from 20px to 26px, reduced letter-spacing 0.5\u21920.2 for better 48dp readability (Issue #76)",
     "promptSpec": {
       "version": 1,
       "status": "draft",
