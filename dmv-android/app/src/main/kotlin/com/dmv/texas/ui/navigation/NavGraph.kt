@@ -12,6 +12,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigation
 import com.dmv.texas.DMVApp
+import com.dmv.texas.analytics.AnalyticsEvents
 import com.dmv.texas.data.model.QuizConfig
 import com.dmv.texas.data.model.QuizMode
 import com.dmv.texas.ui.screen.about.AboutScreen
@@ -115,8 +116,13 @@ fun NavGraph(
                         navController.popBackStack(Screen.Home.route, inclusive = false)
                     },
                     onRetryQuiz = {
+                        val app = context.applicationContext as DMVApp
+                        app.analytics.logEvent(AnalyticsEvents.RETRY_QUIZ_CLICKED, mapOf(
+                            "mode" to state.config.mode.name,
+                            "question_count" to state.questions.size
+                        ))
                         // Re-set the config so the new QuizViewModel can read it
-                        (context.applicationContext as DMVApp).pendingQuizConfig = state.config
+                        app.pendingQuizConfig = state.config
                         navController.popBackStack(Screen.Home.route, inclusive = false)
                         navController.navigate(QUIZ_FLOW_ROUTE)
                     }

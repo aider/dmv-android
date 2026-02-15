@@ -5,6 +5,8 @@ import android.content.Context
 import coil3.ImageLoader
 import coil3.SingletonImageLoader
 import coil3.svg.SvgDecoder
+import com.dmv.texas.analytics.AnalyticsLogger
+import com.dmv.texas.analytics.LogcatAnalyticsLogger
 import com.dmv.texas.data.local.db.DMVDatabase
 import com.dmv.texas.data.model.QuizConfig
 
@@ -12,6 +14,9 @@ class DMVApp : Application(), SingletonImageLoader.Factory {
     val database: DMVDatabase by lazy {
         DMVDatabase.getInstance(this)
     }
+
+    /** Analytics logger instance. Swap implementation here to change SDK. */
+    val analytics: AnalyticsLogger = LogcatAnalyticsLogger()
 
     /**
      * Temporary holder for [QuizConfig] to pass from HomeScreen to QuizViewModel
