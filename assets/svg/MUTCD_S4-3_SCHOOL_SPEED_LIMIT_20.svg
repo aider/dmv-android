@@ -1,7 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 200" width="150" height="200" role="img" aria-label="MUTCD S4-3 SCHOOL SPEED LIMIT 20">
-  <!-- Shadow -->
-  <rect x="10" y="10" width="130" height="180" rx="8" fill="#000000" opacity="0.15" transform="translate(2,2)"/>
-
   <!-- Outer white background with black border -->
   <rect x="10" y="10" width="130" height="180" rx="8" fill="#FFFFFF" stroke="#000000" stroke-width="4"/>
 
@@ -18,11 +15,5 @@
   <text x="75" y="80" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="800" fill="#000000" text-anchor="middle">LIMIT</text>
 
   <!-- Speed number 20 -->
-  <text x="75" y="130" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="900" fill="#000000" text-anchor="middle">20</text>
-
-  <!-- WHEN CHILDREN text -->
-  <text x="75" y="158" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#000000" text-anchor="middle">WHEN CHILDREN</text>
-
-  <!-- PRESENT text -->
-  <text x="75" y="172" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#000000" text-anchor="middle">PRESENT</text>
+  <text x="75" y="140" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="900" fill="#000000" text-anchor="middle">20</text>
 </svg>
