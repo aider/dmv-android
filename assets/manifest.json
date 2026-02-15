@@ -2550,15 +2550,15 @@
     "file": "assets/svg/PAVEMENT_SHARED_CENTER_TURN_LANE.svg",
     "sourceUrl": "generated",
     "license": "generated",
-    "status": "needs_fix",
-    "lastReviewedAt": "2026-02-10",
+    "status": "ok",
+    "lastReviewedAt": "2026-02-15",
     "tags": [
       "svg",
       "dmv",
       "quiz",
       "pavement-marking"
     ],
-    "notes": "Bottom label overflows horizontal bounds after standardization scaling. Resolved: 2026-02-10 mobile text clipping fix.",
+    "notes": "Issue #78: Removed scale transform, increased label font 13px→28px for 48dp readability (5.28dp→6.72dp effective).",
     "promptSpec": {
       "version": 1,
       "status": "draft",
