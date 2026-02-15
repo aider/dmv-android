@@ -1,0 +1,216 @@
+name: PR Auto Review Gate
+
+on:
+  pull_request:
+    types:
+      - ready_for_review
+      - synchronize
+      - reopened
+      - edited
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: pr-auto-review-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  product-review-gate:
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ensure gh is available
+        run: gh --version
+
+      - name: Ensure agent labels exist
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          gh label create android-developer --repo "$REPO" --color 1D76DB --description "Android implementation agent" --force
+          gh label create svg-review-agent --repo "$REPO" --color B60205 --description "SVG quality reviewer agent" --force
+          gh label create svg-asset-curator --repo "$REPO" --color 0E8A16 --description "SVG implementation agent" --force
+          gh label create pr-requirements-ux-reviewer --repo "$REPO" --color 5319E7 --description "Product and UX reviewer agent" --force
+          gh label create design-coordinator --repo "$REPO" --color FBCA04 --description "Cross-cutting design and UX coordination" --force
+
+      - name: Classify PR and apply labels
+        id: classify
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          set -euo pipefail
+          files="$(gh pr view "$PR" --repo "$REPO" --json files --jq '.files[].path')"
+
+          has_svg="false"
+          has_android="false"
+
+          while IFS= read -r f; do
+            [[ -z "$f" ]] && continue
+            case "$f" in
+              assets/svg/*|app/src/main/assets/svg/*|assets/manifest.json|app/src/main/assets/assets_manifest.json)
+                has_svg="true"
+                ;;
+              app/src/main/java/*|app/src/main/res/*|app/src/main/AndroidManifest.xml|app/build.gradle*|build.gradle*|settings.gradle*)
+                has_android="true"
+                ;;
+            esac
+          done <<< "$files"
+
+          pr_type="other"
+          if [[ "$has_svg" == "true" && "$has_android" == "true" ]]; then
+            pr_type="mixed"
+          elif [[ "$has_svg" == "true" ]]; then
+            pr_type="svg"
+          elif [[ "$has_android" == "true" ]]; then
+            pr_type="android"
+          fi
+
+          case "$pr_type" in
+            svg)
+              gh pr edit "$PR" --repo "$REPO" --add-label svg-asset-curator --add-label svg-review-agent --add-label design-coordinator
+              ;;
+            android)
+              gh pr edit "$PR" --repo "$REPO" --add-label android-developer --add-label pr-requirements-ux-reviewer --add-label design-coordinator
+              ;;
+            mixed)
+              gh pr edit "$PR" --repo "$REPO" --add-label android-developer --add-label svg-asset-curator --add-label svg-review-agent --add-label pr-requirements-ux-reviewer --add-label design-coordinator
+              ;;
+          esac
+
+          {
+            echo "pr_type=$pr_type"
+            echo "has_svg=$has_svg"
+            echo "has_android=$has_android"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Product evidence and rubric gate
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          PR: ${{ github.event.pull_request.number }}
+          PR_TYPE: ${{ steps.classify.outputs.pr_type }}
+          HAS_SVG: ${{ steps.classify.outputs.has_svg }}
+          HAS_ANDROID: ${{ steps.classify.outputs.has_android }}
+        run: |
+          set -euo pipefail
+
+          marker="<!-- product-review-gate -->"
+          body="$(gh pr view "$PR" --repo "$REPO" --json body --jq '.body // ""')"
+          comments="$(gh pr view "$PR" --repo "$REPO" --json comments --jq '.comments[].body // ""' 2>/dev/null || true)"
+          review_comments="$(gh api "repos/$REPO/pulls/$PR/comments" --jq '.[].body // ""' 2>/dev/null || true)"
+          all_text="$body"$'\n'"$comments"$'\n'"$review_comments"
+
+          failures=()
+
+          check_checked() {
+            local text="$1"
+            if ! grep -Fq -- "- [x] $text" <<< "$body" && ! grep -Fq -- "- [X] $text" <<< "$body"; then
+              failures+=("Unchecked required checklist item: $text")
+            fi
+          }
+
+          check_score() {
+            local key="$1"
+            local score
+            score="$(sed -nE "s/.*${key}:[[:space:]]*([1-5])\/5.*/\1/p" <<< "$body" | head -n1)"
+            if [[ -z "$score" ]]; then
+              failures+=("Missing rubric score: ${key}: N/5")
+              return
+            fi
+            if [[ "$score" -lt 4 ]]; then
+              failures+=("${key} score is ${score}/5 (minimum passing score is 4/5)")
+            fi
+          }
+
+          if ! grep -Fq "## Product Evidence Checklist" <<< "$body"; then
+            failures+=("Missing section: ## Product Evidence Checklist")
+          fi
+
+          if ! grep -Fq "## Product Rubric (Author Self-Score)" <<< "$body"; then
+            failures+=("Missing section: ## Product Rubric (Author Self-Score)")
+          fi
+
+          check_checked "Added before/after screenshots for every changed screen or sign."
+          check_checked "Added 96dp and 48dp renders for each changed SVG asset (or marked N/A)."
+          check_checked "Added at least one in-context app screenshot per changed user flow (or marked N/A)."
+          check_checked "Added authoritative reference links for each changed sign/diagram (or marked N/A)."
+          check_checked "Verified no P0/P1 visual or UX regressions in this PR."
+
+          check_score "Readability"
+          check_score "Semantic Clarity"
+          check_score "Contrast"
+          check_score "Consistency"
+
+          image_count="$(
+            grep -Eoi '!\[[^]]*\]\([^)]+\)|<img[^>]+src=|https://(user-images\.githubusercontent\.com|github\.com/user-attachments/assets)/[^ )]+' <<< "$all_text" | wc -l | tr -d ' ' || true
+          )"
+
+          if [[ "$HAS_SVG" == "true" ]] && [[ "${image_count:-0}" -lt 2 ]]; then
+            failures+=("SVG changes require at least 2 attached visual artifacts (before/after and 96dp/48dp evidence).")
+          fi
+
+          if [[ "$HAS_ANDROID" == "true" ]] && [[ "${image_count:-0}" -lt 1 ]]; then
+            failures+=("Android UI changes require at least 1 attached in-context screenshot.")
+          fi
+
+          if [[ "$HAS_SVG" == "true" ]]; then
+            reference_section="$(awk '
+              BEGIN { in_ref = 0 }
+              /^## Reference Links/ { in_ref = 1; next }
+              /^## / { if (in_ref == 1) in_ref = 0 }
+              in_ref == 1 { print }
+            ' <<< "$body")"
+
+            if [[ -z "$reference_section" ]]; then
+              failures+=("Missing section: ## Reference Links")
+            elif ! grep -Eiq 'https?://' <<< "$reference_section"; then
+              failures+=("Reference Links section must include at least one authoritative URL.")
+            fi
+          fi
+
+          report=""
+          if [[ "${#failures[@]}" -gt 0 ]]; then
+            for f in "${failures[@]}"; do
+              report+="- ${f}"$'\n'
+            done
+          fi
+
+          upsert_comment() {
+            local state="$1"
+            local details="$2"
+            local comment_body
+            comment_body="$marker
+          ## Product Review Gate: ${state}
+
+          **PR type:** \`${PR_TYPE}\`
+
+          ${details}
+
+          Required policy: \`docs/review/product-review-rubric.md\`"
+
+            existing_id="$(
+              gh api "repos/$REPO/issues/$PR/comments" --jq ".[] | select(.user.login==\"github-actions[bot]\") | select(.body | contains(\"$marker\")) | .id" | tail -n1 || true
+            )"
+
+            if [[ -n "${existing_id:-}" ]]; then
+              gh api --method PATCH "repos/$REPO/issues/comments/$existing_id" -f body="$comment_body" >/dev/null
+            else
+              gh pr comment "$PR" --repo "$REPO" --body "$comment_body" >/dev/null
+            fi
+          }
+
+          if [[ "${#failures[@]}" -gt 0 ]]; then
+            upsert_comment "FAILED" "$report"
+            gh pr review "$PR" --repo "$REPO" --request-changes --body "Product review gate failed.\n\n${report}" || true
+            echo "Gate failed."
+            exit 1
+          fi
+
+          upsert_comment "PASSED" "All required evidence, references, and rubric scores are present."
+          echo "Gate passed."
