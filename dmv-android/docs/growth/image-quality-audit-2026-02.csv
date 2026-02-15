@@ -1,0 +1,137 @@
+question_id,topic,asset_id,usage_count,category,readability_score,semantic_clarity_score,contrast_score,consistency_score,severity,issue_type,user_impact,proposed_fix,min_stroke_dp,min_font_dp,viewbox
+TX-ROW-0001,RIGHT_OF_WAY,INTERSECTION_4WAY_STOP,1,intersection,1,4,5,3,P0,thin_strokes,High - blocks learning in 1 question(s),Increase stroke width from 1.2px to ≥6px,0.58,N/A,200.0×200.0
+TX-ROW-0061,RIGHT_OF_WAY,INTERSECTION_EMERGENCY_VEHICLE,2,intersection,1,4,5,3,P0,thin_strokes,High - blocks learning in 2 question(s),Increase stroke width from 2.0px to ≥6px,0.96,N/A,200.0×200.0
+TX-SPC-0034,SPECIAL_SITUATIONS,INTERSECTION_EMERGENCY_VEHICLE,2,intersection,1,4,5,3,P0,thin_strokes,High - blocks learning in 2 question(s),Increase stroke width from 2.0px to ≥6px,0.96,N/A,200.0×200.0
+TX-ROW-0082,RIGHT_OF_WAY,INTERSECTION_MERGE_HIGHWAY,1,intersection,2,4,5,3,P0,thin_strokes,High - blocks learning in 1 question(s),Increase stroke width from 3.0px to ≥6px,1.44,N/A,200.0×200.0
+TX-ROW-0031,RIGHT_OF_WAY,INTERSECTION_PEDESTRIAN_CROSSWALK,1,intersection,1,4,5,3,P0,thin_strokes,High - blocks learning in 1 question(s),Increase stroke width from 2.0px to ≥6px,0.96,N/A,200.0×200.0
+TX-ROW-0006,RIGHT_OF_WAY,INTERSECTION_ROUNDABOUT,1,intersection,2,4,5,3,P0,thin_strokes,High - blocks learning in 1 question(s),Increase stroke width from 3.0px to ≥6px,1.44,N/A,200.0×200.0
+TX-ROW-0064,RIGHT_OF_WAY,INTERSECTION_SCHOOL_BUS_STOPPED,2,intersection,1,4,5,3,P0,tiny_text,High - blocks learning in 2 question(s),Increase font size from 5.5px to ≥20px,0.72,2.64,200.0×200.0
+TX-SPC-0001,SPECIAL_SITUATIONS,INTERSECTION_SCHOOL_BUS_STOPPED,2,intersection,1,4,5,3,P0,tiny_text,High - blocks learning in 2 question(s),Increase font size from 5.5px to ≥20px,0.72,2.64,200.0×200.0
+TX-ROW-0005,RIGHT_OF_WAY,INTERSECTION_T_STOP,1,intersection,2,4,5,3,P0,thin_strokes,High - blocks learning in 1 question(s),Increase stroke width from 3.0px to ≥6px,1.44,N/A,200.0×200.0
+TX-ROW-0003,RIGHT_OF_WAY,INTERSECTION_UNCONTROLLED,1,intersection,2,4,5,3,P0,thin_strokes,High - blocks learning in 1 question(s),Increase stroke width from 3.0px to ≥6px,1.44,N/A,200.0×200.0
+TX-SIG-0065,SIGNS,MUTCD_D1-1_EXIT_SIGN,1,sign_other,3,4,5,4,P1,thin_strokes,Medium - degrades experience in 1 question(s),Increase stroke width from 4.0px to ≥6px,1.92,10.08,200.0×200.0
+TX-SIG-0066,SIGNS,MUTCD_D3-1_DISTANCE_SIGN,1,sign_other,3,4,5,4,P1,thin_strokes,Medium - degrades experience in 1 question(s),Increase stroke width from 4.0px to ≥6px,1.92,10.56,200.0×200.0
+TX-SIG-0067,SIGNS,MUTCD_D9-1_REST_AREA,1,sign_other,3,4,5,4,P1,thin_strokes,Medium - degrades experience in 1 question(s),Increase stroke width from 4.0px to ≥6px,1.92,11.52,200.0×200.0
+TX-SIG-0068,SIGNS,MUTCD_D9-2_HOSPITAL,1,sign_other,3,4,5,4,P1,thin_strokes,Medium - degrades experience in 1 question(s),Increase stroke width from 4.0px to ≥6px,1.92,N/A,200.0×200.0
+TX-SIG-0069,SIGNS,MUTCD_D9-3_GAS_STATION,1,sign_other,3,4,5,4,P1,thin_strokes,Medium - degrades experience in 1 question(s),Increase stroke width from 4.0px to ≥6px,1.92,N/A,200.0×200.0
+TX-SIG-0062,SIGNS,MUTCD_I-5_INTERSTATE_10,1,sign_other,1,4,5,4,P0,tiny_text,High - blocks learning in 1 question(s),Increase font size from 12.0px to ≥20px,N/A,5.76,200.0×200.0
+TX-SIG-0061,SIGNS,MUTCD_I-5_INTERSTATE_35,1,sign_other,1,4,5,4,P0,tiny_text,High - blocks learning in 1 question(s),Increase font size from 12.0px to ≥20px,N/A,5.76,200.0×200.0
+TX-SIG-0063,SIGNS,MUTCD_M1-1_US_ROUTE_90,1,sign_guide,4,4,5,4,P2,none,Low - minor issue in 1 question(s),No fix needed - asset meets quality standards,2.40,16.32,200.0×200.0
+TX-SIG-0064,SIGNS,MUTCD_M1-4_STATE_ROUTE_71,1,sign_guide,2,4,5,4,P0,tiny_text,High - blocks learning in 1 question(s),Increase font size from 16.0px to ≥20px,2.88,7.68,200.0×200.0
+TX-SIG-0081,SIGNS,MUTCD_OM1-1_KEEP_RIGHT,1,sign_other,5,4,5,4,PASS,none,None - quality asset used in 1 question(s),No fix needed - asset meets quality standards,2.88,N/A,200.0×200.0
+TX-SIG-0082,SIGNS,MUTCD_OM2-1_KEEP_LEFT,1,sign_other,5,4,5,4,PASS,none,None - quality asset used in 1 question(s),No fix needed - asset meets quality standards,2.88,N/A,200.0×200.0
+TX-ROW-0007,RIGHT_OF_WAY,MUTCD_R1-1_STOP,2,sign_regulatory,2,5,5,5,P0,thin_strokes,High - blocks learning in 2 question(s),Increase stroke width from 3.0px to ≥6px,1.44,24.96,200.0×200.0
+TX-SIG-0001,SIGNS,MUTCD_R1-1_STOP,2,sign_regulatory,2,5,5,5,P0,thin_strokes,High - blocks learning in 2 question(s),Increase stroke width from 3.0px to ≥6px,1.44,24.96,200.0×200.0
+TX-ROW-0011,RIGHT_OF_WAY,MUTCD_R1-2_YIELD,3,sign_regulatory,3,5,5,5,P1,thin_strokes,Medium - degrades experience in 3 question(s),Increase stroke width from 4.0px to ≥6px,1.92,12.48,200.0×200.0
+TX-SIG-0002,SIGNS,MUTCD_R1-2_YIELD,3,sign_regulatory,3,5,5,5,P1,thin_strokes,Medium - degrades experience in 3 question(s),Increase stroke width from 4.0px to ≥6px,1.92,12.48,200.0×200.0
+TX-SIG-0003,SIGNS,MUTCD_R1-2_YIELD,3,sign_regulatory,3,5,5,5,P1,thin_strokes,Medium - degrades experience in 3 question(s),Increase stroke width from 4.0px to ≥6px,1.92,12.48,200.0×200.0
+TX-ROW-0117,RIGHT_OF_WAY,MUTCD_R10-6_ONE_WAY,2,sign_regulatory,2,5,5,5,P0,thin_strokes,High - blocks learning in 2 question(s),Increase stroke width from 3.0px to ≥6px,1.44,11.52,200.0×200.0
+TX-SIG-0011,SIGNS,MUTCD_R10-6_ONE_WAY,2,sign_regulatory,2,5,5,5,P0,thin_strokes,High - blocks learning in 2 question(s),Increase stroke width from 3.0px to ≥6px,1.44,11.52,200.0×200.0
+TX-SIG-0012,SIGNS,MUTCD_R10-7_DO_NOT_PASS,2,sign_regulatory,1,5,5,5,P0,thin_strokes,High - blocks learning in 2 question(s),Increase stroke width from 2.0px to ≥6px,0.96,11.52,200.0×200.0
+TX-SPD-0080,SPEED_AND_DISTANCE,MUTCD_R10-7_DO_NOT_PASS,2,sign_regulatory,1,5,5,5,P0,thin_strokes,High - blocks learning in 2 question(s),Increase stroke width from 2.0px to ≥6px,0.96,11.52,200.0×200.0
+TX-SIG-0013,SIGNS,MUTCD_R15-1_RAILROAD_CROSSING,3,sign_regulatory,5,5,5,5,PASS,none,None - quality asset used in 3 question(s),No fix needed - asset meets quality standards,2.88,17.28,200.0×200.0
+TX-SPC-0017,SPECIAL_SITUATIONS,MUTCD_R15-1_RAILROAD_CROSSING,3,sign_regulatory,5,5,5,5,PASS,none,None - quality asset used in 3 question(s),No fix needed - asset meets quality standards,2.88,17.28,200.0×200.0
+TX-SPC-0020,SPECIAL_SITUATIONS,MUTCD_R15-1_RAILROAD_CROSSING,3,sign_regulatory,5,5,5,5,PASS,none,None - quality asset used in 3 question(s),No fix needed - asset meets quality standards,2.88,17.28,200.0×200.0
+TX-SIG-0027,SIGNS,MUTCD_R2-1_SPEED_LIMIT_30,1,sign_regulatory,1,5,5,5,P0,thin_strokes,High - blocks learning in 1 question(s),Increase stroke width from 2.0px to ≥6px,0.96,10.56,200.0×200.0
+TX-SIG-0004,SIGNS,MUTCD_R2-1_SPEED_LIMIT_65,2,sign_regulatory,1,5,5,5,P0,thin_strokes,High - blocks learning in 2 question(s),Increase stroke width from 2.0px to ≥6px,0.96,10.56,200.0×200.0
+TX-SPD-0030,SPEED_AND_DISTANCE,MUTCD_R2-1_SPEED_LIMIT_65,2,sign_regulatory,1,5,5,5,P0,thin_strokes,High - blocks learning in 2 question(s),Increase stroke width from 2.0px to ≥6px,0.96,10.56,200.0×200.0
+TX-SIG-0021,SIGNS,MUTCD_R2-1_SPEED_LIMIT_70,2,sign_regulatory,1,5,5,5,P0,thin_strokes,High - blocks learning in 2 question(s),Increase stroke width from 2.0px to ≥6px,0.96,10.56,200.0×200.0
+TX-SPD-0017,SPEED_AND_DISTANCE,MUTCD_R2-1_SPEED_LIMIT_70,2,sign_regulatory,1,5,5,5,P0,thin_strokes,High - blocks learning in 2 question(s),Increase stroke width from 2.0px to ≥6px,0.96,10.56,200.0×200.0
+TX-SIG-0007,SIGNS,MUTCD_R3-1_NO_LEFT_TURN,1,sign_regulatory,5,5,5,5,PASS,none,None - quality asset used in 1 question(s),No fix needed - asset meets quality standards,5.76,N/A,200.0×200.0
+TX-SIG-0008,SIGNS,MUTCD_R3-2_NO_RIGHT_TURN,1,sign_regulatory,5,5,5,5,PASS,none,None - quality asset used in 1 question(s),No fix needed - asset meets quality standards,5.76,N/A,200.0×200.0
+TX-SIG-0009,SIGNS,MUTCD_R3-3_NO_U_TURN,1,sign_regulatory,5,5,5,5,PASS,none,None - quality asset used in 1 question(s),No fix needed - asset meets quality standards,5.76,N/A,200.0×200.0
+TX-SIG-0014,SIGNS,MUTCD_R3-4_NO_TRUCKS,1,sign_regulatory,3,5,5,5,P1,thin_strokes,Medium - degrades experience in 1 question(s),Increase stroke width from 4.0px to ≥6px,1.92,N/A,200.0×200.0
+TX-SIG-0015,SIGNS,MUTCD_R4-7_KEEP_RIGHT,1,sign_regulatory,1,5,5,5,P0,thin_strokes,High - blocks learning in 1 question(s),Increase stroke width from 2.0px to ≥6px,0.96,14.40,200.0×200.0
+TX-SIG-0005,SIGNS,MUTCD_R5-1_DO_NOT_ENTER,1,sign_regulatory,2,5,5,5,P0,thin_strokes,High - blocks learning in 1 question(s),Increase stroke width from 3.0px to ≥6px,1.44,9.60,200.0×200.0
+TX-SIG-0006,SIGNS,MUTCD_R5-1a_WRONG_WAY,1,sign_regulatory,3,5,5,5,P1,thin_strokes,Medium - degrades experience in 1 question(s),Increase stroke width from 4.0px to ≥6px,1.92,13.44,200.0×200.0
+TX-SIG-0016,SIGNS,MUTCD_R6-1_LEFT_TURN_ONLY,1,sign_regulatory,1,5,5,5,P0,tiny_text,High - blocks learning in 1 question(s),Increase font size from 16.0px to ≥20px,0.96,7.68,200.0×200.0
+TX-SIG-0017,SIGNS,MUTCD_R6-2_RIGHT_TURN_ONLY,1,sign_regulatory,1,5,5,5,P0,tiny_text,High - blocks learning in 1 question(s),Increase font size from 16.0px to ≥20px,0.96,7.68,200.0×200.0
+TX-PRK-0048,PARKING,MUTCD_R7-107_HANDICAPPED_PARKING,2,sign_regulatory,1,5,5,5,P0,tiny_text,High - blocks learning in 2 question(s),Increase font size from 11.0px to ≥20px,1.92,5.28,200.0×200.0
+TX-SIG-0018,SIGNS,MUTCD_R7-107_HANDICAPPED_PARKING,2,sign_regulatory,1,5,5,5,P0,tiny_text,High - blocks learning in 2 question(s),Increase font size from 11.0px to ≥20px,1.92,5.28,200.0×200.0
+TX-PRK-0020,PARKING,MUTCD_R7-8_NO_PARKING,2,sign_regulatory,1,5,5,5,P0,thin_strokes,High - blocks learning in 2 question(s),Increase stroke width from 2.0px to ≥6px,0.96,9.60,200.0×200.0
+TX-SIG-0025,SIGNS,MUTCD_R7-8_NO_PARKING,2,sign_regulatory,1,5,5,5,P0,thin_strokes,High - blocks learning in 2 question(s),Increase stroke width from 2.0px to ≥6px,0.96,9.60,200.0×200.0
+TX-PRK-0018,PARKING,MUTCD_R8-3a_NO_PARKING_ANYTIME,2,sign_regulatory,1,5,5,5,P0,tiny_text,High - blocks learning in 2 question(s),Increase font size from 16.0px to ≥20px,0.96,7.68,200.0×200.0
+TX-SIG-0010,SIGNS,MUTCD_R8-3a_NO_PARKING_ANYTIME,2,sign_regulatory,1,5,5,5,P0,tiny_text,High - blocks learning in 2 question(s),Increase font size from 16.0px to ≥20px,0.96,7.68,200.0×200.0
+TX-SIG-0046,SIGNS,MUTCD_S1-1_SCHOOL_CROSSING,2,sign_other,5,4,5,4,PASS,none,None - quality asset used in 2 question(s),No fix needed - asset meets quality standards,2.88,N/A,200.0×200.0
+TX-SPC-0007,SPECIAL_SITUATIONS,MUTCD_S1-1_SCHOOL_CROSSING,2,sign_other,5,4,5,4,PASS,none,None - quality asset used in 2 question(s),No fix needed - asset meets quality standards,2.88,N/A,200.0×200.0
+TX-SIG-0022,SIGNS,MUTCD_S4-3_SCHOOL_SPEED_LIMIT_20,3,sign_other,1,4,5,4,P0,tiny_text,High - blocks learning in 3 question(s),Increase font size from 8.0px to ≥20px,0.96,3.84,200.0×200.0
+TX-SPC-0004,SPECIAL_SITUATIONS,MUTCD_S4-3_SCHOOL_SPEED_LIMIT_20,3,sign_other,1,4,5,4,P0,tiny_text,High - blocks learning in 3 question(s),Increase font size from 8.0px to ≥20px,0.96,3.84,200.0×200.0
+TX-SPD-0022,SPEED_AND_DISTANCE,MUTCD_S4-3_SCHOOL_SPEED_LIMIT_20,3,sign_other,1,4,5,4,P0,tiny_text,High - blocks learning in 3 question(s),Increase font size from 8.0px to ≥20px,0.96,3.84,200.0×200.0
+TX-SIG-0033,SIGNS,MUTCD_W1-1_CURVE_RIGHT,1,sign_warning,5,5,5,5,PASS,none,None - quality asset used in 1 question(s),No fix needed - asset meets quality standards,2.88,N/A,200.0×200.0
+TX-SIG-0034,SIGNS,MUTCD_W1-2_CURVE_LEFT,1,sign_warning,5,5,5,5,PASS,none,None - quality asset used in 1 question(s),No fix needed - asset meets quality standards,2.88,N/A,200.0×200.0
+TX-SIG-0035,SIGNS,MUTCD_W1-6_WINDING_ROAD,1,sign_warning,5,5,5,5,PASS,none,None - quality asset used in 1 question(s),No fix needed - asset meets quality standards,2.88,N/A,200.0×200.0
+TX-ROW-0049,RIGHT_OF_WAY,MUTCD_W11-1_PEDESTRIAN_CROSSING,2,sign_warning,5,5,5,5,PASS,none,None - quality asset used in 2 question(s),No fix needed - asset meets quality standards,2.88,N/A,200.0×200.0
+TX-SIG-0042,SIGNS,MUTCD_W11-1_PEDESTRIAN_CROSSING,2,sign_warning,5,5,5,5,PASS,none,None - quality asset used in 2 question(s),No fix needed - asset meets quality standards,2.88,N/A,200.0×200.0
+TX-ROW-0052,RIGHT_OF_WAY,MUTCD_W11-2_BICYCLE_CROSSING,2,sign_warning,5,5,5,5,PASS,none,None - quality asset used in 2 question(s),No fix needed - asset meets quality standards,2.88,N/A,200.0×200.0
+TX-SIG-0043,SIGNS,MUTCD_W11-2_BICYCLE_CROSSING,2,sign_warning,5,5,5,5,PASS,none,None - quality asset used in 2 question(s),No fix needed - asset meets quality standards,2.88,N/A,200.0×200.0
+TX-SIG-0044,SIGNS,MUTCD_W14-1_TRUCK_CROSSING,1,sign_warning,5,5,5,5,PASS,none,None - quality asset used in 1 question(s),No fix needed - asset meets quality standards,2.88,N/A,200.0×200.0
+TX-SIG-0045,SIGNS,MUTCD_W14-2_FARM_EQUIPMENT,1,sign_warning,5,5,5,5,PASS,none,None - quality asset used in 1 question(s),No fix needed - asset meets quality standards,2.88,N/A,200.0×200.0
+TX-SIG-0047,SIGNS,MUTCD_W16-2_SLIPPERY_WHEN_WET,1,sign_warning,5,5,5,5,PASS,none,None - quality asset used in 1 question(s),No fix needed - asset meets quality standards,2.88,N/A,200.0×200.0
+TX-SIG-0036,SIGNS,MUTCD_W2-1_SIDE_ROAD,1,sign_warning,5,5,5,5,PASS,none,None - quality asset used in 1 question(s),No fix needed - asset meets quality standards,2.88,N/A,200.0×200.0
+TX-SIG-0037,SIGNS,MUTCD_W2-2_Y_INTERSECTION,1,sign_warning,5,5,5,5,PASS,none,None - quality asset used in 1 question(s),No fix needed - asset meets quality standards,2.88,N/A,200.0×200.0
+TX-SIG-0038,SIGNS,MUTCD_W2-3_T_INTERSECTION,1,sign_warning,5,5,5,5,PASS,none,None - quality asset used in 1 question(s),No fix needed - asset meets quality standards,2.88,N/A,200.0×200.0
+TX-SIG-0048,SIGNS,MUTCD_W20-1_ROAD_CONSTRUCTION,2,sign_warning,5,5,5,5,PASS,none,None - quality asset used in 2 question(s),No fix needed - asset meets quality standards,2.88,N/A,200.0×200.0
+TX-SPC-0031,SPECIAL_SITUATIONS,MUTCD_W20-1_ROAD_CONSTRUCTION,2,sign_warning,5,5,5,5,PASS,none,None - quality asset used in 2 question(s),No fix needed - asset meets quality standards,2.88,N/A,200.0×200.0
+TX-SIG-0049,SIGNS,MUTCD_W20-7_FLAGGER_AHEAD,2,sign_warning,5,5,5,5,PASS,none,None - quality asset used in 2 question(s),No fix needed - asset meets quality standards,2.88,N/A,200.0×200.0
+TX-SPC-0042,SPECIAL_SITUATIONS,MUTCD_W20-7_FLAGGER_AHEAD,2,sign_warning,5,5,5,5,PASS,none,None - quality asset used in 2 question(s),No fix needed - asset meets quality standards,2.88,N/A,200.0×200.0
+TX-ROW-0088,RIGHT_OF_WAY,MUTCD_W3-1_MERGE,2,sign_warning,5,5,5,5,PASS,none,None - quality asset used in 2 question(s),No fix needed - asset meets quality standards,2.88,N/A,200.0×200.0
+TX-SIG-0039,SIGNS,MUTCD_W3-1_MERGE,2,sign_warning,5,5,5,5,PASS,none,None - quality asset used in 2 question(s),No fix needed - asset meets quality standards,2.88,N/A,200.0×200.0
+TX-SIG-0040,SIGNS,MUTCD_W4-2_LANE_ENDS_MERGE,1,sign_warning,5,5,5,5,PASS,none,None - quality asset used in 1 question(s),No fix needed - asset meets quality standards,2.88,N/A,200.0×200.0
+TX-SIG-0041,SIGNS,MUTCD_W8-1_HILL,1,sign_warning,5,5,5,5,PASS,none,None - quality asset used in 1 question(s),No fix needed - asset meets quality standards,2.88,N/A,200.0×200.0
+TX-PRK-0041,PARKING,PARKING_DISABLED_SPACE,1,pavement,1,4,5,3,P0,thin_strokes,High - blocks learning in 1 question(s),Increase stroke width from 2.0px to ≥6px,0.96,N/A,200.0×200.0
+TX-PRK-0001,PARKING,PARKING_FIRE_HYDRANT_15FT,1,pavement,1,4,5,3,P0,tiny_text,High - blocks learning in 1 question(s),Increase font size from 18.0px to ≥20px,0.96,8.64,200.0×200.0
+TX-PRK-0032,PARKING,PARKING_HILL_DOWNHILL_CURB,1,pavement,2,4,5,3,P0,tiny_text,High - blocks learning in 1 question(s),Increase font size from 18.0px to ≥20px,1.44,8.64,200.0×200.0
+TX-PRK-0031,PARKING,PARKING_HILL_UPHILL_CURB,1,pavement,2,4,5,3,P0,thin_strokes,High - blocks learning in 1 question(s),Increase stroke width from 3.0px to ≥6px,1.44,9.60,200.0×200.0
+TX-PRK-0023,PARKING,PARKING_PARALLEL_STEPS,1,pavement,1,4,5,3,P0,thin_strokes,High - blocks learning in 1 question(s),Increase stroke width from 2.0px to ≥6px,0.96,9.60,200.0×200.0
+TX-PAV-0026,PAVEMENT_MARKINGS,PAVEMENT_ARROW_LEFT,1,pavement,5,5,5,3,PASS,inconsistent_style,None - quality asset used in 1 question(s),Standardize viewBox from 200.0×200.0 to category standard,N/A,N/A,200.0×200.0
+TX-PAV-0033,PAVEMENT_MARKINGS,PAVEMENT_ARROW_LEFT_STRAIGHT,1,pavement,5,5,5,3,PASS,inconsistent_style,None - quality asset used in 1 question(s),Standardize viewBox from 200.0×200.0 to category standard,N/A,N/A,200.0×200.0
+TX-PAV-0032,PAVEMENT_MARKINGS,PAVEMENT_ARROW_RIGHT,1,pavement,5,5,5,3,PASS,inconsistent_style,None - quality asset used in 1 question(s),Standardize viewBox from 200.0×200.0 to category standard,N/A,N/A,200.0×200.0
+TX-PAV-0041,PAVEMENT_MARKINGS,PAVEMENT_ARROW_RIGHT_STRAIGHT,1,pavement,5,5,5,3,PASS,inconsistent_style,None - quality asset used in 1 question(s),Standardize viewBox from 200.0×200.0 to category standard,N/A,N/A,200.0×200.0
+TX-PAV-0027,PAVEMENT_MARKINGS,PAVEMENT_ARROW_STRAIGHT,1,pavement,5,5,5,3,PASS,inconsistent_style,None - quality asset used in 1 question(s),Standardize viewBox from 200.0×200.0 to category standard,N/A,N/A,200.0×200.0
+TX-PAV-0061,PAVEMENT_MARKINGS,PAVEMENT_BIKE_LANE,1,pavement,4,5,5,3,P2,inconsistent_style,Low - minor issue in 1 question(s),Standardize viewBox from 200.0×200.0 to category standard,2.88,11.52,200.0×200.0
+TX-PAV-0029,PAVEMENT_MARKINGS,PAVEMENT_CROSSWALK_ZEBRA,1,pavement,5,5,5,3,PASS,inconsistent_style,None - quality asset used in 1 question(s),Standardize viewBox from 200.0×200.0 to category standard,N/A,N/A,200.0×200.0
+TX-PAV-0002,PAVEMENT_MARKINGS,PAVEMENT_DASHED_WHITE_LINE,1,pavement,5,5,5,3,PASS,inconsistent_style,None - quality asset used in 1 question(s),Standardize viewBox from 200.0×200.0 to category standard,N/A,N/A,200.0×200.0
+TX-PAV-0006,PAVEMENT_MARKINGS,PAVEMENT_DOUBLE_YELLOW_MIXED,1,pavement,5,5,5,3,PASS,inconsistent_style,None - quality asset used in 1 question(s),Standardize viewBox from 200.0×200.0 to category standard,N/A,N/A,200.0×200.0
+TX-PAV-0003,PAVEMENT_MARKINGS,PAVEMENT_DOUBLE_YELLOW_SOLID,1,pavement,5,5,5,3,PASS,inconsistent_style,None - quality asset used in 1 question(s),Standardize viewBox from 200.0×200.0 to category standard,N/A,N/A,200.0×200.0
+TX-PRK-0050,PARKING,PAVEMENT_HANDICAP_SYMBOL,2,pavement,5,5,5,3,PASS,inconsistent_style,None - quality asset used in 2 question(s),Standardize viewBox from 200.0×200.0 to category standard,3.84,N/A,200.0×200.0
+TX-PAV-0067,PAVEMENT_MARKINGS,PAVEMENT_HANDICAP_SYMBOL,2,pavement,5,5,5,3,PASS,inconsistent_style,None - quality asset used in 2 question(s),Standardize viewBox from 200.0×200.0 to category standard,3.84,N/A,200.0×200.0
+TX-PAV-0062,PAVEMENT_MARKINGS,PAVEMENT_HOV_DIAMOND,1,pavement,4,5,5,3,P2,inconsistent_style,Low - minor issue in 1 question(s),Standardize viewBox from 200.0×200.0 to category standard,N/A,10.56,200.0×200.0
+TX-PAV-0040,PAVEMENT_MARKINGS,PAVEMENT_NO_PASSING_ZONE,1,pavement,5,5,5,3,PASS,inconsistent_style,None - quality asset used in 1 question(s),Standardize viewBox from 200.0×200.0 to category standard,N/A,13.44,200.0×200.0
+TX-PAV-0028,PAVEMENT_MARKINGS,PAVEMENT_ONLY_TEXT,1,pavement,5,5,5,3,PASS,inconsistent_style,None - quality asset used in 1 question(s),Standardize viewBox from 200.0×200.0 to category standard,N/A,24.96,200.0×200.0
+TX-PAV-0065,PAVEMENT_MARKINGS,PAVEMENT_RAILROAD_CROSSING_X,2,pavement,5,5,5,3,PASS,inconsistent_style,None - quality asset used in 2 question(s),Standardize viewBox from 200.0×200.0 to category standard,N/A,18.24,200.0×200.0
+TX-SPC-0027,SPECIAL_SITUATIONS,PAVEMENT_RAILROAD_CROSSING_X,2,pavement,5,5,5,3,PASS,inconsistent_style,None - quality asset used in 2 question(s),Standardize viewBox from 200.0×200.0 to category standard,N/A,18.24,200.0×200.0
+TX-PAV-0038,PAVEMENT_MARKINGS,PAVEMENT_SCHOOL_ZONE,2,pavement,5,5,5,3,PASS,inconsistent_style,None - quality asset used in 2 question(s),Standardize viewBox from 200.0×200.0 to category standard,N/A,13.44,200.0×200.0
+TX-SPC-0012,SPECIAL_SITUATIONS,PAVEMENT_SCHOOL_ZONE,2,pavement,5,5,5,3,PASS,inconsistent_style,None - quality asset used in 2 question(s),Standardize viewBox from 200.0×200.0 to category standard,N/A,13.44,200.0×200.0
+TX-PAV-0063,PAVEMENT_MARKINGS,PAVEMENT_SHARROW,1,pavement,5,5,5,3,PASS,inconsistent_style,None - quality asset used in 1 question(s),Standardize viewBox from 200.0×200.0 to category standard,3.84,N/A,200.0×200.0
+TX-PAV-0005,PAVEMENT_MARKINGS,PAVEMENT_SINGLE_YELLOW_DASHED,1,pavement,5,5,5,3,PASS,inconsistent_style,None - quality asset used in 1 question(s),Standardize viewBox from 200.0×200.0 to category standard,N/A,N/A,200.0×200.0
+TX-PAV-0001,PAVEMENT_MARKINGS,PAVEMENT_SOLID_WHITE_LINE,1,pavement,5,5,5,3,PASS,inconsistent_style,None - quality asset used in 1 question(s),Standardize viewBox from 200.0×200.0 to category standard,N/A,N/A,200.0×200.0
+TX-PAV-0030,PAVEMENT_MARKINGS,PAVEMENT_STOP_LINE,1,pavement,5,5,5,3,PASS,inconsistent_style,None - quality asset used in 1 question(s),Standardize viewBox from 200.0×200.0 to category standard,N/A,23.04,200.0×200.0
+TX-PAV-0064,PAVEMENT_MARKINGS,PAVEMENT_TURN_LANE_CENTER,1,pavement,5,5,5,3,PASS,inconsistent_style,None - quality asset used in 1 question(s),Standardize viewBox from 200.0×200.0 to category standard,N/A,N/A,200.0×200.0
+TX-PAV-0031,PAVEMENT_MARKINGS,PAVEMENT_YIELD_LINE,1,pavement,5,5,5,3,PASS,inconsistent_style,None - quality asset used in 1 question(s),Standardize viewBox from 200.0×200.0 to category standard,N/A,N/A,200.0×200.0
+TX-SAF-0005,SAFE_DRIVING,SAFE_BLIND_SPOT_CHECK,1,scenario,1,4,4,4,P0,thin_strokes,High - blocks learning in 1 question(s),Increase stroke width from 2.0px to ≥6px,0.96,N/A,200.0×200.0
+TX-SAF-0001,SAFE_DRIVING,SAFE_DEFENSIVE_SPACE_CUSHION,1,scenario,1,4,5,4,P0,tiny_text,High - blocks learning in 1 question(s),Increase font size from 11.0px to ≥20px,0.96,5.28,200.0×200.0
+TX-SAF-0071,SAFE_DRIVING,SAFE_MIRROR_ADJUSTMENT,1,scenario,1,4,4,4,P0,tiny_text,High - blocks learning in 1 question(s),Increase font size from 12.0px to ≥20px,0.96,5.76,200.0×200.0
+TX-SAF-0066,SAFE_DRIVING,SAFE_TIRE_TREAD_DEPTH,1,scenario,1,4,5,4,P0,tiny_text,High - blocks learning in 1 question(s),Increase font size from 8.0px to ≥20px,0.96,3.84,200.0×200.0
+TX-TRA-0041,TRAFFIC_SIGNALS,SIGNAL_FLASHING_RED,1,signal,1,4,5,3,P0,thin_strokes,High - blocks learning in 1 question(s),Increase stroke width from 2.0px to ≥6px,0.96,N/A,200.0×200.0
+TX-TRA-0042,TRAFFIC_SIGNALS,SIGNAL_FLASHING_YELLOW,1,signal,1,4,5,3,P0,thin_strokes,High - blocks learning in 1 question(s),Increase stroke width from 2.0px to ≥6px,0.96,N/A,200.0×200.0
+TX-TRA-0021,TRAFFIC_SIGNALS,SIGNAL_GREEN_ARROW_LEFT,2,signal,1,4,5,3,P0,thin_strokes,High - blocks learning in 2 question(s),Increase stroke width from 2.0px to ≥6px,0.96,N/A,200.0×200.0
+TX-TRA-0022,TRAFFIC_SIGNALS,SIGNAL_GREEN_ARROW_LEFT,2,signal,1,4,5,3,P0,thin_strokes,High - blocks learning in 2 question(s),Increase stroke width from 2.0px to ≥6px,0.96,N/A,200.0×200.0
+TX-TRA-0035,TRAFFIC_SIGNALS,SIGNAL_GREEN_ARROW_RIGHT,1,signal,1,4,5,3,P0,thin_strokes,High - blocks learning in 1 question(s),Increase stroke width from 2.0px to ≥6px,0.96,N/A,200.0×200.0
+TX-TRA-0055,TRAFFIC_SIGNALS,SIGNAL_PED_COUNTDOWN,1,signal,2,4,5,3,P0,thin_strokes,High - blocks learning in 1 question(s),Increase stroke width from 3.0px to ≥6px,1.44,20.16,200.0×200.0
+TX-TRA-0052,TRAFFIC_SIGNALS,SIGNAL_PED_DONT_WALK,1,signal,2,4,5,3,P0,tiny_text,High - blocks learning in 1 question(s),Increase font size from 16.0px to ≥20px,1.92,7.68,200.0×200.0
+TX-TRA-0051,TRAFFIC_SIGNALS,SIGNAL_PED_WALK,1,signal,3,4,5,3,P1,thin_strokes,Medium - degrades experience in 1 question(s),Increase stroke width from 4.0px to ≥6px,1.92,9.60,200.0×200.0
+TX-TRA-0024,TRAFFIC_SIGNALS,SIGNAL_RED_ARROW_LEFT,2,signal,1,4,5,3,P0,thin_strokes,High - blocks learning in 2 question(s),Increase stroke width from 2.0px to ≥6px,0.96,N/A,200.0×200.0
+TX-TRA-0028,TRAFFIC_SIGNALS,SIGNAL_RED_ARROW_LEFT,2,signal,1,4,5,3,P0,thin_strokes,High - blocks learning in 2 question(s),Increase stroke width from 2.0px to ≥6px,0.96,N/A,200.0×200.0
+TX-TRA-0009,TRAFFIC_SIGNALS,SIGNAL_RED_YELLOW_TOGETHER,1,signal,1,4,5,3,P0,thin_strokes,High - blocks learning in 1 question(s),Increase stroke width from 2.0px to ≥6px,0.96,N/A,200.0×200.0
+TX-TRA-0002,TRAFFIC_SIGNALS,SIGNAL_SOLID_GREEN,1,signal,1,4,5,3,P0,thin_strokes,High - blocks learning in 1 question(s),Increase stroke width from 2.0px to ≥6px,0.96,N/A,200.0×200.0
+TX-TRA-0001,TRAFFIC_SIGNALS,SIGNAL_SOLID_RED,1,signal,1,4,5,3,P0,thin_strokes,High - blocks learning in 1 question(s),Increase stroke width from 2.0px to ≥6px,0.96,N/A,200.0×200.0
+TX-TRA-0003,TRAFFIC_SIGNALS,SIGNAL_SOLID_YELLOW,1,signal,1,4,5,3,P0,thin_strokes,High - blocks learning in 1 question(s),Increase stroke width from 2.0px to ≥6px,0.96,N/A,200.0×200.0
+TX-TRA-0023,TRAFFIC_SIGNALS,SIGNAL_YELLOW_ARROW_LEFT,1,signal,1,4,5,3,P0,thin_strokes,High - blocks learning in 1 question(s),Increase stroke width from 2.0px to ≥6px,0.96,N/A,200.0×200.0
+TX-SPC-0016,SPECIAL_SITUATIONS,SPECIAL_RAILROAD_STOP_PROCEDURE,1,scenario,1,4,5,4,P0,tiny_text,High - blocks learning in 1 question(s),Increase font size from 10.0px to ≥20px,0.96,4.80,200.0×200.0
+TX-SPC-0033,SPECIAL_SITUATIONS,SPECIAL_WORK_ZONE_FLAGGER,1,scenario,1,4,5,4,P0,tiny_text,High - blocks learning in 1 question(s),Increase font size from 9.0px to ≥20px,0.48,4.32,200.0×200.0
+TX-SAF-0003,SAFE_DRIVING,SPEED_FOLLOWING_DISTANCE_3SEC,2,scenario,2,4,5,4,P0,tiny_text,High - blocks learning in 2 question(s),Increase font size from 14.0px to ≥20px,3.84,6.72,200.0×200.0
+TX-SPD-0031,SPEED_AND_DISTANCE,SPEED_FOLLOWING_DISTANCE_3SEC,2,scenario,2,4,5,4,P0,tiny_text,High - blocks learning in 2 question(s),Increase font size from 14.0px to ≥20px,3.84,6.72,200.0×200.0
+TX-SPD-0002,SPEED_AND_DISTANCE,SPEED_LIMIT_RESIDENTIAL_30,1,scenario,4,4,5,4,P2,none,Low - minor issue in 1 question(s),No fix needed - asset meets quality standards,3.84,11.52,200.0×200.0
+TX-SPD-0076,SPEED_AND_DISTANCE,SPEED_PASSING_CLEARANCE,1,scenario,2,4,5,4,P0,tiny_text,High - blocks learning in 1 question(s),Increase font size from 14.0px to ≥20px,3.84,6.72,200.0×200.0
+TX-SPD-0001,SPEED_AND_DISTANCE,SPEED_SCHOOL_ZONE_20MPH,1,scenario,4,4,5,4,P2,none,Low - minor issue in 1 question(s),No fix needed - asset meets quality standards,2.88,11.52,200.0×200.0
+TX-SPD-0056,SPEED_AND_DISTANCE,SPEED_STOPPING_DISTANCE,1,scenario,1,4,5,4,P0,tiny_text,High - blocks learning in 1 question(s),Increase font size from 11.0px to ≥20px,3.84,5.28,200.0×200.0
