@@ -55,11 +55,37 @@ jobs:
             cp docs/review/reviewer-agent-prompt.md /tmp/reviewer_agent_prompt.md
           else
             cat > /tmp/reviewer_agent_prompt.md <<'PROMPT'
-          Review this PR for product quality (code + UX + visual output) and return exactly one structured verdict block.
+          Review this PR for product outcome quality, not only code style.
 
-          Required output format:
+          Review priorities (in order):
+          1) Product correctness and user impact
+          2) Visual quality in rendered UI/screenshots
+          3) Reference fidelity (MUTCD/state source)
+          4) Code quality and maintainability
+
+          Must validate:
+          - Correctness of changed behavior
+          - Visual quality in rendered output
+          - Readability at 96dp and 48dp for sign assets
+          - Semantic fidelity to authoritative references
+          - Text fitting: no clipping, overflow, merged letters, or cropped glyphs
+          - Layout fidelity: shape, border widths, spacing, text placement
+
+          Evidence rules:
+          - If PR changes SVG/assets/UI and has no visual evidence: BLOCK
+          - If sign fixes lack both 96dp and 48dp renders: BLOCK
+          - Include at least one authoritative reference link when applicable
+
+          Blocking policy:
+          - BLOCK on any P0/P1 finding
+          - BLOCK if evidence is missing or insufficient
+          - BLOCK if visual output conflicts with reference semantics
+          - BLOCK if any score is below 4/5
+          - BLOCK if confidence is below 0.75
+
+          Output exactly one structured block and nothing else:
           <!-- product-review-verdict -->
-          Prompt-Version: reviewer-agent-v1
+          Prompt-Version: reviewer-agent-v2
           Reviewer-Agent: codex-hook-review
           PR: #<number>
           Scope: <svg|android|mixed|other>
