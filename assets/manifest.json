@@ -1309,7 +1309,7 @@
     "sourceUrl": "generated",
     "license": "generated",
     "status": "ok",
-    "lastReviewedAt": "2026-02-14",
+    "lastReviewedAt": "2026-02-15",
     "tags": [
       "svg",
       "dmv",
@@ -1317,7 +1317,7 @@
       "mutcd",
       "sign"
     ],
-    "notes": "Fixed: Removed complex transform/scale. Redesigned with viewBox 0 0 150 200 and 10% padding. Added shadow.",
+    "notes": "Increased bottom PARKING text from 20px to 24px, reduced letter-spacing for better 48dp readability (Issue #77)",
     "promptSpec": {
       "version": 1,
       "status": "draft",
