@@ -1167,7 +1167,7 @@
       "mutcd",
       "sign"
     ],
-    "notes": "Real MUTCD R5-1: circular, two-line text 'DO NOT'/'ENTER'. Font: 24px both lines, bar: 160×50. No clipping, 5.76dp at 48dp. (Issue #76)",
+    "notes": "Authentic MUTCD R5-1 per Fig 2B-11: white text on red, blank white separator bar. Font: 24px, no clipping, 5.76dp at 48dp. (Issue #76)",
     "promptSpec": {
       "version": 1,
       "status": "draft",
