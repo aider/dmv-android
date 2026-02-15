@@ -62,7 +62,7 @@ fun HomeScreen(
                 .padding(horizontal = 20.dp, vertical = 16.dp),
             verticalArrangement = Arrangement.spacedBy(16.dp)
         ) {
-            // Title
+            // Title + value proposition
             Text(
                 text = "TX DMV Practice",
                 style = MaterialTheme.typography.headlineLarge,
@@ -71,12 +71,34 @@ fun HomeScreen(
             )
 
             Text(
-                text = "${state.totalQuestions} questions available",
-                style = MaterialTheme.typography.bodyMedium,
+                text = "Pass your Texas permit test on the first try",
+                style = MaterialTheme.typography.bodyLarge,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.fillMaxWidth(),
                 textAlign = TextAlign.Center
             )
+
+            Text(
+                text = "${state.totalQuestions} questions \u2022 ${state.topics.size} topics \u2022 100% offline",
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.outline,
+                modifier = Modifier.fillMaxWidth(),
+                textAlign = TextAlign.Center
+            )
+
+            // Quick Start button
+            Button(
+                onClick = { onStartQuiz(viewModel.quickStartConfig()) },
+                enabled = !state.isLoading,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(56.dp)
+            ) {
+                Text(
+                    text = "Quick Start \u2022 20 Questions",
+                    style = MaterialTheme.typography.titleMedium
+                )
+            }
 
             HorizontalDivider()
 
