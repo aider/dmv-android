@@ -1401,7 +1401,7 @@
     "sourceUrl": "generated",
     "license": "generated",
     "status": "ok",
-    "lastReviewedAt": "2026-02-14",
+    "lastReviewedAt": "2026-02-15",
     "tags": [
       "svg",
       "dmv",
@@ -1409,7 +1409,7 @@
       "mutcd",
       "sign"
     ],
-    "notes": "Fixed: Changed viewBox to 0 0 150 200. Bottom text moved up (y=172, 12% padding). Increased font from 8px to 11px. Added shadow.",
+    "notes": "Removed bottom disclaimer text (WHEN CHILDREN PRESENT) for better readability at 48dp (Issue #75)",
     "promptSpec": {
       "version": 1,
       "status": "draft",
