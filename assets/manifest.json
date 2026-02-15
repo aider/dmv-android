@@ -2348,15 +2348,15 @@
     "file": "assets/svg/PAVEMENT_GORE_AREA.svg",
     "sourceUrl": "generated",
     "license": "generated",
-    "status": "needs_fix",
-    "lastReviewedAt": "2026-02-10",
+    "status": "ok",
+    "lastReviewedAt": "2026-02-15",
     "tags": [
       "svg",
       "dmv",
       "quiz",
       "pavement-marking"
     ],
-    "notes": "Bottom label overflows horizontal bounds after standardization scaling. Resolved: 2026-02-10 mobile text clipping fix.",
+    "notes": "Issue #79: Simplified label to single line 'GORE AREA' at 40px for 48dp readability (9.6dp effective, meets threshold).",
     "promptSpec": {
       "version": 1,
       "status": "draft",
