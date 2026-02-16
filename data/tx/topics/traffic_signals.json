@@ -2,42 +2,71 @@
   {
     "id": "TX-TRA-0001",
     "topic": "TRAFFIC_SIGNALS",
-    "difficulty": 1,
-    "text": "What does a solid red traffic light mean?",
-    "choices": ["Stop completely and remain stopped until green", "Stop, then proceed if clear", "Slow down and proceed with caution", "Yield to oncoming traffic"],
+    "difficulty": 2,
+    "text": "You are approaching an intersection at 35 mph when the light turns red. You are past the point where you can safely stop. What should you do?",
+    "choices": [
+      "Stop at the stop line — you must not enter the intersection on a red light",
+      "Accelerate through the intersection before cross traffic starts",
+      "Slow down and proceed through cautiously",
+      "Stop in the middle of the intersection and wait for green"
+    ],
     "correctIndex": 0,
-    "explanation": "A solid red light requires drivers to stop completely and remain stopped until the light turns green. Proceeding on red without a green signal is illegal.",
-    "reference": "DL-7: Traffic Signals",
-    "image": {"type": "svg", "assetId": "SIGNAL_SOLID_RED"}
+    "explanation": "A solid red light requires a complete stop before the stop line or crosswalk. If you can still stop safely before entering the intersection, you must do so. Running a red light — even by a fraction of a second — is illegal and one of the leading causes of severe intersection crashes. If you truly cannot stop, you should have been driving at a speed that allowed you to stop when the light changed.",
+    "reference": "Texas Transportation Code §544.007; DL-7 Traffic Signals",
+    "image": {
+      "type": "svg",
+      "assetId": "SIGNAL_SOLID_RED"
+    }
   },
   {
     "id": "TX-TRA-0002",
     "topic": "TRAFFIC_SIGNALS",
-    "difficulty": 1,
-    "text": "What should you do when you see a solid green traffic light?",
-    "choices": ["Proceed if the intersection is clear", "Speed up to get through quickly", "Stop and wait for other vehicles", "Honk your horn and continue"],
+    "difficulty": 2,
+    "text": "The light turns green but you can see that the intersection ahead is gridlocked with vehicles from the cross street. What should you do?",
+    "choices": [
+      "Wait behind the stop line until there is room to clear the intersection completely",
+      "Enter the intersection since you have a green light",
+      "Proceed into the intersection and wait for the gridlock to clear",
+      "Honk your horn and enter the intersection"
+    ],
     "correctIndex": 0,
-    "explanation": "A solid green light means you may proceed through the intersection, but only after ensuring it is safe and clear of pedestrians and vehicles.",
-    "reference": "DL-7: Traffic Signals",
-    "image": {"type": "svg", "assetId": "SIGNAL_SOLID_GREEN"}
+    "explanation": "Even with a green light, you must not enter an intersection unless you can clear it completely. Entering a gridlocked intersection means you will block the cross street when the light changes, creating worse congestion and potentially trapping emergency vehicles. This violation is commonly called 'blocking the box.'",
+    "reference": "Texas Transportation Code §545.302; DL-7 Traffic Signals",
+    "image": {
+      "type": "svg",
+      "assetId": "SIGNAL_SOLID_GREEN"
+    }
   },
   {
     "id": "TX-TRA-0003",
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 2,
     "text": "What does a solid yellow traffic light indicate?",
-    "choices": ["The light is about to turn red; prepare to stop", "Speed up to get through the intersection", "Slow down but continue through", "Stop immediately regardless of position"],
+    "choices": [
+      "The light is about to turn red; prepare to stop",
+      "Speed up to get through the intersection",
+      "Slow down but continue through",
+      "Stop immediately regardless of position"
+    ],
     "correctIndex": 0,
     "explanation": "A solid yellow light warns that the signal is about to turn red. You should stop if you can do so safely, not speed up to beat the red light.",
     "reference": "DL-7: Traffic Signals",
-    "image": {"type": "svg", "assetId": "SIGNAL_SOLID_YELLOW"}
+    "image": {
+      "type": "svg",
+      "assetId": "SIGNAL_SOLID_YELLOW"
+    }
   },
   {
     "id": "TX-TRA-0004",
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 2,
     "text": "At a red light, when are you permitted to turn right in Texas?",
-    "choices": ["After coming to a complete stop and yielding to traffic and pedestrians, unless a sign prohibits it", "Whenever there is no oncoming traffic", "Only when a green arrow appears", "Never, right turns on red are illegal in Texas"],
+    "choices": [
+      "After coming to a complete stop and yielding to traffic and pedestrians, unless a sign prohibits it",
+      "Whenever there is no oncoming traffic",
+      "Only when a green arrow appears",
+      "Never, right turns on red are illegal in Texas"
+    ],
     "correctIndex": 0,
     "explanation": "In Texas, you may turn right on red after stopping completely and yielding to all traffic and pedestrians, unless a sign specifically prohibits the turn.",
     "reference": "DL-7: Traffic Signals"
@@ -47,7 +76,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 3,
     "text": "You are at a red light in the left lane. Can you turn left onto a one-way street in Texas?",
-    "choices": ["Yes, after stopping and yielding to traffic and pedestrians, if no sign prohibits it", "No, left turns on red are never permitted", "Yes, but only from a one-way street onto another one-way street", "Yes, without stopping if the intersection is clear"],
+    "choices": [
+      "Yes, after stopping and yielding to traffic and pedestrians, if no sign prohibits it",
+      "No, left turns on red are never permitted",
+      "Yes, but only from a one-way street onto another one-way street",
+      "Yes, without stopping if the intersection is clear"
+    ],
     "correctIndex": 2,
     "explanation": "In Texas, you may turn left on red only when turning from a one-way street onto another one-way street, after stopping completely and yielding to all traffic.",
     "reference": "DL-7: Traffic Signals"
@@ -57,7 +91,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 2,
     "text": "What should you do if you are already in an intersection when the light turns yellow?",
-    "choices": ["Continue through the intersection safely", "Stop immediately in the intersection", "Back up to the stop line", "Speed up to clear the intersection quickly"],
+    "choices": [
+      "Continue through the intersection safely",
+      "Stop immediately in the intersection",
+      "Back up to the stop line",
+      "Speed up to clear the intersection quickly"
+    ],
     "correctIndex": 0,
     "explanation": "If you are already in the intersection when the light turns yellow, you should continue through safely. Stopping in the intersection creates a hazard.",
     "reference": "DL-7: Traffic Signals"
@@ -67,7 +106,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 3,
     "text": "At a red light, you want to turn right, but a pedestrian is crossing the street you're turning onto. What must you do?",
-    "choices": ["Wait for the pedestrian to completely cross before turning", "Turn slowly behind the pedestrian", "Honk to warn the pedestrian and proceed", "Turn in front of the pedestrian if moving slowly"],
+    "choices": [
+      "Wait for the pedestrian to completely cross before turning",
+      "Turn slowly behind the pedestrian",
+      "Honk to warn the pedestrian and proceed",
+      "Turn in front of the pedestrian if moving slowly"
+    ],
     "correctIndex": 0,
     "explanation": "You must yield to all pedestrians in the crosswalk before making a right turn on red. Pedestrians always have the right of way in crosswalks.",
     "reference": "DL-7: Traffic Signals"
@@ -75,30 +119,48 @@
   {
     "id": "TX-TRA-0008",
     "topic": "TRAFFIC_SIGNALS",
-    "difficulty": 1,
-    "text": "What is the primary purpose of a yellow traffic light?",
-    "choices": ["To warn that the light is about to turn red", "To allow drivers to speed up", "To indicate a malfunctioning signal", "To give pedestrians time to cross"],
+    "difficulty": 2,
+    "text": "You are 100 feet from an intersection traveling at 40 mph when the light turns yellow. You estimate you can either stop safely or proceed through before it turns red. What should you generally do?",
+    "choices": [
+      "Stop safely — the yellow light warns that the red phase is about to begin",
+      "Accelerate to clear the intersection before the light turns red",
+      "Maintain your speed and coast through the intersection",
+      "Flash your headlights to warn cross traffic you are coming through"
+    ],
     "correctIndex": 0,
-    "explanation": "The yellow light serves as a warning that the green phase is ending and the light will soon turn red, giving drivers time to safely stop.",
-    "reference": "DL-7: Traffic Signals"
+    "explanation": "A yellow light means the signal is about to turn red and you should prepare to stop. If you can safely stop before the intersection, you should do so. The yellow phase is designed to give drivers enough time to either stop or clear the intersection — but when in doubt, stopping is the safer choice. Accelerating through increases the risk of running the red.",
+    "reference": "Texas Transportation Code §544.007; DL-7 Traffic Signals"
   },
   {
     "id": "TX-TRA-0009",
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 4,
     "text": "If a traffic signal displays both red and yellow lights at the same time, what does this indicate?",
-    "choices": ["The signal is malfunctioning; treat it as a stop sign", "Proceed with extreme caution", "The light is about to turn green", "You may turn right only"],
+    "choices": [
+      "The signal is malfunctioning; treat it as a stop sign",
+      "Proceed with extreme caution",
+      "The light is about to turn green",
+      "You may turn right only"
+    ],
     "correctIndex": 0,
     "explanation": "When a traffic signal displays conflicting lights or appears to be malfunctioning, you must treat the intersection as if it has a stop sign at every approach.",
     "reference": "DL-7: Traffic Signals",
-    "image": {"type": "svg", "assetId": "SIGNAL_RED_YELLOW_TOGETHER"}
+    "image": {
+      "type": "svg",
+      "assetId": "SIGNAL_RED_YELLOW_TOGETHER"
+    }
   },
   {
     "id": "TX-TRA-0010",
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 2,
     "text": "When approaching a green light, why should you still scan the intersection before entering?",
-    "choices": ["Other drivers may run their red light or pedestrians may be crossing", "Green lights are only advisory", "You must always stop at green lights first", "Green lights mean yield to all traffic"],
+    "choices": [
+      "Other drivers may run their red light or pedestrians may be crossing",
+      "Green lights are only advisory",
+      "You must always stop at green lights first",
+      "Green lights mean yield to all traffic"
+    ],
     "correctIndex": 0,
     "explanation": "Even with a green light, you must ensure the intersection is clear because other drivers may run the red light or pedestrians may still be in the crosswalk.",
     "reference": "DL-7: Traffic Signals"
@@ -108,7 +170,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 3,
     "text": "You arrive at a red light behind several cars. When the light turns green, when should you proceed?",
-    "choices": ["When the vehicle ahead of you has moved and it's safe to proceed", "Immediately when the light turns green", "After counting to three", "When you hear other cars honking"],
+    "choices": [
+      "When the vehicle ahead of you has moved and it's safe to proceed",
+      "Immediately when the light turns green",
+      "After counting to three",
+      "When you hear other cars honking"
+    ],
     "correctIndex": 0,
     "explanation": "You should proceed when the vehicle in front of you has moved and you can do so safely, maintaining appropriate following distance.",
     "reference": "DL-7: Traffic Signals"
@@ -118,7 +185,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 4,
     "text": "Can you enter an intersection on a green light if traffic ahead is backed up and you cannot completely clear the intersection?",
-    "choices": ["No, you must wait until you can completely clear the intersection", "Yes, as long as the light is green", "Yes, if you enter before the light turns yellow", "Yes, but only if you're turning"],
+    "choices": [
+      "No, you must wait until you can completely clear the intersection",
+      "Yes, as long as the light is green",
+      "Yes, if you enter before the light turns yellow",
+      "Yes, but only if you're turning"
+    ],
     "correctIndex": 0,
     "explanation": "You must not enter an intersection, even on a green light, if traffic conditions prevent you from clearing it completely. This prevents blocking the intersection or gridlock.",
     "reference": "DL-7: Traffic Signals"
@@ -128,7 +200,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 2,
     "text": "What does a solid red traffic signal mean for pedestrians?",
-    "choices": ["Do not begin crossing; wait for the walk signal", "Cross quickly before traffic starts", "Cross only if no vehicles are present", "You have the right of way to cross"],
+    "choices": [
+      "Do not begin crossing; wait for the walk signal",
+      "Cross quickly before traffic starts",
+      "Cross only if no vehicles are present",
+      "You have the right of way to cross"
+    ],
     "correctIndex": 0,
     "explanation": "When the traffic signal is red for vehicles in your direction, pedestrians should wait for their walk signal rather than assuming it's safe to cross.",
     "reference": "DL-7: Traffic Signals"
@@ -138,7 +215,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 5,
     "text": "During heavy traffic, you enter an intersection legally on a yellow light but cannot clear it before the light turns red. Traffic from other directions begins to move. What should you do?",
-    "choices": ["Continue clearing the intersection safely; you have the right of way", "Stop in the middle of the intersection", "Reverse back to your stop line", "Turn to exit through a different street"],
+    "choices": [
+      "Continue clearing the intersection safely; you have the right of way",
+      "Stop in the middle of the intersection",
+      "Reverse back to your stop line",
+      "Turn to exit through a different street"
+    ],
     "correctIndex": 0,
     "explanation": "Once you have legally entered an intersection, you must clear it even if the light turns red. Other traffic must yield to vehicles already in the intersection.",
     "reference": "DL-7: Traffic Signals"
@@ -148,7 +230,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 3,
     "text": "What should you do if a traffic signal's green light has been on for a while as you approach?",
-    "choices": ["Be prepared to stop as the light may change soon", "Speed up to make sure you get through", "Continue at the same speed", "Slow down to 5 mph"],
+    "choices": [
+      "Be prepared to stop as the light may change soon",
+      "Speed up to make sure you get through",
+      "Continue at the same speed",
+      "Slow down to 5 mph"
+    ],
     "correctIndex": 0,
     "explanation": "A stale green light that has been on for some time may change soon, so you should be prepared to stop safely if needed.",
     "reference": "DL-7: Traffic Signals"
@@ -156,19 +243,29 @@
   {
     "id": "TX-TRA-0016",
     "topic": "TRAFFIC_SIGNALS",
-    "difficulty": 1,
-    "text": "At a red light, where must you stop your vehicle?",
-    "choices": ["At the stop line or before entering the crosswalk", "In the middle of the intersection", "Just before entering the intersection", "Anywhere you can see the signal"],
+    "difficulty": 2,
+    "text": "You approach an intersection with a red light. There is a marked stop line, a crosswalk beyond it, and then the intersection. Where exactly must you stop?",
+    "choices": [
+      "At the stop line, before the crosswalk",
+      "In the crosswalk, as close to the intersection as possible",
+      "Just past the crosswalk at the edge of the intersection",
+      "Anywhere you can see the traffic signal clearly"
+    ],
     "correctIndex": 0,
-    "explanation": "You must stop at the marked stop line, or if there is no line, before entering the crosswalk or intersection to avoid blocking pedestrians.",
-    "reference": "DL-7: Traffic Signals"
+    "explanation": "You must stop at the marked stop line. If there is no stop line, stop before the crosswalk. If there is neither, stop before entering the intersection. Stopping in the crosswalk blocks pedestrians and forces them into traffic lanes. Stopping past the crosswalk puts your vehicle in the path of cross traffic.",
+    "reference": "Texas Transportation Code §544.007; DL-7 Traffic Signals"
   },
   {
     "id": "TX-TRA-0017",
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 4,
     "text": "If you accidentally run a red light and are already in the intersection, what should you do?",
-    "choices": ["Continue through the intersection quickly and safely", "Stop immediately in the intersection", "Back up to the stop line", "Turn onto a side street"],
+    "choices": [
+      "Continue through the intersection quickly and safely",
+      "Stop immediately in the intersection",
+      "Back up to the stop line",
+      "Turn onto a side street"
+    ],
     "correctIndex": 0,
     "explanation": "If you're already in the intersection, stopping creates a greater hazard. You should clear the intersection quickly and safely, then drive more carefully.",
     "reference": "DL-7: Traffic Signals"
@@ -178,7 +275,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 2,
     "text": "You are approaching a green light but notice the crosswalk is full of pedestrians still crossing. What should you do?",
-    "choices": ["Wait for all pedestrians to clear the crosswalk before proceeding", "Proceed slowly through the pedestrians", "Honk to clear the crosswalk", "Drive around the pedestrians"],
+    "choices": [
+      "Wait for all pedestrians to clear the crosswalk before proceeding",
+      "Proceed slowly through the pedestrians",
+      "Honk to clear the crosswalk",
+      "Drive around the pedestrians"
+    ],
     "correctIndex": 0,
     "explanation": "You must always yield to pedestrians in the crosswalk, even if you have a green light. Wait until they have completely crossed.",
     "reference": "DL-7: Traffic Signals"
@@ -188,7 +290,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 3,
     "text": "What is the minimum duration you should expect for a yellow light at a typical intersection?",
-    "choices": ["3 to 6 seconds depending on the speed limit", "Always exactly 3 seconds", "10 seconds or more", "1 to 2 seconds"],
+    "choices": [
+      "3 to 6 seconds depending on the speed limit",
+      "Always exactly 3 seconds",
+      "10 seconds or more",
+      "1 to 2 seconds"
+    ],
     "correctIndex": 0,
     "explanation": "Yellow light duration typically ranges from 3 to 6 seconds based on the approach speed and intersection design, giving drivers adequate time to stop safely.",
     "reference": "DL-7: Traffic Signals"
@@ -198,7 +305,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 5,
     "text": "You stop at a red light on a steep downhill grade. When the light turns green, the vehicle ahead of you starts to roll backward. What should you do?",
-    "choices": ["Stay back and honk your horn to alert the driver", "Move forward to push their vehicle", "Quickly change lanes to avoid them", "Assume they will stop rolling"],
+    "choices": [
+      "Stay back and honk your horn to alert the driver",
+      "Move forward to push their vehicle",
+      "Quickly change lanes to avoid them",
+      "Assume they will stop rolling"
+    ],
     "correctIndex": 0,
     "explanation": "Maintain a safe following distance and alert the driver with your horn. Never move forward into a vehicle, even when you have a green light.",
     "reference": "DL-7: Traffic Signals"
@@ -206,53 +318,90 @@
   {
     "id": "TX-TRA-0021",
     "topic": "TRAFFIC_SIGNALS",
-    "difficulty": 1,
-    "text": "What does a green arrow signal mean?",
-    "choices": ["You may proceed in the direction of the arrow without yielding", "You may proceed but must yield to oncoming traffic", "You should prepare to stop", "You may only proceed if no other vehicles are present"],
+    "difficulty": 2,
+    "text": "You are waiting to turn left at an intersection. The signal changes to a green left-turn arrow. A pedestrian is jogging through the crosswalk. What should you do?",
+    "choices": [
+      "Wait for the pedestrian to clear your path, then turn — the green arrow gives you a protected turn but pedestrians still have priority",
+      "Turn immediately — the green arrow means all conflicting traffic and pedestrians are stopped",
+      "Honk to alert the pedestrian and proceed with your turn",
+      "Ignore the arrow and wait for a solid green light instead"
+    ],
     "correctIndex": 0,
-    "explanation": "A green arrow is a protected signal that gives you the right of way to proceed in the indicated direction without yielding to conflicting traffic.",
-    "reference": "DL-7: Traffic Signals",
-    "image": {"type": "svg", "assetId": "SIGNAL_GREEN_ARROW_LEFT"}
+    "explanation": "A green arrow gives you a protected turn phase — meaning oncoming traffic has a red light. However, you must still yield to any pedestrians in the crosswalk. Pedestrians may have entered the crosswalk during the previous phase or may be slow to clear. Safety always takes priority over signal phase.",
+    "reference": "Texas Transportation Code §544.007; DL-7 Traffic Signals",
+    "image": {
+      "type": "svg",
+      "assetId": "SIGNAL_GREEN_ARROW_LEFT"
+    }
   },
   {
     "id": "TX-TRA-0022",
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 2,
     "text": "You see a green left arrow along with a red circular signal. What should you do?",
-    "choices": ["You may turn left only; straight and right movements are prohibited", "You may proceed straight or turn left", "You must stop completely", "You may proceed in any direction"],
+    "choices": [
+      "You may turn left only; straight and right movements are prohibited",
+      "You may proceed straight or turn left",
+      "You must stop completely",
+      "You may proceed in any direction"
+    ],
     "correctIndex": 0,
     "explanation": "A green arrow with a red circular signal means only movements in the direction of the arrow are permitted; all other movements must stop.",
     "reference": "DL-7: Traffic Signals",
-    "image": {"type": "svg", "assetId": "SIGNAL_GREEN_ARROW_LEFT"}
+    "image": {
+      "type": "svg",
+      "assetId": "SIGNAL_GREEN_ARROW_LEFT"
+    }
   },
   {
     "id": "TX-TRA-0023",
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 2,
     "text": "What does a yellow arrow signal indicate?",
-    "choices": ["The protected turn is ending; prepare to stop or yield", "You may proceed with the turn", "Turn only if the intersection is clear", "The signal is malfunctioning"],
+    "choices": [
+      "The protected turn is ending; prepare to stop or yield",
+      "You may proceed with the turn",
+      "Turn only if the intersection is clear",
+      "The signal is malfunctioning"
+    ],
     "correctIndex": 0,
     "explanation": "A yellow arrow warns that the protected turn phase is ending. You should prepare to stop, or complete your turn if already committed.",
     "reference": "DL-7: Traffic Signals",
-    "image": {"type": "svg", "assetId": "SIGNAL_YELLOW_ARROW_LEFT"}
+    "image": {
+      "type": "svg",
+      "assetId": "SIGNAL_YELLOW_ARROW_LEFT"
+    }
   },
   {
     "id": "TX-TRA-0024",
     "topic": "TRAFFIC_SIGNALS",
-    "difficulty": 1,
-    "text": "What does a red arrow signal mean?",
-    "choices": ["You must stop and cannot proceed in the direction of the arrow", "You may proceed after yielding", "You may turn after stopping", "Slow down and proceed with caution"],
+    "difficulty": 2,
+    "text": "You are at an intersection wanting to turn left. The signal shows a red left-turn arrow while the main signal is green. May you turn left?",
+    "choices": [
+      "No — a red arrow prohibits turning in that direction until the arrow changes",
+      "Yes — you may turn left after yielding to oncoming traffic since the main light is green",
+      "Yes — treat the red arrow like a regular red light and turn after stopping",
+      "Only if there is no oncoming traffic visible"
+    ],
     "correctIndex": 0,
-    "explanation": "A red arrow means you must stop and remain stopped. You cannot turn in the direction of the arrow, even after stopping.",
-    "reference": "DL-7: Traffic Signals",
-    "image": {"type": "svg", "assetId": "SIGNAL_RED_ARROW_LEFT"}
+    "explanation": "A red arrow specifically prohibits movement in the direction of the arrow. Unlike a solid red light (which permits right turns on red in most cases), a red arrow means you must not turn in that direction at all — even after stopping. You must wait until the red arrow is replaced by a green arrow or a solid green light.",
+    "reference": "Texas Transportation Code §544.007; DL-7 Traffic Signals",
+    "image": {
+      "type": "svg",
+      "assetId": "SIGNAL_RED_ARROW_LEFT"
+    }
   },
   {
     "id": "TX-TRA-0025",
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 3,
     "text": "You are in a left turn lane with a green circular signal but no green arrow. What must you do?",
-    "choices": ["Yield to oncoming traffic and pedestrians before turning", "Proceed with your turn immediately", "Wait for a green arrow before turning", "You cannot turn left; the signal prohibits it"],
+    "choices": [
+      "Yield to oncoming traffic and pedestrians before turning",
+      "Proceed with your turn immediately",
+      "Wait for a green arrow before turning",
+      "You cannot turn left; the signal prohibits it"
+    ],
     "correctIndex": 0,
     "explanation": "A green circular signal without an arrow is a permissive turn. You may turn left but must yield to oncoming traffic and pedestrians.",
     "reference": "DL-7: Traffic Signals"
@@ -262,7 +411,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 4,
     "text": "At an intersection, you have a green arrow to turn left. Oncoming traffic has what signal?",
-    "choices": ["A red signal preventing them from entering the intersection", "A green signal allowing them to proceed", "A yellow caution signal", "A flashing red signal"],
+    "choices": [
+      "A red signal preventing them from entering the intersection",
+      "A green signal allowing them to proceed",
+      "A yellow caution signal",
+      "A flashing red signal"
+    ],
     "correctIndex": 0,
     "explanation": "When you have a green arrow, it is a protected turn meaning oncoming traffic has a red signal and must stop.",
     "reference": "DL-7: Traffic Signals"
@@ -272,7 +426,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 3,
     "text": "The signal changes from a green arrow to a green circular signal while you're waiting to turn left. What has changed?",
-    "choices": ["You must now yield to oncoming traffic when turning", "You no longer can turn left", "You have more right of way than before", "Nothing; both signals mean the same thing"],
+    "choices": [
+      "You must now yield to oncoming traffic when turning",
+      "You no longer can turn left",
+      "You have more right of way than before",
+      "Nothing; both signals mean the same thing"
+    ],
     "correctIndex": 0,
     "explanation": "Changing from a green arrow to a green circular signal means your turn is no longer protected. You must now yield to oncoming traffic.",
     "reference": "DL-7: Traffic Signals"
@@ -282,18 +441,31 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 2,
     "text": "Can you make a right turn when you see a red arrow pointing right?",
-    "choices": ["No, you must wait for a green signal or arrow", "Yes, after stopping and yielding", "Yes, if no traffic is coming", "Yes, red arrows are only advisory"],
+    "choices": [
+      "No, you must wait for a green signal or arrow",
+      "Yes, after stopping and yielding",
+      "Yes, if no traffic is coming",
+      "Yes, red arrows are only advisory"
+    ],
     "correctIndex": 0,
     "explanation": "A red arrow specifically prohibits movement in that direction. You cannot turn right on a red arrow, even after stopping.",
     "reference": "DL-7: Traffic Signals",
-    "image": {"type": "svg", "assetId": "SIGNAL_RED_ARROW_LEFT"}
+    "image": {
+      "type": "svg",
+      "assetId": "SIGNAL_RED_ARROW_LEFT"
+    }
   },
   {
     "id": "TX-TRA-0029",
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 4,
     "text": "You are turning left on a green arrow. A pedestrian enters the crosswalk against their signal. What should you do?",
-    "choices": ["Stop and yield to the pedestrian even though you have the right of way", "Continue; you have the green arrow", "Honk and proceed slowly", "Swerve around the pedestrian"],
+    "choices": [
+      "Stop and yield to the pedestrian even though you have the right of way",
+      "Continue; you have the green arrow",
+      "Honk and proceed slowly",
+      "Swerve around the pedestrian"
+    ],
     "correctIndex": 0,
     "explanation": "Even with a protected green arrow, you must always yield to pedestrians in the roadway to avoid a collision, regardless of signal status.",
     "reference": "DL-7: Traffic Signals"
@@ -303,7 +475,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 3,
     "text": "What is the difference between a green arrow and a green circular signal for turning?",
-    "choices": ["A green arrow is protected; a green circular signal requires yielding to oncoming traffic", "They mean the same thing", "A green arrow requires stopping first", "A green circular signal gives more right of way"],
+    "choices": [
+      "A green arrow is protected; a green circular signal requires yielding to oncoming traffic",
+      "They mean the same thing",
+      "A green arrow requires stopping first",
+      "A green circular signal gives more right of way"
+    ],
     "correctIndex": 0,
     "explanation": "A green arrow provides a protected turn with right of way, while a green circular signal is a permissive turn requiring you to yield to oncoming traffic.",
     "reference": "DL-7: Traffic Signals"
@@ -313,7 +490,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 2,
     "text": "You have a green left arrow. Halfway through your turn, the arrow turns yellow. What should you do?",
-    "choices": ["Complete your turn safely and clear the intersection", "Stop in the middle of your turn", "Speed up dramatically", "Reverse back to the stop line"],
+    "choices": [
+      "Complete your turn safely and clear the intersection",
+      "Stop in the middle of your turn",
+      "Speed up dramatically",
+      "Reverse back to the stop line"
+    ],
     "correctIndex": 0,
     "explanation": "If you've already started your turn legally, you should complete it safely and clear the intersection even if the signal changes.",
     "reference": "DL-7: Traffic Signals"
@@ -323,7 +505,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 5,
     "text": "At a complex intersection, you see a green circular signal and a separate red arrow pointing left. What can you do?",
-    "choices": ["Go straight or turn right, but not left", "Turn in any direction", "Only go straight", "Only turn left"],
+    "choices": [
+      "Go straight or turn right, but not left",
+      "Turn in any direction",
+      "Only go straight",
+      "Only turn left"
+    ],
     "correctIndex": 0,
     "explanation": "The green circular signal permits straight and right movements, but the red left arrow specifically prohibits left turns.",
     "reference": "DL-7: Traffic Signals"
@@ -333,7 +520,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 4,
     "text": "You are waiting to turn left on a green circular signal. Oncoming traffic is heavy. The light turns yellow. What should you do?",
-    "choices": ["Complete your turn when oncoming traffic stops for their yellow light", "Wait at the stop line; do not enter the intersection", "Turn in front of oncoming traffic quickly", "Abandon the turn and go straight"],
+    "choices": [
+      "Complete your turn when oncoming traffic stops for their yellow light",
+      "Wait at the stop line; do not enter the intersection",
+      "Turn in front of oncoming traffic quickly",
+      "Abandon the turn and go straight"
+    ],
     "correctIndex": 0,
     "explanation": "If you're already in the intersection waiting to turn, you should complete your turn safely when oncoming traffic yields for the yellow light.",
     "reference": "DL-7: Traffic Signals"
@@ -343,7 +535,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 3,
     "text": "When turning right on a green circular signal, what must you watch for?",
-    "choices": ["Pedestrians crossing and vehicles turning left from the opposite direction", "Only vehicles behind you", "Only the traffic signal", "Nothing; you have complete right of way"],
+    "choices": [
+      "Pedestrians crossing and vehicles turning left from the opposite direction",
+      "Only vehicles behind you",
+      "Only the traffic signal",
+      "Nothing; you have complete right of way"
+    ],
     "correctIndex": 0,
     "explanation": "Even on a green signal, you must yield to pedestrians in the crosswalk and watch for vehicles from the opposite direction making permissive left turns.",
     "reference": "DL-7: Traffic Signals"
@@ -353,18 +550,31 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 2,
     "text": "What does it mean if you see a green right arrow?",
-    "choices": ["You have a protected right turn with no conflicting traffic", "You must turn right; going straight is prohibited", "You may turn right after yielding", "The signal is for bikes only"],
+    "choices": [
+      "You have a protected right turn with no conflicting traffic",
+      "You must turn right; going straight is prohibited",
+      "You may turn right after yielding",
+      "The signal is for bikes only"
+    ],
     "correctIndex": 0,
     "explanation": "A green right arrow indicates a protected right turn phase where pedestrian and conflicting traffic are stopped.",
     "reference": "DL-7: Traffic Signals",
-    "image": {"type": "svg", "assetId": "SIGNAL_GREEN_ARROW_RIGHT"}
+    "image": {
+      "type": "svg",
+      "assetId": "SIGNAL_GREEN_ARROW_RIGHT"
+    }
   },
   {
     "id": "TX-TRA-0036",
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 5,
     "text": "You're at a T-intersection where you must turn either left or right. You have a red signal but no arrows. Can you turn after stopping?",
-    "choices": ["You may turn right on red after stopping and yielding, unless prohibited by a sign", "You cannot turn in either direction on red", "You may turn in either direction", "You may only turn left"],
+    "choices": [
+      "You may turn right on red after stopping and yielding, unless prohibited by a sign",
+      "You cannot turn in either direction on red",
+      "You may turn in either direction",
+      "You may only turn left"
+    ],
     "correctIndex": 0,
     "explanation": "At a T-intersection with a red signal, standard right-turn-on-red rules apply unless posted otherwise, but left turns on red are not permitted unless turning from one-way to one-way.",
     "reference": "DL-7: Traffic Signals"
@@ -374,7 +584,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 3,
     "text": "While waiting to turn left with a green circular signal, you should position your vehicle how?",
-    "choices": ["In the intersection with wheels straight, not turned", "Before the stop line with wheels turned left", "In the intersection with wheels turned left", "Partially in the intersection"],
+    "choices": [
+      "In the intersection with wheels straight, not turned",
+      "Before the stop line with wheels turned left",
+      "In the intersection with wheels turned left",
+      "Partially in the intersection"
+    ],
     "correctIndex": 0,
     "explanation": "You should position your vehicle in the intersection with wheels straight so that if you're rear-ended, you won't be pushed into oncoming traffic.",
     "reference": "DL-7: Traffic Signals"
@@ -384,7 +599,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 4,
     "text": "A traffic signal shows a yellow arrow for your left turn, but you haven't entered the intersection yet. What should you do?",
-    "choices": ["Stop if you can do so safely; the protected turn is ending", "Enter the intersection quickly to make the turn", "Proceed slowly with caution", "Treat it as a green arrow"],
+    "choices": [
+      "Stop if you can do so safely; the protected turn is ending",
+      "Enter the intersection quickly to make the turn",
+      "Proceed slowly with caution",
+      "Treat it as a green arrow"
+    ],
     "correctIndex": 0,
     "explanation": "A yellow arrow means the protected turn phase is ending. If you haven't entered the intersection, you should stop if you can safely do so.",
     "reference": "DL-7: Traffic Signals"
@@ -394,7 +614,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 2,
     "text": "Why might an intersection use a red arrow instead of just a red circular signal?",
-    "choices": ["To specifically prohibit turns while other movements might be allowed", "To indicate a longer red phase", "To warn of a dangerous intersection", "Red arrows and red circles mean exactly the same thing"],
+    "choices": [
+      "To specifically prohibit turns while other movements might be allowed",
+      "To indicate a longer red phase",
+      "To warn of a dangerous intersection",
+      "Red arrows and red circles mean exactly the same thing"
+    ],
     "correctIndex": 0,
     "explanation": "Red arrows are used to specifically prohibit certain movements while other directions might have different signal phases.",
     "reference": "DL-7: Traffic Signals"
@@ -402,41 +627,67 @@
   {
     "id": "TX-TRA-0040",
     "topic": "TRAFFIC_SIGNALS",
-    "difficulty": 1,
-    "text": "When you see a green arrow pointing left, which direction should you turn?",
-    "choices": ["Left", "Right", "Either left or right", "Straight ahead"],
+    "difficulty": 2,
+    "text": "You are in a left-turn lane at an intersection. The signal shows a green arrow pointing left, while the opposing traffic has a red light. What does this combination tell you?",
+    "choices": [
+      "You have a protected left turn — oncoming traffic is stopped, so you may turn without yielding to it",
+      "You may turn left but must still yield to oncoming traffic",
+      "You should go straight, not left, despite being in the turn lane",
+      "The green arrow is for pedestrians, not vehicles"
+    ],
     "correctIndex": 0,
-    "explanation": "A green arrow pointing left means you should turn left. The arrow indicates the specific direction you may proceed.",
-    "reference": "DL-7: Traffic Signals"
+    "explanation": "A green left-turn arrow is a protected phase. It means oncoming traffic has a red signal and should be stopped, so you may proceed with your left turn without needing to yield to oncoming vehicles. However, always scan the intersection before turning — a driver may have run their red light.",
+    "reference": "Texas Transportation Code §544.007; DL-7 Traffic Signals"
   },
   {
     "id": "TX-TRA-0041",
     "topic": "TRAFFIC_SIGNALS",
-    "difficulty": 1,
-    "text": "What does a flashing red traffic signal mean?",
-    "choices": ["Stop, then proceed when safe, treating it like a stop sign", "Slow down and proceed with caution", "The signal is broken; proceed normally", "Stop and wait for a green light"],
+    "difficulty": 2,
+    "text": "Late at night you approach an intersection where the traffic signal is flashing red in all directions. How should you treat this signal?",
+    "choices": [
+      "Treat it exactly like a stop sign — stop completely, then proceed when safe",
+      "Slow down and proceed with caution without stopping",
+      "The signal is malfunctioning — proceed at normal speed",
+      "Stop and wait for the signal to return to its normal cycle"
+    ],
     "correctIndex": 0,
-    "explanation": "A flashing red signal means you must come to a complete stop, then proceed when safe, just like at a stop sign.",
-    "reference": "DL-7: Traffic Signals",
-    "image": {"type": "svg", "assetId": "SIGNAL_FLASHING_RED"}
+    "explanation": "A flashing red signal functions as a stop sign. You must come to a complete stop, yield to any vehicles or pedestrians with the right-of-way, and proceed only when safe. If all directions are flashing red, treat the intersection like a four-way stop — yield to the vehicle that arrived first, or to the vehicle on your right if you arrive simultaneously.",
+    "reference": "Texas Transportation Code §544.007; DL-7 Traffic Signals",
+    "image": {
+      "type": "svg",
+      "assetId": "SIGNAL_FLASHING_RED"
+    }
   },
   {
     "id": "TX-TRA-0042",
     "topic": "TRAFFIC_SIGNALS",
-    "difficulty": 1,
-    "text": "What does a flashing yellow traffic signal mean?",
-    "choices": ["Slow down and proceed with caution", "Stop, then proceed when safe", "Speed up to clear the intersection", "The signal will soon turn red"],
+    "difficulty": 2,
+    "text": "You approach an intersection where the signal is flashing yellow. There is moderate cross traffic. What should you do?",
+    "choices": [
+      "Slow down, watch for cross traffic and pedestrians, and proceed with caution",
+      "Come to a complete stop before entering the intersection",
+      "Speed up to clear the intersection before it changes",
+      "Yield only to vehicles on your right"
+    ],
     "correctIndex": 0,
-    "explanation": "A flashing yellow signal means you should slow down, be alert, and proceed through the intersection with caution.",
-    "reference": "DL-7: Traffic Signals",
-    "image": {"type": "svg", "assetId": "SIGNAL_FLASHING_YELLOW"}
+    "explanation": "A flashing yellow signal means proceed with caution — you do not have to stop unless cross traffic or pedestrians require it. However, you must slow down and be alert because cross traffic may have a flashing red (stop) signal and might not stop. Treat the intersection with extra vigilance, especially at night.",
+    "reference": "Texas Transportation Code §544.007; DL-7 Traffic Signals",
+    "image": {
+      "type": "svg",
+      "assetId": "SIGNAL_FLASHING_YELLOW"
+    }
   },
   {
     "id": "TX-TRA-0043",
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 2,
     "text": "You approach an intersection with a flashing red signal while cross traffic has a flashing yellow signal. What should you do?",
-    "choices": ["Stop completely, then proceed when safe after yielding to cross traffic", "Proceed with caution at the same time as cross traffic", "Stop and wait for the signal to turn green", "Proceed without stopping since you see the yellow"],
+    "choices": [
+      "Stop completely, then proceed when safe after yielding to cross traffic",
+      "Proceed with caution at the same time as cross traffic",
+      "Stop and wait for the signal to turn green",
+      "Proceed without stopping since you see the yellow"
+    ],
     "correctIndex": 0,
     "explanation": "A flashing red requires you to stop and yield to all traffic, including vehicles with the flashing yellow who have the right of way.",
     "reference": "DL-7: Traffic Signals"
@@ -446,7 +697,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 2,
     "text": "When are you most likely to encounter flashing traffic signals?",
-    "choices": ["Late at night or during low traffic periods, or when signals are malfunctioning", "During rush hour", "Only during emergency situations", "During school hours"],
+    "choices": [
+      "Late at night or during low traffic periods, or when signals are malfunctioning",
+      "During rush hour",
+      "Only during emergency situations",
+      "During school hours"
+    ],
     "correctIndex": 0,
     "explanation": "Flashing signals are commonly used during late night hours when full signal cycles aren't needed, or when a signal malfunctions.",
     "reference": "DL-7: Traffic Signals"
@@ -456,7 +712,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 3,
     "text": "At an intersection, you have a flashing yellow signal. What right of way do you have?",
-    "choices": ["Proceed with caution but yield to any vehicles already in the intersection", "You have complete right of way over all other traffic", "You must stop and wait for other vehicles", "You must yield to all traffic entering from any direction"],
+    "choices": [
+      "Proceed with caution but yield to any vehicles already in the intersection",
+      "You have complete right of way over all other traffic",
+      "You must stop and wait for other vehicles",
+      "You must yield to all traffic entering from any direction"
+    ],
     "correctIndex": 0,
     "explanation": "A flashing yellow gives you the right to proceed with caution, but you must still yield to vehicles already lawfully in the intersection.",
     "reference": "DL-7: Traffic Signals"
@@ -466,7 +727,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 3,
     "text": "If all signals at an intersection are flashing red in all directions, how should you proceed?",
-    "choices": ["Treat the intersection as a four-way stop", "Proceed with caution without stopping", "The first to arrive has right of way without stopping", "Wait for police to direct traffic"],
+    "choices": [
+      "Treat the intersection as a four-way stop",
+      "Proceed with caution without stopping",
+      "The first to arrive has right of way without stopping",
+      "Wait for police to direct traffic"
+    ],
     "correctIndex": 0,
     "explanation": "When all approaches have flashing red signals, the intersection functions as an all-way stop, with normal stop sign rules applying.",
     "reference": "DL-7: Traffic Signals"
@@ -476,7 +742,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 4,
     "text": "You approach an intersection where the signal is completely dark with no lights showing. How should you proceed?",
-    "choices": ["Treat it as a four-way stop and stop before entering", "Proceed normally as if it were green", "Slow down but don't stop unless you see traffic", "Only the main road has right of way"],
+    "choices": [
+      "Treat it as a four-way stop and stop before entering",
+      "Proceed normally as if it were green",
+      "Slow down but don't stop unless you see traffic",
+      "Only the main road has right of way"
+    ],
     "correctIndex": 0,
     "explanation": "A completely dark or non-functioning signal should be treated as an all-way stop sign, requiring all traffic to stop before proceeding.",
     "reference": "DL-7: Traffic Signals"
@@ -486,7 +757,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 2,
     "text": "What is the key difference between a flashing yellow and a solid yellow signal?",
-    "choices": ["Flashing yellow means proceed with caution; solid yellow means prepare to stop", "They mean the same thing", "Flashing yellow means stop; solid yellow means go", "Flashing yellow is more urgent than solid yellow"],
+    "choices": [
+      "Flashing yellow means proceed with caution; solid yellow means prepare to stop",
+      "They mean the same thing",
+      "Flashing yellow means stop; solid yellow means go",
+      "Flashing yellow is more urgent than solid yellow"
+    ],
     "correctIndex": 0,
     "explanation": "A flashing yellow is a warning to proceed cautiously, while a solid yellow indicates the signal is changing and you should prepare to stop.",
     "reference": "DL-7: Traffic Signals"
@@ -496,7 +772,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 4,
     "text": "At an intersection with a flashing red signal, two vehicles from different directions arrive at exactly the same time. Who has the right of way?",
-    "choices": ["The vehicle on the right", "The vehicle on the left", "The larger vehicle", "The vehicle that flashes its headlights first"],
+    "choices": [
+      "The vehicle on the right",
+      "The vehicle on the left",
+      "The larger vehicle",
+      "The vehicle that flashes its headlights first"
+    ],
     "correctIndex": 0,
     "explanation": "When two vehicles arrive simultaneously at a flashing red (treated as a stop sign), the vehicle on the right has the right of way.",
     "reference": "DL-7: Traffic Signals"
@@ -506,7 +787,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 5,
     "text": "During a power outage, traffic signals are completely out. You arrive at a busy intersection at the same time as several other vehicles. What governs right-of-way?",
-    "choices": ["Standard four-way stop rules and basic right-of-way principles", "The largest vehicle goes first", "Whoever proceeds first has the right of way", "Everyone should wait for police"],
+    "choices": [
+      "Standard four-way stop rules and basic right-of-way principles",
+      "The largest vehicle goes first",
+      "Whoever proceeds first has the right of way",
+      "Everyone should wait for police"
+    ],
     "correctIndex": 0,
     "explanation": "Non-functioning signals create a four-way stop situation. Right of way follows normal stop sign rules: first to arrive, or vehicle on right if simultaneous.",
     "reference": "DL-7: Traffic Signals"
@@ -514,31 +800,52 @@
   {
     "id": "TX-TRA-0051",
     "topic": "TRAFFIC_SIGNALS",
-    "difficulty": 1,
-    "text": "What does a steady WALK signal mean for pedestrians?",
-    "choices": ["Begin crossing the street", "Finish crossing if already in the street", "Do not cross", "Cross only if no vehicles are present"],
+    "difficulty": 2,
+    "text": "You are a pedestrian waiting to cross at an intersection. The pedestrian signal changes from a raised hand to a walking person symbol. What does this mean?",
+    "choices": [
+      "You may begin crossing the street in the direction of the signal",
+      "You should finish crossing only if you are already in the street",
+      "You should wait for the next signal cycle to be safe",
+      "You may cross only if the vehicle signal is also green"
+    ],
     "correctIndex": 0,
-    "explanation": "A steady WALK signal indicates that pedestrians may begin crossing the street in the direction of the signal.",
-    "reference": "DL-7: Traffic Signals",
-    "image": {"type": "svg", "assetId": "SIGNAL_PED_WALK"}
+    "explanation": "The walking person (WALK) signal means pedestrians may begin crossing the street in the indicated direction. It corresponds to a traffic phase that protects you from conflicting vehicle movements. Once the signal changes to a flashing raised hand, you should not start crossing but may finish if you are already in the street.",
+    "reference": "Texas Transportation Code §552.002; DL-7 Traffic Signals",
+    "image": {
+      "type": "svg",
+      "assetId": "SIGNAL_PED_WALK"
+    }
   },
   {
     "id": "TX-TRA-0052",
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 1,
     "text": "What does a steady DON'T WALK or raised hand signal mean?",
-    "choices": ["Do not start crossing the street", "Stop immediately wherever you are", "Cross quickly", "The signal is for vehicles only"],
+    "choices": [
+      "Do not start crossing the street",
+      "Stop immediately wherever you are",
+      "Cross quickly",
+      "The signal is for vehicles only"
+    ],
     "correctIndex": 0,
     "explanation": "A steady DON'T WALK or raised hand signal means pedestrians should not begin crossing, though those already crossing should complete their crossing.",
     "reference": "DL-7: Traffic Signals",
-    "image": {"type": "svg", "assetId": "SIGNAL_PED_DONT_WALK"}
+    "image": {
+      "type": "svg",
+      "assetId": "SIGNAL_PED_DONT_WALK"
+    }
   },
   {
     "id": "TX-TRA-0053",
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 2,
     "text": "What does a flashing DON'T WALK signal mean?",
-    "choices": ["Do not start crossing; finish crossing if already in the street", "Start crossing quickly", "Stop in the middle of the street", "The pedestrian signal is broken"],
+    "choices": [
+      "Do not start crossing; finish crossing if already in the street",
+      "Start crossing quickly",
+      "Stop in the middle of the street",
+      "The pedestrian signal is broken"
+    ],
     "correctIndex": 0,
     "explanation": "A flashing DON'T WALK means do not start crossing. Pedestrians already in the crosswalk should continue and finish crossing safely.",
     "reference": "DL-7: Traffic Signals"
@@ -548,7 +855,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 2,
     "text": "You are a pedestrian and the WALK signal turns to a flashing DON'T WALK when you are halfway across a wide street. What should you do?",
-    "choices": ["Continue crossing to the other side or to a safety island", "Run back to where you started", "Stop and wait in the middle of the street", "Run across quickly"],
+    "choices": [
+      "Continue crossing to the other side or to a safety island",
+      "Run back to where you started",
+      "Stop and wait in the middle of the street",
+      "Run across quickly"
+    ],
     "correctIndex": 0,
     "explanation": "If the signal changes while you're crossing, continue to the other side or a pedestrian safety island. Do not run or turn back.",
     "reference": "DL-7: Traffic Signals"
@@ -558,18 +870,31 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 3,
     "text": "What does a pedestrian countdown timer indicate?",
-    "choices": ["The number of seconds remaining to finish crossing before the DON'T WALK phase", "The number of seconds until WALK signal appears", "The speed you should walk", "The number of pedestrians allowed to cross"],
+    "choices": [
+      "The number of seconds remaining to finish crossing before the DON'T WALK phase",
+      "The number of seconds until WALK signal appears",
+      "The speed you should walk",
+      "The number of pedestrians allowed to cross"
+    ],
     "correctIndex": 0,
     "explanation": "A countdown timer shows how many seconds pedestrians have to complete their crossing before the don't walk phase ends and traffic may begin.",
     "reference": "DL-7: Traffic Signals",
-    "image": {"type": "svg", "assetId": "SIGNAL_PED_COUNTDOWN"}
+    "image": {
+      "type": "svg",
+      "assetId": "SIGNAL_PED_COUNTDOWN"
+    }
   },
   {
     "id": "TX-TRA-0056",
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 3,
     "text": "As a driver with a green light, can you proceed through the crosswalk if the pedestrian signal shows DON'T WALK but a pedestrian is still crossing?",
-    "choices": ["No, you must yield to any pedestrian in the crosswalk regardless of signal", "Yes, the pedestrian is crossing illegally", "Yes, if you honk first", "Yes, but proceed very slowly"],
+    "choices": [
+      "No, you must yield to any pedestrian in the crosswalk regardless of signal",
+      "Yes, the pedestrian is crossing illegally",
+      "Yes, if you honk first",
+      "Yes, but proceed very slowly"
+    ],
     "correctIndex": 0,
     "explanation": "Drivers must always yield to pedestrians in the crosswalk, regardless of what the pedestrian signal shows or whose signal shows green.",
     "reference": "DL-7: Traffic Signals"
@@ -579,7 +904,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 4,
     "text": "A pedestrian countdown timer shows 3 seconds remaining as you approach the crosswalk. Should you start crossing?",
-    "choices": ["No, do not start crossing if you cannot make it across safely", "Yes, you have 3 seconds to cross", "Yes, run across quickly", "Yes, traffic will wait for you"],
+    "choices": [
+      "No, do not start crossing if you cannot make it across safely",
+      "Yes, you have 3 seconds to cross",
+      "Yes, run across quickly",
+      "Yes, traffic will wait for you"
+    ],
     "correctIndex": 0,
     "explanation": "If the countdown shows insufficient time to safely cross, do not enter the crosswalk. Wait for the next WALK signal.",
     "reference": "DL-7: Traffic Signals"
@@ -589,7 +919,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 2,
     "text": "What should drivers do when they see a pedestrian signal showing WALK for a crosswalk they want to turn through?",
-    "choices": ["Wait for pedestrians to cross; they have the right of way", "Turn slowly behind the pedestrians", "Honk to warn pedestrians", "Proceed; the WALK signal is not for drivers"],
+    "choices": [
+      "Wait for pedestrians to cross; they have the right of way",
+      "Turn slowly behind the pedestrians",
+      "Honk to warn pedestrians",
+      "Proceed; the WALK signal is not for drivers"
+    ],
     "correctIndex": 0,
     "explanation": "When the pedestrian signal shows WALK, pedestrians have the right of way in that crosswalk and drivers must yield before turning.",
     "reference": "DL-7: Traffic Signals"
@@ -599,7 +934,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 4,
     "text": "At an intersection with pedestrian signals, you have a green left arrow. What should the pedestrian signal show?",
-    "choices": ["DON'T WALK, preventing pedestrians from crossing into your path", "WALK, giving pedestrians the right of way", "Flashing DON'T WALK", "No signal"],
+    "choices": [
+      "DON'T WALK, preventing pedestrians from crossing into your path",
+      "WALK, giving pedestrians the right of way",
+      "Flashing DON'T WALK",
+      "No signal"
+    ],
     "correctIndex": 0,
     "explanation": "A green arrow for vehicles is a protected turn, meaning pedestrian signals should show DON'T WALK to prevent conflicts.",
     "reference": "DL-7: Traffic Signals"
@@ -609,7 +949,12 @@
     "topic": "TRAFFIC_SIGNALS",
     "difficulty": 5,
     "text": "A pedestrian signal shows WALK but the traffic signal for vehicles shows green in the same direction. A driver wants to turn right. Who has the legal right of way?",
-    "choices": ["The pedestrian; drivers must yield when turning", "The driver with the green light", "Whoever reaches the crosswalk first", "Neither; it's a signal malfunction"],
+    "choices": [
+      "The pedestrian; drivers must yield when turning",
+      "The driver with the green light",
+      "Whoever reaches the crosswalk first",
+      "Neither; it's a signal malfunction"
+    ],
     "correctIndex": 0,
     "explanation": "Even though drivers have a green light, they must yield to pedestrians in the crosswalk who have a WALK signal when making turns.",
     "reference": "DL-7: Traffic Signals"

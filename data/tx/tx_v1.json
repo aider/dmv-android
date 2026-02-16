@@ -17,17 +17,17 @@
     {
       "id": "TX-PRK-0001",
       "topic": "PARKING",
-      "difficulty": 1,
-      "text": "What is the minimum distance you must park from a fire hydrant?",
+      "difficulty": 2,
+      "text": "You find a parking spot on a busy street, but a fire hydrant is 12 feet away. What should you do?",
       "choices": [
-        "15 feet",
-        "10 feet",
-        "20 feet",
-        "25 feet"
+        "Find another spot — you must park at least 15 feet from a hydrant",
+        "Park there since 12 feet provides enough clearance",
+        "Park there but leave your hazard lights on",
+        "Park there only if you'll be gone less than 5 minutes"
       ],
       "correctIndex": 0,
-      "explanation": "You must park at least 15 feet away from a fire hydrant to allow fire department access in emergencies. Parking too close is illegal and dangerous.",
-      "reference": "DL-7: Parking Rules",
+      "explanation": "Texas law requires at least 15 feet of clearance from fire hydrants. At 12 feet, you are in violation. This buffer ensures fire crews can quickly connect hoses without moving parked vehicles, potentially saving critical minutes in an emergency.",
+      "reference": "Texas Transportation Code §545.302; DL-7 Parking Rules",
       "image": {
         "type": "svg",
         "assetId": "PARKING_FIRE_HYDRANT_15FT"
@@ -36,47 +36,47 @@
     {
       "id": "TX-PRK-0002",
       "topic": "PARKING",
-      "difficulty": 1,
-      "text": "How far must you park from a crosswalk at an intersection?",
+      "difficulty": 2,
+      "text": "You want to park near an intersection. How close to a crosswalk are you legally allowed to park?",
       "choices": [
-        "20 feet",
-        "15 feet",
-        "25 feet",
-        "30 feet"
+        "No closer than 20 feet",
+        "No closer than 15 feet",
+        "No closer than 10 feet",
+        "As close as you want if the crosswalk is unmarked"
       ],
       "correctIndex": 0,
-      "explanation": "Texas law requires parking at least 20 feet from a crosswalk to maintain pedestrian visibility and safety at intersections.",
-      "reference": "DL-7: Parking Rules"
+      "explanation": "Texas law prohibits parking within 20 feet of a crosswalk at an intersection. This distance keeps parked vehicles from blocking drivers' view of pedestrians entering the crosswalk, reducing the risk of a pedestrian being struck by a turning vehicle.",
+      "reference": "Texas Transportation Code §545.302; DL-7 Parking Rules"
     },
     {
       "id": "TX-PRK-0003",
       "topic": "PARKING",
-      "difficulty": 2,
-      "text": "What does a blue painted curb indicate?",
+      "difficulty": 3,
+      "text": "While searching for parking downtown, you notice a curb painted blue. A car without any visible placard or special plate is parked there. What can you conclude?",
       "choices": [
-        "Disabled parking only with valid permit",
-        "Passenger loading zone",
-        "Limited time parking",
-        "Commercial loading zone"
+        "The parked car is likely in violation — blue curbs are reserved for disabled parking permit holders",
+        "Blue curbs allow anyone to park for a limited time",
+        "Blue curbs indicate a commercial loading zone",
+        "The driver may have a temporary permit not displayed on the dash"
       ],
       "correctIndex": 0,
-      "explanation": "Blue curbs designate disabled parking spaces. Only vehicles displaying a valid disabled placard or license plate may park there, and violations carry significant fines.",
-      "reference": "DL-7: Parking Rules"
+      "explanation": "Blue curbs designate disabled parking spaces. Vehicles must display a valid disabled placard on the rearview mirror or have disabled license plates to legally park there. A vehicle without any visible permit is likely in violation. Texas law requires the placard or plate to be displayed at all times while parked.",
+      "reference": "Texas Transportation Code §681.011; DL-7 Parking Rules"
     },
     {
       "id": "TX-PRK-0004",
       "topic": "PARKING",
-      "difficulty": 1,
-      "text": "Is it legal to park on a sidewalk?",
+      "difficulty": 2,
+      "text": "You're running a quick errand and the only nearby spot requires parking partially on the sidewalk. Is this legal in Texas?",
       "choices": [
-        "No, it blocks pedestrian access",
-        "Yes, if you leave room to walk",
-        "Yes, in residential areas only",
-        "Yes, if no pedestrians are present"
+        "No — parking on a sidewalk is always illegal regardless of the duration",
+        "Yes, if you leave at least 4 feet of sidewalk clear for pedestrians",
+        "Yes, for stops under 10 minutes",
+        "Yes, in residential areas if no pedestrians are present"
       ],
       "correctIndex": 0,
-      "explanation": "Parking on sidewalks is always illegal because it obstructs pedestrian pathways and creates safety hazards, especially for people with disabilities or mobility devices.",
-      "reference": "DL-7: Parking Rules"
+      "explanation": "Parking on sidewalks is always illegal in Texas because it forces pedestrians — including those using wheelchairs, strollers, or mobility aids — into the street. No duration, time of day, or lack of pedestrian traffic makes it permissible.",
+      "reference": "Texas Transportation Code §545.302; DL-7 Parking Rules"
     },
     {
       "id": "TX-PRK-0005",
@@ -141,17 +141,17 @@
     {
       "id": "TX-PRK-0009",
       "topic": "PARKING",
-      "difficulty": 1,
-      "text": "What does double parking mean?",
+      "difficulty": 2,
+      "text": "You pull up to a block where every curb space is taken, and a delivery truck is parked alongside one of those vehicles, blocking the lane. What is this situation called?",
       "choices": [
-        "Parking alongside a vehicle already parked at the curb",
-        "Parking in two spaces at once",
-        "Parking in a no parking zone",
-        "Parking for twice the allowed time"
+        "Double parking",
+        "Parallel parking overflow",
+        "Lane sharing",
+        "Temporary standing"
       ],
       "correctIndex": 0,
-      "explanation": "Double parking is parking your vehicle beside another vehicle that is already parked at the curb, blocking the travel lane. This is illegal and creates traffic hazards.",
-      "reference": "DL-7: Parking Rules"
+      "explanation": "Double parking means stopping or parking alongside a vehicle already occupying a curb space, which blocks the travel lane. It is illegal because it forces other drivers to swerve into oncoming traffic or wait, creating congestion and crash risk.",
+      "reference": "Texas Transportation Code §545.302; DL-7 Parking Rules"
     },
     {
       "id": "TX-PRK-0010",
@@ -231,17 +231,17 @@
     {
       "id": "TX-PRK-0015",
       "topic": "PARKING",
-      "difficulty": 1,
-      "text": "What does a white painted curb indicate?",
+      "difficulty": 2,
+      "text": "You see a white painted curb in front of a hotel entrance. What does this curb color mean for you?",
       "choices": [
-        "Passenger loading zone with time limit",
-        "No parking at any time",
-        "Parking for white vehicles only",
-        "Government vehicles only"
+        "You may stop briefly to load or unload passengers only",
+        "Parking is prohibited at all times",
+        "You may park for up to 30 minutes",
+        "The space is reserved for hotel guests"
       ],
       "correctIndex": 0,
-      "explanation": "White curbs designate passenger loading and unloading zones with limited time allowances, typically for dropping off or picking up passengers quickly.",
-      "reference": "DL-7: Parking Rules"
+      "explanation": "White curbs designate passenger loading and unloading zones with strict time limits. You may stop to drop off or pick up passengers but may not leave your vehicle unattended or park for extended periods. Check posted signs for specific time limits.",
+      "reference": "DL-7 Parking Rules"
     },
     {
       "id": "TX-PRK-0016",
@@ -329,17 +329,17 @@
     {
       "id": "TX-PRK-0021",
       "topic": "PARKING",
-      "difficulty": 1,
-      "text": "When parallel parking, what is the first step?",
+      "difficulty": 2,
+      "text": "You're about to parallel park between two vehicles. What should your first action be?",
       "choices": [
-        "Signal and pull alongside the car ahead",
-        "Turn your wheels toward the curb",
-        "Back up slowly",
-        "Check your blind spot"
+        "Signal, then pull forward until you are alongside the vehicle ahead of the space",
+        "Turn your steering wheel hard toward the curb and begin backing in",
+        "Back up slowly until your rear bumper is even with the car behind the space",
+        "Check your rearview mirror and begin reversing immediately"
       ],
       "correctIndex": 0,
-      "explanation": "The first step in parallel parking is to signal your intention and pull alongside the car in front of the space, positioning about 2-3 feet away.",
-      "reference": "DL-7: Parking Rules"
+      "explanation": "The first step in parallel parking is to signal your intent and pull alongside the vehicle in front of the open space, positioning your car about 2–3 feet away and roughly even with that vehicle. This starting position sets the correct angle for the backing maneuver that follows.",
+      "reference": "DL-7 Parking Rules"
     },
     {
       "id": "TX-PRK-0022",
@@ -423,17 +423,17 @@
     {
       "id": "TX-PRK-0027",
       "topic": "PARKING",
-      "difficulty": 1,
-      "text": "What should you do before pulling out of a parallel parking space?",
+      "difficulty": 2,
+      "text": "You are ready to leave a parallel parking space on a busy street. What is the safest sequence of actions?",
       "choices": [
-        "Check mirrors and blind spots, then signal",
-        "Accelerate quickly to merge",
-        "Sound your horn",
-        "Turn on hazard lights"
+        "Check mirrors and blind spots, signal, then merge when a gap appears",
+        "Turn on your hazard lights and pull out slowly",
+        "Honk your horn to alert other drivers, then pull out",
+        "Accelerate quickly to match traffic speed while merging"
       ],
       "correctIndex": 0,
-      "explanation": "Always check all mirrors and blind spots for traffic, cyclists, and pedestrians before exiting. Signal your intention to alert other drivers.",
-      "reference": "DL-7: Parking Rules"
+      "explanation": "Before leaving a parallel parking space, check all mirrors and your blind spot for vehicles, cyclists, and pedestrians. Signal your intent to give other drivers time to react. Then merge only when there is a safe gap in traffic. Rushing into traffic without checking creates a serious collision risk.",
+      "reference": "DL-7 Parking Rules"
     },
     {
       "id": "TX-PRK-0028",
@@ -641,17 +641,17 @@
     {
       "id": "TX-PRK-0041",
       "topic": "PARKING",
-      "difficulty": 1,
-      "text": "Who is legally allowed to park in a disabled parking space?",
+      "difficulty": 2,
+      "text": "You need to drop off a package and the closest spot is a disabled parking space with a blue sign. You don't have a disabled placard. Can you use it for a quick stop?",
       "choices": [
-        "Only vehicles with valid disabled placards or plates",
-        "Anyone if the space is empty",
-        "Anyone for brief stops",
-        "Family members of disabled persons"
+        "No — only vehicles displaying a valid disabled placard or plate may use these spaces",
+        "Yes, if you stay in the vehicle with the engine running",
+        "Yes, for stops under 3 minutes",
+        "Yes, if no disabled drivers are waiting for the space"
       ],
       "correctIndex": 0,
-      "explanation": "Only vehicles displaying a valid disabled parking placard or license plate may use disabled parking spaces. Unauthorized use is illegal and heavily fined.",
-      "reference": "DL-7: Parking Rules",
+      "explanation": "Disabled parking spaces are reserved exclusively for vehicles displaying a valid disabled placard or license plate. No exceptions exist for brief stops, staying in the vehicle, or the space appearing unused. Fines for unauthorized use can range from $500 to $1,250 in Texas.",
+      "reference": "Texas Transportation Code §681.011; DL-7 Parking Rules",
       "image": {
         "type": "svg",
         "assetId": "PARKING_DISABLED_SPACE"
@@ -818,17 +818,17 @@
     {
       "id": "TX-PRK-0052",
       "topic": "PARKING",
-      "difficulty": 1,
-      "text": "What should you do if your parallel parking attempt is not successful on the first try?",
+      "difficulty": 2,
+      "text": "You attempt to parallel park but end up more than 18 inches from the curb after your first try. What is the best course of action?",
       "choices": [
-        "Pull forward and try again",
-        "Leave the car in the current position",
-        "Give up and find another space",
-        "Ask a passenger to guide you"
+        "Pull forward and repeat the parking maneuver from the beginning",
+        "Open your door to check the distance and adjust from your current position",
+        "Leave the car as is — 18 inches is close enough",
+        "Ask a bystander to guide you into the correct position"
       ],
       "correctIndex": 0,
-      "explanation": "If your first attempt doesn't position you correctly, simply pull forward and repeat the process. Multiple attempts are normal when learning to parallel park.",
-      "reference": "DL-7: Parking Rules"
+      "explanation": "Texas requires vehicles to park within 18 inches of the curb. If your first attempt puts you too far out, the safest approach is to pull completely forward and restart the maneuver. Trying to adjust from an awkward angle increases the risk of hitting adjacent vehicles.",
+      "reference": "Texas Transportation Code §545.051; DL-7 Parking Rules"
     },
     {
       "id": "TX-PRK-0053",
@@ -953,17 +953,17 @@
     {
       "id": "TX-PAV-0001",
       "topic": "PAVEMENT_MARKINGS",
-      "difficulty": 1,
-      "text": "What does a solid white line between lanes indicate?",
+      "difficulty": 2,
+      "text": "You are driving on a four-lane highway and want to change from the left lane to the right lane. There is a solid white line between the lanes. What does this mean?",
       "choices": [
-        "Lane changes are discouraged but permitted if safe",
-        "Lane changes are prohibited",
-        "Opposing traffic lanes",
-        "Parking is allowed"
+        "Lane changes are discouraged but not illegal — change only if necessary and safe",
+        "Lane changes are strictly prohibited",
+        "The line marks the boundary between opposing traffic flows",
+        "The line indicates a merge area ahead"
       ],
       "correctIndex": 0,
-      "explanation": "Solid white lines discourage lane changes but do not legally prohibit them. Drivers should avoid crossing solid white lines unless necessary for safety.",
-      "reference": "DL-7: Pavement Markings",
+      "explanation": "Solid white lines between same-direction lanes discourage lane changes but do not legally prohibit them. They are used in areas where lane changes are risky, such as near intersections or highway exits. Cross them only when necessary and after checking that it is safe to do so.",
+      "reference": "MUTCD Section 3B.04; DL-7 Pavement Markings",
       "image": {
         "type": "svg",
         "assetId": "PAVEMENT_SOLID_WHITE_LINE"
@@ -972,17 +972,17 @@
     {
       "id": "TX-PAV-0002",
       "topic": "PAVEMENT_MARKINGS",
-      "difficulty": 1,
-      "text": "What does a dashed white line between lanes mean?",
+      "difficulty": 2,
+      "text": "On a three-lane highway, dashed white lines separate all three lanes. You want to move from the center lane to the right lane. Is this permitted?",
       "choices": [
-        "Lane changes are permitted",
-        "No passing zone",
-        "Opposing traffic ahead",
-        "Construction zone"
+        "Yes — dashed white lines indicate lane changes are allowed when safe",
+        "No — you must stay in your lane until the next exit",
+        "Only if you use your turn signal for at least 5 seconds first",
+        "Only if a solid white line is not present on the other side"
       ],
       "correctIndex": 0,
-      "explanation": "Dashed white lines separate lanes of traffic moving in the same direction and indicate that lane changes are permitted when safe to do so.",
-      "reference": "DL-7: Pavement Markings",
+      "explanation": "Dashed white lines separate lanes of same-direction traffic and indicate that lane changes are permitted. Always signal your intent, check mirrors and blind spots, and change lanes only when there is a safe gap in traffic.",
+      "reference": "MUTCD Section 3B.04; DL-7 Pavement Markings",
       "image": {
         "type": "svg",
         "assetId": "PAVEMENT_DASHED_WHITE_LINE"
@@ -991,17 +991,17 @@
     {
       "id": "TX-PAV-0003",
       "topic": "PAVEMENT_MARKINGS",
-      "difficulty": 2,
-      "text": "What does a double solid yellow line indicate?",
+      "difficulty": 3,
+      "text": "You are on a two-lane road and want to pass a slow-moving truck. The center line on your side is solid yellow and the line on the truck's side is dashed yellow. Are you legally allowed to pass?",
       "choices": [
-        "Passing is prohibited in both directions",
-        "Passing is allowed with caution",
-        "One-way traffic only",
-        "Shoulder area"
+        "No — the solid line on your side prohibits passing regardless of what the other side shows",
+        "Yes — the dashed line on either side permits passing for both directions",
+        "Yes — as long as no oncoming traffic is visible",
+        "Only if the truck is traveling below the posted speed limit"
       ],
       "correctIndex": 0,
-      "explanation": "Double solid yellow lines mark a no-passing zone for traffic traveling in both directions. Crossing these lines to pass is illegal and dangerous.",
-      "reference": "DL-7: Pavement Markings",
+      "explanation": "When a double yellow center line has one solid and one dashed component, the rule applies to each side independently. The solid line on your side means passing is prohibited for you. The dashed line on the other side means oncoming traffic may pass when safe. This asymmetric marking is used where sight distance differs by direction — your direction has limited visibility for safe passing.",
+      "reference": "MUTCD Section 3B.04; DL-7 Pavement Markings",
       "image": {
         "type": "svg",
         "assetId": "PAVEMENT_DOUBLE_YELLOW_SOLID"
@@ -1063,17 +1063,17 @@
     {
       "id": "TX-PAV-0007",
       "topic": "PAVEMENT_MARKINGS",
-      "difficulty": 1,
-      "text": "What does a white edge line on the right side of the road mark?",
+      "difficulty": 2,
+      "text": "While driving at night on an unfamiliar rural road, you notice a white line running along the right edge of the pavement. What is its purpose?",
       "choices": [
-        "The edge of the roadway",
-        "A bike lane",
-        "A parking zone",
-        "A passing zone"
+        "It marks where the paved roadway ends, helping you stay on the road",
+        "It marks a bicycle lane that you must not cross",
+        "It indicates a no-parking zone along the shoulder",
+        "It marks a passing zone on the right side"
       ],
       "correctIndex": 0,
-      "explanation": "White edge lines mark the right boundary of the roadway where the driving surface ends. They help drivers maintain proper lane position, especially at night or in poor weather.",
-      "reference": "DL-7: Pavement Markings"
+      "explanation": "White edge lines mark the right boundary of the roadway. They are especially helpful at night, in rain, or on unfamiliar roads because they give drivers a visible reference for staying within the travel lane. Drifting past the edge line means you are leaving the roadway.",
+      "reference": "MUTCD Section 3B.08; DL-7 Pavement Markings"
     },
     {
       "id": "TX-PAV-0008",
@@ -1138,17 +1138,17 @@
     {
       "id": "TX-PAV-0012",
       "topic": "PAVEMENT_MARKINGS",
-      "difficulty": 1,
-      "text": "Are you legally required to stop at a solid white line?",
+      "difficulty": 2,
+      "text": "You are approaching an intersection and see a solid white line across your lane. Are you legally required to stop at this line?",
       "choices": [
-        "No, it only discourages lane changes",
-        "Yes, all solid white lines require stopping",
-        "Only during rush hour",
-        "Only if a police officer is present"
+        "Only if accompanied by a stop sign, red light, or other traffic control device",
+        "Yes — all solid white lines require you to stop",
+        "No — solid white lines are advisory only and never require a stop",
+        "Only during school hours"
       ],
       "correctIndex": 0,
-      "explanation": "Solid white lines discourage but do not legally prohibit lane changes. You should only cross them when necessary and safe to do so.",
-      "reference": "DL-7: Pavement Markings"
+      "explanation": "A solid white line across a lane is a stop line that shows where to stop when required by a traffic signal, stop sign, or other control device. The line itself does not create a stop requirement — the accompanying signal or sign does. Without such a device, the line merely suggests a safe stopping point.",
+      "reference": "MUTCD Section 3B.16; DL-7 Pavement Markings"
     },
     {
       "id": "TX-PAV-0013",
@@ -1243,17 +1243,17 @@
     {
       "id": "TX-PAV-0019",
       "topic": "PAVEMENT_MARKINGS",
-      "difficulty": 1,
-      "text": "Which color line separates traffic moving in opposite directions?",
+      "difficulty": 2,
+      "text": "You are driving on a two-lane road and notice that the center line is yellow. The line on the right edge of your lane is white. Why are different colors used?",
       "choices": [
-        "Yellow",
-        "White",
-        "Red",
-        "Blue"
+        "Yellow separates opposing traffic; white separates same-direction traffic or marks the road edge",
+        "Yellow means caution; white means the lane is safe to travel in",
+        "Yellow lines are older markings; white lines are newer",
+        "Yellow is used on rural roads; white is used on urban roads"
       ],
       "correctIndex": 0,
-      "explanation": "Yellow lines are always used to separate traffic flowing in opposite directions, providing a clear visual warning of oncoming traffic.",
-      "reference": "DL-7: Pavement Markings"
+      "explanation": "Yellow center lines always separate traffic moving in opposite directions, warning you that vehicles on the other side are coming toward you. White lines separate same-direction lanes or mark the road edge. This color system is standardized nationwide by the MUTCD so drivers can instantly understand lane configuration on any road.",
+      "reference": "MUTCD Section 3B.01; DL-7 Pavement Markings"
     },
     {
       "id": "TX-PAV-0020",
@@ -1367,17 +1367,17 @@
     {
       "id": "TX-PAV-0027",
       "topic": "PAVEMENT_MARKINGS",
-      "difficulty": 1,
-      "text": "What does a straight arrow painted on the pavement mean?",
+      "difficulty": 2,
+      "text": "You are in a lane with a straight arrow painted on the pavement as you approach an intersection. You want to turn right. What should you do?",
       "choices": [
-        "This lane must continue straight",
-        "Merge ahead",
-        "Speed up",
-        "Passing zone"
+        "Proceed straight — the arrow requires you to continue through the intersection",
+        "Turn right since the arrow only suggests a direction",
+        "Turn right but signal your intention",
+        "Stop and wait for the arrow to change"
       ],
       "correctIndex": 0,
-      "explanation": "A straight arrow indicates that vehicles in this lane must proceed straight through the intersection and are not permitted to turn.",
-      "reference": "DL-7: Pavement Markings",
+      "explanation": "A straight pavement arrow indicates a mandatory lane-use direction. Vehicles in a lane marked with a straight arrow must proceed straight through the intersection. To turn right, you must be in a lane marked with a right-turn or combination arrow. Changing lanes at the last moment to turn is unsafe and often illegal.",
+      "reference": "MUTCD Section 3B.20; DL-7 Pavement Markings",
       "image": {
         "type": "svg",
         "assetId": "PAVEMENT_ARROW_STRAIGHT"
@@ -1405,17 +1405,17 @@
     {
       "id": "TX-PAV-0029",
       "topic": "PAVEMENT_MARKINGS",
-      "difficulty": 1,
-      "text": "What do zebra-striped white markings on the pavement indicate?",
+      "difficulty": 2,
+      "text": "As you approach a mid-block area, you see bold white zebra-stripe markings painted across the road. No traffic signal is present. What must you do?",
       "choices": [
-        "A crosswalk for pedestrians",
-        "A parking zone",
-        "A no-passing zone",
-        "A speed bump ahead"
+        "Watch for pedestrians and yield to anyone within or about to enter the crosswalk",
+        "Proceed at normal speed since there is no signal requiring you to stop",
+        "Stop completely before the markings whether or not pedestrians are present",
+        "Treat the markings as a speed bump and slow down slightly"
       ],
       "correctIndex": 0,
-      "explanation": "Zebra-stripe markings designate pedestrian crosswalks. Drivers must yield to pedestrians within these marked crossing areas.",
-      "reference": "DL-7: Pavement Markings",
+      "explanation": "Zebra-stripe markings designate a pedestrian crosswalk. Even without a traffic signal, drivers must yield to pedestrians within or about to enter a marked crosswalk. Failing to yield can result in a citation and, more importantly, endanger pedestrians who have the right-of-way.",
+      "reference": "Texas Transportation Code §552.003; DL-7 Pavement Markings",
       "image": {
         "type": "svg",
         "assetId": "PAVEMENT_CROSSWALK_ZEBRA"
@@ -1647,17 +1647,17 @@
     {
       "id": "TX-PAV-0043",
       "topic": "PAVEMENT_MARKINGS",
-      "difficulty": 1,
-      "text": "What color are most pavement arrows and word markings?",
+      "difficulty": 2,
+      "text": "While driving, you see the word 'ONLY' painted in white on the pavement along with a right-turn arrow. Why is this marking white rather than yellow?",
       "choices": [
-        "White",
-        "Yellow",
-        "Red",
-        "Green"
+        "White is used for lane-use markings because they guide same-direction traffic",
+        "White indicates the marking is mandatory; yellow would make it advisory",
+        "White markings are used in urban areas; yellow markings in rural areas",
+        "White is easier to see at night than yellow"
       ],
       "correctIndex": 0,
-      "explanation": "Pavement arrows and word markings are typically white because they provide lane-use guidance for traffic moving in the same direction, consistent with white line usage.",
-      "reference": "DL-7: Pavement Markings"
+      "explanation": "Pavement arrows, word markings, and lane-use symbols are white because they direct traffic traveling in the same direction. The MUTCD reserves yellow for markings that separate opposing traffic flows. This consistent color coding helps drivers instantly understand whether they are dealing with same-direction or opposing-direction guidance.",
+      "reference": "MUTCD Section 3B.20; DL-7 Pavement Markings"
     },
     {
       "id": "TX-PAV-0044",
@@ -1707,17 +1707,17 @@
     {
       "id": "TX-PAV-0047",
       "topic": "PAVEMENT_MARKINGS",
-      "difficulty": 1,
-      "text": "What is the primary purpose of yellow pavement markings?",
+      "difficulty": 2,
+      "text": "A newly licensed driver asks you why the center line on their street is yellow while the lane lines on the highway are white. What is the correct explanation?",
       "choices": [
-        "To separate traffic moving in opposite directions",
-        "To indicate caution zones",
-        "To mark parking restrictions",
-        "To designate speed limits"
+        "Yellow markings separate traffic flowing in opposite directions; white separates same-direction lanes",
+        "Yellow means the road has a lower speed limit; white means higher speed",
+        "Yellow is used on older roads; white on roads built after 2000",
+        "There is no standard — cities choose their own colors"
       ],
       "correctIndex": 0,
-      "explanation": "Yellow markings separate traffic flows in opposite directions, warning drivers that vehicles on the other side of the line are approaching them head-on.",
-      "reference": "DL-7: Pavement Markings"
+      "explanation": "The color system is set by the MUTCD and used nationwide: yellow lines always separate opposing traffic flows (head-on risk), while white lines separate same-direction traffic or mark road edges. Understanding this distinction is critical — crossing a yellow line puts you in the path of oncoming vehicles.",
+      "reference": "MUTCD Section 3B.01; DL-7 Pavement Markings"
     },
     {
       "id": "TX-PAV-0048",
@@ -2110,17 +2110,17 @@
     {
       "id": "TX-ROW-0002",
       "topic": "RIGHT_OF_WAY",
-      "difficulty": 1,
-      "text": "At a 4-way stop, if you arrive first, when should you proceed?",
+      "difficulty": 2,
+      "text": "You arrive at a four-way stop at the same time as another vehicle to your right. Neither of you has a clear priority based on arrival time. Who should go first?",
       "choices": [
-        "After coming to a complete stop and when it is safe",
-        "Immediately without stopping",
-        "After waiting for all other vehicles",
-        "Only when another driver signals you to go"
+        "The driver on your right has the right-of-way",
+        "The driver on the larger road has the right-of-way",
+        "You should go first since you are on the left",
+        "Both drivers should proceed simultaneously with caution"
       ],
       "correctIndex": 0,
-      "explanation": "The first vehicle to arrive at a 4-way stop and come to a complete stop has the right-of-way and may proceed when safe. This maintains orderly traffic flow.",
-      "reference": "DL-7: Right-of-Way Rules"
+      "explanation": "When two vehicles arrive at a four-way stop at approximately the same time, the vehicle on the right has the right-of-way. This 'yield to the right' rule provides a simple, predictable tiebreaker that all drivers can follow consistently.",
+      "reference": "Texas Transportation Code §545.151; DL-7 Right-of-Way Rules"
     },
     {
       "id": "TX-ROW-0003",
@@ -2197,17 +2197,17 @@
     {
       "id": "TX-ROW-0007",
       "topic": "RIGHT_OF_WAY",
-      "difficulty": 1,
-      "text": "You arrive at an intersection with a stop sign. What must you do before proceeding?",
+      "difficulty": 2,
+      "text": "You arrive at an intersection controlled by a stop sign. After stopping, you see a vehicle approaching on the cross street with no stop sign. What should you do?",
       "choices": [
-        "Come to a complete stop and yield to traffic",
-        "Slow down and proceed if clear",
-        "Stop only if other vehicles are present",
-        "Honk and proceed slowly"
+        "Remain stopped and let the approaching vehicle pass before proceeding",
+        "Proceed quickly since you stopped first",
+        "Inch forward to signal your intent to go",
+        "Honk to alert the other driver that you were there first"
       ],
       "correctIndex": 0,
-      "explanation": "A stop sign requires a complete stop before the stop line or crosswalk. You must yield the right-of-way to vehicles and pedestrians before proceeding safely.",
-      "reference": "DL-7: Right-of-Way Rules",
+      "explanation": "A stop sign means you must stop AND yield the right-of-way to all vehicles and pedestrians on the cross street. The vehicle on the uncontrolled street has the right-of-way over you. You may proceed only after it is safe and no conflicting traffic is approaching.",
+      "reference": "Texas Transportation Code §545.151; DL-7 Right-of-Way Rules",
       "image": {
         "type": "svg",
         "assetId": "MUTCD_R1-1_STOP"
@@ -2261,17 +2261,17 @@
     {
       "id": "TX-ROW-0011",
       "topic": "RIGHT_OF_WAY",
-      "difficulty": 1,
-      "text": "You see a yield sign at an intersection. What does this mean?",
+      "difficulty": 2,
+      "text": "You approach a yield sign at a highway on-ramp. Traffic on the highway is flowing steadily. What is the correct action?",
       "choices": [
-        "Slow down and give right-of-way to other vehicles and pedestrians",
-        "Stop completely before proceeding",
-        "Proceed without slowing if the road is clear",
-        "Honk to warn other drivers"
+        "Slow down, check for a gap in highway traffic, and merge only when it is safe",
+        "Stop completely at the yield sign before entering the highway",
+        "Maintain your speed and merge — highway traffic must make room for you",
+        "Accelerate to highway speed and force your way into traffic"
       ],
       "correctIndex": 0,
-      "explanation": "A yield sign requires you to slow down and be ready to stop, giving the right-of-way to vehicles and pedestrians. You may proceed only when it is safe to do so.",
-      "reference": "DL-7: Right-of-Way Rules",
+      "explanation": "A yield sign requires you to slow down and be prepared to stop if necessary, giving the right-of-way to vehicles already on the highway. You do not have to stop if a safe gap exists, but you must not force your way into traffic. Adjust your speed to match a gap and merge smoothly.",
+      "reference": "Texas Transportation Code §545.153; DL-7 Right-of-Way Rules",
       "image": {
         "type": "svg",
         "assetId": "MUTCD_R1-2_YIELD"
@@ -2325,17 +2325,17 @@
     {
       "id": "TX-ROW-0015",
       "topic": "RIGHT_OF_WAY",
-      "difficulty": 1,
-      "text": "When making a right turn at a red light (where permitted), what must you do first?",
+      "difficulty": 2,
+      "text": "You're stopped at a red light and want to turn right. The intersection has no 'No Turn on Red' sign. A pedestrian is crossing in the crosswalk to your right. What must you do?",
       "choices": [
-        "Come to a complete stop and yield to all traffic and pedestrians",
-        "Slow down and proceed if clear",
-        "Honk to alert other drivers",
-        "Wait for the green light"
+        "Remain stopped until the pedestrian clears your path, then turn when safe",
+        "Turn right slowly behind the pedestrian since you already stopped",
+        "Honk to alert the pedestrian, then turn",
+        "Wait for the light to turn green before turning"
       ],
       "correctIndex": 0,
-      "explanation": "Before turning right on red, you must come to a complete stop and yield to all vehicles and pedestrians. Proceed only when safe and where right turns on red are permitted.",
-      "reference": "DL-7: Right-of-Way Rules"
+      "explanation": "Before turning right on red in Texas, you must come to a complete stop and yield to ALL pedestrians and vehicles. Even though right-on-red is permitted, the pedestrian in the crosswalk has the right-of-way. Wait until they have completely cleared your turning path before proceeding.",
+      "reference": "Texas Transportation Code §544.007(d); DL-7 Right-of-Way Rules"
     },
     {
       "id": "TX-ROW-0016",
@@ -2385,17 +2385,17 @@
     {
       "id": "TX-ROW-0019",
       "topic": "RIGHT_OF_WAY",
-      "difficulty": 1,
-      "text": "You are approaching an intersection where you want to turn right, and the light is green. What should you do?",
+      "difficulty": 2,
+      "text": "You have a green light and are turning right at an intersection. A jogger is in the crosswalk completing their crossing. What should you do?",
       "choices": [
-        "Slow down, check for pedestrians and traffic, then turn when safe",
-        "Turn at full speed since you have a green light",
-        "Stop completely before turning",
-        "Turn only if there are no pedestrians anywhere nearby"
+        "Yield to the jogger and turn only after they have cleared your path",
+        "Proceed with the turn since your green light gives you the right-of-way over pedestrians",
+        "Honk to alert the jogger and proceed with your turn",
+        "Speed up to turn before the jogger reaches your lane"
       ],
       "correctIndex": 0,
-      "explanation": "Even with a green light, you must yield to pedestrians in the crosswalk and oncoming traffic before turning. Always slow down and check before completing the turn.",
-      "reference": "DL-7: Right-of-Way Rules"
+      "explanation": "Even with a green light, drivers must yield to pedestrians already in the crosswalk. A green light permits you to proceed through the intersection but does not override a pedestrian's right-of-way. Always scan crosswalks before and during any turn.",
+      "reference": "Texas Transportation Code §552.003; DL-7 Right-of-Way Rules"
     },
     {
       "id": "TX-ROW-0020",
@@ -2520,17 +2520,17 @@
     {
       "id": "TX-ROW-0028",
       "topic": "RIGHT_OF_WAY",
-      "difficulty": 1,
-      "text": "What does a green traffic light mean for your right-of-way?",
+      "difficulty": 2,
+      "text": "The traffic light turns green. A delivery truck that entered the intersection on the previous yellow phase is still clearing the intersection. What should you do?",
       "choices": [
-        "You may proceed, but must yield to pedestrians and vehicles already in the intersection",
-        "You have absolute right-of-way and can proceed immediately",
-        "You must stop and then proceed",
-        "Only pedestrians may proceed"
+        "Wait for the truck to clear the intersection before proceeding",
+        "Proceed immediately since your light is green",
+        "Honk to hurry the truck through the intersection",
+        "Go around the truck using the oncoming lane"
       ],
       "correctIndex": 0,
-      "explanation": "A green light means you may proceed through the intersection, but you must still yield to pedestrians and any vehicles already lawfully in the intersection.",
-      "reference": "DL-7: Right-of-Way Rules"
+      "explanation": "A green light means you may proceed, but you must yield to any vehicles and pedestrians already lawfully in the intersection. The truck entered on yellow and has the right to finish clearing. Entering the intersection while it is still occupied creates a collision risk.",
+      "reference": "Texas Transportation Code §544.007; DL-7 Right-of-Way Rules"
     },
     {
       "id": "TX-ROW-0029",
@@ -2584,17 +2584,17 @@
     {
       "id": "TX-ROW-0032",
       "topic": "RIGHT_OF_WAY",
-      "difficulty": 1,
-      "text": "You see a pedestrian waiting to cross at an unmarked crosswalk at an intersection. What should you do?",
+      "difficulty": 2,
+      "text": "You are driving through a residential neighborhood and approach an intersection with no traffic signals or stop signs. A pedestrian steps off the curb at the corner, intending to cross. What must you do?",
       "choices": [
-        "Stop and allow the pedestrian to cross",
+        "Stop and yield to the pedestrian — crosswalks exist at intersections even without markings",
         "Proceed since there is no marked crosswalk",
-        "Slow down but continue through",
-        "Honk to indicate they should wait"
+        "Slow down but continue if the pedestrian can wait",
+        "Flash your headlights to signal the pedestrian to wait"
       ],
       "correctIndex": 0,
-      "explanation": "Pedestrians have the right-of-way at both marked and unmarked crosswalks at intersections. Drivers must yield to pedestrians crossing in these areas.",
-      "reference": "DL-7: Right-of-Way Rules"
+      "explanation": "Under Texas law, crosswalks exist at every intersection whether or not they are painted. Drivers must yield to pedestrians crossing within any crosswalk — marked or unmarked. A pedestrian stepping off the curb at an intersection corner is entering a legal crosswalk.",
+      "reference": "Texas Transportation Code §552.003; DL-7 Right-of-Way Rules"
     },
     {
       "id": "TX-ROW-0033",
@@ -2629,17 +2629,17 @@
     {
       "id": "TX-ROW-0035",
       "topic": "RIGHT_OF_WAY",
-      "difficulty": 1,
-      "text": "You approach a school zone during school hours and see children crossing. What should you do?",
+      "difficulty": 2,
+      "text": "You are driving through an active school zone at 20 mph. A group of children is crossing the road with a crossing guard holding a stop sign. What should you do?",
       "choices": [
-        "Stop and yield to all children crossing",
-        "Slow down but continue if safe",
-        "Honk to alert children to your presence",
-        "Proceed at normal speed if no crossing guard is present"
+        "Stop completely and wait until all children are safely across and the guard signals you to proceed",
+        "Slow to 10 mph and carefully drive around the group",
+        "Stop only if the children are directly in your lane",
+        "Proceed at 20 mph since that is the posted school zone speed"
       ],
       "correctIndex": 0,
-      "explanation": "Children crossing in school zones always have the right-of-way. Drivers must stop and yield to ensure their safety, especially during school hours.",
-      "reference": "DL-7: Right-of-Way Rules"
+      "explanation": "When a crossing guard displays a stop sign, all traffic must stop. Children in school zones have absolute right-of-way. Wait until every child has safely reached the sidewalk and the crossing guard signals that it is safe to proceed. Fines are doubled in school zones.",
+      "reference": "Texas Transportation Code §545.152; DL-7 Right-of-Way Rules"
     },
     {
       "id": "TX-ROW-0036",
@@ -2719,17 +2719,17 @@
     {
       "id": "TX-ROW-0041",
       "topic": "RIGHT_OF_WAY",
-      "difficulty": 1,
-      "text": "When can pedestrians cross at a red light?",
+      "difficulty": 2,
+      "text": "You are at an intersection with a traffic light. The vehicle signal is red, but the pedestrian signal shows a white WALK symbol. As a pedestrian, may you cross?",
       "choices": [
-        "Never, unless the pedestrian signal shows 'Walk'",
-        "Anytime if no vehicles are coming",
-        "During the red light phase for vehicles",
-        "Only with a crossing guard present"
+        "Yes — the pedestrian WALK signal authorizes you to begin crossing in that direction",
+        "No — the red vehicle signal applies to both drivers and pedestrians",
+        "Only if a crossing guard is present",
+        "Only if you can make it across before the signal changes"
       ],
       "correctIndex": 0,
-      "explanation": "Pedestrians must obey pedestrian signals just as drivers obey traffic signals. Pedestrians should only cross when their signal shows 'Walk' or the walking person symbol.",
-      "reference": "DL-7: Right-of-Way Rules"
+      "explanation": "Pedestrians follow the pedestrian signal, not the vehicle signal. When the pedestrian signal shows WALK (or the walking person symbol), pedestrians may begin crossing in the indicated direction, even if the vehicle signal for the same direction is red. The signals are timed to protect pedestrians from conflicting vehicle movements.",
+      "reference": "Texas Transportation Code §552.002; DL-7 Right-of-Way Rules"
     },
     {
       "id": "TX-ROW-0042",
@@ -2779,17 +2779,17 @@
     {
       "id": "TX-ROW-0045",
       "topic": "RIGHT_OF_WAY",
-      "difficulty": 1,
-      "text": "When passing a cyclist on the road, how much space should you give?",
+      "difficulty": 2,
+      "text": "You are driving on a two-lane road and come upon a cyclist riding in the right portion of your lane. You want to pass. How much clearance does Texas law require?",
       "choices": [
-        "At least 3 feet of clearance",
-        "At least 1 foot of clearance",
-        "As much space as possible, but no specific distance",
-        "At least 6 feet of clearance"
+        "At least 3 feet between your vehicle and the cyclist",
+        "At least 1 foot as long as you slow down",
+        "No specific distance — just pass when you feel it is safe",
+        "At least 6 feet, which usually requires crossing the center line"
       ],
       "correctIndex": 0,
-      "explanation": "Texas law requires drivers to give at least 3 feet of clearance when passing a cyclist. If you cannot safely pass with this distance, slow down and wait for a safe opportunity.",
-      "reference": "DL-7: Right-of-Way Rules"
+      "explanation": "Texas law requires motorists to maintain at least 3 feet of clearance when passing a cyclist. If the lane is too narrow to provide 3 feet of space, you must wait for a safe opportunity to move partially into the adjacent lane. Cyclists are legally entitled to use the roadway.",
+      "reference": "Texas Transportation Code §545.060; DL-7 Right-of-Way Rules"
     },
     {
       "id": "TX-ROW-0046",
@@ -3981,17 +3981,17 @@
     {
       "id": "TX-SAF-0003",
       "topic": "SAFE_DRIVING",
-      "difficulty": 1,
-      "text": "What is the minimum recommended following distance in good conditions?",
+      "difficulty": 2,
+      "text": "You are following a pickup truck on a dry highway at 60 mph. What is the minimum safe following distance you should maintain?",
       "choices": [
-        "3 seconds",
-        "1 second",
-        "5 seconds",
-        "2 car lengths"
+        "At least 3 seconds behind the truck",
+        "At least 2 car lengths behind the truck",
+        "At least 50 feet behind the truck",
+        "Close enough to read the truck's license plate"
       ],
       "correctIndex": 0,
-      "explanation": "The 3-second rule provides adequate time to react to sudden stops or hazards. This time-based measurement works at any speed and adjusts automatically as your speed changes.",
-      "reference": "DL-7: Safe Driving Practices",
+      "explanation": "The 3-second rule is the standard for good conditions. Pick a fixed object ahead; when the vehicle in front passes it, count 'one-thousand-one, one-thousand-two, one-thousand-three.' If you reach the object before finishing, you are too close. Time-based following distance works at any speed because the gap automatically increases as you go faster.",
+      "reference": "DL-7 Safe Driving Practices",
       "image": {
         "type": "svg",
         "assetId": "SPEED_FOLLOWING_DISTANCE_3SEC"
@@ -4064,17 +4064,17 @@
     {
       "id": "TX-SAF-0008",
       "topic": "SAFE_DRIVING",
-      "difficulty": 1,
-      "text": "What is the safest way to handle a cell phone call while driving?",
+      "difficulty": 2,
+      "text": "Your phone rings while you are driving on a highway. You are not using a hands-free device. What is the safest action?",
       "choices": [
-        "Pull over safely before answering",
-        "Use speakerphone while driving",
-        "Answer only at red lights",
-        "Keep calls under one minute"
+        "Let the call go to voicemail and return it after you've stopped safely",
+        "Answer using speakerphone while keeping your eyes on the road",
+        "Answer quickly and keep the conversation under one minute",
+        "Pull onto the highway shoulder immediately to answer"
       ],
       "correctIndex": 0,
-      "explanation": "Even hands-free phone use creates mental distraction. The only truly safe option is to pull over in a safe location before making or answering calls.",
-      "reference": "DL-7: Safe Driving Practices"
+      "explanation": "Any phone interaction while driving creates cognitive distraction that diverts attention from the road. The safest option is to let the call go to voicemail. If the call is urgent, exit the highway and pull into a safe location such as a parking lot before returning it. Highway shoulders are for emergencies, not phone calls.",
+      "reference": "Texas Transportation Code §545.4251; DL-7 Safe Driving Practices"
     },
     {
       "id": "TX-SAF-0009",
@@ -4154,17 +4154,17 @@
     {
       "id": "TX-SAF-0014",
       "topic": "SAFE_DRIVING",
-      "difficulty": 1,
-      "text": "When should you yield even if you have the right-of-way?",
+      "difficulty": 2,
+      "text": "You have a green light and begin to enter an intersection. Another driver runs their red light and is heading toward you. What should you do?",
       "choices": [
-        "When necessary to avoid a collision",
-        "Never, always take your right-of-way",
-        "Only at stop signs",
-        "Only to emergency vehicles"
+        "Yield and take evasive action to avoid the collision — safety overrides right-of-way",
+        "Continue through since you legally have the right-of-way",
+        "Stop in the intersection and honk your horn",
+        "Flash your headlights to assert your right-of-way"
       ],
       "correctIndex": 0,
-      "explanation": "Safety always comes before right-of-way rules. If another driver fails to yield or creates a dangerous situation, it's better to yield than to insist on your legal right and risk a crash.",
-      "reference": "DL-7: Safe Driving Practices"
+      "explanation": "Even when you have the legal right-of-way, you are expected to take reasonable action to avoid a collision. Texas law states that right-of-way rules do not relieve a driver from the duty to exercise due care. Insisting on your right-of-way when a crash is imminent is both dangerous and potentially negligent.",
+      "reference": "Texas Transportation Code §545.151(d); DL-7 Safe Driving Practices"
     },
     {
       "id": "TX-SAF-0015",
@@ -4334,17 +4334,17 @@
     {
       "id": "TX-SAF-0026",
       "topic": "SAFE_DRIVING",
-      "difficulty": 1,
-      "text": "What is the legal blood alcohol concentration (BAC) limit for drivers 21 and over in Texas?",
+      "difficulty": 2,
+      "text": "After a dinner party, a 25-year-old driver feels fine but has consumed several drinks over several hours. A breathalyzer shows 0.07% BAC. Can they legally drive in Texas?",
       "choices": [
-        "0.08%",
-        "0.10%",
-        "0.05%",
-        "0.02%"
+        "Technically yes, since 0.07% is below the 0.08% legal limit, but impairment has already begun",
+        "No — the legal limit for adults in Texas is 0.05%",
+        "Yes — they are completely safe to drive at 0.07%",
+        "Only if they wait one more hour for their BAC to drop further"
       ],
       "correctIndex": 0,
-      "explanation": "In Texas, it is illegal to drive with a BAC of 0.08% or higher for drivers 21 and over. Driving while impaired is dangerous and carries serious penalties including fines, license suspension, and possible jail time.",
-      "reference": "DL-7: Safe Driving Practices"
+      "explanation": "The legal BAC limit for drivers 21 and over in Texas is 0.08%. At 0.07%, a driver is technically below the per se limit, but alcohol impairs judgment and reaction time starting with the first drink. A driver can still be charged with DWI at any BAC if their driving is visibly impaired. The safest choice is always a designated driver or rideshare.",
+      "reference": "Texas Penal Code §49.01; DL-7 Safe Driving Practices"
     },
     {
       "id": "TX-SAF-0027",
@@ -4364,17 +4364,17 @@
     {
       "id": "TX-SAF-0028",
       "topic": "SAFE_DRIVING",
-      "difficulty": 1,
-      "text": "When does alcohol impairment begin?",
+      "difficulty": 2,
+      "text": "A friend tells you they feel perfectly fine after one beer and are going to drive. When does alcohol actually begin to impair driving ability?",
       "choices": [
-        "With the first drink",
-        "At 0.08% BAC",
-        "After three drinks",
-        "Only when you feel drunk"
+        "With the very first drink, even before any noticeable effects",
+        "Only after reaching the 0.08% BAC legal limit",
+        "After the third drink for most adults",
+        "Only when the person feels dizzy or uncoordinated"
       ],
       "correctIndex": 0,
-      "explanation": "Alcohol impairs judgment, reaction time, and coordination starting with the very first drink, even before you feel its effects. The legal limit recognizes significant impairment, but impairment begins much earlier.",
-      "reference": "DL-7: Safe Driving Practices"
+      "explanation": "Alcohol begins impairing judgment, reaction time, and coordination with the very first drink — long before a person 'feels drunk.' Studies show measurable impairment at BAC levels as low as 0.02%. The 0.08% legal limit marks significant impairment, but any amount of alcohol reduces driving ability. Feeling fine is not a reliable indicator.",
+      "reference": "DL-7 Safe Driving Practices"
     },
     {
       "id": "TX-SAF-0029",
@@ -4409,17 +4409,17 @@
     {
       "id": "TX-SAF-0031",
       "topic": "SAFE_DRIVING",
-      "difficulty": 1,
-      "text": "What is the safest choice if you've been drinking?",
+      "difficulty": 2,
+      "text": "After a night out, you realize you've had too much to drink. Your home is only 2 miles away. What is the safest decision?",
       "choices": [
-        "Use a designated driver, taxi, or rideshare service",
-        "Drive slowly and carefully",
-        "Wait an hour before driving",
-        "Drink coffee to sober up"
+        "Call a rideshare, taxi, or designated driver — do not drive any distance",
+        "Drive slowly using back roads to avoid traffic",
+        "Wait 30 minutes, drink some water, then drive home",
+        "Drive home since the distance is very short"
       ],
       "correctIndex": 0,
-      "explanation": "The only safe choice after drinking is not to drive. Designated drivers, taxis, rideshares, or staying put eliminate the risk of impaired driving crashes.",
-      "reference": "DL-7: Safe Driving Practices"
+      "explanation": "There is no safe distance to drive while impaired. A large percentage of alcohol-related crashes occur within a few miles of the starting point. Coffee, water, and fresh air do not reduce BAC — only time does. The safest choice is always a sober driver, taxi, or rideshare service, regardless of how close your destination is.",
+      "reference": "DL-7 Safe Driving Practices"
     },
     {
       "id": "TX-SAF-0032",
@@ -4499,17 +4499,17 @@
     {
       "id": "TX-SAF-0037",
       "topic": "SAFE_DRIVING",
-      "difficulty": 1,
-      "text": "What is the only cure for drowsiness while driving?",
+      "difficulty": 2,
+      "text": "During a long drive, you find yourself yawning repeatedly, drifting between lanes, and having trouble keeping your eyes open. You roll down the window and turn up the radio. Are you now safe to continue driving?",
       "choices": [
-        "Sleep",
-        "Coffee",
-        "Fresh air",
-        "Loud music"
+        "No — the only effective remedy for drowsiness is actual sleep",
+        "Yes — fresh air and music are proven to restore alertness",
+        "Yes — as long as you also drink coffee within 15 minutes",
+        "Yes — but only if you take a 5-minute stretching break first"
       ],
       "correctIndex": 0,
-      "explanation": "Only actual sleep restores alertness. Coffee, fresh air, and music may provide brief alertness but don't address the underlying fatigue that impairs your driving ability.",
-      "reference": "DL-7: Safe Driving Practices"
+      "explanation": "Fresh air, loud music, and coffee may provide a brief illusion of alertness but do not address the underlying sleep deficit. Drowsy driving impairs reaction time and judgment similarly to alcohol. The only effective countermeasure is pulling over to a safe location and sleeping for at least 15–20 minutes.",
+      "reference": "DL-7 Safe Driving Practices"
     },
     {
       "id": "TX-SAF-0038",
@@ -4634,17 +4634,17 @@
     {
       "id": "TX-SAF-0046",
       "topic": "SAFE_DRIVING",
-      "difficulty": 1,
-      "text": "What should you do when it starts raining?",
+      "difficulty": 2,
+      "text": "Rain begins falling heavily as you drive on the highway. The road surface quickly becomes wet. What combination of actions should you take?",
       "choices": [
-        "Reduce speed and increase following distance",
-        "Maintain the same speed",
-        "Speed up to get through the rain quickly",
-        "Use parking lights only"
+        "Reduce speed, increase following distance, and turn on headlights",
+        "Maintain speed but turn on windshield wipers",
+        "Speed up to get through the rain faster and reduce exposure",
+        "Move to the left lane where water accumulates less"
       ],
       "correctIndex": 0,
-      "explanation": "Rain reduces traction and visibility, requiring slower speeds and more following distance. These adjustments give you time to react and stop safely on slippery roads.",
-      "reference": "DL-7: Safe Driving Practices"
+      "explanation": "Rain reduces both traction and visibility. Reducing speed lowers your hydroplaning risk. Increasing following distance gives you more stopping room on slippery pavement. Headlights make you visible to other drivers. The first few minutes of rain are especially dangerous because oil on the road surface mixes with water, creating the slickest conditions.",
+      "reference": "DL-7 Safe Driving Practices"
     },
     {
       "id": "TX-SAF-0047",
@@ -4724,17 +4724,17 @@
     {
       "id": "TX-SAF-0052",
       "topic": "SAFE_DRIVING",
-      "difficulty": 1,
-      "text": "What should you do when driving in fog?",
+      "difficulty": 2,
+      "text": "You encounter dense fog while driving. Visibility drops to about 200 feet. What is the correct combination of actions?",
       "choices": [
-        "Slow down, use low beams, and increase following distance",
-        "Use high beams and maintain speed",
-        "Follow the taillights of the car ahead closely",
-        "Use parking lights only"
+        "Slow down, use low-beam headlights, and increase following distance significantly",
+        "Turn on high-beam headlights and maintain your speed",
+        "Follow the taillights of the car ahead as closely as possible for guidance",
+        "Pull over and wait only if visibility drops below 50 feet"
       ],
       "correctIndex": 0,
-      "explanation": "Fog requires reduced speed for limited visibility, low beams to avoid glare, and increased following distance to allow for reduced visibility and reaction time.",
-      "reference": "DL-7: Safe Driving Practices"
+      "explanation": "In fog, use low beams — high beams reflect off water droplets and actually reduce your visibility. Slow down so you can stop within the distance you can see. Increase following distance because the car ahead may brake suddenly. Following taillights too closely creates a chain-reaction crash risk if the lead vehicle stops.",
+      "reference": "DL-7 Safe Driving Practices"
     },
     {
       "id": "TX-SAF-0053",
@@ -4934,17 +4934,17 @@
     {
       "id": "TX-SAF-0066",
       "topic": "SAFE_DRIVING",
-      "difficulty": 1,
-      "text": "What is the minimum tire tread depth required in Texas?",
+      "difficulty": 2,
+      "text": "You check your tires and the tread depth measures 1/32 of an inch. Is this tire safe and legal to drive on in Texas?",
       "choices": [
-        "2/32 of an inch",
-        "1/32 of an inch",
-        "4/32 of an inch",
-        "6/32 of an inch"
+        "No — Texas requires a minimum tread depth of 2/32 of an inch",
+        "Yes — 1/32 of an inch meets the Texas minimum standard",
+        "It depends on whether the tires are on the front or rear axle",
+        "Yes, as long as there are no visible cords or wires"
       ],
       "correctIndex": 0,
-      "explanation": "Texas requires minimum 2/32 inch tread depth. Tread channels water away from the tire contact patch, and worn tread greatly increases hydroplaning risk and reduces traction.",
-      "reference": "DL-7: Safe Driving Practices",
+      "explanation": "Texas requires a minimum tire tread depth of 2/32 of an inch (approximately 1.6 mm). At 1/32 inch, your tires are below the legal limit and dangerously worn. Tread channels water away from the tire's contact patch — without adequate tread, hydroplaning risk increases dramatically, and braking distance on wet roads can double or triple.",
+      "reference": "Texas Transportation Code §547.101; DL-7 Safe Driving Practices",
       "image": {
         "type": "svg",
         "assetId": "SAFE_TIRE_TREAD_DEPTH"
@@ -5317,17 +5317,17 @@
     {
       "id": "TX-SIG-0001",
       "topic": "SIGNS",
-      "difficulty": 1,
-      "text": "What shape is a STOP sign?",
+      "difficulty": 2,
+      "text": "You are teaching a new driver and they ask why STOP signs have a unique shape. What is the reason for the octagonal design?",
       "choices": [
-        "Octagon (8 sides)",
-        "Circle",
-        "Triangle",
-        "Rectangle"
+        "So drivers can recognize it instantly — even from behind or when covered in snow",
+        "The eight sides represent the eight seconds you should wait before proceeding",
+        "It is the only shape that can be seen from all angles equally",
+        "Federal law requires red signs to have at least eight sides"
       ],
       "correctIndex": 0,
-      "explanation": "STOP signs are the only octagonal (8-sided) traffic signs, making them instantly recognizable even when covered in snow or viewed from behind.",
-      "reference": "DL-7: Traffic Signs",
+      "explanation": "The STOP sign's unique octagonal shape is designed for instant recognition under any condition — at night, from behind, or when obscured by snow or dirt. No other traffic sign uses this shape, making it identifiable by silhouette alone. This design principle has been part of the MUTCD since 1954.",
+      "reference": "MUTCD Section 2B.03; DL-7 Traffic Signs",
       "image": {
         "type": "svg",
         "assetId": "MUTCD_R1-1_STOP"
@@ -5336,17 +5336,17 @@
     {
       "id": "TX-SIG-0002",
       "topic": "SIGNS",
-      "difficulty": 1,
-      "text": "What does a YIELD sign indicate?",
+      "difficulty": 2,
+      "text": "You approach an intersection with a yield sign. There is a steady stream of cross traffic. What is required of you?",
       "choices": [
-        "Slow down and give right-of-way to other traffic",
-        "Come to a complete stop",
-        "Merge with traffic at any speed",
-        "Pedestrians must yield to vehicles"
+        "Slow down and stop if necessary — you must wait for a safe gap before entering",
+        "Come to a complete stop regardless of traffic conditions",
+        "Merge into traffic at your current speed — cross traffic must adjust",
+        "Proceed without slowing if the road ahead appears clear"
       ],
       "correctIndex": 0,
-      "explanation": "A YIELD sign requires drivers to slow down and prepare to stop if necessary, giving the right-of-way to vehicles and pedestrians already in the intersection or roadway.",
-      "reference": "DL-7: Traffic Signs",
+      "explanation": "A yield sign requires you to slow down and give right-of-way to all vehicles and pedestrians on the intersecting road. If traffic is continuous, you must stop and wait for a safe gap. Unlike a stop sign, you are not required to stop if there is no conflicting traffic, but you must be prepared to do so.",
+      "reference": "MUTCD Section 2B.08; DL-7 Traffic Signs",
       "image": {
         "type": "svg",
         "assetId": "MUTCD_R1-2_YIELD"
@@ -5374,17 +5374,17 @@
     {
       "id": "TX-SIG-0004",
       "topic": "SIGNS",
-      "difficulty": 1,
-      "text": "What does this speed limit sign indicate?",
+      "difficulty": 2,
+      "text": "You are driving on a highway and see a white rectangular sign reading 'SPEED LIMIT 65.' Heavy rain begins falling. Must you still drive at 65 mph?",
       "choices": [
-        "The maximum legal speed is 65 mph",
-        "The minimum speed is 65 mph",
-        "The recommended speed is 65 mph",
-        "65 mph only applies to trucks"
+        "No — the sign shows the maximum speed for ideal conditions; you must reduce speed for safety",
+        "Yes — the posted speed is the legal requirement in all conditions",
+        "Only if visibility drops below 100 feet",
+        "No — the speed limit automatically drops by 10 mph in rain"
       ],
       "correctIndex": 0,
-      "explanation": "Speed limit signs display the maximum legal speed allowed on that road under ideal conditions. Drivers must not exceed this speed.",
-      "reference": "DL-7: Traffic Signs",
+      "explanation": "Speed limit signs show the maximum legal speed under ideal conditions. Texas law requires drivers to reduce speed when conditions such as rain, fog, ice, or heavy traffic make the posted limit unsafe. Driving at the posted speed in poor conditions can constitute reckless driving even though you are not exceeding the limit.",
+      "reference": "Texas Transportation Code §545.351; DL-7 Traffic Signs",
       "image": {
         "type": "svg",
         "assetId": "MUTCD_R2-1_SPEED_LIMIT_65"
@@ -5431,17 +5431,17 @@
     {
       "id": "TX-SIG-0007",
       "topic": "SIGNS",
-      "difficulty": 1,
-      "text": "What does a NO LEFT TURN sign prohibit?",
+      "difficulty": 2,
+      "text": "You approach an intersection and see a sign with a left-turn arrow crossed out by a red circle and slash. You need to reach a business on the left side of the cross street. What should you do?",
       "choices": [
-        "Making a left turn at that location",
-        "Making a U-turn only",
-        "Making any turn",
-        "Left lane usage"
+        "Proceed past the intersection and find an alternate route — left turns are prohibited here",
+        "Turn left carefully since the sign is only advisory",
+        "Make a U-turn past the intersection and approach from the other direction",
+        "Turn left only if no oncoming traffic is present"
       ],
       "correctIndex": 0,
-      "explanation": "NO LEFT TURN signs specifically prohibit drivers from making left turns at that intersection or location, though other maneuvers may be permitted.",
-      "reference": "DL-7: Traffic Signs",
+      "explanation": "A No Left Turn sign (MUTCD R3-1) is a regulatory sign that legally prohibits left turns at that location. Violating it can result in a traffic citation. The sign is typically placed where left turns create sight-distance problems or dangerous conflicts with oncoming traffic. Find an alternative route such as turning right and circling the block.",
+      "reference": "MUTCD Section 2B.18; DL-7 Traffic Signs",
       "image": {
         "type": "svg",
         "assetId": "MUTCD_R3-1_NO_LEFT_TURN"
@@ -5469,17 +5469,17 @@
     {
       "id": "TX-SIG-0009",
       "topic": "SIGNS",
-      "difficulty": 1,
-      "text": "What does a NO U-TURN sign indicate?",
+      "difficulty": 2,
+      "text": "You are driving on a divided highway and see a No U-Turn sign at a median opening. You just passed your destination. What should you do?",
       "choices": [
-        "U-turns are prohibited at this location",
-        "All turns are prohibited",
-        "U-turns allowed only on green",
-        "Three-point turns are required"
+        "Continue to the next legal turning point — U-turns are prohibited at this location",
+        "Make a U-turn if no traffic is coming since the sign is advisory",
+        "Make a three-point turn instead, since only U-turns are prohibited",
+        "Make the U-turn but yield to oncoming traffic"
       ],
       "correctIndex": 0,
-      "explanation": "NO U-TURN signs prohibit drivers from making 180-degree turns at that location, often placed where U-turns would be dangerous or impede traffic flow.",
-      "reference": "DL-7: Traffic Signs",
+      "explanation": "No U-Turn signs are regulatory and legally binding. They are placed where U-turns are particularly dangerous — often at median openings with limited sight distance. Continue to the next legal turning point, intersection, or driveway where you can safely reverse direction. A three-point turn at a median opening would be equally dangerous.",
+      "reference": "MUTCD Section 2B.19; DL-7 Traffic Signs",
       "image": {
         "type": "svg",
         "assetId": "MUTCD_R3-3_NO_U_TURN"
@@ -5507,17 +5507,17 @@
     {
       "id": "TX-SIG-0011",
       "topic": "SIGNS",
-      "difficulty": 1,
-      "text": "When you see a ONE WAY sign, you must:",
+      "difficulty": 2,
+      "text": "You turn onto a street and immediately notice a One Way sign with an arrow pointing to the right. You need to go left. What must you do?",
       "choices": [
-        "Travel only in the direction indicated",
-        "Yield to oncoming traffic",
-        "Use only one lane",
-        "Drive at reduced speed"
+        "Do not go left — you must travel only in the direction the arrow indicates",
+        "You may go left if you stay in the leftmost lane",
+        "You may go left only if no other vehicles are on the street",
+        "The sign applies only to commercial vehicles"
       ],
       "correctIndex": 0,
-      "explanation": "ONE WAY signs indicate that all traffic must travel in the direction shown by the arrow. Traveling against the arrow is illegal and extremely dangerous.",
-      "reference": "DL-7: Traffic Signs",
+      "explanation": "One Way signs indicate that all traffic on that street must travel in the direction of the arrow. Driving against a One Way sign means traveling into the path of oncoming traffic, which is extremely dangerous and illegal. If you need to go in the opposite direction, you must find an alternate route using adjacent streets.",
+      "reference": "MUTCD Section 2B.40; DL-7 Traffic Signs",
       "image": {
         "type": "svg",
         "assetId": "MUTCD_R10-6_ONE_WAY"
@@ -5708,17 +5708,17 @@
     {
       "id": "TX-SIG-0022",
       "topic": "SIGNS",
-      "difficulty": 1,
-      "text": "What is the typical speed limit in school zones when children are present?",
+      "difficulty": 2,
+      "text": "You see a school speed limit sign showing 20 mph with flashing beacons. It is 3:30 PM on a Tuesday. The beacons are not flashing. Must you drive at 20 mph?",
       "choices": [
-        "20 mph",
-        "30 mph",
-        "15 mph",
-        "25 mph"
+        "Not necessarily — the 20 mph limit applies when the beacons are flashing or during posted times",
+        "Yes — school zone speed limits apply 24 hours a day",
+        "No — school speed limits only apply before 8 AM",
+        "Only if children are physically visible on the sidewalks"
       ],
       "correctIndex": 0,
-      "explanation": "School zone speed limits are typically 20 mph in Texas when children are present or during posted times, providing extra safety near schools.",
-      "reference": "DL-7: Traffic Signs",
+      "explanation": "School zone speed limits in Texas apply when the beacons are flashing or during times posted on the sign. If the beacons are off and the current time is outside posted hours, the regular speed limit applies. However, always watch for children — you may be cited for unsafe speed near a school regardless of the posted limit.",
+      "reference": "Texas Transportation Code §545.3561; DL-7 Traffic Signs",
       "image": {
         "type": "svg",
         "assetId": "MUTCD_S4-3_SCHOOL_SPEED_LIMIT_20"
@@ -5870,17 +5870,17 @@
     {
       "id": "TX-SIG-0032",
       "topic": "SIGNS",
-      "difficulty": 1,
-      "text": "What does a diamond-shaped sign typically indicate?",
+      "difficulty": 2,
+      "text": "While driving on a rural road, you see a yellow diamond-shaped sign with a curve symbol. What type of sign is this, and what should you do?",
       "choices": [
-        "A warning of road conditions ahead",
-        "A regulatory restriction",
-        "A guide to services",
-        "A school zone"
+        "It is a warning sign — reduce speed because a curve or hazard is ahead",
+        "It is a regulatory sign — you must follow the direction shown",
+        "It is a guide sign — it shows the direction to a nearby town",
+        "It is a construction sign — slow to the work zone speed limit"
       ],
       "correctIndex": 0,
-      "explanation": "Diamond-shaped signs are used for warning signs that alert drivers to upcoming road conditions, hazards, or changes in traffic patterns.",
-      "reference": "DL-7: Traffic Signs"
+      "explanation": "Diamond-shaped yellow signs are warning signs that alert drivers to upcoming road conditions, curves, or hazards. They are advisory, not regulatory — meaning they do not set a legal speed — but ignoring them is dangerous. A curve warning often includes an advisory speed plaque below it suggesting a safe speed for the curve.",
+      "reference": "MUTCD Section 2C.02; DL-7 Traffic Signs"
     },
     {
       "id": "TX-SIG-0033",
@@ -6056,17 +6056,17 @@
     {
       "id": "TX-SIG-0042",
       "topic": "SIGNS",
-      "difficulty": 1,
-      "text": "What does a PEDESTRIAN CROSSING warning sign mean?",
+      "difficulty": 2,
+      "text": "You are driving at 40 mph and see a yellow diamond sign showing a pedestrian symbol ahead. There is no crosswalk or traffic signal visible yet. What should you do?",
       "choices": [
-        "Watch for pedestrians crossing the road",
-        "Pedestrian-only zone ahead",
-        "Crosswalk at intersection only",
-        "Pedestrians must use signal"
+        "Slow down and be alert — pedestrians frequently cross at this location",
+        "Maintain speed since there is no crosswalk or signal",
+        "Stop and look both ways before continuing",
+        "Change lanes to the lane farthest from the sign"
       ],
       "correctIndex": 0,
-      "explanation": "PEDESTRIAN CROSSING signs warn drivers that pedestrians frequently cross at that location, requiring increased vigilance and readiness to yield.",
-      "reference": "DL-7: Traffic Signs",
+      "explanation": "A Pedestrian Crossing warning sign alerts you that pedestrians regularly cross the road ahead — often at a mid-block crosswalk you may not yet see. Reduce speed and watch for pedestrians stepping into the roadway. The crosswalk markings may be ahead of you around a curve or over a hill.",
+      "reference": "MUTCD Section 2C.50; DL-7 Traffic Signs",
       "image": {
         "type": "svg",
         "assetId": "MUTCD_W11-1_PEDESTRIAN_CROSSING"
@@ -6132,17 +6132,17 @@
     {
       "id": "TX-SIG-0046",
       "topic": "SIGNS",
-      "difficulty": 1,
-      "text": "What does a SCHOOL CROSSING warning sign indicate?",
+      "difficulty": 2,
+      "text": "As you drive past houses near an elementary school, you see a yellow-green pentagon-shaped sign showing two children. What does this sign warn you about?",
       "choices": [
-        "Children may be crossing the road near a school",
-        "School zone speed limit applies",
-        "School buses stop ahead",
-        "School parking only"
+        "You are near a school — children may be crossing the road",
+        "A playground is ahead — slow to 15 mph",
+        "School buses stop frequently in this area",
+        "A school zone speed camera is active ahead"
       ],
       "correctIndex": 0,
-      "explanation": "SCHOOL CROSSING signs warn drivers that children cross the road at that location, typically near schools, requiring extra caution and reduced speed.",
-      "reference": "DL-7: Traffic Signs",
+      "explanation": "The pentagon-shaped school sign (MUTCD S1-1) with the image of two children warns that a school area is ahead and children may be crossing the road. The yellow-green fluorescent color is designed for maximum daytime visibility. Be especially alert during school arrival and dismissal times, and watch for children who may dart into the street unexpectedly.",
+      "reference": "MUTCD Section 7B.07; DL-7 Traffic Signs",
       "image": {
         "type": "svg",
         "assetId": "MUTCD_S1-1_SCHOOL_CROSSING"
@@ -7351,17 +7351,17 @@
     {
       "id": "TX-SPC-0003",
       "topic": "SPECIAL_SITUATIONS",
-      "difficulty": 1,
-      "text": "What is the minimum distance you must stop from a school bus with flashing red lights?",
+      "difficulty": 2,
+      "text": "You see a school bus ahead stopped with its red lights flashing and stop arm extended. You are on the same undivided two-lane road. How far back must you stop?",
       "choices": [
-        "20 feet",
-        "10 feet",
-        "15 feet",
-        "25 feet"
+        "At least 20 feet from the bus",
+        "At least 10 feet from the bus",
+        "Directly behind the bus is sufficient",
+        "At least 50 feet from the bus"
       ],
       "correctIndex": 0,
-      "explanation": "Texas law requires drivers to stop at least 20 feet away from a stopped school bus with flashing red lights. This distance provides a safety buffer for children boarding or exiting the bus.",
-      "reference": "DL-7: Special Driving Situations"
+      "explanation": "Texas law requires all vehicles on an undivided road to stop at least 20 feet from a school bus displaying flashing red lights. This 20-foot buffer gives children a safe zone to cross the road and protects them from vehicles that might not see them behind the bus.",
+      "reference": "Texas Transportation Code §545.066; DL-7 Special Driving Situations"
     },
     {
       "id": "TX-SPC-0004",
@@ -7434,17 +7434,17 @@
     {
       "id": "TX-SPC-0008",
       "topic": "SPECIAL_SITUATIONS",
-      "difficulty": 1,
-      "text": "Can you pass a school bus from either direction when its red lights are flashing?",
+      "difficulty": 2,
+      "text": "You are driving on a two-lane undivided road. A school bus coming toward you activates its flashing red lights. Must you stop?",
       "choices": [
-        "No, passing is prohibited from both directions on undivided roads",
-        "Yes, but only from the rear",
-        "Yes, if you slow to 15 mph",
-        "Yes, if no children are visible"
+        "Yes — on an undivided road, traffic from both directions must stop for a school bus with red lights",
+        "No — only vehicles behind the bus must stop",
+        "Only if children are visibly crossing the road",
+        "Only if you are within 50 feet of the bus"
       ],
       "correctIndex": 0,
-      "explanation": "It is illegal to pass a school bus from any direction when its red lights are flashing on an undivided roadway. All traffic must stop until the lights stop flashing and children are safe.",
-      "reference": "DL-7: Special Driving Situations"
+      "explanation": "On an undivided road (no physical median barrier), vehicles traveling in BOTH directions must stop when a school bus displays flashing red lights. Children may cross from either side. The only exception is roads with a physical dividing barrier (such as a raised median), where oncoming traffic is not required to stop.",
+      "reference": "Texas Transportation Code §545.066; DL-7 Special Driving Situations"
     },
     {
       "id": "TX-SPC-0009",
@@ -7528,17 +7528,17 @@
     {
       "id": "TX-SPC-0014",
       "topic": "SPECIAL_SITUATIONS",
-      "difficulty": 1,
-      "text": "In a school zone, you should be especially alert for:",
+      "difficulty": 2,
+      "text": "You are driving through a school zone at 20 mph during dismissal time. Several children are walking on the sidewalk, and one child appears to be chasing a ball toward the curb. What should you expect?",
       "choices": [
-        "Children who may suddenly enter the roadway",
-        "Faster traffic from behind",
-        "Animals crossing the street",
-        "Emergency vehicles"
+        "The child may run into the street without looking — be prepared to stop immediately",
+        "The child will stop at the curb and look both ways",
+        "The crossing guard will intervene before the child reaches the street",
+        "Other children will stop them before they enter the roadway"
       ],
       "correctIndex": 0,
-      "explanation": "Children can be unpredictable and may dart into the street without warning. In school zones, drivers must be especially alert and prepared to stop quickly for children.",
-      "reference": "DL-7: Special Driving Situations"
+      "explanation": "Children are unpredictable and often focus on play rather than traffic safety. A child chasing a ball is very likely to run into the street without checking for vehicles. In school zones, always expect the unexpected and be ready to stop instantly. Reaction time at 20 mph gives you about 30 feet of stopping distance.",
+      "reference": "DL-7 Special Driving Situations"
     },
     {
       "id": "TX-SPC-0015",
@@ -7558,17 +7558,17 @@
     {
       "id": "TX-SPC-0016",
       "topic": "SPECIAL_SITUATIONS",
-      "difficulty": 1,
-      "text": "How far from the nearest railroad track must you stop when a train is approaching?",
+      "difficulty": 2,
+      "text": "You approach a railroad crossing with flashing red lights and the crossing gate is lowering. You stop your vehicle. What distance from the nearest rail should you maintain?",
       "choices": [
-        "15 to 50 feet",
-        "10 to 25 feet",
-        "5 to 15 feet",
-        "20 to 60 feet"
+        "Between 15 and 50 feet from the nearest rail",
+        "Between 5 and 10 feet from the nearest rail",
+        "At least 100 feet from the nearest rail",
+        "As close as the gate allows"
       ],
       "correctIndex": 0,
-      "explanation": "Texas law requires you to stop between 15 and 50 feet from the nearest railroad track when a train is approaching. This distance keeps you safe while allowing trains to pass.",
-      "reference": "DL-7: Special Driving Situations",
+      "explanation": "Texas law requires you to stop between 15 and 50 feet from the nearest railroad rail. Stopping closer than 15 feet puts you dangerously close to the train's path, as trains extend beyond the rails. Stopping beyond 50 feet could put you too far back to see clearly when it is safe to proceed.",
+      "reference": "Texas Transportation Code §545.251; DL-7 Special Driving Situations",
       "image": {
         "type": "svg",
         "assetId": "SPECIAL_RAILROAD_STOP_PROCEDURE"
@@ -7626,17 +7626,17 @@
     {
       "id": "TX-SPC-0020",
       "topic": "SPECIAL_SITUATIONS",
-      "difficulty": 1,
-      "text": "A round yellow sign with a black X and two R's means:",
+      "difficulty": 2,
+      "text": "You see a round yellow sign with a black X and the letters RR while driving on an unfamiliar country road. What should you do?",
       "choices": [
-        "Railroad crossing ahead",
-        "Road closed ahead",
-        "Rest area ahead",
-        "Roundabout ahead"
+        "Slow down, look and listen for trains — a railroad crossing is ahead",
+        "Watch for a rest area entrance on the right",
+        "Prepare for a roundabout ahead",
+        "Yield to cross traffic at the next intersection"
       ],
       "correctIndex": 0,
-      "explanation": "The round yellow warning sign with an X and RR indicates a railroad crossing ahead. This advance warning sign gives you time to prepare to stop if necessary.",
-      "reference": "DL-7: Special Driving Situations",
+      "explanation": "The round yellow advance warning sign with the black X and RR is the Railroad Advance Warning sign (MUTCD W10-1). It tells you a railroad crossing is ahead, giving you time to slow down and prepare to stop if a train is approaching. On rural roads, crossings may not have gates or flashing lights, making this advance warning critical.",
+      "reference": "MUTCD Section 8B.04; DL-7 Special Driving Situations",
       "image": {
         "type": "svg",
         "assetId": "MUTCD_R15-1_RAILROAD_CROSSING"
@@ -7705,17 +7705,17 @@
     {
       "id": "TX-SPC-0025",
       "topic": "SPECIAL_SITUATIONS",
-      "difficulty": 1,
-      "text": "Flashing red lights at a railroad crossing mean:",
+      "difficulty": 2,
+      "text": "You are stopped at a railroad crossing with flashing red lights. After a train passes, the lights continue to flash. What should you do?",
       "choices": [
-        "Stop and do not proceed until the lights stop flashing",
-        "Slow down and proceed with caution",
-        "Stop, look both ways, then proceed",
-        "A train has just passed and the crossing is now clear"
+        "Remain stopped — a second train may be approaching from the other direction",
+        "Proceed carefully after the first train has fully passed",
+        "Inch forward slowly to check if the track is clear",
+        "Wait exactly 30 seconds after the train passes, then proceed"
       ],
       "correctIndex": 0,
-      "explanation": "Flashing red lights at a railroad crossing mean a train is approaching. You must stop and remain stopped until the lights stop flashing, even if you cannot see or hear a train.",
-      "reference": "DL-7: Special Driving Situations"
+      "explanation": "If the red lights continue flashing after a train passes, another train may be approaching on a different track. Never proceed while the warning lights are active, even if you just saw a train go by. Multi-track crossings are common, and a second train can arrive from the opposite direction within seconds.",
+      "reference": "Texas Transportation Code §545.251; DL-7 Special Driving Situations"
     },
     {
       "id": "TX-SPC-0026",
@@ -7818,17 +7818,17 @@
     {
       "id": "TX-SPC-0032",
       "topic": "SPECIAL_SITUATIONS",
-      "difficulty": 1,
-      "text": "In active work zones in Texas, traffic fines are:",
+      "difficulty": 2,
+      "text": "You are driving through a highway work zone and see workers and equipment near the road. You notice a sign saying 'Fines Doubled.' If you are cited for speeding here, how are the fines affected?",
       "choices": [
-        "Doubled",
-        "The same as normal",
-        "Tripled",
-        "Increased by 50%"
+        "The fine is doubled compared to the normal amount for that violation",
+        "The fine remains the same but points on your license are doubled",
+        "The fine is tripled in active work zones",
+        "Fines are only doubled if a worker is injured"
       ],
       "correctIndex": 0,
-      "explanation": "Texas doubles fines for traffic violations in active work zones where workers are present. These increased penalties encourage drivers to slow down and drive carefully to protect workers.",
-      "reference": "DL-7: Special Driving Situations"
+      "explanation": "Texas law doubles traffic fines in active work zones where workers are present. This applies to speeding, failure to obey traffic control devices, and other moving violations. The doubled fines serve as a deterrent because work zone crashes are disproportionately fatal — workers have no protection from passing vehicles.",
+      "reference": "Texas Transportation Code §542.404; DL-7 Special Driving Situations"
     },
     {
       "id": "TX-SPC-0033",
@@ -7901,17 +7901,17 @@
     {
       "id": "TX-SPC-0037",
       "topic": "SPECIAL_SITUATIONS",
-      "difficulty": 1,
-      "text": "In work zones, you should:",
+      "difficulty": 2,
+      "text": "You are driving through a construction zone on a highway. The lanes are narrower than usual, cones line both sides, and workers are operating equipment near the right shoulder. What is the safest approach?",
       "choices": [
-        "Watch for workers and equipment entering the roadway",
-        "Speed up to exit the zone quickly",
-        "Change lanes frequently to find the fastest route",
-        "Follow very closely to the vehicle ahead"
+        "Reduce speed, stay centered in your lane, and watch for workers or equipment entering the roadway",
+        "Speed up to exit the work zone as quickly as possible",
+        "Change lanes frequently to find the lane with the least cones",
+        "Follow the vehicle ahead as closely as possible to prevent other cars from cutting in"
       ],
       "correctIndex": 0,
-      "explanation": "In work zones, always watch for workers and equipment that may enter the roadway unexpectedly. Stay alert and be prepared to stop or slow down for changing conditions.",
-      "reference": "DL-7: Special Driving Situations"
+      "explanation": "In work zones, reduce speed to account for narrow lanes and unexpected hazards. Stay centered in your lane to maintain maximum clearance from cones and barriers. Watch for workers, equipment, and sudden lane shifts. Work zone crashes kill hundreds of drivers and workers each year, and most are caused by speeding and inattention.",
+      "reference": "DL-7 Special Driving Situations"
     },
     {
       "id": "TX-SPC-0038",
@@ -7976,17 +7976,17 @@
     {
       "id": "TX-SPC-0042",
       "topic": "SPECIAL_SITUATIONS",
-      "difficulty": 1,
-      "text": "An orange warning sign with a symbol of a person holding a flag indicates:",
+      "difficulty": 2,
+      "text": "As you approach a highway construction area, you see an orange diamond sign with a figure of a person holding a flag. What does this sign indicate?",
       "choices": [
-        "Flagger ahead in work zone",
-        "Flag ceremony ahead",
-        "Pedestrian crossing ahead",
-        "Rest area ahead"
+        "A flagger is ahead directing traffic — prepare to slow or stop as directed",
+        "A flag ceremony is being held near the road",
+        "Pedestrian crossing ahead within the work zone",
+        "A road survey crew is working and may be standing in the lane"
       ],
       "correctIndex": 0,
-      "explanation": "An orange warning sign showing a person with a flag alerts drivers that a flagger is ahead controlling traffic. Prepare to slow down or stop as directed by the flagger.",
-      "reference": "DL-7: Special Driving Situations",
+      "explanation": "The orange Flagger Ahead sign (MUTCD W20-7) warns that a flagger is controlling traffic ahead, typically because of lane closures or alternating one-way traffic in the work zone. Slow down and be prepared to stop. The flagger's directions have the force of law — you must obey them just like a traffic signal.",
+      "reference": "MUTCD Section 6E.03; DL-7 Special Driving Situations",
       "image": {
         "type": "svg",
         "assetId": "MUTCD_W20-7_FLAGGER_AHEAD"
@@ -8040,17 +8040,17 @@
     {
       "id": "TX-SPC-0046",
       "topic": "SPECIAL_SITUATIONS",
-      "difficulty": 1,
-      "text": "If your vehicle breaks down on the highway, you should:",
+      "difficulty": 2,
+      "text": "Your car's engine suddenly dies while you are in the right lane of a busy highway. You can still steer and brake. What is the safest course of action?",
       "choices": [
-        "Pull over to the right shoulder, turn on hazard lights, and raise your hood",
-        "Stop in your lane and turn on hazard lights",
-        "Continue driving to the nearest exit",
-        "Stop on the left shoulder for easier access to help"
+        "Steer to the right shoulder, activate hazard lights, and raise the hood to signal distress",
+        "Stop immediately in your lane and turn on hazard lights",
+        "Try to restart the engine while coasting in the travel lane",
+        "Coast to the left shoulder for better visibility to approaching traffic"
       ],
       "correctIndex": 0,
-      "explanation": "When your vehicle breaks down, safely pull to the right shoulder, activate hazard lights, and raise the hood to signal trouble. This alerts other drivers and keeps you out of traffic lanes.",
-      "reference": "DL-7: Special Driving Situations"
+      "explanation": "When your vehicle breaks down on a highway, use your remaining momentum to steer safely onto the right shoulder, as far from traffic as possible. Activate your hazard lights immediately to warn other drivers. Raising the hood is a universal signal of a disabled vehicle. Stopping in a travel lane or the left shoulder exposes you to high-speed rear-end collisions.",
+      "reference": "DL-7 Special Driving Situations"
     },
     {
       "id": "TX-SPC-0047",
@@ -8265,17 +8265,17 @@
     {
       "id": "TX-SPD-0001",
       "topic": "SPEED_AND_DISTANCE",
-      "difficulty": 1,
-      "text": "What is the typical speed limit in a school zone when children are present?",
+      "difficulty": 2,
+      "text": "You are driving through a residential area at 30 mph and enter an active school zone with flashing beacons. What speed must you reduce to?",
       "choices": [
-        "15-20 mph",
-        "25 mph",
-        "30 mph",
-        "35 mph"
+        "20 mph or the speed posted on the school zone sign",
+        "25 mph unless children are in the road",
+        "10 mph during school hours only",
+        "No change needed if you are already below 35 mph"
       ],
       "correctIndex": 0,
-      "explanation": "School zone speed limits are typically 15-20 mph when children are present or when school zone signals are flashing. This reduced speed helps protect children crossing streets.",
-      "reference": "DL-7: Speed Limits and Safe Distances",
+      "explanation": "School zone speed limits in Texas are typically 15–20 mph and are enforceable when the beacons are flashing or during posted times. You must reduce to the posted school zone speed regardless of whether children are currently visible — they could emerge at any moment. School zone violations carry enhanced fines.",
+      "reference": "Texas Transportation Code §545.3561; DL-7 Speed Limits and Safe Distances",
       "image": {
         "type": "svg",
         "assetId": "SPEED_SCHOOL_ZONE_20MPH"
@@ -8284,17 +8284,17 @@
     {
       "id": "TX-SPD-0002",
       "topic": "SPEED_AND_DISTANCE",
-      "difficulty": 1,
-      "text": "What is the typical speed limit in a residential area unless otherwise posted?",
+      "difficulty": 2,
+      "text": "You are driving through a residential neighborhood and don't see any speed limit signs. What is the default speed limit you should follow?",
       "choices": [
         "30 mph",
+        "25 mph",
         "35 mph",
-        "40 mph",
-        "45 mph"
+        "20 mph"
       ],
       "correctIndex": 0,
-      "explanation": "Texas law sets the prima facie speed limit in residential areas at 30 mph unless otherwise posted. This speed allows drivers adequate time to react to pedestrians, children, and vehicles entering the roadway.",
-      "reference": "DL-7: Speed Limits and Safe Distances",
+      "explanation": "Texas law establishes a prima facie (default) speed limit of 30 mph in urban districts and residential areas when no other speed limit is posted. This speed accounts for pedestrians, children playing, vehicles backing out of driveways, and other hazards common in residential settings.",
+      "reference": "Texas Transportation Code §545.352; DL-7 Speed Limits and Safe Distances",
       "image": {
         "type": "svg",
         "assetId": "SPEED_LIMIT_RESIDENTIAL_30"
@@ -8363,17 +8363,17 @@
     {
       "id": "TX-SPD-0007",
       "topic": "SPEED_AND_DISTANCE",
-      "difficulty": 1,
-      "text": "What is the typical speed limit on urban highways in Texas?",
+      "difficulty": 2,
+      "text": "You merge onto an urban highway in Houston with no posted speed limit sign visible. What maximum speed should you assume?",
       "choices": [
-        "60 mph",
-        "70 mph",
-        "55 mph",
-        "65 mph"
+        "60 mph — the default for urban highways in Texas",
+        "70 mph — the general Texas highway limit",
+        "55 mph — the national speed limit standard",
+        "65 mph — the default for all Texas highways"
       ],
       "correctIndex": 0,
-      "explanation": "Urban highways in Texas typically have a 60 mph speed limit, which is lower than rural highways due to increased traffic density and more frequent exits and entrances.",
-      "reference": "DL-7: Speed Limits and Safe Distances"
+      "explanation": "The default speed limit for urban highways (numbered highways within a city's limits) in Texas is 60 mph when no other limit is posted. Rural highways have a higher default of 70 mph. The lower urban limit reflects higher traffic density, more frequent exits, and greater pedestrian activity near urban highways.",
+      "reference": "Texas Transportation Code §545.352; DL-7 Speed Limits and Safe Distances"
     },
     {
       "id": "TX-SPD-0008",
@@ -8453,17 +8453,17 @@
     {
       "id": "TX-SPD-0013",
       "topic": "SPEED_AND_DISTANCE",
-      "difficulty": 1,
-      "text": "What is the purpose of reduced speed limits in school zones?",
+      "difficulty": 2,
+      "text": "A new driver asks why school zones have such low speed limits compared to the surrounding roads. What is the primary safety reason?",
       "choices": [
-        "To give drivers more time to react to children",
-        "To reduce vehicle wear and tear",
-        "To increase fuel efficiency",
-        "To reduce traffic noise"
+        "Lower speeds give drivers more time to see and react to children who may dart into the street",
+        "Lower speeds reduce noise near school buildings",
+        "Lower speeds reduce vehicle emissions in areas with children",
+        "Lower speeds prevent damage to school infrastructure"
       ],
       "correctIndex": 0,
-      "explanation": "School zone speed limits are reduced to give drivers more time to see and react to children who may unexpectedly enter the roadway. Children are less predictable and more vulnerable than adult pedestrians.",
-      "reference": "DL-7: Speed Limits and Safe Distances"
+      "explanation": "School zone speed limits are primarily about reaction time and stopping distance. At 20 mph, a car needs about 30 feet to stop. At 40 mph, stopping distance more than quadruples to over 130 feet. Children are small, unpredictable, and may enter the roadway without warning — the lower speed gives drivers a realistic chance to stop in time.",
+      "reference": "DL-7 Speed Limits and Safe Distances"
     },
     {
       "id": "TX-SPD-0014",
@@ -8592,17 +8592,17 @@
     {
       "id": "TX-SPD-0022",
       "topic": "SPEED_AND_DISTANCE",
-      "difficulty": 1,
-      "text": "Where are you most likely to find a 20 mph speed limit?",
+      "difficulty": 2,
+      "text": "You notice a speed limit sign showing 20 mph with flashing amber beacons. Where are you most likely driving?",
       "choices": [
-        "School zones",
-        "Residential streets",
-        "Highways",
-        "Business districts"
+        "Through an active school zone near a school",
+        "In a hospital parking lot",
+        "Through a residential neighborhood",
+        "In a construction zone on a highway"
       ],
       "correctIndex": 0,
-      "explanation": "School zones typically have 15-20 mph speed limits when children are present, making them the most common location for such low speed limits. This protects vulnerable child pedestrians.",
-      "reference": "DL-7: Speed Limits and Safe Distances",
+      "explanation": "A 20 mph speed limit with flashing beacons is the hallmark of an active school zone. The beacons indicate that the reduced speed limit is currently in effect, typically during school arrival and dismissal times. This is the most common location for such a low posted speed in Texas.",
+      "reference": "Texas Transportation Code §545.3561; DL-7 Speed Limits and Safe Distances",
       "image": {
         "type": "svg",
         "assetId": "MUTCD_S4-3_SCHOOL_SPEED_LIMIT_20"
@@ -8716,17 +8716,17 @@
     {
       "id": "TX-SPD-0030",
       "topic": "SPEED_AND_DISTANCE",
-      "difficulty": 1,
-      "text": "Which of these is a legal speed limit sign?",
+      "difficulty": 2,
+      "text": "A friend shows you a rectangular white sign with black text and asks what type of sign it is. The sign reads 'SPEED LIMIT 65.' How would you identify this sign type?",
       "choices": [
-        "A white rectangular sign with black numbers and 'SPEED LIMIT' text",
-        "A yellow diamond-shaped warning sign",
-        "A red octagonal stop sign",
-        "A green guide sign"
+        "It is a regulatory sign — white rectangle with black text is the standard format for speed limits",
+        "It is a warning sign displayed before a curve",
+        "It is a guide sign directing you to a highway",
+        "It is an advisory sign showing a recommended speed"
       ],
       "correctIndex": 0,
-      "explanation": "Speed limit signs are white rectangular signs with black lettering showing the speed limit and the words 'SPEED LIMIT'. This standard design makes them easily recognizable to all drivers.",
-      "reference": "DL-7: Speed Limits and Safe Distances",
+      "explanation": "Speed limit signs follow a standardized design: white rectangular background with black text reading 'SPEED LIMIT' above the number. This makes them immediately distinguishable from yellow diamond warning signs (advisory speeds) and green guide signs (destinations). The MUTCD mandates this format nationwide.",
+      "reference": "MUTCD Section 2B.13; DL-7 Speed Limits and Safe Distances",
       "image": {
         "type": "svg",
         "assetId": "MUTCD_R2-1_SPEED_LIMIT_65"
@@ -8735,17 +8735,17 @@
     {
       "id": "TX-SPD-0031",
       "topic": "SPEED_AND_DISTANCE",
-      "difficulty": 1,
-      "text": "Under ideal conditions, what is the minimum safe following distance?",
+      "difficulty": 2,
+      "text": "You are driving at 55 mph on a clear, dry road. Using the 3-second following rule, approximately how many feet of space should you maintain behind the car ahead?",
       "choices": [
-        "At least 3 seconds behind the vehicle ahead",
-        "At least 2 car lengths",
-        "At least 50 feet",
-        "At least 1 second per 10 mph"
+        "About 240 feet — at 55 mph you travel roughly 80 feet per second",
+        "About 50 feet — one car length per 10 mph",
+        "About 160 feet — three car lengths",
+        "About 100 feet — the minimum safe distance at highway speed"
       ],
       "correctIndex": 0,
-      "explanation": "The 3-second rule is the minimum safe following distance under ideal conditions. This time-based measurement works at any speed and gives you enough time to react and stop if needed.",
-      "reference": "DL-7: Speed Limits and Safe Distances",
+      "explanation": "At 55 mph you cover about 80 feet per second (55 × 5280 / 3600 ≈ 80.7 ft/s). Three seconds of travel equals approximately 240 feet. The 3-second rule automatically scales with speed — the faster you drive, the more space you need. This is why time-based following distance is more reliable than counting car lengths.",
+      "reference": "DL-7 Speed Limits and Safe Distances",
       "image": {
         "type": "svg",
         "assetId": "SPEED_FOLLOWING_DISTANCE_3SEC"
@@ -8754,17 +8754,17 @@
     {
       "id": "TX-SPD-0032",
       "topic": "SPEED_AND_DISTANCE",
-      "difficulty": 1,
-      "text": "How do you measure the 3-second following distance?",
+      "difficulty": 2,
+      "text": "You want to check whether you are maintaining a safe 3-second following distance from the car ahead on the highway. What is the correct technique?",
       "choices": [
-        "Pick a fixed object, count seconds from when the front vehicle passes until you pass it",
-        "Count the number of car lengths between vehicles",
-        "Estimate the distance in feet",
-        "Use your speedometer reading"
+        "Pick a fixed object; when the car ahead passes it, count 3 seconds — you should not reach it before finishing",
+        "Estimate the number of car lengths between you and the vehicle ahead",
+        "Check your speedometer and divide by 10 for the number of car lengths needed",
+        "If you can read the car's license plate clearly, you are too close"
       ],
       "correctIndex": 0,
-      "explanation": "To measure following distance, pick a fixed object like a sign or tree. When the vehicle ahead passes it, count 'one-thousand-one, one-thousand-two, one-thousand-three.' You should not reach that object before finishing the count.",
-      "reference": "DL-7: Speed Limits and Safe Distances"
+      "explanation": "The standard technique is to pick a stationary reference point (sign, pole, overpass). When the vehicle ahead passes it, count 'one-thousand-one, one-thousand-two, one-thousand-three.' If you reach the reference point before you finish counting, you are following too closely and need to back off. This method works at any speed.",
+      "reference": "DL-7 Speed Limits and Safe Distances"
     },
     {
       "id": "TX-SPD-0033",
@@ -9039,17 +9039,17 @@
     {
       "id": "TX-SPD-0051",
       "topic": "SPEED_AND_DISTANCE",
-      "difficulty": 1,
-      "text": "What is the danger of following too closely?",
+      "difficulty": 2,
+      "text": "You are following a large SUV closely on the highway at 65 mph. The SUV suddenly brakes hard for debris in the road. Why is your position especially dangerous?",
       "choices": [
-        "You may not have enough time to stop if the vehicle ahead brakes suddenly",
-        "You will use more fuel",
-        "You will get a ticket",
-        "The vehicle ahead will slow down"
+        "You may not have enough distance to stop before hitting the SUV or the debris",
+        "The SUV's brake lights may not be bright enough to see",
+        "Your fuel efficiency decreases significantly when following closely",
+        "The SUV's exhaust may cloud your windshield"
       ],
       "correctIndex": 0,
-      "explanation": "Following too closely is dangerous because you may not have sufficient distance to stop if the vehicle ahead brakes suddenly. Rear-end collisions are often caused by inadequate following distance.",
-      "reference": "DL-7: Speed Limits and Safe Distances"
+      "explanation": "Tailgating eliminates your safety margin. At 65 mph, you travel nearly 100 feet per second. Average reaction time is about 1.5 seconds (150 feet at that speed), and braking distance adds another 200+ feet. Following too closely means you have less time and distance to react than physically required to stop, making a rear-end collision almost inevitable if the vehicle ahead brakes hard.",
+      "reference": "DL-7 Speed Limits and Safe Distances"
     },
     {
       "id": "TX-SPD-0052",
@@ -9343,17 +9343,17 @@
     {
       "id": "TX-SPD-0071",
       "topic": "SPEED_AND_DISTANCE",
-      "difficulty": 1,
-      "text": "When must you be able to stop your vehicle?",
+      "difficulty": 2,
+      "text": "You are driving on a winding mountain road at dusk and your headlights illuminate about 300 feet ahead. The posted speed limit is 45 mph. At what speed should you actually be traveling?",
       "choices": [
-        "Within the distance you can see ahead",
-        "Within 100 feet at any speed",
-        "Within 3 seconds",
-        "Within the posted speed limit distance"
+        "A speed that allows you to stop within 300 feet — likely below the 45 mph posted limit",
+        "45 mph since that is the posted speed limit",
+        "35 mph because dusk automatically reduces all speed limits by 10 mph",
+        "Any speed as long as your headlights are on"
       ],
       "correctIndex": 0,
-      "explanation": "You must always be able to stop within the distance you can see ahead (your sight distance). If you cannot see far ahead due to darkness, fog, or curves, you must slow down accordingly.",
-      "reference": "DL-7: Speed Limits and Safe Distances"
+      "explanation": "You must always be able to stop within the distance you can see ahead — your 'sight distance.' If your headlights illuminate only 300 feet, you must travel at a speed that allows you to stop within that distance. At 45 mph on a winding road, stopping distance may exceed 300 feet, requiring you to slow down even though the posted limit is higher.",
+      "reference": "Texas Transportation Code §545.351; DL-7 Speed Limits and Safe Distances"
     },
     {
       "id": "TX-SPD-0072",
@@ -9501,17 +9501,17 @@
     {
       "id": "TX-TRA-0001",
       "topic": "TRAFFIC_SIGNALS",
-      "difficulty": 1,
-      "text": "What does a solid red traffic light mean?",
+      "difficulty": 2,
+      "text": "You are approaching an intersection at 35 mph when the light turns red. You are past the point where you can safely stop. What should you do?",
       "choices": [
-        "Stop completely and remain stopped until green",
-        "Stop, then proceed if clear",
-        "Slow down and proceed with caution",
-        "Yield to oncoming traffic"
+        "Stop at the stop line — you must not enter the intersection on a red light",
+        "Accelerate through the intersection before cross traffic starts",
+        "Slow down and proceed through cautiously",
+        "Stop in the middle of the intersection and wait for green"
       ],
       "correctIndex": 0,
-      "explanation": "A solid red light requires drivers to stop completely and remain stopped until the light turns green. Proceeding on red without a green signal is illegal.",
-      "reference": "DL-7: Traffic Signals",
+      "explanation": "A solid red light requires a complete stop before the stop line or crosswalk. If you can still stop safely before entering the intersection, you must do so. Running a red light — even by a fraction of a second — is illegal and one of the leading causes of severe intersection crashes. If you truly cannot stop, you should have been driving at a speed that allowed you to stop when the light changed.",
+      "reference": "Texas Transportation Code §544.007; DL-7 Traffic Signals",
       "image": {
         "type": "svg",
         "assetId": "SIGNAL_SOLID_RED"
@@ -9520,17 +9520,17 @@
     {
       "id": "TX-TRA-0002",
       "topic": "TRAFFIC_SIGNALS",
-      "difficulty": 1,
-      "text": "What should you do when you see a solid green traffic light?",
+      "difficulty": 2,
+      "text": "The light turns green but you can see that the intersection ahead is gridlocked with vehicles from the cross street. What should you do?",
       "choices": [
-        "Proceed if the intersection is clear",
-        "Speed up to get through quickly",
-        "Stop and wait for other vehicles",
-        "Honk your horn and continue"
+        "Wait behind the stop line until there is room to clear the intersection completely",
+        "Enter the intersection since you have a green light",
+        "Proceed into the intersection and wait for the gridlock to clear",
+        "Honk your horn and enter the intersection"
       ],
       "correctIndex": 0,
-      "explanation": "A solid green light means you may proceed through the intersection, but only after ensuring it is safe and clear of pedestrians and vehicles.",
-      "reference": "DL-7: Traffic Signals",
+      "explanation": "Even with a green light, you must not enter an intersection unless you can clear it completely. Entering a gridlocked intersection means you will block the cross street when the light changes, creating worse congestion and potentially trapping emergency vehicles. This violation is commonly called 'blocking the box.'",
+      "reference": "Texas Transportation Code §545.302; DL-7 Traffic Signals",
       "image": {
         "type": "svg",
         "assetId": "SIGNAL_SOLID_GREEN"
@@ -9618,17 +9618,17 @@
     {
       "id": "TX-TRA-0008",
       "topic": "TRAFFIC_SIGNALS",
-      "difficulty": 1,
-      "text": "What is the primary purpose of a yellow traffic light?",
+      "difficulty": 2,
+      "text": "You are 100 feet from an intersection traveling at 40 mph when the light turns yellow. You estimate you can either stop safely or proceed through before it turns red. What should you generally do?",
       "choices": [
-        "To warn that the light is about to turn red",
-        "To allow drivers to speed up",
-        "To indicate a malfunctioning signal",
-        "To give pedestrians time to cross"
+        "Stop safely — the yellow light warns that the red phase is about to begin",
+        "Accelerate to clear the intersection before the light turns red",
+        "Maintain your speed and coast through the intersection",
+        "Flash your headlights to warn cross traffic you are coming through"
       ],
       "correctIndex": 0,
-      "explanation": "The yellow light serves as a warning that the green phase is ending and the light will soon turn red, giving drivers time to safely stop.",
-      "reference": "DL-7: Traffic Signals"
+      "explanation": "A yellow light means the signal is about to turn red and you should prepare to stop. If you can safely stop before the intersection, you should do so. The yellow phase is designed to give drivers enough time to either stop or clear the intersection — but when in doubt, stopping is the safer choice. Accelerating through increases the risk of running the red.",
+      "reference": "Texas Transportation Code §544.007; DL-7 Traffic Signals"
     },
     {
       "id": "TX-TRA-0009",
@@ -9742,17 +9742,17 @@
     {
       "id": "TX-TRA-0016",
       "topic": "TRAFFIC_SIGNALS",
-      "difficulty": 1,
-      "text": "At a red light, where must you stop your vehicle?",
+      "difficulty": 2,
+      "text": "You approach an intersection with a red light. There is a marked stop line, a crosswalk beyond it, and then the intersection. Where exactly must you stop?",
       "choices": [
-        "At the stop line or before entering the crosswalk",
-        "In the middle of the intersection",
-        "Just before entering the intersection",
-        "Anywhere you can see the signal"
+        "At the stop line, before the crosswalk",
+        "In the crosswalk, as close to the intersection as possible",
+        "Just past the crosswalk at the edge of the intersection",
+        "Anywhere you can see the traffic signal clearly"
       ],
       "correctIndex": 0,
-      "explanation": "You must stop at the marked stop line, or if there is no line, before entering the crosswalk or intersection to avoid blocking pedestrians.",
-      "reference": "DL-7: Traffic Signals"
+      "explanation": "You must stop at the marked stop line. If there is no stop line, stop before the crosswalk. If there is neither, stop before entering the intersection. Stopping in the crosswalk blocks pedestrians and forces them into traffic lanes. Stopping past the crosswalk puts your vehicle in the path of cross traffic.",
+      "reference": "Texas Transportation Code §544.007; DL-7 Traffic Signals"
     },
     {
       "id": "TX-TRA-0017",
@@ -9817,17 +9817,17 @@
     {
       "id": "TX-TRA-0021",
       "topic": "TRAFFIC_SIGNALS",
-      "difficulty": 1,
-      "text": "What does a green arrow signal mean?",
+      "difficulty": 2,
+      "text": "You are waiting to turn left at an intersection. The signal changes to a green left-turn arrow. A pedestrian is jogging through the crosswalk. What should you do?",
       "choices": [
-        "You may proceed in the direction of the arrow without yielding",
-        "You may proceed but must yield to oncoming traffic",
-        "You should prepare to stop",
-        "You may only proceed if no other vehicles are present"
+        "Wait for the pedestrian to clear your path, then turn — the green arrow gives you a protected turn but pedestrians still have priority",
+        "Turn immediately — the green arrow means all conflicting traffic and pedestrians are stopped",
+        "Honk to alert the pedestrian and proceed with your turn",
+        "Ignore the arrow and wait for a solid green light instead"
       ],
       "correctIndex": 0,
-      "explanation": "A green arrow is a protected signal that gives you the right of way to proceed in the indicated direction without yielding to conflicting traffic.",
-      "reference": "DL-7: Traffic Signals",
+      "explanation": "A green arrow gives you a protected turn phase — meaning oncoming traffic has a red light. However, you must still yield to any pedestrians in the crosswalk. Pedestrians may have entered the crosswalk during the previous phase or may be slow to clear. Safety always takes priority over signal phase.",
+      "reference": "Texas Transportation Code §544.007; DL-7 Traffic Signals",
       "image": {
         "type": "svg",
         "assetId": "SIGNAL_GREEN_ARROW_LEFT"
@@ -9874,17 +9874,17 @@
     {
       "id": "TX-TRA-0024",
       "topic": "TRAFFIC_SIGNALS",
-      "difficulty": 1,
-      "text": "What does a red arrow signal mean?",
+      "difficulty": 2,
+      "text": "You are at an intersection wanting to turn left. The signal shows a red left-turn arrow while the main signal is green. May you turn left?",
       "choices": [
-        "You must stop and cannot proceed in the direction of the arrow",
-        "You may proceed after yielding",
-        "You may turn after stopping",
-        "Slow down and proceed with caution"
+        "No — a red arrow prohibits turning in that direction until the arrow changes",
+        "Yes — you may turn left after yielding to oncoming traffic since the main light is green",
+        "Yes — treat the red arrow like a regular red light and turn after stopping",
+        "Only if there is no oncoming traffic visible"
       ],
       "correctIndex": 0,
-      "explanation": "A red arrow means you must stop and remain stopped. You cannot turn in the direction of the arrow, even after stopping.",
-      "reference": "DL-7: Traffic Signals",
+      "explanation": "A red arrow specifically prohibits movement in the direction of the arrow. Unlike a solid red light (which permits right turns on red in most cases), a red arrow means you must not turn in that direction at all — even after stopping. You must wait until the red arrow is replaced by a green arrow or a solid green light.",
+      "reference": "Texas Transportation Code §544.007; DL-7 Traffic Signals",
       "image": {
         "type": "svg",
         "assetId": "SIGNAL_RED_ARROW_LEFT"
@@ -10126,32 +10126,32 @@
     {
       "id": "TX-TRA-0040",
       "topic": "TRAFFIC_SIGNALS",
-      "difficulty": 1,
-      "text": "When you see a green arrow pointing left, which direction should you turn?",
+      "difficulty": 2,
+      "text": "You are in a left-turn lane at an intersection. The signal shows a green arrow pointing left, while the opposing traffic has a red light. What does this combination tell you?",
       "choices": [
-        "Left",
-        "Right",
-        "Either left or right",
-        "Straight ahead"
+        "You have a protected left turn — oncoming traffic is stopped, so you may turn without yielding to it",
+        "You may turn left but must still yield to oncoming traffic",
+        "You should go straight, not left, despite being in the turn lane",
+        "The green arrow is for pedestrians, not vehicles"
       ],
       "correctIndex": 0,
-      "explanation": "A green arrow pointing left means you should turn left. The arrow indicates the specific direction you may proceed.",
-      "reference": "DL-7: Traffic Signals"
+      "explanation": "A green left-turn arrow is a protected phase. It means oncoming traffic has a red signal and should be stopped, so you may proceed with your left turn without needing to yield to oncoming vehicles. However, always scan the intersection before turning — a driver may have run their red light.",
+      "reference": "Texas Transportation Code §544.007; DL-7 Traffic Signals"
     },
     {
       "id": "TX-TRA-0041",
       "topic": "TRAFFIC_SIGNALS",
-      "difficulty": 1,
-      "text": "What does a flashing red traffic signal mean?",
+      "difficulty": 2,
+      "text": "Late at night you approach an intersection where the traffic signal is flashing red in all directions. How should you treat this signal?",
       "choices": [
-        "Stop, then proceed when safe, treating it like a stop sign",
-        "Slow down and proceed with caution",
-        "The signal is broken; proceed normally",
-        "Stop and wait for a green light"
+        "Treat it exactly like a stop sign — stop completely, then proceed when safe",
+        "Slow down and proceed with caution without stopping",
+        "The signal is malfunctioning — proceed at normal speed",
+        "Stop and wait for the signal to return to its normal cycle"
       ],
       "correctIndex": 0,
-      "explanation": "A flashing red signal means you must come to a complete stop, then proceed when safe, just like at a stop sign.",
-      "reference": "DL-7: Traffic Signals",
+      "explanation": "A flashing red signal functions as a stop sign. You must come to a complete stop, yield to any vehicles or pedestrians with the right-of-way, and proceed only when safe. If all directions are flashing red, treat the intersection like a four-way stop — yield to the vehicle that arrived first, or to the vehicle on your right if you arrive simultaneously.",
+      "reference": "Texas Transportation Code §544.007; DL-7 Traffic Signals",
       "image": {
         "type": "svg",
         "assetId": "SIGNAL_FLASHING_RED"
@@ -10160,17 +10160,17 @@
     {
       "id": "TX-TRA-0042",
       "topic": "TRAFFIC_SIGNALS",
-      "difficulty": 1,
-      "text": "What does a flashing yellow traffic signal mean?",
+      "difficulty": 2,
+      "text": "You approach an intersection where the signal is flashing yellow. There is moderate cross traffic. What should you do?",
       "choices": [
-        "Slow down and proceed with caution",
-        "Stop, then proceed when safe",
-        "Speed up to clear the intersection",
-        "The signal will soon turn red"
+        "Slow down, watch for cross traffic and pedestrians, and proceed with caution",
+        "Come to a complete stop before entering the intersection",
+        "Speed up to clear the intersection before it changes",
+        "Yield only to vehicles on your right"
       ],
       "correctIndex": 0,
-      "explanation": "A flashing yellow signal means you should slow down, be alert, and proceed through the intersection with caution.",
-      "reference": "DL-7: Traffic Signals",
+      "explanation": "A flashing yellow signal means proceed with caution — you do not have to stop unless cross traffic or pedestrians require it. However, you must slow down and be alert because cross traffic may have a flashing red (stop) signal and might not stop. Treat the intersection with extra vigilance, especially at night.",
+      "reference": "Texas Transportation Code §544.007; DL-7 Traffic Signals",
       "image": {
         "type": "svg",
         "assetId": "SIGNAL_FLASHING_YELLOW"
@@ -10299,17 +10299,17 @@
     {
       "id": "TX-TRA-0051",
       "topic": "TRAFFIC_SIGNALS",
-      "difficulty": 1,
-      "text": "What does a steady WALK signal mean for pedestrians?",
+      "difficulty": 2,
+      "text": "You are a pedestrian waiting to cross at an intersection. The pedestrian signal changes from a raised hand to a walking person symbol. What does this mean?",
       "choices": [
-        "Begin crossing the street",
-        "Finish crossing if already in the street",
-        "Do not cross",
-        "Cross only if no vehicles are present"
+        "You may begin crossing the street in the direction of the signal",
+        "You should finish crossing only if you are already in the street",
+        "You should wait for the next signal cycle to be safe",
+        "You may cross only if the vehicle signal is also green"
       ],
       "correctIndex": 0,
-      "explanation": "A steady WALK signal indicates that pedestrians may begin crossing the street in the direction of the signal.",
-      "reference": "DL-7: Traffic Signals",
+      "explanation": "The walking person (WALK) signal means pedestrians may begin crossing the street in the indicated direction. It corresponds to a traffic phase that protects you from conflicting vehicle movements. Once the signal changes to a flashing raised hand, you should not start crossing but may finish if you are already in the street.",
+      "reference": "Texas Transportation Code §552.002; DL-7 Traffic Signals",
       "image": {
         "type": "svg",
         "assetId": "SIGNAL_PED_WALK"

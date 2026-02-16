@@ -36,17 +36,17 @@
   {
     "id": "TX-SAF-0003",
     "topic": "SAFE_DRIVING",
-    "difficulty": 1,
-    "text": "What is the minimum recommended following distance in good conditions?",
+    "difficulty": 2,
+    "text": "You are following a pickup truck on a dry highway at 60 mph. What is the minimum safe following distance you should maintain?",
     "choices": [
-      "3 seconds",
-      "1 second",
-      "5 seconds",
-      "2 car lengths"
+      "At least 3 seconds behind the truck",
+      "At least 2 car lengths behind the truck",
+      "At least 50 feet behind the truck",
+      "Close enough to read the truck's license plate"
     ],
     "correctIndex": 0,
-    "explanation": "The 3-second rule provides adequate time to react to sudden stops or hazards. This time-based measurement works at any speed and adjusts automatically as your speed changes.",
-    "reference": "DL-7: Safe Driving Practices",
+    "explanation": "The 3-second rule is the standard for good conditions. Pick a fixed object ahead; when the vehicle in front passes it, count 'one-thousand-one, one-thousand-two, one-thousand-three.' If you reach the object before finishing, you are too close. Time-based following distance works at any speed because the gap automatically increases as you go faster.",
+    "reference": "DL-7 Safe Driving Practices",
     "image": {
       "type": "svg",
       "assetId": "SPEED_FOLLOWING_DISTANCE_3SEC"
@@ -119,17 +119,17 @@
   {
     "id": "TX-SAF-0008",
     "topic": "SAFE_DRIVING",
-    "difficulty": 1,
-    "text": "What is the safest way to handle a cell phone call while driving?",
+    "difficulty": 2,
+    "text": "Your phone rings while you are driving on a highway. You are not using a hands-free device. What is the safest action?",
     "choices": [
-      "Pull over safely before answering",
-      "Use speakerphone while driving",
-      "Answer only at red lights",
-      "Keep calls under one minute"
+      "Let the call go to voicemail and return it after you've stopped safely",
+      "Answer using speakerphone while keeping your eyes on the road",
+      "Answer quickly and keep the conversation under one minute",
+      "Pull onto the highway shoulder immediately to answer"
     ],
     "correctIndex": 0,
-    "explanation": "Even hands-free phone use creates mental distraction. The only truly safe option is to pull over in a safe location before making or answering calls.",
-    "reference": "DL-7: Safe Driving Practices"
+    "explanation": "Any phone interaction while driving creates cognitive distraction that diverts attention from the road. The safest option is to let the call go to voicemail. If the call is urgent, exit the highway and pull into a safe location such as a parking lot before returning it. Highway shoulders are for emergencies, not phone calls.",
+    "reference": "Texas Transportation Code §545.4251; DL-7 Safe Driving Practices"
   },
   {
     "id": "TX-SAF-0009",
@@ -209,17 +209,17 @@
   {
     "id": "TX-SAF-0014",
     "topic": "SAFE_DRIVING",
-    "difficulty": 1,
-    "text": "When should you yield even if you have the right-of-way?",
+    "difficulty": 2,
+    "text": "You have a green light and begin to enter an intersection. Another driver runs their red light and is heading toward you. What should you do?",
     "choices": [
-      "When necessary to avoid a collision",
-      "Never, always take your right-of-way",
-      "Only at stop signs",
-      "Only to emergency vehicles"
+      "Yield and take evasive action to avoid the collision — safety overrides right-of-way",
+      "Continue through since you legally have the right-of-way",
+      "Stop in the intersection and honk your horn",
+      "Flash your headlights to assert your right-of-way"
     ],
     "correctIndex": 0,
-    "explanation": "Safety always comes before right-of-way rules. If another driver fails to yield or creates a dangerous situation, it's better to yield than to insist on your legal right and risk a crash.",
-    "reference": "DL-7: Safe Driving Practices"
+    "explanation": "Even when you have the legal right-of-way, you are expected to take reasonable action to avoid a collision. Texas law states that right-of-way rules do not relieve a driver from the duty to exercise due care. Insisting on your right-of-way when a crash is imminent is both dangerous and potentially negligent.",
+    "reference": "Texas Transportation Code §545.151(d); DL-7 Safe Driving Practices"
   },
   {
     "id": "TX-SAF-0015",
@@ -389,17 +389,17 @@
   {
     "id": "TX-SAF-0026",
     "topic": "SAFE_DRIVING",
-    "difficulty": 1,
-    "text": "What is the legal blood alcohol concentration (BAC) limit for drivers 21 and over in Texas?",
+    "difficulty": 2,
+    "text": "After a dinner party, a 25-year-old driver feels fine but has consumed several drinks over several hours. A breathalyzer shows 0.07% BAC. Can they legally drive in Texas?",
     "choices": [
-      "0.08%",
-      "0.10%",
-      "0.05%",
-      "0.02%"
+      "Technically yes, since 0.07% is below the 0.08% legal limit, but impairment has already begun",
+      "No — the legal limit for adults in Texas is 0.05%",
+      "Yes — they are completely safe to drive at 0.07%",
+      "Only if they wait one more hour for their BAC to drop further"
     ],
     "correctIndex": 0,
-    "explanation": "In Texas, it is illegal to drive with a BAC of 0.08% or higher for drivers 21 and over. Driving while impaired is dangerous and carries serious penalties including fines, license suspension, and possible jail time.",
-    "reference": "DL-7: Safe Driving Practices"
+    "explanation": "The legal BAC limit for drivers 21 and over in Texas is 0.08%. At 0.07%, a driver is technically below the per se limit, but alcohol impairs judgment and reaction time starting with the first drink. A driver can still be charged with DWI at any BAC if their driving is visibly impaired. The safest choice is always a designated driver or rideshare.",
+    "reference": "Texas Penal Code §49.01; DL-7 Safe Driving Practices"
   },
   {
     "id": "TX-SAF-0027",
@@ -419,17 +419,17 @@
   {
     "id": "TX-SAF-0028",
     "topic": "SAFE_DRIVING",
-    "difficulty": 1,
-    "text": "When does alcohol impairment begin?",
+    "difficulty": 2,
+    "text": "A friend tells you they feel perfectly fine after one beer and are going to drive. When does alcohol actually begin to impair driving ability?",
     "choices": [
-      "With the first drink",
-      "At 0.08% BAC",
-      "After three drinks",
-      "Only when you feel drunk"
+      "With the very first drink, even before any noticeable effects",
+      "Only after reaching the 0.08% BAC legal limit",
+      "After the third drink for most adults",
+      "Only when the person feels dizzy or uncoordinated"
     ],
     "correctIndex": 0,
-    "explanation": "Alcohol impairs judgment, reaction time, and coordination starting with the very first drink, even before you feel its effects. The legal limit recognizes significant impairment, but impairment begins much earlier.",
-    "reference": "DL-7: Safe Driving Practices"
+    "explanation": "Alcohol begins impairing judgment, reaction time, and coordination with the very first drink — long before a person 'feels drunk.' Studies show measurable impairment at BAC levels as low as 0.02%. The 0.08% legal limit marks significant impairment, but any amount of alcohol reduces driving ability. Feeling fine is not a reliable indicator.",
+    "reference": "DL-7 Safe Driving Practices"
   },
   {
     "id": "TX-SAF-0029",
@@ -464,17 +464,17 @@
   {
     "id": "TX-SAF-0031",
     "topic": "SAFE_DRIVING",
-    "difficulty": 1,
-    "text": "What is the safest choice if you've been drinking?",
+    "difficulty": 2,
+    "text": "After a night out, you realize you've had too much to drink. Your home is only 2 miles away. What is the safest decision?",
     "choices": [
-      "Use a designated driver, taxi, or rideshare service",
-      "Drive slowly and carefully",
-      "Wait an hour before driving",
-      "Drink coffee to sober up"
+      "Call a rideshare, taxi, or designated driver — do not drive any distance",
+      "Drive slowly using back roads to avoid traffic",
+      "Wait 30 minutes, drink some water, then drive home",
+      "Drive home since the distance is very short"
     ],
     "correctIndex": 0,
-    "explanation": "The only safe choice after drinking is not to drive. Designated drivers, taxis, rideshares, or staying put eliminate the risk of impaired driving crashes.",
-    "reference": "DL-7: Safe Driving Practices"
+    "explanation": "There is no safe distance to drive while impaired. A large percentage of alcohol-related crashes occur within a few miles of the starting point. Coffee, water, and fresh air do not reduce BAC — only time does. The safest choice is always a sober driver, taxi, or rideshare service, regardless of how close your destination is.",
+    "reference": "DL-7 Safe Driving Practices"
   },
   {
     "id": "TX-SAF-0032",
@@ -554,17 +554,17 @@
   {
     "id": "TX-SAF-0037",
     "topic": "SAFE_DRIVING",
-    "difficulty": 1,
-    "text": "What is the only cure for drowsiness while driving?",
+    "difficulty": 2,
+    "text": "During a long drive, you find yourself yawning repeatedly, drifting between lanes, and having trouble keeping your eyes open. You roll down the window and turn up the radio. Are you now safe to continue driving?",
     "choices": [
-      "Sleep",
-      "Coffee",
-      "Fresh air",
-      "Loud music"
+      "No — the only effective remedy for drowsiness is actual sleep",
+      "Yes — fresh air and music are proven to restore alertness",
+      "Yes — as long as you also drink coffee within 15 minutes",
+      "Yes — but only if you take a 5-minute stretching break first"
     ],
     "correctIndex": 0,
-    "explanation": "Only actual sleep restores alertness. Coffee, fresh air, and music may provide brief alertness but don't address the underlying fatigue that impairs your driving ability.",
-    "reference": "DL-7: Safe Driving Practices"
+    "explanation": "Fresh air, loud music, and coffee may provide a brief illusion of alertness but do not address the underlying sleep deficit. Drowsy driving impairs reaction time and judgment similarly to alcohol. The only effective countermeasure is pulling over to a safe location and sleeping for at least 15–20 minutes.",
+    "reference": "DL-7 Safe Driving Practices"
   },
   {
     "id": "TX-SAF-0038",
@@ -689,17 +689,17 @@
   {
     "id": "TX-SAF-0046",
     "topic": "SAFE_DRIVING",
-    "difficulty": 1,
-    "text": "What should you do when it starts raining?",
+    "difficulty": 2,
+    "text": "Rain begins falling heavily as you drive on the highway. The road surface quickly becomes wet. What combination of actions should you take?",
     "choices": [
-      "Reduce speed and increase following distance",
-      "Maintain the same speed",
-      "Speed up to get through the rain quickly",
-      "Use parking lights only"
+      "Reduce speed, increase following distance, and turn on headlights",
+      "Maintain speed but turn on windshield wipers",
+      "Speed up to get through the rain faster and reduce exposure",
+      "Move to the left lane where water accumulates less"
     ],
     "correctIndex": 0,
-    "explanation": "Rain reduces traction and visibility, requiring slower speeds and more following distance. These adjustments give you time to react and stop safely on slippery roads.",
-    "reference": "DL-7: Safe Driving Practices"
+    "explanation": "Rain reduces both traction and visibility. Reducing speed lowers your hydroplaning risk. Increasing following distance gives you more stopping room on slippery pavement. Headlights make you visible to other drivers. The first few minutes of rain are especially dangerous because oil on the road surface mixes with water, creating the slickest conditions.",
+    "reference": "DL-7 Safe Driving Practices"
   },
   {
     "id": "TX-SAF-0047",
@@ -779,17 +779,17 @@
   {
     "id": "TX-SAF-0052",
     "topic": "SAFE_DRIVING",
-    "difficulty": 1,
-    "text": "What should you do when driving in fog?",
+    "difficulty": 2,
+    "text": "You encounter dense fog while driving. Visibility drops to about 200 feet. What is the correct combination of actions?",
     "choices": [
-      "Slow down, use low beams, and increase following distance",
-      "Use high beams and maintain speed",
-      "Follow the taillights of the car ahead closely",
-      "Use parking lights only"
+      "Slow down, use low-beam headlights, and increase following distance significantly",
+      "Turn on high-beam headlights and maintain your speed",
+      "Follow the taillights of the car ahead as closely as possible for guidance",
+      "Pull over and wait only if visibility drops below 50 feet"
     ],
     "correctIndex": 0,
-    "explanation": "Fog requires reduced speed for limited visibility, low beams to avoid glare, and increased following distance to allow for reduced visibility and reaction time.",
-    "reference": "DL-7: Safe Driving Practices"
+    "explanation": "In fog, use low beams — high beams reflect off water droplets and actually reduce your visibility. Slow down so you can stop within the distance you can see. Increase following distance because the car ahead may brake suddenly. Following taillights too closely creates a chain-reaction crash risk if the lead vehicle stops.",
+    "reference": "DL-7 Safe Driving Practices"
   },
   {
     "id": "TX-SAF-0053",
@@ -989,17 +989,17 @@
   {
     "id": "TX-SAF-0066",
     "topic": "SAFE_DRIVING",
-    "difficulty": 1,
-    "text": "What is the minimum tire tread depth required in Texas?",
+    "difficulty": 2,
+    "text": "You check your tires and the tread depth measures 1/32 of an inch. Is this tire safe and legal to drive on in Texas?",
     "choices": [
-      "2/32 of an inch",
-      "1/32 of an inch",
-      "4/32 of an inch",
-      "6/32 of an inch"
+      "No — Texas requires a minimum tread depth of 2/32 of an inch",
+      "Yes — 1/32 of an inch meets the Texas minimum standard",
+      "It depends on whether the tires are on the front or rear axle",
+      "Yes, as long as there are no visible cords or wires"
     ],
     "correctIndex": 0,
-    "explanation": "Texas requires minimum 2/32 inch tread depth. Tread channels water away from the tire contact patch, and worn tread greatly increases hydroplaning risk and reduces traction.",
-    "reference": "DL-7: Safe Driving Practices",
+    "explanation": "Texas requires a minimum tire tread depth of 2/32 of an inch (approximately 1.6 mm). At 1/32 inch, your tires are below the legal limit and dangerously worn. Tread channels water away from the tire's contact patch — without adequate tread, hydroplaning risk increases dramatically, and braking distance on wet roads can double or triple.",
+    "reference": "Texas Transportation Code §547.101; DL-7 Safe Driving Practices",
     "image": {
       "type": "svg",
       "assetId": "SAFE_TIRE_TREAD_DEPTH"

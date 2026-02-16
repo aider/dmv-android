@@ -36,17 +36,17 @@
   {
     "id": "TX-SPC-0003",
     "topic": "SPECIAL_SITUATIONS",
-    "difficulty": 1,
-    "text": "What is the minimum distance you must stop from a school bus with flashing red lights?",
+    "difficulty": 2,
+    "text": "You see a school bus ahead stopped with its red lights flashing and stop arm extended. You are on the same undivided two-lane road. How far back must you stop?",
     "choices": [
-      "20 feet",
-      "10 feet",
-      "15 feet",
-      "25 feet"
+      "At least 20 feet from the bus",
+      "At least 10 feet from the bus",
+      "Directly behind the bus is sufficient",
+      "At least 50 feet from the bus"
     ],
     "correctIndex": 0,
-    "explanation": "Texas law requires drivers to stop at least 20 feet away from a stopped school bus with flashing red lights. This distance provides a safety buffer for children boarding or exiting the bus.",
-    "reference": "DL-7: Special Driving Situations"
+    "explanation": "Texas law requires all vehicles on an undivided road to stop at least 20 feet from a school bus displaying flashing red lights. This 20-foot buffer gives children a safe zone to cross the road and protects them from vehicles that might not see them behind the bus.",
+    "reference": "Texas Transportation Code §545.066; DL-7 Special Driving Situations"
   },
   {
     "id": "TX-SPC-0004",
@@ -119,17 +119,17 @@
   {
     "id": "TX-SPC-0008",
     "topic": "SPECIAL_SITUATIONS",
-    "difficulty": 1,
-    "text": "Can you pass a school bus from either direction when its red lights are flashing?",
+    "difficulty": 2,
+    "text": "You are driving on a two-lane undivided road. A school bus coming toward you activates its flashing red lights. Must you stop?",
     "choices": [
-      "No, passing is prohibited from both directions on undivided roads",
-      "Yes, but only from the rear",
-      "Yes, if you slow to 15 mph",
-      "Yes, if no children are visible"
+      "Yes — on an undivided road, traffic from both directions must stop for a school bus with red lights",
+      "No — only vehicles behind the bus must stop",
+      "Only if children are visibly crossing the road",
+      "Only if you are within 50 feet of the bus"
     ],
     "correctIndex": 0,
-    "explanation": "It is illegal to pass a school bus from any direction when its red lights are flashing on an undivided roadway. All traffic must stop until the lights stop flashing and children are safe.",
-    "reference": "DL-7: Special Driving Situations"
+    "explanation": "On an undivided road (no physical median barrier), vehicles traveling in BOTH directions must stop when a school bus displays flashing red lights. Children may cross from either side. The only exception is roads with a physical dividing barrier (such as a raised median), where oncoming traffic is not required to stop.",
+    "reference": "Texas Transportation Code §545.066; DL-7 Special Driving Situations"
   },
   {
     "id": "TX-SPC-0009",
@@ -213,17 +213,17 @@
   {
     "id": "TX-SPC-0014",
     "topic": "SPECIAL_SITUATIONS",
-    "difficulty": 1,
-    "text": "In a school zone, you should be especially alert for:",
+    "difficulty": 2,
+    "text": "You are driving through a school zone at 20 mph during dismissal time. Several children are walking on the sidewalk, and one child appears to be chasing a ball toward the curb. What should you expect?",
     "choices": [
-      "Children who may suddenly enter the roadway",
-      "Faster traffic from behind",
-      "Animals crossing the street",
-      "Emergency vehicles"
+      "The child may run into the street without looking — be prepared to stop immediately",
+      "The child will stop at the curb and look both ways",
+      "The crossing guard will intervene before the child reaches the street",
+      "Other children will stop them before they enter the roadway"
     ],
     "correctIndex": 0,
-    "explanation": "Children can be unpredictable and may dart into the street without warning. In school zones, drivers must be especially alert and prepared to stop quickly for children.",
-    "reference": "DL-7: Special Driving Situations"
+    "explanation": "Children are unpredictable and often focus on play rather than traffic safety. A child chasing a ball is very likely to run into the street without checking for vehicles. In school zones, always expect the unexpected and be ready to stop instantly. Reaction time at 20 mph gives you about 30 feet of stopping distance.",
+    "reference": "DL-7 Special Driving Situations"
   },
   {
     "id": "TX-SPC-0015",
@@ -243,17 +243,17 @@
   {
     "id": "TX-SPC-0016",
     "topic": "SPECIAL_SITUATIONS",
-    "difficulty": 1,
-    "text": "How far from the nearest railroad track must you stop when a train is approaching?",
+    "difficulty": 2,
+    "text": "You approach a railroad crossing with flashing red lights and the crossing gate is lowering. You stop your vehicle. What distance from the nearest rail should you maintain?",
     "choices": [
-      "15 to 50 feet",
-      "10 to 25 feet",
-      "5 to 15 feet",
-      "20 to 60 feet"
+      "Between 15 and 50 feet from the nearest rail",
+      "Between 5 and 10 feet from the nearest rail",
+      "At least 100 feet from the nearest rail",
+      "As close as the gate allows"
     ],
     "correctIndex": 0,
-    "explanation": "Texas law requires you to stop between 15 and 50 feet from the nearest railroad track when a train is approaching. This distance keeps you safe while allowing trains to pass.",
-    "reference": "DL-7: Special Driving Situations",
+    "explanation": "Texas law requires you to stop between 15 and 50 feet from the nearest railroad rail. Stopping closer than 15 feet puts you dangerously close to the train's path, as trains extend beyond the rails. Stopping beyond 50 feet could put you too far back to see clearly when it is safe to proceed.",
+    "reference": "Texas Transportation Code §545.251; DL-7 Special Driving Situations",
     "image": {
       "type": "svg",
       "assetId": "SPECIAL_RAILROAD_STOP_PROCEDURE"
@@ -311,17 +311,17 @@
   {
     "id": "TX-SPC-0020",
     "topic": "SPECIAL_SITUATIONS",
-    "difficulty": 1,
-    "text": "A round yellow sign with a black X and two R's means:",
+    "difficulty": 2,
+    "text": "You see a round yellow sign with a black X and the letters RR while driving on an unfamiliar country road. What should you do?",
     "choices": [
-      "Railroad crossing ahead",
-      "Road closed ahead",
-      "Rest area ahead",
-      "Roundabout ahead"
+      "Slow down, look and listen for trains — a railroad crossing is ahead",
+      "Watch for a rest area entrance on the right",
+      "Prepare for a roundabout ahead",
+      "Yield to cross traffic at the next intersection"
     ],
     "correctIndex": 0,
-    "explanation": "The round yellow warning sign with an X and RR indicates a railroad crossing ahead. This advance warning sign gives you time to prepare to stop if necessary.",
-    "reference": "DL-7: Special Driving Situations",
+    "explanation": "The round yellow advance warning sign with the black X and RR is the Railroad Advance Warning sign (MUTCD W10-1). It tells you a railroad crossing is ahead, giving you time to slow down and prepare to stop if a train is approaching. On rural roads, crossings may not have gates or flashing lights, making this advance warning critical.",
+    "reference": "MUTCD Section 8B.04; DL-7 Special Driving Situations",
     "image": {
       "type": "svg",
       "assetId": "MUTCD_R15-1_RAILROAD_CROSSING"
@@ -390,17 +390,17 @@
   {
     "id": "TX-SPC-0025",
     "topic": "SPECIAL_SITUATIONS",
-    "difficulty": 1,
-    "text": "Flashing red lights at a railroad crossing mean:",
+    "difficulty": 2,
+    "text": "You are stopped at a railroad crossing with flashing red lights. After a train passes, the lights continue to flash. What should you do?",
     "choices": [
-      "Stop and do not proceed until the lights stop flashing",
-      "Slow down and proceed with caution",
-      "Stop, look both ways, then proceed",
-      "A train has just passed and the crossing is now clear"
+      "Remain stopped — a second train may be approaching from the other direction",
+      "Proceed carefully after the first train has fully passed",
+      "Inch forward slowly to check if the track is clear",
+      "Wait exactly 30 seconds after the train passes, then proceed"
     ],
     "correctIndex": 0,
-    "explanation": "Flashing red lights at a railroad crossing mean a train is approaching. You must stop and remain stopped until the lights stop flashing, even if you cannot see or hear a train.",
-    "reference": "DL-7: Special Driving Situations"
+    "explanation": "If the red lights continue flashing after a train passes, another train may be approaching on a different track. Never proceed while the warning lights are active, even if you just saw a train go by. Multi-track crossings are common, and a second train can arrive from the opposite direction within seconds.",
+    "reference": "Texas Transportation Code §545.251; DL-7 Special Driving Situations"
   },
   {
     "id": "TX-SPC-0026",
@@ -503,17 +503,17 @@
   {
     "id": "TX-SPC-0032",
     "topic": "SPECIAL_SITUATIONS",
-    "difficulty": 1,
-    "text": "In active work zones in Texas, traffic fines are:",
+    "difficulty": 2,
+    "text": "You are driving through a highway work zone and see workers and equipment near the road. You notice a sign saying 'Fines Doubled.' If you are cited for speeding here, how are the fines affected?",
     "choices": [
-      "Doubled",
-      "The same as normal",
-      "Tripled",
-      "Increased by 50%"
+      "The fine is doubled compared to the normal amount for that violation",
+      "The fine remains the same but points on your license are doubled",
+      "The fine is tripled in active work zones",
+      "Fines are only doubled if a worker is injured"
     ],
     "correctIndex": 0,
-    "explanation": "Texas doubles fines for traffic violations in active work zones where workers are present. These increased penalties encourage drivers to slow down and drive carefully to protect workers.",
-    "reference": "DL-7: Special Driving Situations"
+    "explanation": "Texas law doubles traffic fines in active work zones where workers are present. This applies to speeding, failure to obey traffic control devices, and other moving violations. The doubled fines serve as a deterrent because work zone crashes are disproportionately fatal — workers have no protection from passing vehicles.",
+    "reference": "Texas Transportation Code §542.404; DL-7 Special Driving Situations"
   },
   {
     "id": "TX-SPC-0033",
@@ -586,17 +586,17 @@
   {
     "id": "TX-SPC-0037",
     "topic": "SPECIAL_SITUATIONS",
-    "difficulty": 1,
-    "text": "In work zones, you should:",
+    "difficulty": 2,
+    "text": "You are driving through a construction zone on a highway. The lanes are narrower than usual, cones line both sides, and workers are operating equipment near the right shoulder. What is the safest approach?",
     "choices": [
-      "Watch for workers and equipment entering the roadway",
-      "Speed up to exit the zone quickly",
-      "Change lanes frequently to find the fastest route",
-      "Follow very closely to the vehicle ahead"
+      "Reduce speed, stay centered in your lane, and watch for workers or equipment entering the roadway",
+      "Speed up to exit the work zone as quickly as possible",
+      "Change lanes frequently to find the lane with the least cones",
+      "Follow the vehicle ahead as closely as possible to prevent other cars from cutting in"
     ],
     "correctIndex": 0,
-    "explanation": "In work zones, always watch for workers and equipment that may enter the roadway unexpectedly. Stay alert and be prepared to stop or slow down for changing conditions.",
-    "reference": "DL-7: Special Driving Situations"
+    "explanation": "In work zones, reduce speed to account for narrow lanes and unexpected hazards. Stay centered in your lane to maintain maximum clearance from cones and barriers. Watch for workers, equipment, and sudden lane shifts. Work zone crashes kill hundreds of drivers and workers each year, and most are caused by speeding and inattention.",
+    "reference": "DL-7 Special Driving Situations"
   },
   {
     "id": "TX-SPC-0038",
@@ -661,17 +661,17 @@
   {
     "id": "TX-SPC-0042",
     "topic": "SPECIAL_SITUATIONS",
-    "difficulty": 1,
-    "text": "An orange warning sign with a symbol of a person holding a flag indicates:",
+    "difficulty": 2,
+    "text": "As you approach a highway construction area, you see an orange diamond sign with a figure of a person holding a flag. What does this sign indicate?",
     "choices": [
-      "Flagger ahead in work zone",
-      "Flag ceremony ahead",
-      "Pedestrian crossing ahead",
-      "Rest area ahead"
+      "A flagger is ahead directing traffic — prepare to slow or stop as directed",
+      "A flag ceremony is being held near the road",
+      "Pedestrian crossing ahead within the work zone",
+      "A road survey crew is working and may be standing in the lane"
     ],
     "correctIndex": 0,
-    "explanation": "An orange warning sign showing a person with a flag alerts drivers that a flagger is ahead controlling traffic. Prepare to slow down or stop as directed by the flagger.",
-    "reference": "DL-7: Special Driving Situations",
+    "explanation": "The orange Flagger Ahead sign (MUTCD W20-7) warns that a flagger is controlling traffic ahead, typically because of lane closures or alternating one-way traffic in the work zone. Slow down and be prepared to stop. The flagger's directions have the force of law — you must obey them just like a traffic signal.",
+    "reference": "MUTCD Section 6E.03; DL-7 Special Driving Situations",
     "image": {
       "type": "svg",
       "assetId": "MUTCD_W20-7_FLAGGER_AHEAD"
@@ -725,17 +725,17 @@
   {
     "id": "TX-SPC-0046",
     "topic": "SPECIAL_SITUATIONS",
-    "difficulty": 1,
-    "text": "If your vehicle breaks down on the highway, you should:",
+    "difficulty": 2,
+    "text": "Your car's engine suddenly dies while you are in the right lane of a busy highway. You can still steer and brake. What is the safest course of action?",
     "choices": [
-      "Pull over to the right shoulder, turn on hazard lights, and raise your hood",
-      "Stop in your lane and turn on hazard lights",
-      "Continue driving to the nearest exit",
-      "Stop on the left shoulder for easier access to help"
+      "Steer to the right shoulder, activate hazard lights, and raise the hood to signal distress",
+      "Stop immediately in your lane and turn on hazard lights",
+      "Try to restart the engine while coasting in the travel lane",
+      "Coast to the left shoulder for better visibility to approaching traffic"
     ],
     "correctIndex": 0,
-    "explanation": "When your vehicle breaks down, safely pull to the right shoulder, activate hazard lights, and raise the hood to signal trouble. This alerts other drivers and keeps you out of traffic lanes.",
-    "reference": "DL-7: Special Driving Situations"
+    "explanation": "When your vehicle breaks down on a highway, use your remaining momentum to steer safely onto the right shoulder, as far from traffic as possible. Activate your hazard lights immediately to warn other drivers. Raising the hood is a universal signal of a disabled vehicle. Stopping in a travel lane or the left shoulder exposes you to high-speed rear-end collisions.",
+    "reference": "DL-7 Special Driving Situations"
   },
   {
     "id": "TX-SPC-0047",
