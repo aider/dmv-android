@@ -33,7 +33,6 @@ jobs:
           set -euo pipefail
           gh label create android-developer --repo "$REPO" --color 1D76DB --description "Android implementation agent" --force
           gh label create svg-review-agent --repo "$REPO" --color B60205 --description "SVG quality reviewer agent" --force
-          gh label create svg-asset-curator --repo "$REPO" --color 0E8A16 --description "SVG implementation agent" --force
           gh label create imagen-asset-generator --repo "$REPO" --color 5319E7 --description "Image asset generation agent (Claude + Google Nano Banana)" --force
           gh label create pr-requirements-ux-reviewer --repo "$REPO" --color 5319E7 --description "Product and UX reviewer agent" --force
           gh label create design-coordinator --repo "$REPO" --color FBCA04 --description "Cross-cutting design and UX coordination" --force
@@ -82,13 +81,13 @@ jobs:
 
           case "$pr_type" in
             svg)
-              gh pr edit "$PR" --repo "$REPO" --add-label svg-asset-curator --add-label svg-review-agent --add-label design-coordinator
+              gh pr edit "$PR" --repo "$REPO" --add-label imagen-asset-generator --add-label svg-review-agent --add-label design-coordinator
               ;;
             android)
               gh pr edit "$PR" --repo "$REPO" --add-label android-developer --add-label pr-requirements-ux-reviewer --add-label design-coordinator
               ;;
             mixed)
-              gh pr edit "$PR" --repo "$REPO" --add-label android-developer --add-label svg-asset-curator --add-label svg-review-agent --add-label pr-requirements-ux-reviewer --add-label design-coordinator
+              gh pr edit "$PR" --repo "$REPO" --add-label android-developer --add-label imagen-asset-generator --add-label svg-review-agent --add-label pr-requirements-ux-reviewer --add-label design-coordinator
               ;;
             image)
               gh pr edit "$PR" --repo "$REPO" --add-label imagen-asset-generator --add-label design-coordinator
