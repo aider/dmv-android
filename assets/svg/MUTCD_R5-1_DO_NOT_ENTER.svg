@@ -1,19 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD R5-1 DO NOT ENTER Sign">
-  <!-- Outer white border (circle) -->
-  <circle cx="100" cy="100" r="92" fill="#FFFFFF"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="MUTCD_R5-1_DO_NOT_ENTER">
+  <!-- Square white sign plate -->
+  <rect x="10" y="10" width="180" height="180" rx="10" fill="#FFFFFF" stroke="#000000" stroke-width="4"/>
 
-  <!-- Red background (circle, inset) -->
-  <circle cx="100" cy="100" r="86" fill="#C1272D"/>
+  <!-- Red disc centered on sign plate -->
+  <circle cx="100" cy="100" r="76" fill="#C9252D"/>
 
-  <!-- Inner white border ring -->
-  <circle cx="100" cy="100" r="80" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+  <!-- Thick horizontal white bar -->
+  <rect x="42" y="93" width="116" height="14" fill="#FFFFFF"/>
 
-  <!-- White horizontal bar (separator, no text) -->
-  <rect x="30" y="93" width="140" height="14" fill="#FFFFFF"/>
-
-  <!-- DO NOT text (white on red, upper half) -->
-  <text x="100" y="85" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900" fill="#FFFFFF" text-anchor="middle">DO NOT</text>
-
-  <!-- ENTER text (white on red, lower half) -->
-  <text x="100" y="125" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900" fill="#FFFFFF" text-anchor="middle">ENTER</text>
+  <!-- Canonical two-line legend -->
+  <text x="100" y="84" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900" fill="#FFFFFF" text-anchor="middle">DO NOT</text>
+  <text x="100" y="132" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900" fill="#FFFFFF" text-anchor="middle">ENTER</text>
 </svg>
