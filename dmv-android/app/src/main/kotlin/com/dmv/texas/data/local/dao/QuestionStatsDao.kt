@@ -44,6 +44,9 @@ interface QuestionStatsDao {
 
     @Query("SELECT COUNT(*) FROM question_stats WHERE timesWrong > 0")
     suspend fun getMistakeCount(): Int
+
+    @Query("SELECT COUNT(*) FROM question_stats WHERE timesSeen > 0")
+    suspend fun getTotalSeen(): Int
 }
 
 data class TopicAccuracy(val topic: String, val totalCorrect: Int, val totalSeen: Int)
