@@ -21,17 +21,17 @@
   {
     "id": "TX-ROW-0002",
     "topic": "RIGHT_OF_WAY",
-    "difficulty": 1,
-    "text": "At a 4-way stop, if you arrive first, when should you proceed?",
+    "difficulty": 2,
+    "text": "You arrive at a four-way stop at the same time as another vehicle to your right. Neither of you has a clear priority based on arrival time. Who should go first?",
     "choices": [
-      "After coming to a complete stop and when it is safe",
-      "Immediately without stopping",
-      "After waiting for all other vehicles",
-      "Only when another driver signals you to go"
+      "The driver on your right has the right-of-way",
+      "The driver on the larger road has the right-of-way",
+      "You should go first since you are on the left",
+      "Both drivers should proceed simultaneously with caution"
     ],
     "correctIndex": 0,
-    "explanation": "The first vehicle to arrive at a 4-way stop and come to a complete stop has the right-of-way and may proceed when safe. This maintains orderly traffic flow.",
-    "reference": "DL-7: Right-of-Way Rules"
+    "explanation": "When two vehicles arrive at a four-way stop at approximately the same time, the vehicle on the right has the right-of-way. This 'yield to the right' rule provides a simple, predictable tiebreaker that all drivers can follow consistently.",
+    "reference": "Texas Transportation Code §545.151; DL-7 Right-of-Way Rules"
   },
   {
     "id": "TX-ROW-0003",
@@ -108,17 +108,17 @@
   {
     "id": "TX-ROW-0007",
     "topic": "RIGHT_OF_WAY",
-    "difficulty": 1,
-    "text": "You arrive at an intersection with a stop sign. What must you do before proceeding?",
+    "difficulty": 2,
+    "text": "You arrive at an intersection controlled by a stop sign. After stopping, you see a vehicle approaching on the cross street with no stop sign. What should you do?",
     "choices": [
-      "Come to a complete stop and yield to traffic",
-      "Slow down and proceed if clear",
-      "Stop only if other vehicles are present",
-      "Honk and proceed slowly"
+      "Remain stopped and let the approaching vehicle pass before proceeding",
+      "Proceed quickly since you stopped first",
+      "Inch forward to signal your intent to go",
+      "Honk to alert the other driver that you were there first"
     ],
     "correctIndex": 0,
-    "explanation": "A stop sign requires a complete stop before the stop line or crosswalk. You must yield the right-of-way to vehicles and pedestrians before proceeding safely.",
-    "reference": "DL-7: Right-of-Way Rules",
+    "explanation": "A stop sign means you must stop AND yield the right-of-way to all vehicles and pedestrians on the cross street. The vehicle on the uncontrolled street has the right-of-way over you. You may proceed only after it is safe and no conflicting traffic is approaching.",
+    "reference": "Texas Transportation Code §545.151; DL-7 Right-of-Way Rules",
     "image": {
       "type": "svg",
       "assetId": "MUTCD_R1-1_STOP"
@@ -172,17 +172,17 @@
   {
     "id": "TX-ROW-0011",
     "topic": "RIGHT_OF_WAY",
-    "difficulty": 1,
-    "text": "You see a yield sign at an intersection. What does this mean?",
+    "difficulty": 2,
+    "text": "You approach a yield sign at a highway on-ramp. Traffic on the highway is flowing steadily. What is the correct action?",
     "choices": [
-      "Slow down and give right-of-way to other vehicles and pedestrians",
-      "Stop completely before proceeding",
-      "Proceed without slowing if the road is clear",
-      "Honk to warn other drivers"
+      "Slow down, check for a gap in highway traffic, and merge only when it is safe",
+      "Stop completely at the yield sign before entering the highway",
+      "Maintain your speed and merge — highway traffic must make room for you",
+      "Accelerate to highway speed and force your way into traffic"
     ],
     "correctIndex": 0,
-    "explanation": "A yield sign requires you to slow down and be ready to stop, giving the right-of-way to vehicles and pedestrians. You may proceed only when it is safe to do so.",
-    "reference": "DL-7: Right-of-Way Rules",
+    "explanation": "A yield sign requires you to slow down and be prepared to stop if necessary, giving the right-of-way to vehicles already on the highway. You do not have to stop if a safe gap exists, but you must not force your way into traffic. Adjust your speed to match a gap and merge smoothly.",
+    "reference": "Texas Transportation Code §545.153; DL-7 Right-of-Way Rules",
     "image": {
       "type": "svg",
       "assetId": "MUTCD_R1-2_YIELD"
@@ -236,17 +236,17 @@
   {
     "id": "TX-ROW-0015",
     "topic": "RIGHT_OF_WAY",
-    "difficulty": 1,
-    "text": "When making a right turn at a red light (where permitted), what must you do first?",
+    "difficulty": 2,
+    "text": "You're stopped at a red light and want to turn right. The intersection has no 'No Turn on Red' sign. A pedestrian is crossing in the crosswalk to your right. What must you do?",
     "choices": [
-      "Come to a complete stop and yield to all traffic and pedestrians",
-      "Slow down and proceed if clear",
-      "Honk to alert other drivers",
-      "Wait for the green light"
+      "Remain stopped until the pedestrian clears your path, then turn when safe",
+      "Turn right slowly behind the pedestrian since you already stopped",
+      "Honk to alert the pedestrian, then turn",
+      "Wait for the light to turn green before turning"
     ],
     "correctIndex": 0,
-    "explanation": "Before turning right on red, you must come to a complete stop and yield to all vehicles and pedestrians. Proceed only when safe and where right turns on red are permitted.",
-    "reference": "DL-7: Right-of-Way Rules"
+    "explanation": "Before turning right on red in Texas, you must come to a complete stop and yield to ALL pedestrians and vehicles. Even though right-on-red is permitted, the pedestrian in the crosswalk has the right-of-way. Wait until they have completely cleared your turning path before proceeding.",
+    "reference": "Texas Transportation Code §544.007(d); DL-7 Right-of-Way Rules"
   },
   {
     "id": "TX-ROW-0016",
@@ -296,17 +296,17 @@
   {
     "id": "TX-ROW-0019",
     "topic": "RIGHT_OF_WAY",
-    "difficulty": 1,
-    "text": "You are approaching an intersection where you want to turn right, and the light is green. What should you do?",
+    "difficulty": 2,
+    "text": "You have a green light and are turning right at an intersection. A jogger is in the crosswalk completing their crossing. What should you do?",
     "choices": [
-      "Slow down, check for pedestrians and traffic, then turn when safe",
-      "Turn at full speed since you have a green light",
-      "Stop completely before turning",
-      "Turn only if there are no pedestrians anywhere nearby"
+      "Yield to the jogger and turn only after they have cleared your path",
+      "Proceed with the turn since your green light gives you the right-of-way over pedestrians",
+      "Honk to alert the jogger and proceed with your turn",
+      "Speed up to turn before the jogger reaches your lane"
     ],
     "correctIndex": 0,
-    "explanation": "Even with a green light, you must yield to pedestrians in the crosswalk and oncoming traffic before turning. Always slow down and check before completing the turn.",
-    "reference": "DL-7: Right-of-Way Rules"
+    "explanation": "Even with a green light, drivers must yield to pedestrians already in the crosswalk. A green light permits you to proceed through the intersection but does not override a pedestrian's right-of-way. Always scan crosswalks before and during any turn.",
+    "reference": "Texas Transportation Code §552.003; DL-7 Right-of-Way Rules"
   },
   {
     "id": "TX-ROW-0020",
@@ -431,17 +431,17 @@
   {
     "id": "TX-ROW-0028",
     "topic": "RIGHT_OF_WAY",
-    "difficulty": 1,
-    "text": "What does a green traffic light mean for your right-of-way?",
+    "difficulty": 2,
+    "text": "The traffic light turns green. A delivery truck that entered the intersection on the previous yellow phase is still clearing the intersection. What should you do?",
     "choices": [
-      "You may proceed, but must yield to pedestrians and vehicles already in the intersection",
-      "You have absolute right-of-way and can proceed immediately",
-      "You must stop and then proceed",
-      "Only pedestrians may proceed"
+      "Wait for the truck to clear the intersection before proceeding",
+      "Proceed immediately since your light is green",
+      "Honk to hurry the truck through the intersection",
+      "Go around the truck using the oncoming lane"
     ],
     "correctIndex": 0,
-    "explanation": "A green light means you may proceed through the intersection, but you must still yield to pedestrians and any vehicles already lawfully in the intersection.",
-    "reference": "DL-7: Right-of-Way Rules"
+    "explanation": "A green light means you may proceed, but you must yield to any vehicles and pedestrians already lawfully in the intersection. The truck entered on yellow and has the right to finish clearing. Entering the intersection while it is still occupied creates a collision risk.",
+    "reference": "Texas Transportation Code §544.007; DL-7 Right-of-Way Rules"
   },
   {
     "id": "TX-ROW-0029",
@@ -495,17 +495,17 @@
   {
     "id": "TX-ROW-0032",
     "topic": "RIGHT_OF_WAY",
-    "difficulty": 1,
-    "text": "You see a pedestrian waiting to cross at an unmarked crosswalk at an intersection. What should you do?",
+    "difficulty": 2,
+    "text": "You are driving through a residential neighborhood and approach an intersection with no traffic signals or stop signs. A pedestrian steps off the curb at the corner, intending to cross. What must you do?",
     "choices": [
-      "Stop and allow the pedestrian to cross",
+      "Stop and yield to the pedestrian — crosswalks exist at intersections even without markings",
       "Proceed since there is no marked crosswalk",
-      "Slow down but continue through",
-      "Honk to indicate they should wait"
+      "Slow down but continue if the pedestrian can wait",
+      "Flash your headlights to signal the pedestrian to wait"
     ],
     "correctIndex": 0,
-    "explanation": "Pedestrians have the right-of-way at both marked and unmarked crosswalks at intersections. Drivers must yield to pedestrians crossing in these areas.",
-    "reference": "DL-7: Right-of-Way Rules"
+    "explanation": "Under Texas law, crosswalks exist at every intersection whether or not they are painted. Drivers must yield to pedestrians crossing within any crosswalk — marked or unmarked. A pedestrian stepping off the curb at an intersection corner is entering a legal crosswalk.",
+    "reference": "Texas Transportation Code §552.003; DL-7 Right-of-Way Rules"
   },
   {
     "id": "TX-ROW-0033",
@@ -540,17 +540,17 @@
   {
     "id": "TX-ROW-0035",
     "topic": "RIGHT_OF_WAY",
-    "difficulty": 1,
-    "text": "You approach a school zone during school hours and see children crossing. What should you do?",
+    "difficulty": 2,
+    "text": "You are driving through an active school zone at 20 mph. A group of children is crossing the road with a crossing guard holding a stop sign. What should you do?",
     "choices": [
-      "Stop and yield to all children crossing",
-      "Slow down but continue if safe",
-      "Honk to alert children to your presence",
-      "Proceed at normal speed if no crossing guard is present"
+      "Stop completely and wait until all children are safely across and the guard signals you to proceed",
+      "Slow to 10 mph and carefully drive around the group",
+      "Stop only if the children are directly in your lane",
+      "Proceed at 20 mph since that is the posted school zone speed"
     ],
     "correctIndex": 0,
-    "explanation": "Children crossing in school zones always have the right-of-way. Drivers must stop and yield to ensure their safety, especially during school hours.",
-    "reference": "DL-7: Right-of-Way Rules"
+    "explanation": "When a crossing guard displays a stop sign, all traffic must stop. Children in school zones have absolute right-of-way. Wait until every child has safely reached the sidewalk and the crossing guard signals that it is safe to proceed. Fines are doubled in school zones.",
+    "reference": "Texas Transportation Code §545.152; DL-7 Right-of-Way Rules"
   },
   {
     "id": "TX-ROW-0036",
@@ -630,17 +630,17 @@
   {
     "id": "TX-ROW-0041",
     "topic": "RIGHT_OF_WAY",
-    "difficulty": 1,
-    "text": "When can pedestrians cross at a red light?",
+    "difficulty": 2,
+    "text": "You are at an intersection with a traffic light. The vehicle signal is red, but the pedestrian signal shows a white WALK symbol. As a pedestrian, may you cross?",
     "choices": [
-      "Never, unless the pedestrian signal shows 'Walk'",
-      "Anytime if no vehicles are coming",
-      "During the red light phase for vehicles",
-      "Only with a crossing guard present"
+      "Yes — the pedestrian WALK signal authorizes you to begin crossing in that direction",
+      "No — the red vehicle signal applies to both drivers and pedestrians",
+      "Only if a crossing guard is present",
+      "Only if you can make it across before the signal changes"
     ],
     "correctIndex": 0,
-    "explanation": "Pedestrians must obey pedestrian signals just as drivers obey traffic signals. Pedestrians should only cross when their signal shows 'Walk' or the walking person symbol.",
-    "reference": "DL-7: Right-of-Way Rules"
+    "explanation": "Pedestrians follow the pedestrian signal, not the vehicle signal. When the pedestrian signal shows WALK (or the walking person symbol), pedestrians may begin crossing in the indicated direction, even if the vehicle signal for the same direction is red. The signals are timed to protect pedestrians from conflicting vehicle movements.",
+    "reference": "Texas Transportation Code §552.002; DL-7 Right-of-Way Rules"
   },
   {
     "id": "TX-ROW-0042",
@@ -690,17 +690,17 @@
   {
     "id": "TX-ROW-0045",
     "topic": "RIGHT_OF_WAY",
-    "difficulty": 1,
-    "text": "When passing a cyclist on the road, how much space should you give?",
+    "difficulty": 2,
+    "text": "You are driving on a two-lane road and come upon a cyclist riding in the right portion of your lane. You want to pass. How much clearance does Texas law require?",
     "choices": [
-      "At least 3 feet of clearance",
-      "At least 1 foot of clearance",
-      "As much space as possible, but no specific distance",
-      "At least 6 feet of clearance"
+      "At least 3 feet between your vehicle and the cyclist",
+      "At least 1 foot as long as you slow down",
+      "No specific distance — just pass when you feel it is safe",
+      "At least 6 feet, which usually requires crossing the center line"
     ],
     "correctIndex": 0,
-    "explanation": "Texas law requires drivers to give at least 3 feet of clearance when passing a cyclist. If you cannot safely pass with this distance, slow down and wait for a safe opportunity.",
-    "reference": "DL-7: Right-of-Way Rules"
+    "explanation": "Texas law requires motorists to maintain at least 3 feet of clearance when passing a cyclist. If the lane is too narrow to provide 3 feet of space, you must wait for a safe opportunity to move partially into the adjacent lane. Cyclists are legally entitled to use the roadway.",
+    "reference": "Texas Transportation Code §545.060; DL-7 Right-of-Way Rules"
   },
   {
     "id": "TX-ROW-0046",

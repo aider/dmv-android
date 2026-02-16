@@ -1,0 +1,81 @@
+questionId,topic,currentDifficulty,targetDifficulty,rewriteStatus,sourceRef
+TX-PRK-0001,PARKING,1,2,complete,Texas Transportation Code §545.302; DL-7 Parking Rules
+TX-PRK-0002,PARKING,1,2,complete,Texas Transportation Code §545.302; DL-7 Parking Rules
+TX-PRK-0004,PARKING,1,2,complete,Texas Transportation Code §545.302; DL-7 Parking Rules
+TX-PRK-0009,PARKING,1,2,complete,Texas Transportation Code §545.302; DL-7 Parking Rules
+TX-PRK-0015,PARKING,1,2,complete,DL-7 Parking Rules
+TX-PRK-0021,PARKING,1,2,complete,DL-7 Parking Rules
+TX-PRK-0027,PARKING,1,2,complete,DL-7 Parking Rules
+TX-PRK-0041,PARKING,1,2,complete,Texas Transportation Code §681.011; DL-7 Parking Rules
+TX-PRK-0052,PARKING,1,2,complete,Texas Transportation Code §545.051; DL-7 Parking Rules
+TX-PRK-0003,PARKING,2,3,complete,Texas Transportation Code §681.011; DL-7 Parking Rules
+TX-PAV-0001,PAVEMENT_MARKINGS,1,2,complete,MUTCD Section 3B.04; DL-7 Pavement Markings
+TX-PAV-0002,PAVEMENT_MARKINGS,1,2,complete,MUTCD Section 3B.04; DL-7 Pavement Markings
+TX-PAV-0007,PAVEMENT_MARKINGS,1,2,complete,MUTCD Section 3B.08; DL-7 Pavement Markings
+TX-PAV-0012,PAVEMENT_MARKINGS,1,2,complete,MUTCD Section 3B.16; DL-7 Pavement Markings
+TX-PAV-0019,PAVEMENT_MARKINGS,1,2,complete,MUTCD Section 3B.01; DL-7 Pavement Markings
+TX-PAV-0027,PAVEMENT_MARKINGS,1,2,complete,MUTCD Section 3B.20; DL-7 Pavement Markings
+TX-PAV-0029,PAVEMENT_MARKINGS,1,2,complete,Texas Transportation Code §552.003; DL-7 Pavement Markings
+TX-PAV-0043,PAVEMENT_MARKINGS,1,2,complete,MUTCD Section 3B.20; DL-7 Pavement Markings
+TX-PAV-0047,PAVEMENT_MARKINGS,1,2,complete,MUTCD Section 3B.01; DL-7 Pavement Markings
+TX-PAV-0003,PAVEMENT_MARKINGS,2,3,complete,MUTCD Section 3B.04; DL-7 Pavement Markings
+TX-ROW-0002,RIGHT_OF_WAY,1,2,complete,Texas Transportation Code §545.151; DL-7 Right-of-Way Rules
+TX-ROW-0007,RIGHT_OF_WAY,1,2,complete,Texas Transportation Code §545.151; DL-7 Right-of-Way Rules
+TX-ROW-0011,RIGHT_OF_WAY,1,2,complete,Texas Transportation Code §545.153; DL-7 Right-of-Way Rules
+TX-ROW-0015,RIGHT_OF_WAY,1,2,complete,Texas Transportation Code §544.007(d); DL-7 Right-of-Way Rules
+TX-ROW-0019,RIGHT_OF_WAY,1,2,complete,Texas Transportation Code §552.003; DL-7 Right-of-Way Rules
+TX-ROW-0028,RIGHT_OF_WAY,1,2,complete,Texas Transportation Code §544.007; DL-7 Right-of-Way Rules
+TX-ROW-0032,RIGHT_OF_WAY,1,2,complete,Texas Transportation Code §552.003; DL-7 Right-of-Way Rules
+TX-ROW-0035,RIGHT_OF_WAY,1,2,complete,Texas Transportation Code §545.152; DL-7 Right-of-Way Rules
+TX-ROW-0041,RIGHT_OF_WAY,1,2,complete,Texas Transportation Code §552.002; DL-7 Right-of-Way Rules
+TX-ROW-0045,RIGHT_OF_WAY,1,2,complete,Texas Transportation Code §545.060; DL-7 Right-of-Way Rules
+TX-SAF-0003,SAFE_DRIVING,1,2,complete,DL-7 Safe Driving Practices
+TX-SAF-0008,SAFE_DRIVING,1,2,complete,Texas Transportation Code §545.4251; DL-7 Safe Driving Practices
+TX-SAF-0014,SAFE_DRIVING,1,2,complete,Texas Transportation Code §545.151(d); DL-7 Safe Driving Practices
+TX-SAF-0026,SAFE_DRIVING,1,2,complete,Texas Penal Code §49.01; DL-7 Safe Driving Practices
+TX-SAF-0028,SAFE_DRIVING,1,2,complete,DL-7 Safe Driving Practices
+TX-SAF-0031,SAFE_DRIVING,1,2,complete,DL-7 Safe Driving Practices
+TX-SAF-0037,SAFE_DRIVING,1,2,complete,DL-7 Safe Driving Practices
+TX-SAF-0046,SAFE_DRIVING,1,2,complete,DL-7 Safe Driving Practices
+TX-SAF-0052,SAFE_DRIVING,1,2,complete,DL-7 Safe Driving Practices
+TX-SAF-0066,SAFE_DRIVING,1,2,complete,Texas Transportation Code §547.101; DL-7 Safe Driving Practices
+TX-SIG-0001,SIGNS,1,2,complete,MUTCD Section 2B.03; DL-7 Traffic Signs
+TX-SIG-0002,SIGNS,1,2,complete,MUTCD Section 2B.08; DL-7 Traffic Signs
+TX-SIG-0004,SIGNS,1,2,complete,Texas Transportation Code §545.351; DL-7 Traffic Signs
+TX-SIG-0007,SIGNS,1,2,complete,MUTCD Section 2B.18; DL-7 Traffic Signs
+TX-SIG-0009,SIGNS,1,2,complete,MUTCD Section 2B.19; DL-7 Traffic Signs
+TX-SIG-0011,SIGNS,1,2,complete,MUTCD Section 2B.40; DL-7 Traffic Signs
+TX-SIG-0022,SIGNS,1,2,complete,Texas Transportation Code §545.3561; DL-7 Traffic Signs
+TX-SIG-0032,SIGNS,1,2,complete,MUTCD Section 2C.02; DL-7 Traffic Signs
+TX-SIG-0042,SIGNS,1,2,complete,MUTCD Section 2C.50; DL-7 Traffic Signs
+TX-SIG-0046,SIGNS,1,2,complete,MUTCD Section 7B.07; DL-7 Traffic Signs
+TX-SPC-0003,SPECIAL_SITUATIONS,1,2,complete,Texas Transportation Code §545.066; DL-7 Special Driving Situations
+TX-SPC-0008,SPECIAL_SITUATIONS,1,2,complete,Texas Transportation Code §545.066; DL-7 Special Driving Situations
+TX-SPC-0014,SPECIAL_SITUATIONS,1,2,complete,DL-7 Special Driving Situations
+TX-SPC-0016,SPECIAL_SITUATIONS,1,2,complete,Texas Transportation Code §545.251; DL-7 Special Driving Situations
+TX-SPC-0020,SPECIAL_SITUATIONS,1,2,complete,MUTCD Section 8B.04; DL-7 Special Driving Situations
+TX-SPC-0025,SPECIAL_SITUATIONS,1,2,complete,Texas Transportation Code §545.251; DL-7 Special Driving Situations
+TX-SPC-0032,SPECIAL_SITUATIONS,1,2,complete,Texas Transportation Code §542.404; DL-7 Special Driving Situations
+TX-SPC-0037,SPECIAL_SITUATIONS,1,2,complete,DL-7 Special Driving Situations
+TX-SPC-0042,SPECIAL_SITUATIONS,1,2,complete,MUTCD Section 6E.03; DL-7 Special Driving Situations
+TX-SPC-0046,SPECIAL_SITUATIONS,1,2,complete,DL-7 Special Driving Situations
+TX-SPD-0001,SPEED_AND_DISTANCE,1,2,complete,Texas Transportation Code §545.3561; DL-7 Speed Limits and Safe Distances
+TX-SPD-0002,SPEED_AND_DISTANCE,1,2,complete,Texas Transportation Code §545.352; DL-7 Speed Limits and Safe Distances
+TX-SPD-0007,SPEED_AND_DISTANCE,1,2,complete,Texas Transportation Code §545.352; DL-7 Speed Limits and Safe Distances
+TX-SPD-0013,SPEED_AND_DISTANCE,1,2,complete,DL-7 Speed Limits and Safe Distances
+TX-SPD-0022,SPEED_AND_DISTANCE,1,2,complete,Texas Transportation Code §545.3561; DL-7 Speed Limits and Safe Distances
+TX-SPD-0030,SPEED_AND_DISTANCE,1,2,complete,MUTCD Section 2B.13; DL-7 Speed Limits and Safe Distances
+TX-SPD-0031,SPEED_AND_DISTANCE,1,2,complete,DL-7 Speed Limits and Safe Distances
+TX-SPD-0032,SPEED_AND_DISTANCE,1,2,complete,DL-7 Speed Limits and Safe Distances
+TX-SPD-0051,SPEED_AND_DISTANCE,1,2,complete,DL-7 Speed Limits and Safe Distances
+TX-SPD-0071,SPEED_AND_DISTANCE,1,2,complete,Texas Transportation Code §545.351; DL-7 Speed Limits and Safe Distances
+TX-TRA-0001,TRAFFIC_SIGNALS,1,2,complete,Texas Transportation Code §544.007; DL-7 Traffic Signals
+TX-TRA-0002,TRAFFIC_SIGNALS,1,2,complete,Texas Transportation Code §545.302; DL-7 Traffic Signals
+TX-TRA-0008,TRAFFIC_SIGNALS,1,2,complete,Texas Transportation Code §544.007; DL-7 Traffic Signals
+TX-TRA-0016,TRAFFIC_SIGNALS,1,2,complete,Texas Transportation Code §544.007; DL-7 Traffic Signals
+TX-TRA-0021,TRAFFIC_SIGNALS,1,2,complete,Texas Transportation Code §544.007; DL-7 Traffic Signals
+TX-TRA-0024,TRAFFIC_SIGNALS,1,2,complete,Texas Transportation Code §544.007; DL-7 Traffic Signals
+TX-TRA-0040,TRAFFIC_SIGNALS,1,2,complete,Texas Transportation Code §544.007; DL-7 Traffic Signals
+TX-TRA-0041,TRAFFIC_SIGNALS,1,2,complete,Texas Transportation Code §544.007; DL-7 Traffic Signals
+TX-TRA-0042,TRAFFIC_SIGNALS,1,2,complete,Texas Transportation Code §544.007; DL-7 Traffic Signals
+TX-TRA-0051,TRAFFIC_SIGNALS,1,2,complete,Texas Transportation Code §552.002; DL-7 Traffic Signals

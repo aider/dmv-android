@@ -2,17 +2,17 @@
   {
     "id": "TX-PAV-0001",
     "topic": "PAVEMENT_MARKINGS",
-    "difficulty": 1,
-    "text": "What does a solid white line between lanes indicate?",
+    "difficulty": 2,
+    "text": "You are driving on a four-lane highway and want to change from the left lane to the right lane. There is a solid white line between the lanes. What does this mean?",
     "choices": [
-      "Lane changes are discouraged but permitted if safe",
-      "Lane changes are prohibited",
-      "Opposing traffic lanes",
-      "Parking is allowed"
+      "Lane changes are discouraged but not illegal — change only if necessary and safe",
+      "Lane changes are strictly prohibited",
+      "The line marks the boundary between opposing traffic flows",
+      "The line indicates a merge area ahead"
     ],
     "correctIndex": 0,
-    "explanation": "Solid white lines discourage lane changes but do not legally prohibit them. Drivers should avoid crossing solid white lines unless necessary for safety.",
-    "reference": "DL-7: Pavement Markings",
+    "explanation": "Solid white lines between same-direction lanes discourage lane changes but do not legally prohibit them. They are used in areas where lane changes are risky, such as near intersections or highway exits. Cross them only when necessary and after checking that it is safe to do so.",
+    "reference": "MUTCD Section 3B.04; DL-7 Pavement Markings",
     "image": {
       "type": "svg",
       "assetId": "PAVEMENT_SOLID_WHITE_LINE"
@@ -21,17 +21,17 @@
   {
     "id": "TX-PAV-0002",
     "topic": "PAVEMENT_MARKINGS",
-    "difficulty": 1,
-    "text": "What does a dashed white line between lanes mean?",
+    "difficulty": 2,
+    "text": "On a three-lane highway, dashed white lines separate all three lanes. You want to move from the center lane to the right lane. Is this permitted?",
     "choices": [
-      "Lane changes are permitted",
-      "No passing zone",
-      "Opposing traffic ahead",
-      "Construction zone"
+      "Yes — dashed white lines indicate lane changes are allowed when safe",
+      "No — you must stay in your lane until the next exit",
+      "Only if you use your turn signal for at least 5 seconds first",
+      "Only if a solid white line is not present on the other side"
     ],
     "correctIndex": 0,
-    "explanation": "Dashed white lines separate lanes of traffic moving in the same direction and indicate that lane changes are permitted when safe to do so.",
-    "reference": "DL-7: Pavement Markings",
+    "explanation": "Dashed white lines separate lanes of same-direction traffic and indicate that lane changes are permitted. Always signal your intent, check mirrors and blind spots, and change lanes only when there is a safe gap in traffic.",
+    "reference": "MUTCD Section 3B.04; DL-7 Pavement Markings",
     "image": {
       "type": "svg",
       "assetId": "PAVEMENT_DASHED_WHITE_LINE"
@@ -40,17 +40,17 @@
   {
     "id": "TX-PAV-0003",
     "topic": "PAVEMENT_MARKINGS",
-    "difficulty": 2,
-    "text": "What does a double solid yellow line indicate?",
+    "difficulty": 3,
+    "text": "You are on a two-lane road and want to pass a slow-moving truck. The center line on your side is solid yellow and the line on the truck's side is dashed yellow. Are you legally allowed to pass?",
     "choices": [
-      "Passing is prohibited in both directions",
-      "Passing is allowed with caution",
-      "One-way traffic only",
-      "Shoulder area"
+      "No — the solid line on your side prohibits passing regardless of what the other side shows",
+      "Yes — the dashed line on either side permits passing for both directions",
+      "Yes — as long as no oncoming traffic is visible",
+      "Only if the truck is traveling below the posted speed limit"
     ],
     "correctIndex": 0,
-    "explanation": "Double solid yellow lines mark a no-passing zone for traffic traveling in both directions. Crossing these lines to pass is illegal and dangerous.",
-    "reference": "DL-7: Pavement Markings",
+    "explanation": "When a double yellow center line has one solid and one dashed component, the rule applies to each side independently. The solid line on your side means passing is prohibited for you. The dashed line on the other side means oncoming traffic may pass when safe. This asymmetric marking is used where sight distance differs by direction — your direction has limited visibility for safe passing.",
+    "reference": "MUTCD Section 3B.04; DL-7 Pavement Markings",
     "image": {
       "type": "svg",
       "assetId": "PAVEMENT_DOUBLE_YELLOW_SOLID"
@@ -112,17 +112,17 @@
   {
     "id": "TX-PAV-0007",
     "topic": "PAVEMENT_MARKINGS",
-    "difficulty": 1,
-    "text": "What does a white edge line on the right side of the road mark?",
+    "difficulty": 2,
+    "text": "While driving at night on an unfamiliar rural road, you notice a white line running along the right edge of the pavement. What is its purpose?",
     "choices": [
-      "The edge of the roadway",
-      "A bike lane",
-      "A parking zone",
-      "A passing zone"
+      "It marks where the paved roadway ends, helping you stay on the road",
+      "It marks a bicycle lane that you must not cross",
+      "It indicates a no-parking zone along the shoulder",
+      "It marks a passing zone on the right side"
     ],
     "correctIndex": 0,
-    "explanation": "White edge lines mark the right boundary of the roadway where the driving surface ends. They help drivers maintain proper lane position, especially at night or in poor weather.",
-    "reference": "DL-7: Pavement Markings"
+    "explanation": "White edge lines mark the right boundary of the roadway. They are especially helpful at night, in rain, or on unfamiliar roads because they give drivers a visible reference for staying within the travel lane. Drifting past the edge line means you are leaving the roadway.",
+    "reference": "MUTCD Section 3B.08; DL-7 Pavement Markings"
   },
   {
     "id": "TX-PAV-0008",
@@ -187,17 +187,17 @@
   {
     "id": "TX-PAV-0012",
     "topic": "PAVEMENT_MARKINGS",
-    "difficulty": 1,
-    "text": "Are you legally required to stop at a solid white line?",
+    "difficulty": 2,
+    "text": "You are approaching an intersection and see a solid white line across your lane. Are you legally required to stop at this line?",
     "choices": [
-      "No, it only discourages lane changes",
-      "Yes, all solid white lines require stopping",
-      "Only during rush hour",
-      "Only if a police officer is present"
+      "Only if accompanied by a stop sign, red light, or other traffic control device",
+      "Yes — all solid white lines require you to stop",
+      "No — solid white lines are advisory only and never require a stop",
+      "Only during school hours"
     ],
     "correctIndex": 0,
-    "explanation": "Solid white lines discourage but do not legally prohibit lane changes. You should only cross them when necessary and safe to do so.",
-    "reference": "DL-7: Pavement Markings"
+    "explanation": "A solid white line across a lane is a stop line that shows where to stop when required by a traffic signal, stop sign, or other control device. The line itself does not create a stop requirement — the accompanying signal or sign does. Without such a device, the line merely suggests a safe stopping point.",
+    "reference": "MUTCD Section 3B.16; DL-7 Pavement Markings"
   },
   {
     "id": "TX-PAV-0013",
@@ -292,17 +292,17 @@
   {
     "id": "TX-PAV-0019",
     "topic": "PAVEMENT_MARKINGS",
-    "difficulty": 1,
-    "text": "Which color line separates traffic moving in opposite directions?",
+    "difficulty": 2,
+    "text": "You are driving on a two-lane road and notice that the center line is yellow. The line on the right edge of your lane is white. Why are different colors used?",
     "choices": [
-      "Yellow",
-      "White",
-      "Red",
-      "Blue"
+      "Yellow separates opposing traffic; white separates same-direction traffic or marks the road edge",
+      "Yellow means caution; white means the lane is safe to travel in",
+      "Yellow lines are older markings; white lines are newer",
+      "Yellow is used on rural roads; white is used on urban roads"
     ],
     "correctIndex": 0,
-    "explanation": "Yellow lines are always used to separate traffic flowing in opposite directions, providing a clear visual warning of oncoming traffic.",
-    "reference": "DL-7: Pavement Markings"
+    "explanation": "Yellow center lines always separate traffic moving in opposite directions, warning you that vehicles on the other side are coming toward you. White lines separate same-direction lanes or mark the road edge. This color system is standardized nationwide by the MUTCD so drivers can instantly understand lane configuration on any road.",
+    "reference": "MUTCD Section 3B.01; DL-7 Pavement Markings"
   },
   {
     "id": "TX-PAV-0020",
@@ -416,17 +416,17 @@
   {
     "id": "TX-PAV-0027",
     "topic": "PAVEMENT_MARKINGS",
-    "difficulty": 1,
-    "text": "What does a straight arrow painted on the pavement mean?",
+    "difficulty": 2,
+    "text": "You are in a lane with a straight arrow painted on the pavement as you approach an intersection. You want to turn right. What should you do?",
     "choices": [
-      "This lane must continue straight",
-      "Merge ahead",
-      "Speed up",
-      "Passing zone"
+      "Proceed straight — the arrow requires you to continue through the intersection",
+      "Turn right since the arrow only suggests a direction",
+      "Turn right but signal your intention",
+      "Stop and wait for the arrow to change"
     ],
     "correctIndex": 0,
-    "explanation": "A straight arrow indicates that vehicles in this lane must proceed straight through the intersection and are not permitted to turn.",
-    "reference": "DL-7: Pavement Markings",
+    "explanation": "A straight pavement arrow indicates a mandatory lane-use direction. Vehicles in a lane marked with a straight arrow must proceed straight through the intersection. To turn right, you must be in a lane marked with a right-turn or combination arrow. Changing lanes at the last moment to turn is unsafe and often illegal.",
+    "reference": "MUTCD Section 3B.20; DL-7 Pavement Markings",
     "image": {
       "type": "svg",
       "assetId": "PAVEMENT_ARROW_STRAIGHT"
@@ -454,17 +454,17 @@
   {
     "id": "TX-PAV-0029",
     "topic": "PAVEMENT_MARKINGS",
-    "difficulty": 1,
-    "text": "What do zebra-striped white markings on the pavement indicate?",
+    "difficulty": 2,
+    "text": "As you approach a mid-block area, you see bold white zebra-stripe markings painted across the road. No traffic signal is present. What must you do?",
     "choices": [
-      "A crosswalk for pedestrians",
-      "A parking zone",
-      "A no-passing zone",
-      "A speed bump ahead"
+      "Watch for pedestrians and yield to anyone within or about to enter the crosswalk",
+      "Proceed at normal speed since there is no signal requiring you to stop",
+      "Stop completely before the markings whether or not pedestrians are present",
+      "Treat the markings as a speed bump and slow down slightly"
     ],
     "correctIndex": 0,
-    "explanation": "Zebra-stripe markings designate pedestrian crosswalks. Drivers must yield to pedestrians within these marked crossing areas.",
-    "reference": "DL-7: Pavement Markings",
+    "explanation": "Zebra-stripe markings designate a pedestrian crosswalk. Even without a traffic signal, drivers must yield to pedestrians within or about to enter a marked crosswalk. Failing to yield can result in a citation and, more importantly, endanger pedestrians who have the right-of-way.",
+    "reference": "Texas Transportation Code §552.003; DL-7 Pavement Markings",
     "image": {
       "type": "svg",
       "assetId": "PAVEMENT_CROSSWALK_ZEBRA"
@@ -696,17 +696,17 @@
   {
     "id": "TX-PAV-0043",
     "topic": "PAVEMENT_MARKINGS",
-    "difficulty": 1,
-    "text": "What color are most pavement arrows and word markings?",
+    "difficulty": 2,
+    "text": "While driving, you see the word 'ONLY' painted in white on the pavement along with a right-turn arrow. Why is this marking white rather than yellow?",
     "choices": [
-      "White",
-      "Yellow",
-      "Red",
-      "Green"
+      "White is used for lane-use markings because they guide same-direction traffic",
+      "White indicates the marking is mandatory; yellow would make it advisory",
+      "White markings are used in urban areas; yellow markings in rural areas",
+      "White is easier to see at night than yellow"
     ],
     "correctIndex": 0,
-    "explanation": "Pavement arrows and word markings are typically white because they provide lane-use guidance for traffic moving in the same direction, consistent with white line usage.",
-    "reference": "DL-7: Pavement Markings"
+    "explanation": "Pavement arrows, word markings, and lane-use symbols are white because they direct traffic traveling in the same direction. The MUTCD reserves yellow for markings that separate opposing traffic flows. This consistent color coding helps drivers instantly understand whether they are dealing with same-direction or opposing-direction guidance.",
+    "reference": "MUTCD Section 3B.20; DL-7 Pavement Markings"
   },
   {
     "id": "TX-PAV-0044",
@@ -756,17 +756,17 @@
   {
     "id": "TX-PAV-0047",
     "topic": "PAVEMENT_MARKINGS",
-    "difficulty": 1,
-    "text": "What is the primary purpose of yellow pavement markings?",
+    "difficulty": 2,
+    "text": "A newly licensed driver asks you why the center line on their street is yellow while the lane lines on the highway are white. What is the correct explanation?",
     "choices": [
-      "To separate traffic moving in opposite directions",
-      "To indicate caution zones",
-      "To mark parking restrictions",
-      "To designate speed limits"
+      "Yellow markings separate traffic flowing in opposite directions; white separates same-direction lanes",
+      "Yellow means the road has a lower speed limit; white means higher speed",
+      "Yellow is used on older roads; white on roads built after 2000",
+      "There is no standard — cities choose their own colors"
     ],
     "correctIndex": 0,
-    "explanation": "Yellow markings separate traffic flows in opposite directions, warning drivers that vehicles on the other side of the line are approaching them head-on.",
-    "reference": "DL-7: Pavement Markings"
+    "explanation": "The color system is set by the MUTCD and used nationwide: yellow lines always separate opposing traffic flows (head-on risk), while white lines separate same-direction traffic or mark road edges. Understanding this distinction is critical — crossing a yellow line puts you in the path of oncoming vehicles.",
+    "reference": "MUTCD Section 3B.01; DL-7 Pavement Markings"
   },
   {
     "id": "TX-PAV-0048",
