@@ -34,6 +34,7 @@ jobs:
           gh label create android-developer --repo "$REPO" --color 1D76DB --description "Android implementation agent" --force
           gh label create svg-review-agent --repo "$REPO" --color B60205 --description "SVG quality reviewer agent" --force
           gh label create svg-asset-curator --repo "$REPO" --color 0E8A16 --description "SVG implementation agent" --force
+          gh label create imagen-asset-generator --repo "$REPO" --color 5319E7 --description "Image asset generation agent (Claude + Google Nano Banana)" --force
           gh label create pr-requirements-ux-reviewer --repo "$REPO" --color 5319E7 --description "Product and UX reviewer agent" --force
           gh label create design-coordinator --repo "$REPO" --color FBCA04 --description "Cross-cutting design and UX coordination" --force
 
@@ -49,6 +50,7 @@ jobs:
 
           has_svg="false"
           has_android="false"
+          has_imagen="false"
 
           while IFS= read -r f; do
             [[ -z "$f" ]] && continue
@@ -58,6 +60,11 @@ jobs:
                 ;;
               app/src/main/java/*|app/src/main/res/*|app/src/main/AndroidManifest.xml|app/build.gradle*|build.gradle*|settings.gradle*)
                 has_android="true"
+                ;;
+              assets/images/*|app/src/main/assets/images/*|dmv-android/app/src/main/assets/images/*|assets/review/*|app/src/main/assets/review/*|dmv-android/app/src/main/assets/review/*)
+                if [[ "$f" == *.png || "$f" == *.jpg || "$f" == *.jpeg || "$f" == *.webp || "$f" == *.avif ]]; then
+                  has_imagen="true"
+                fi
                 ;;
             esac
           done <<< "$files"
@@ -69,6 +76,8 @@ jobs:
             pr_type="svg"
           elif [[ "$has_android" == "true" ]]; then
             pr_type="android"
+          elif [[ "$has_imagen" == "true" ]]; then
+            pr_type="image"
           fi
 
           case "$pr_type" in
@@ -81,12 +90,20 @@ jobs:
             mixed)
               gh pr edit "$PR" --repo "$REPO" --add-label android-developer --add-label svg-asset-curator --add-label svg-review-agent --add-label pr-requirements-ux-reviewer --add-label design-coordinator
               ;;
+            image)
+              gh pr edit "$PR" --repo "$REPO" --add-label imagen-asset-generator --add-label design-coordinator
+              ;;
           esac
+
+          if [[ "$has_imagen" == "true" && "$pr_type" != "image" ]]; then
+            gh pr edit "$PR" --repo "$REPO" --add-label imagen-asset-generator
+          fi
 
           {
             echo "pr_type=$pr_type"
             echo "has_svg=$has_svg"
             echo "has_android=$has_android"
+            echo "has_imagen=$has_imagen"
           } >> "$GITHUB_OUTPUT"
 
       - name: Product evidence and rubric gate
@@ -97,6 +114,7 @@ jobs:
           PR_TYPE: ${{ steps.classify.outputs.pr_type }}
           HAS_SVG: ${{ steps.classify.outputs.has_svg }}
           HAS_ANDROID: ${{ steps.classify.outputs.has_android }}
+          HAS_IMAGEN: ${{ steps.classify.outputs.has_imagen }}
         run: |
           set -euo pipefail
 
