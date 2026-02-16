@@ -5,6 +5,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.dmv.texas.DMVApp
 import com.dmv.texas.analytics.AnalyticsEvents
+import com.dmv.texas.data.local.dao.TopicAccuracy
 import com.dmv.texas.data.local.dao.TopicCount
 import com.dmv.texas.data.local.db.DMVDatabase
 import com.dmv.texas.data.model.QuizConfig
@@ -16,6 +17,20 @@ import kotlinx.coroutines.launch
 
 class HomeViewModel(application: Application) : AndroidViewModel(application) {
 
+    /**
+     * Whether the user has completed at least one quiz.
+     * Drives the Progress Card visibility.
+     */
+    sealed interface HomeUserState {
+        data object FirstRun : HomeUserState
+        data class Returning(
+            val lastScorePct: Int,
+            val mistakeCount: Int,
+            val weakestTopic: String?,
+            val weakestTopicPct: Int?
+        ) : HomeUserState
+    }
+
     data class HomeState(
         val topics: List<TopicCount> = emptyList(),
         val selectedMode: QuizMode = QuizMode.PRACTICE,
@@ -25,7 +40,8 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
         val maxDifficulty: Int = 3,
         val mistakeCount: Int = 0,
         val totalQuestions: Int = 0,
-        val isLoading: Boolean = true
+        val isLoading: Boolean = true,
+        val userState: HomeUserState = HomeUserState.FirstRun
     )
 
     private val app = getApplication<DMVApp>()
@@ -45,12 +61,30 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
             val topics = questionRepo.getTopicCounts("TX")
             val mistakeCount = db.questionStatsDao().getMistakeCount()
             val totalQuestions = questionRepo.getQuestionCount("TX")
+            val lastAttempt = db.attemptDao().getMostRecent("TX")
+
+            val userState = if (lastAttempt != null) {
+                val topicAccuracy = db.questionStatsDao().getAccuracyByTopic("TX")
+                val weakest = findWeakestTopic(topicAccuracy)
+                HomeUserState.Returning(
+                    lastScorePct = if (lastAttempt.total > 0) {
+                        (lastAttempt.correct * 100) / lastAttempt.total
+                    } else 0,
+                    mistakeCount = mistakeCount,
+                    weakestTopic = weakest?.first,
+                    weakestTopicPct = weakest?.second
+                )
+            } else {
+                HomeUserState.FirstRun
+            }
+
             _state.value = HomeState(
                 topics = topics,
                 selectedTopics = topics.map { it.topic }.toSet(),
                 mistakeCount = mistakeCount,
                 totalQuestions = totalQuestions,
-                isLoading = false
+                isLoading = false,
+                userState = userState
             )
             analytics.logEvent(AnalyticsEvents.HOME_VIEWED, mapOf(
                 "question_count" to totalQuestions
@@ -58,11 +92,42 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
-    /** Refresh mistake count and topics (called when returning from a quiz). */
+    /** Find the topic with the lowest accuracy (min 1 question seen). */
+    private fun findWeakestTopic(accuracy: List<TopicAccuracy>): Pair<String, Int>? {
+        if (accuracy.isEmpty()) return null
+        val weakest = accuracy
+            .filter { it.totalSeen > 0 }
+            .minByOrNull { it.totalCorrect.toFloat() / it.totalSeen }
+            ?: return null
+        val pct = (weakest.totalCorrect * 100) / weakest.totalSeen
+        return weakest.topic to pct
+    }
+
+    /** Refresh mistake count and progress context (called when returning from a quiz). */
     fun refresh() {
         viewModelScope.launch {
             val mistakeCount = db.questionStatsDao().getMistakeCount()
-            _state.value = _state.value.copy(mistakeCount = mistakeCount)
+            val lastAttempt = db.attemptDao().getMostRecent("TX")
+            val topicAccuracy = db.questionStatsDao().getAccuracyByTopic("TX")
+            val weakest = findWeakestTopic(topicAccuracy)
+
+            val userState = if (lastAttempt != null) {
+                HomeUserState.Returning(
+                    lastScorePct = if (lastAttempt.total > 0) {
+                        (lastAttempt.correct * 100) / lastAttempt.total
+                    } else 0,
+                    mistakeCount = mistakeCount,
+                    weakestTopic = weakest?.first,
+                    weakestTopicPct = weakest?.second
+                )
+            } else {
+                HomeUserState.FirstRun
+            }
+
+            _state.value = _state.value.copy(
+                mistakeCount = mistakeCount,
+                userState = userState
+            )
         }
     }
 
@@ -120,6 +185,31 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
         val s = _state.value
         return QuizConfig(
             mode = QuizMode.PRACTICE,
+            stateCode = "TX",
+            topics = s.topics.map { it.topic },
+            questionCount = 20,
+            minDifficulty = 1,
+            maxDifficulty = 3
+        )
+    }
+
+    /** Returns a config for drilling the weakest topic. */
+    fun drillWeakTopicConfig(topic: String): QuizConfig {
+        return QuizConfig(
+            mode = QuizMode.TOPIC_DRILL,
+            stateCode = "TX",
+            topics = listOf(topic),
+            questionCount = 20,
+            minDifficulty = 1,
+            maxDifficulty = 3
+        )
+    }
+
+    /** Returns a config for reviewing mistakes. */
+    fun reviewMistakesConfig(): QuizConfig {
+        val s = _state.value
+        return QuizConfig(
+            mode = QuizMode.MISTAKES,
             stateCode = "TX",
             topics = s.topics.map { it.topic },
             questionCount = 20,

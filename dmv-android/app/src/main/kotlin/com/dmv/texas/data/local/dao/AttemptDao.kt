@@ -23,4 +23,14 @@ interface AttemptDao {
 
     @Query("SELECT * FROM attempts WHERE id = :id")
     suspend fun getById(id: Long): AttemptEntity?
+
+    @Query(
+        """
+        SELECT * FROM attempts
+        WHERE stateCode = :stateCode
+        ORDER BY createdAt DESC
+        LIMIT 1
+        """
+    )
+    suspend fun getMostRecent(stateCode: String): AttemptEntity?
 }
