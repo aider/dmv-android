@@ -6,6 +6,58 @@
 - Sample rule: for each topic, sort image-backed questions by `id` ascending, select first `min(5, count)`
 - Captured on Pixel 8 API 35 emulator via `adb exec-out screencap`
 
+## Capture Environment
+- **Emulator**: Pixel 8 API 35 (Android 15), `$ANDROID_SDK_ROOT/emulator/emulator @Pixel_8_API_35 -no-window -no-audio -no-boot-anim`
+- **APK**: debug build from `dmv-android/`, installed via `adb install -r`
+- **Rendering**: Canonical quiz screen layout (QuizScreen.kt chrome) via `ScreenshotCaptureActivity`
+
+## Capture Steps (Reproducible)
+
+### 1. Build and install
+```bash
+cd dmv-android && ./gradlew assembleDebug
+adb install -r app/build/outputs/apk/debug/app-debug.apk
+```
+
+### 2. Trigger pack import
+```bash
+adb shell am start -n com.dmv.texas/.MainActivity
+sleep 5
+```
+
+### 3. Capture each question
+For each question in the sample list, launch the debug capture Activity with the canonical quiz chrome:
+```bash
+adb shell am start -n com.dmv.texas/.ui.screen.debug.ScreenshotCaptureActivity \
+  --es questionId "TX-SIG-0001" \
+  --ei questionIndex 0 \
+  --ei totalQuestions 40
+sleep 3
+adb exec-out screencap -p > TX-SIG-0001__MUTCD_R1-1_STOP.png
+```
+
+### 4. Batch capture script
+```bash
+IDX=0
+while IFS='|' read -r QID ASSET; do
+  QID=$(echo "$QID" | xargs)
+  ASSET=$(echo "$ASSET" | xargs)
+  adb shell am start -n com.dmv.texas/.ui.screen.debug.ScreenshotCaptureActivity \
+    --es questionId "$QID" --ei questionIndex "$IDX" --ei totalQuestions 40 < /dev/null
+  sleep 3
+  adb exec-out screencap -p < /dev/null > "${QID}__${ASSET}.png"
+  IDX=$((IDX+1))
+done < sample_list.txt
+```
+
+**Important**: Use `< /dev/null` on `adb` commands inside `while read` loops to prevent stdin consumption.
+
+## What the Screenshots Show
+Each screenshot displays the **canonical quiz screen layout** identical to what users see during a quiz:
+- **Top bar**: "Quit" button (left), question counter "N / 40" (center), progress bar (below)
+- **Content area**: topic badge, question text, SVG image, four Material OutlinedCard answer buttons (A/B/C/D)
+- **Bottom bar**: horizontal divider + "Next" navigation button
+
 ## Inventory Summary
 
 | Topic | Image Questions | Sampled |
