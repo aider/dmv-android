@@ -37,17 +37,66 @@ jobs:
           fetch-depth: 0
 
       - name: Preflight
+        id: preflight
         run: |
           set -euo pipefail
-          command -v codex >/dev/null || { echo "codex CLI not found on runner"; exit 1; }
-          command -v gh >/dev/null || { echo "gh CLI not found on runner"; exit 1; }
-          if [[ -z "${OPENAI_API_KEY:-}" ]]; then
-            echo "OPENAI_API_KEY secret is required."
-            exit 1
+          ready="true"
+          reason=""
+
+          if ! command -v gh >/dev/null; then
+            ready="false"
+            reason="gh CLI not found on runner"
+          elif ! command -v codex >/dev/null; then
+            ready="false"
+            reason="codex CLI not found on runner"
+          elif [[ -z "${OPENAI_API_KEY:-}" ]]; then
+            ready="false"
+            reason="OPENAI_API_KEY secret is missing"
           fi
-          git fetch origin "$BASE_REF"
+
+          if [[ "$ready" == "true" ]]; then
+            git fetch origin "$BASE_REF"
+          fi
+
+          {
+            echo "ready=$ready"
+            echo "reason=$reason"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Skip Codex Review Comment
+        if: steps.preflight.outputs.ready != 'true'
+        env:
+          SKIP_REASON: ${{ steps.preflight.outputs.reason }}
+        run: |
+          set -euo pipefail
+          if ! command -v gh >/dev/null; then
+            echo "gh CLI missing; cannot post skip comment. Skipping gracefully."
+            exit 0
+          fi
+
+          marker="<!-- codex-hook-review-skip -->"
+          comment_body="$marker
+          Codex hook review skipped for this run.
+
+          Reason: ${SKIP_REASON}
+
+          To enable codex-hook-review on this runner:
+          1. Install the \`codex\` CLI.
+          2. Configure \`OPENAI_API_KEY\` repository secret.
+          "
+
+          existing_id="$(
+            gh api "repos/$REPO/issues/$PR/comments" --jq ".[] | select(.user.login==\"github-actions[bot]\") | select(.body | contains(\"$marker\")) | .id" | tail -n1 || true
+          )"
+
+          if [[ -n "${existing_id:-}" ]]; then
+            gh api --method PATCH "repos/$REPO/issues/comments/$existing_id" -f body="$comment_body" >/dev/null
+          else
+            gh pr comment "${PR}" --repo "${REPO}" --body "$comment_body" >/dev/null
+          fi
 
       - name: Build Prompt
+        if: steps.preflight.outputs.ready == 'true'
         run: |
           set -euo pipefail
 
@@ -130,6 +179,7 @@ jobs:
           EOF
 
       - name: Run Codex Review
+        if: steps.preflight.outputs.ready == 'true'
         run: |
           set -euo pipefail
           MODEL="${CODEX_MODEL:-gpt-5}"
@@ -142,11 +192,13 @@ jobs:
           test -s /tmp/codex_review.txt
 
       - name: Post Review Comment
+        if: steps.preflight.outputs.ready == 'true'
         run: |
           set -euo pipefail
           gh pr comment "${PR}" --repo "${REPO}" --body-file /tmp/codex_review.txt
 
       - name: Enforce Verdict
+        if: steps.preflight.outputs.ready == 'true'
         run: |
           set -euo pipefail
           if ! grep -Eq '^Verdict:[[:space:]]*(PASS|BLOCK)' /tmp/codex_review.txt; then
